@@ -17,28 +17,28 @@ The data model is defined as shown below:
 
 -   `source` : A sequence of characters giving the source of the entity data.
 
-    -   Attribute type: Text or URL
+    -   Attribute type: Property. Text or URL
     -   Optional
 
 -   `dataProvider` : Specifies the URL to information about the provider of this
     information
 
-    -   Attribute type: URL
+    -   Attribute type: Property. URL
     -   Optional
 
 -   `dateCreated` : Entity's creation timestamp.
 
-    -   Attribute type: [DateTime](https://schema.org/DateTime)
+    -   Attribute type: Property. [DateTime](https://schema.org/DateTime)
     -   Read-Only. Automatically generated.
 
 -   `dateModified` : Last update timestamp of this entity.
 
-    -   Attribute type: [DateTime](https://schema.org/DateTime)
+    -   Attribute type: Property. [DateTime](https://schema.org/DateTime)
     -   Read-Only. Automatically generated.
 
 -   `location` : Location of this observation represented by a GeoJSON geometry.
 
-    -   Attribute type: `geo:json`.
+    -   Attribute type: GeoProperty. `geo:json`.
     -   Normative References:
         [https://tools.ietf.org/html/rfc7946](https://tools.ietf.org/html/rfc7946)
     -   Mandatory if `address` is not present.
@@ -65,24 +65,24 @@ The data model is defined as shown below:
     Broker for datetime intervals, it can be used two separate attributes:
     `dateObservedFrom`, `dateObservedTo`.
 
-    -   Attribute type: ISO8601 interval represented as
+    -   Attribute type: Property. ISO8601 interval represented as
         [Text](https://schema.org/Text).
     -   Optional
 
 -   `dateObservedFrom` : Observation period start date and time. See
     `dateObserved`.
 
-    -   Attribute type: [DateTime](https://schema.org/DateTime).
+    -   Attribute type: Property. [DateTime](https://schema.org/DateTime).
     -   Mandatory
 
 -   `dateObservedTo` : Observation period end date and time. See `dateObserved`.
 
-    -   Attribute type: [DateTime](https://schema.org/DateTime).
+    -   Attribute type: Property. [DateTime](https://schema.org/DateTime).
     -   Mandatory
 
 -   `refDevice` : A reference to the device which captured this observation.
 
-    -   Attribute type: Reference to an entity of type `Device`
+    -   Attribute type: Relationship. Reference to an entity of type `Device`
     -   Optional
 
 -   `sonometerClass` : Class of sonometer (0, 1, 2) according to
@@ -91,13 +91,13 @@ The data model is defined as shown below:
     observations. It allows to convey, roughly, information about the precision
     of the measurements.
 
-    -   Attribute type: [Text](https://schema.org/Text)
+    -   Attribute type: Property. [Text](https://schema.org/Text)
     -   Allowed values: one of (`"0"`, `"1"`, `"2"`)
     -   Optional
 
 -   `refPointOfInterest` : A reference to a point of interest associated to this
     observation.
-    -   Attribute type: Reference to an entity of type `PointOfInterest`
+    -   Attribute type: Relationship. Reference to an entity of type `PointOfInterest`
     -   Optional
 
 ### Representing acoustic parameters
@@ -130,10 +130,9 @@ There are two options for representing them:
 -   B/ Adding weather-related properties defined at
     [WeatherObserved](../../../Weather/WeatherObserved/doc/spec.md).
 
-**Note**: JSON Schemas only capture the NGSI simplified representation, this
-means that to test the JSON schema examples with a
-[FIWARE NGSI version 2](http://fiware.github.io/specifications/ngsiv2/stable)
-API implementation, you need to use the `keyValues` mode (`options=keyValues`).
+**Note**: JSON Schemas are intended to capture the data type and associated
+constraints of the different Attributes, regardless their final representation
+format in NGSI(v2, LD).
 
 ## Examples
 
@@ -213,6 +212,58 @@ Sample uses simplified representation for data consumers `?options=keyValues`
         "type": "Point",
         "coordinates": [-2.698, 42.8491]
     }
+}
+```
+
+### LD Example
+
+Sample uses the NGSI-LD representation
+
+```json
+{
+    "id": "urn:ngsi-ld:NoiseLevelObserved:Vitoria-NoiseLevelObserved-2016-12-28T11:00:00_2016-12-28T12:00:00",
+    "type": "NoiseLevelObserved",
+    "dateObservedFrom": {
+        "type": "Property",
+        "value": {
+            "@type": "DateTime",
+            "@value": "2016-12-28T11:00:00.00Z"
+        }
+    },
+    "LAmax": {
+        "type": "Property",
+        "value": 94.5
+    },
+    "LAeq": {
+        "type": "Property",
+        "value": 67.8
+    },
+    "dateObservedTo": {
+        "type": "Property",
+        "value": {
+            "@type": "DateTime",
+            "@value": "2016-12-28T12:00:00.00Z"
+        }
+    },
+    "LAeq_d": {
+        "type": "Property",
+        "value": 65.4
+    },
+    "location": {
+        "type": "GeoProperty",
+        "value": {
+            "type": "Point",
+            "coordinates": [-2.698, 42.8491]
+        }
+    },
+    "LAS": {
+        "type": "Property",
+        "value": 91.6
+    },
+    "@context": [
+        "https://uri.etsi.org/ngsi-ld/v1/ngsi-ld-core-context.jsonld",
+        "https://schema.lab.fiware.org/ld/context"
+    ]
 }
 ```
 

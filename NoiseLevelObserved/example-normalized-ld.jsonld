@@ -1,0 +1,48 @@
+{
+    "id": "urn:ngsi-ld:NoiseLevelObserved:Vitoria-NoiseLevelObserved-2016-12-28T11:00:00_2016-12-28T12:00:00",
+    "type": "NoiseLevelObserved",
+    "dateObservedFrom": {
+        "type": "Property",
+        "value": {
+            "@type": "DateTime",
+            "@value": "2016-12-28T11:00:00.00Z"
+        }
+    },
+    "LAmax": {
+        "type": "Property",
+        "value": 94.5
+    },
+    "LAeq": {
+        "type": "Property",
+        "value": 67.8
+    },
+    "dateObservedTo": {
+        "type": "Property",
+        "value": {
+            "@type": "DateTime",
+            "@value": "2016-12-28T12:00:00.00Z"
+        }
+    },
+    "LAeq_d": {
+        "type": "Property",
+        "value": 65.4
+    },
+    "location": {
+        "type": "GeoProperty",
+        "value": {
+            "type": "Point",
+            "coordinates": [
+                -2.698,
+                42.8491
+            ]
+        }
+    },
+    "LAS": {
+        "type": "Property",
+        "value": 91.6
+    },
+    "@context": [
+        "https://uri.etsi.org/ngsi-ld/v1/ngsi-ld-core-context.jsonld",
+        "https://schema.lab.fiware.org/ld/context"
+    ]
+}

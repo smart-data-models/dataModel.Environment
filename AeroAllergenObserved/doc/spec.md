@@ -6,10 +6,10 @@ This entity models aero allergens observed at a given location and related
 overall allergen risk.
 
 This data model has been developed based on
-[GSMA](http://www.gsma.com/connectedliving/iot-big-data/). Aero allergens
-strictly depends on the geographical location. Common Aero allergens in Europe
-may be quite different from the ones in US due to the different biological
-species. A list of commonly used aero allergens in Europe can be found on
+[GSMA](https://www.gsma.com/iot/iot-big-data/). Aero allergens strictly depends
+on the geographical location. Common Aero allergens in Europe may be quite
+different from the ones in US due to the different biological species. A list of
+commonly used aero allergens in Europe can be found on
 [polleninfo.org](https://www.polleninfo.org/en/allergy/profiles/) a web site
 maintained by the European Aeroallergen Network. A World Health Organization
 (WHO) Allergen Nomenclature (covering not only aero transported allergens) is
@@ -27,22 +27,22 @@ A JSON Schema corresponding to this data model can be found
 -   `dataProvider` : Specifies the URL to information about the provider of this
     information
 
-    -   Attribute type: URL
+    -   Attribute type: Property. URL
     -   Optional
 
 -   `dateModified` : Last update timestamp of this entity.
 
-    -   Attribute type: [DateTime](https://schema.org/DateTime)
+    -   Attribute type: Property. [DateTime](https://schema.org/DateTime)
     -   Read-Only. Automatically generated.
 
 -   `dateCreated` : Entity's creation timestamp.
 
-    -   Attribute type: [DateTime](https://schema.org/DateTime)
+    -   Attribute type: Property. [DateTime](https://schema.org/DateTime)
     -   Read-Only. Automatically generated.
 
 -   `location` : Location of the aero allergens observation represented by a
     GeoJSON geometry.
-    -   Attribute type: `geo:json`.
+    -   Attribute type: GeoProperty. `geo:json`.
     -   Normative References:
         [https://tools.ietf.org/html/rfc7946](https://tools.ietf.org/html/rfc7946)
     -   Mandatory if `address` is not defined.
@@ -53,17 +53,17 @@ A JSON Schema corresponding to this data model can be found
     -   Mandatory if `location` is not present.
 -   `dateObserved` : The date and time of this observation in ISO8601 UTCformat.
     It can be represented by a specific time instant or by an ISO8601 interval.
-    -   Attribute type: [DateTime](https://schema.org/DateTime) or an ISO8601
+    -   Attribute type: Property. [DateTime](https://schema.org/DateTime) or an ISO8601
         interval represented as [Text](https://schema.org/Text).
     -   Mandatory
 -   `source` : A sequence of characters giving the source of the entity data.
-    -   Attribute type: [Text](https://schema.org/Text) or
+    -   Attribute type: Property. [Text](https://schema.org/Text) or
         [URL](https://schema.org/URL)
     -   Optional
 -   `allergenRisk` : Overall allergen risk corresponding to the aero allergens
     observed.
 
-    -   Attribute type: [Text](https://schema.org/Text)
+    -   Attribute type: Property. [Text](https://schema.org/Text)
     -   Example values defined by the
         [European Aeroallergen Network](https://www.ean-net.org/en/): (`none`,
         `low`, `moderate`, `high`, `veryHigh`). As this can be different between
@@ -80,7 +80,7 @@ A JSON Schema corresponding to this data model can be found
     -   Optional
 
 -   `refDevice` : A reference to the device(s) which captured this observation.
-    -   Attribute type: Reference to an entity of type `Device`
+    -   Attribute type: Relationship. Reference to an entity of type `Device`
     -   Optional
 
 ### Representing aero allergens concentration
@@ -179,10 +179,9 @@ pollen.
             [URL](https://schema.org/URL)
         -   Mandatory
 
-**Note**: JSON Schemas only capture the NGSI simplified representation, this
-means that to test the JSON schema examples with a
-[FIWARE NGSI version 2](http://fiware.github.io/specifications/ngsiv2/stable)
-API implementation, you need to use the `keyValues` mode (`options=keyValues`).
+**Note**: JSON Schemas are intended to capture the data type and associated
+constraints of the different Attributes, regardless their final representation
+format in NGSI(v2, LD).
 
 ## Examples
 
@@ -271,6 +270,77 @@ Sample uses simplified representation for data consumers `?options=keyValues`
         "coordinates": [-99.276977, 19.381877]
     },
     "source": "http://rema.atmosfera.unam.mx/rema/"
+}
+```
+
+### LD Example
+
+Sample uses the NGSI-LD representation
+
+```json
+{
+    "id": "urn:ngsi-ld:AeroAllergenObserved:AeroAllergenObserved-CDMX-Pollen-Cuajimalpa",
+    "type": "AeroAllergenObserved",
+    "modifiedAt": "2018-02-16T17:24:39.00Z",
+    "dateObserved": {
+        "type": "Property",
+        "value": {
+            "@type": "DateTime",
+            "@value": "2018-02-11T00:00:00.00Z"
+        }
+    },
+    "alnus": {
+        "type": "Property",
+        "value": 40
+    },
+    "alnus_Allergenicity": {
+        "type": "Property",
+        "value": "3"
+    },
+    "allergenRisk": {
+        "type": "Property",
+        "value": "moderate"
+    },
+    "casuarina": {
+        "type": "Property",
+        "value": 1
+    },
+    "casuarina_Level": {
+        "type": "Property",
+        "value": "low"
+    },
+    "casuarina_Allergenicity": {
+        "type": "Property",
+        "value": "3"
+    },
+    "source": {
+        "type": "Property",
+        "value": "http://rema.atmosfera.unam.mx/rema/"
+    },
+    "location": {
+        "type": "GeoProperty",
+        "value": {
+            "type": "Point",
+            "coordinates": [-99.276977, 19.381877]
+        }
+    },
+    "address": {
+        "type": "Property",
+        "value": {
+            "addressCountry": "MX",
+            "addressLocality": "Ciudad de M\u00e9xico",
+            "streetAddress": "Colegio Franco-Ingl\u00e9s",
+            "type": "PostalAddress"
+        }
+    },
+    "alnus_Level": {
+        "type": "Property",
+        "value": "moderate"
+    },
+    "@context": [
+        "https://uri.etsi.org/ngsi-ld/v1/ngsi-ld-core-context.jsonld",
+        "https://schema.lab.fiware.org/ld/context"
+    ]
 }
 ```
 

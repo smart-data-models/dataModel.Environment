@@ -17,22 +17,22 @@ A JSON Schema corresponding to this data model can be found
 -   `dataProvider` : Specifies the URL to information about the provider of this
     information
 
-    -   Attribute type: URL
+    -   Attribute type: Property. URL
     -   Optional
 
 -   `dateModified` : Last update timestamp of this entity.
 
-    -   Attribute type: [DateTime](https://schema.org/DateTime)
+    -   Attribute type: Property. [DateTime](https://schema.org/DateTime)
     -   Read-Only. Automatically generated.
 
 -   `dateCreated` : Entity's creation timestamp.
 
-    -   Attribute type: [DateTime](https://schema.org/DateTime)
+    -   Attribute type: Property. [DateTime](https://schema.org/DateTime)
     -   Read-Only. Automatically generated.
 
 -   `location` : Location where measurements have been taken, represented by a
     GeoJSON Point.
-    -   Attribute type: `geo:json`.
+    -   Attribute type: GeoProperty. `geo:json`.
     -   Normative References:
         [https://tools.ietf.org/html/draft-ietf-geojson-03](https://tools.ietf.org/html/draft-ietf-geojson-03)
     -   Mandatory if `address` is not present.
@@ -43,23 +43,23 @@ A JSON Schema corresponding to this data model can be found
 -   `refPointOfInterest` : A reference to a point of interest associated to this
     observation.
 
-    -   Attribute type: Reference to an entity of type `PointOfInterest`
+    -   Attribute type: Property. Reference to an entity of type `PointOfInterest`
     -   Optional
 
 -   `dateObserved` : The date and time of this observation in ISO8601 UTCformat.
     It can be represented by an specific time instant or by an ISO8601 interval.
-    -   Attribute type: [DateTime](https://schema.org/DateTime) or an ISO8601
+    -   Attribute type: Property. [DateTime](https://schema.org/DateTime) or an ISO8601
         interval represented as [Text](https://schema.org/Text).
     -   Mandatory
 -   `source` : A sequence of characters giving the source of the entity data.
-    -   Attribute type: [Text](https://schema.org/Text) or
+    -   Attribute type: Property. [Text](https://schema.org/Text) or
         [URL](https://schema.org/URL)
     -   Optional
 
 ### Common water quality parameters
 
 -   `temperature` : Temperature.
-    -   Attribute type: [Number](http://schema.org/Number)
+    -   Attribute type: Property. [Number](http://schema.org/Number)
     -   Attribute metadata:
         -   `timestamp`: Timestamp when the last update of the attribute
             happened.
@@ -67,7 +67,7 @@ A JSON Schema corresponding to this data model can be found
     -   Default unit: Celsius Degrees.
     -   Optional
 -   `conductivity` : Electrical Conductivity.
-    -   Attribute type: [Number](http://schema.org/Number)
+    -   Attribute type: Property. [Number](http://schema.org/Number)
     -   Attribute metadata:
         -   `timestamp`: Timestamp when the last update of the attribute
             happened.
@@ -76,7 +76,7 @@ A JSON Schema corresponding to this data model can be found
     -   Optional
 -   `conductance` : Specific Conductance.
 
-    -   Attribute type: [Number](http://schema.org/Number)
+    -   Attribute type: Property. [Number](http://schema.org/Number)
     -   Attribute metadata:
         -   `timestamp`: Timestamp when the last update of the attribute
             happened.
@@ -85,7 +85,7 @@ A JSON Schema corresponding to this data model can be found
     -   Optional
 
 -   `tss` : Total suspended solids.
-    -   Attribute type: [Number](http://schema.org/Number)
+    -   Attribute type: Property. [Number](http://schema.org/Number)
     -   Attribute metadata:
         -   `timestamp`: Timestamp when the last update of the attribute
             happened.
@@ -94,7 +94,7 @@ A JSON Schema corresponding to this data model can be found
     -   Optional
 -   `tds` : Total dissolved solids.
 
-    -   Attribute type: [Number](http://schema.org/Number)
+    -   Attribute type: Property. [Number](http://schema.org/Number)
     -   Attribute metadata:
         -   `timestamp`: Timestamp when the last update of the attribute
             happened.
@@ -104,7 +104,7 @@ A JSON Schema corresponding to this data model can be found
 
 -   `turbidity` : Amount of light scattered by particles in the water column.
 
-    -   Attribute type: [Number](http://schema.org/Number)
+    -   Attribute type: Property. [Number](http://schema.org/Number)
     -   Attribute metadata:
         -   `timestamp`: Timestamp when the last update of the attribute
             happened.
@@ -113,7 +113,7 @@ A JSON Schema corresponding to this data model can be found
     -   Optional
 
 -   `salinity` : Amount of salts dissolved in water.
-    -   Attribute type: [Number](http://schema.org/Number)
+    -   Attribute type: Property. [Number](http://schema.org/Number)
     -   Attribute metadata:
         -   `timestamp`: Timestamp when the last update of the attribute
             happened.
@@ -122,7 +122,7 @@ A JSON Schema corresponding to this data model can be found
     -   Optional
 -   `pH` : Acidity or basicity of an aqueous solution.
 
-    -   Attribute type: [Number](http://schema.org/Number)
+    -   Attribute type: Property. [Number](http://schema.org/Number)
     -   Attribute metadata:
         -   `timestamp`: Timestamp when the last update of the attribute
             happened.
@@ -132,7 +132,7 @@ A JSON Schema corresponding to this data model can be found
     -   Optional
 
 -   `orp` : Oxidation-Reduction potential.
-    -   Attribute type: [Number](http://schema.org/Number)
+    -   Attribute type: Property. [Number](http://schema.org/Number)
     -   Attribute metadata:
         -   `timestamp`: Timestamp when the last update of the attribute
             happened.
@@ -149,7 +149,7 @@ attribute must be used for such purpose.
 
 -   `measurand` : An array of strings containing details (see format below)
     about extra measurands provided by this observation.
-    -   Attribute type: List of [Text](https://schema.org/Text).
+    -   Attribute type: Property. List of [Text](https://schema.org/Text).
     -   Allowed values: Each element of the array must be a string with the
         following format (comma separated list of values):
         `<measurand>, <observedValue>, <unitcode>, <description>`, where:
@@ -182,7 +182,7 @@ extra measurands are available as part of an observation.
     -   Optional
 
 -   `Chla` : Concentration of chlorophyll A.
-    -   Attribute type: [Number](http://schema.org/Number)
+    -   Attribute type: Property. [Number](http://schema.org/Number)
     -   Attribute metadata:
         -   `timestamp`: Timestamp when the last update of the attribute
             happened.
@@ -191,7 +191,7 @@ extra measurands are available as part of an observation.
     -   Optional
 -   `PE` : Concentration of pigment phycoerythrin which can be measured to
     estimate cyanobacteria concentrations specifically.
-    -   Attribute type: [Number](http://schema.org/Number)
+    -   Attribute type: Property. [Number](http://schema.org/Number)
     -   Attribute metadata:
         -   `timestamp`: Timestamp when the last update of the attribute
             happened.
@@ -201,7 +201,7 @@ extra measurands are available as part of an observation.
 -   `PC` : Concentration of pigment phycocyanin which can be measured to
     estimate cyanobacteria concentrations specifically.
 
-    -   Attribute type: [Number](http://schema.org/Number)
+    -   Attribute type: Property. [Number](http://schema.org/Number)
     -   Attribute metadata:
         -   `timestamp`: Timestamp when the last update of the attribute
             happened.
@@ -248,10 +248,9 @@ extra measurands are available as part of an observation.
     -   Default unit: milligrams per liter (mg/L).
     -   Optional
 
-**Note**: JSON Schemas only capture the NGSI simplified representation, this
-means that to test the JSON schema examples with a
-[FIWARE NGSI version 2](http://fiware.github.io/specifications/ngsiv2/stable)
-API implementation, you need to use the `keyValues` mode (`options=keyValues`).
+**Note**: JSON Schemas are intended to capture the data type and associated
+constraints of the different Attributes, regardless their final representation
+format in NGSI(v2, LD).
 
 ## Examples
 
@@ -310,6 +309,55 @@ Sample uses simplified representation for data consumers `?options=keyValues`
     "conductivity": 0.005,
     "pH": 7.4,
     "NO3": 0.01
+}
+```
+
+### LD Example
+
+Sample uses the NGSI-LD representation
+
+```json
+{
+    "id": "urn:ngsi-ld:WaterQualityObserved:waterqualityobserved:Sevilla:D1",
+    "type": "WaterQualityObserved",
+    "dateObserved": {
+        "type": "Property",
+        "value": {
+            "@type": "DateTime",
+            "@value": "2017-01-31T06:45:00Z"
+        }
+    },
+    "temperature": {
+        "type": "Property",
+        "value": 24.4
+    },
+    "NO3": {
+        "type": "Property",
+        "value": 0.01
+    },
+    "location": {
+        "type": "GeoProperty",
+        "value": {
+            "type": "Point",
+            "coordinates": [-5.993307, 37.362882]
+        }
+    },
+    "pH": {
+        "type": "Property",
+        "value": 7.4
+    },
+    "measurand": {
+        "type": "Property",
+        "value": ["NO3, 0.01, M1, Concentration of Nitrates"]
+    },
+    "conductivity": {
+        "type": "Property",
+        "value": 0.005
+    },
+    "@context": [
+        "https://uri.etsi.org/ngsi-ld/v1/ngsi-ld-core-context.jsonld",
+        "https://schema.lab.fiware.org/ld/context"
+    ]
 }
 ```
 

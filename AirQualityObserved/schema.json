@@ -5,18 +5,23 @@
   "description": "An observation of air quality conditions at a certain place and time.",
   "type": "object",
   "allOf": [
-    { "$ref": "https://fiware.github.io/dataModels/common-schema.json#/definitions/GSMA-Commons" },
-    { "$ref": "https://fiware.github.io/dataModels/common-schema.json#/definitions/Location-Commons" },
+    {
+      "$ref": "https://fiware.github.io/dataModels/common-schema.json#/definitions/GSMA-Commons"
+    },
+    {
+      "$ref": "https://fiware.github.io/dataModels/common-schema.json#/definitions/Location-Commons"
+    },
     {
       "properties": {
         "type": {
           "type": "string",
-          "enum": [
-            "AirQualityObserved"
-          ],
+          "enum": ["AirQualityObserved"],
           "description": "NGSI Entity type"
         },
         "dateObserved": {
+          "type": "string"
+        },
+		"areaServed": {
           "type": "string"
         },
         "airQualityIndex": {
@@ -44,10 +49,5 @@
       }
     }
   ],
-  "required": [
-    "id",
-    "type",
-    "dateObserved",
-    "location"
-  ]
+  "required": ["id", "type", "dateObserved", "location"]
 }
