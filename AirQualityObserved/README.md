@@ -1,32 +1,12 @@
 # Air Quality Observed
 
 This folder contains scripts that give support to expose air quality observed
-data as NGSI version 2.
-
-The data provided corresponds to different cities in Spain being the original
-data source different
-[air quality stations](../../PointOfInterest/AirQualityStation/README.md)
-managed by municipalities or regional governments.
-
-Please check the original data source before making use of this data in an
-application.
-
-The following scripts are present:
-
--   `madrid_air_quality_harvest.py`.- A data harvest and harmonization program
-    for official Madrid's Air Quality Data provided by Madrid's City Council.
--   `barcelona_air_quality_harvest.py`.- A data harvest and harmonization
-    program for official Barcelona's Air Quality Data provided by Catalonia's
-    Government.
--   `madrid_air_quality.py` .- Offers both an NGSI v2 endpoint and NGSI10 to
-    provide ambient observed data (outdated)
--   `ngsi_helper.py` .- Contains helper functions to support the NGSI protocol
-    (outdated)
+data as NGSI.
 
 ## Public instance
 
 You can read about public instance offering information about observed air
-quality [here](../../gsma.md).
+quality [here](https://github.com/FIWARE/dataModels/blob/master/specs/gsma.md).
 
 ## Examples of Use
 

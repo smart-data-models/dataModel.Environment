@@ -438,4 +438,4 @@ Sample uses the NGSI-LD representation
 ```
 
 You can read about public instance offering information about observed air
-quality [here](../../../gsma.md).
+quality [here](https://github.com/FIWARE/dataModels/blob/master/specs/gsma.md).
