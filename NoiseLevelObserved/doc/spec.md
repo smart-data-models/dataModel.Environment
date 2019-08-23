@@ -17,13 +17,13 @@ The data model is defined as shown below:
 
 -   `source` : A sequence of characters giving the source of the entity data.
 
-    -   Attribute type: Property. Text or URL
+    -   Attribute type: Property. [Text](https://schema.org/Text) or [URL](https://schema.org/URL)
     -   Optional
 
 -   `dataProvider` : Specifies the URL to information about the provider of this
     information
 
-    -   Attribute type: Property. URL
+    -   Attribute type: Property. [URL](https://schema.org/URL)
     -   Optional
 
 -   `dateCreated` : Entity's creation timestamp.
@@ -45,19 +45,23 @@ The data model is defined as shown below:
 
 -   `address` : Civic address of this observation.
 
+    -   Attribute type: Property. [Address](https://schema.org/address)
     -   Normative References:
         [https://schema.org/address](https://schema.org/address)
     -   Mandatory if `location` is not present.
 
 -   `name` : Name given to this observation.
 
-    -   Normative References: [https://schema.org/name](https://schema.org/name)
+    -   Attribute type: Property. [Text](https://schema.org/Text)
+    -   Normative References:
+        `https://uri.etsi.org/ngsi-ld/name` equivalent to [name](https://schema.org/name)
     -   Optional
 
 -   `description` : Description given to this observation.
 
+    -   Attribute type: Property. [Text](https://schema.org/Text)
     -   Normative References:
-        [https://schema.org/description](https://schema.org/description)
+        `https://uri.etsi.org/ngsi-ld/description` equivalent to [description](https://schema.org/description)
     -   Optional
 
 -   `dateObserved` : The date and time of this observation represented by an
@@ -113,13 +117,13 @@ acoustic measurand name, as follows:
     char, such char shall be substituted by the `_` char. For instance, the
     measurand "LAeq,d" shall be represented by an Attribute which name shall be
     `LAeq_d`.
--   Attribute type: [Number](https://schema.org/Number)
+-   Attribute type: Property. [Number](https://schema.org/Number)
 -   Attribute value: corresponds to the value for the measurand as a number
     expressed in decibels.
 -   Attribute Metadata:
     -   `description`: short description of the measurand. (optional)
-    -   Normative References:
-        [https://schema.org/description](https://schema.org/description)
+    -   Attribute type: Property. [Text](https://schema.org/Text)
+    -   Normative References: `https://uri.etsi.org/ngsi-ld/name` equivalent to [name](https://schema.org/name)
 
 ### Representing weather conditions
 
