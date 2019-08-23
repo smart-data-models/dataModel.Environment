@@ -18,7 +18,7 @@ A JSON Schema corresponding to this data model can be found
 -   `dataProvider` : Specifies the URL to information about the provider of this
     information
 
-    -   Attribute type: Property. URL
+    -   Attribute type: Property. [URL](https://schema.org/URL)
     -   Optional
 
 -   `dateModified` : Last update timestamp of this entity.
@@ -37,29 +37,28 @@ A JSON Schema corresponding to this data model can be found
     -   Normative References:
         [https://tools.ietf.org/html/rfc7946](https://tools.ietf.org/html/rfc7946)
     -   Mandatory if `address` is not defined.
-	
+
 -   `address` : Civic address of the air quality observation. Sometimes it
     corresponds to the air quality station address.
     -   Normative References:
         [https://schema.org/address](https://schema.org/address)
     -   Mandatory if `location` is not present.
-	
+
 -   `dateObserved` : The date and time of this observation in ISO8601 UTCformat.
     It can be represented by an specific time instant or by an ISO8601 interval.
     -   Attribute type: Property. [DateTime](https://schema.org/DateTime) or an ISO8601
         interval represented as [Text](https://schema.org/Text).
     -   Mandatory
-	
+
 -   `areaServed` : Higher level area to which this air quality measurement belongs to. It
     can be used to group air quality measurements per district, neighbourhood, etc.
-    -   Attribute type: [Text](https://schema.org/Text)
+    -   Attribute type: Property. [Text](https://schema.org/Text)
     -   Normative References:
         [https://schema.org/areaServed](https://schema.org/areaServed)
     -   Optional
 
 -   `source` : A sequence of characters giving the source of the entity data.
-    -   Attribute type: Property. [Text](https://schema.org/Text) or
-        [URL](https://schema.org/URL)
+    -   Attribute type: Property. [Text](https://schema.org/Text) or [URL](https://schema.org/URL)
     -   Optional
 -   `airQualityLevel` : Overall qualitative level of health concern
     corresponding to the air quality observed.
@@ -120,7 +119,7 @@ measurand, ex. CO. The structure of such an attribute will be as follows:
 
 -   Attribute name: Equal to the name of the measurand, for instance `CO`.
 
--   Attribute type: [Number](https://schema.org/Number)
+-   Attribute type: Property. [Number](https://schema.org/Number)
 
 -   Attribute value: corresponds to the value for the measurand as a number.
 
@@ -150,7 +149,7 @@ follows:
 
 -   Attribute name: Equal to the name of the measurand plus the suffix `_Level`,
     for instance `CO_Level`.
--   Attribute type: [Text](https://schema.org/Text)
+-   Attribute type: Property. [Text](https://schema.org/Text)
 -   Attribute value: Example values defined by the USA EPA Agency:(`good`,
     `moderate`, `unhealthyForSensitiveGroups`, `unhealthy`, `veryUnhealthy`,
     `hazardous`). As this can be different between countries, regulations or
@@ -161,7 +160,9 @@ follows:
 -   Attribute metadata:
     -   `description` : short description of the measurand and its related
         qualitative level
-        -   Type: [Text](https://schema.org/Text)
+        -   Attribute type: Property. [Text](https://schema.org/Text)
+        -   Normative References:
+            `https://uri.etsi.org/ngsi-ld/description` equivalent to [description](https://schema.org/description)
         -   Optional
     -   `referenceSpecification` : Specification that must be taken as reference
         when interpreting the supplied qualitative value.
