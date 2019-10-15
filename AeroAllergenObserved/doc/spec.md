@@ -18,7 +18,7 @@ available at [http://www.allergen.org](http://www.allergen.org).
 ## Data Model
 
 A JSON Schema corresponding to this data model can be found
-[here](http://fiware.github.io/dataModels/specs/Environment/AeroAllergenObserved/schema.json).
+[here](http://fiware.github.io/data-models/specs/Environment/AeroAllergenObserved/schema.json).
 
 -   `id` : Unique identifier.
 

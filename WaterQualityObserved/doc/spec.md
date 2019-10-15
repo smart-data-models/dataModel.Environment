@@ -8,7 +8,7 @@ certain water mass (river, lake, sea, etc.) section
 ## Data Model
 
 A JSON Schema corresponding to this data model can be found
-[here](http://fiware.github.io/dataModels/specs/Environment/WaterQualityObserved/schema.json).
+[here](http://fiware.github.io/data-models/specs/Environment/WaterQualityObserved/schema.json).
 
 -   `id` : Unique identifier.
 

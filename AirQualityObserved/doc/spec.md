@@ -9,7 +9,7 @@ model has been developed in cooperation with mobile operators and the
 ## Data Model
 
 A JSON Schema corresponding to this data model can be found
-[here](http://fiware.github.io/dataModels/specs/Environment/AirQualityObserved/schema.json).
+[here](http://fiware.github.io/data-models/specs/Environment/AirQualityObserved/schema.json).
 
 -   `id` : Unique identifier.
 
@@ -439,4 +439,4 @@ Sample uses the NGSI-LD representation
 ```
 
 You can read about public instance offering information about observed air
-quality [here](https://github.com/FIWARE/dataModels/blob/master/specs/gsma.md).
+quality [here](https://github.com/FIWARE/data-models/blob/master/specs/gsma.md).

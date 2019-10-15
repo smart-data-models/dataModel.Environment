@@ -6,7 +6,7 @@ data as NGSI.
 ## Public instance
 
 You can read about public instance offering information about observed air
-quality [here](https://github.com/FIWARE/dataModels/blob/master/specs/gsma.md).
+quality [here](https://github.com/FIWARE/data-models/blob/master/specs/gsma.md).
 
 ## Examples of Use
 
