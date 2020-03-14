@@ -1,6 +1,6 @@
 {
   "$schema": "http://json-schema.org/schema#",
-  "$id": "https://smart-data-models.github.io/data-models/specs/Environment/WaterQualityObserved/schema.json",
+  "$id": "https://smart-data-models.github.io/dataModel.Environment/WaterQualityObserved/schema.json",
   "title": " - Water quality observed schema",
   "description": "Water Quality data model is intended to represent water quality parameters at a certain water mass (river,  lake, sea, etc.) section",
   "type": "object",

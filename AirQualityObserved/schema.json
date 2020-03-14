@@ -1,6 +1,6 @@
 {
   "$schema": "http://json-schema.org/schema#",
-  "$id": "https://smart-data-models.github.io/data-models/specs/Environment/AirQualityObserved/schema.json",
+  "$id": "https://smart-data-models.github.io/dataModel.Environment/AirQualityObserved/schema.json",
   "title": " - Air quality observed schema",
   "description": "An observation of air quality conditions at a certain place and time.",
   "type": "object",

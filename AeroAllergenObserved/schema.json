@@ -1,6 +1,6 @@
 {
   "$schema": "http://json-schema.org/schema#",
-  "$id": "https://smart-data-models.github.io/data-models/specs/Environment/AeroAllergenObserved/schema.json",
+  "$id": "https://smart-data-models.github.io/dataModel.Environment/AeroAllergenObserved/schema.json",
   "title": " - Pollen levels observed schema",
   "description": "An observation of pollen levels at a certain place and time.",
   "type": "object",
