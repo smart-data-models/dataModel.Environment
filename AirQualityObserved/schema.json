@@ -21,7 +21,7 @@
         "dateObserved": {
           "type": "string"
         },
-		"areaServed": {
+        "areaServed": {
           "type": "string"
         },
         "airQualityIndex": {
@@ -36,6 +36,71 @@
           "type": "number",
           "minimum": 0,
           "maximum": 1.0
+        },
+        "as": {
+          "type": "number",
+          "minimum": 0,
+          "description": "Arsenic"
+        },
+        "c6h6": {
+          "type": "number",
+          "minimum": 0,
+          "description": "Benzene"
+        },
+        "cd": {
+          "type": "number",
+          "minimum": 0,
+          "description": "Cadmium"
+        },
+        "co": {
+          "type": "number",
+          "minimum": 0,
+          "description": "Carbon Monoxide"
+        },
+        "ni": {
+          "type": "number",
+          "minimum": 0,
+          "description": "Nickel"
+        },
+        "no": {
+          "type": "number",
+          "minimum": 0,
+          "description": "Nitrogen monoxide"
+        }, 
+        "no2": {
+          "type": "number",
+          "minimum": 0,
+          "description": "Nitrogen dioxide"
+        },
+        "o3": {
+          "type": "number",
+          "minimum": 0,
+          "description": "ozone"
+        },
+       "pm10": {
+          "type": "number",
+          "minimum": 0,
+          "description": "Particulate matter 10 micrometers or less in diameter"
+        },
+        "pm25": {
+          "type": "number",
+          "minimum": 0,
+          "description": "Particulate matter 2.5 micrometers or less in diameter"
+        },
+        "pb": {
+          "type": "number",
+          "minimum": 0,
+          "description": "Lead"
+        },        
+        "sh2": {
+          "type": "number",
+          "minimum": 0,
+          "description": "Hydrogen sulfide"
+        },
+        "so2": {
+          "type": "number",
+          "minimum": 0,
+          "description": "Sulfur dioxide"
         },
         "refDevice": {
           "$ref": "https://smart-data-models.github.io/data-models/common-schema.json#/definitions/EntityIdentifierType"
