@@ -1,0 +1,2 @@
+"id", "type", "dateObserved__value", "temperature__value", "NO3__value", "location__value__coordinates", "pH__value", "measurand__value", "conductivity__value"
+"waterqualityobserved:Sevilla:D1", "WaterQualityObserved", "2017-01-31T06:45:00Z", "24.4", "0.01", "[-5.993307, 37.362882]", "7.4", "['NO3, 0.01, M1, Concentration of Nitrates']", "0.005"
