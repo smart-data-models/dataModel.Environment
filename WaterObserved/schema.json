@@ -1,0 +1,86 @@
+{
+	"$schema": "http://json-schema.org/schema#",
+    "schemaVersion": "0.0",
+	"$id": "https://smart-data-models.github.io/data-models/Environment/WaterObserved/schema.js",
+	"title": "Water Observed schema",
+	"description": " Water observation data model is intended to represent the parameters of flow, level and volume of water observed, as well as the swell information, over a fixed or variable area. This observation also includes the masses of floating objects on this area. The data collected is provided by Sensors, Cameras,Water stations positioned at specific or sensitive locations for rivers, streams, torrent, lakes, seas, etc.",
+	"type": "object",
+	"allOf": [{
+
+			"$ref": "https://smart-data-models.github.io/data-models/common-schema.json#/definitions/GSMA-Commons"
+		},
+		{
+			"$ref": "https://smart-data-models.github.io/data-models/common-schema.json#/definitions/Location-Commons"
+		},
+		{
+			"properties": {
+				"type": {
+					"type": "string",
+					"enum": ["WaterObserved"],
+					"description": "NGSI Entity type"
+				},
+				"refDevice": {
+					"$ref": "https://smart-data-models.github.io/data-models/common-schema.json#/definitions/EntityIdentifierType"
+				},
+				"dateObserved": {
+					"type": "string",
+					"format": "date-time"
+				},
+				"dateObservedFrom": {
+					"type": "string",
+					"format": "date-time"
+				},
+				"dateObservedTo": {
+					"type": "string",
+					"format": "date-time"
+				},
+				"flow": {
+					"type": "number",
+					"minimum": 0
+				},
+				"height": {
+					"type": "number",
+					"minimum": 0
+				},
+				"swellHeight": {
+					"type": "number",
+					"minimum": 0
+				},
+				"swellPeriod": {
+					"type": "number",
+					"minimum": 0
+				},
+				"swellDirection": {
+					"type": "number",
+					"minimum": 0,
+					"maximum": 360
+				},
+				"waveLength": {
+					"type": "number",
+					"minimum": 0
+				},
+				"measuredArea": {
+					"type": "number",
+					"minimum": 0
+				},
+				"objectArea": {
+					"type": "number",
+					"minimum": 0
+				},
+				"objectHeightAverage": {
+					"type": "number",
+					"minimum": 0
+				},
+				"objectHeightMax": {
+					"type": "number",
+					"minimum": 0
+				},
+				"objectVolume": {
+					"type": "number",
+					"minimum": 0
+				}
+			}
+		}
+	],
+	"required": ["id", "type", "location", "dateObserved"]
+}
