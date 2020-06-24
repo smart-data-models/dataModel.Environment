@@ -1,0 +1,73 @@
+AeroAllergenObserved:
+  required:
+    - id
+    - type
+    - dateObserved
+    - location
+  allOf:
+    - $ref: >-
+        https://raw.githubusercontent.com/smart-data-models/data-models/master/ngsi-ld.yaml#/Common
+  type: object
+  description: An observation of pollen levels at a certain place and time.
+  properties:
+    address:
+      $ref: >-
+        https://raw.githubusercontent.com/smart-data-models/data-models/master/schema.org.yaml#/address
+    allergenRisk:
+      x-ngsi:
+        type: Property
+        model: 'https://schema.org/Text'
+      type: string
+      description: ''
+    alternateName:
+      x-ngsi:
+        type: Property
+        model: 'https://schema.org/Text'
+      type: string
+      description: ''
+    areaServed:
+      x-ngsi:
+        type: Property
+        model: 'https://schema.org/Text'
+      type: string
+      description: ''
+    dataProvider:
+      x-ngsi:
+        type: Property
+        model: 'https://schema.org/Text'
+      type: string
+      description: ''
+    dateObserved:
+      x-ngsi:
+        type: Property
+        model: 'https://schema.org/Text'
+      type: string
+      description: ''
+    description:
+      $ref: >-
+        https://raw.githubusercontent.com/smart-data-models/data-models/master/ngsi-ld.yaml#/description
+    location:
+      $ref: >-
+        https://raw.githubusercontent.com/smart-data-models/data-models/master/ngsi-ld.yaml#/location
+    name:
+      $ref: >-
+        https://raw.githubusercontent.com/smart-data-models/data-models/master/ngsi-ld.yaml#/name
+    owner:
+      x-ngsi:
+        type: Property
+      type: array
+      description: ''
+      items:
+        anyOf:
+          - type: string
+            minLength: 1
+            maxLength: 256
+            pattern: '^[\w\-\.\{\}\$\+\*\[\]`|~^@!,:\\]+$'
+          - type: string
+            format: uri
+    source:
+      x-ngsi:
+        type: Property
+        model: 'https://schema.org/Text'
+      type: string
+      description: ''
