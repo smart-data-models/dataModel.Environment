@@ -6,7 +6,7 @@ WaterQualityObserved:
     - location
   allOf:
     - $ref: >-
-        https://raw.githubusercontent.com/smart-data-models/data-models/master/ngsi-ld.yaml#/Common
+        https://smart-data-models.github.io/data-models/ngsi-ld.yaml#/Common
   type: object
   description: >-
     Water Quality data model is intended to represent water quality parameters
@@ -54,13 +54,13 @@ WaterQualityObserved:
       description: ''
     address:
       $ref: >-
-        https://raw.githubusercontent.com/smart-data-models/data-models/master/schema.org.yaml#/address
+        https://smart-data-models.github.io/data-models/schema.org.yaml#/address
     alternateName:
       $ref: >-
-        https://raw.githubusercontent.com/smart-data-models/data-models/master/schema.org.yaml#/alternateName
+        https://smart-data-models.github.io/data-models/schema.org.yaml#/alternateName
     areaServed:
       $ref: >-
-        https://raw.githubusercontent.com/smart-data-models/data-models/master/schema.org.yaml#/areaServed
+        https://smart-data-models.github.io/data-models/schema.org.yaml#/areaServed
     conductance:
       x-ngsi:
         type: Property
@@ -72,11 +72,8 @@ WaterQualityObserved:
       type: number
       description: ''
     dataProvider:
-      x-ngsi:
-        type: Property
-        model: 'https://schema.org/Text'
-      type: string
-      description: ''
+      $ref: >-
+        https://smart-data-models.github.io/data-models/fiware-terms.yaml#/dataProvider
     dateObserved:
       x-ngsi:
         type: Property
@@ -85,10 +82,10 @@ WaterQualityObserved:
       description: ''
     description:
       $ref: >-
-        https://raw.githubusercontent.com/smart-data-models/data-models/master/ngsi-ld.yaml#/description
+        https://smart-data-models.github.io/data-models/ngsi-ld.yaml#/description
     location:
       $ref: >-
-        https://raw.githubusercontent.com/smart-data-models/data-models/master/ngsi-ld.yaml#/location
+        https://smart-data-models.github.io/data-models/ngsi-ld.yaml#/location
     measurand:
       x-ngsi:
         type: Property
@@ -98,26 +95,15 @@ WaterQualityObserved:
         type: string
     name:
       $ref: >-
-        https://raw.githubusercontent.com/smart-data-models/data-models/master/ngsi-ld.yaml#/name
+        https://smart-data-models.github.io/data-models/ngsi-ld.yaml#/name
     orp:
       x-ngsi:
         type: Property
       type: number
       description: ''
     owner:
-      x-ngsi:
-        type: Relationship
-        model: https://schema.org/URL  
-      type: array
-      description: ''
-      items:
-        anyOf:
-          - type: string
-            minLength: 1
-            maxLength: 256
-            pattern: '^[\w\-\.\{\}\$\+\*\[\]`|~^@!,:\\]+$'
-          - type: string
-            format: uri
+      $ref: >-
+        https://smart-data-models.github.io/data-models/fiware-terms.yaml#/owner
     pH:
       x-ngsi:
         type: Property
@@ -130,7 +116,7 @@ WaterQualityObserved:
       description: ''
     source:
       $ref: >-
-        https://raw.githubusercontent.com/smart-data-models/data-models/master/fiware-terms.yaml#/source
+        https://smart-data-models.github.io/data-models/fiware-terms.yaml#/source
     tds:
       x-ngsi:
         type: Property
