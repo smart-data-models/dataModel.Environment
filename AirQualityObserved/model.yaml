@@ -1,0 +1,146 @@
+AirQualityObserved:
+  required:
+    - id
+    - type
+    - dateObserved
+    - location
+  allOf:
+    - $ref: >-
+        https://smart-data-models.github.io/data-models/ngsi-ld.yaml#/Common
+  type: object
+  description: An observation of air quality conditions at a certain place and time.
+  properties:
+    address:
+      $ref: >-
+        https://smart-data-models.github.io/data-models/schema.org.yaml#/address
+    airQualityIndex:
+      x-ngsi:
+        type: Property
+        model: 'https://schema.org/Integer'
+      type: integer
+      description: ''
+      format: int32
+    airQualityLevel:
+      x-ngsi:
+        type: Property
+        model: 'https://schema.org/Text'
+      type: string
+      description: ''
+    alternateName:
+      $ref: >-
+        https://smart-data-models.github.io/data-models/schema.org.yaml#/alternateName
+    areaServed:
+      $ref: >-
+        https://smart-data-models.github.io/data-models/schema.org.yaml#/areaServed
+    as:
+      x-ngsi:
+        type: Property
+      type: number
+      description: Arsenic
+    c6h6:
+      x-ngsi:
+        type: Property
+      type: number
+      description: Benzene
+    cd:
+      x-ngsi:
+        type: Property
+      type: number
+      description: Cadmium
+    co:
+      x-ngsi:
+        type: Property
+      type: number
+      description: Carbon Monoxide
+    dataProvider:
+      $ref: >-
+        https://smart-data-models.github.io/data-models/fiware-terms.yaml#/dataProvider
+    dateObserved:
+      x-ngsi:
+        type: Property
+        model: 'https://schema.org/Text'
+      type: string
+      description: ''
+    description:
+      $ref: >-
+        https://smart-data-models.github.io/data-models/ngsi-ld.yaml#/description
+    location:
+      $ref: >-
+        https://smart-data-models.github.io/data-models/ngsi-ld.yaml#/location
+    name:
+      $ref: >-
+        https://smart-data-models.github.io/data-models/ngsi-ld.yaml#/name
+    ni:
+      x-ngsi:
+        type: Property
+      type: number
+      description: Nickel
+    'no':
+      x-ngsi:
+        type: Property
+      type: number
+      description: Nitrogen monoxide
+    no2:
+      x-ngsi:
+        type: Property
+      type: number
+      description: Nitrogen dioxide
+    o3:
+      x-ngsi:
+        type: Property
+      type: number
+      description: ozone
+    owner:
+      x-ngsi:
+        type: Relationship
+        model: https://schema.org/URL  
+      type: array
+      description: ''
+      items:
+        anyOf:
+          - type: string
+            minLength: 1
+            maxLength: 256
+            pattern: '^[\w\-\.\{\}\$\+\*\[\]`|~^@!,:\\]+$'
+          - type: string
+            format: uri
+    pb:
+      x-ngsi:
+        type: Property
+      type: number
+      description: Lead
+    pm10:
+      x-ngsi:
+        type: Property
+      type: number
+      description: Particulate matter 10 micrometers or less in diameter
+    pm25:
+      x-ngsi:
+        type: Property
+      type: number
+      description: Particulate matter 2.5 micrometers or less in diameter
+    reliability:
+      x-ngsi:
+        type: Property
+      type: number
+      description: ''
+    sh2:
+      x-ngsi:
+        type: Property
+      type: number
+      description: Hydrogen sulfide
+    so2:
+      x-ngsi:
+        type: Property
+      type: number
+      description: Sulfur dioxide
+    source:
+      $ref: >-
+        https://smart-data-models.github.io/data-models/fiware-terms.yaml#/source
+    volatileOrganicCompoundsTotal:
+      x-ngsi:
+        type: Property
+      type: number
+      description: >-
+        Alkanes <C10, ketones <C6, aldehydes <C10, carboxylic acids <C5,
+        aspirits<C7, Alkenes <C8, Aromatics
