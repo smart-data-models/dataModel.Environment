@@ -4,7 +4,7 @@
 Water observation data model is intended to represent the parameters of flow, level and volume of water observed, as well as the swell information, over a fixed or variable area. This observation also includes the masses of floating objects on this area.
 The data collected is provided by [Sensors], [Cameras], [Water stations] positioned at specific or sensitive locations for rivers, streams, torrent, lakes, seas, etc..
 
-Link to the (specification)[/doc/spec.md]
+Link to the [specification](/doc/spec.md)
 
 ## Examples of use
 
