@@ -13,9 +13,9 @@ NoiseLevelObserved:
     - $ref: >-
         https://smart-data-models.github.io/data-models/ngsi-ld.yaml#/Common
   type: object
-  description: >-
-    An observation of those acoustic parameters that estimate noise pressure
-    levels at a certain place and time. 
+  description: |
+    It represents an observation of those acoustic parameters that estimate noise pressure levels at a certain place and time.
+    This entity is primarily associated with the Smart City and environment vertical segments and related IoT applications.
   properties:
     address:
       $ref: >-
