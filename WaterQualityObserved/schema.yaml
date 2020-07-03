@@ -8,7 +8,7 @@ WaterQualityObserved:
     - $ref: >-
         https://raw.githubusercontent.com/smart-data-models/data-models/master/ngsi-ld.yaml#/Common
   type: object
-  description: >-
+  description: |
     Water Quality data model is intended to represent water quality parameters
     at a certain water mass (river,  lake, sea, etc.) section
   properties:

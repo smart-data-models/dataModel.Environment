@@ -95,19 +95,8 @@ AirQualityObserved:
       type: number
       description: ozone
     owner:
-      x-ngsi:
-        type: Relationship
-        model: https://schema.org/URL  
-      type: array
-      description: ''
-      items:
-        anyOf:
-          - type: string
-            minLength: 1
-            maxLength: 256
-            pattern: '^[\w\-\.\{\}\$\+\*\[\]`|~^@!,:\\]+$'
-          - type: string
-            format: uri
+      $ref: >-
+        https://smart-data-models.github.io/data-models/fiware-terms.yaml#/owner
     pb:
       x-ngsi:
         type: Property
@@ -145,6 +134,6 @@ AirQualityObserved:
       x-ngsi:
         type: Property
       type: number
-      description: >-
+      description: |
         Alkanes <C10, ketones <C6, aldehydes <C10, carboxylic acids <C5,
         aspirits<C7, Alkenes <C8, Aromatics

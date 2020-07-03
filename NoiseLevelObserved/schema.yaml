@@ -9,7 +9,7 @@ NoiseLevelObserved:
     - $ref: >-
         https://raw.githubusercontent.com/smart-data-models/data-models/master/ngsi-ld.yaml#/Common
   type: object
-  description: >-
+  description: |
     An observation of those acoustic parameters that estimate noise pressure
     levels at a certain place and time. 
   properties:
@@ -23,11 +23,8 @@ NoiseLevelObserved:
       $ref: >-
         https://raw.githubusercontent.com/smart-data-models/data-models/master/schema.org.yaml#/areaServed
     dataProvider:
-      x-ngsi:
-        type: Property
-        model: 'https://schema.org/Text'
-      type: string
-      description: ''
+      $ref: >-
+        https://smart-data-models.github.io/data-models/fiware-terms.yaml#/dataProvider
     dateObserved:
       x-ngsi:
         type: Property
