@@ -1,37 +1,37 @@
 description: This is a compilation list of all CONTRIBUTORS across different objects (data models) alphabetically ordered. All fields are non mandatory
 contributors:
 -
- name: Dmitrii
- surname:  Demin
- mail: mail@demin.co
- organization: None
- project: 
- comments: 
--
- name: Federico M.
- surname:  Facca
- mail: None
- organization: Martel Innovate
- project: 
- comments: 
--
  name: Jose M.
- surname:  Cantera
+ surname: Cantera
  mail: jmcanterafonseca4github@gmail.com
  organization: CanteraFonseca.EU
  project: 
  comments: 
 -
+ name: Dmitrii
+ surname: Demin
+ mail: mail@demin.co
+ organization:
+ project: 
+ comments: 
+-
+ name: Federico M.
+ surname: Facca
+ mail:
+ organization: Martel Innovate
+ project: 
+ comments: 
+-
  name: Jason
- surname:  Fox
+ surname: Fox
  mail: None
- organization: @Fiware 
+ organization: Fiware 
  project: 
  comments: 
 -
  name: Joud
- surname: 
- mail: None
- organization: None
+ surname: Sayed Issa
+ mail: joudsayedissa@gmail.com
+ organization: 
  project: 
  comments: 
