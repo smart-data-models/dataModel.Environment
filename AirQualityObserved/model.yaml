@@ -22,14 +22,14 @@ AirQualityObserved:
         type: Property
         model: 'https://schema.org/Integer'
       type: integer
-      description: ''
+      description: 'Air quality index corresponding to the air quality observed.'
       format: int32
     airQualityLevel:
       x-ngsi:
         type: Property
         model: 'https://schema.org/Text'
       type: string
-      description: ''
+      description: 'Overall qualitative level of health concern corresponding to the air quality observed.'
     alternateName:
       $ref: >-
         https://smart-data-models.github.io/data-models/schema.org.yaml#/alternateName
@@ -64,7 +64,7 @@ AirQualityObserved:
         type: Property
         model: 'https://schema.org/Text'
       type: string
-      description: ''
+      description: 'The date and time of this observation in ISO8601 UTCformat. It can be represented by an specific time instant or by an ISO8601 interval.'
     description:
       $ref: >-
         https://smart-data-models.github.io/data-models/ngsi-ld.yaml#/description
@@ -116,7 +116,7 @@ AirQualityObserved:
       x-ngsi:
         type: Property
       type: number
-      description: ''
+      description: 'Reliability (percentage, expressed in parts per one) corresponding to the air quality observed.'
     sh2:
       x-ngsi:
         type: Property
