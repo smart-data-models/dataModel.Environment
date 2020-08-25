@@ -46,7 +46,7 @@ AeroAllergenObserved:
         type: Property
         model: 'https://schema.org/Text'
       type: string
-      description: ''
+      description: 'The date and time of this observation in ISO8601 UTCformat. It can be represented by a specific time instant or by an ISO8601 interval.'
     description:
       $ref: >-
         https://smart-data-models.github.io/data-models/ngsi-ld.yaml#/description

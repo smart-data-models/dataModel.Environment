@@ -20,42 +20,42 @@ WaterQualityObserved:
       x-ngsi:
         type: Property
       type: number
-      description: ''
+      description: 'Concentration of chlorophyll A.'
     Cl-:
       x-ngsi:
         type: Property
       type: number
-      description: ''
+      description: 'Concentration of chlorides.'
     NH3:
       x-ngsi:
         type: Property
       type: number
-      description: ''
+      description: ' Concentration of ammonia.'
     NH4:
       x-ngsi:
         type: Property
       type: number
-      description: ''
+      description: ' Concentration of ammonium.'
     NO3:
       x-ngsi:
         type: Property
       type: number
-      description: ''
+      description: 'Concentration of nitrates.'
     O2:
       x-ngsi:
         type: Property
       type: number
-      description: ''
+      description: 'Level of free, non-compound oxygen present.'
     PC:
       x-ngsi:
         type: Property
       type: number
-      description: ''
+      description: 'Concentration of pigment phycocyanin which can be measured to estimate cyanobacteria concentrations specifically.'
     PE:
       x-ngsi:
         type: Property
       type: number
-      description: ''
+      description: 'Concentration of pigment phycoerythrin which can be measured to estimate cyanobacteria concentrations specifically.'
     address:
       $ref: >-
         https://smart-data-models.github.io/data-models/schema.org.yaml#/address
@@ -69,12 +69,12 @@ WaterQualityObserved:
       x-ngsi:
         type: Property
       type: number
-      description: ''
+      description: 'Specific Conductance.'
     conductivity:
       x-ngsi:
         type: Property
       type: number
-      description: ''
+      description: 'Electrical Conductivity.'
     dataProvider:
       $ref: >-
         https://smart-data-models.github.io/data-models/fiware-terms.yaml#/dataProvider
@@ -83,7 +83,7 @@ WaterQualityObserved:
         type: Property
         model: 'https://schema.org/Text'
       type: string
-      description: ''
+      description: 'The date and time of this observation in ISO8601 UTCformat. It can be represented by an specific time instant or by an ISO8601 interval.'
     description:
       $ref: >-
         https://smart-data-models.github.io/data-models/ngsi-ld.yaml#/description
@@ -94,7 +94,7 @@ WaterQualityObserved:
       x-ngsi:
         type: Property
       type: array
-      description: ''
+      description: 'An array of strings containing details (see format below) about extra measurands provided by this observation'
       items:
         type: string
     name:
@@ -104,7 +104,7 @@ WaterQualityObserved:
       x-ngsi:
         type: Property
       type: number
-      description: ''
+      description: 'Oxidation-Reduction potential.'
     owner:
       $ref: >-
         https://smart-data-models.github.io/data-models/fiware-terms.yaml#/owner
@@ -112,12 +112,12 @@ WaterQualityObserved:
       x-ngsi:
         type: Property
       type: number
-      description: ''
+      description: 'Acidity or basicity of an aqueous solution.'
     salinity:
       x-ngsi:
         type: Property
       type: number
-      description: ''
+      description: 'Amount of salts dissolved in water.'
     source:
       $ref: >-
         https://smart-data-models.github.io/data-models/fiware-terms.yaml#/source
@@ -125,19 +125,19 @@ WaterQualityObserved:
       x-ngsi:
         type: Property
       type: number
-      description: ''
+      description: ' Total dissolved solids.'
     temperature:
       x-ngsi:
         type: Property
       type: number
-      description: ''
+      description: 'Temperature.'
     tss:
       x-ngsi:
         type: Property
       type: number
-      description: ''
+      description: 'Total suspended solids.'
     turbidity:
       x-ngsi:
         type: Property
       type: number
-      description: ''
+      description: 'Amount of light scattered by particles in the water column.'

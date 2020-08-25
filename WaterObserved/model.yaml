@@ -31,21 +31,21 @@ WaterObserved:
         type: Property
         model: 'https://schema.org/DateTime'
       type: string
-      description: ''
+      description: 'Date and time of this observation represented by an ISO8601 UTCformat. It can be represented by an specific time instant or by an ISO8601 interval to separate attributes dateObservedFrom,dateObservedTo.'
       format: date-time
     dateObservedFrom:
       x-ngsi:
         type: Property
         model: 'https://schema.org/DateTime'
       type: string
-      description: ''
+      description: 'Observation period : Start date and time in an ISO8601 UTCformat.'
       format: date-time
     dateObservedTo:
       x-ngsi:
         type: Property
         model: 'https://schema.org/DateTime'
       type: string
-      description: ''
+      description: ' Observation period : End date and time in an ISO8601 UTCformat.'
       format: date-time
     description:
       $ref: >-
@@ -54,12 +54,12 @@ WaterObserved:
       x-ngsi:
         type: Property
       type: number
-      description: ''
+      description: ' Water Flow observed.'
     height:
       x-ngsi:
         type: Property
       type: number
-      description: ''
+      description: ' Water height - Level reach on alert coasts.'
     location:
       $ref: >-
         https://smart-data-models.github.io/data-models/ngsi-ld.yaml#/location
@@ -67,7 +67,7 @@ WaterObserved:
       x-ngsi:
         type: Property
       type: number
-      description: ''
+      description: 'Reference of the surface measured'
     name:
       $ref: >-
         https://smart-data-models.github.io/data-models/ngsi-ld.yaml#/name
@@ -75,22 +75,22 @@ WaterObserved:
       x-ngsi:
         type: Property
       type: number
-      description: ''
+      description: 'Percentage occupied by floating object in the area'
     objectHeightAverage:
       x-ngsi:
         type: Property
       type: number
-      description: ''
+      description: 'Average height raised'
     objectHeightMax:
       x-ngsi:
         type: Property
       type: number
-      description: ''
+      description: 'Average height raised.'
     objectVolume:
       x-ngsi:
         type: Property
       type: number
-      description: ''
+      description: 'Estimated volume raised'
     owner:
       $ref: >-
         https://smart-data-models.github.io/data-models/fiware-terms.yaml#/owner
@@ -101,19 +101,19 @@ WaterObserved:
       x-ngsi:
         type: Property
       type: number
-      description: ''
+      description: 'Swells Direction.'
     swellHeight:
       x-ngsi:
         type: Property
       type: number
-      description: ''
+      description: 'Swell height observed.'
     swellPeriod:
       x-ngsi:
         type: Property
       type: number
-      description: ''
+      description: 'Swells period'
     waveLength:
       x-ngsi:
         type: Property
       type: number
-      description: ''
+      description: 'Wave Length.'
