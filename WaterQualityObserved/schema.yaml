@@ -1,0 +1,139 @@
+WaterQualityObserved:
+  required:
+    - id
+    - type
+    - dateObserved
+    - location
+  allOf:
+    - $ref: >-
+        https://raw.githubusercontent.com/smart-data-models/data-models/master/ngsi-ld.yaml#/Common
+  type: object
+  description: |
+    Water Quality data model is intended to represent water quality parameters
+    at a certain water mass (river,  lake, sea, etc.) section
+  properties:
+    Chla:
+      x-ngsi:
+        type: Property
+      type: number
+      description: ''
+    Cl-:
+      x-ngsi:
+        type: Property
+      type: number
+      description: ''
+    NH3:
+      x-ngsi:
+        type: Property
+      type: number
+      description: ''
+    NH4:
+      x-ngsi:
+        type: Property
+      type: number
+      description: ''
+    NO3:
+      x-ngsi:
+        type: Property
+      type: number
+      description: ''
+    O2:
+      x-ngsi:
+        type: Property
+      type: number
+      description: ''
+    PC:
+      x-ngsi:
+        type: Property
+      type: number
+      description: ''
+    PE:
+      x-ngsi:
+        type: Property
+      type: number
+      description: ''
+    address:
+      $ref: >-
+        https://raw.githubusercontent.com/smart-data-models/data-models/master/schema.org.yaml#/address
+    alternateName:
+      $ref: >-
+        https://raw.githubusercontent.com/smart-data-models/data-models/master/schema.org.yaml#/alternateName
+    areaServed:
+      $ref: >-
+        https://raw.githubusercontent.com/smart-data-models/data-models/master/schema.org.yaml#/areaServed
+    conductance:
+      x-ngsi:
+        type: Property
+      type: number
+      description: ''
+    conductivity:
+      x-ngsi:
+        type: Property
+      type: number
+      description: ''
+    dataProvider:
+      $ref: >-
+        https://smart-data-models.github.io/data-models/fiware-terms.yaml#/dataProvider
+    dateObserved:
+      x-ngsi:
+        type: Property
+        model: 'https://schema.org/Text'
+      type: string
+      description: ''
+    description:
+      $ref: >-
+        https://raw.githubusercontent.com/smart-data-models/data-models/master/ngsi-ld.yaml#/description
+    location:
+      $ref: >-
+        https://raw.githubusercontent.com/smart-data-models/data-models/master/ngsi-ld.yaml#/location
+    measurand:
+      x-ngsi:
+        type: Property
+      type: array
+      description: ''
+      items:
+        type: string
+    name:
+      $ref: >-
+        https://raw.githubusercontent.com/smart-data-models/data-models/master/ngsi-ld.yaml#/name
+    orp:
+      x-ngsi:
+        type: Property
+      type: number
+      description: ''
+    owner:
+      $ref: >-
+        https://smart-data-models.github.io/data-models/fiware-terms.yaml#/owner
+    pH:
+      x-ngsi:
+        type: Property
+      type: number
+      description: ''
+    salinity:
+      x-ngsi:
+        type: Property
+      type: number
+      description: ''
+    source:
+      $ref: >-
+        https://raw.githubusercontent.com/smart-data-models/data-models/master/fiware-terms.yaml#/source
+    tds:
+      x-ngsi:
+        type: Property
+      type: number
+      description: ''
+    temperature:
+      x-ngsi:
+        type: Property
+      type: number
+      description: ''
+    tss:
+      x-ngsi:
+        type: Property
+      type: number
+      description: ''
+    turbidity:
+      x-ngsi:
+        type: Property
+      type: number
+      description: ''

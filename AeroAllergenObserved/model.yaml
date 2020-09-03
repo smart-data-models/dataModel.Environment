@@ -1,0 +1,64 @@
+---
+# Copyright (c) 2020 Contributors to Smart-Data-Models
+# see https://github.com/smart-data-models/dataModel.Environment
+
+AeroAllergenObserved:
+  required:
+    - id
+    - type
+    - dateObserved
+    - location
+  allOf:
+    - $ref: >-
+        https://smart-data-models.github.io/data-models/ngsi-ld.yaml#/Common
+  type: object
+  description: |
+    This data model has been developed based on
+    [GSMA](https://www.gsma.com/iot/iot-big-data/). Aero allergens strictly depends
+    on the geographical location. Common Aero allergens in Europe may be quite
+    different from the ones in US due to the different biological species. A list of
+    commonly used aero allergens in Europe can be found on
+    [polleninfo.org](https://www.polleninfo.org/en/allergy/profiles/) a web site
+    maintained by the European Aeroallergen Network. A World Health Organization
+    (WHO) Allergen Nomenclature (covering not only aero transported allergens) is
+    available at [http://www.allergen.org](http://www.allergen.org).
+  properties:
+    address:
+      $ref: >-
+        https://smart-data-models.github.io/data-models/schema.org.yaml#/address
+    allergenRisk:
+      x-ngsi:
+        type: Property
+        model: 'https://schema.org/Text'
+      type: string
+      description: ''
+    alternateName:
+      $ref: >-
+        https://smart-data-models.github.io/data-models/schema.org.yaml#/alternateName
+    areaServed:
+      $ref: >-
+        https://smart-data-models.github.io/data-models/schema.org.yaml#/areaServed
+    dataProvider:
+      $ref: >-
+        https://smart-data-models.github.io/data-models/fiware-terms.yaml#/dataProvider
+    dateObserved:
+      x-ngsi:
+        type: Property
+        model: 'https://schema.org/Text'
+      type: string
+      description: 'The date and time of this observation in ISO8601 UTCformat. It can be represented by a specific time instant or by an ISO8601 interval.'
+    description:
+      $ref: >-
+        https://smart-data-models.github.io/data-models/ngsi-ld.yaml#/description
+    location:
+      $ref: >-
+        https://smart-data-models.github.io/data-models/ngsi-ld.yaml#/location
+    name:
+      $ref: >-
+        https://smart-data-models.github.io/data-models/ngsi-ld.yaml#/name
+    owner:
+      $ref: >-
+        https://smart-data-models.github.io/data-models/fiware-terms.yaml#/owner
+    source:
+      $ref: >-
+        https://smart-data-models.github.io/data-models/fiware-terms.yaml#/source
