@@ -1,27 +1,39 @@
-<!--
-[![Status badge](https://img.shields.io/badge/status-draft-red.svg)](RELEASE_NOTES)
-[![Build badge](https://img.shields.io/travis/smart-data-models/dataModel.Environment.svg "Travis build status")](https://travis-ci.org/smart-data-models/dataModel.Environment/)
-[![License: CC BY 4.0](https://img.shields.io/badge/License-CC%20BY%204.0-lightgrey.svg)](https://creativecommons.org/licenses/by/4.0/)
--->
-# Environment Harmonized Data Models
+# dataModel.Environment
+These data models describe the main entities involved with smart applications that deal with environmental issues.
 
-These data models describe the main entities involved with smart applications
-that deal with environmental issues.
+The following entity types are available:
+- [AeroAllergenObserved](https://github.com/smart-data-models/dataModel.Environment/blob/master/AeroAllergenObserved/README.md). This data model has been developed based on
+[GSMA](https://www.gsma.com/iot/iot-big-data/). Aero allergens strictly depends
+on the geographical location. Common Aero allergens in Europe may be quite
+different from the ones in US due to the different biological species. A list of
+commonly used aero allergens in Europe can be found on
+[polleninfo.org](https://www.polleninfo.org/en/allergy/profiles/) a web site
+maintained by the European Aeroallergen Network. A World Health Organization
+(WHO) Allergen Nomenclature (covering not only aero transported allergens) is
+available at [http://www.allergen.org](http://www.allergen.org).
 
-The main entities identified are:
 
--   [`AeroAllergenObserved`](https://swagger.lab.fiware.org/?url=https://smart-data-models.github.io/dataModel.Environment/AeroAllergenObserved/swagger.yaml). It describes
-    aero allergens observed at a given location and related overall allergen
-    risk.
--   [`AirQualityObserved`](https://swagger.lab.fiware.org/?url=https://smart-data-models.github.io/dataModel.Environment/AirQualityObserved/swagger.yaml). It represents an
-    observation of air quality conditions at a certain place and time.
--   [`WaterQualityObserved`](https://swagger.lab.fiware.org/?url=https://smart-data-models.github.io/dataModel.Environment/WaterQualityObserved/swagger.yaml). Allows to
-    capture all the parameters involved in Water Quality scenarios, allowing to
-    deal with different scenarios: + Rivers and lakes. + Reservoirs like dams,
-    cisterns, impoudments. + Sea locations. + Swimming pools or fountains.
--   [`NoiseLevelObserved`](https://swagger.lab.fiware.org/?url=https://smart-data-models.github.io/dataModel.Environment/NoiseLevelObserved/swagger.yaml). It represents an
-    observation of those parameters that estimate noise pressure levels at a
-    certain place and time.
--   [`WaterObserved`](https://swagger.lab.fiware.org/?url=https://smart-data-models.github.io/dataModel.Environment/WaterObserved/swagger.yaml). is intended to represent 
-    the parameters of flow, level and volume of water observed, as well as the swell 
-    information, over a fixed or variable area.
+- [AirQualityObserved](https://github.com/smart-data-models/dataModel.Environment/blob/master/AirQualityObserved/README.md). An observation of air quality conditions at a certain place and time.
+
+- [NoiseLevelObserved](https://github.com/smart-data-models/dataModel.Environment/blob/master/NoiseLevelObserved/README.md). It represents an observation of those acoustic parameters that estimate noise pressure levels at a certain place and time.
+This entity is primarily associated with the Smart City and environment vertical segments and related IoT applications.
+
+
+- [WaterObserved](https://github.com/smart-data-models/dataModel.Environment/blob/master/WaterObserved/README.md).  Water observation data model is intended to represent the parameters of flow, level and volume of water observed, as well as the swell information, over a fixed or variable area. This observation also includes the masses of floating objects on this area. The data collected is provided by Sensors, Cameras,Water stations positioned at specific or sensitive locations for rivers, streams, torrent, lakes, seas, etc.
+
+- [WaterQualityObserved](https://github.com/smart-data-models/dataModel.Environment/blob/master/WaterQualityObserved/README.md). Water Quality data model is intended to represent water quality parameters
+at a certain water mass (river,  lake, sea, etc.) section
+
+
+
+The list of incubated (on development) data models are:
+
+[PhreaticObserved_incubated](https://github.com/smart-data-models/dataModel.Environment/tree/master/PhreaticObserved_incubated)
+
+[RainFallRadarObservation_incubated](https://github.com/smart-data-models/dataModel.Environment/tree/master/RainFallRadarObservation_incubated)
+
+[Link](https://github.com/smart-data-models/dataModel.Environment/blob/master/CONTRIBUTORS.yaml) to the 5 current contributors of the data models of this Subject.
+
+You can raise an [issue](https://github.com/smart-data-models/dataModel.Environment/issues) or submit your [PR](https://github.com/smart-data-models/dataModel.Environment/pulls) on existing data models
+
+
