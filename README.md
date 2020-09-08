@@ -1,6 +1,8 @@
 # dataModel.Environment
 These data models describe the main entities involved with smart applications that deal with environmental issues.
 
+### List of data models
+
 The following entity types are available:
 - [AeroAllergenObserved](https://github.com/smart-data-models/dataModel.Environment/blob/master/AeroAllergenObserved/README.md). This data model has been developed based on
 [GSMA](https://www.gsma.com/iot/iot-big-data/). Aero allergens strictly depends
@@ -26,14 +28,20 @@ at a certain water mass (river,  lake, sea, etc.) section
 
 
 
+
+### Incubated data models
 The list of incubated (on development) data models are:
 
-[PhreaticObserved_incubated](https://github.com/smart-data-models/dataModel.Environment/tree/master/PhreaticObserved_incubated)
+  - [PhreaticObserved_incubated](https://github.com/smart-data-models/dataModel.Environment/tree/master/PhreaticObserved_incubated)
 
-[RainFallRadarObservation_incubated](https://github.com/smart-data-models/dataModel.Environment/tree/master/RainFallRadarObservation_incubated)
+  - [RainFallRadarObservation_incubated](https://github.com/smart-data-models/dataModel.Environment/tree/master/RainFallRadarObservation_incubated)
 
+
+### Contributors
 [Link](https://github.com/smart-data-models/dataModel.Environment/blob/master/CONTRIBUTORS.yaml) to the 5 current contributors of the data models of this Subject.
 
+
+### Contribution
 You can raise an [issue](https://github.com/smart-data-models/dataModel.Environment/issues) or submit your [PR](https://github.com/smart-data-models/dataModel.Environment/pulls) on existing data models
 
 
