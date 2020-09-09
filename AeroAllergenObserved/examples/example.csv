@@ -1,2 +1,0 @@
-"id", "type", "alnus_Level", "alnus", "alnus_Allergenicity", "casuarina_Level", "casuarina", "casuarina_Allergenicity", "allergenRisk", "address__addressCountry", "address__addressLocality", "address__streetAddress", "dateModified", "dateObserved", "location__coordinates", "source"
-"AeroAllergenObserved-CDMX-Pollen-Cuajimalpa", "AeroAllergenObserved", "moderate", "40", "3", "low", "1", "3", "moderate", "MX", "Ciudad de México", "Colegio Franco-Inglés", "2018-02-16T17:24:39.00Z", "2018-02-11T00:00:00.00Z", "[-99.276977, 19.381877]", "http://rema.atmosfera.unam.mx/rema/"
