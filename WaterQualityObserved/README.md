@@ -9,7 +9,7 @@ at a certain water mass (river,  lake, sea, etc.) section
 
 Link to the [interactive specification](https://swagger.lab.fiware.org/?url=https://smart-data-models.github.io/dataModel.Environment/WaterQualityObserved/swagger.yaml)
 
-Link to the [specification](https://smart-data-models.github.io/dataModel.Environment/WaterQualityObserved/doc/spec.md)
+Link to the [specification](https://github.com/smart-data-models/dataModel.Environment/blob/master/WaterQualityObserved/doc/spec.md)
 ### Examples
 
 Link to the [example](https://smart-data-models.github.io/dataModel.Environment/WaterQualityObserved/examples/example.json) (keyvalues) for NGSI v2
