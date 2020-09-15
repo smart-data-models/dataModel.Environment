@@ -7,7 +7,7 @@ An observation of air quality conditions at a certain place and time.
 
 Link to the [interactive specification](https://swagger.lab.fiware.org/?url=https://smart-data-models.github.io/dataModel.Environment/AirQualityObserved/swagger.yaml)
 
-Link to the [specification](https://smart-data-models.github.io/dataModel.Environment/AirQualityObserved/doc/spec.md)
+Link to the [specification](https://github.com/smart-data-models/dataModel.Environment/blob/master/AirQualityObserved/doc/spec.md)
 ### Examples
 
 Link to the [example](https://smart-data-models.github.io/dataModel.Environment/AirQualityObserved/examples/example.json) (keyvalues) for NGSI v2
