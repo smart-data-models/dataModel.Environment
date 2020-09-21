@@ -63,6 +63,10 @@
             ]
         }
     },
+    "typeOfLocation": {
+        "type": "Property",
+        "value": "outdoor"
+    },
     "airQualityIndex": {
         "type": "Property",
         "value": 65

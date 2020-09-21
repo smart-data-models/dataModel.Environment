@@ -65,6 +65,9 @@
       "coordinates": [-3.712247222222222, 40.423852777777775]
     }
   },
+  "typeOfLocation": {
+    "value": "outdoor"
+  },
   "airQualityIndex": {
     "value": 65
   },

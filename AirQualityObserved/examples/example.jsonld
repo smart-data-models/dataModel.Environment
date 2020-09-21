@@ -17,6 +17,7 @@
  "id": "urn:ngsi-ld:AirQualityObserved:Madrid-AmbientObserved-28079004-2016-03-15T11:00:00",
  "location": {"coordinates": [-3.712247222222222, 40.423852777777775],
               "type": "Point"},
+ "typeOfLocation": "outdoor",
  "precipitation": 0,
  "refPointOfInterest": "urn:ngsi-ld:PointOfInterest:28079004-Pza.deEspanya",
  "relativeHumidity": 0.54,

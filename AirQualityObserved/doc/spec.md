@@ -113,6 +113,11 @@ A JSON Schema corresponding to this data model can be found
     -   Attribute type: Relationship. Reference to an entity of type `PointOfInterest`
     -   Optional
 
+-   `typeOfLocation` : Desciption about the location is outdoor or indoor
+    -   Attribute type: Property. [Text](https://schema.org/Text)
+    -   Allowed values: Enum [outdoor, indoor]
+    -   Optional
+    
 ### Representing air pollutants
 
 In order to enable a proper management of the concentrations of the different
