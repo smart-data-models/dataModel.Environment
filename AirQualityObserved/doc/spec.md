@@ -181,14 +181,14 @@ There are two options for representing them:
 -   A/ Through a linked entity of type `WeatherObserved` (attribute named
     `refWeatherObserved`).
 -   B/ Through a group of weather-related properties already defined by
-    [WeatherObserved](../../../Weather/WeatherObserved/doc/spec.md).
+    [WeatherObserved](https://github.com/smart-data-models/dataModel.Weather/blob/master/WeatherObserved/doc/spec.md).
 
 Below is the description of the attribute to be used for option A/.
 
 -   `refWeatherObserved` : Weather observed associated to the air quality
     conditions described by this entity.
     -   Attribute type: Relationship. Reference to a
-        [WeatherObserved](../../../Weather/WeatherObserved/doc/spec.md) entity.
+        [WeatherObserved](https://github.com/smart-data-models/dataModel.Weather/blob/master/WeatherObserved/doc/spec.md) entity.
     -   Optional
 
 **Note**: JSON Schemas are intended to capture the data type and associated
