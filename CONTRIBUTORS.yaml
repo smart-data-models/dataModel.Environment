@@ -5,40 +5,47 @@ contributors:
  surname: Cantera
  mail: jmcanterafonseca4github@gmail.com
  organization: CanteraFonseca.EU
- project: 
- comments: 
+ project:
+ comments:
 -
  name: Dmitrii
  surname: Demin
  mail: mail@demin.co
  organization:
- project: 
- comments: 
+ project:
+ comments:
 -
  name: Federico M.
  surname: Facca
  mail:
  organization: Martel Innovate
- project: 
- comments: 
+ project:
+ comments:
 -
  name: Jason
  surname: Fox
  mail:
- organization: Fiware 
- project: 
- comments: 
+ organization: Fiware
+ project:
+ comments:
 -
  name: Stephane
  surname: Roux
  mail: stephane.roux@nicecotedazur.org
  organization: Nice cote d'azur
- project: 
- comments: 
+ project:
+ comments:
 -
  name: Joud
  surname: Sayed Issa
  mail: joudsayedissa@gmail.com
- organization: 
- project: 
- comments: 
+ organization:
+ project:
+ comments:
+-
+  name: Daniel
+  surname: Villalba Mota
+  mail: daniel.villalba@fiware.zone
+  organization: FIWARE ZONE
+  project:
+  comments:

@@ -13,6 +13,7 @@
     "coordinates": [-3.712247222222222, 40.423852777777775]
   },
   "source": "http://datos.madrid.es",
+  "typeOfLocation": "outdoor",
   "precipitation": 0,
   "relativeHumidity": 0.54,
   "temperature": 12.2,
