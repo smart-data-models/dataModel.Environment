@@ -17,17 +17,20 @@
         "type": {
           "type": "string",
           "enum": ["AeroAllergenObserved"],
-          "description": "NGSI Entity type"
+          "description": "Property. NGSI Entity type"
         },
         "dateObserved": {
-          "type": "string"
+          "type": "string",
+          "description": "Property. "
         },
         "allergenRisk": {
           "type": "string",
-          "enum": ["none", "low", "moderate", "high", "veryHigh"]
+          "enum": ["none", "low", "moderate", "high", "veryHigh"],
+          "description": "Property. "
         },
         "refDevice": {
-          "$ref": "https://smart-data-models.github.io/data-models/common-schema.json#/definitions/EntityIdentifierType"
+          "$ref": "https://smart-data-models.github.io/data-models/common-schema.json#/definitions/EntityIdentifierType",
+          "description": "Relationship. "
         }
       }
     }
