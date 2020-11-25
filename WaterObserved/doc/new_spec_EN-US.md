@@ -7,7 +7,8 @@ Entity: WaterObserved
 
 - `address`: The mailing address.  - `alternateName`: An alternative name for this item  - `areaServed`: The geographic area where a service or offered item is provided.  - `dataProvider`: A sequence of characters identifying the provider of the harmonised data entity.  - `dateCreated`: Entity creation timestamp. This will usually be allocated by the storage platform.  - `dateModified`: Timestamp of the last modification of the entity. This will usually be allocated by the storage platform.  - `dateObserved`:   - `dateObservedFrom`:   - `dateObservedTo`:   - `description`: A description of this item  - `flow`:   - `height`:   - `id`:   - `location`:   - `measuredArea`:   - `name`: The name of this item.  - `objectArea`:   - `objectHeightAverage`:   - `objectHeightMax`:   - `objectVolume`:   - `owner`: A List containing a JSON encoded sequence of characters referencing the unique Ids of the owner(s)  - `refDevice`:   - `seeAlso`:   - `source`: A sequence of characters giving the original source of the entity data as a URL. Recommended to be the fully qualified domain name of the source provider, or the URL to the source object.  - `swellDirection`:   - `swellHeight`:   - `swellPeriod`:   - `type`: NGSI Entity type  - `waveLength`:   ## Data Model description of properties  
 Sorted alphabetically  
-```yaml  
+<details><summary><strong>full yaml details</strong></summary>    
+```yaml  
 WaterObserved:    
   description: ' Water observation data model is intended to represent the parameters of flow, level and volume of water observed, as well as the swell information, over a fixed or variable area. This observation also includes the masses of floating objects on this area. The data collected is provided by Sensors, Cameras,Water stations positioned at specific or sensitive locations for rivers, streams, torrent, lakes, seas, etc.'    
   properties:    
@@ -283,6 +284,7 @@ WaterObserved:
     - dateObserved    
   type: object    
 ```  
+</details>    
 #### WaterObserved NGSI V2 key-values Example    
 Here is an example of a WaterObserved in JSON format as key-values. This is compatible with NGSI V2 when  using `options=keyValues` and returns the context data of an individual entity.  
 ```json  
