@@ -5,8 +5,10 @@ Entity: AeroAllergenObserved
 
 ## List of properties  
 
-- `address`: The mailing address.  - `allergenRisk`:   - `alternateName`: An alternative name for this item  - `areaServed`: The geographic area where a service or offered item is provided.  - `dataProvider`: A sequence of characters identifying the provider of the harmonised data entity.  - `dateCreated`: Entity creation timestamp. This will usually be allocated by the storage platform.  - `dateModified`: Timestamp of the last modification of the entity. This will usually be allocated by the storage platform.  - `dateObserved`:   - `description`: A description of this item  - `id`:   - `location`:   - `name`: The name of this item.  - `owner`: A List containing a JSON encoded sequence of characters referencing the unique Ids of the owner(s)  - `refDevice`:   - `seeAlso`:   - `source`: A sequence of characters giving the original source of the entity data as a URL. Recommended to be the fully qualified domain name of the source provider, or the URL to the source object.  - `type`: NGSI Entity type  ## Data Model description of properties  
-Sorted alphabetically  
+- `address`: The mailing address.  - `allergenRisk`:   - `alternateName`: An alternative name for this item  - `areaServed`: The geographic area where a service or offered item is provided.  - `dataProvider`: A sequence of characters identifying the provider of the harmonised data entity.  - `dateCreated`: Entity creation timestamp. This will usually be allocated by the storage platform.  - `dateModified`: Timestamp of the last modification of the entity. This will usually be allocated by the storage platform.  - `dateObserved`:   - `description`: A description of this item  - `id`:   - `location`:   - `name`: The name of this item.  - `owner`: A List containing a JSON encoded sequence of characters referencing the unique Ids of the owner(s)  - `refDevice`:   - `seeAlso`:   - `source`: A sequence of characters giving the original source of the entity data as a URL. Recommended to be the fully qualified domain name of the source provider, or the URL to the source object.  - `type`: NGSI Entity type    
+Required properties  
+- `dateObserved`  - `id`  - `location`  - `type`  ## Data Model description of properties  
+Sorted alphabetically (click for details)  
 <details><summary><strong>full yaml details</strong></summary>    
 ```yaml  
 AeroAllergenObserved:    
@@ -252,6 +254,7 @@ AeroAllergenObserved:
   type: object    
 ```  
 </details>    
+## Example payloads    
 #### AeroAllergenObserved NGSI V2 key-values Example    
 Here is an example of a AeroAllergenObserved in JSON format as key-values. This is compatible with NGSI V2 when  using `options=keyValues` and returns the context data of an individual entity.  
 ```json  
@@ -280,7 +283,7 @@ AeroAllergenObserved:
 }  
 ```  
 #### AeroAllergenObserved NGSI V2 normalized Example    
-Here is an example of a AeroAllergenObserved in JSON format as normalized. This is compatible with NGSI V2 when  using `options=keyValues` and returns the context data of an individual entity.  
+Here is an example of a AeroAllergenObserved in JSON format as normalized. This is compatible with NGSI V2 when not using options and returns the context data of an individual entity.  
 ```json  
 {  
   "id": "AeroAllergenObserved-CDMX-Pollen-Cuajimalpa",  
@@ -335,7 +338,7 @@ AeroAllergenObserved:
 }  
 ```  
 #### AeroAllergenObserved NGSI-LD key-values Example    
-Here is an example of a AeroAllergenObserved in JSON-LD format as key-values. This is compatible with NGSI-LD when not using options and returns the context data of an individual entity.  
+Here is an example of a AeroAllergenObserved in JSON-LD format as key-values. This is compatible with NGSI-LD when  using `options=keyValues` and returns the context data of an individual entity.  
 ```json  
 {"@context": ["https://schema.lab.fiware.org/ld/context",  
               "https://uri.etsi.org/ngsi-ld/v1/ngsi-ld-core-context.jsonld"],  
