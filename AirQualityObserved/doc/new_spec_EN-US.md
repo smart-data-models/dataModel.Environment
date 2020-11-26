@@ -5,8 +5,10 @@ Entity: AirQualityObserved
 
 ## List of properties  
 
-- `address`: The mailing address.  - `airQualityIndex`:   - `airQualityLevel`:   - `alternateName`: An alternative name for this item  - `areaServed`:   - `as`: Arsenic  - `c6h6`: Benzene  - `cd`: Cadmium  - `co`: Carbon Monoxide  - `dataProvider`: A sequence of characters identifying the provider of the harmonised data entity.  - `dateCreated`: Entity creation timestamp. This will usually be allocated by the storage platform.  - `dateModified`: Timestamp of the last modification of the entity. This will usually be allocated by the storage platform.  - `dateObserved`:   - `description`: A description of this item  - `id`:   - `location`:   - `name`: The name of this item.  - `ni`: Nickel  - `False`: Nitrogen monoxide  - `no2`: Nitrogen dioxide  - `o3`: ozone  - `owner`: A List containing a JSON encoded sequence of characters referencing the unique Ids of the owner(s)  - `pb`: Lead  - `pm10`: Particulate matter 10 micrometers or less in diameter  - `pm25`: Particulate matter 2.5 micrometers or less in diameter  - `refDevice`:   - `refPointOfInterest`:   - `refWeatherObserved`:   - `reliability`:   - `seeAlso`:   - `sh2`: Hydrogen sulfide  - `so2`: Sulfur dioxide  - `source`: A sequence of characters giving the original source of the entity data as a URL. Recommended to be the fully qualified domain name of the source provider, or the URL to the source object.  - `type`: NGSI Entity type  - `volatileOrganicCompoundsTotal`: Alkanes <C10, ketones <C6, aldehydes <C10, carboxylic acids <C5, aspirits<C7, Alkenes <C8, Aromatics  ## Data Model description of properties  
-Sorted alphabetically  
+- `address`: The mailing address.  - `airQualityIndex`:   - `airQualityLevel`:   - `alternateName`: An alternative name for this item  - `areaServed`:   - `as`: Arsenic  - `c6h6`: Benzene  - `cd`: Cadmium  - `co`: Carbon Monoxide  - `dataProvider`: A sequence of characters identifying the provider of the harmonised data entity.  - `dateCreated`: Entity creation timestamp. This will usually be allocated by the storage platform.  - `dateModified`: Timestamp of the last modification of the entity. This will usually be allocated by the storage platform.  - `dateObserved`:   - `description`: A description of this item  - `id`:   - `location`:   - `name`: The name of this item.  - `ni`: Nickel  - `False`: Nitrogen monoxide  - `no2`: Nitrogen dioxide  - `o3`: ozone  - `owner`: A List containing a JSON encoded sequence of characters referencing the unique Ids of the owner(s)  - `pb`: Lead  - `pm10`: Particulate matter 10 micrometers or less in diameter  - `pm25`: Particulate matter 2.5 micrometers or less in diameter  - `refDevice`:   - `refPointOfInterest`:   - `refWeatherObserved`:   - `reliability`:   - `seeAlso`:   - `sh2`: Hydrogen sulfide  - `so2`: Sulfur dioxide  - `source`: A sequence of characters giving the original source of the entity data as a URL. Recommended to be the fully qualified domain name of the source provider, or the URL to the source object.  - `type`: NGSI Entity type  - `volatileOrganicCompoundsTotal`: Alkanes <C10, ketones <C6, aldehydes <C10, carboxylic acids <C5, aspirits<C7, Alkenes <C8, Aromatics    
+Required properties  
+- `dateObserved`  - `id`  - `location`  - `type`  ## Data Model description of properties  
+Sorted alphabetically (click for details)  
 <details><summary><strong>full yaml details</strong></summary>    
 ```yaml  
 AirQualityObserved:    
@@ -313,6 +315,7 @@ AirQualityObserved:
   type: object    
 ```  
 </details>    
+## Example payloads    
 #### AirQualityObserved NGSI V2 key-values Example    
 Here is an example of a AirQualityObserved in JSON format as key-values. This is compatible with NGSI V2 when  using `options=keyValues` and returns the context data of an individual entity.  
 ```json  
@@ -350,7 +353,7 @@ AirQualityObserved:
 }  
 ```  
 #### AirQualityObserved NGSI V2 normalized Example    
-Here is an example of a AirQualityObserved in JSON format as normalized. This is compatible with NGSI V2 when  using `options=keyValues` and returns the context data of an individual entity.  
+Here is an example of a AirQualityObserved in JSON format as normalized. This is compatible with NGSI V2 when not using options and returns the context data of an individual entity.  
 ```json  
 {  
   "id": "Madrid-AmbientObserved-28079004-2016-03-15T11:00:00",  
@@ -456,7 +459,7 @@ AirQualityObserved:
 }  
 ```  
 #### AirQualityObserved NGSI-LD key-values Example    
-Here is an example of a AirQualityObserved in JSON-LD format as key-values. This is compatible with NGSI-LD when not using options and returns the context data of an individual entity.  
+Here is an example of a AirQualityObserved in JSON-LD format as key-values. This is compatible with NGSI-LD when  using `options=keyValues` and returns the context data of an individual entity.  
 ```json  
 {"@context": ["https://schema.lab.fiware.org/ld/context",  
               "https://uri.etsi.org/ngsi-ld/v1/ngsi-ld-core-context.jsonld"],  
