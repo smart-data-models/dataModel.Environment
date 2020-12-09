@@ -58,12 +58,12 @@
         "turbidity": {
           "type": "number",
           "minimum": 0,
-          "description": "Property. Model:'https://schema.org/Number' Amount of light scattered by particles in the water column"
+          "description": "Property. Amount of light scattered by particles in the water column"
         },
         "salinity": {
           "type": "number",
           "minimum": 0,
-          "description": "Property. Model:'https://schema.org/Number' Amount of salts dissolved in water."
+          "description": "Property. Amount of salts dissolved in water."
         },
         "pH": {
           "type": "number",
