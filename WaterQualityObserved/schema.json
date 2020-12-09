@@ -33,7 +33,7 @@
         },
         "temperature": {
           "type": "number",
-          "description": "Property. Model:'https://schema.org/Number' Temperature"
+          "description": "Property. Temperature"
         },
         "conductivity": {
           "type": "number",
