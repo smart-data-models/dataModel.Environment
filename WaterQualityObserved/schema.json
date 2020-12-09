@@ -21,7 +21,7 @@
         },
         "dateObserved": {
           "type": "string",
-          "description": "Property. Model:'https://schema.org/DateTime' The date and time of this observation in ISO8601 UTCformat. It can be represented by an specific time instant or by an ISO8601 interval."
+          "description": "Property. Model:'https://schema.org/DateTime'. The date and time of this observation in ISO8601 UTCformat. It can be represented by an specific time instant or by an ISO8601 interval."
         },
         "measurand": {
           "type": "array",
@@ -117,8 +117,21 @@
           "description": "Property. Concentration of nitrates."
         },
         "refPointOfInterest": {
-          "$ref": "https://smart-data-models.github.io/data-models/common-schema.json#/definitions/EntityIdentifierType"
-        }
+          "anyOf": [
+            {
+              "type": "string",
+              "minLength": 1,
+              "maxLength": 256,
+              "pattern": "^[\\w\\-\\.\\{\\}\\$\\+\\*\\[\\]`|~^@!,:\\\\]+$",
+              "description": "Property. Identifier format of any NGSI entity"
+            },
+            {
+              "type": "string",
+              "format": "uri",
+              "description": "Property. Identifier format of any NGSI entity"
+            }
+          ],
+          "description": "Relationship. A reference to a point of interest associated to this observation."        }
       }
     }
   ],
