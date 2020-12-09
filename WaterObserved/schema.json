@@ -1,101 +1,108 @@
 {
-	"$schema": "http://json-schema.org/schema#",
-    "schemaVersion": "0.0",
-	"$id": "https://smart-data-models.github.io/data-models/Environment/WaterObserved/schema.js",
-	"title": "Water Observed schema",
-	"description": " Water observation data model is intended to represent the parameters of flow, level and volume of water observed, as well as the swell information, over a fixed or variable area. This observation also includes the masses of floating objects on this area. The data collected is provided by Sensors, Cameras,Water stations positioned at specific or sensitive locations for rivers, streams, torrent, lakes, seas, etc.",
-	"type": "object",
-	"allOf": [{
-
-			"$ref": "https://smart-data-models.github.io/data-models/common-schema.json#/definitions/GSMA-Commons"
-		},
-		{
-			"$ref": "https://smart-data-models.github.io/data-models/common-schema.json#/definitions/Location-Commons"
-		},
-		{
-			"properties": {
-				"type": {
-					"type": "string",
-					"enum": ["WaterObserved"],
-					"description": "Property. NGSI Entity type"
-				},
-				"refDevice": {
-					"$ref": "https://smart-data-models.github.io/data-models/common-schema.json#/definitions/EntityIdentifierType",
-					"description": "Relationschip. "	
-				},
-				"dateObserved": {
-					"type": "string",
-					"format": "date-time",
-					"description": "Property. Model:'https://schema.org/DateTime'"
-				},
-				"dateObservedFrom": {
-					"type": "string",
-					"format": "date-time",
-					"description": "Property. Model:'https://schema.org/DateTime'"
-				},
-				"dateObservedTo": {
-					"type": "string",
-					"format": "date-time",
-					"description": "Property. Model:'https://schema.org/DateTime'"
-				},
-				"flow": {
-					"type": "number",
-					"minimum": 0,
-					"description": "Property. Model:'https://schema.org/Number'"
-				},
-				"height": {
-					"type": "number",
-					"minimum": 0,
-					"description": "Property. Model:'https://schema.org/Number'"
-				},
-				"swellHeight": {
-					"type": "number",
-					"minimum": 0,
-					"description": "Property. Model:'https://schema.org/Number'"
-				},
-				"swellPeriod": {
-					"type": "number",
-					"minimum": 0,
-					"description": "Property. Model:'https://schema.org/Number'"
-				},
-				"swellDirection": {
-					"type": "number",
-					"minimum": 0,
-					"maximum": 360,
-					"description": "Property. Model:'https://schema.org/Number'"
-				},
-				"waveLength": {
-					"type": "number",
-					"minimum": 0,
-					"description": "Property. Model:'https://schema.org/Number'"
-				},
-				"measuredArea": {
-					"type": "number",
-					"minimum": 0,
-					"description": "Property. Model:'https://schema.org/Number'"
-				},
-				"objectArea": {
-					"type": "number",
-					"minimum": 0,
-					"description": "Property. Model:'https://schema.org/Number'"
-				},
-				"objectHeightAverage": {
-					"type": "number",
-					"minimum": 0,
-					"description": "Property. Model:'https://schema.org/Number'"
-				},
-				"objectHeightMax": {
-					"type": "number",
-					"minimum": 0,
-					"description": "Property. Model:'https://schema.org/Number'"
-				},
-				"objectVolume": {
-					"type": "number",
-					"minimum": 0,
-					"description": "Property. Model:'https://schema.org/Number'"
-				}
-			}
-		}
-	],
-	"required": ["id", "type", "location", "dateObserved"]
+  "$schema": "http://json-schema.org/schema#",
+  "schemaVersion": "0.0",
+  "$id": "https://smart-data-models.github.io/data-models/Environment/WaterObserved/schema.js",
+  "title": "Water Observed schema",
+  "description": " Water observation data model is intended to represent the parameters of flow, level and volume of water observed, as well as the swell information, over a fixed or variable area. This observation also includes the masses of floating objects on this area. The data collected is provided by Sensors, Cameras,Water stations positioned at specific or sensitive locations for rivers, streams, torrent, lakes, seas, etc.",
+  "type": "object",
+  "allOf": [
+    {
+      "$ref": "https://smart-data-models.github.io/data-models/common-schema.json#/definitions/GSMA-Commons"
+    },
+    {
+      "$ref": "https://smart-data-models.github.io/data-models/common-schema.json#/definitions/Location-Commons"
+    },
+    {
+      "properties": {
+        "type": {
+          "type": "string",
+          "enum": [
+            "WaterObserved"
+          ],
+          "description": "Property. NGSI Entity type"
+        },
+        "refDevice": {
+          "$ref": "https://smart-data-models.github.io/data-models/common-schema.json#/definitions/EntityIdentifierType",
+          "description": "Relationschip. "
+        },
+        "dateObserved": {
+          "type": "string",
+          "format": "date-time",
+          "description": "Property. Model:'https://schema.org/DateTime'. Date and time of this observation represented by an ISO8601 UTC format."
+        },
+        "dateObservedFrom": {
+          "type": "string",
+          "format": "date-time",
+          "description": "Property. Model:'https://schema.org/DateTime'. Observation period : Start date and time in an ISO8601 UTC format."
+        },
+        "dateObservedTo": {
+          "type": "string",
+          "format": "date-time",
+          "description": "Property. Model:'https://schema.org/DateTime'. Observation period : End date and time in an ISO8601 UTC format."
+        },
+        "flow": {
+          "type": "number",
+          "minimum": 0,
+          "description": "Property. Model:'https://schema.org/Number'. Water Flow observed. The unit code (text) of measurement given using the UN/CEFACAT"
+        },
+        "height": {
+          "type": "number",
+          "minimum": 0,
+          "description": "Property. Model:'https://schema.org/Number'. Water height - Level reach on alert coasts."
+        },
+        "swellHeight": {
+          "type": "number",
+          "minimum": 0,
+          "description": "Property. Model:'https://schema.org/Number'. Water height - Level reach on alert coasts."
+        },
+        "swellPeriod": {
+          "type": "number",
+          "minimum": 0,
+          "description": "Property. Model:'https://schema.org/Number'. Water height - Level reach on alert coasts."
+        },
+        "swellDirection": {
+          "type": "number",
+          "minimum": 0,
+          "maximum": 360,
+          "description": "Property. Model:'https://schema.org/Number'. Water height - Level reach on alert coasts."
+        },
+        "waveLength": {
+          "type": "number",
+          "minimum": 0,
+          "description": "Property. Model:'https://schema.org/Number'. Water height - Level reach on alert coasts. "
+        },
+        "measuredArea": {
+          "type": "number",
+          "minimum": 0,
+          "description": "Property. Model:'https://schema.org/Number'. Water height - Level reach on alert coasts. "
+        },
+        "objectArea": {
+          "type": "number",
+          "minimum": 0,
+          "description": "Property. Model:'https://schema.org/Number'. Percentage occupied by floating object in the area."
+        },
+        "objectHeightAverage": {
+          "type": "number",
+          "minimum": 0,
+          "description": "Property. Model:'https://schema.org/Number'. Average height raised."
+        },
+        "objectHeightMax": {
+          "type": "number",
+          "minimum": 0,
+          "description": "Property. Model:'https://schema.org/Number'. Maximum height raised."
+        },
+        "objectVolume": {
+          "type": "number",
+          "minimum": 0,
+          "description": "Property. Model:'https://schema.org/Number'. Estimated volume raised."
+        }
+      }
+    }
+  ],
+  "required": [
+    "id",
+    "type",
+    "location",
+    "dateObserved"
+  ]
 }
