@@ -17,105 +17,153 @@
         "type": {
           "type": "string",
           "enum": ["AirQualityObserved"],
-          "description": "NGSI Entity type"
+          "description": "Property. NGSI Entity type"
         },
         "dateObserved": {
-          "type": "string"
+          "type": "string",
+          "description": "Property. The date and time of this observation in ISO8601 UTCformat. Model:'https://schema.org/Text' "
         },
         "areaServed": {
-          "type": "string"
+          "type": "string",
+          "description": "Property. Higher level area to which this air quality measurement belongs to. Model:'https://schema.org/Text' "
         },
         "airQualityIndex": {
           "type": "integer",
-          "minimum": 0
+          "minimum": 0,
+          "description": "Property. Air quality index corresponding to the air quality observed. Model:'https://schema.org/Number' "
         },
         "airQualityLevel": {
           "type": "string",
-          "minLength": 2
+          "minLength": 2,
+          "description": "Property. Overall qualitative level of health concern corresponding to the air quality observed. Model:'https://schema.org/Tex' "
         },
         "reliability": {
           "type": "number",
           "minimum": 0,
-          "maximum": 1.0
+          "maximum": 1.0,
+          "description": "Property. Reliability (percentage, expressed in parts per one) corresponding to the air quality observed. Model:'https://schema.org/Number' "
         },
         "as": {
           "type": "number",
           "minimum": 0,
-          "description": "Arsenic"
+          "description": "Property. Arsenic"
         },
         "c6h6": {
           "type": "number",
           "minimum": 0,
-          "description": "Benzene"
+          "description": "Property. Benzene"
         },
         "cd": {
           "type": "number",
           "minimum": 0,
-          "description": "Cadmium"
+          "description": "Property. Cadmium"
         },
         "co": {
           "type": "number",
           "minimum": 0,
-          "description": "Carbon Monoxide"
+          "description": "Property. Carbon Monoxide"
         },
         "ni": {
           "type": "number",
           "minimum": 0,
-          "description": "Nickel"
+          "description": "Property. Nickel"
         },
         "no": {
           "type": "number",
           "minimum": 0,
-          "description": "Nitrogen monoxide"
+          "description": "Property. Nitrogen monoxide"
         }, 
         "no2": {
           "type": "number",
           "minimum": 0,
-          "description": "Nitrogen dioxide"
+          "description": "Property. Nitrogen dioxide"
         },
         "o3": {
           "type": "number",
           "minimum": 0,
-          "description": "ozone"
+          "description": "Property. ozone"
         },
        "pm10": {
           "type": "number",
           "minimum": 0,
-          "description": "Particulate matter 10 micrometers or less in diameter"
+          "description": "Property. Particulate matter 10 micrometers or less in diameter"
         },
         "pm25": {
           "type": "number",
           "minimum": 0,
-          "description": "Particulate matter 2.5 micrometers or less in diameter"
+          "description": "Property. Particulate matter 2.5 micrometers or less in diameter"
         },
         "pb": {
           "type": "number",
           "minimum": 0,
-          "description": "Lead"
+          "description": "Property. Lead"
         },        
         "sh2": {
           "type": "number",
           "minimum": 0,
-          "description": "Hydrogen sulfide"
+          "description": "Property. Hydrogen sulfide"
         },
         "so2": {
           "type": "number",
           "minimum": 0,
-          "description": "Sulfur dioxide"
+          "description": "Property. Sulfur dioxide"
         },
          "volatileOrganicCompoundsTotal": {
           "type": "number",
           "minimum": 0,
-          "description": "Alkanes <C10, ketones <C6, aldehydes <C10, carboxylic acids <C5, aspirits<C7, Alkenes <C8, Aromatics"
+          "description": "Property. Alkanes <C10, ketones <C6, aldehydes <C10, carboxylic acids <C5, aspirits<C7, Alkenes <C8, Aromatics"
         },
         "refDevice": {
-          "$ref": "https://smart-data-models.github.io/data-models/common-schema.json#/definitions/EntityIdentifierType"
+          "anyOf": [
+            {
+              "type": "string",
+              "minLength": 1,
+              "maxLength": 256,
+              "pattern": "^[\\w\\-\\.\\{\\}\\$\\+\\*\\[\\]`|~^@!,:\\\\]+$",
+              "description": "Property. Identifier format of any NGSI entity"
+            },
+            {
+              "type": "string",
+              "format": "uri",
+              "description": "Property. Identifier format of any NGSI entity"
+            }
+          ],
+          "description": "Relationship. A reference to the device(s) which captured this observation."
         },
         "refPointOfInterest": {
-          "$ref": "https://smart-data-models.github.io/data-models/common-schema.json#/definitions/EntityIdentifierType"
+          "anyOf": [
+            {
+              "type": "string",
+              "minLength": 1,
+              "maxLength": 256,
+              "pattern": "^[\\w\\-\\.\\{\\}\\$\\+\\*\\[\\]`|~^@!,:\\\\]+$",
+              "description": "Property. Identifier format of any NGSI entity"
+            },
+            {
+              "type": "string",
+              "format": "uri",
+              "description": "Property. Identifier format of any NGSI entity"
+            }
+          ],          
+          "description": "Relationship. A reference to a point of interest (usually an air quality station) associated to this observation."
+
         },
         "refWeatherObserved": {
-          "$ref": "https://smart-data-models.github.io/data-models/common-schema.json#/definitions/EntityIdentifierType"
+          "anyOf": [
+            {
+              "type": "string",
+              "minLength": 1,
+              "maxLength": 256,
+              "pattern": "^[\\w\\-\\.\\{\\}\\$\\+\\*\\[\\]`|~^@!,:\\\\]+$",
+              "description": "Property. Identifier format of any NGSI entity"
+            },
+            {
+              "type": "string",
+              "format": "uri",
+              "description": "Property. Identifier format of any NGSI entity"
+            }
+          ],          
+          "description": "Relationship.  Weather observed associated to the air quality conditions described by this entity."
         }
       }
     }

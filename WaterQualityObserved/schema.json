@@ -17,89 +17,121 @@
         "type": {
           "type": "string",
           "enum": ["WaterQualityObserved"],
-          "description": "NGSI Entity type"
+          "description": "Property. NGSI Entity type"
         },
         "dateObserved": {
-          "type": "string"
+          "type": "string",
+          "description": "Property. Model:'https://schema.org/DateTime'. The date and time of this observation in ISO8601 UTCformat. It can be represented by an specific time instant or by an ISO8601 interval."
         },
         "measurand": {
           "type": "array",
           "items": {
             "type": "string"
           },
-          "minItems": 1
+          "minItems": 1,
+          "description": "Property. An array of strings containing details (see format below) about extra measurands provided by this observation."
         },
         "temperature": {
-          "type": "number"
+          "type": "number",
+          "description": "Property. Temperature"
         },
         "conductivity": {
           "type": "number",
-          "minimum": 0
+          "minimum": 0,
+          "description": "Property. Electrical Conductivity."
         },
         "conductance": {
           "type": "number",
-          "minimum": 0
+          "minimum": 0,
+          "description": "Property. Specific Conductance."
         },
         "tss": {
           "type": "number",
-          "minimum": 0
+          "minimum": 0,
+          "description": "Property. Total suspended solids."
         },
         "tds": {
           "type": "number",
-          "minimum": 0
+          "minimum": 0,
+          "description": "Property. Total dissolved solids. "
         },
         "turbidity": {
           "type": "number",
-          "minimum": 0
+          "minimum": 0,
+          "description": "Property. Amount of light scattered by particles in the water column"
         },
         "salinity": {
           "type": "number",
-          "minimum": 0
+          "minimum": 0,
+          "description": "Property. Amount of salts dissolved in water."
         },
         "pH": {
           "type": "number",
           "minimum": 0,
-          "maximum": 14
+          "maximum": 14,
+          "description": "Property. Acidity or basicity of an aqueous solution."
         },
         "orp": {
           "type": "number",
-          "minimum": 0
+          "minimum": 0,
+          "description": "Property. Oxidation-Reduction potential."
         },
         "O2": {
           "type": "number",
-          "minimum": 0
+          "minimum": 0,
+          "description": "Property. Level of free, non-compound oxygen present."
         },
         "Chla": {
           "type": "number",
-          "minimum": 0
+          "minimum": 0,
+          "description": "Property. Concentration of chlorophyll A."
         },
         "PE": {
           "type": "number",
-          "minimum": 0
+          "minimum": 0,
+          "description": "Property. Concentration of pigment phycoerythrin which can be measured to estimate cyanobacteria concentrations specifically."
         },
         "PC": {
           "type": "number",
-          "minimum": 0
+          "minimum": 0,
+          "description": "Property. Concentration of pigment phycocyanin which can be measured to estimate cyanobacteria concentrations specifically."
         },
         "NH4": {
           "type": "number",
-          "minimum": 0
+          "minimum": 0,
+          "description": "Property. Concentration of ammonium."
         },
         "NH3": {
           "type": "number",
-          "minimum": 0
+          "minimum": 0,
+          "description": "Property. Concentration of ammonium."
         },
         "Cl-": {
           "type": "number",
-          "minimum": 0
+          "minimum": 0,
+          "description": "Property. Concentration of chlorides."
         },
         "NO3": {
           "type": "number",
-          "minimum": 0
+          "minimum": 0,
+          "description": "Property. Concentration of nitrates."
         },
         "refPointOfInterest": {
-          "$ref": "https://smart-data-models.github.io/data-models/common-schema.json#/definitions/EntityIdentifierType"
-        }
+          "anyOf": [
+            {
+              "type": "string",
+              "minLength": 1,
+              "maxLength": 256,
+              "pattern": "^[\\w\\-\\.\\{\\}\\$\\+\\*\\[\\]`|~^@!,:\\\\]+$",
+              "description": "Property. Identifier format of any NGSI entity"
+            },
+            {
+              "type": "string",
+              "format": "uri",
+              "description": "Property. Identifier format of any NGSI entity"
+            }
+          ],
+          "description": "Relationship. A reference to a point of interest associated to this observation."        }
       }
     }
   ],
