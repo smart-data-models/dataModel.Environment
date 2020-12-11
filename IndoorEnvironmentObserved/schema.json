@@ -23,10 +23,38 @@
           "description": "Property. Date and time of the observation in ISO8601"
         },
         "refDevice": {
-          "$ref": "https://fiware.github.io/data-models/common-schema.json#/definitions/EntityIdentifierType"
+          "anyOf": [
+            {
+              "type": "string",
+              "minLength": 1,
+              "maxLength": 256,
+              "pattern": "^[\\w\\-\\.\\{\\}\\$\\+\\*\\[\\]`|~^@!,:\\\\]+$",
+              "description": "Property. Identifier format of any NGSI entity"
+            },
+            {
+              "type": "string",
+              "format": "uri",
+              "description": "Property. Identifier format of any NGSI entity"
+            }
+          ],
+          "description": "Relationship. A reference to the device(s) which captured this observation."
         },
         "refPointOfInterest": {
-          "$ref": "https://fiware.github.io/data-models/common-schema.json#/definitions/EntityIdentifierType"
+          "anyOf": [
+            {
+              "type": "string",
+              "minLength": 1,
+              "maxLength": 256,
+              "pattern": "^[\\w\\-\\.\\{\\}\\$\\+\\*\\[\\]`|~^@!,:\\\\]+$",
+              "description": "Property. Identifier format of any NGSI entity"
+            },
+            {
+              "type": "string",
+              "format": "uri",
+              "description": "Property. Identifier format of any NGSI entity"
+            }
+          ],
+          "description": "Relationship. A reference to a point of interest associated to this observation."
         },
         "sensorPlacement": {
           "type": "string",
