@@ -16,13 +16,14 @@
       "properties": {
         "type": {
           "type": "string",
-          "enum": ["NoiseLevelObserved"],
+          "enum": [
+            "NoiseLevelObserved"
+          ],
           "description": "Property. NGSI Entity type"
         },
         "dateObserved": {
           "type": "string",
           "description": "Property. The date and time of this observation represented by an ISO8601 interval."
-
         },
         "dateObservedFrom": {
           "type": "string",
@@ -36,12 +37,29 @@
         },
         "sonometerClass": {
           "type": "string",
-          "enum": ["0", "1", "2"],
+          "enum": [
+            "0",
+            "1",
+            "2"
+          ],
           "description": "Property. Model:'https://schema.org/Text'. Class of sonometer (0, 1, 2) according to ANSI used for taking this observation"
         },
         "refDevice": {
-          "$ref": "https://smart-data-models.github.io/data-models/common-schema.json#/definitions/EntityIdentifierType",
-          "description": "Relationship. "
+          "anyOf": [
+            {
+              "type": "string",
+              "minLength": 1,
+              "maxLength": 256,
+              "pattern": "^[\\w\\-\\.\\{\\}\\$\\+\\*\\[\\]`|~^@!,:\\\\]+$",
+              "description": "Property. Identifier format of any NGSI entity"
+            },
+            {
+              "type": "string",
+              "format": "uri",
+              "description": "Property. Identifier format of any NGSI entity"
+            }
+          ],
+          "description": "Relationship. A reference to the device which captured this observation."
         },
         "refPointOfInterest": {
           "anyOf": [
@@ -61,10 +79,30 @@
           "description": "Relationship. A reference to a point of interest associated to this observation."
         },
         "refWeatherObserved": {
-          "$ref": "https://smart-data-models.github.io/data-models/common-schema.json#/definitions/EntityIdentifierType",
+          "anyOf": [
+            {
+              "type": "string",
+              "minLength": 1,
+              "maxLength": 256,
+              "pattern": "^[\\w\\-\\.\\{\\}\\$\\+\\*\\[\\]`|~^@!,:\\\\]+$",
+              "description": "Property. Identifier format of any NGSI entity"
+            },
+            {
+              "type": "string",
+              "format": "uri",
+              "description": "Property. Identifier format of any NGSI entity"
+            }
+          ],
+          "description": "Relationship. Reference to the associated weather conditions."
         }
       }
     }
   ],
-  "required": ["id", "type", "dateObservedFrom", "dateObservedTo", "location"]
+  "required": [
+    "id",
+    "type",
+    "dateObservedFrom",
+    "dateObservedTo",
+    "location"
+  ]
 }

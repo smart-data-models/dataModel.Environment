@@ -46,42 +46,42 @@
         "as": {
           "type": "number",
           "minimum": 0,
-          "description": "Property. Arsenic"
+          "description": "Property. Arsenic detected"
         },
         "c6h6": {
           "type": "number",
           "minimum": 0,
-          "description": "Property. Benzene"
+          "description": "Property. Benzene detected"
         },
         "cd": {
           "type": "number",
           "minimum": 0,
-          "description": "Property. Cadmium"
+          "description": "Property. Cadmium detected"
         },
         "co": {
           "type": "number",
           "minimum": 0,
-          "description": "Property. Carbon Monoxide"
+          "description": "Property. Carbon Monoxide detected"
         },
         "ni": {
           "type": "number",
           "minimum": 0,
-          "description": "Property. Nickel"
+          "description": "Property. Nickel detected"
         },
         "no": {
           "type": "number",
           "minimum": 0,
-          "description": "Property. Nitrogen monoxide"
+          "description": "Property. Nitrogen monoxide detected"
         }, 
         "no2": {
           "type": "number",
           "minimum": 0,
-          "description": "Property. Nitrogen dioxide"
+          "description": "Property. Nitrogen dioxide detected"
         },
         "o3": {
           "type": "number",
           "minimum": 0,
-          "description": "Property. ozone"
+          "description": "Property. Ozone detected"
         },
        "pm10": {
           "type": "number",
@@ -96,17 +96,17 @@
         "pb": {
           "type": "number",
           "minimum": 0,
-          "description": "Property. Lead"
+          "description": "Property. Lead detected"
         },        
         "sh2": {
           "type": "number",
           "minimum": 0,
-          "description": "Property. Hydrogen sulfide"
+          "description": "Property. Hydrogen sulfide detected"
         },
         "so2": {
           "type": "number",
           "minimum": 0,
-          "description": "Property. Sulfur dioxide"
+          "description": "Property. Sulfur dioxide detected"
         },
          "volatileOrganicCompoundsTotal": {
           "type": "number",
