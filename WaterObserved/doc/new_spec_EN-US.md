@@ -5,7 +5,7 @@ Entity: WaterObserved
 
 ## List of properties  
 
-- `address`: The mailing address.  - `alternateName`: An alternative name for this item  - `areaServed`: The geographic area where a service or offered item is provided.  - `dataProvider`: A sequence of characters identifying the provider of the harmonised data entity.  - `dateCreated`: Entity creation timestamp. This will usually be allocated by the storage platform.  - `dateModified`: Timestamp of the last modification of the entity. This will usually be allocated by the storage platform.  - `dateObserved`:   - `dateObservedFrom`:   - `dateObservedTo`:   - `description`: A description of this item  - `flow`:   - `height`:   - `id`:   - `location`:   - `measuredArea`:   - `name`: The name of this item.  - `objectArea`:   - `objectHeightAverage`:   - `objectHeightMax`:   - `objectVolume`:   - `owner`: A List containing a JSON encoded sequence of characters referencing the unique Ids of the owner(s)  - `refDevice`:   - `seeAlso`:   - `source`: A sequence of characters giving the original source of the entity data as a URL. Recommended to be the fully qualified domain name of the source provider, or the URL to the source object.  - `swellDirection`:   - `swellHeight`:   - `swellPeriod`:   - `type`: NGSI Entity type  - `waveLength`:     
+- `address`: The mailing address.  - `alternateName`: An alternative name for this item  - `areaServed`: The geographic area where a service or offered item is provided  - `dataProvider`: A sequence of characters identifying the provider of the harmonised data entity.  - `dateCreated`: Entity creation timestamp. This will usually be allocated by the storage platform.  - `dateModified`: Timestamp of the last modification of the entity. This will usually be allocated by the storage platform.  - `dateObserved`: Date and time of this observation represented by an ISO8601 UTC format.  - `dateObservedFrom`: Observation period : Start date and time in an ISO8601 UTC format.  - `dateObservedTo`: Observation period : End date and time in an ISO8601 UTC format.  - `description`: A description of this item  - `flow`: Water Flow observed. The unit code (text) of measurement given using the UN/CEFACAT  - `height`: Water height - Level reach on alert coasts.  - `id`: Unique identifier of the entity  - `location`:   - `measuredArea`: Water height - Level reach on alert coasts.   - `name`: The name of this item.  - `objectArea`: Percentage occupied by floating object in the area.  - `objectHeightAverage`: Average height raised.  - `objectHeightMax`: Maximum height raised.  - `objectVolume`: Estimated volume raised.  - `owner`: A List containing a JSON encoded sequence of characters referencing the unique Ids of the owner(s)  - `refDevice`: A reference to a point of interest associated to this observation.  - `seeAlso`: list of uri pointing to additional resources about the item  - `source`: A sequence of characters giving the original source of the entity data as a URL. Recommended to be the fully qualified domain name of the source provider, or the URL to the source object.  - `swellDirection`: Water height - Level reach on alert coasts.  - `swellHeight`: Water height - Level reach on alert coasts.  - `swellPeriod`: Water height - Level reach on alert coasts.  - `type`: NGSI Entity type  - `waveLength`: Water height - Level reach on alert coasts.     
 Required properties  
 - `dateObserved`  - `id`  - `location`  - `type`  ## Data Model description of properties  
 Sorted alphabetically (click for details)  
@@ -18,26 +18,35 @@ WaterObserved:
       description: 'The mailing address.'    
       properties:    
         addressCountry:    
+          description: 'Property. The country. For example, Spain. Model:''https://schema.org/Text'''    
           type: string    
         addressLocality:    
+          description: 'Property. The locality in which the street address is, and which is in the region. Model:''https://schema.org/Text'''    
           type: string    
         addressRegion:    
+          description: 'Property. The region in which the locality is, and which is in the country. Model:''https://schema.org/Text'''    
           type: string    
         areaServed:    
+          description: 'Property. The geographic area where a service or offered item is provided. Model:''https://schema.org/Text'''    
           type: string    
         postOfficeBoxNumber:    
+          description: 'Property. The post office box number for PO box addresses. For example, Spain. Model:''https://schema.org/Text'''    
           type: string    
         postalCode:    
+          description: 'Property. The postal code. For example, Spain. Model:''https://schema.org/Text'''    
           type: string    
         streetAddress:    
+          description: 'Property. The street address. Model:''https://schema.org/Text'''    
           type: string    
       type: Property    
     alternateName:    
       description: 'An alternative name for this item'    
       type: Property    
     areaServed:    
-      description: 'The geographic area where a service or offered item is provided.'    
+      description: 'The geographic area where a service or offered item is provided'    
       type: Property    
+      x-ngsi:    
+        model: https://schema.org/Text    
     dataProvider:    
       description: 'A sequence of characters identifying the provider of the harmonised data entity.'    
       type: Property    
@@ -50,23 +59,38 @@ WaterObserved:
       format: date-time    
       type: Property    
     dateObserved:    
+      description: 'Date and time of this observation represented by an ISO8601 UTC format.'    
       format: date-time    
-      type: string    
+      type: Property    
+      x-ngsi:    
+        model: https://schema.org/DateTime    
     dateObservedFrom:    
+      description: 'Observation period : Start date and time in an ISO8601 UTC format.'    
       format: date-time    
-      type: string    
+      type: Property    
+      x-ngsi:    
+        model: https://schema.org/DateTime    
     dateObservedTo:    
+      description: 'Observation period : End date and time in an ISO8601 UTC format.'    
       format: date-time    
-      type: string    
+      type: Property    
+      x-ngsi:    
+        model: https://schema.org/DateTime    
     description:    
       description: 'A description of this item'    
       type: Property    
     flow:    
+      description: 'Water Flow observed. The unit code (text) of measurement given using the UN/CEFACAT'    
       minimum: 0    
-      type: number    
+      type: Property    
+      x-ngsi:    
+        model: https://schema.org/Number    
     height:    
+      description: 'Water height - Level reach on alert coasts.'    
       minimum: 0    
-      type: number    
+      type: Property    
+      x-ngsi:    
+        model: https://schema.org/Number    
     id:    
       anyOf: &waterobserved_-_properties_-_owner_-_items_-_anyof    
         - description: 'Property. Identifier format of any NGSI entity'    
@@ -77,6 +101,8 @@ WaterObserved:
         - description: 'Property. Identifier format of any NGSI entity'    
           format: uri    
           type: string    
+      description: 'Unique identifier of the entity'    
+      type: Property    
     location:    
       $id: https://geojson.org/schema/Geometry.json    
       $schema: "http://json-schema.org/draft-07/schema#"    
@@ -225,31 +251,58 @@ WaterObserved:
           type: object    
       title: 'GeoJSON Geometry'    
     measuredArea:    
+      description: 'Water height - Level reach on alert coasts. '    
       minimum: 0    
-      type: number    
+      type: Property    
+      x-ngsi:    
+        model: https://schema.org/Number    
     name:    
       description: 'The name of this item.'    
       type: Property    
     objectArea:    
+      description: 'Percentage occupied by floating object in the area.'    
       minimum: 0    
-      type: number    
+      type: Property    
+      x-ngsi:    
+        model: https://schema.org/Number    
     objectHeightAverage:    
+      description: 'Average height raised.'    
       minimum: 0    
-      type: number    
+      type: Property    
+      x-ngsi:    
+        model: https://schema.org/Number    
     objectHeightMax:    
+      description: 'Maximum height raised.'    
       minimum: 0    
-      type: number    
+      type: Property    
+      x-ngsi:    
+        model: https://schema.org/Number    
     objectVolume:    
+      description: 'Estimated volume raised.'    
       minimum: 0    
-      type: number    
+      type: Property    
+      x-ngsi:    
+        model: https://schema.org/Number    
     owner:    
       description: 'A List containing a JSON encoded sequence of characters referencing the unique Ids of the owner(s)'    
       items:    
         anyOf: *waterobserved_-_properties_-_owner_-_items_-_anyof    
+        description: 'Property. Unique identifier of the entity'    
       type: Property    
     refDevice:    
-      anyOf: *waterobserved_-_properties_-_owner_-_items_-_anyof    
+      anyOf:    
+        - description: 'Property. Identifier format of any NGSI entity'    
+          maxLength: 256    
+          minLength: 1    
+          pattern: ^[\w\-\.\{\}\$\+\*\[\]`|~^@!,:\\]+$    
+          type: string    
+        - description: 'Property. Identifier format of any NGSI entity'    
+          format: uri    
+          type: string    
+      description: 'A reference to a point of interest associated to this observation.'    
+      type: Relationship    
     seeAlso:    
+      description: 'list of uri pointing to additional resources about the item'    
       oneOf:    
         - items:    
             - format: uri    
@@ -258,27 +311,40 @@ WaterObserved:
           type: array    
         - format: uri    
           type: string    
+      type: Property    
     source:    
       description: 'A sequence of characters giving the original source of the entity data as a URL. Recommended to be the fully qualified domain name of the source provider, or the URL to the source object.'    
       type: Property    
     swellDirection:    
+      description: 'Water height - Level reach on alert coasts.'    
       maximum: 360    
       minimum: 0    
-      type: number    
+      type: Property    
+      x-ngsi:    
+        model: https://schema.org/Number    
     swellHeight:    
+      description: 'Water height - Level reach on alert coasts.'    
       minimum: 0    
-      type: number    
+      type: Property    
+      x-ngsi:    
+        model: https://schema.org/Number    
     swellPeriod:    
+      description: 'Water height - Level reach on alert coasts.'    
       minimum: 0    
-      type: number    
+      type: Property    
+      x-ngsi:    
+        model: https://schema.org/Number    
     type:    
       description: 'NGSI Entity type'    
       enum:    
         - WaterObserved    
-      type: string    
+      type: Property    
     waveLength:    
+      description: 'Water height - Level reach on alert coasts. '    
       minimum: 0    
-      type: number    
+      type: Property    
+      x-ngsi:    
+        model: https://schema.org/Number    
   required:    
     - id    
     - type    
