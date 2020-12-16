@@ -5,7 +5,7 @@ Entity: AeroAllergenObserved
 
 ## List of properties  
 
-- `address`: The mailing address.  - `allergenRisk`:   - `alternateName`: An alternative name for this item  - `areaServed`: The geographic area where a service or offered item is provided.  - `dataProvider`: A sequence of characters identifying the provider of the harmonised data entity.  - `dateCreated`: Entity creation timestamp. This will usually be allocated by the storage platform.  - `dateModified`: Timestamp of the last modification of the entity. This will usually be allocated by the storage platform.  - `dateObserved`:   - `description`: A description of this item  - `id`:   - `location`:   - `name`: The name of this item.  - `owner`: A List containing a JSON encoded sequence of characters referencing the unique Ids of the owner(s)  - `refDevice`:   - `seeAlso`:   - `source`: A sequence of characters giving the original source of the entity data as a URL. Recommended to be the fully qualified domain name of the source provider, or the URL to the source object.  - `type`: NGSI Entity type    
+- `address`: The mailing address.  - `allergenRisk`: Overall allergen risk corresponding to the aero allergens observed.  - `alternateName`: An alternative name for this item  - `areaServed`: The geographic area where a service or offered item is provided  - `dataProvider`: A sequence of characters identifying the provider of the harmonised data entity.  - `dateCreated`: Entity creation timestamp. This will usually be allocated by the storage platform.  - `dateModified`: Timestamp of the last modification of the entity. This will usually be allocated by the storage platform.  - `dateObserved`: The date and time of this observation in ISO8601 UTCformat. It can be represented by a specific time instant or by an ISO8601 interval.  - `description`: A description of this item  - `id`: Unique identifier of the entity  - `location`:   - `name`: The name of this item.  - `owner`: A List containing a JSON encoded sequence of characters referencing the unique Ids of the owner(s)  - `refDevice`: A reference to the device(s) which captured this observation.  - `seeAlso`: list of uri pointing to additional resources about the item  - `source`: A sequence of characters giving the original source of the entity data as a URL. Recommended to be the fully qualified domain name of the source provider, or the URL to the source object.  - `type`: NGSI Entity type    
 Required properties  
 - `dateObserved`  - `id`  - `location`  - `type`  ## Data Model description of properties  
 Sorted alphabetically (click for details)  
@@ -18,34 +18,44 @@ AeroAllergenObserved:
       description: 'The mailing address.'    
       properties:    
         addressCountry:    
+          description: 'Property. The country. For example, Spain. Model:''https://schema.org/Text'''    
           type: string    
         addressLocality:    
+          description: 'Property. The locality in which the street address is, and which is in the region. Model:''https://schema.org/Text'''    
           type: string    
         addressRegion:    
+          description: 'Property. The region in which the locality is, and which is in the country. Model:''https://schema.org/Text'''    
           type: string    
         areaServed:    
+          description: 'Property. The geographic area where a service or offered item is provided. Model:''https://schema.org/Text'''    
           type: string    
         postOfficeBoxNumber:    
+          description: 'Property. The post office box number for PO box addresses. For example, Spain. Model:''https://schema.org/Text'''    
           type: string    
         postalCode:    
+          description: 'Property. The postal code. For example, Spain. Model:''https://schema.org/Text'''    
           type: string    
         streetAddress:    
+          description: 'Property. The street address. Model:''https://schema.org/Text'''    
           type: string    
       type: Property    
     allergenRisk:    
+      description: 'Overall allergen risk corresponding to the aero allergens observed.'    
       enum:    
         - none    
         - low    
         - moderate    
         - high    
         - veryHigh    
-      type: string    
+      type: Property    
     alternateName:    
       description: 'An alternative name for this item'    
       type: Property    
     areaServed:    
-      description: 'The geographic area where a service or offered item is provided.'    
+      description: 'The geographic area where a service or offered item is provided'    
       type: Property    
+      x-ngsi:    
+        model: https://schema.org/Text    
     dataProvider:    
       description: 'A sequence of characters identifying the provider of the harmonised data entity.'    
       type: Property    
@@ -58,7 +68,8 @@ AeroAllergenObserved:
       format: date-time    
       type: Property    
     dateObserved:    
-      type: string    
+      description: 'The date and time of this observation in ISO8601 UTCformat. It can be represented by a specific time instant or by an ISO8601 interval.'    
+      type: Property    
     description:    
       description: 'A description of this item'    
       type: Property    
@@ -72,6 +83,8 @@ AeroAllergenObserved:
         - description: 'Property. Identifier format of any NGSI entity'    
           format: uri    
           type: string    
+      description: 'Unique identifier of the entity'    
+      type: Property    
     location:    
       $id: https://geojson.org/schema/Geometry.json    
       $schema: "http://json-schema.org/draft-07/schema#"    
@@ -226,10 +239,22 @@ AeroAllergenObserved:
       description: 'A List containing a JSON encoded sequence of characters referencing the unique Ids of the owner(s)'    
       items:    
         anyOf: *aeroallergenobserved_-_properties_-_owner_-_items_-_anyof    
+        description: 'Property. Unique identifier of the entity'    
       type: Property    
     refDevice:    
-      anyOf: *aeroallergenobserved_-_properties_-_owner_-_items_-_anyof    
+      anyOf:    
+        - description: 'Property. Identifier format of any NGSI entity'    
+          maxLength: 256    
+          minLength: 1    
+          pattern: ^[\w\-\.\{\}\$\+\*\[\]`|~^@!,:\\]+$    
+          type: string    
+        - description: 'Property. Identifier format of any NGSI entity'    
+          format: uri    
+          type: string    
+      description: 'A reference to the device(s) which captured this observation.'    
+      type: Relationship    
     seeAlso:    
+      description: 'list of uri pointing to additional resources about the item'    
       oneOf:    
         - items:    
             - format: uri    
@@ -238,6 +263,7 @@ AeroAllergenObserved:
           type: array    
         - format: uri    
           type: string    
+      type: Property    
     source:    
       description: 'A sequence of characters giving the original source of the entity data as a URL. Recommended to be the fully qualified domain name of the source provider, or the URL to the source object.'    
       type: Property    
@@ -245,7 +271,7 @@ AeroAllergenObserved:
       description: 'NGSI Entity type'    
       enum:    
         - AeroAllergenObserved    
-      type: string    
+      type: Property    
   required:    
     - id    
     - type    
