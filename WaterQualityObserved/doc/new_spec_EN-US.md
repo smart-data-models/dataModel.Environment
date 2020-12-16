@@ -5,7 +5,7 @@ Entity: WaterQualityObserved
 
 ## List of properties  
 
-- `Chla`:   - `Cl-`:   - `NH3`:   - `NH4`:   - `NO3`:   - `O2`:   - `PC`:   - `PE`:   - `address`: The mailing address.  - `alternateName`: An alternative name for this item  - `areaServed`: The geographic area where a service or offered item is provided.  - `conductance`:   - `conductivity`:   - `dataProvider`: A sequence of characters identifying the provider of the harmonised data entity.  - `dateCreated`: Entity creation timestamp. This will usually be allocated by the storage platform.  - `dateModified`: Timestamp of the last modification of the entity. This will usually be allocated by the storage platform.  - `dateObserved`:   - `description`: A description of this item  - `id`:   - `location`:   - `measurand`:   - `name`: The name of this item.  - `orp`:   - `owner`: A List containing a JSON encoded sequence of characters referencing the unique Ids of the owner(s)  - `pH`:   - `refPointOfInterest`:   - `salinity`:   - `seeAlso`:   - `source`: A sequence of characters giving the original source of the entity data as a URL. Recommended to be the fully qualified domain name of the source provider, or the URL to the source object.  - `tds`:   - `temperature`:   - `tss`:   - `turbidity`:   - `type`: NGSI Entity type    
+- `Chla`: Concentration of chlorophyll A.  - `Cl-`: Concentration of chlorides.  - `NH3`: Concentration of ammonium.  - `NH4`: Concentration of ammonium.  - `NO3`: Concentration of nitrates.  - `O2`: Level of free, non-compound oxygen present.  - `PC`: Concentration of pigment phycocyanin which can be measured to estimate cyanobacteria concentrations specifically.  - `PE`: Concentration of pigment phycoerythrin which can be measured to estimate cyanobacteria concentrations specifically.  - `address`: The mailing address.  - `alternateName`: An alternative name for this item  - `areaServed`: The geographic area where a service or offered item is provided  - `conductance`: Specific Conductance.  - `conductivity`: Electrical Conductivity.  - `dataProvider`: A sequence of characters identifying the provider of the harmonised data entity.  - `dateCreated`: Entity creation timestamp. This will usually be allocated by the storage platform.  - `dateModified`: Timestamp of the last modification of the entity. This will usually be allocated by the storage platform.  - `dateObserved`: The date and time of this observation in ISO8601 UTCformat. It can be represented by an specific time instant or by an ISO8601 interval.  - `description`: A description of this item  - `id`: Unique identifier of the entity  - `location`:   - `measurand`: An array of strings containing details (see format below) about extra measurands provided by this observation.  - `name`: The name of this item.  - `orp`: Oxidation-Reduction potential.  - `owner`: A List containing a JSON encoded sequence of characters referencing the unique Ids of the owner(s)  - `pH`: Acidity or basicity of an aqueous solution.  - `refPointOfInterest`: A reference to a point of interest associated to this observation.  - `salinity`: Amount of salts dissolved in water.  - `seeAlso`: list of uri pointing to additional resources about the item  - `source`: A sequence of characters giving the original source of the entity data as a URL. Recommended to be the fully qualified domain name of the source provider, or the URL to the source object.  - `tds`: Total dissolved solids.   - `temperature`: Temperature  - `tss`: Total suspended solids.  - `turbidity`: Amount of light scattered by particles in the water column  - `type`: NGSI Entity type    
 Required properties  
 - `dateObserved`  - `id`  - `location`  - `type`  ## Data Model description of properties  
 Sorted alphabetically (click for details)  
@@ -15,59 +15,78 @@ WaterQualityObserved:
   description: 'Water Quality data model is intended to represent water quality parameters at a certain water mass (river,  lake, sea, etc.) section'    
   properties:    
     Chla:    
+      description: 'Concentration of chlorophyll A.'    
       minimum: 0    
-      type: number    
+      type: Property    
     Cl-:    
+      description: 'Concentration of chlorides.'    
       minimum: 0    
-      type: number    
+      type: Property    
     NH3:    
+      description: 'Concentration of ammonium.'    
       minimum: 0    
-      type: number    
+      type: Property    
     NH4:    
+      description: 'Concentration of ammonium.'    
       minimum: 0    
-      type: number    
+      type: Property    
     NO3:    
+      description: 'Concentration of nitrates.'    
       minimum: 0    
-      type: number    
+      type: Property    
     O2:    
+      description: 'Level of free, non-compound oxygen present.'    
       minimum: 0    
-      type: number    
+      type: Property    
     PC:    
+      description: 'Concentration of pigment phycocyanin which can be measured to estimate cyanobacteria concentrations specifically.'    
       minimum: 0    
-      type: number    
+      type: Property    
     PE:    
+      description: 'Concentration of pigment phycoerythrin which can be measured to estimate cyanobacteria concentrations specifically.'    
       minimum: 0    
-      type: number    
+      type: Property    
     address:    
       description: 'The mailing address.'    
       properties:    
         addressCountry:    
+          description: 'Property. The country. For example, Spain. Model:''https://schema.org/Text'''    
           type: string    
         addressLocality:    
+          description: 'Property. The locality in which the street address is, and which is in the region. Model:''https://schema.org/Text'''    
           type: string    
         addressRegion:    
+          description: 'Property. The region in which the locality is, and which is in the country. Model:''https://schema.org/Text'''    
           type: string    
         areaServed:    
+          description: 'Property. The geographic area where a service or offered item is provided. Model:''https://schema.org/Text'''    
           type: string    
         postOfficeBoxNumber:    
+          description: 'Property. The post office box number for PO box addresses. For example, Spain. Model:''https://schema.org/Text'''    
           type: string    
         postalCode:    
+          description: 'Property. The postal code. For example, Spain. Model:''https://schema.org/Text'''    
           type: string    
         streetAddress:    
+          description: 'Property. The street address. Model:''https://schema.org/Text'''    
           type: string    
       type: Property    
     alternateName:    
       description: 'An alternative name for this item'    
       type: Property    
     areaServed:    
-      description: 'The geographic area where a service or offered item is provided.'    
+      description: 'The geographic area where a service or offered item is provided'    
       type: Property    
+      x-ngsi:    
+        model: https://schema.org/Text    
     conductance:    
+      description: 'Specific Conductance.'    
       minimum: 0    
-      type: number    
+      type: Property    
     conductivity:    
+      description: 'Electrical Conductivity.'    
       minimum: 0    
-      type: number    
+      type: Property    
     dataProvider:    
       description: 'A sequence of characters identifying the provider of the harmonised data entity.'    
       type: Property    
@@ -80,7 +99,10 @@ WaterQualityObserved:
       format: date-time    
       type: Property    
     dateObserved:    
-      type: string    
+      description: 'The date and time of this observation in ISO8601 UTCformat. It can be represented by an specific time instant or by an ISO8601 interval.'    
+      type: Property    
+      x-ngsi:    
+        model: https://schema.org/DateTime    
     description:    
       description: 'A description of this item'    
       type: Property    
@@ -94,6 +116,8 @@ WaterQualityObserved:
         - description: 'Property. Identifier format of any NGSI entity'    
           format: uri    
           type: string    
+      description: 'Unique identifier of the entity'    
+      type: Property    
     location:    
       $id: https://geojson.org/schema/Geometry.json    
       $schema: "http://json-schema.org/draft-07/schema#"    
@@ -242,31 +266,47 @@ WaterQualityObserved:
           type: object    
       title: 'GeoJSON Geometry'    
     measurand:    
+      description: 'An array of strings containing details (see format below) about extra measurands provided by this observation.'    
       items:    
         type: string    
       minItems: 1    
-      type: array    
+      type: Property    
     name:    
       description: 'The name of this item.'    
       type: Property    
     orp:    
+      description: 'Oxidation-Reduction potential.'    
       minimum: 0    
-      type: number    
+      type: Property    
     owner:    
       description: 'A List containing a JSON encoded sequence of characters referencing the unique Ids of the owner(s)'    
       items:    
         anyOf: *waterqualityobserved_-_properties_-_owner_-_items_-_anyof    
+        description: 'Property. Unique identifier of the entity'    
       type: Property    
     pH:    
+      description: 'Acidity or basicity of an aqueous solution.'    
       maximum: 14    
       minimum: 0    
-      type: number    
+      type: Property    
     refPointOfInterest:    
-      anyOf: *waterqualityobserved_-_properties_-_owner_-_items_-_anyof    
+      anyOf:    
+        - description: 'Property. Identifier format of any NGSI entity'    
+          maxLength: 256    
+          minLength: 1    
+          pattern: ^[\w\-\.\{\}\$\+\*\[\]`|~^@!,:\\]+$    
+          type: string    
+        - description: 'Property. Identifier format of any NGSI entity'    
+          format: uri    
+          type: string    
+      description: 'A reference to a point of interest associated to this observation.'    
+      type: Relationship    
     salinity:    
+      description: 'Amount of salts dissolved in water.'    
       minimum: 0    
-      type: number    
+      type: Property    
     seeAlso:    
+      description: 'list of uri pointing to additional resources about the item'    
       oneOf:    
         - items:    
             - format: uri    
@@ -275,25 +315,30 @@ WaterQualityObserved:
           type: array    
         - format: uri    
           type: string    
+      type: Property    
     source:    
       description: 'A sequence of characters giving the original source of the entity data as a URL. Recommended to be the fully qualified domain name of the source provider, or the URL to the source object.'    
       type: Property    
     tds:    
+      description: 'Total dissolved solids. '    
       minimum: 0    
-      type: number    
+      type: Property    
     temperature:    
-      type: number    
+      description: Temperature    
+      type: Property    
     tss:    
+      description: 'Total suspended solids.'    
       minimum: 0    
-      type: number    
+      type: Property    
     turbidity:    
+      description: 'Amount of light scattered by particles in the water column'    
       minimum: 0    
-      type: number    
+      type: Property    
     type:    
       description: 'NGSI Entity type'    
       enum:    
         - WaterQualityObserved    
-      type: string    
+      type: Property    
   required:    
     - id    
     - type    
