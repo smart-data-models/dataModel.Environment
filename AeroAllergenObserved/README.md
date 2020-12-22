@@ -17,6 +17,10 @@ available at [http://www.allergen.org](http://www.allergen.org).
 Link to the [interactive specification](https://swagger.lab.fiware.org/?url=https://smart-data-models.github.io/dataModel.Environment/AeroAllergenObserved/swagger.yaml)
 
 Link to the [specification](https://github.com/smart-data-models/dataModel.Environment/blob/master/AeroAllergenObserved/doc/spec.md)
+
+Link to the [specification in Spanish](https://github.com/smart-data-models/dataModel.Environment/blob/master/AeroAllergenObserved/doc/spec_ES.md)
+
+Link to the [specification in French](https://github.com/smart-data-models/dataModel.Environment/blob/master/AeroAllergenObserved/doc/spec_FR.md)
 ### Examples
 
 Link to the [example](https://smart-data-models.github.io/dataModel.Environment/AeroAllergenObserved/examples/example.json) (keyvalues) for NGSI v2
