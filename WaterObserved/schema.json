@@ -19,7 +19,7 @@
           "enum": [
             "WaterObserved"
           ],
-          "description": "Property. NGSI Entity type"
+          "description": "Property. NGSI Entity type. It has to be WaterObserved"
         },
         "refDevice": {
           "anyOf": [
@@ -87,27 +87,27 @@
         "measuredArea": {
           "type": "number",
           "minimum": 0,
-          "description": "Property. Model:'https://schema.org/Number'. Water height - Level reach on alert coasts. "
+          "description": "Property. Model:'https://schema.org/Number'. Water height - Level reach on alert coasts. Units:'square meters'. The unit code (text) of measurement given using the [UN/CEFACT Common Codes](http://wiki.goodrelations-vocabulary.org/Documentation/UN/CEFACT_Common_Codes) (max. 3 characters). For instance, <code>MTK</code> represents M²."
         },
         "objectArea": {
           "type": "number",
           "minimum": 0,
-          "description": "Property. Model:'https://schema.org/Number'. Percentage occupied by floating object in the area."
+          "description": "Property. Model:'https://schema.org/Number'. Percentage occupied by floating object in the area. The unit code (text) of measurement given using the [UN/CEFACT Common Codes](http://wiki.goodrelations-vocabulary.org/Documentation/UN/CEFACT_Common_Codes) (max. 3 characters). For instance, <code>P1</code> represents Percentage."
         },
         "objectHeightAverage": {
           "type": "number",
           "minimum": 0,
-          "description": "Property. Model:'https://schema.org/Number'. Average height raised."
+          "description": "Property. Model:'https://schema.org/Number'. Average height raised. Units:'meters'. The unit code (text) of measurement given using the [UN/CEFACT Common Codes](http://wiki.goodrelations-vocabulary.org/Documentation/UN/CEFACT_Common_Codes) (max. 3 characters). For instance, <code>MTR</code> represents Meter."
         },
         "objectHeightMax": {
           "type": "number",
           "minimum": 0,
-          "description": "Property. Model:'https://schema.org/Number'. Maximum height raised."
+          "description": "Property. Model:'https://schema.org/Number'. Maximum height raised. Units:'meters'. The unit code (text) of measurement given using the [UN/CEFACT Common Codes](http://wiki.goodrelations-vocabulary.org/Documentation/UN/CEFACT_Common_Codes) (max. 3 characters). For instance, <code>MTR</code> represents Meter."
         },
         "objectVolume": {
           "type": "number",
           "minimum": 0,
-          "description": "Property. Model:'https://schema.org/Number'. Estimated volume raised."
+          "description": "Property. Model:'https://schema.org/Number'. Estimated volume raised. The unit code (text) of measurement given using the [UN/CEFACT Common Codes](http://wiki.goodrelations-vocabulary.org/Documentation/UN/CEFACT_Common_Codes) (max. 3 characters). For instance, <code>MTQ</code> represents Cubic Meters. Units:'cubic meters'"
         }
       }
     }
