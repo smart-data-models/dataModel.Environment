@@ -45,7 +45,7 @@
         },
         "isMobile": {
           "type": "boolean",
-          "description": "Property. The device used is Fixed (False) or Mobile (True). Model:'https://schema.org/Boolean''"
+          "description": "Property. The device used is Fixed (False) or Mobile (True). Model:'https://schema.org/Boolean'"
         },
         "measurementType": {
           "type": "array",

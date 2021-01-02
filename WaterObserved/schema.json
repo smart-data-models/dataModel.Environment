@@ -61,12 +61,12 @@
         "height": {
           "type": "number",
           "minimum": 0,
-          "description": "Property. Model:'https://schema.org/Number'. Water height - Level reach on alert coasts."
+          "description": "XXXProperty. Model:'https://schema.org/height'. Water height - Level reach on alert coasts."
         },
         "swellHeight": {
           "type": "number",
           "minimum": 0,
-          "description": "Property. Model:'https://schema.org/Number'. Water height - Level reach on alert coasts."
+          "description": "XXXProperty. Model:'https://schema.org/height'. Water height - Level reach on alert coasts."
         },
         "swellPeriod": {
           "type": "number",

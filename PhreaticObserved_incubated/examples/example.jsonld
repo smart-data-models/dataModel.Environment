@@ -1,0 +1,31 @@
+{
+  "id": "urn:ngsi-ld:PhreaticObserved:PhreaticObserved:MNCA-001",
+  "type": "PhreaticObserved",
+  "name": "STLRT-MNCA-NP-015",
+  "description": "Measurement corresponding to the level and quality of groundwater closed from Airport River Saint Laurent du Var.",
+  "location": {
+    "type": "Point",
+    "coordinates": [
+      43.664810,
+      7.196545
+    ]
+  },
+  "areaServed": "Nice Airport",
+  "dateObserved": "2020-07-07T15:05:59.408Z",
+  "refDevice": [
+    "urn:ngsi-ld:Device:T1-NP-015"
+  ],
+  "isMobile": false,
+  "measurementType": [
+    "depth",
+    "volume"
+  ],
+  "investigationDepth": 22.35,
+  "waterTable": 12.75,
+  "depth": 20.45,
+  "pressure": 2.12,
+  "@context": [
+    "https://schema.lab.fiware.org/ld/context",
+    "https://uri.etsi.org/ngsi-ld/v1/ngsi-ld-core-context.jsonld"
+  ]
+}
