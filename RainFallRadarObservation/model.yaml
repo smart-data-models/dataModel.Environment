@@ -1,0 +1,193 @@
+RainFallRadarObserved:
+      required:
+        - id
+        - type
+        - location
+        - dateLastReported
+        - batteryType
+        - rechargeEnergySource
+      allOf:
+        - $ref: >-
+            https://smart-data-models.github.io/data-models/ngsi-ld.yaml#/Common
+      type: object
+      description: >-
+        The storage battery device data model is intended to describe the technical
+        characteristics of the battery and the charging and discharging conditions
+        of the energy. The charging functionalities apply from a power source which
+        can be an 'on-board system, solar panel, wind turbine, generator, power
+        supply'. Hydraulic sources are not included in this version. The discharge
+        functions apply to all types of system requiring energy consumption from a
+        storage battery. *Remark*: This Data Model can be used directly as a main
+        entity to describe the device *Battery Storage* or as a sub - entity of the
+        Data Model *DEVICE* using a reference by the *refDevice* attribute.
+      properties:
+        address:
+          $ref: 'https://smart-data-models.github.io/data-models/schema.org.yaml#/address'
+        alternateName:
+          x-ngsi:
+            type: Property
+            model: 'https://schema.org/Text'
+          type: string
+          description: 'Alternative Name given to the observation'
+        application:
+          x-ngsi:
+            type: Property
+          type: array
+          description: 'Target application of the Device regarding the storage. A combination of :'
+          items:
+            type: string
+            enum:
+              - electricMobility
+              - energyStorage
+              - emergencyStorage
+              - lighting
+              - industrialStorage
+              - houseHoldStorage
+              - robotics
+              - production
+              - other
+        areaServed:
+          x-ngsi:
+            type: Property
+            model: 'https://schema.org/Text'
+          type: string
+          description: 'Zone of level higher to the attributes Location & Address to gather and cross information (ex district, etc)'
+        batteryAssessmentMethods:
+          x-ngsi:
+            type: Property
+            model: 'https://schema.org/Text'
+          type: string
+          description: ''
+        batteryType:
+          x-ngsi:
+            type: Property
+            model: 'https://schema.org/Text'
+          type: string
+          description: 'Type of battery used. A unique value of :'
+        brandName:
+          x-ngsi:
+            type: Property
+            model: 'https://schema.org/Text'
+          type: string
+          description: 'Brand Name'
+        dataProvider:
+          x-ngsi:
+            type: Property
+            model: 'https://schema.org/Text'
+          type: string
+          description: 'Specifies the URL to information about the provider of this information'
+        dateLastReported:
+          x-ngsi:
+            type: Property
+            model: 'https://schema.org/DateTime'
+          type: string
+          description: 'A timestamp which denotes the last time when the device successfully reported data. Date and time in an ISO8601 UTCformat.'
+          format: date-time
+        description:
+          $ref: >-
+            https://smart-data-models.github.io/data-models/ngsi-ld.yaml#/description
+        documentation:
+          x-ngsi:
+            type: Property
+            model: 'https://schema.org/Text'
+          type: string
+          description: 'Technical Documentation (Installation / maintenance / used).'
+        installationCondition:
+          x-ngsi:
+            type: Property
+          type: array
+          description: ''
+          items:
+            type: string
+            enum:
+              - extremeHeat
+              - extremeCold
+              - extremeHumidity
+              - extremeClimate
+              - desert
+              - sand
+              - marine
+              - saline
+              - dust
+              - seismic
+              - other
+        installationMode:
+          x-ngsi:
+            type: Property
+            model: 'https://schema.org/Text'
+          type: string
+          description: ''
+        location:
+          $ref: >-
+            https://smart-data-models.github.io/data-models/ngsi-ld.yaml#/location
+        manufacturerName:
+          x-ngsi:
+            type: Property
+            model: 'https://schema.org/Text'
+          type: string
+          description: 'Manufacturer Name.'
+        modelName:
+          x-ngsi:
+            type: Property
+            model: 'https://schema.org/Text'
+          type: string
+          description: ' Model Name.'
+        name:
+          $ref: >-
+            https://smart-data-models.github.io/data-models/ngsi-ld.yaml#/name
+        owner:
+          $ref: >-
+            https://smart-data-models.github.io/data-models/fiware-terms.yaml#/owner
+            
+        owners:
+          x-ngsi:
+            type: Property
+          type: array
+          description: 'The owners of the Device. A list of [Text], [Person], [Organisation] or [URLs].'
+          items:
+            type: string
+        possibilityOfUse:
+          x-ngsi:
+            type: Property
+            model: 'https://schema.org/Text'
+          type: string
+          description: 'Possibility of use. A unique value of :'
+        rechargeEnergySource:
+          x-ngsi:
+            type: Property
+            model: 'https://schema.org/Text'
+          type: string
+          description: 'Recharge Energy Source. A unique value of :'
+        serialNumber:
+          x-ngsi:
+            type: Property
+            model: 'https://schema.org/Text'
+          type: string
+          description: 'Serial numbers.'
+        source:
+          $ref: >-
+            https://smart-data-models.github.io/data-models/fiware-terms.yaml#/source
+        typeEnergySource:
+          x-ngsi:
+            type: Property
+          type: array
+          description: 'Type of Energy Source regarding RechargeEnergySource attribute. A combination of :'
+          items:
+            type: string
+            enum:
+              - network
+              - photovoltaic
+              - generator
+              - sea
+              - river
+              - dam
+              - fall
+              - waterTurbine
+              - wind
+              - other
+        typeOfUse:
+          x-ngsi:
+            type: Property
+            model: 'https://schema.org/Text'
+          type: string
+          description: 'Accepted use regarding its positioning in an indoor / outdoor environment. A unique value of :'

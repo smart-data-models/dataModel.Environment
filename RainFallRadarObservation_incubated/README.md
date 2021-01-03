@@ -1,1 +1,0 @@
-This data model is being created in the incubated repository [link](https://github.com/smart-data-models/harmonization/tree/master/RainFallRadarObservation)
