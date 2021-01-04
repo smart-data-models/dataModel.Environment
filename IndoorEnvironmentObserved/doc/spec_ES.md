@@ -1,7 +1,7 @@
 Entidad: IndoorEnvironmentObserved  
 ==================================  
 [Licencia abierta](https://github.com/smart-data-models//dataModel.Environment/blob/master/IndoorEnvironmentObserved/LICENSE.md)  
-Descripción global: **Una observación de las condiciones del aire y el clima para los ambientes interiores.  
+Descripción global: **Una observación de las condiciones del aire y el clima en ambientes interiores.  
 
 ## Lista de propiedades  
 
