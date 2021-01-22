@@ -2,9 +2,7 @@
 
 ## Description 
 
-It represents an observation of those acoustic parameters that estimate noise pressure levels at a certain place and time.
-This entity is primarily associated with the Smart City and environment vertical segments and related IoT applications.
-
+An observation of those acoustic parameters that estimate noise pressure levels at a certain place and time. 
 ### Specification
 
 Link to the [interactive specification](https://swagger.lab.fiware.org/?url=https://smart-data-models.github.io/dataModel.Environment/NoiseLevelObserved/swagger.yaml)
