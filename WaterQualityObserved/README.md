@@ -2,9 +2,7 @@
 
 ## Description 
 
-Water Quality data model is intended to represent water quality parameters
-at a certain water mass (river,  lake, sea, etc.) section
-
+Water Quality data model is intended to represent water quality parameters at a certain water mass (river,  lake, sea, etc.) section
 ### Specification
 
 Link to the [interactive specification](https://swagger.lab.fiware.org/?url=https://smart-data-models.github.io/dataModel.Environment/WaterQualityObserved/swagger.yaml)
