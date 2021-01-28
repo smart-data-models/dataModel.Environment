@@ -5,9 +5,11 @@ Entity: WaterObserved
 
 ## List of properties  
 
-- `address`: The mailing address.  - `alternateName`: An alternative name for this item  - `areaServed`: The geographic area where a service or offered item is provided  - `dataProvider`: A sequence of characters identifying the provider of the harmonised data entity.  - `dateCreated`: Entity creation timestamp. This will usually be allocated by the storage platform.  - `dateModified`: Timestamp of the last modification of the entity. This will usually be allocated by the storage platform.  - `dateObserved`: Date and time of this observation represented by an ISO8601 UTC format.  - `dateObservedFrom`: Observation period : Start date and time in an ISO8601 UTC format.  - `dateObservedTo`: Observation period : End date and time in an ISO8601 UTC format.  - `description`: A description of this item  - `flow`: Water Flow observed. The unit code (text) of measurement given using the UN/CEFACAT  - `height`: Water height - Level reach on alert coasts.  - `id`: Unique identifier of the entity  - `location`:   - `measuredArea`: Water height - Level reach on alert coasts.   - `name`: The name of this item.  - `objectArea`: Percentage occupied by floating object in the area.  - `objectHeightAverage`: Average height raised.  - `objectHeightMax`: Maximum height raised.  - `objectVolume`: Estimated volume raised.  - `owner`: A List containing a JSON encoded sequence of characters referencing the unique Ids of the owner(s)  - `refDevice`: A reference to a point of interest associated to this observation.  - `seeAlso`: list of uri pointing to additional resources about the item  - `source`: A sequence of characters giving the original source of the entity data as a URL. Recommended to be the fully qualified domain name of the source provider, or the URL to the source object.  - `swellDirection`: Water height - Level reach on alert coasts.  - `swellHeight`: Water height - Level reach on alert coasts.  - `swellPeriod`: Water height - Level reach on alert coasts.  - `type`: NGSI Entity type  - `waveLength`: Water height - Level reach on alert coasts.     
+- `address`: The mailing address.  - `alternateName`: An alternative name for this item  - `areaServed`: The geographic area where a service or offered item is provided  - `dataProvider`: A sequence of characters identifying the provider of the harmonised data entity.  - `dateCreated`: Entity creation timestamp. This will usually be allocated by the storage platform.  - `dateModified`: Timestamp of the last modification of the entity. This will usually be allocated by the storage platform.  - `dateObserved`: Date and time of this observation represented by an ISO8601 UTC format.  - `dateObservedFrom`: Observation period : Start date and time in an ISO8601 UTC format.  - `dateObservedTo`: Observation period : End date and time in an ISO8601 UTC format.  - `description`: A description of this item  - `flow`: Water Flow observed. The unit code (text) of measurement given using the UN/CEFACAT  - `height`: XXXProperty. Water height - Level reach on alert coasts.  - `id`: Unique identifier of the entity  - `location`:   - `measuredArea`: Water height - Level reach on alert coasts. The unit code (text) of measurement given using the [UN/CEFACT Common Codes](http://wiki.goodrelations-vocabulary.org/Documentation/UN/CEFACT_Common_Codes) (max. 3 characters). For instance, <code>MTK</code> represents M².  - `name`: The name of this item.  - `objectArea`: Percentage occupied by floating object in the area. The unit code (text) of measurement given using the [UN/CEFACT Common Codes](http://wiki.goodrelations-vocabulary.org/Documentation/UN/CEFACT_Common_Codes) (max. 3 characters). For instance, <code>P1</code> represents Percentage.  - `objectHeightAverage`: Average height raised. The unit code (text) of measurement given using the [UN/CEFACT Common Codes](http://wiki.goodrelations-vocabulary.org/Documentation/UN/CEFACT_Common_Codes) (max. 3 characters). For instance, <code>MTR</code> represents Meter.  - `objectHeightMax`: Maximum height raised. The unit code (text) of measurement given using the [UN/CEFACT Common Codes](http://wiki.goodrelations-vocabulary.org/Documentation/UN/CEFACT_Common_Codes) (max. 3 characters). For instance, <code>MTR</code> represents Meter.  - `objectVolume`: Estimated volume raised. The unit code (text) of measurement given using the [UN/CEFACT Common Codes](http://wiki.goodrelations-vocabulary.org/Documentation/UN/CEFACT_Common_Codes) (max. 3 characters). For instance, <code>MTQ</code> represents Cubic Meters  - `owner`: A List containing a JSON encoded sequence of characters referencing the unique Ids of the owner(s)  - `refDevice`: A reference to a point of interest associated to this observation.  - `seeAlso`: list of uri pointing to additional resources about the item  - `source`: A sequence of characters giving the original source of the entity data as a URL. Recommended to be the fully qualified domain name of the source provider, or the URL to the source object.  - `swellDirection`: Water height - Level reach on alert coasts.  - `swellHeight`: XXXProperty. Water height - Level reach on alert coasts.  - `swellPeriod`: Water height - Level reach on alert coasts.  - `type`: NGSI Entity type. It has to be WaterObserved  - `waveLength`: Water height - Level reach on alert coasts.     
 Required properties  
-- `dateObserved`  - `id`  - `location`  - `type`  ## Data Model description of properties  
+- `dateObserved`  - `id`  - `location`  - `type`    
+Water observation data model is intended to represent the parameters of flow, level and volume of water observed, as well as the swell information, over a fixed or variable area. This observation also includes the masses of floating objects on this area.  The data collected is provided by [Sensors], [Cameras], [Water stations] positioned at specific or sensitive locations for rivers, streams, torrent, lakes, seas, etc.  
+## Data Model description of properties  
 Sorted alphabetically (click for details)  
 <details><summary><strong>full yaml details</strong></summary>    
 ```yaml  
@@ -86,11 +88,11 @@ WaterObserved:
       x-ngsi:    
         model: https://schema.org/Number    
     height:    
-      description: 'Water height - Level reach on alert coasts.'    
+      description: 'XXXProperty. Water height - Level reach on alert coasts.'    
       minimum: 0    
-      type: Property    
+      type: number    
       x-ngsi:    
-        model: https://schema.org/Number    
+        model: https://schema.org/height    
     id:    
       anyOf: &waterobserved_-_properties_-_owner_-_items_-_anyof    
         - description: 'Property. Identifier format of any NGSI entity'    
@@ -251,38 +253,42 @@ WaterObserved:
           type: object    
       title: 'GeoJSON Geometry'    
     measuredArea:    
-      description: 'Water height - Level reach on alert coasts. '    
+      description: 'Water height - Level reach on alert coasts. The unit code (text) of measurement given using the [UN/CEFACT Common Codes](http://wiki.goodrelations-vocabulary.org/Documentation/UN/CEFACT_Common_Codes) (max. 3 characters). For instance, <code>MTK</code> represents M².'    
       minimum: 0    
       type: Property    
       x-ngsi:    
         model: https://schema.org/Number    
+        units: 'square meters'    
     name:    
       description: 'The name of this item.'    
       type: Property    
     objectArea:    
-      description: 'Percentage occupied by floating object in the area.'    
+      description: 'Percentage occupied by floating object in the area. The unit code (text) of measurement given using the [UN/CEFACT Common Codes](http://wiki.goodrelations-vocabulary.org/Documentation/UN/CEFACT_Common_Codes) (max. 3 characters). For instance, <code>P1</code> represents Percentage.'    
       minimum: 0    
       type: Property    
       x-ngsi:    
         model: https://schema.org/Number    
     objectHeightAverage:    
-      description: 'Average height raised.'    
+      description: 'Average height raised. The unit code (text) of measurement given using the [UN/CEFACT Common Codes](http://wiki.goodrelations-vocabulary.org/Documentation/UN/CEFACT_Common_Codes) (max. 3 characters). For instance, <code>MTR</code> represents Meter.'    
       minimum: 0    
       type: Property    
       x-ngsi:    
         model: https://schema.org/Number    
+        units: meters    
     objectHeightMax:    
-      description: 'Maximum height raised.'    
+      description: 'Maximum height raised. The unit code (text) of measurement given using the [UN/CEFACT Common Codes](http://wiki.goodrelations-vocabulary.org/Documentation/UN/CEFACT_Common_Codes) (max. 3 characters). For instance, <code>MTR</code> represents Meter.'    
       minimum: 0    
       type: Property    
       x-ngsi:    
         model: https://schema.org/Number    
+        units: meters    
     objectVolume:    
-      description: 'Estimated volume raised.'    
+      description: 'Estimated volume raised. The unit code (text) of measurement given using the [UN/CEFACT Common Codes](http://wiki.goodrelations-vocabulary.org/Documentation/UN/CEFACT_Common_Codes) (max. 3 characters). For instance, <code>MTQ</code> represents Cubic Meters'    
       minimum: 0    
       type: Property    
       x-ngsi:    
         model: https://schema.org/Number    
+        units: 'cubic meters'    
     owner:    
       description: 'A List containing a JSON encoded sequence of characters referencing the unique Ids of the owner(s)'    
       items:    
@@ -323,11 +329,11 @@ WaterObserved:
       x-ngsi:    
         model: https://schema.org/Number    
     swellHeight:    
-      description: 'Water height - Level reach on alert coasts.'    
+      description: 'XXXProperty. Water height - Level reach on alert coasts.'    
       minimum: 0    
-      type: Property    
+      type: number    
       x-ngsi:    
-        model: https://schema.org/Number    
+        model: https://schema.org/height    
     swellPeriod:    
       description: 'Water height - Level reach on alert coasts.'    
       minimum: 0    
@@ -335,7 +341,7 @@ WaterObserved:
       x-ngsi:    
         model: https://schema.org/Number    
     type:    
-      description: 'NGSI Entity type'    
+      description: 'NGSI Entity type. It has to be WaterObserved'    
       enum:    
         - WaterObserved    
       type: Property    
