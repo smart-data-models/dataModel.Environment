@@ -23,5 +23,5 @@
   "observedAt": "2020-03-17TT08:45:00Z",
   "measurementType": "Instant",
   "measurementInterval": 1,
-  "reliability": 99.3
+  "reliability": 0.993
 }
