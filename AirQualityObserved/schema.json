@@ -46,7 +46,7 @@
         "as": {
           "type": "number",
           "minimum": 0,
-          "description": "Property. Arsenic detected"
+          "description": "Property. Model:'https://schema.org/Number'. Arsenic detected"
         },
         "c6h6": {
           "type": "number",
@@ -62,6 +62,11 @@
           "type": "number",
           "minimum": 0,
           "description": "Property. Carbon Monoxide detected"
+        },
+        "co2": {
+          "type": "number",
+          "minimum": 0,
+          "description": "Property. Carbon Dioxide detected"
         },
         "ni": {
           "type": "number",
