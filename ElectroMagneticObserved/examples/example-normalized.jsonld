@@ -61,7 +61,7 @@
   },
   "reliability": {
     "type": "Property",
-    "value": 99.3
+    "value": 0.993
   },
   "@context": [
     "https://schema.lab.fiware.org/ld/context",
