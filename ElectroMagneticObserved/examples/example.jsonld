@@ -23,7 +23,7 @@
   "observedAt": "2020-03-17TT08:45:00Z",
   "measurementType": "Instant",
   "measurementInterval": 1,
-  "reliability": 99.3,
+  "reliability": 0.993,
   "@context": [
     "https://schema.lab.fiware.org/ld/context",
     "https://uri.etsi.org/ngsi-ld/v1/ngsi-ld-core-context.jsonld"
