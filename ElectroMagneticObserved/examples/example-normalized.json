@@ -61,6 +61,6 @@
   },
   "reliability": {
     "type": "Property",
-    "value": 99.3
+    "value": 0.993
   }
 }
