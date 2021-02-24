@@ -25,7 +25,7 @@
   "co": 500,
   "no": 45,
   "co2": 69,
-  "Nox": 139,
+  "nox": 139,
   "so2": 11,
   "coLevel": "moderate",
   "refPointOfInterest": "28079004-Pza.deEspanya"
