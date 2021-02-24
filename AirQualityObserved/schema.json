@@ -119,7 +119,6 @@
           "minimum": 0,
           "description": "Property. Model:'https://schema.org/Number'. Amount of water rain. Units:'Liters per square meter'."
         },
-        ,
         "relativeHumidity": {
           "type": "number",
           "minimum": 0,
