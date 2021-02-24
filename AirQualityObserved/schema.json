@@ -205,7 +205,7 @@
         },
         "windDirection": {
           "type": "number",
-          "description": "Property. Model:'http://schema.org/Number'. Direction of the wind bet",
+          "description": "Property. Model:'http://schema.org/Number'. Direction of the weather vane",
           "minimum": -180,
           "maximum": 180
         },
