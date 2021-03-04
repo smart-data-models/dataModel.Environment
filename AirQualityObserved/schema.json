@@ -213,6 +213,11 @@
           "type": "number",
           "description": "Property. Model:'http//schema.org/Number'. Intensity of the wind",
           "minimum": 0
+        },
+        "airQualityIndex": {
+          "type": "integer",
+          "minimum": 0,
+          "description": "Property. Model:'https://schema.org/Number'. Air quality index is a number used to report the quality of the air on any given day."
         }
       }
     }
