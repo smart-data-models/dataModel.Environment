@@ -400,12 +400,12 @@ AirQualityObserved:
   "airQualityLevel": "moderate",  
   "airQualityIndex": 65,  
   "reliability": 0.7,  
-  "CO": 500,  
-  "NO": 45,  
-  "NO2": 69,  
-  "NOx": 139,  
-  "SO2": 11,  
-  "CO_Level": "moderate",  
+  "co": 500,  
+  "no": 45,  
+  "co2": 69,  
+  "nox": 139,  
+  "so2": 11,  
+  "coLevel": "moderate",  
   "refPointOfInterest": "28079004-Pza.deEspanya"  
 }  
 ```  
