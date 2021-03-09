@@ -30,10 +30,10 @@
           "description": "Property. Higher level area to which this air quality measurement belongs to. Model:'https://schema.org/Text' "
         },
         "airQualityIndex": {
-          "$ref": "https://smart-data-models.github.io/dataModel.Environment/Environment-schema.json#/definitions/airQualityIndex"
+          "$ref": "https://raw.githubusercontent.com/smart-data-models/dataModel.Environment/master/Environment-schema.json#/definitions/airQualityIndex"
         },
         "airQualityLevel": {
-          "$ref": "https://smart-data-models.github.io/dataModel.Environment/Environment-schema.json#/definitions/airQualityLevel"
+          "$ref": "https://raw.githubusercontent.com/smart-data-models/dataModel.Environment/master/Environment-schema.json#/definitions/airQualityLevel"
         },
         "reliability": {
           "type": "number",
