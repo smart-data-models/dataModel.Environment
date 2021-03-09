@@ -5,7 +5,7 @@ Entidad: AirQualityObserved
 
 ## Lista de propiedades  
 
-- `address`: La dirección postal.  - `airQualityIndex`: Índice de calidad del aire correspondiente a la calidad del aire observada  - `airQualityLevel`: Nivel cualitativo global de preocupación por la salud correspondiente a la calidad del aire observada  - `alternateName`: Un nombre alternativo para este artículo  - `areaServed`: Área de nivel superior a la que pertenece esta medición de la calidad del aire  - `as`: Arsénico detectado  - `c6h6`: Se ha detectado benceno  - `cd`: Cadmio detectado  - `co`: Monóxido de carbono detectado  - `dataProvider`: Una secuencia de caracteres que identifica al proveedor de la entidad de datos armonizada.  - `dateCreated`: Marca de tiempo de creación de la entidad. Suele ser asignada por la plataforma de almacenamiento.  - `dateModified`: Marca de tiempo de la última modificación de la entidad. Normalmente será asignada por la plataforma de almacenamiento.  - `dateObserved`: La fecha y la hora de esta observación en formato ISO8601 UTC  - `description`: Una descripción de este artículo  - `id`: Identificador único de la entidad  - `location`:   - `name`: El nombre de este artículo.  - `ni`: Níquel detectado  - `False`: Monóxido de nitrógeno detectado  - `no2`: Dióxido de nitrógeno detectado  - `o3`: Ozono detectado  - `owner`: Una lista que contiene una secuencia de caracteres codificada en JSON que hace referencia a los identificadores únicos de los propietarios  - `pb`: Plomo detectado  - `pm10`: Partículas de 10 micrómetros o menos de diámetro  - `pm25`: Partículas de 2,5 micrómetros o menos de diámetro  - `refDevice`: Una referencia al dispositivo o dispositivos que captaron esta observación.  - `refPointOfInterest`: Una referencia a un punto de interés (normalmente una estación de calidad del aire) asociada a esta observación.  - `refWeatherObserved`:  Tiempo observado asociado a las condiciones de calidad del aire descritas por esta entidad.  - `reliability`: Fiabilidad (porcentaje, expresado en partes por uno) correspondiente a la calidad del aire observada  - `seeAlso`: lista de uri que apuntan a recursos adicionales sobre el artículo  - `sh2`: Sulfuro de hidrógeno detectado  - `so2`: Dióxido de azufre detectado  - `source`: Una secuencia de caracteres que indica la fuente original de los datos de la entidad en forma de URL. Se recomienda que sea el nombre de dominio completo del proveedor de origen o la URL del objeto de origen.  - `type`: NGSI Tipo de entidad  - `volatileOrganicCompoundsTotal`: Alcanos <C10, cetonas <C6, aldehídos <C10, ácidos carboxílicos <C5, aspirinas<C7, alquenos <C8, aromáticos    
+- `address`: La dirección postal.  - `airQualityIndex`: Índice de calidad del aire correspondiente a la calidad del aire observada  - `airQualityLevel`: Nivel cualitativo global de preocupación por la salud correspondiente a la calidad del aire observada  - `alternateName`: Un nombre alternativo para este artículo  - `areaServed`: Área de nivel superior a la que pertenece esta medición de la calidad del aire  - `as`: Arsénico detectado  - `c6h6`: Se ha detectado benceno  - `cd`: Cadmio detectado  - `co`: Monóxido de carbono detectado  - `dataProvider`: Una secuencia de caracteres que identifica al proveedor de la entidad de datos armonizada.  - `dateCreated`: Marca de tiempo de creación de la entidad. Suele ser asignada por la plataforma de almacenamiento.  - `dateModified`: Marca de tiempo de la última modificación de la entidad. Normalmente será asignada por la plataforma de almacenamiento.  - `dateObserved`: La fecha y la hora de esta observación en formato ISO8601 UTC  - `description`: Una descripción de este artículo  - `id`: Identificador único de la entidad  - `location`:   - `name`: El nombre de este artículo.  - `ni`: Níquel detectado  - `False`: Monóxido de nitrógeno detectado  - `no2`: Dióxido de nitrógeno detectado  - `o3`: Ozono detectado  - `owner`: Una lista que contiene una secuencia de caracteres codificada en JSON que hace referencia a los identificadores únicos de los propietarios  - `pb`: Plomo detectado  - `pm10`: Partículas de 10 micrómetros o menos de diámetro  - `pm25`: Partículas de 2,5 micrómetros o menos de diámetro  - `refDevice`: Una referencia al dispositivo o dispositivos que captaron esta observación.  - `refPointOfInterest`: Una referencia a un punto de interés (normalmente una estación de calidad del aire) asociada a esta observación.  - `refWeatherObserved`:  Tiempo observado asociado a las condiciones de calidad del aire descritas por esta entidad.  - `reliability`: Fiabilidad (porcentaje, expresado en partes por uno) correspondiente a la calidad del aire observada  - `seeAlso`: lista de uri que apuntan a recursos adicionales sobre el artículo  - `sh2`: Sulfuro de hidrógeno detectado  - `so2`: Dióxido de azufre detectado  - `source`: Una secuencia de caracteres que indica la fuente original de los datos de la entidad en forma de URL. Se recomienda que sea el nombre de dominio completo del proveedor de origen, o la URL del objeto de origen.  - `type`: NGSI Tipo de entidad  - `volatileOrganicCompoundsTotal`: Alcanos <C10, cetonas <C6, aldehídos <C10, ácidos carboxílicos <C5, aspirinas<C7, alquenos <C8, aromáticos    
 Propiedades requeridas  
 - `dateObserved`  - `id`  - `location`  - `type`  ## Descripción del modelo de datos de las propiedades  
 Ordenados alfabéticamente (haga clic para ver los detalles)  
@@ -15,36 +15,38 @@ AirQualityObserved:
   description: 'An observation of air quality conditions at a certain place and time.'    
   properties:    
     address:    
-      description: 'The mailing address.'    
+      description: 'The mailing address'    
       properties:    
         addressCountry:    
-          description: 'Property. The country. For example, Spain. Model:''https://schema.org/Text'''    
+          description: 'Property. The country. For example, Spain. Model:''https://schema.org/addressCountry'''    
           type: string    
         addressLocality:    
-          description: 'Property. The locality in which the street address is, and which is in the region. Model:''https://schema.org/Text'''    
+          description: 'Property. The locality in which the street address is, and which is in the region. Model:''https://schema.org/addressLocality'''    
           type: string    
         addressRegion:    
-          description: 'Property. The region in which the locality is, and which is in the country. Model:''https://schema.org/Text'''    
+          description: 'Property. The region in which the locality is, and which is in the country. Model:''https://schema.org/addressRegion'''    
           type: string    
         areaServed:    
-          description: 'Property. The geographic area where a service or offered item is provided. Model:''https://schema.org/Text'''    
+          description: 'Property. The geographic area where a service or offered item is provided. Model:''https://schema.org/areaServed'''    
           type: string    
         postOfficeBoxNumber:    
-          description: 'Property. The post office box number for PO box addresses. For example, Spain. Model:''https://schema.org/Text'''    
+          description: 'Property. The post office box number for PO box addresses. For example, Spain. Model:''https://schema.org/postOfficeBoxNumber'''    
           type: string    
         postalCode:    
-          description: 'Property. The postal code. For example, Spain. Model:''https://schema.org/Text'''    
+          description: 'Property. The postal code. For example, Spain. Model:''https://schema.org/https://schema.org/postalCode'''    
           type: string    
         streetAddress:    
-          description: 'Property. The street address. Model:''https://schema.org/Text'''    
+          description: 'Property. The street address. Model:''https://schema.org/streetAddress'''    
           type: string    
       type: Property    
+      x-ngsi:    
+        model: https://schema.org/address    
     airQualityIndex:    
-      description: 'Air quality index corresponding to the air quality observed'    
+      description: 'Air quality index is a number used to report the quality of the air on any given day.'    
       minimum: 0    
       type: Property    
       x-ngsi:    
-        model: 'https://schema.org/Number '    
+        model: https://schema.org/Number    
     airQualityLevel:    
       description: 'Overall qualitative level of health concern corresponding to the air quality observed'    
       minLength: 2    
@@ -63,6 +65,8 @@ AirQualityObserved:
       description: 'Arsenic detected'    
       minimum: 0    
       type: Property    
+      x-ngsi:    
+        model: https://schema.org/Number    
     c6h6:    
       description: 'Benzene detected'    
       minimum: 0    
@@ -74,6 +78,13 @@ AirQualityObserved:
     co:    
       description: 'Carbon Monoxide detected'    
       minimum: 0    
+      type: Property    
+    co2:    
+      description: 'Carbon Dioxide detected'    
+      minimum: 0    
+      type: Property    
+    coLevel:    
+      description: 'Qualitative Carbon Monoxide presence'    
       type: Property    
     dataProvider:    
       description: 'A sequence of characters identifying the provider of the harmonised data entity.'    
@@ -268,6 +279,10 @@ AirQualityObserved:
       description: 'Nitrogen dioxide detected'    
       minimum: 0    
       type: Property    
+    nox:    
+      description: 'Other Nitrogen oxides detected'    
+      minimum: 0    
+      type: Property    
     o3:    
       description: 'Ozone detected'    
       minimum: 0    
@@ -290,6 +305,13 @@ AirQualityObserved:
       description: 'Particulate matter 2.5 micrometers or less in diameter'    
       minimum: 0    
       type: Property    
+    precipitation:    
+      description: 'Amount of water rain'    
+      minimum: 0    
+      type: Property    
+      x-ngsi:    
+        model: https://schema.org/Number    
+        units: 'Liters per square meter.'    
     refDevice:    
       anyOf:    
         - description: 'Property. Identifier format of any NGSI entity'    
@@ -326,6 +348,13 @@ AirQualityObserved:
           type: string    
       description: ' Weather observed associated to the air quality conditions described by this entity.'    
       type: Relationship    
+    relativeHumidity:    
+      description: 'Humidity in the Air'    
+      maximum: 1    
+      minimum: 0    
+      type: Property    
+      x-ngsi:    
+        model: https://schema.org/Number    
     reliability:    
       description: 'Reliability (percentage, expressed in parts per one) corresponding to the air quality observed'    
       maximum: 1.0    
@@ -355,15 +384,39 @@ AirQualityObserved:
     source:    
       description: 'A sequence of characters giving the original source of the entity data as a URL. Recommended to be the fully qualified domain name of the source provider, or the URL to the source object.'    
       type: Property    
+    temperature:    
+      description: 'Temperature of the item'    
+      type: Property    
     type:    
       description: 'NGSI Entity type'    
       enum:    
         - AirQualityObserved    
       type: Property    
+    typeofLocation:    
+      description: 'Type of location of the sampled item'    
+      enum:    
+        - indoor    
+        - outdoor    
+      type: Property    
+      x-ngsi:    
+        model: https://schema.org/Text    
     volatileOrganicCompoundsTotal:    
       description: 'Alkanes <C10, ketones <C6, aldehydes <C10, carboxylic acids <C5, aspirits<C7, Alkenes <C8, Aromatics'    
       minimum: 0    
       type: Property    
+    windDirection:    
+      description: 'Direction of the weather vane'    
+      maximum: 180    
+      minimum: -180    
+      type: Property    
+      x-ngsi:    
+        model: http://schema.org/Number    
+    windSpeed:    
+      description: 'Intensity of the wind'    
+      minimum: 0    
+      type: Property    
+      x-ngsi:    
+        model: http//schema.org/Number    
   required:    
     - id    
     - type    
