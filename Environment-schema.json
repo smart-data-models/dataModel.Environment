@@ -1,0 +1,19 @@
+{
+  "$schema": "http://json-schema.org/schema#",
+  "$id": "https://smart-data-models.github.io/dataModel.Environment/Environment-schema.json",
+  "title": "Smart Data Models - Environment base schema",
+  "description": "Common NGSI-LD definitions for Environment data models",
+  "type": "object",
+  "definitions": {
+    "airQualityIndex": {
+      "type": "integer",
+      "minimum": 0,
+      "description": "Property. Air quality index corresponding to the air quality observed. Model:'https://schema.org/Number' "
+    },
+    "airQualityLevel": {
+      "type": "string",
+      "minLength": 2,
+      "description": "Property. Overall qualitative level of health concern corresponding to the air quality observed. Model:'https://schema.org/Tex' "
+    }
+  }
+}

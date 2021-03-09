@@ -30,14 +30,10 @@
           "description": "Property. Higher level area to which this air quality measurement belongs to. Model:'https://schema.org/Text' "
         },
         "airQualityIndex": {
-          "type": "integer",
-          "minimum": 0,
-          "description": "Property. Air quality index corresponding to the air quality observed. Model:'https://schema.org/Number' "
+          "$ref": "https://smart-data-models.github.io/dataModel.Environment/Environment-schema.json#/definitions/airQualityIndex"
         },
         "airQualityLevel": {
-          "type": "string",
-          "minLength": 2,
-          "description": "Property. Overall qualitative level of health concern corresponding to the air quality observed. Model:'https://schema.org/Tex' "
+          "$ref": "https://smart-data-models.github.io/dataModel.Environment/Environment-schema.json#/definitions/airQualityLevel"
         },
         "reliability": {
           "type": "number",
