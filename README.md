@@ -8,6 +8,8 @@ The following entity types are available:
 
 - [AirQualityObserved](https://github.com/smart-data-models/dataModel.Environment/blob/master/AirQualityObserved/README.md). An observation of air quality conditions at a certain place and time.
 
+- [ElectroMagneticObserved](https://github.com/smart-data-models/dataModel.Environment/blob/master/ElectroMagneticObserved/README.md). The Data Model is intended to measure excessive electric and magnetic fields (EMFs), or radiation in a work or public environment according to the level of exposure to electromagnetic fields on the air. The frequency of the hertzian waves is conventionally lower than 300 GHz, propagating in space without artificial guide. They are between 9 kHz and 300 GHz.
+
 - [NoiseLevelObserved](https://github.com/smart-data-models/dataModel.Environment/blob/master/NoiseLevelObserved/README.md). An observation of those acoustic parameters that estimate noise pressure levels at a certain place and time. 
 
 - [WaterObserved](https://github.com/smart-data-models/dataModel.Environment/blob/master/WaterObserved/README.md).  Water observation data model is intended to represent the parameters of flow, level and volume of water observed, as well as the swell information, over a fixed or variable area. This observation also includes the masses of floating objects on this area. The data collected is provided by Sensors, Cameras,Water stations positioned at specific or sensitive locations for rivers, streams, torrent, lakes, seas, etc.
@@ -17,6 +19,8 @@ The following entity types are available:
 - [RainFallRadarObservation](https://github.com/smart-data-models/dataModel.Environment/blob/master/RainFallRadarObservation/README.md). The Data Model is intended to measure the water slides on a predefined area by a set of 4 Location represented by a Geo property format.
 
 - [IndoorEnvironmentObserved](https://github.com/smart-data-models/dataModel.Environment/blob/master/IndoorEnvironmentObserved/README.md). An observation of air and climate conditions for indoor environments.
+
+- [FloodMonitoring](https://github.com/smart-data-models/dataModel.Environment/blob/master/FloodMonitoring/README.md). Flood Sensor Data Model intended to represent the level of flooding w.r.t water flow/level at a certain water mass(river, lake,etc.)..
 
 
 
