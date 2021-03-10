@@ -1,0 +1,42 @@
+{
+	"id": "urn:ngsi-ld:FloodMonitoring:Pune-NoiseLevelObserved",
+    "type": "FloodMonitoring",
+	"alertLevel": {
+        "type":  "Property",
+        "value":  11.00,
+        "unitCode": "MTR"
+    },
+	"measuredDistance": {
+        "type":  "Property",
+        "value":  4.22,
+        "unitCode": "MTR"
+    },
+	"currentLevel": {
+        "type":  "Property",
+        "value":  1.98,
+        "unitCode": "MTR"
+    },
+	"dangerLevel": {
+        "type":  "Property",
+        "value":  26.00,
+        "unitCode": "MTR"
+    },
+	"observationDateTime": {
+        "type": "string",
+        "format": "date-time",
+        "value": "2020-09-16T13:30:00+05:30"
+    },
+	"referenceLevel":  {
+        "type": "Property",
+        "value": 4.2,
+        "unitCode": "MTR"
+    },
+	"floodLevelStatus": {
+        "type": "string",
+        "value": "Normal"
+    },
+	"stationID": {
+        "type": "string",
+        "value":"FWR013"
+    }
+}

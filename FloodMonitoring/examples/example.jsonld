@@ -1,0 +1,13 @@
+{
+	"@context": ["https://schema.lab.fiware.org/ld/context",
+		"https://uri.etsi.org/ngsi-ld/v1/ngsi-ld-core-context.jsonld"
+	],
+	"alertLevel": 10.00,
+	"measuredDistance": 3.22,
+	"currentLevel": 0.98,
+	"dangerLevel": 25.00,
+	"observationDateTime": "2020-09-16T13:30:00+05:30",
+	"referenceLevel": 4.2,
+	"floodLevelStatus": "Normal",
+	"stationID": "FWR013"
+}
