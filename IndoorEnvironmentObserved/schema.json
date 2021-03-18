@@ -99,6 +99,10 @@
           "type": "number",
           "minimum": 0,
           "description": "Property. Measured illuminance"
+        },
+        "co2": {
+          "type": "number",
+          "description": "Property. The measured interior C02 concentration nominally in mg/L. Units:'mg per liter'"
         }
       }
     }
