@@ -1,67 +1,34 @@
 {
-    "id": "urn:ngsi-ld:AeroAllergenObserved:AeroAllergenObserved-CDMX-Pollen-Cuajimalpa",
-    "type": "AeroAllergenObserved",
-    "modifiedAt": "2018-02-16T17:24:39.00Z",
-    "dateObserved": {
-        "type": "Property",
-        "value": {
-            "@type": "DateTime",
-            "@value": "2018-02-11T00:00:00.00Z"
-        }
-    },
-    "alnus": {
-        "type": "Property",
-        "value": 40
-    },
-    "alnus_Allergenicity": {
-        "type": "Property",
-        "value": "3"
-    },
-    "allergenRisk": {
-        "type": "Property",
-        "value": "moderate"
-    },
-    "casuarina": {
-        "type": "Property",
-        "value": 1
-    },
-    "casuarina_Level": {
-        "type": "Property",
-        "value": "low"
-    },
-    "casuarina_Allergenicity": {
-        "type": "Property",
-        "value": "3"
-    },
-    "source": {
-        "type": "Property",
-        "value": "http://rema.atmosfera.unam.mx/rema/"
-    },
-    "location": {
-        "type": "GeoProperty",
-        "value": {
-            "type": "Point",
-            "coordinates": [
-                -99.276977,
-                19.381877
-            ]
-        }
-    },
-    "address": {
-        "type": "Property",
-        "value": {
-            "addressCountry": "MX",
-            "addressLocality": "Ciudad de México",
-            "streetAddress": "Colegio Franco-Inglés",
-            "type": "PostalAddress"
-        }
-    },
-    "alnus_Level": {
-        "type": "Property",
-        "value": "moderate"
-    },
-    "@context": [
-        "https://schema.lab.fiware.org/ld/context",
-        "https://uri.etsi.org/ngsi-ld/v1/ngsi-ld-core-context.jsonld"
-    ]
+  "@context": [
+    "https://smartdatamodels.org/context.jsonld",
+    "https://uri.etsi.org/ngsi-ld/v1/ngsi-ld-core-context.jsonld"
+  ],
+  "address": {
+    "addressCountry": "MX",
+    "addressLocality": "Ciudad de M\u00e9xico",
+    "streetAddress": "Colegio Franco-Ingl\u00e9s",
+    "type": "PostalAddress"
+  },
+  "allergenRisk": "moderate",
+  "alnus": 40,
+  "alnus_Allergenicity": "3",
+  "alnus_Level": "moderate",
+  "casuarina": 1,
+  "casuarina_Allergenicity": "3",
+  "casuarina_Level": "low",
+  "dateObserved": {
+    "@type": "DateTime",
+    "@value": "2018-02-11T00:00:00.00Z"
+  },
+  "id": "urn:ngsi-ld:AeroAllergenObserved:AeroAllergenObserved-CDMX-Pollen-Cuajimalpa",
+  "location": {
+    "coordinates": [
+      -99.276977,
+      19.381877
+    ],
+    "type": "Point"
+  },
+  "modifiedAt": "2018-02-16T17:24:39.00Z",
+  "source": "http://rema.atmosfera.unam.mx/rema/",
+  "type": "AeroAllergenObserved"
 }
