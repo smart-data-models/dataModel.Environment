@@ -1,0 +1,29 @@
+# ElectroMagneticObserved
+
+## Description 
+
+The Data Model is intended to measure excessive electric and magnetic fields (EMFs), or radiation in a work or public environment according to the level of exposure to electromagnetic fields on the air. The frequency of the hertzian waves is conventionally lower than 300 GHz, propagating in space without artificial guide. They are between 9 kHz and 300 GHz.
+### Specification
+
+Link to the [interactive specification](https://swagger.lab.fiware.org/?url=https://smart-data-models.github.io/dataModel.Environment/ElectroMagneticObserved/swagger.yaml)
+
+Link to the [specification](https://smart-data-models.github.io/dataModel.Environment/ElectroMagneticObserved/doc/spec.md)
+
+Link to the [specification in Spanish](https://smart-data-models.github.io/dataModel.Environment/ElectroMagneticObserved/doc/spec_ES.md)
+
+Link to the [specification in French](https://smart-data-models.github.io/dataModel.Environment/ElectroMagneticObserved/doc/spec_FR.md)
+### Examples
+
+Link to the [example](https://smart-data-models.github.io/dataModel.Environment/ElectroMagneticObserved/examples/example.json) (keyvalues) for NGSI v2
+
+Link to the [example](https://smart-data-models.github.io/dataModel.Environment/ElectroMagneticObserved/examples/example.jsonld) (keyvalues) for NGSI-LD
+
+Link to the [example](https://smart-data-models.github.io/dataModel.Environment/ElectroMagneticObserved/examples/example-normalized.json) (normalized) for NGSI-V2
+
+Link to the [example](https://smart-data-models.github.io/dataModel.Environment/ElectroMagneticObserved/examples/example-normalized.jsonld) (normalized) for NGSI-LD
+### Dynamic Examples generation
+
+Link to the [Generator](https://smartdatamodels.org/extra/ngsi-ld_generator_v0.91.php?schemaUrl=https://raw.githubusercontent.com/smart-data-models/dataModel.Environment/master/ElectroMagneticObserved/schema.json&email=info@smartdatamodels.org) of NGSI-LD payloads compliant with this data model. Refresh for new values
+### Contribution
+
+ If you have any issue on this data model you can raise an [issue](https://github.com/smart-data-models/dataModel.Environment/issues)  or contribute with a [PR](https://github.com/smart-data-models/dataModel.Environment/pulls)
