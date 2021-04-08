@@ -1,4 +1,6 @@
 {
+  "id": "urn:ngsi-ld:FloodMonitoring:Pune-NoiseLevelObserved",
+  "type": "FloodMonitoring",
   "alertLevel": 10.00,
   "measuredDistance": 3.22,
   "currentLevel": 0.98,
