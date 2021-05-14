@@ -66,28 +66,28 @@
                 "swellHeight": {
                     "type": "number",
                     "minimum": 0,
-                    "description": "Property. Model:'https://schema.org/height'. Water height - Level reach on alert coasts."
+                    "description": "Property. Model:'https://schema.org/height'. Swell height observed."
                 },
                 "swellPeriod": {
                     "type": "number",
                     "minimum": 0,
-                    "description": "Property. Model:'https://schema.org/Number'. Water height - Level reach on alert coasts."
+                    "description": "Property. Model:'https://schema.org/Number'. Swells period observed."
                 },
                 "swellDirection": {
                     "type": "number",
                     "minimum": 0,
                     "maximum": 360,
-                    "description": "Property. Model:'https://schema.org/Number'. Water height - Level reach on alert coasts."
+                    "description": "Property. Model:'https://schema.org/Number'. Swells Direction observed."
                 },
                 "waveLength": {
                     "type": "number",
                     "minimum": 0,
-                    "description": "Property. Model:'https://schema.org/Number'. Water height - Level reach on alert coasts. "
+                    "description": "Property. Model:'https://schema.org/Number'. Wave Length observed. "
                 },
                 "measuredArea": {
                     "type": "number",
                     "minimum": 0,
-                    "description": "Property. Model:'https://schema.org/Number'. Water height - Level reach on alert coasts. Units:'square meters'. The unit code (text) of measurement given using the [UN/CEFACT Common Codes](http://wiki.goodrelations-vocabulary.org/Documentation/UN/CEFACT_Common_Codes) (max. 3 characters). For instance, <code>MTK</code> represents M\u00b2."
+                    "description": "Property. Model:'https://schema.org/Number'. Reference of the surface measured. Units:'square meters'. The unit code (text) of measurement given using the [UN/CEFACT Common Codes](http://wiki.goodrelations-vocabulary.org/Documentation/UN/CEFACT_Common_Codes) (max. 3 characters). For instance, <code>MTK</code> represents M\u00b2."
                 },
                 "objectArea": {
                     "type": "number",
