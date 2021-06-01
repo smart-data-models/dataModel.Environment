@@ -13,9 +13,6 @@ ElectroMagneticObserved:
         addressRegion:
           description: 'Property. The region in which the locality is, and which is in the country. Model:''https://schema.org/addressRegion'''
           type: string
-        areaServed:
-          description: 'Property. The geographic area where a service or offered item is provided. Model:''https://schema.org/areaServed'''
-          type: string
         postOfficeBoxNumber:
           description: 'Property. The post office box number for PO box addresses. For example, 03578. Model:''https://schema.org/postOfficeBoxNumber'''
           type: string
@@ -253,10 +250,10 @@ ElectroMagneticObserved:
           format: uri
           type: string
       description: 'Reference to a [Device](https://github.com/smart-data-models/dataModel.Device/blob/master/Device/doc/spec.md) which captured this observation.'
-      type: Property
+      type: Relationship
       x-ngsi:
         model: https://schema.org/URL
-    refpointOfInterest:
+    refPointOfInterest:
       anyOf:
         - description: 'Property. Identifier format of any NGSI entity'
           maxLength: 256
@@ -267,7 +264,7 @@ ElectroMagneticObserved:
           format: uri
           type: string
       description: 'Reference to a [Point Of Interest](https://github.com/smart-data-models/dataModel.PointOfInterest/blob/master/PointOfInterest/doc/spec.md) linked with the observation.'
-      type: Property
+      type: Relationship
       x-ngsi:
         model: https://schema.org/URL
     reliability:
