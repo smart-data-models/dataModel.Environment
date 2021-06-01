@@ -1,14 +1,15 @@
 Entité : ElectroMagneticObserved  
 ================================  
-[Licence ouverte](https://github.com/smart-data-models//dataModel.Environment/blob/master/ElectroMagneticObserved/LICENSE.md)  
-Description globale : **Le modèle de données est destiné à mesurer les champs électriques et magnétiques (CEM) excessifs, ou le rayonnement dans un environnement de travail ou public en fonction du niveau d'exposition aux champs électromagnétiques dans l'air. La fréquence des ondes hertziennes est conventionnellement inférieure à 300 GHz, se propageant dans l'espace sans guide artificiel. Elles se situent entre 9 kHz et 300 GHz.**  
+[Licence ouverte] (https://github.com/smart-data-models//dataModel.Environment/blob/master/ElectroMagneticObserved/LICENSE.md)  
+[document généré automatiquement] (https://docs.google.com/presentation/d/e/2PACX-1vTs-Ng5dIAwkg91oTTUdt8ua7woBXhPnwavZ0FxgR8BsAI_Ek3C5q97Nd94HS8KhP-r_quD4H0fgyt3/pub?start=false&loop=false&delayms=3000#slide=id.gb715ace035_0_60)  
+Description globale : **Le modèle de données est destiné à mesurer les champs électriques et magnétiques (CEM) excessifs, ou les radiations dans un environnement de travail ou public en fonction du niveau d'exposition aux champs électromagnétiques dans l'air. La fréquence des ondes hertziennes est conventionnellement inférieure à 300 GHz, se propageant dans l'espace sans guide artificiel. Elles sont comprises entre 9 kHz et 300 GHz.**  
 
-## Liste des biens  
+## Liste des propriétés  
 
-- `address`: L'adresse postale  - `alternateName`: Un autre nom pour cet article  - `areaServed`: La zone géographique où un service ou un article offert est fourni  - `dataProvider`: Une séquence de caractères identifiant le fournisseur de l'entité de données harmonisées.  - `dateCreated`: Horodatage de la création de l'entité. Il est généralement attribué par la plate-forme de stockage.  - `dateModified`: Horodatage de la dernière modification de l'entité. Il est généralement attribué par la plate-forme de stockage.  - `dateObserved`: La date et l'heure de cette observation sont représentées par un format ISO8601 UTC. Elle peut être représentée par un instant précis ou par un intervalle ISO8601 pour séparer les attributs `dateObservedFrom`, `dateObservedTo`.  - `dateObservedFrom`: Période d'observation : Date et heure de début dans un format ISO8601 UTC. Cet attribut peut être utilisé en plus de l'attribut "dateObserved" lorsqu'il correspond à un intervalle de temps à mettre en évidence.  - `dateObservedTo`: Période d'observation : Date et heure de fin dans un format ISO8601 UTC. Cet attribut peut être utilisé en plus de l'attribut "dateObserved" lorsqu'il correspond à un intervalle de temps à mettre en évidence.  - `description`: Une description de cet article  - `eMF`: Niveau correspondant à l'enquête observée. Le code de l'unité (texte) est donné en utilisant les [codes communs du CEFACT-ONU] (http://wiki.goodrelations-vocabulary.org/Documentation/UN/CEFACT_Common_Codes). Par exemple, **MHz** représente Mega Hertz.  - `id`: Identifiant unique de l'entité  - `location`:   - `name`: Le nom de cet article.  - `owner`: Une liste contenant une séquence de caractères codés en JSON faisant référence aux Ids uniques du ou des propriétaires  - `refDevice`: Référence à un [dispositif] (https://github.com/smart-data-models/dataModel.Device/blob/master/Device/doc/spec.md) qui a permis de saisir cette observation.  - `refpointOfInterest`: Référence à un [Point d'intérêt] (https://github.com/smart-data-models/dataModel.PointOfInterest/blob/master/PointOfInterest/doc/spec.md) lié à l'observation.  - `reliability`: Pourcentage pour le facteur de confiance. Le code de l'unité (texte) est donné en utilisant les [codes communs du CEFACT-ONU] (http://wiki.goodrelations-vocabulary.org/Documentation/UN/CEFACT_Common_Codes). Par exemple, **P1** représente un pourcentage.  - `seeAlso`: liste d'uri pointant vers des ressources supplémentaires sur le sujet  - `source`: Une séquence de caractères donnant comme URL la source originale des données de l'entité. Il est recommandé d'utiliser le nom de domaine complet du fournisseur de la source, ou l'URL de l'objet source.  - `type`: Elle doit être observée par un système électromagnétique    
+- `address`: L'adresse postale  - `alternateName`: Un nom alternatif pour cet élément  - `areaServed`: La zone géographique où un service ou un article offert est fourni  - `dataProvider`: Une séquence de caractères identifiant le fournisseur de l'entité de données harmonisées.  - `dateCreated`: Horodatage de la création de l'entité. Celui-ci sera généralement attribué par la plateforme de stockage.  - `dateModified`: Horodatage de la dernière modification de l'entité. Il sera généralement attribué par la plateforme de stockage.  - `dateObserved`: Date et heure de cette observation représentées par un format ISO8601 UTC. Elle peut être représentée par un instant précis ou par un intervalle ISO8601 pour séparer les attributs `dateObservedFrom`, `dateObservedTo`.  - `dateObservedFrom`: Période d'observation : Date et heure de début dans un format ISO8601 UTC. Cet attribut peut être utilisé en complément de l'attribut `dateObserved` lorsqu'il correspond à un intervalle de temps à mettre en évidence.  - `dateObservedTo`: Période d'observation : Date et heure de fin dans un format ISO8601 UTC. Cet attribut peut être utilisé en complément de l'attribut `dateObserved` lorsqu'il correspond à un intervalle de temps à mettre en évidence.  - `description`: Une description de cet article  - `eMF`: Niveau correspondant à l'enquête observée. Le code de l'unité (texte) est donné en utilisant les [Codes communs du CEFACT-ONU] (http://wiki.goodrelations-vocabulary.org/Documentation/UN/CEFACT_Common_Codes). Par exemple, **MHz** représente les Méga Hertz.  - `id`: Identifiant unique de l'entité  - `location`:   - `name`: Le nom de cet élément.  - `owner`: Une liste contenant une séquence de caractères codée en JSON référençant les identifiants uniques du ou des propriétaires.  - `refDevice`: Référence à un [Dispositif] (https://github.com/smart-data-models/dataModel.Device/blob/master/Device/doc/spec.md) qui a capturé cette observation.  - `refPointOfInterest`: Référence à un [Point d'intérêt] (https://github.com/smart-data-models/dataModel.PointOfInterest/blob/master/PointOfInterest/doc/spec.md) lié à l'observation.  - `reliability`: Pourcentage pour le facteur de confiance. Le code de l'unité (texte) est donné en utilisant les [Codes communs du CEFACT-ONU] (http://wiki.goodrelations-vocabulary.org/Documentation/UN/CEFACT_Common_Codes). Par exemple, **P1** représente le pourcentage.  - `seeAlso`: liste d'uri pointant vers des ressources supplémentaires sur l'élément  - `source`: Une séquence de caractères donnant la source originale des données de l'entité sous forme d'URL. Il est recommandé d'utiliser le nom de domaine entièrement qualifié du fournisseur source ou l'URL de l'objet source.  - `type`: Il doit être ElectroMagneticObserved.    
 Propriétés requises  
-- `dateObserved`  - `eMF`  - `id`  - `location`  - `type`  ## Modèle de données description des biens  
-Classement par ordre alphabétique (cliquez pour plus de détails)  
+- `dateObserved`  - `eMF`  - `id`  - `location`  - `type`  ## Description des propriétés du modèle de données  
+Classés par ordre alphabétique (cliquez pour plus de détails)  
 <details><summary><strong>full yaml details</strong></summary>    
 ```yaml  
 ElectroMagneticObserved:    
@@ -26,21 +27,18 @@ ElectroMagneticObserved:
         addressRegion:    
           description: 'Property. The region in which the locality is, and which is in the country. Model:''https://schema.org/addressRegion'''    
           type: string    
-        areaServed:    
-          description: 'Property. The geographic area where a service or offered item is provided. Model:''https://schema.org/areaServed'''    
-          type: string    
         postOfficeBoxNumber:    
-          description: 'Property. The post office box number for PO box addresses. For example, Spain. Model:''https://schema.org/postOfficeBoxNumber'''    
+          description: 'Property. The post office box number for PO box addresses. For example, 03578. Model:''https://schema.org/postOfficeBoxNumber'''    
           type: string    
         postalCode:    
-          description: 'Property. The postal code. For example, Spain. Model:''https://schema.org/https://schema.org/postalCode'''    
+          description: 'Property. The postal code. For example, 24004. Model:''https://schema.org/https://schema.org/postalCode'''    
           type: string    
         streetAddress:    
           description: 'Property. The street address. Model:''https://schema.org/streetAddress'''    
           type: string    
       type: Property    
       x-ngsi:    
-        model: https://schema.org/adddress    
+        model: https://schema.org/address    
     alternateName:    
       description: 'An alternative name for this item'    
       type: Property    
@@ -266,10 +264,10 @@ ElectroMagneticObserved:
           format: uri    
           type: string    
       description: 'Reference to a [Device](https://github.com/smart-data-models/dataModel.Device/blob/master/Device/doc/spec.md) which captured this observation.'    
-      type: Property    
+      type: Relationship    
       x-ngsi:    
         model: https://schema.org/URL    
-    refpointOfInterest:    
+    refPointOfInterest:    
       anyOf:    
         - description: 'Property. Identifier format of any NGSI entity'    
           maxLength: 256    
@@ -280,7 +278,7 @@ ElectroMagneticObserved:
           format: uri    
           type: string    
       description: 'Reference to a [Point Of Interest](https://github.com/smart-data-models/dataModel.PointOfInterest/blob/master/PointOfInterest/doc/spec.md) linked with the observation.'    
-      type: Property    
+      type: Relationship    
       x-ngsi:    
         model: https://schema.org/URL    
     reliability:    
@@ -294,8 +292,8 @@ ElectroMagneticObserved:
       description: 'list of uri pointing to additional resources about the item'    
       oneOf:    
         - items:    
-            - format: uri    
-              type: string    
+            format: uri    
+            type: string    
           minItems: 1    
           type: array    
         - format: uri    
@@ -321,8 +319,8 @@ ElectroMagneticObserved:
 ```  
 </details>    
 ## Exemples de charges utiles  
-#### ElectroMagneticObserved NGSI V2 valeurs clés Exemple  
-Voici un exemple d'un ElectroMagneticObserved au format JSON comme valeurs clés. Il est compatible avec NGSI V2 lorsqu'il utilise "options=keyValues" et renvoie les données de contexte d'une entité individuelle.  
+#### Valeurs-clés ElectroMagneticObserved NGSI-v2 Exemple  
+Voici un exemple d'un ElectroMagneticObserved au format JSON-LD sous forme de valeurs-clés. Ceci est compatible avec NGSI-v2 lorsque l'on utilise `options=keyValues` et renvoie les données contextuelles d'une entité individuelle.  
 ```json  
 {  
   "id": "urn:ngsi-ld:ElectroMagneticObserved:ElectroMagneticObserved:MNCA-EM-018",  
@@ -352,8 +350,8 @@ ElectroMagneticObserved:
   "reliability": 0.993  
 }  
 ```  
-#### ElectroMagneticObserved NGSI V2 normalisé Exemple  
-Voici un exemple d'un ElectroMagneticObserved au format JSON tel que normalisé. Ce format est compatible avec NGSI V2 lorsqu'il n'utilise pas d'options et renvoie les données de contexte d'une entité individuelle.  
+#### ElectroMagneticObserved NGSI-v2 normalisé Exemple  
+Voici un exemple d'un ElectroMagneticObserved au format JSON-LD tel que normalisé. Ceci est compatible avec la NGSI-v2 lorsqu'elle n'utilise pas d'options et renvoie les données contextuelles d'une entité individuelle.  
 ```json  
 {  
   "id": "urn:ngsi-ld:ElectroMagneticObserved:ElectroMagneticObserved:MNCA-EM-018",  
@@ -364,7 +362,7 @@ ElectroMagneticObserved:
   },  
   "alternateName": {  
     "type": "Property",  
-    "value": "AirPort  global Observation"  
+    "value": "AirPort SPA global Observation"  
   },  
   "description": {  
     "type": "Property",  
@@ -422,43 +420,8 @@ ElectroMagneticObserved:
   }  
 }  
 ```  
-#### ElectroMagneticObserved NGSI-LD valeurs clés Exemple  
-Voici un exemple d'un ElectroMagneticObserved au format JSON-LD comme valeurs clés. Il est compatible avec le format NGSI-LD lorsqu'il utilise "options=keyValues" et renvoie les données de contexte d'une entité individuelle.  
-```json  
-{  
-  "id": "urn:ngsi-ld:ElectroMagneticObserved:ElectroMagneticObserved:MNCA-EM-018",  
-  "type": "ElectroMagneticObserved",  
-  "name": "MNCA-EM-018",  
-  "alternateName": "AirPort Â– global Observation",  
-  "description": "EMF observation",  
-  "location": {  
-    "type": "Point",  
-    "coordinates": [  
-      43.664810,  
-      7.196545  
-    ]  
-  },  
-  "address": {  
-    "addressCountry": "FR",  
-    "addressLocality": "Nice",  
-    "streetAddress": "Terminal 2 - Parking 7"  
-  },  
-  "areaServed": "Nice Aeroport",  
-  "refDevice": "urn:ngsi-ld:Device:NCE-T2-P7-EM03",  
-  "dateObserved": "2020-03-17T08:45:00Z",  
-  "eMF": 950.12,  
-  "observedAt": "2020-03-17TT08:45:00Z",  
-  "measurementType": "Instant",  
-  "measurementInterval": 1,  
-  "reliability": 0.993,  
-  "@context": [  
-    "https://schema.lab.fiware.org/ld/context",  
-    "https://uri.etsi.org/ngsi-ld/v1/ngsi-ld-core-context.jsonld"  
-  ]  
-}  
-```  
-#### ElectroMagneticObserved NGSI-LD normalisé Exemple  
-Voici un exemple d'un ElectroMagneticObserved au format JSON-LD tel que normalisé. Ce format est compatible avec le format NGSI-LD lorsqu'il n'utilise pas d'options et renvoie les données de contexte d'une entité individuelle.  
+#### Valeurs-clés NGSI-LD ElectroMagneticObserved Exemple  
+Voici un exemple d'un ElectroMagneticObserved au format JSON-LD sous forme de valeurs-clés. Ceci est compatible avec NGSI-LD quand on utilise `options=keyValues` et renvoie les données contextuelles d'une entité individuelle.  
 ```json  
 {  
   "id": "urn:ngsi-ld:ElectroMagneticObserved:ElectroMagneticObserved:MNCA-EM-018",  
@@ -469,7 +432,7 @@ ElectroMagneticObserved:
   },  
   "alternateName": {  
     "type": "Property",  
-    "value": "AirPort Â– global Observation"  
+    "value": "AirPort \u0096 global Observation"  
   },  
   "description": {  
     "type": "Property",  
@@ -480,7 +443,7 @@ ElectroMagneticObserved:
     "value": {  
       "type": "Point",  
       "coordinates": [  
-        43.664810,  
+        43.66481,  
         7.196545  
       ]  
     }  
@@ -526,7 +489,42 @@ ElectroMagneticObserved:
     "value": 0.993  
   },  
   "@context": [  
-    "https://schema.lab.fiware.org/ld/context",  
+    "https://smartdatamodels.org/context.jsonld",  
+    "https://uri.etsi.org/ngsi-ld/v1/ngsi-ld-core-context.jsonld"  
+  ]  
+}  
+```  
+#### ElectroMagneticObserved NGSI-LD normalisé Exemple  
+Voici un exemple d'un ElectroMagneticObserved au format JSON-LD tel que normalisé. Ce format est compatible avec NGSI-LD lorsqu'il n'utilise pas d'options et renvoie les données contextuelles d'une entité individuelle.  
+```json  
+{  
+  "id": "urn:ngsi-ld:ElectroMagneticObserved:ElectroMagneticObserved:MNCA-EM-018",  
+  "type": "ElectroMagneticObserved",  
+  "name": "MNCA-EM-018",  
+  "alternateName": "AirPort global Observation",  
+  "description": "EMF observation",  
+  "location": {  
+    "type": "Point",  
+    "coordinates": [  
+      43.66481,  
+      7.196545  
+    ]  
+  },  
+  "address": {  
+    "addressCountry": "FR",  
+    "addressLocality": "Nice",  
+    "streetAddress": "Terminal 2 - Parking 7"  
+  },  
+  "areaServed": "Nice Aeroport",  
+  "refDevice": "urn:ngsi-ld:Device:NCE-T2-P7-EM03",  
+  "dateObserved": "2020-03-17T08:45:00Z",  
+  "eMF": 950.12,  
+  "observedAt": "2020-03-17TT08:45:00Z",  
+  "measurementType": "Instant",  
+  "measurementInterval": 1,  
+  "reliability": 0.993,  
+  "@context": [  
+    "https://smartdatamodels.org/context.jsonld",  
     "https://uri.etsi.org/ngsi-ld/v1/ngsi-ld-core-context.jsonld"  
   ]  
 }  
