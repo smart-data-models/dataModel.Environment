@@ -1,11 +1,12 @@
 Entity: IndoorEnvironmentObserved  
 =================================  
 [Open License](https://github.com/smart-data-models//dataModel.Environment/blob/master/IndoorEnvironmentObserved/LICENSE.md)  
+[document generated automatically](https://docs.google.com/presentation/d/e/2PACX-1vTs-Ng5dIAwkg91oTTUdt8ua7woBXhPnwavZ0FxgR8BsAI_Ek3C5q97Nd94HS8KhP-r_quD4H0fgyt3/pub?start=false&loop=false&delayms=3000#slide=id.gb715ace035_0_60)  
 Global description: **An observation of air and climate conditions for indoor environments.**  
 
 ## List of properties  
 
-- `address`: The mailing address.  - `alternateName`: An alternative name for this item  - `areaServed`: The geographic area where a service or offered item is provided  - `atmosphericPressure`: Measured atmospheric pressure  - `dataProvider`: A sequence of characters identifying the provider of the harmonised data entity.  - `dateCreated`: Entity creation timestamp. This will usually be allocated by the storage platform.  - `dateModified`: Timestamp of the last modification of the entity. This will usually be allocated by the storage platform.  - `dateObserved`: Date and time of the observation in ISO8601  - `description`: A description of this item  - `id`: Unique identifier of the entity  - `illuminance`: Measured illuminance  - `location`:   - `name`: The name of this item.  - `owner`: A List containing a JSON encoded sequence of characters referencing the unique Ids of the owner(s)  - `peopleCount`: Number of people in the room  - `refDevice`: A reference to the device(s) which captured this observation.  - `refPointOfInterest`: A reference to a point of interest associated to this observation.  - `relativeHumidity`: Measured humidity  - `seeAlso`: list of uri pointing to additional resources about the item  - `sensorHeight`: Height of the sensor (distance from the floor)  - `sensorPlacement`: Position of the sensor  - `source`: A sequence of characters giving the original source of the entity data as a URL. Recommended to be the fully qualified domain name of the source provider, or the URL to the source object.  - `temperature`: Measured temperature  - `type`: NGSI Entity type    
+- `address`: The mailing address  - `alternateName`: An alternative name for this item  - `areaServed`: The geographic area where a service or offered item is provided  - `atmosphericPressure`: Measured atmospheric pressure  - `co2`: The measured interior C02 concentration nominally in mg/L  - `dataProvider`: A sequence of characters identifying the provider of the harmonised data entity.  - `dateCreated`: Entity creation timestamp. This will usually be allocated by the storage platform.  - `dateModified`: Timestamp of the last modification of the entity. This will usually be allocated by the storage platform.  - `dateObserved`: Date and time of the observation in ISO8601  - `description`: A description of this item  - `id`: Unique identifier of the entity  - `illuminance`: Measured illuminance  - `location`: Geojson reference to the item. It can be Point, LineString, Polygon, MultiPoint, MultiLineString or MultiPolygon  - `name`: The name of this item.  - `owner`: A List containing a JSON encoded sequence of characters referencing the unique Ids of the owner(s)  - `peopleCount`: Number of people in the room  - `refDevice`: A reference to the device(s) which captured this observation.  - `refPointOfInterest`: A reference to a point of interest associated to this observation.  - `relativeHumidity`: Measured humidity  - `seeAlso`: list of uri pointing to additional resources about the item  - `sensorHeight`: Height of the sensor (distance from the floor)  - `sensorPlacement`: Position of the sensor  - `source`: A sequence of characters giving the original source of the entity data as a URL. Recommended to be the fully qualified domain name of the source provider, or the URL to the source object.  - `temperature`: Measured temperature  - `type`: NGSI Entity type    
 Required properties  
 - `dateObserved`  - `id`  - `location`  - `type`  ## Data Model description of properties  
 Sorted alphabetically (click for details)  
@@ -15,30 +16,29 @@ IndoorEnvironmentObserved:
   description: 'An observation of air and climate conditions for indoor environments.'    
   properties:    
     address:    
-      description: 'The mailing address.'    
+      description: 'The mailing address'    
       properties:    
         addressCountry:    
-          description: 'Property. The country. For example, Spain. Model:''https://schema.org/Text'''    
+          description: 'Property. The country. For example, Spain. Model:''https://schema.org/addressCountry'''    
           type: string    
         addressLocality:    
-          description: 'Property. The locality in which the street address is, and which is in the region. Model:''https://schema.org/Text'''    
+          description: 'Property. The locality in which the street address is, and which is in the region. Model:''https://schema.org/addressLocality'''    
           type: string    
         addressRegion:    
-          description: 'Property. The region in which the locality is, and which is in the country. Model:''https://schema.org/Text'''    
-          type: string    
-        areaServed:    
-          description: 'Property. The geographic area where a service or offered item is provided. Model:''https://schema.org/Text'''    
+          description: 'Property. The region in which the locality is, and which is in the country. Model:''https://schema.org/addressRegion'''    
           type: string    
         postOfficeBoxNumber:    
-          description: 'Property. The post office box number for PO box addresses. For example, Spain. Model:''https://schema.org/Text'''    
+          description: 'Property. The post office box number for PO box addresses. For example, 03578. Model:''https://schema.org/postOfficeBoxNumber'''    
           type: string    
         postalCode:    
-          description: 'Property. The postal code. For example, Spain. Model:''https://schema.org/Text'''    
+          description: 'Property. The postal code. For example, 24004. Model:''https://schema.org/https://schema.org/postalCode'''    
           type: string    
         streetAddress:    
-          description: 'Property. The street address. Model:''https://schema.org/Text'''    
+          description: 'Property. The street address. Model:''https://schema.org/streetAddress'''    
           type: string    
       type: Property    
+      x-ngsi:    
+        model: https://schema.org/address    
     alternateName:    
       description: 'An alternative name for this item'    
       type: Property    
@@ -51,6 +51,11 @@ IndoorEnvironmentObserved:
       description: 'Measured atmospheric pressure'    
       minimum: 0    
       type: Property    
+    co2:    
+      description: 'The measured interior C02 concentration nominally in mg/L'    
+      type: Property    
+      x-ngsi:    
+        units: 'mg per liter'    
     dataProvider:    
       description: 'A sequence of characters identifying the provider of the harmonised data entity.'    
       type: Property    
@@ -85,10 +90,10 @@ IndoorEnvironmentObserved:
       minimum: 0    
       type: Property    
     location:    
-      $id: https://geojson.org/schema/Geometry.json    
-      $schema: "http://json-schema.org/draft-07/schema#"    
+      description: 'Geojson reference to the item. It can be Point, LineString, Polygon, MultiPoint, MultiLineString or MultiPolygon'    
       oneOf:    
-        - properties:    
+        - description: 'Geoproperty. Geojson reference to the item. Point'    
+          properties:    
             bbox:    
               items:    
                 type: number    
@@ -108,7 +113,8 @@ IndoorEnvironmentObserved:
             - coordinates    
           title: 'GeoJSON Point'    
           type: object    
-        - properties:    
+        - description: 'Geoproperty. Geojson reference to the item. LineString'    
+          properties:    
             bbox:    
               items:    
                 type: number    
@@ -131,7 +137,8 @@ IndoorEnvironmentObserved:
             - coordinates    
           title: 'GeoJSON LineString'    
           type: object    
-        - properties:    
+        - description: 'Geoproperty. Geojson reference to the item. Polygon'    
+          properties:    
             bbox:    
               items:    
                 type: number    
@@ -156,7 +163,8 @@ IndoorEnvironmentObserved:
             - coordinates    
           title: 'GeoJSON Polygon'    
           type: object    
-        - properties:    
+        - description: 'Geoproperty. Geojson reference to the item. MultiPoint'    
+          properties:    
             bbox:    
               items:    
                 type: number    
@@ -178,7 +186,8 @@ IndoorEnvironmentObserved:
             - coordinates    
           title: 'GeoJSON MultiPoint'    
           type: object    
-        - properties:    
+        - description: 'Geoproperty. Geojson reference to the item. MultiLineString'    
+          properties:    
             bbox:    
               items:    
                 type: number    
@@ -203,7 +212,8 @@ IndoorEnvironmentObserved:
             - coordinates    
           title: 'GeoJSON MultiLineString'    
           type: object    
-        - properties:    
+        - description: 'Geoproperty. Geojson reference to the item. MultiLineString'    
+          properties:    
             bbox:    
               items:    
                 type: number    
@@ -230,7 +240,7 @@ IndoorEnvironmentObserved:
             - coordinates    
           title: 'GeoJSON MultiPolygon'    
           type: object    
-      title: 'GeoJSON Geometry'    
+      type: Geoproperty    
     name:    
       description: 'The name of this item.'    
       type: Property    
@@ -276,8 +286,8 @@ IndoorEnvironmentObserved:
       description: 'list of uri pointing to additional resources about the item'    
       oneOf:    
         - items:    
-            - format: uri    
-              type: string    
+            format: uri    
+            type: string    
           minItems: 1    
           type: array    
         - format: uri    
@@ -320,8 +330,8 @@ IndoorEnvironmentObserved:
 ```  
 </details>    
 ## Example payloads    
-#### IndoorEnvironmentObserved NGSI V2 key-values Example    
-Here is an example of a IndoorEnvironmentObserved in JSON format as key-values. This is compatible with NGSI V2 when  using `options=keyValues` and returns the context data of an individual entity.  
+#### IndoorEnvironmentObserved NGSI-v2 key-values Example    
+Here is an example of a IndoorEnvironmentObserved in JSON-LD format as key-values. This is compatible with NGSI-v2 when  using `options=keyValues` and returns the context data of an individual entity.  
 ```json  
 {  
         "id": "urn:ngsi:MuseoDemo_Room_1",  
@@ -352,8 +362,8 @@ IndoorEnvironmentObserved:
         "SO2": 11  
 }  
 ```  
-#### IndoorEnvironmentObserved NGSI V2 normalized Example    
-Here is an example of a IndoorEnvironmentObserved in JSON format as normalized. This is compatible with NGSI V2 when not using options and returns the context data of an individual entity.  
+#### IndoorEnvironmentObserved NGSI-v2 normalized Example    
+Here is an example of a IndoorEnvironmentObserved in JSON-LD format as normalized. This is compatible with NGSI-v2 when not using options and returns the context data of an individual entity.  
 ```json  
 {  
     "id": "urn:ngsi:MuseoDemo_Room_1",  
@@ -453,32 +463,80 @@ IndoorEnvironmentObserved:
 Here is an example of a IndoorEnvironmentObserved in JSON-LD format as key-values. This is compatible with NGSI-LD when  using `options=keyValues` and returns the context data of an individual entity.  
 ```json  
 {  
-    "id": "urn:ngsi-ld:IndoorEnvironmentObserved:urn:ngsi:MuseoDemo_Room_1",  
-    "type": "IndoorEnvironmentObserved",  
-    "dateObserved": "2020-06-08T17:54:00",  
-    "refPointOfInterest": "urn:ngsi-ld:PointOfInterest:urn:ngsi:MuseoDemo",  
-    "address": {  
-      "addressCountry": "IT",  
-      "addressLocality": "Demo city",  
-      "streetAddress": "Demo address"  
-    },  
-    "location": {  
+  "id": "urn:ngsi-ld:IndoorEnvironmentObserved:urn:ngsi:MuseoDemo_Room_1",  
+  "type": "IndoorEnvironmentObserved",  
+  "dateObserved": {  
+    "type": "Property",  
+    "value": "2016-03-15T11:00:00/2016-03-15T12:00:00"  
+  },  
+  "refPointOfInterest": {  
+    "type": "Relationship",  
+    "object": "urn:ngsi-ld:PointOfInterest:urn:ngsi:MuseoDemo"  
+  },  
+  "location": {  
+    "type": "GeoProperty",  
+    "value": {  
       "type": "Point",  
       "coordinates": [  
         40,  
         11  
       ]  
-    },  
-    "peopleCount": 10,  
-    "temperature": 12.2,  
-    "relativeHumidity": 0.54,  
-    "atmosphericPressure": 1013.52,  
-    "illuminance": 1000,  
-    "CO": 500,  
-    "NO": 45,  
-    "NO2": 69,  
-    "NOx": 139,  
-    "SO2": 11  
+    }  
+  },  
+  "address": {  
+    "type": "Property",  
+    "value": {  
+      "addressCountry": "IT",  
+      "addressLocality": "Demo city",  
+      "streetAddress": "Demo address",  
+      "type": "PostalAddress"  
+    }  
+  },  
+  "peopleCount": {  
+    "type": "Property",  
+    "value": 10  
+  },  
+  "temperature": {  
+    "type": "Property",  
+    "value": 12.2  
+  },  
+  "relativeHumidity": {  
+    "type": "Property",  
+    "value": 0.54  
+  },  
+  "illuminance": {  
+    "type": "Property",  
+    "value": 1000  
+  },  
+  "CO": {  
+    "type": "Property",  
+    "value": 500,  
+    "unitCode": "GP"  
+  },  
+  "NO": {  
+    "type": "Property",  
+    "value": 45,  
+    "unitCode": "GQ"  
+  },  
+  "NOx": {  
+    "type": "Property",  
+    "value": 139,  
+    "unitCode": "GQ"  
+  },  
+  "NO2": {  
+    "type": "Property",  
+    "value": 69,  
+    "unitCode": "GQ"  
+  },  
+  "SO2": {  
+    "type": "Property",  
+    "value": 11,  
+    "unitCode": "GQ"  
+  },  
+  "@context": [  
+    "https://fiware.github.io/data-models/context.jsonld",  
+    "https://uri.etsi.org/ngsi-ld/v1/ngsi-ld-core-context-v1.3.jsonld"  
+  ]  
 }  
 ```  
 #### IndoorEnvironmentObserved NGSI-LD normalized Example    
