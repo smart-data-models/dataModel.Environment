@@ -6,7 +6,7 @@ Entität: WaterObserved
 
 ## Liste der Eigenschaften  
 
-- `address`: Die Postanschrift  - `alternateName`: Ein alternativer Name für diesen Artikel  - `areaServed`: Das geografische Gebiet, in dem eine Dienstleistung oder ein angebotener Artikel erbracht wird  - `dataProvider`: Eine Folge von Zeichen, die den Anbieter der harmonisierten Dateneinheit identifiziert.  - `dateCreated`: Zeitstempel der Entitätserstellung. Dieser wird normalerweise von der Speicherplattform zugewiesen.  - `dateModified`: Zeitstempel der letzten Änderung der Entität. Dieser wird in der Regel von der Speicherplattform vergeben.  - `dateObserved`: Datum und Uhrzeit dieser Beobachtung, dargestellt in einem ISO8601 UTC-Format.  - `dateObservedFrom`: Beobachtungszeitraum : Startdatum und -uhrzeit in einem ISO8601 UTC-Format.  - `dateObservedTo`: Beobachtungszeitraum : Enddatum und -uhrzeit im Format ISO8601 UTC.  - `description`: Eine Beschreibung dieses Artikels  - `flow`: Wasserdurchfluss beobachtet. Der Einheitencode (Text) der Messung, der unter Verwendung des UN/CEFACAT  - `height`: XXXEigenschaft. Wasserhöhe - Pegelreichweite an Alarmküsten.  - `id`: Eindeutiger Bezeichner der Entität  - `location`:   - `measuredArea`: Wasserhöhe - Pegelstand an alarmierenden Küsten. Der Einheitencode (Text) der Messung, der unter Verwendung der [UN/CEFACT Common Codes](http://wiki.goodrelations-vocabulary.org/Documentation/UN/CEFACT_Common_Codes) angegeben wird (max. 3 Zeichen). Zum Beispiel steht <code>MTK</code> für M².  - `name`: Der Name dieses Elements.  - `objectArea`: Prozentualer Anteil, der durch das schwimmende Objekt im Bereich belegt ist. Der Einheitencode (Text) der Messung, der unter Verwendung der [UN/CEFACT Common Codes](http://wiki.goodrelations-vocabulary.org/Documentation/UN/CEFACT_Common_Codes) angegeben wird (max. 3 Zeichen). Zum Beispiel steht <code>P1</code> für den Prozentsatz.  - `objectHeightAverage`: Durchschnittlich angehobene Höhe. Der Einheitencode (Text) der Messung, der unter Verwendung der [UN/CEFACT Common Codes](http://wiki.goodrelations-vocabulary.org/Documentation/UN/CEFACT_Common_Codes) angegeben wird (max. 3 Zeichen). Zum Beispiel: <code>MTR</code> steht für Meter.  - `objectHeightMax`: Maximal angehobene Höhe. Der Einheitencode (Text) der Messung, der unter Verwendung der [UN/CEFACT Common Codes](http://wiki.goodrelations-vocabulary.org/Documentation/UN/CEFACT_Common_Codes) angegeben wird (max. 3 Zeichen). Zum Beispiel: <code>MTR</code> steht für Meter.  - `objectVolume`: Geschätztes angehobenes Volumen. Der Einheitencode (Text) der Messung, der unter Verwendung der [UN/CEFACT Common Codes](http://wiki.goodrelations-vocabulary.org/Documentation/UN/CEFACT_Common_Codes) angegeben wird (max. 3 Zeichen). Zum Beispiel, <code>MTQ</code> steht für Kubikmeter  - `owner`: Eine Liste mit einer JSON-kodierten Zeichenfolge, die auf die eindeutigen Ids der Eigentümer verweist  - `refDevice`: Ein Verweis auf ein Sonderziel, das mit dieser Beobachtung verbunden ist.  - `seeAlso`: Liste von uri, die auf zusätzliche Ressourcen über das Element verweist  - `source`: Eine Folge von Zeichen, die die ursprüngliche Quelle der Entitätsdaten als URL angibt. Empfohlen wird der voll qualifizierte Domänenname des Quellanbieters oder die URL zum Quellobjekt.  - `swellDirection`: Wasserhöhe - Pegelstand an alarmierenden Küsten.  - `swellHeight`: XXXEigenschaft. Wasserhöhe - Pegelreichweite an Alarmküsten.  - `swellPeriod`: Wasserhöhe - Pegelstand an alarmierenden Küsten.  - `type`: NGSI-Entitätstyp. Es muss WaterObserved sein  - `waveLength`: Wasserhöhe - Pegelstand an alarmierenden Küsten.    
+- `address`: Die Postanschrift  - `alternateName`: Ein alternativer Name für diesen Artikel  - `areaServed`: Das geografische Gebiet, in dem eine Dienstleistung oder ein angebotener Artikel erbracht wird  - `dataProvider`: Eine Folge von Zeichen, die den Anbieter der harmonisierten Dateneinheit identifiziert.  - `dateCreated`: Zeitstempel der Entitätserstellung. Dieser wird normalerweise von der Speicherplattform zugewiesen.  - `dateModified`: Zeitstempel der letzten Änderung der Entität. Dieser wird in der Regel von der Speicherplattform vergeben.  - `dateObserved`: Datum und Uhrzeit dieser Beobachtung, dargestellt in einem ISO8601 UTC-Format.  - `dateObservedFrom`: Beobachtungszeitraum : Startdatum und -uhrzeit in einem ISO8601 UTC-Format.  - `dateObservedTo`: Beobachtungszeitraum : Enddatum und -uhrzeit im Format ISO8601 UTC.  - `description`: Eine Beschreibung dieses Artikels  - `flow`: Wasserdurchfluss beobachtet. Der Einheitencode (Text) der Messung, der unter Verwendung des UN/CEFACAT  - `height`: Wasserhöhe - Pegelstand an alarmierenden Küsten.  - `id`: Eindeutiger Bezeichner der Entität  - `location`: Geojson-Referenz auf das Element. Es kann Punkt, LineString, Polygon, MultiPoint, MultiLineString oder MultiPolygon sein  - `measuredArea`: Referenz der gemessenen Oberfläche. Der Einheitencode (Text) der Messung, der unter Verwendung der [UN/CEFACT Common Codes](http://wiki.goodrelations-vocabulary.org/Documentation/UN/CEFACT_Common_Codes) angegeben wird (max. 3 Zeichen). Zum Beispiel steht <code>MTK</code> für M².  - `name`: Der Name dieses Elements.  - `objectArea`: Prozentualer Anteil, der durch das schwimmende Objekt im Bereich belegt ist. Der Einheitencode (Text) der Messung, der unter Verwendung der [UN/CEFACT Common Codes](http://wiki.goodrelations-vocabulary.org/Documentation/UN/CEFACT_Common_Codes) angegeben wird (max. 3 Zeichen). Zum Beispiel steht <code>P1</code> für den Prozentsatz.  - `objectHeightAverage`: Durchschnittliche Höhe angehoben. Der Einheitencode (Text) der Messung, der unter Verwendung der [UN/CEFACT Common Codes](http://wiki.goodrelations-vocabulary.org/Documentation/UN/CEFACT_Common_Codes) angegeben wird (max. 3 Zeichen). Zum Beispiel: <code>MTR</code> steht für Meter.  - `objectHeightMax`: Maximal angehobene Höhe. Der Einheitencode (Text) der Messung, der unter Verwendung der [UN/CEFACT Common Codes](http://wiki.goodrelations-vocabulary.org/Documentation/UN/CEFACT_Common_Codes) angegeben wird (max. 3 Zeichen). Zum Beispiel: <code>MTR</code> steht für Meter.  - `objectVolume`: Geschätztes angehobenes Volumen. Der Einheitencode (Text) der Messung, der unter Verwendung der [UN/CEFACT Common Codes](http://wiki.goodrelations-vocabulary.org/Documentation/UN/CEFACT_Common_Codes) angegeben wird (max. 3 Zeichen). Zum Beispiel, <code>MTQ</code> steht für Kubikmeter  - `owner`: Eine Liste mit einer JSON-kodierten Zeichenfolge, die auf die eindeutigen Ids der Eigentümer verweist  - `refDevice`: Ein Verweis auf ein Sonderziel, das mit dieser Beobachtung verbunden ist.  - `seeAlso`: Liste von uri, die auf zusätzliche Ressourcen über das Element verweist  - `source`: Eine Folge von Zeichen, die die ursprüngliche Quelle der Entitätsdaten als URL angibt. Empfohlen wird der voll qualifizierte Domänenname des Quellanbieters oder die URL zum Quellobjekt.  - `swellDirection`: Schwellungen Richtung beobachtet.  - `swellHeight`: Schwellhöhe beobachtet.  - `swellPeriod`: Schwellperiode beobachtet.  - `type`: NGSI-Entitätstyp. Es muss WaterObserved sein  - `waveLength`: Wellenlänge beobachtet.    
 Erforderliche Eigenschaften  
 - `dateObserved`  - `id`  - `location`  - `type`    
 Das Datenmodell für die Wasserbeobachtung dient der Darstellung der Parameter Durchfluss, Pegel und Volumen des beobachteten Wassers sowie der Schwellinformationen über einen festen oder variablen Bereich. Diese Beobachtung umfasst auch die Massen von schwimmenden Objekten auf dieser Fläche.  Die gesammelten Daten werden von [Sensoren], [Kameras], [Wasserstationen] bereitgestellt, die an bestimmten oder sensiblen Stellen für Flüsse, Bäche, Wildbäche, Seen, Meere usw. positioniert sind.  
@@ -106,10 +106,10 @@ WaterObserved:
       description: 'Unique identifier of the entity'    
       type: Property    
     location:    
-      $id: https://geojson.org/schema/Geometry.json    
-      $schema: "http://json-schema.org/draft-07/schema#"    
+      description: 'Geojson reference to the item. It can be Point, LineString, Polygon, MultiPoint, MultiLineString or MultiPolygon'    
       oneOf:    
-        - properties:    
+        - description: 'Geoproperty. Geojson reference to the item. Point'    
+          properties:    
             bbox:    
               items:    
                 type: number    
@@ -129,7 +129,8 @@ WaterObserved:
             - coordinates    
           title: 'GeoJSON Point'    
           type: object    
-        - properties:    
+        - description: 'Geoproperty. Geojson reference to the item. LineString'    
+          properties:    
             bbox:    
               items:    
                 type: number    
@@ -152,7 +153,8 @@ WaterObserved:
             - coordinates    
           title: 'GeoJSON LineString'    
           type: object    
-        - properties:    
+        - description: 'Geoproperty. Geojson reference to the item. Polygon'    
+          properties:    
             bbox:    
               items:    
                 type: number    
@@ -177,7 +179,8 @@ WaterObserved:
             - coordinates    
           title: 'GeoJSON Polygon'    
           type: object    
-        - properties:    
+        - description: 'Geoproperty. Geojson reference to the item. MultiPoint'    
+          properties:    
             bbox:    
               items:    
                 type: number    
@@ -199,7 +202,8 @@ WaterObserved:
             - coordinates    
           title: 'GeoJSON MultiPoint'    
           type: object    
-        - properties:    
+        - description: 'Geoproperty. Geojson reference to the item. MultiLineString'    
+          properties:    
             bbox:    
               items:    
                 type: number    
@@ -224,7 +228,8 @@ WaterObserved:
             - coordinates    
           title: 'GeoJSON MultiLineString'    
           type: object    
-        - properties:    
+        - description: 'Geoproperty. Geojson reference to the item. MultiLineString'    
+          properties:    
             bbox:    
               items:    
                 type: number    
@@ -251,7 +256,7 @@ WaterObserved:
             - coordinates    
           title: 'GeoJSON MultiPolygon'    
           type: object    
-      title: 'GeoJSON Geometry'    
+      type: Geoproperty    
     measuredArea:    
       description: 'Reference of the surface measured. The unit code (text) of measurement given using the [UN/CEFACT Common Codes](http://wiki.goodrelations-vocabulary.org/Documentation/UN/CEFACT_Common_Codes) (max. 3 characters). For instance, <code>MTK</code> represents M².'    
       minimum: 0    
@@ -364,85 +369,35 @@ WaterObserved:
 Hier ist ein Beispiel für ein WaterObserved im JSON-LD-Format als Key-Values. Dies ist kompatibel mit NGSI-v2 bei Verwendung von `options=keyValues` und liefert die Kontextdaten einer einzelnen Entität.  
 ```json  
 {  
-	"id": "WaterObserved:MNCA-001",  
-	"type": "WaterObserved",  
-	"name": "STLRT-MNCA-AP-WO-012",  
-	"alternateName":"Var River Alert for safety procedure for Airport",  
-	"description": "Observation of Evolution of the water levels",  
-	"location": {  
-			"type": "Point",  
-			"coordinates": [43.664810,7.196545]  
-	},  
-	"areaServed":"Nice Airport",  
-	"refDevice": "Device:T2-NP-018",  
-	"dateObserved": "2020-03-17T08:45:00.209Z",  
-	"flow": 12,  
-	"height": 3.52,  
-	"measuredArea": 250,  
-	"objectArea": 35,  
-	"objectHeightAverage": 1.75,  
-	"objectHeightMax": 2.25,  
-	"objectVolume": 17.5  
+  "id": "WaterObserved:MNCA-001",  
+  "type": "WaterObserved",  
+  "name": "STLRT-MNCA-AP-WO-012",  
+  "alternateName": "Var River Alert for safety procedure for Airport",  
+  "description": "Observation of Evolution of the water levels",  
+  "location": {  
+    "type": "Point",  
+    "coordinates": [  
+      43.664810,  
+      7.196545  
+    ]  
+  },  
+  "areaServed": "Nice Airport",  
+  "refDevice": "Device:T2-NP-018",  
+  "dateObserved": "2020-03-17T08:45:00.209Z",  
+  "flow": 12,  
+  "height": 3.52,  
+  "measuredArea": 250,  
+  "objectArea": 35,  
+  "objectHeightAverage": 1.75,  
+  "objectHeightMax": 2.25,  
+  "objectVolume": 17.5  
 }  
 ```  
 #### WaterObserved NGSI-v2 normalisiert Beispiel  
 Hier ist ein Beispiel für ein WaterObserved im JSON-LD-Format wie normalisiert. Dies ist kompatibel mit NGSI-v2, wenn keine Optionen verwendet werden, und liefert die Kontextdaten einer einzelnen Entität.  
 ```json  
 {  
-	"id": "WaterObserved:MNCA-001",  
-	"type": "WaterObserved",  
-	"name": {  
-		"value": "STLRT-MNCA-AP-WO-012"  
-	},  
-	"alternateName": {  
-		"value": "Var River Alert for safety procedure for Airport"  
-	},  
-	"description": {  
-		"value": "Observation of Evolution of the water levels"  
-	},  
-	"location": {  
-			"type": "Point",  
-			"coordinates": [43.664810,7.196545]  
-	},  
-	"areaServed": {  
-		"value": "Nice Airport"  
-	},  
-	"refDevice": {  
-		"type": "Relationship",  
-		"value": "Device:T2-NP-018"  
-	},  
-	"dateObserved": {  
-		"type": "DateTime",  
-		"value": "2020-03-17T08:45:00.209Z"  
-	},  
-	"flow": {  
-		"value": 12  
-	},  
-	"height": {  
-		"value": 3.52  
-	},  
-	"measuredArea": {  
-		"value": 250  
-	},  
-	"objectArea": {  
-		"value": 35  
-	},  
-	"objectHeightAverage": {  
-		"value": 1.75  
-	},  
-	"objectHeightMax": {  
-		"value": 2.25  
-	},  
-	"objectVolume": {  
-		"value": 17.5  
-	}  
-}  
-```  
-#### WaterObserved NGSI-LD key-values Beispiel  
-Hier ist ein Beispiel für ein WaterObserved im JSON-LD-Format als Key-Values. Dies ist kompatibel mit NGSI-LD bei Verwendung von `options=keyValues` und liefert die Kontextdaten einer einzelnen Entität.  
-```json  
-{  
-  "id": "urn:ngsi:WaterObserved:MNCA-001",  
+  "id": "WaterObserved:MNCA-001",  
   "type": "WaterObserved",  
   "name": {  
     "type": "Text",  
@@ -461,7 +416,7 @@ WaterObserved:
     "value": {  
       "type": "Point",  
       "coordinates": [  
-        43.66481,  
+        43.664810,  
         7.196545  
       ]  
     }  
@@ -471,8 +426,8 @@ WaterObserved:
     "value": "Nice Airport"  
   },  
   "refDevice": {  
-    "type": "Text",  
-    "value": "uri:ngsi:Device:T2-NP-018"  
+    "type": "Relationship",  
+    "value": "Device:T2-NP-018"  
   },  
   "dateObserved": {  
     "type": "DateTime",  
@@ -505,14 +460,11 @@ WaterObserved:
   "objectVolume": {  
     "type": "Number",  
     "value": 17.5  
-  },  
-  "@context": [  
-    "https://raw.githubusercontent.com/smart-data-models/data-models/master/context.jsonld"  
-  ]  
+  }  
 }  
 ```  
-#### WaterObserved NGSI-LD normalisiert Beispiel  
-Hier ist ein Beispiel für ein WaterObserved im JSON-LD-Format wie normalisiert. Dies ist kompatibel mit NGSI-LD, wenn keine Optionen verwendet werden, und liefert die Kontextdaten einer einzelnen Entität.  
+#### WaterObserved NGSI-LD key-values Beispiel  
+Hier ist ein Beispiel für ein WaterObserved im JSON-LD-Format als Key-Values. Dies ist kompatibel mit NGSI-LD bei Verwendung von `options=keyValues` und liefert die Kontextdaten einer einzelnen Entität.  
 ```json  
 {  
   "id": "uri:ngsi:WaterObserved:MNCA-001",  
@@ -538,7 +490,80 @@ WaterObserved:
   "objectHeightMax": 2.25,  
   "objectVolume": 17.5,  
   "@context": [  
-    "https://raw.githubusercontent.com/smart-data-models/data-models/master/context.jsonld"  
+    "https://smartdatamodels.org/context.jsonld"  
+  ]  
+}  
+```  
+#### WaterObserved NGSI-LD normalisiert Beispiel  
+Hier ist ein Beispiel für ein WaterObserved im JSON-LD-Format wie normalisiert. Dies ist kompatibel mit NGSI-LD, wenn keine Optionen verwendet werden, und liefert die Kontextdaten einer einzelnen Entität.  
+```json  
+{  
+  "id": "urn:ngsi:WaterObserved:MNCA-001",  
+  "type": "WaterObserved",  
+  "name": {  
+    "type": "Property",  
+    "value": "STLRT-MNCA-AP-WO-012"  
+  },  
+  "alternateName": {  
+    "type": "Property",  
+    "value": "Var River Alert for safety procedure for Airport"  
+  },  
+  "description": {  
+    "type": "Property",  
+    "value": "Observation of Evolution of the water levels"  
+  },  
+  "location": {  
+    "type": "Geoproperty",  
+    "value": {  
+      "type": "Point",  
+      "coordinates": [  
+        43.66481,  
+        7.196545  
+      ]  
+    }  
+  },  
+  "areaServed": {  
+    "type": "Property",  
+    "value": "Nice Airport"  
+  },  
+  "refDevice": {  
+    "type": "Relationship",  
+    "object": "uri:ngsi:Device:T2-NP-018"  
+  },  
+  "dateObserved": {  
+    "type": "Relationship",  
+    "object": "2020-03-17T08:45:00.209Z"  
+  },  
+  "flow": {  
+    "type": "Number",  
+    "value": 12  
+  },  
+  "height": {  
+    "type": "Number",  
+    "value": 3.52  
+  },  
+  "measuredArea": {  
+    "type": "Number",  
+    "value": 250  
+  },  
+  "objectArea": {  
+    "type": "Number",  
+    "value": 35  
+  },  
+  "objectHeightAverage": {  
+    "type": "Number",  
+    "value": 1.75  
+  },  
+  "objectHeightMax": {  
+    "type": "Number",  
+    "value": 2.25  
+  },  
+  "objectVolume": {  
+    "type": "Number",  
+    "value": 17.5  
+  },  
+  "@context": [  
+    "https://smartdatamodels.org/context.jsonld"  
   ]  
 }  
 ```  
