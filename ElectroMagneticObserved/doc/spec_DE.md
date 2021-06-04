@@ -6,7 +6,7 @@ Entität: ElectroMagneticObserved
 
 ## Liste der Eigenschaften  
 
-- `address`: Die Postanschrift  - `alternateName`: Ein alternativer Name für diesen Artikel  - `areaServed`: Das geografische Gebiet, in dem eine Dienstleistung oder ein angebotener Artikel erbracht wird  - `dataProvider`: Eine Folge von Zeichen, die den Anbieter der harmonisierten Dateneinheit identifiziert.  - `dateCreated`: Zeitstempel der Entitätserstellung. Dieser wird normalerweise von der Speicherplattform zugewiesen.  - `dateModified`: Zeitstempel der letzten Änderung der Entität. Dieser wird in der Regel von der Speicherplattform vergeben.  - `dateObserved`: Datum und Uhrzeit dieser Beobachtung, dargestellt durch ein ISO8601 UTC-Format. Es kann durch einen bestimmten Zeitpunkt oder durch ein ISO8601-Intervall dargestellt werden, um die Attribute `dateObservedFrom`, `dateObservedTo` zu trennen.  - `dateObservedFrom`: Beobachtungszeitraum: Startdatum und -uhrzeit in einem ISO8601 UTC-Format. Das Attribut kann zusätzlich zum Attribut `dateObserved` verwendet werden, wenn es einem Zeitintervall entspricht, das hervorgehoben werden soll.  - `dateObservedTo`: Beobachtungszeitraum: Enddatum und -uhrzeit in einem ISO8601 UTC-Format. Das Attribut kann zusätzlich zum Attribut `dateObserved` verwendet werden, wenn es einem Zeitintervall entspricht, das hervorgehoben werden soll.  - `description`: Eine Beschreibung dieses Artikels  - `eMF`: Ebene, die der beobachteten Erhebung entspricht. Der Einheitencode (Text) wird unter Verwendung der [UN/CEFACT Common Codes] (http://wiki.goodrelations-vocabulary.org/Documentation/UN/CEFACT_Common_Codes) angegeben. Zum Beispiel steht **MHz** für Mega Hertz.  - `id`: Eindeutiger Bezeichner der Entität  - `location`:   - `name`: Der Name dieses Elements.  - `owner`: Eine Liste mit einer JSON-kodierten Zeichenfolge, die auf die eindeutigen Ids der Eigentümer verweist  - `refDevice`: Verweis auf ein [Gerät](https://github.com/smart-data-models/dataModel.Device/blob/master/Device/doc/spec.md), das diese Beobachtung aufgezeichnet hat.  - `refPointOfInterest`: Verweis auf einen [Point Of Interest](https://github.com/smart-data-models/dataModel.PointOfInterest/blob/master/PointOfInterest/doc/spec.md), der mit der Beobachtung verknüpft ist.  - `reliability`: Prozentsatz für Konfidenzfaktor. Der Einheitencode (Text) wird unter Verwendung der [UN/CEFACT Common Codes] (http://wiki.goodrelations-vocabulary.org/Documentation/UN/CEFACT_Common_Codes) angegeben. Zum Beispiel steht **P1** für Prozent.  - `seeAlso`: Liste von uri, die auf zusätzliche Ressourcen über das Element verweist  - `source`: Eine Folge von Zeichen, die die ursprüngliche Quelle der Entitätsdaten als URL angibt. Empfohlen wird der voll qualifizierte Domänenname des Quellanbieters oder die URL zum Quellobjekt.  - `type`: Es muss ElectroMagneticObserved sein    
+- `address`: Die Postanschrift  - `alternateName`: Ein alternativer Name für diesen Artikel  - `areaServed`: Das geografische Gebiet, in dem eine Dienstleistung oder ein angebotener Artikel erbracht wird  - `dataProvider`: Eine Folge von Zeichen, die den Anbieter der harmonisierten Dateneinheit identifiziert.  - `dateCreated`: Zeitstempel der Entitätserstellung. Dieser wird normalerweise von der Speicherplattform zugewiesen.  - `dateModified`: Zeitstempel der letzten Änderung der Entität. Dieser wird in der Regel von der Speicherplattform vergeben.  - `dateObserved`: Datum und Uhrzeit dieser Beobachtung, dargestellt durch ein ISO8601 UTC-Format. Es kann durch einen bestimmten Zeitpunkt oder durch ein ISO8601-Intervall dargestellt werden, um die Attribute `dateObservedFrom`, `dateObservedTo` zu trennen.  - `dateObservedFrom`: Beobachtungszeitraum: Startdatum und -uhrzeit in einem ISO8601 UTC-Format. Das Attribut kann zusätzlich zum Attribut `dateObserved` verwendet werden, wenn es einem Zeitintervall entspricht, das hervorgehoben werden soll.  - `dateObservedTo`: Beobachtungszeitraum: Enddatum und -uhrzeit in einem ISO8601 UTC-Format. Das Attribut kann zusätzlich zum Attribut `dateObserved` verwendet werden, wenn es einem Zeitintervall entspricht, das hervorgehoben werden soll.  - `description`: Eine Beschreibung dieses Artikels  - `eMF`: Ebene, die der beobachteten Erhebung entspricht. Der Einheitencode (Text) wird unter Verwendung der [UN/CEFACT Common Codes] (http://wiki.goodrelations-vocabulary.org/Documentation/UN/CEFACT_Common_Codes) angegeben. Zum Beispiel steht **MHz** für Mega Hertz.  - `id`: Eindeutiger Bezeichner der Entität  - `location`: Geojson-Referenz auf das Element. Es kann Punkt, LineString, Polygon, MultiPoint, MultiLineString oder MultiPolygon sein  - `name`: Der Name dieses Elements.  - `owner`: Eine Liste mit einer JSON-kodierten Zeichenfolge, die auf die eindeutigen Ids der Eigentümer verweist  - `refDevice`: Verweis auf ein [Gerät](https://github.com/smart-data-models/dataModel.Device/blob/master/Device/doc/spec.md), das diese Beobachtung aufgezeichnet hat.  - `refPointOfInterest`: Verweis auf einen [Point Of Interest](https://github.com/smart-data-models/dataModel.PointOfInterest/blob/master/PointOfInterest/doc/spec.md), der mit der Beobachtung verknüpft ist.  - `reliability`: Prozentsatz für Konfidenzfaktor. Der Einheitencode (Text) wird unter Verwendung der [UN/CEFACT Common Codes] (http://wiki.goodrelations-vocabulary.org/Documentation/UN/CEFACT_Common_Codes) angegeben. Zum Beispiel steht **P1** für Prozent.  - `seeAlso`: Liste von uri, die auf zusätzliche Ressourcen über das Element verweist  - `source`: Eine Folge von Zeichen, die die ursprüngliche Quelle der Entitätsdaten als URL angibt. Empfohlen wird der voll qualifizierte Domänenname des Quellanbieters oder die URL zum Quellobjekt.  - `type`: Es muss ElectroMagneticObserved sein    
 Erforderliche Eigenschaften  
 - `dateObserved`  - `eMF`  - `id`  - `location`  - `type`  ## Datenmodell Beschreibung der Eigenschaften  
 Alphabetisch sortiert (für Details anklicken)  
@@ -98,10 +98,10 @@ ElectroMagneticObserved:
       description: 'Unique identifier of the entity'    
       type: Property    
     location:    
-      $id: https://geojson.org/schema/Geometry.json    
-      $schema: "http://json-schema.org/draft-07/schema#"    
+      description: 'Geojson reference to the item. It can be Point, LineString, Polygon, MultiPoint, MultiLineString or MultiPolygon'    
       oneOf:    
-        - properties:    
+        - description: 'Geoproperty. Geojson reference to the item. Point'    
+          properties:    
             bbox:    
               items:    
                 type: number    
@@ -121,7 +121,8 @@ ElectroMagneticObserved:
             - coordinates    
           title: 'GeoJSON Point'    
           type: object    
-        - properties:    
+        - description: 'Geoproperty. Geojson reference to the item. LineString'    
+          properties:    
             bbox:    
               items:    
                 type: number    
@@ -144,7 +145,8 @@ ElectroMagneticObserved:
             - coordinates    
           title: 'GeoJSON LineString'    
           type: object    
-        - properties:    
+        - description: 'Geoproperty. Geojson reference to the item. Polygon'    
+          properties:    
             bbox:    
               items:    
                 type: number    
@@ -169,7 +171,8 @@ ElectroMagneticObserved:
             - coordinates    
           title: 'GeoJSON Polygon'    
           type: object    
-        - properties:    
+        - description: 'Geoproperty. Geojson reference to the item. MultiPoint'    
+          properties:    
             bbox:    
               items:    
                 type: number    
@@ -191,7 +194,8 @@ ElectroMagneticObserved:
             - coordinates    
           title: 'GeoJSON MultiPoint'    
           type: object    
-        - properties:    
+        - description: 'Geoproperty. Geojson reference to the item. MultiLineString'    
+          properties:    
             bbox:    
               items:    
                 type: number    
@@ -216,7 +220,8 @@ ElectroMagneticObserved:
             - coordinates    
           title: 'GeoJSON MultiLineString'    
           type: object    
-        - properties:    
+        - description: 'Geoproperty. Geojson reference to the item. MultiLineString'    
+          properties:    
             bbox:    
               items:    
                 type: number    
@@ -243,7 +248,7 @@ ElectroMagneticObserved:
             - coordinates    
           title: 'GeoJSON MultiPolygon'    
           type: object    
-      title: 'GeoJSON Geometry'    
+      type: Geoproperty    
     name:    
       description: 'The name of this item.'    
       type: Property    
