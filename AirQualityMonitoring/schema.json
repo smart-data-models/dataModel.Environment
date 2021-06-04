@@ -1,0 +1,166 @@
+{
+    "$schema": "http://json-schema.org/schema#",
+    "$schemaVersion": "0.0.1",
+    "$id": "https://smart-data-models.github.io/dataModel.Environment /EnvAQM/schema.json",
+    "title": " Smart Data Models - EnvAQM",
+    "description": "Air Quality Monitoring (AQM) Data Model.",
+    "type": "object",
+    "allOf": [
+        {
+            "$ref": "https://smart-data-models.github.io/data-models/common-schema.json#/definitions/GSMA-Commons"
+        },
+        {
+            "$ref": "https://smart-data-models.github.io/data-models/common-schema.json#/definitions/Location-Commons"
+        },
+        {
+            "properties": {
+                "deviceInfo": {
+                    "type": "object",
+                    "description": "Property. Information about the device associated with the observations.",
+                    "properties": {}
+                },
+                "observationDateTime": {
+                    "type": "string",
+                    "format": "date-time",
+                    "description": "Property. Model:'https://schema.org/DateTime'. Last reported time of observation."
+                },
+                "deviceStatus": {
+                    "type": "string",
+                    "description": "Property. Model:'https://schema.org/Text'. Indicates the status of physical device or devices.\n"
+                },
+                "atmosphericPressure": {
+                    "type": "number",
+                    "description": "Property. Model:'https://schema.org/Number'. Observed air (atmospheric or barometric) pressure."
+                },
+                "airQualityIndex": {
+                    "type": "number",
+                    "description": "Property. Model:'https://schema.org/Number'. Overall Air Quality Index (AQI) for the observed air quality."
+                },
+                "airQualityLevel": {
+                    "type": "string",
+                    "description": "Property. Model:'https://schema.org/Text'. Air Quality Category Indication. Qualitative level defined according to the local health agencies. For example, 'GOOD', 'MODERATE', 'POOR', 'UNHEALTHY', 'SEVERE', 'HAZARDOUS' etc."
+                },
+                "aqiMajorPollutant": {
+                    "type": "string",
+                    "description": "Property. Model:'https://schema.org/Text'. Major pollutant in the Air Quality Index (AQI)."
+                },
+                "": {
+                    "type": "object",
+                    "description": "Property. ",
+                    "properties": {}
+                },
+                "co2": {
+                    "type": "object",
+                    "description": "Property. Observed value of environmental pollutant Carbon Dioxide (CO2). Value is an object containing attributes representing statistical aggregates derived from past data.",
+                    "properties": {}
+                },
+                "co": {
+                    "type": "object",
+                    "description": "Property. Observed value of environmental pollutant Carbon Monoxide (CO). Value is an object containing attributes representing statistical aggregates derived from past data.",
+                    "properties": {}
+                },
+                "relativeHumidity": {
+                    "$ref": "http://geojson.org/schema/Geometry.json"
+                },
+                "illuminance": {
+                    "type": "string",
+                    "format": "uri",
+                    "description": "Relationship. Model:'https://schema.org/URL'. Observed instantaneous ambient light intensity."
+                },
+                "no2": {
+                    "type": "object",
+                    "description": "Property. Observed value of environmental pollutant Nitrogen Dioxide (NO2). Value is an object containing attributes representing statistical aggregates derived from past data.",
+                    "properties": {}
+                },
+                "no": {
+                    "type": "string",
+                    "format": "date-time",
+                    "description": "Property. Model:'https://schema.org/DateTime'. Observed value of environmental pollutant Nitrogen Monoxide (NO). Value is an object containing attributes representing statistical aggregates derived from past data."
+                },
+                "o3": {
+                    "type": "object",
+                    "description": "Property. Observed value of environmental pollutant Ozone (O3). Value is an object containing attributes representing statistical aggregates derived from past data.",
+                    "properties": {}
+                },
+                "o2": {
+                    "type": "object",
+                    "description": "Property. Observed value of Oxygen (O2). Value is an object containing attributes representing statistical aggregates derived from past data.",
+                    "properties": {}
+                },
+                "pm10": {
+                    "type": "object",
+                    "description": "Property. Observed value of environmental pollutant Particulate Matter 10 (PM10). Value is an object containing attributes representing statistical aggregates derived from past data.",
+                    "properties": {}
+                },
+                "pm2p5": {
+                    "type": "object",
+                    "description": "Property. Observed value of environmental pollutant Particulate Matter 2.5 (PM2.5). Value is an object containing attributes representing statistical aggregates derived from past data.",
+                    "properties": {}
+                },
+                "so2": {
+                    "type": "object",
+                    "description": "Property. Observed value of environmental pollutant Sulphur Dioxide (SO2). Value is an object containing attributes representing statistical aggregates derived from past data.",
+                    "properties": {}
+                },
+                "benzene": {
+                    "type": "object",
+                    "description": "Property. Observed value of environmental pollutant Benzene (C6H6). Value is an object containing attributes representing statistical aggregates derived from past data.",
+                    "properties": {}
+                },
+                "nh3": {
+                    "type": "object",
+                    "description": "Property. Observed value of environmental pollutant Ammonia (NH3). Value is an object containing attributes representing statistical aggregates derived from past data.",
+                    "properties": {}
+                },
+                "pb": {
+                    "type": "object",
+                    "description": "Property. Observed value of environmental pollutant Lead (Pb). Value is an object containing attributes representing statistical aggregates derived from past data.",
+                    "properties": {}
+                },
+                "bap": {
+                    "type": "object",
+                    "description": "Property. Observed value of environmental pollutant Benzo[a]pyrene (BaP). Value is an object containing attributes representing statistical aggregates derived from past data.",
+                    "properties": {}
+                },
+                "nickel": {
+                    "type": "object",
+                    "description": "Property. Observed value of environmental pollutant Nickel (Ni). Value is an object containing attributes representing statistical aggregates derived from past data.",
+                    "properties": {}
+                },
+                "arsenic": {
+                    "type": "object",
+                    "description": "Property. Observed value of environmental pollutant Arsenic (As). Value is an object containing attributes representing statistical aggregates derived from past data.",
+                    "properties": {}
+                },
+                "solarRadiation": {
+                    "type": "number",
+                    "description": "Property. Model:'https://schema.org/Number'. Observed solar radiation."
+                },
+                "ambientNoise": {
+                    "type": "object",
+                    "description": "Property. Observed value of ambient noise levels. Value is an object containing attributes representing statistical aggregates derived from past data.",
+                    "properties": {}
+                },
+                "airTemperature": {
+                    "type": "object",
+                    "description": "Property. Observed value of air temperature. Value is an object containing attributes representing statistical aggregates derived from past data.",
+                    "properties": {}
+                },
+                "uv": {
+                    "type": "object",
+                    "description": "Property. Observed levels of UV radiation. Value is an object containing attributes representing statistical aggregates derived from past data.",
+                    "properties": {}
+                },
+                "precipitation": {
+                    "type": "number",
+                    "description": "Property. Model:'https://schema.org/Number'. Observed precipitation/rainfall level over a given duration."
+                },
+                "versionInfo": {
+                    "type": "object",
+                    "description": "Property. Version information corresponding to this observation.",
+                    "properties": {}
+                }
+            }
+        }
+    ]
+}
