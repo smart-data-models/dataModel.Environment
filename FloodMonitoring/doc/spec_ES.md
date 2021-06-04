@@ -1,11 +1,12 @@
 Entidad: FloodMonitoring  
 ========================  
 [Licencia abierta](https://github.com/smart-data-models//dataModel.Environment/blob/master/FloodMonitoring/LICENSE.md)  
+[documento generado automáticamente](https://docs.google.com/presentation/d/e/2PACX-1vTs-Ng5dIAwkg91oTTUdt8ua7woBXhPnwavZ0FxgR8BsAI_Ek3C5q97Nd94HS8KhP-r_quD4H0fgyt3/pub?start=false&loop=false&delayms=3000#slide=id.gb715ace035_0_60)  
 Descripción global: **Modelo de datos de sensores de inundación destinado a representar el nivel de inundación en relación con el flujo/nivel de agua en una determinada masa de agua (río, lago, etc.).  
 
 ## Lista de propiedades  
 
-- `address`: La dirección postal  - `alertLevel`: Valor umbral de nivel de alerta de referencia establecido para la estación de detección correspondiente a esta observación. Se genera una señal de alerta si el nivel actual cruza el valor de umbral de nivel de alerta.  - `alternateName`: Un nombre alternativo para este artículo  - `areaServed`: La zona geográfica en la que se presta un servicio o se ofrece un artículo  - `currentLevel`: Nivel de inundación actual indicado por la estación de detección correspondiente a esta observación, calculado utilizando ReferenceLevel y measuredDistance(currentLevel = referenceLevel - measuredDistance).  - `dangerLevel`: Valor umbral de nivel de peligro de referencia fijado para la estación de detección correspondiente a esta observación. El estado del nivel de inundación se marca como peligroso si el nivel actual cruza el valor del umbral de nivel de peligro.  - `dataProvider`: Una secuencia de caracteres que identifica al proveedor de la entidad de datos armonizada.  - `dateCreated`: Marca de tiempo de creación de la entidad. Suele ser asignada por la plataforma de almacenamiento.  - `dateModified`: Marca de tiempo de la última modificación de la entidad. Normalmente será asignada por la plataforma de almacenamiento.  - `description`: Una descripción de este artículo  - `floodLevelStatus`: Indicación del estado del nivel de inundación dado por el dispositivo de detección de inundaciones. El estado se marca como Peligro si el nivel actual es superior al valor del umbral de nivel de peligro.  - `id`: Identificador único de la entidad  - `location`:   - `measuredDistance`: Describe la distancia medida por el sensor, desde la punta del sensor hasta la superficie superior del agua.  - `name`: El nombre de este artículo.  - `observationDateTime`: Última hora de observación comunicada.  - `owner`: Una lista que contiene una secuencia de caracteres codificada en JSON que hace referencia a los identificadores únicos de los propietarios  - `referenceLevel`: Describe la distancia vertical desde el lecho del río hasta la punta del sensor.  - `seeAlso`: lista de uri que apuntan a recursos adicionales sobre el artículo  - `source`: Una secuencia de caracteres que indica la fuente original de los datos de la entidad en forma de URL. Se recomienda que sea el nombre de dominio completo del proveedor de origen, o la URL del objeto de origen.  - `stationID`: Un identificador anónimo único asignado a la estación correspondiente a esta observación.  - `type`: Tiene que ser FloodMonitoring. Tipo de entidad NGSI.    
+- `address`: La dirección postal  - `alertLevel`: Valor umbral de nivel de alerta de referencia establecido para la estación de detección correspondiente a esta observación. Se genera una señal de alerta si el nivel actual cruza el valor de umbral de nivel de alerta.  - `alternateName`: Un nombre alternativo para este artículo  - `areaServed`: La zona geográfica en la que se presta un servicio o se ofrece un artículo  - `currentLevel`: Nivel de inundación actual indicado por la estación de detección correspondiente a esta observación, calculado utilizando ReferenceLevel y measuredDistance(currentLevel = referenceLevel - measuredDistance).  - `dangerLevel`: Valor umbral de nivel de peligro de referencia fijado para la estación de detección correspondiente a esta observación. El estado del nivel de inundación se marca como peligroso si el nivel actual cruza el valor del umbral de nivel de peligro.  - `dataProvider`: Una secuencia de caracteres que identifica al proveedor de la entidad de datos armonizada.  - `dateCreated`: Marca de tiempo de creación de la entidad. Suele ser asignada por la plataforma de almacenamiento.  - `dateModified`: Marca de tiempo de la última modificación de la entidad. Normalmente será asignada por la plataforma de almacenamiento.  - `description`: Una descripción de este artículo  - `floodLevelStatus`: Indicación del estado del nivel de inundación dado por el dispositivo de detección de inundaciones. El estado se marca como Peligro si el nivel actual es superior al valor del umbral de nivel de peligro.  - `id`: Identificador único de la entidad  - `location`: Referencia Geojson al elemento. Puede ser Point, LineString, Polygon, MultiPoint, MultiLineString o MultiPolygon  - `measuredDistance`: Describe la distancia medida por el sensor, desde la punta del sensor hasta la superficie superior del agua.  - `name`: El nombre de este artículo.  - `observationDateTime`: Última hora de observación comunicada.  - `owner`: Una lista que contiene una secuencia de caracteres codificada en JSON que hace referencia a los identificadores únicos de los propietarios  - `referenceLevel`: Describe la distancia vertical desde el lecho del río hasta la punta del sensor.  - `seeAlso`: lista de uri que apuntan a recursos adicionales sobre el artículo  - `source`: Una secuencia de caracteres que indica la fuente original de los datos de la entidad en forma de URL. Se recomienda que sea el nombre de dominio completo del proveedor de origen, o la URL del objeto de origen.  - `stationID`: Un identificador anónimo único asignado a la estación correspondiente a esta observación.  - `type`: Tiene que ser FloodMonitoring. Tipo de entidad NGSI.    
 Propiedades requeridas  
 - `id`  - `type`  ## Descripción del modelo de datos de las propiedades  
 Ordenados alfabéticamente (haga clic para ver los detalles)  
@@ -26,14 +27,11 @@ FloodMonitoring:
         addressRegion:    
           description: 'Property. The region in which the locality is, and which is in the country. Model:''https://schema.org/addressRegion'''    
           type: string    
-        areaServed:    
-          description: 'Property. The geographic area where a service or offered item is provided. Model:''https://schema.org/areaServed'''    
-          type: string    
         postOfficeBoxNumber:    
-          description: 'Property. The post office box number for PO box addresses. For example, Spain. Model:''https://schema.org/postOfficeBoxNumber'''    
+          description: 'Property. The post office box number for PO box addresses. For example, 03578. Model:''https://schema.org/postOfficeBoxNumber'''    
           type: string    
         postalCode:    
-          description: 'Property. The postal code. For example, Spain. Model:''https://schema.org/https://schema.org/postalCode'''    
+          description: 'Property. The postal code. For example, 24004. Model:''https://schema.org/https://schema.org/postalCode'''    
           type: string    
         streetAddress:    
           description: 'Property. The street address. Model:''https://schema.org/streetAddress'''    
@@ -96,10 +94,10 @@ FloodMonitoring:
       description: 'Unique identifier of the entity'    
       type: Property    
     location:    
-      $id: https://geojson.org/schema/Geometry.json    
-      $schema: "http://json-schema.org/draft-07/schema#"    
+      description: 'Geojson reference to the item. It can be Point, LineString, Polygon, MultiPoint, MultiLineString or MultiPolygon'    
       oneOf:    
-        - properties:    
+        - description: 'Geoproperty. Geojson reference to the item. Point'    
+          properties:    
             bbox:    
               items:    
                 type: number    
@@ -119,7 +117,8 @@ FloodMonitoring:
             - coordinates    
           title: 'GeoJSON Point'    
           type: object    
-        - properties:    
+        - description: 'Geoproperty. Geojson reference to the item. LineString'    
+          properties:    
             bbox:    
               items:    
                 type: number    
@@ -142,7 +141,8 @@ FloodMonitoring:
             - coordinates    
           title: 'GeoJSON LineString'    
           type: object    
-        - properties:    
+        - description: 'Geoproperty. Geojson reference to the item. Polygon'    
+          properties:    
             bbox:    
               items:    
                 type: number    
@@ -167,7 +167,8 @@ FloodMonitoring:
             - coordinates    
           title: 'GeoJSON Polygon'    
           type: object    
-        - properties:    
+        - description: 'Geoproperty. Geojson reference to the item. MultiPoint'    
+          properties:    
             bbox:    
               items:    
                 type: number    
@@ -189,7 +190,8 @@ FloodMonitoring:
             - coordinates    
           title: 'GeoJSON MultiPoint'    
           type: object    
-        - properties:    
+        - description: 'Geoproperty. Geojson reference to the item. MultiLineString'    
+          properties:    
             bbox:    
               items:    
                 type: number    
@@ -214,7 +216,8 @@ FloodMonitoring:
             - coordinates    
           title: 'GeoJSON MultiLineString'    
           type: object    
-        - properties:    
+        - description: 'Geoproperty. Geojson reference to the item. MultiLineString'    
+          properties:    
             bbox:    
               items:    
                 type: number    
@@ -241,7 +244,7 @@ FloodMonitoring:
             - coordinates    
           title: 'GeoJSON MultiPolygon'    
           type: object    
-      title: 'GeoJSON Geometry'    
+      type: Geoproperty    
     measuredDistance:    
       description: 'Describes the distance measured by the sensor, from the sensor tip to the upper surface of water.'    
       type: Property    
@@ -271,8 +274,8 @@ FloodMonitoring:
       description: 'list of uri pointing to additional resources about the item'    
       oneOf:    
         - items:    
-            - format: uri    
-              type: string    
+            format: uri    
+            type: string    
           minItems: 1    
           type: array    
         - format: uri    
@@ -298,10 +301,12 @@ FloodMonitoring:
 ```  
 </details>    
 ## Ejemplo de carga útil  
-#### FloodMonitoring NGSI V2 key-values Ejemplo  
-Aquí hay un ejemplo de un FloodMonitoring en formato JSON como key-values. Esto es compatible con NGSI V2 cuando se utiliza `options=keyValues` y devuelve los datos de contexto de una entidad individual.  
+#### FloodMonitoring NGSI-v2 key-values Ejemplo  
+Aquí hay un ejemplo de un FloodMonitoring en formato JSON-LD como key-values. Esto es compatible con NGSI-v2 cuando se utiliza `options=keyValues` y devuelve los datos de contexto de una entidad individual.  
 ```json  
 {  
+  "id": "urn:ngsi-ld:FloodMonitoring:Pune-NoiseLevelObserved",  
+  "type": "FloodMonitoring",  
   "alertLevel": 10.00,  
   "measuredDistance": 3.22,  
   "currentLevel": 0.98,  
@@ -312,8 +317,8 @@ FloodMonitoring:
   "stationID": "FWR013"  
 }  
 ```  
-#### FloodMonitoring NGSI V2 normalizado Ejemplo  
-He aquí un ejemplo de FloodMonitoring en formato JSON normalizado. Esto es compatible con NGSI V2 cuando no se utilizan opciones y devuelve los datos de contexto de una entidad individual.  
+#### FloodMonitoring NGSI-v2 normalizado Ejemplo  
+Aquí hay un ejemplo de un FloodMonitoring en formato JSON-LD normalizado. Esto es compatible con NGSI-v2 cuando no se utilizan opciones y devuelve los datos de contexto de una entidad individual.  
 ```json  
 {  
   "id": "urn:ngsi-ld:FloodMonitoring:Pune-NoiseLevelObserved",  
@@ -356,28 +361,11 @@ FloodMonitoring:
 Aquí hay un ejemplo de un FloodMonitoring en formato JSON-LD como key-values. Esto es compatible con NGSI-LD cuando se utiliza `options=keyValues` y devuelve los datos de contexto de una entidad individual.  
 ```json  
 {  
-	"@context": ["https://schema.lab.fiware.org/ld/context",  
-		"https://uri.etsi.org/ngsi-ld/v1/ngsi-ld-core-context.jsonld"  
-	],  
-	"alertLevel": 10.00,  
-	"measuredDistance": 3.22,  
-	"currentLevel": 0.98,  
-	"dangerLevel": 25.00,  
-	"observationDateTime": "2020-09-16T13:30:00+05:30",  
-	"referenceLevel": 4.2,  
-	"floodLevelStatus": "Normal",  
-	"stationID": "FWR013"  
-}  
-```  
-#### FloodMonitoring NGSI-LD normalizado Ejemplo  
-He aquí un ejemplo de FloodMonitoring en formato JSON-LD normalizado. Esto es compatible con NGSI-LD cuando no se utilizan opciones y devuelve los datos de contexto de una entidad individual.  
-```json  
-{  
   "id": "urn:ngsi-ld:FloodMonitoring:Pune-NoiseLevelObserved",  
   "type": "FloodMonitoring",  
   "alertLevel": {  
     "type": "Property",  
-    "value": 11.00,  
+    "value": 11.0,  
     "unitCode": "MTR"  
   },  
   "measuredDistance": {  
@@ -392,7 +380,7 @@ FloodMonitoring:
   },  
   "dangerLevel": {  
     "type": "Property",  
-    "value": 26.00,  
+    "value": 26.0,  
     "unitCode": "MTR"  
   },  
   "observationDateTime": {  
@@ -414,8 +402,26 @@ FloodMonitoring:
     "value": "FWR013"  
   },  
   "@context": [  
-    "https://schema.lab.fiware.org/ld/context",  
+    "https://smartdatamodels.org/context.jsonld",  
     "https://uri.etsi.org/ngsi-ld/v1/ngsi-ld-core-context.jsonld"  
   ]  
+}  
+```  
+#### FloodMonitoring NGSI-LD normalizado Ejemplo  
+He aquí un ejemplo de FloodMonitoring en formato JSON-LD normalizado. Esto es compatible con NGSI-LD cuando no se utilizan opciones y devuelve los datos de contexto de una entidad individual.  
+```json  
+{  
+  "@context": [  
+    "https://smartdatamodels.org/context.jsonld",  
+    "https://uri.etsi.org/ngsi-ld/v1/ngsi-ld-core-context.jsonld"  
+  ],  
+  "alertLevel": 10.0,  
+  "measuredDistance": 3.22,  
+  "currentLevel": 0.98,  
+  "dangerLevel": 25.0,  
+  "observationDateTime": "2020-09-16T13:30:00+05:30",  
+  "referenceLevel": 4.2,  
+  "floodLevelStatus": "Normal",  
+  "stationID": "FWR013"  
 }  
 ```  
