@@ -1,11 +1,12 @@
 Entität: FloodMonitoring  
 ========================  
 [Offene Lizenz](https://github.com/smart-data-models//dataModel.Environment/blob/master/FloodMonitoring/LICENSE.md)  
+[Dokument automatisch generiert](https://docs.google.com/presentation/d/e/2PACX-1vTs-Ng5dIAwkg91oTTUdt8ua7woBXhPnwavZ0FxgR8BsAI_Ek3C5q97Nd94HS8KhP-r_quD4H0fgyt3/pub?start=false&loop=false&delayms=3000#slide=id.gb715ace035_0_60)  
 Globale Beschreibung: **Hochwasser-Sensordatenmodell zur Darstellung des Überschwemmungsgrades in Bezug auf den Wasserdurchfluss/-stand an einer bestimmten Wassermasse (Fluss, See, etc.) **.  
 
 ## Liste der Eigenschaften  
 
-- `address`: Die Postanschrift  - `alertLevel`: Referenz-Alarmpegel-Schwellenwert, der für die Messstation eingestellt wurde, die dieser Beobachtung entspricht. Ein Alarmsignal wird erzeugt, wenn der aktuelle Pegel den Schwellenwert für den Alarmpegel überschreitet.  - `alternateName`: Ein alternativer Name für diesen Artikel  - `areaServed`: Das geografische Gebiet, in dem eine Dienstleistung oder ein angebotener Artikel erbracht wird  - `currentLevel`: Aktueller Überflutungspegel, der von der Messstation angezeigt wird, die dieser Beobachtung entspricht, berechnet mit referenceLevel und measuredDistance(currentLevel = referenceLevel - measuredDistance).  - `dangerLevel`: Referenz-Gefährdungspegel-Schwellenwert, der für die dieser Beobachtung entsprechende Messstation eingestellt ist. Der Hochwasserpegelstatus wird als Gefahr gekennzeichnet, wenn der aktuelle Pegel den Schwellenwert für den Gefahrenpegel überschreitet.  - `dataProvider`: Eine Folge von Zeichen, die den Anbieter der harmonisierten Dateneinheit identifiziert.  - `dateCreated`: Zeitstempel der Entitätserstellung. Dieser wird normalerweise von der Speicherplattform zugewiesen.  - `dateModified`: Zeitstempel der letzten Änderung der Entität. Dieser wird in der Regel von der Speicherplattform vergeben.  - `description`: Eine Beschreibung dieses Artikels  - `floodLevelStatus`: Statusanzeige des Hochwasserpegels, die von der Hochwassermeldeeinrichtung gegeben wird. Der Status ist mit Gefahr gekennzeichnet, wenn der aktuelle Pegel höher ist als der Schwellenwert für die Gefahrenstufe.  - `id`: Eindeutiger Bezeichner der Entität  - `location`:   - `measuredDistance`: Beschreibt die vom Sensor gemessene Entfernung von der Sensorspitze bis zur oberen Wasseroberfläche.  - `name`: Der Name dieses Elements.  - `observationDateTime`: Letzter gemeldeter Zeitpunkt der Beobachtung.  - `owner`: Eine Liste mit einer JSON-kodierten Zeichenfolge, die auf die eindeutigen Ids der Eigentümer verweist  - `referenceLevel`: Beschreibt den vertikalen Abstand vom Flussbett zur Sensorspitze.  - `seeAlso`: Liste von uri, die auf zusätzliche Ressourcen über das Element verweist  - `source`: Eine Folge von Zeichen, die die ursprüngliche Quelle der Entitätsdaten als URL angibt. Empfohlen wird der voll qualifizierte Domänenname des Quellanbieters oder die URL zum Quellobjekt.  - `stationID`: Ein eindeutiger anonymer Bezeichner, der der Station zugeordnet ist, die dieser Beobachtung entspricht.  - `type`: Es muss FloodMonitoring sein. NGSI Entity type.    
+- `address`: Die Postanschrift  - `alertLevel`: Referenz-Alarmpegel-Schwellenwert, der für die Messstation eingestellt wurde, die dieser Beobachtung entspricht. Ein Alarmsignal wird erzeugt, wenn der aktuelle Pegel den Schwellenwert für den Alarmpegel überschreitet.  - `alternateName`: Ein alternativer Name für diesen Artikel  - `areaServed`: Das geografische Gebiet, in dem eine Dienstleistung oder ein angebotener Artikel erbracht wird  - `currentLevel`: Aktueller Überflutungspegel, der von der Messstation angezeigt wird, die dieser Beobachtung entspricht, berechnet mit referenceLevel und measuredDistance(currentLevel = referenceLevel - measuredDistance).  - `dangerLevel`: Referenz-Gefährdungspegel-Schwellenwert, der für die dieser Beobachtung entsprechende Messstation eingestellt ist. Der Hochwasserpegelstatus wird als Gefahr gekennzeichnet, wenn der aktuelle Pegel den Schwellenwert für den Gefahrenpegel überschreitet.  - `dataProvider`: Eine Folge von Zeichen, die den Anbieter der harmonisierten Dateneinheit identifiziert.  - `dateCreated`: Zeitstempel der Entitätserstellung. Dieser wird normalerweise von der Speicherplattform zugewiesen.  - `dateModified`: Zeitstempel der letzten Änderung der Entität. Dieser wird in der Regel von der Speicherplattform vergeben.  - `description`: Eine Beschreibung dieses Artikels  - `floodLevelStatus`: Statusanzeige des Hochwasserpegels, die von der Hochwassermeldeeinrichtung gegeben wird. Der Status ist mit Gefahr gekennzeichnet, wenn der aktuelle Pegel höher ist als der Schwellenwert für die Gefahrenstufe.  - `id`: Eindeutiger Bezeichner der Entität  - `location`: Geojson-Referenz auf das Element. Es kann Punkt, LineString, Polygon, MultiPoint, MultiLineString oder MultiPolygon sein  - `measuredDistance`: Beschreibt die vom Sensor gemessene Entfernung von der Sensorspitze bis zur oberen Wasseroberfläche.  - `name`: Der Name dieses Elements.  - `observationDateTime`: Letzter gemeldeter Zeitpunkt der Beobachtung.  - `owner`: Eine Liste mit einer JSON-kodierten Zeichenfolge, die auf die eindeutigen Ids der Eigentümer verweist  - `referenceLevel`: Beschreibt den vertikalen Abstand vom Flussbett zur Sensorspitze.  - `seeAlso`: Liste von uri, die auf zusätzliche Ressourcen über das Element verweist  - `source`: Eine Folge von Zeichen, die die ursprüngliche Quelle der Entitätsdaten als URL angibt. Empfohlen wird der voll qualifizierte Domänenname des Quellanbieters oder die URL zum Quellobjekt.  - `stationID`: Ein eindeutiger anonymer Bezeichner, der der Station zugeordnet ist, die dieser Beobachtung entspricht.  - `type`: Es muss FloodMonitoring sein. NGSI Entity type.    
 Erforderliche Eigenschaften  
 - `id`  - `type`  ## Datenmodell Beschreibung der Eigenschaften  
 Alphabetisch sortiert (für Details anklicken)  
@@ -26,14 +27,11 @@ FloodMonitoring:
         addressRegion:    
           description: 'Property. The region in which the locality is, and which is in the country. Model:''https://schema.org/addressRegion'''    
           type: string    
-        areaServed:    
-          description: 'Property. The geographic area where a service or offered item is provided. Model:''https://schema.org/areaServed'''    
-          type: string    
         postOfficeBoxNumber:    
-          description: 'Property. The post office box number for PO box addresses. For example, Spain. Model:''https://schema.org/postOfficeBoxNumber'''    
+          description: 'Property. The post office box number for PO box addresses. For example, 03578. Model:''https://schema.org/postOfficeBoxNumber'''    
           type: string    
         postalCode:    
-          description: 'Property. The postal code. For example, Spain. Model:''https://schema.org/https://schema.org/postalCode'''    
+          description: 'Property. The postal code. For example, 24004. Model:''https://schema.org/https://schema.org/postalCode'''    
           type: string    
         streetAddress:    
           description: 'Property. The street address. Model:''https://schema.org/streetAddress'''    
@@ -96,10 +94,10 @@ FloodMonitoring:
       description: 'Unique identifier of the entity'    
       type: Property    
     location:    
-      $id: https://geojson.org/schema/Geometry.json    
-      $schema: "http://json-schema.org/draft-07/schema#"    
+      description: 'Geojson reference to the item. It can be Point, LineString, Polygon, MultiPoint, MultiLineString or MultiPolygon'    
       oneOf:    
-        - properties:    
+        - description: 'Geoproperty. Geojson reference to the item. Point'    
+          properties:    
             bbox:    
               items:    
                 type: number    
@@ -119,7 +117,8 @@ FloodMonitoring:
             - coordinates    
           title: 'GeoJSON Point'    
           type: object    
-        - properties:    
+        - description: 'Geoproperty. Geojson reference to the item. LineString'    
+          properties:    
             bbox:    
               items:    
                 type: number    
@@ -142,7 +141,8 @@ FloodMonitoring:
             - coordinates    
           title: 'GeoJSON LineString'    
           type: object    
-        - properties:    
+        - description: 'Geoproperty. Geojson reference to the item. Polygon'    
+          properties:    
             bbox:    
               items:    
                 type: number    
@@ -167,7 +167,8 @@ FloodMonitoring:
             - coordinates    
           title: 'GeoJSON Polygon'    
           type: object    
-        - properties:    
+        - description: 'Geoproperty. Geojson reference to the item. MultiPoint'    
+          properties:    
             bbox:    
               items:    
                 type: number    
@@ -189,7 +190,8 @@ FloodMonitoring:
             - coordinates    
           title: 'GeoJSON MultiPoint'    
           type: object    
-        - properties:    
+        - description: 'Geoproperty. Geojson reference to the item. MultiLineString'    
+          properties:    
             bbox:    
               items:    
                 type: number    
@@ -214,7 +216,8 @@ FloodMonitoring:
             - coordinates    
           title: 'GeoJSON MultiLineString'    
           type: object    
-        - properties:    
+        - description: 'Geoproperty. Geojson reference to the item. MultiLineString'    
+          properties:    
             bbox:    
               items:    
                 type: number    
@@ -241,7 +244,7 @@ FloodMonitoring:
             - coordinates    
           title: 'GeoJSON MultiPolygon'    
           type: object    
-      title: 'GeoJSON Geometry'    
+      type: Geoproperty    
     measuredDistance:    
       description: 'Describes the distance measured by the sensor, from the sensor tip to the upper surface of water.'    
       type: Property    
@@ -271,8 +274,8 @@ FloodMonitoring:
       description: 'list of uri pointing to additional resources about the item'    
       oneOf:    
         - items:    
-            - format: uri    
-              type: string    
+            format: uri    
+            type: string    
           minItems: 1    
           type: array    
         - format: uri    
