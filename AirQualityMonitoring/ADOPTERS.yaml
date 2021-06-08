@@ -2,8 +2,8 @@
 description: This is a compilation list of the current adopters of the data model [Data model] of the Subject [Subject].  All fields are non mandatory. More info at https://smart-data-models.github.io/data-models/templates/dataModel/CURRENT_ADOPTERS.yaml
 currentAdopters:
 -
- adopter: 
- description: 
+ adopter: IUDX
+ description: Used by various institutions for Air Quality Monitoring.
  mail: 
  organization: 
  project: 
