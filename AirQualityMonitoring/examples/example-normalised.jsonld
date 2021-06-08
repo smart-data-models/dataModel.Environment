@@ -10,52 +10,128 @@
 		"minOverTime": {
 			"type": "Property",
 			"value": 10.1
+		},
+		"avgOverTime": {
+			"type": "Property",
+			"value": 10.1
+		},
+		"instValue": {
+			"type": "Property",
+			"value": 10.1
 		}
 	},
 	"co": {
 		"type": "Object",
-		"minOverTime": {
-			"type": "Property",
-			"value": 3.4
-		},
 		"maxOverTime": {
 			"type": "Property",
-			"value": 8.9
+			"value": 56.8
+		},
+		"minOverTime": {
+			"type": "Property",
+			"value": 10.1
+		},
+		"avgOverTime": {
+			"type": "Property",
+			"value": 10.1
+		},
+		"instValue": {
+			"type": "Property",
+			"value": 10.1
 		}
 	},
 	"pm10": {
 		"type": "Object",
+		"maxOverTime": {
+			"type": "Property",
+			"value": 56.8
+		},
+		"minOverTime": {
+			"type": "Property",
+			"value": 10.1
+		},
 		"avgOverTime": {
 			"type": "Property",
-			"value": 16.71
+			"value": 10.1
+		},
+		"instValue": {
+			"type": "Property",
+			"value": 10.1
 		}
 	},
 	"airTemperature": {
 		"type": "Object",
+		"maxOverTime": {
+			"type": "Property",
+			"value": 56.8
+		},
+		"minOverTime": {
+			"type": "Property",
+			"value": 10.1
+		},
 		"avgOverTime": {
 			"type": "Property",
-			"value": 27.76
+			"value": 10.1
+		},
+		"instValue": {
+			"type": "Property",
+			"value": 10.1
 		}
 	},
 	"atmosphericPressure": {
 		"type": "Object",
+		"maxOverTime": {
+			"type": "Property",
+			"value": 56.8
+		},
+		"minOverTime": {
+			"type": "Property",
+			"value": 10.1
+		},
 		"avgOverTime": {
 			"type": "Property",
-			"value": 0.92
+			"value": 10.1
+		},
+		"instValue": {
+			"type": "Property",
+			"value": 10.1
 		}
 	},
 	"uv": {
 		"type": "Object",
+		"maxOverTime": {
+			"type": "Property",
+			"value": 56.8
+		},
+		"minOverTime": {
+			"type": "Property",
+			"value": 10.1
+		},
 		"avgOverTime": {
 			"type": "Property",
-			"value": 0.81
+			"value": 10.1
+		},
+		"instValue": {
+			"type": "Property",
+			"value": 10.1
 		}
 	},
 	"ambientNoise": {
 		"type": "Object",
+		"maxOverTime": {
+			"type": "Property",
+			"value": 56.8
+		},
+		"minOverTime": {
+			"type": "Property",
+			"value": 10.1
+		},
 		"avgOverTime": {
 			"type": "Property",
-			"value": 61.06
+			"value": 10.1
+		},
+		"instValue": {
+			"type": "Property",
+			"value": 10.1
 		}
 	},
 	"illuminance": {
@@ -64,9 +140,21 @@
 	},
 	"relativeHumidity": {
 		"type": "Object",
+		"maxOverTime": {
+			"type": "Property",
+			"value": 56.8
+		},
+		"minOverTime": {
+			"type": "Property",
+			"value": 10.1
+		},
 		"avgOverTime": {
 			"type": "Property",
-			"value": 71.29
+			"value": 10.1
+		},
+		"instValue": {
+			"type": "Property",
+			"value": 10.1
 		}
 	},
 	"airQualityIndex": {
@@ -88,37 +176,97 @@
 	},
 	"o3": {
 		"type": "Object",
+		"maxOverTime": {
+			"type": "Property",
+			"value": 56.8
+		},
+		"minOverTime": {
+			"type": "Property",
+			"value": 10.1
+		},
 		"avgOverTime": {
 			"type": "Property",
-			"value": 9.6
+			"value": 10.1
+		},
+		"instValue": {
+			"type": "Property",
+			"value": 10.1
 		}
 	},
 	"no2": {
 		"type": "Object",
+		"maxOverTime": {
+			"type": "Property",
+			"value": 56.8
+		},
+		"minOverTime": {
+			"type": "Property",
+			"value": 10.1
+		},
 		"avgOverTime": {
 			"type": "Property",
-			"value": 6.59
+			"value": 10.1
+		},
+		"instValue": {
+			"type": "Property",
+			"value": 10.1
 		}
 	},
 	"co2": {
 		"type": "Object",
+		"maxOverTime": {
+			"type": "Property",
+			"value": 56.8
+		},
+		"minOverTime": {
+			"type": "Property",
+			"value": 10.1
+		},
 		"avgOverTime": {
 			"type": "Property",
-			"value": 318.51
+			"value": 10.1
+		},
+		"instValue": {
+			"type": "Property",
+			"value": 10.1
 		}
 	},
 	"so2": {
 		"type": "Object",
+		"maxOverTime": {
+			"type": "Property",
+			"value": 56.8
+		},
+		"minOverTime": {
+			"type": "Property",
+			"value": 10.1
+		},
 		"avgOverTime": {
 			"type": "Property",
-			"value": 3.65
+			"value": 10.1
+		},
+		"instValue": {
+			"type": "Property",
+			"value": 10.1
 		}
 	},
 	"no": {
 		"type": "Object",
+		"maxOverTime": {
+			"type": "Property",
+			"value": 56.8
+		},
+		"minOverTime": {
+			"type": "Property",
+			"value": 10.1
+		},
 		"avgOverTime": {
 			"type": "Property",
-			"value": 3.65
+			"value": 10.1
+		},
+		"instValue": {
+			"type": "Property",
+			"value": 10.1
 		}
 	},
 	"deviceStatus": {
@@ -127,16 +275,40 @@
 	},
 	"arsenic": {
 		"type": "Object",
+		"maxOverTime": {
+			"type": "Property",
+			"value": 56.8
+		},
+		"minOverTime": {
+			"type": "Property",
+			"value": 10.1
+		},
 		"avgOverTime": {
 			"type": "Property",
-			"value": 3.65
+			"value": 10.1
+		},
+		"instValue": {
+			"type": "Property",
+			"value": 10.1
 		}
 	},
 	"nh3": {
 		"type": "Object",
+		"maxOverTime": {
+			"type": "Property",
+			"value": 56.8
+		},
+		"minOverTime": {
+			"type": "Property",
+			"value": 10.1
+		},
 		"avgOverTime": {
 			"type": "Property",
-			"value": 3.65
+			"value": 10.1
+		},
+		"instValue": {
+			"type": "Property",
+			"value": 10.1
 		}
 	},
 	"precipitation": {
@@ -145,9 +317,21 @@
 	},
 	"benzene": {
 		"type": "Object",
+		"maxOverTime": {
+			"type": "Property",
+			"value": 56.8
+		},
+		"minOverTime": {
+			"type": "Property",
+			"value": 10.1
+		},
 		"avgOverTime": {
 			"type": "Property",
-			"value": 3.65
+			"value": 10.1
+		},
+		"instValue": {
+			"type": "Property",
+			"value": 10.1
 		}
 	},
 	"solarRadiation": {
@@ -177,31 +361,79 @@
 	},
 	"nickel": {
 		"type": "Object",
+		"maxOverTime": {
+			"type": "Property",
+			"value": 56.8
+		},
+		"minOverTime": {
+			"type": "Property",
+			"value": 10.1
+		},
 		"avgOverTime": {
 			"type": "Property",
-			"value": 3.65
+			"value": 10.1
+		},
+		"instValue": {
+			"type": "Property",
+			"value": 10.1
 		}
 	},
 	"pb": {
 		"type": "Object",
+		"maxOverTime": {
+			"type": "Property",
+			"value": 56.8
+		},
+		"minOverTime": {
+			"type": "Property",
+			"value": 10.1
+		},
 		"avgOverTime": {
 			"type": "Property",
-			"value": 3.65
+			"value": 10.1
+		},
+		"instValue": {
+			"type": "Property",
+			"value": 10.1
 		}
 	},
 
 	"o2": {
 		"type": "Object",
+		"maxOverTime": {
+			"type": "Property",
+			"value": 56.8
+		},
+		"minOverTime": {
+			"type": "Property",
+			"value": 10.1
+		},
 		"avgOverTime": {
 			"type": "Property",
-			"value": 3.65
+			"value": 10.1
+		},
+		"instValue": {
+			"type": "Property",
+			"value": 10.1
 		}
 	},
 	"bap": {
 		"type": "Object",
+		"maxOverTime": {
+			"type": "Property",
+			"value": 56.8
+		},
+		"minOverTime": {
+			"type": "Property",
+			"value": 10.1
+		},
 		"avgOverTime": {
 			"type": "Property",
-			"value": 3.65
+			"value": 10.1
+		},
+		"instValue": {
+			"type": "Property",
+			"value": 10.1
 		}
 	},
 	"location": {

@@ -5,61 +5,107 @@
 	"type": ["iudx:EnvAQM"],
 	"airPressure": 990,
 	"pm2p5": {
+		"instValue": 10.1,
+		"avgOverTime": 10.1,
 		"minOverTime": 10.1,
 		"maxOverTime": 56.8
 	},
 	"co": {
-		"minOverTime": 3.4,
-		"maxOverTime": 8.9
+		"instValue": 10.1,
+		"avgOverTime": 10.1,
+		"minOverTime": 10.1,
+		"maxOverTime": 56.8
 	},
 	"pm10": {
-		"avgOverTime": 16.71
+		"instValue": 10.1,
+		"avgOverTime": 10.1,
+		"minOverTime": 10.1,
+		"maxOverTime": 56.8
 	},
 	"airTemperature": {
-		"avgOverTime": 27.76
+		"instValue": 10.1,
+		"avgOverTime": 10.1,
+		"minOverTime": 10.1,
+		"maxOverTime": 56.8
 	},
 	"atmosphericPressure": {
-		"avgOverTime": 0.92
+		"instValue": 10.1,
+		"avgOverTime": 10.1,
+		"minOverTime": 10.1,
+		"maxOverTime": 56.8
 	},
 	"uv": {
-		"avgOverTime": 0.81
+		"instValue": 10.1,
+		"avgOverTime": 10.1,
+		"minOverTime": 10.1,
+		"maxOverTime": 56.8
 	},
 	"ambientNoise": {
-		"avgOverTime": 61.06
+		"instValue": 10.1,
+		"avgOverTime": 10.1,
+		"minOverTime": 10.1,
+		"maxOverTime": 56.8
 	},
 	"illuminance": 3319.41,
 	"relativeHumidity": {
-		"avgOverTime": 71.29
+		"instValue": 10.1,
+		"avgOverTime": 10.1,
+		"minOverTime": 10.1,
+		"maxOverTime": 56.8
 	},
 	"airQualityIndex": 90,
 	"airQualityLevel": "SATISFATORY",
 	"aqiMajorPollutant": "no2",
 	"observationDateTime": "2020-09-16T11:00:00+05:30",
 	"o3": {
-		"avgOverTime": 9.6
+		"instValue": 10.1,
+		"avgOverTime": 10.1,
+		"minOverTime": 10.1,
+		"maxOverTime": 56.8
 	},
 	"no2": {
-		"avgOverTime": 6.59
+		"instValue": 10.1,
+		"avgOverTime": 10.1,
+		"minOverTime": 10.1,
+		"maxOverTime": 56.8
 	},
 	"co2": {
-		"avgOverTime": 318.51
+		"instValue": 10.1,
+		"avgOverTime": 10.1,
+		"minOverTime": 10.1,
+		"maxOverTime": 56.8
 	},
 	"so2": {
-		"avgOverTime": 3.65
+		"instValue": 10.1,
+		"avgOverTime": 10.1,
+		"minOverTime": 10.1,
+		"maxOverTime": 56.8
 	},
 	"deviceStatus": "ACTIVE",
 	"no": {
-		"avgOverTime": 3.65
+		"instValue": 10.1,
+		"avgOverTime": 10.1,
+		"minOverTime": 10.1,
+		"maxOverTime": 56.8
 	},
 	"arsenic": {
-		"avgOverTime": 3.65
+		"instValue": 10.1,
+		"avgOverTime": 10.1,
+		"minOverTime": 10.1,
+		"maxOverTime": 56.8
 	},
 	"nh3": {
-		"avgOverTime": 3.65
+		"instValue": 10.1,
+		"avgOverTime": 10.1,
+		"minOverTime": 10.1,
+		"maxOverTime": 56.8
 	},
 	"precipitation": 10.2,
 	"benzene": {
-		"avgOverTime": 3.65
+		"instValue": 10.1,
+		"avgOverTime": 10.1,
+		"minOverTime": 10.1,
+		"maxOverTime": 56.8
 	},
 	"versionInfo": {
 		"comments": "Version 1",
@@ -69,13 +115,22 @@
 	},
 	"solarRadiation": 3.65,
 	"nickel": {
-		"avgOverTime": 3.65
+		"instValue": 10.1,
+		"avgOverTime": 10.1,
+		"minOverTime": 10.1,
+		"maxOverTime": 56.8
 	},
 	"pb": {
-		"avgOverTime": 3.65
+		"instValue": 10.1,
+		"avgOverTime": 10.1,
+		"minOverTime": 10.1,
+		"maxOverTime": 56.8
 	},
 	"o2": {
-		"avgOverTime": 9.6
+		"instValue": 10.1,
+		"avgOverTime": 10.1,
+		"minOverTime": 10.1,
+		"maxOverTime": 56.8
 	},
 	"deviceInfo": {
 		"deviceList": "12",
@@ -93,7 +148,10 @@
 		"deviceSimNumber": "12345678"
 	},
 	"bap": {
-		"avgOverTime": 9.6
+		"instValue": 10.1,
+		"avgOverTime": 10.1,
+		"minOverTime": 10.1,
+		"maxOverTime": 56.8
 	},
 	"location": {
 		"type": "Point",
