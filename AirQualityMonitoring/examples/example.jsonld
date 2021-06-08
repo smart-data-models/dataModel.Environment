@@ -145,7 +145,8 @@
 		"deviceName": "Climo",
 		"deviceID": "12345",
 		"RFID": "AB463478",
-		"deviceSimNumber": "12345678"
+		"deviceSimNumber": "12345678",
+		"measurand": "co2"
 	},
 	"bap": {
 		"instValue": 10.1,
