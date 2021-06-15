@@ -66,7 +66,8 @@
 									"description": "Property. Model:'https://schema.org/Text'. URL providing further information of a specific model associated with an entity, e.g., sensor, device etc."
 								},
 								"areaServed": {
-									"$ref": "http://geojson.org/schema/Geometry.json"
+									"type": "string",
+									"description": "Property. Model:'https://schema.org/Text'. Area served by the entity or a service. "
 								}
 							}
 						}
