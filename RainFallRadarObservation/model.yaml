@@ -13,9 +13,6 @@ RainFallRadarObservation:
         addressRegion:
           description: 'Property. The region in which the locality is, and which is in the country. Model:''https://schema.org/addressRegion'''
           type: string
-        areaServed:
-          description: 'Property. The geographic area where a service or offered item is provided. Model:''https://schema.org/areaServed'''
-          type: string
         postOfficeBoxNumber:
           description: 'Property. The post office box number for PO box addresses. For example, 03578. Model:''https://schema.org/postOfficeBoxNumber'''
           type: string
@@ -25,64 +22,83 @@ RainFallRadarObservation:
         streetAddress:
           description: 'Property. The street address. Model:''https://schema.org/streetAddress'''
           type: string
-      type: Property
+      type: object
       x-ngsi:
         model: https://schema.org/address
+        type: Property
     alternateName:
       description: 'An alternative name for this item'
-      type: Property
+      type: string
+      x-ngsi:
+        type: Property
     areaServed:
       description: 'The geographic area where a service or offered item is provided'
-      type: Property
+      type: string
       x-ngsi:
         model: https://schema.org/Text
+        type: Property
     atmosphericPressure:
       description: 'The atmospheric pressure observed measured in Hecto Pascals'
       minimum: 0
-      type: Property
+      type: number
       x-ngsi:
         model: https://schema.org/Number
+        type: Property
         units: 'Hecto pascals'
     cellsSize:
       description: 'Size of each cell constituting the radar. The unit code (text) of measurement is given using the [UN/CEFACT Common Codes](http://wiki.goodrelations-vocabulary.org/Documentation/UN/CEFACT_Common_Codes). For instance, **MTR** represents **Meters**'
-      type: Property
+      type: number
       x-ngsi:
         model: https://schema.org/Number
+        type: Property
     dataProvider:
       description: 'A sequence of characters identifying the provider of the harmonised data entity.'
-      type: Property
+      type: string
+      x-ngsi:
+        type: Property
     dateCreated:
       description: 'Entity creation timestamp. This will usually be allocated by the storage platform.'
       format: date-time
-      type: Property
+      type: string
+      x-ngsi:
+        type: Property
     dateModified:
       description: 'Timestamp of the last modification of the entity. This will usually be allocated by the storage platform.'
       format: date-time
-      type: Property
+      type: string
+      x-ngsi:
+        type: Property
     dateObserved:
       description: 'The date and time of this observation in ISO8601 UTC format. It can be represented by a specific time instant or by an ISO8601 interval'
       format: date-time
-      type: Property
+      type: string
       x-ngsi:
         model: https://schema.org/DateTime
+        type: Property
     dateObservedFrom:
       description: 'Observation period start date and time. See dateObserved. It can be represented by a specific time instant or by an ISO8601 interval'
       format: date-time
-      type: Property
+      type: string
       x-ngsi:
         model: https://schema.org/DateTime
+        type: Property
     dateObservedTo:
       description: 'Observation period end date and time. See dateObserved. It can be represented by a specific time instant or by an ISO8601 interval'
       format: date-time
-      type: Property
+      type: string
       x-ngsi:
         model: https://schema.org/DateTime
+        type: Property
     description:
       description: 'A description of this item'
-      type: Property
+      type: string
+      x-ngsi:
+        type: Property
     feelLikesTemperature:
       description: 'Temperature appreciation of the item'
-      type: Property
+      type: number
+      x-ngsi:
+        type: Property
     id:
       anyOf: &rainfallradarobservation_-_properties_-_owner_-_items_-_anyof
         - description: 'Property. Identifier format of any NGSI entity'
@@ -94,18 +110,20 @@ RainFallRadarObservation:
           format: uri
           type: string
       description: 'Unique identifier of the entity'
-      type: Property
+      x-ngsi:
+        type: Property
     illuminance:
       description: '(https://en.wikipedia.org/wiki/Illuminance) observed measured in lux (lx) or lumens per square metre (cd·sr·m−2).'
       minimum: 0
-      type: Property
+      type: number
       x-ngsi:
         model: https://schema.org/Number
+        type: Property
     location:
-      $id: https://geojson.org/schema/Geometry.json
-      $schema: "http://json-schema.org/draft-07/schema#"
+      description: 'Geojson reference to the item. It can be Point, LineString, Polygon, MultiPoint, MultiLineString or MultiPolygon'
       oneOf:
-        - properties:
+        - description: 'Geoproperty. Geojson reference to the item. Point'
+          properties:
             bbox:
               items:
                 type: number
@@ -125,7 +143,8 @@ RainFallRadarObservation:
             - coordinates
           title: 'GeoJSON Point'
           type: object
-        - properties:
+        - description: 'Geoproperty. Geojson reference to the item. LineString'
+          properties:
             bbox:
               items:
                 type: number
@@ -148,7 +167,8 @@ RainFallRadarObservation:
             - coordinates
           title: 'GeoJSON LineString'
           type: object
-        - properties:
+        - description: 'Geoproperty. Geojson reference to the item. Polygon'
+          properties:
             bbox:
               items:
                 type: number
@@ -173,7 +193,8 @@ RainFallRadarObservation:
             - coordinates
           title: 'GeoJSON Polygon'
           type: object
-        - properties:
+        - description: 'Geoproperty. Geojson reference to the item. MultiPoint'
+          properties:
             bbox:
               items:
                 type: number
@@ -195,7 +216,8 @@ RainFallRadarObservation:
             - coordinates
           title: 'GeoJSON MultiPoint'
           type: object
-        - properties:
+        - description: 'Geoproperty. Geojson reference to the item. MultiLineString'
+          properties:
             bbox:
               items:
                 type: number
@@ -220,7 +242,8 @@ RainFallRadarObservation:
             - coordinates
           title: 'GeoJSON MultiLineString'
           type: object
-        - properties:
+        - description: 'Geoproperty. Geojson reference to the item. MultiLineString'
+          properties:
             bbox:
               items:
                 type: number
@@ -247,45 +270,55 @@ RainFallRadarObservation:
             - coordinates
           title: 'GeoJSON MultiPolygon'
           type: object
-      title: 'GeoJSON Geometry'
+      x-ngsi:
+        type: Geoproperty
     mapScale:
       description: 'Map Scale. Relationship between the length of the cellSize and its representation on the map'
-      type: Property
+      type: string
       x-ngsi:
         model: https://schema.org/Text
+        type: Property
     measuredArea:
       description: 'Reference of the surface measured. The unit code (text) is given using the [UN/CEFACT Common Codes](http://wiki.goodrelations-vocabulary.org/Documentation/UN/CEFACT_Common_Codes). For instance, **MTK** represents Square Meters'
       minimum: 0
-      type: Property
+      type: number
       x-ngsi:
         model: https://schema.org/Number
+        type: Property
         units: 'square meters'
     name:
       description: 'The name of this item.'
-      type: Property
+      type: string
+      x-ngsi:
+        type: Property
     numberOfCol:
       description: 'Number of Cols allowing the reading of the `rainFallradarContent` attribute'
       minimum: 0
-      type: Property
+      type: number
       x-ngsi:
         model: https://schema.org/Number
+        type: Property
     numberOfRow:
       description: 'Number of Rows allowing the reading of the `rainFallradarContent` attribute'
       minimum: 0
-      type: Property
+      type: number
       x-ngsi:
         model: https://schema.org/Number
+        type: Property
     owner:
       description: 'A List containing a JSON encoded sequence of characters referencing the unique Ids of the owner(s)'
       items:
         anyOf: *rainfallradarobservation_-_properties_-_owner_-_items_-_anyof
         description: 'Property. Unique identifier of the entity'
-      type: Property
+      type: array
+      x-ngsi:
+        type: Property
     rainFallRadarContent:
       description: 'Path and filename which provided the information observed'
-      type: Property
+      type: string
       x-ngsi:
         model: https://schema.org/Text
+        type: Property
     refDevice:
       anyOf:
         - description: 'Property. Identifier format of any NGSI entity'
@@ -297,9 +330,9 @@ RainFallRadarObservation:
           format: uri
           type: string
       description: 'Reference to a [Device](https://github.com/smart-data-models/dataModel.Device/blob/master/Device/doc/spec.md) which captured this observation'
-      type: Relationship
       x-ngsi:
         model: https://schema.org/URL
+        type: Relationship
     refPointOfInterest:
       anyOf:
         - description: 'Property. Identifier format of any NGSI entity'
@@ -311,14 +344,16 @@ RainFallRadarObservation:
           format: uri
           type: string
       description: 'Reference to a [PointOfInterest](https://github.com/smart-data-models/dataModel.PointOfInterest/blob/master/PointOfInterest/doc/spec.md) linked with the observation'
-      type: Relationship
       x-ngsi:
         model: https://schema.org/URL
+        type: Relationship
     relativeHumidity:
       description: 'Humidity in the Air'
       maximum: 1
       minimum: 0
-      type: Property
+      type: number
+      x-ngsi:
+        type: Property
     seeAlso:
       description: 'list of uri pointing to additional resources about the item'
       oneOf:
@@ -329,18 +364,25 @@ RainFallRadarObservation:
           type: array
         - format: uri
           type: string
-      type: Property
+      x-ngsi:
+        type: Property
     source:
       description: 'A sequence of characters giving the original source of the entity data as a URL. Recommended to be the fully qualified domain name of the source provider, or the URL to the source object.'
-      type: Property
+      type: string
+      x-ngsi:
+        type: Property
     temperature:
       description: 'Temperature of the item'
-      type: Property
+      type: number
+      x-ngsi:
+        type: Property
     type:
       description: 'NGSI Entity type. It has to be RainFallRadarObserved'
       enum:
         - RainFallRadarObserved
-      type: Property
+      type: string
+      x-ngsi:
+        type: Property
     visibility:
       anyOf:
         - enum:
@@ -354,27 +396,30 @@ RainFallRadarObservation:
         - minimum: 0
           type: number
       description: 'Categories of visibility'
-      type: Property
       x-ngsi:
         model: http://schema.org/Text
+        type: Property
     weatherType:
       description: 'Text description of the weather'
-      type: Property
+      type: string
       x-ngsi:
         model: http://schema.org/Text.
+        type: Property
     windDirection:
       description: 'Direction of the wind bet'
       maximum: 180
       minimum: -180
-      type: Property
+      type: number
       x-ngsi:
         model: http://schema.org/Number
+        type: Property
     windSpeed:
       description: 'Intensity of the wind'
       minimum: 0
-      type: Property
+      type: number
       x-ngsi:
         model: http//schema.org/Number
+        type: Property
   required:
     - id
     - type

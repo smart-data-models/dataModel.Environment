@@ -13,9 +13,6 @@ PhreaticObserved:
         addressRegion:
           description: 'Property. The region in which the locality is, and which is in the country. Model:''https://schema.org/addressRegion'''
           type: string
-        areaServed:
-          description: 'Property. The geographic area where a service or offered item is provided. Model:''https://schema.org/areaServed'''
-          type: string
         postOfficeBoxNumber:
           description: 'Property. The post office box number for PO box addresses. For example, 03578. Model:''https://schema.org/postOfficeBoxNumber'''
           type: string
@@ -25,54 +22,70 @@ PhreaticObserved:
         streetAddress:
           description: 'Property. The street address. Model:''https://schema.org/streetAddress'''
           type: string
-      type: Property
+      type: object
       x-ngsi:
         model: https://schema.org/address
+        type: Property
     alternateName:
       description: 'An alternative name for this item'
-      type: Property
+      type: string
+      x-ngsi:
+        type: Property
     areaServed:
       description: 'The geographic area where a service or offered item is provided'
-      type: Property
+      type: string
       x-ngsi:
         model: https://schema.org/Text
+        type: Property
     dataProvider:
       description: 'A sequence of characters identifying the provider of the harmonised data entity.'
-      type: Property
+      type: string
+      x-ngsi:
+        type: Property
     dateCreated:
       description: 'Entity creation timestamp. This will usually be allocated by the storage platform.'
       format: date-time
-      type: Property
+      type: string
+      x-ngsi:
+        type: Property
     dateModified:
       description: 'Timestamp of the last modification of the entity. This will usually be allocated by the storage platform.'
       format: date-time
-      type: Property
+      type: string
+      x-ngsi:
+        type: Property
     dateObserved:
       description: 'The date and time of this observation in ISO8601 UTC format'
       format: date-time
-      type: Property
+      type: string
       x-ngsi:
         model: https://schema.org/DateTime
+        type: Property
     dateObservedFrom:
       description: 'Observation period : Start date and time in an ISO8601 UTC format'
       format: date-time
-      type: Property
+      type: string
       x-ngsi:
         model: https://schema.org/DateTime
+        type: Property
     dateObservedTo:
       description: 'Observation period : End date and time in an ISO8601 UTC format'
       format: date-time
-      type: Property
+      type: string
       x-ngsi:
         model: https://schema.org/DateTime
+        type: Property
     depth:
       description: 'Depth of drinking water, since its identification `waterTable`. The unit code (text) of measurement given using the [UN/CEFACT Common Codes](http://wiki.goodrelations-vocabulary.org/Documentation/UN/CEFACT_Common_Codes) (max. 3 characters). For instance, <code> MTR </code> represents Meter.'
-      type: Property
+      type: number
       x-ngsi:
         model: https://schema.org/depth
+        type: Property
     description:
       description: 'A description of this item'
-      type: Property
+      type: string
+      x-ngsi:
+        type: Property
     id:
       anyOf: &phreaticobserved_-_properties_-_owner_-_items_-_anyof
         - description: 'Property. Identifier format of any NGSI entity'
@@ -84,23 +97,26 @@ PhreaticObserved:
           format: uri
           type: string
       description: 'Unique identifier of the entity'
-      type: Property
+      x-ngsi:
+        type: Property
     investigationDepth:
       description: 'Maximum depth where the investigation was made. The unit code (text) of measurement given using the [UN/CEFACT Common Codes](http://wiki.goodrelations-vocabulary.org/Documentation/UN/CEFACT_Common_Codes) (max. 3 characters). For instance, <code>MTR</code> represents Meter'
-      type: Property
+      type: number
       x-ngsi:
         model: https://schema.org/DateTime
+        type: Property
         units: meters
     isMobile:
       description: 'The device used is Fixed (False) or Mobile (True)'
-      type: Property
+      type: boolean
       x-ngsi:
         model: https://schema.org/Boolean
+        type: Property
     location:
-      $id: https://geojson.org/schema/Geometry.json
-      $schema: "http://json-schema.org/draft-07/schema#"
+      description: 'Geojson reference to the item. It can be Point, LineString, Polygon, MultiPoint, MultiLineString or MultiPolygon'
       oneOf:
-        - properties:
+        - description: 'Geoproperty. Geojson reference to the item. Point'
+          properties:
             bbox:
               items:
                 type: number
@@ -120,7 +136,8 @@ PhreaticObserved:
             - coordinates
           title: 'GeoJSON Point'
           type: object
-        - properties:
+        - description: 'Geoproperty. Geojson reference to the item. LineString'
+          properties:
             bbox:
               items:
                 type: number
@@ -143,7 +160,8 @@ PhreaticObserved:
             - coordinates
           title: 'GeoJSON LineString'
           type: object
-        - properties:
+        - description: 'Geoproperty. Geojson reference to the item. Polygon'
+          properties:
             bbox:
               items:
                 type: number
@@ -168,7 +186,8 @@ PhreaticObserved:
             - coordinates
           title: 'GeoJSON Polygon'
           type: object
-        - properties:
+        - description: 'Geoproperty. Geojson reference to the item. MultiPoint'
+          properties:
             bbox:
               items:
                 type: number
@@ -190,7 +209,8 @@ PhreaticObserved:
             - coordinates
           title: 'GeoJSON MultiPoint'
           type: object
-        - properties:
+        - description: 'Geoproperty. Geojson reference to the item. MultiLineString'
+          properties:
             bbox:
               items:
                 type: number
@@ -215,7 +235,8 @@ PhreaticObserved:
             - coordinates
           title: 'GeoJSON MultiLineString'
           type: object
-        - properties:
+        - description: 'Geoproperty. Geojson reference to the item. MultiLineString'
+          properties:
             bbox:
               items:
                 type: number
@@ -242,7 +263,8 @@ PhreaticObserved:
             - coordinates
           title: 'GeoJSON MultiPolygon'
           type: object
-      title: 'GeoJSON Geometry'
+      x-ngsi:
+        type: Geoproperty
     measurementType:
       description: 'Observation period : Type of measurement processed. Enum:''depth, volume, quality, other'''
       items:
@@ -253,44 +275,53 @@ PhreaticObserved:
           - other
         type: string
       minItems: 0
-      type: Property
+      type: array
       uniqueItems: false
       x-ngsi:
         model: https://schema.org/Text
+        type: Property
     name:
       description: 'The name of this item.'
-      type: Property
+      type: string
+      x-ngsi:
+        type: Property
     owner:
       description: 'A List containing a JSON encoded sequence of characters referencing the unique Ids of the owner(s)'
       items:
         anyOf: *phreaticobserved_-_properties_-_owner_-_items_-_anyof
         description: 'Property. Unique identifier of the entity'
-      type: Property
+      type: array
+      x-ngsi:
+        type: Property
     pollutionRate:
       description: 'Rate of pollution. The unit code (text) of measurement given using the [UN/CEFACT Common Codes](http://wiki.goodrelations-vocabulary.org/Documentation/UN/CEFACT_Common_Codes) (max. 3 characters). For instance, P1 represents Percentage.'
-      type: Property
+      type: number
       x-ngsi:
         model: https://schema.org/Number
+        type: Property
     pressure:
       description: 'Water Pressure. The unit code (text) of measurement given using the [UN/CEFACT Common Codes](http://wiki.goodrelations-vocabulary.org/Documentation/UN/CEFACT_Common_Codes) (max. 3 characters). For instance, <code>BAR</code> represents Bar.'
       minimum: 0
-      type: Property
+      type: number
       x-ngsi:
         model: https://schema.org/DateTime
+        type: Property
         units: Bar
     refDevice:
       description: 'Reference to the devices providing data'
       items:
         anyOf: *phreaticobserved_-_properties_-_owner_-_items_-_anyof
         description: 'Property. Unique identifier of the entity'
-      type: Relationship
+      type: array
       x-ngsi:
         model: https://scehma.org/URL
+        type: Relationship
     residueLevel:
       description: 'Residue level found'
-      type: Property
+      type: number
       x-ngsi:
         model: https://schema.org/Number.
+        type: Property
     seeAlso:
       description: 'list of uri pointing to additional resources about the item'
       oneOf:
@@ -301,20 +332,26 @@ PhreaticObserved:
           type: array
         - format: uri
           type: string
-      type: Property
+      x-ngsi:
+        type: Property
     source:
       description: 'A sequence of characters giving the original source of the entity data as a URL. Recommended to be the fully qualified domain name of the source provider, or the URL to the source object.'
-      type: Property
+      type: string
+      x-ngsi:
+        type: Property
     type:
       description: 'NGSI Entity type. It has to be PhreaticObserved'
       enum:
         - PhreaticObserved
-      type: Property
+      type: string
+      x-ngsi:
+        type: Property
     waterTable:
       description: 'Level at which water was found during this investigation. The unit code (text) of measurement given using the [UN/CEFACT Common Codes](http://wiki.goodrelations-vocabulary.org/Documentation/UN/CEFACT_Common_Codes) (max. 3 characters). For instance, <code>MTR</code> represents Meter.'
-      type: Property
+      type: number
       x-ngsi:
         model: https://schema.org/Number
+        type: Property
         units: meter
   required:
     - id

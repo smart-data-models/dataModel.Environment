@@ -1,48 +1,61 @@
-Entidad: AeroAllergenObserved  
-=============================  
-Esta especificación es una **versión temporal**. Se genera automáticamente a partir de las propiedades documentadas descritas en el schema.json condensadas en el archivo `model.yaml`. Se ha creado un archivo temporal `nuevo_modelo.yaml` en cada modelo de datos para evitar el impacto en los scripts existentes. Por lo tanto, la especificación estará incompleta mientras el schema.json no se actualice al nuevo formato (documentando las propiedades). Una vez actualizado el `modelo.yaml` (`nuevo_modelo.yaml`) necesita ser actualizado también (automáticamente) . Más información en este [link](https://github.com/smart-data-models/data-models/blob/master/specs/warning_message_new_spec.md). Mientras sea un formato provisional cualquier [feedback es bienvenido en este formulario](https://smartdatamodels.org/index.php/submit-an-issue-2/) eligiendo la opción `Feedback on the new specification`.  
-Descripción global: **Una observación de los niveles de polen en un determinado lugar y momento.  
+Entidad: AeroAllergenObservado  
+==============================  
+[Licencia abierta](https://github.com/smart-data-models//dataModel.Environment/blob/master/AeroAllergenObserved/LICENSE.md)  
+[documento generado automáticamente](https://docs.google.com/presentation/d/e/2PACX-1vTs-Ng5dIAwkg91oTTUdt8ua7woBXhPnwavZ0FxgR8BsAI_Ek3C5q97Nd94HS8KhP-r_quD4H0fgyt3/pub?start=false&loop=false&delayms=3000#slide=id.gb715ace035_0_60)  
+Descripción global: **Una observación de los niveles de polen en un lugar y momento determinados.**  
 
 ## Lista de propiedades  
 
-`address`: La dirección postal.  `allergenRisk`:   `alternateName`: Un nombre alternativo para este artículo  `areaServed`: La zona geográfica donde se presta un servicio o se ofrece un artículo.  `dataProvider`: Una secuencia de caracteres que identifica al proveedor de la entidad de datos armonizada.  `dateCreated`: Sello de tiempo de creación de la entidad. Normalmente será asignado por la plataforma de almacenamiento.  `dateModified`: Sello de tiempo de la última modificación de la entidad. Normalmente será asignado por la plataforma de almacenamiento.  `dateObserved`:   `description`: Una descripción de este artículo  `id`:   `location`:   `name`: El nombre de este artículo.  `owner`: Una lista que contiene una secuencia de caracteres codificados JSON que hace referencia a los Ids únicos de los propietarios  `refDevice`:   `seeAlso`:   `source`: Una secuencia de caracteres que da como URL la fuente original de los datos de la entidad. Se recomienda que sea el nombre de dominio completamente calificado del proveedor de la fuente, o la URL del objeto fuente.  `type`: NGSI Tipo de entidad  ## Modelo de datos Descripción de las propiedades  
-Ordenados alfabéticamente  
-```yaml  
+- `address`: La dirección postal  - `allergenRisk`: Riesgo global de alérgenos correspondiente a los aeroalérgenos observados.  - `alternateName`: Un nombre alternativo para este artículo  - `areaServed`: La zona geográfica en la que se presta un servicio o se ofrece un artículo  - `dataProvider`: Una secuencia de caracteres que identifica al proveedor de la entidad de datos armonizada.  - `dateCreated`: Marca de tiempo de creación de la entidad. Suele ser asignada por la plataforma de almacenamiento.  - `dateModified`: Marca de tiempo de la última modificación de la entidad. Normalmente será asignada por la plataforma de almacenamiento.  - `dateObserved`: La fecha y la hora de esta observación en formato ISO8601 UTC. Puede ser representada por un instante de tiempo específico o por un intervalo ISO8601.  - `description`: Una descripción de este artículo  - `id`: Identificador único de la entidad  - `location`: Referencia Geojson al elemento. Puede ser Point, LineString, Polygon, MultiPoint, MultiLineString o MultiPolygon  - `name`: El nombre de este artículo.  - `owner`: Una lista que contiene una secuencia de caracteres codificada en JSON que hace referencia a los identificadores únicos de los propietarios  - `refDevice`: Una referencia al dispositivo o dispositivos que captaron esta observación.  - `seeAlso`: lista de uri que apuntan a recursos adicionales sobre el artículo  - `source`: Una secuencia de caracteres que indica la fuente original de los datos de la entidad en forma de URL. Se recomienda que sea el nombre de dominio completo del proveedor de origen, o la URL del objeto de origen.  - `type`: NGSI Tipo de entidad    
+Propiedades requeridas  
+- `dateObserved`  - `id`  - `location`  - `type`  ## Descripción del modelo de datos de las propiedades  
+Ordenados alfabéticamente (haga clic para ver los detalles)  
+<details><summary><strong>full yaml details</strong></summary>    
+```yaml  
 AeroAllergenObserved:    
   description: 'An observation of pollen levels at a certain place and time.'    
   properties:    
     address:    
-      description: 'The mailing address.'    
+      description: 'The mailing address'    
       properties:    
         addressCountry:    
+          description: 'Property. The country. For example, Spain. Model:''https://schema.org/addressCountry'''    
           type: string    
         addressLocality:    
+          description: 'Property. The locality in which the street address is, and which is in the region. Model:''https://schema.org/addressLocality'''    
           type: string    
         addressRegion:    
-          type: string    
-        areaServed:    
+          description: 'Property. The region in which the locality is, and which is in the country. Model:''https://schema.org/addressRegion'''    
           type: string    
         postOfficeBoxNumber:    
+          description: 'Property. The post office box number for PO box addresses. For example, 03578. Model:''https://schema.org/postOfficeBoxNumber'''    
           type: string    
         postalCode:    
+          description: 'Property. The postal code. For example, 24004. Model:''https://schema.org/https://schema.org/postalCode'''    
           type: string    
         streetAddress:    
+          description: 'Property. The street address. Model:''https://schema.org/streetAddress'''    
           type: string    
       type: Property    
+      x-ngsi:    
+        model: https://schema.org/address    
     allergenRisk:    
+      description: 'Overall allergen risk corresponding to the aero allergens observed.'    
       enum:    
         - none    
         - low    
         - moderate    
         - high    
         - veryHigh    
-      type: string    
+      type: Property    
     alternateName:    
       description: 'An alternative name for this item'    
       type: Property    
     areaServed:    
-      description: 'The geographic area where a service or offered item is provided.'    
+      description: 'The geographic area where a service or offered item is provided'    
       type: Property    
+      x-ngsi:    
+        model: https://schema.org/Text    
     dataProvider:    
       description: 'A sequence of characters identifying the provider of the harmonised data entity.'    
       type: Property    
@@ -55,7 +68,8 @@ AeroAllergenObserved:
       format: date-time    
       type: Property    
     dateObserved:    
-      type: string    
+      description: 'The date and time of this observation in ISO8601 UTCformat. It can be represented by a specific time instant or by an ISO8601 interval.'    
+      type: Property    
     description:    
       description: 'A description of this item'    
       type: Property    
@@ -69,11 +83,13 @@ AeroAllergenObserved:
         - description: 'Property. Identifier format of any NGSI entity'    
           format: uri    
           type: string    
+      description: 'Unique identifier of the entity'    
+      type: Property    
     location:    
-      $id: https://geojson.org/schema/Geometry.json    
-      $schema: "http://json-schema.org/draft-07/schema#"    
+      description: 'Geojson reference to the item. It can be Point, LineString, Polygon, MultiPoint, MultiLineString or MultiPolygon'    
       oneOf:    
-        - properties:    
+        - description: 'Geoproperty. Geojson reference to the item. Point'    
+          properties:    
             bbox:    
               items:    
                 type: number    
@@ -93,7 +109,8 @@ AeroAllergenObserved:
             - coordinates    
           title: 'GeoJSON Point'    
           type: object    
-        - properties:    
+        - description: 'Geoproperty. Geojson reference to the item. LineString'    
+          properties:    
             bbox:    
               items:    
                 type: number    
@@ -116,7 +133,8 @@ AeroAllergenObserved:
             - coordinates    
           title: 'GeoJSON LineString'    
           type: object    
-        - properties:    
+        - description: 'Geoproperty. Geojson reference to the item. Polygon'    
+          properties:    
             bbox:    
               items:    
                 type: number    
@@ -141,7 +159,8 @@ AeroAllergenObserved:
             - coordinates    
           title: 'GeoJSON Polygon'    
           type: object    
-        - properties:    
+        - description: 'Geoproperty. Geojson reference to the item. MultiPoint'    
+          properties:    
             bbox:    
               items:    
                 type: number    
@@ -163,7 +182,8 @@ AeroAllergenObserved:
             - coordinates    
           title: 'GeoJSON MultiPoint'    
           type: object    
-        - properties:    
+        - description: 'Geoproperty. Geojson reference to the item. MultiLineString'    
+          properties:    
             bbox:    
               items:    
                 type: number    
@@ -188,7 +208,8 @@ AeroAllergenObserved:
             - coordinates    
           title: 'GeoJSON MultiLineString'    
           type: object    
-        - properties:    
+        - description: 'Geoproperty. Geojson reference to the item. MultiLineString'    
+          properties:    
             bbox:    
               items:    
                 type: number    
@@ -215,7 +236,7 @@ AeroAllergenObserved:
             - coordinates    
           title: 'GeoJSON MultiPolygon'    
           type: object    
-      title: 'GeoJSON Geometry'    
+      type: Geoproperty    
     name:    
       description: 'The name of this item.'    
       type: Property    
@@ -223,18 +244,31 @@ AeroAllergenObserved:
       description: 'A List containing a JSON encoded sequence of characters referencing the unique Ids of the owner(s)'    
       items:    
         anyOf: *aeroallergenobserved_-_properties_-_owner_-_items_-_anyof    
+        description: 'Property. Unique identifier of the entity'    
       type: Property    
     refDevice:    
-      anyOf: *aeroallergenobserved_-_properties_-_owner_-_items_-_anyof    
+      anyOf:    
+        - description: 'Property. Identifier format of any NGSI entity'    
+          maxLength: 256    
+          minLength: 1    
+          pattern: ^[\w\-\.\{\}\$\+\*\[\]`|~^@!,:\\]+$    
+          type: string    
+        - description: 'Property. Identifier format of any NGSI entity'    
+          format: uri    
+          type: string    
+      description: 'A reference to the device(s) which captured this observation.'    
+      type: Relationship    
     seeAlso:    
+      description: 'list of uri pointing to additional resources about the item'    
       oneOf:    
         - items:    
-            - format: uri    
-              type: string    
+            format: uri    
+            type: string    
           minItems: 1    
           type: array    
         - format: uri    
           type: string    
+      type: Property    
     source:    
       description: 'A sequence of characters giving the original source of the entity data as a URL. Recommended to be the fully qualified domain name of the source provider, or the URL to the source object.'    
       type: Property    
@@ -242,7 +276,7 @@ AeroAllergenObserved:
       description: 'NGSI Entity type'    
       enum:    
         - AeroAllergenObserved    
-      type: string    
+      type: Property    
   required:    
     - id    
     - type    
@@ -250,7 +284,10 @@ AeroAllergenObserved:
     - location    
   type: object    
 ```  
-Aquí hay un ejemplo de un AeroalergenObservado en formato JSON como valores clave. Es compatible con NGSI V2 cuando se utiliza "opciones=valores-clave" y devuelve los datos de contexto de una entidad individual.  
+</details>    
+## Ejemplo de carga útil  
+#### AeroAllergenObserved NGSI-v2 key-values Ejemplo  
+Aquí hay un ejemplo de AeroAllergenObserved en formato JSON-LD como valores-clave. Esto es compatible con NGSI-v2 cuando se utiliza `options=keyValues` y devuelve los datos de contexto de una entidad individual.  
 ```json  
 {  
   "id": "AeroAllergenObserved-CDMX-Pollen-Cuajimalpa",  
@@ -276,7 +313,8 @@ AeroAllergenObserved:
   "source": "http://rema.atmosfera.unam.mx/rema/"  
 }  
 ```  
-He aquí un ejemplo de un AeroAllergenObserved en formato JSON como normalizado. Es compatible con NGSI V2 cuando se utiliza `opciones=valores clave` y devuelve los datos de contexto de una entidad individual.  
+#### AeroAllergenObserved NGSI-v2 normalizado Ejemplo  
+Este es un ejemplo de AeroAllergenObserved en formato JSON-LD normalizado. Esto es compatible con NGSI-v2 cuando no se utilizan opciones y devuelve los datos de contexto de una entidad individual.  
 ```json  
 {  
   "id": "AeroAllergenObserved-CDMX-Pollen-Cuajimalpa",  
@@ -330,95 +368,112 @@ AeroAllergenObserved:
   }  
 }  
 ```  
-Aquí hay un ejemplo de un AeroalergenObservado en formato JSON-LD como valores clave. Esto es compatible con NGSI-LD cuando no se usan opciones y devuelve los datos de contexto de una entidad individual.  
-```json  
-{"@context": ["https://schema.lab.fiware.org/ld/context",  
-              "https://uri.etsi.org/ngsi-ld/v1/ngsi-ld-core-context.jsonld"],  
- "address": {"addressCountry": "MX",  
-             "addressLocality": "Ciudad de México",  
-             "streetAddress": "Colegio Franco-Inglés",  
-             "type": "PostalAddress"},  
- "allergenRisk": "moderate",  
- "alnus": 40,  
- "alnus_Allergenicity": "3",  
- "alnus_Level": "moderate",  
- "casuarina": 1,  
- "casuarina_Allergenicity": "3",  
- "casuarina_Level": "low",  
- "dateObserved": {"@type": "DateTime", "@value": "2018-02-11T00:00:00.00Z"},  
- "id": "urn:ngsi-ld:AeroAllergenObserved:AeroAllergenObserved-CDMX-Pollen-Cuajimalpa",  
- "location": {"coordinates": [-99.276977, 19.381877], "type": "Point"},  
- "modifiedAt": "2018-02-16T17:24:39.00Z",  
- "source": "http://rema.atmosfera.unam.mx/rema/",  
- "type": "AeroAllergenObserved"}  
-```  
-He aquí un ejemplo de un AeroAllergenObserved en formato JSON-LD normalizado. Este es compatible con NGSI-LD cuando no se utilizan opciones y devuelve los datos de contexto de una entidad individual.  
+#### AeroAllergenObserved NGSI-LD key-values Ejemplo  
+Aquí hay un ejemplo de AeroAllergenObserved en formato JSON-LD como valores-clave. Esto es compatible con NGSI-LD cuando se utiliza `options=keyValues` y devuelve los datos de contexto de una entidad individual.  
 ```json  
 {  
-    "id": "urn:ngsi-ld:AeroAllergenObserved:AeroAllergenObserved-CDMX-Pollen-Cuajimalpa",  
-    "type": "AeroAllergenObserved",  
-    "modifiedAt": "2018-02-16T17:24:39.00Z",  
-    "dateObserved": {  
-        "type": "Property",  
-        "value": {  
-            "@type": "DateTime",  
-            "@value": "2018-02-11T00:00:00.00Z"  
-        }  
-    },  
-    "alnus": {  
-        "type": "Property",  
-        "value": 40  
-    },  
-    "alnus_Allergenicity": {  
-        "type": "Property",  
-        "value": "3"  
-    },  
-    "allergenRisk": {  
-        "type": "Property",  
-        "value": "moderate"  
-    },  
-    "casuarina": {  
-        "type": "Property",  
-        "value": 1  
-    },  
-    "casuarina_Level": {  
-        "type": "Property",  
-        "value": "low"  
-    },  
-    "casuarina_Allergenicity": {  
-        "type": "Property",  
-        "value": "3"  
-    },  
-    "source": {  
-        "type": "Property",  
-        "value": "http://rema.atmosfera.unam.mx/rema/"  
-    },  
-    "location": {  
-        "type": "GeoProperty",  
-        "value": {  
-            "type": "Point",  
-            "coordinates": [  
-                -99.276977,  
-                19.381877  
-            ]  
-        }  
-    },  
-    "address": {  
-        "type": "Property",  
-        "value": {  
-            "addressCountry": "MX",  
-            "addressLocality": "Ciudad de México",  
-            "streetAddress": "Colegio Franco-Inglés",  
-            "type": "PostalAddress"  
-        }  
-    },  
-    "alnus_Level": {  
-        "type": "Property",  
-        "value": "moderate"  
-    },  
-    "@context": [  
-        "https://schema.lab.fiware.org/ld/context",  
-        "https://uri.etsi.org/ngsi-ld/v1/ngsi-ld-core-context.jsonld"  
-    ]  
+  "id": "urn:ngsi-ld:AeroAllergenObserved:AeroAllergenObserved-CDMX-Pollen-Cuajimalpa",  
+  "type": "AeroAllergenObserved",  
+  "modifiedAt": "2018-02-16T17:24:39.00Z",  
+  "dateObserved": {  
+    "type": "Property",  
+    "value": {  
+      "@type": "DateTime",  
+      "@value": "2018-02-11T00:00:00.00Z"  
+    }  
+  },  
+  "alnus": {  
+    "type": "Property",  
+    "value": 40  
+  },  
+  "alnus_Allergenicity": {  
+    "type": "Property",  
+    "value": "3"  
+  },  
+  "allergenRisk": {  
+    "type": "Property",  
+    "value": "moderate"  
+  },  
+  "casuarina": {  
+    "type": "Property",  
+    "value": 1  
+  },  
+  "casuarina_Level": {  
+    "type": "Property",  
+    "value": "low"  
+  },  
+  "casuarina_Allergenicity": {  
+    "type": "Property",  
+    "value": "3"  
+  },  
+  "source": {  
+    "type": "Property",  
+    "value": "http://rema.atmosfera.unam.mx/rema/"  
+  },  
+  "location": {  
+    "type": "GeoProperty",  
+    "value": {  
+      "type": "Point",  
+      "coordinates": [  
+        -99.276977,  
+        19.381877  
+      ]  
+    }  
+  },  
+  "address": {  
+    "type": "Property",  
+    "value": {  
+      "addressCountry": "MX",  
+      "addressLocality": "Ciudad de M\u00e9xico",  
+      "streetAddress": "Colegio Franco-Ingl\u00e9s",  
+      "type": "PostalAddress"  
+    }  
+  },  
+  "alnus_Level": {  
+    "type": "Property",  
+    "value": "moderate"  
+  },  
+  "@context": [  
+    "https://smartdatamodels.org/context.jsonld",  
+    "https://uri.etsi.org/ngsi-ld/v1/ngsi-ld-core-context.jsonld"  
+  ]  
+}  
+```  
+#### AeroAllergenObserved NGSI-LD normalizado Ejemplo  
+Este es un ejemplo de AeroAllergenObserved en formato JSON-LD normalizado. Esto es compatible con NGSI-LD cuando no se utilizan opciones y devuelve los datos de contexto de una entidad individual.  
+```json  
+{  
+  "@context": [  
+    "https://smartdatamodels.org/context.jsonld",  
+    "https://uri.etsi.org/ngsi-ld/v1/ngsi-ld-core-context.jsonld"  
+  ],  
+  "address": {  
+    "addressCountry": "MX",  
+    "addressLocality": "Ciudad de M\u00e9xico",  
+    "streetAddress": "Colegio Franco-Ingl\u00e9s",  
+    "type": "PostalAddress"  
+  },  
+  "allergenRisk": "moderate",  
+  "alnus": 40,  
+  "alnus_Allergenicity": "3",  
+  "alnus_Level": "moderate",  
+  "casuarina": 1,  
+  "casuarina_Allergenicity": "3",  
+  "casuarina_Level": "low",  
+  "dateObserved": {  
+    "@type": "DateTime",  
+    "@value": "2018-02-11T00:00:00.00Z"  
+  },  
+  "id": "urn:ngsi-ld:AeroAllergenObserved:AeroAllergenObserved-CDMX-Pollen-Cuajimalpa",  
+  "location": {  
+    "coordinates": [  
+      -99.276977,  
+      19.381877  
+    ],  
+    "type": "Point"  
+  },  
+  "modifiedAt": "2018-02-16T17:24:39.00Z",  
+  "source": "http://rema.atmosfera.unam.mx/rema/",  
+  "type": "AeroAllergenObserved"  
 }  
 ```  

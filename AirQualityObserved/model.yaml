@@ -13,9 +13,6 @@ AirQualityObserved:
         addressRegion:
           description: 'Property. The region in which the locality is, and which is in the country. Model:''https://schema.org/addressRegion'''
           type: string
-        areaServed:
-          description: 'Property. The geographic area where a service or offered item is provided. Model:''https://schema.org/areaServed'''
-          type: string
         postOfficeBoxNumber:
           description: 'Property. The post office box number for PO box addresses. For example, 03578. Model:''https://schema.org/postOfficeBoxNumber'''
           type: string
@@ -25,73 +22,99 @@ AirQualityObserved:
         streetAddress:
           description: 'Property. The street address. Model:''https://schema.org/streetAddress'''
           type: string
-      type: Property
+      type: object
       x-ngsi:
         model: https://schema.org/address
+        type: Property
     airQualityIndex:
       description: 'Air quality index is a number used to report the quality of the air on any given day.'
       minimum: 0
-      type: Property
+      type: integer
       x-ngsi:
         model: https://schema.org/Number
+        type: Property
     airQualityLevel:
       description: 'Overall qualitative level of health concern corresponding to the air quality observed'
       minLength: 2
-      type: Property
+      type: string
       x-ngsi:
         model: 'https://schema.org/Tex '
+        type: Property
     alternateName:
       description: 'An alternative name for this item'
-      type: Property
+      type: string
+      x-ngsi:
+        type: Property
     areaServed:
       description: 'Higher level area to which this air quality measurement belongs to'
-      type: Property
+      type: string
       x-ngsi:
         model: 'https://schema.org/Text '
+        type: Property
     as:
       description: 'Arsenic detected'
       minimum: 0
-      type: Property
+      type: number
       x-ngsi:
         model: https://schema.org/Number
+        type: Property
     c6h6:
       description: 'Benzene detected'
       minimum: 0
-      type: Property
+      type: number
+      x-ngsi:
+        type: Property
     cd:
       description: 'Cadmium detected'
       minimum: 0
-      type: Property
+      type: number
+      x-ngsi:
+        type: Property
     co:
       description: 'Carbon Monoxide detected'
       minimum: 0
-      type: Property
+      type: number
+      x-ngsi:
+        type: Property
     co2:
       description: 'Carbon Dioxide detected'
       minimum: 0
-      type: Property
+      type: number
+      x-ngsi:
+        type: Property
     coLevel:
       description: 'Qualitative Carbon Monoxide presence'
-      type: Property
+      type: string
+      x-ngsi:
+        type: Property
     dataProvider:
       description: 'A sequence of characters identifying the provider of the harmonised data entity.'
-      type: Property
+      type: string
+      x-ngsi:
+        type: Property
     dateCreated:
       description: 'Entity creation timestamp. This will usually be allocated by the storage platform.'
       format: date-time
-      type: Property
+      type: string
+      x-ngsi:
+        type: Property
     dateModified:
       description: 'Timestamp of the last modification of the entity. This will usually be allocated by the storage platform.'
       format: date-time
-      type: Property
+      type: string
+      x-ngsi:
+        type: Property
     dateObserved:
       description: 'The date and time of this observation in ISO8601 UTCformat'
-      type: Property
+      type: string
       x-ngsi:
         model: 'https://schema.org/Text '
+        type: Property
     description:
       description: 'A description of this item'
-      type: Property
+      type: string
+      x-ngsi:
+        type: Property
     id:
       anyOf: &airqualityobserved_-_properties_-_owner_-_items_-_anyof
         - description: 'Property. Identifier format of any NGSI entity'
@@ -103,12 +126,13 @@ AirQualityObserved:
           format: uri
           type: string
       description: 'Unique identifier of the entity'
-      type: Property
+      x-ngsi:
+        type: Property
     location:
-      $id: https://geojson.org/schema/Geometry.json
-      $schema: "http://json-schema.org/draft-07/schema#"
+      description: 'Geojson reference to the item. It can be Point, LineString, Polygon, MultiPoint, MultiLineString or MultiPolygon'
       oneOf:
-        - properties:
+        - description: 'Geoproperty. Geojson reference to the item. Point'
+          properties:
             bbox:
               items:
                 type: number
@@ -128,7 +152,8 @@ AirQualityObserved:
             - coordinates
           title: 'GeoJSON Point'
           type: object
-        - properties:
+        - description: 'Geoproperty. Geojson reference to the item. LineString'
+          properties:
             bbox:
               items:
                 type: number
@@ -151,7 +176,8 @@ AirQualityObserved:
             - coordinates
           title: 'GeoJSON LineString'
           type: object
-        - properties:
+        - description: 'Geoproperty. Geojson reference to the item. Polygon'
+          properties:
             bbox:
               items:
                 type: number
@@ -176,7 +202,8 @@ AirQualityObserved:
             - coordinates
           title: 'GeoJSON Polygon'
           type: object
-        - properties:
+        - description: 'Geoproperty. Geojson reference to the item. MultiPoint'
+          properties:
             bbox:
               items:
                 type: number
@@ -198,7 +225,8 @@ AirQualityObserved:
             - coordinates
           title: 'GeoJSON MultiPoint'
           type: object
-        - properties:
+        - description: 'Geoproperty. Geojson reference to the item. MultiLineString'
+          properties:
             bbox:
               items:
                 type: number
@@ -223,7 +251,8 @@ AirQualityObserved:
             - coordinates
           title: 'GeoJSON MultiLineString'
           type: object
-        - properties:
+        - description: 'Geoproperty. Geojson reference to the item. MultiLineString'
+          properties:
             bbox:
               items:
                 type: number
@@ -250,54 +279,76 @@ AirQualityObserved:
             - coordinates
           title: 'GeoJSON MultiPolygon'
           type: object
-      title: 'GeoJSON Geometry'
+      x-ngsi:
+        type: Geoproperty
     name:
       description: 'The name of this item.'
-      type: Property
+      type: string
+      x-ngsi:
+        type: Property
     ni:
       description: 'Nickel detected'
       minimum: 0
-      type: Property
+      type: number
+      x-ngsi:
+        type: Property
     no:
       description: 'Nitrogen monoxide detected'
       minimum: 0
-      type: Property
+      type: number
+      x-ngsi:
+        type: Property
     no2:
       description: 'Nitrogen dioxide detected'
       minimum: 0
-      type: Property
+      type: number
+      x-ngsi:
+        type: Property
     nox:
       description: 'Other Nitrogen oxides detected'
       minimum: 0
-      type: Property
+      type: number
+      x-ngsi:
+        type: Property
     o3:
       description: 'Ozone detected'
       minimum: 0
-      type: Property
+      type: number
+      x-ngsi:
+        type: Property
     owner:
       description: 'A List containing a JSON encoded sequence of characters referencing the unique Ids of the owner(s)'
       items:
         anyOf: *airqualityobserved_-_properties_-_owner_-_items_-_anyof
         description: 'Property. Unique identifier of the entity'
-      type: Property
+      type: array
+      x-ngsi:
+        type: Property
     pb:
       description: 'Lead detected'
       minimum: 0
-      type: Property
+      type: number
+      x-ngsi:
+        type: Property
     pm10:
       description: 'Particulate matter 10 micrometers or less in diameter'
       minimum: 0
-      type: Property
+      type: number
+      x-ngsi:
+        type: Property
     pm25:
       description: 'Particulate matter 2.5 micrometers or less in diameter'
       minimum: 0
-      type: Property
+      type: number
+      x-ngsi:
+        type: Property
     precipitation:
       description: 'Amount of water rain'
       minimum: 0
-      type: Property
+      type: number
       x-ngsi:
         model: https://schema.org/Number
+        type: Property
         units: 'Liters per square meter.'
     refDevice:
       anyOf:
@@ -310,7 +361,8 @@ AirQualityObserved:
           format: uri
           type: string
       description: 'A reference to the device(s) which captured this observation.'
-      type: Relationship
+      x-ngsi:
+        type: Relationship
     refPointOfInterest:
       anyOf:
         - description: 'Property. Identifier format of any NGSI entity'
@@ -322,7 +374,8 @@ AirQualityObserved:
           format: uri
           type: string
       description: 'A reference to a point of interest (usually an air quality station) associated to this observation.'
-      type: Relationship
+      x-ngsi:
+        type: Relationship
     refWeatherObserved:
       anyOf:
         - description: 'Property. Identifier format of any NGSI entity'
@@ -334,21 +387,24 @@ AirQualityObserved:
           format: uri
           type: string
       description: ' Weather observed associated to the air quality conditions described by this entity.'
-      type: Relationship
+      x-ngsi:
+        type: Relationship
     relativeHumidity:
       description: 'Humidity in the Air'
       maximum: 1
       minimum: 0
-      type: Property
+      type: number
       x-ngsi:
         model: https://schema.org/Number
+        type: Property
     reliability:
       description: 'Reliability (percentage, expressed in parts per one) corresponding to the air quality observed'
       maximum: 1.0
       minimum: 0
-      type: Property
+      type: number
       x-ngsi:
         model: 'https://schema.org/Number '
+        type: Property
     seeAlso:
       description: 'list of uri pointing to additional resources about the item'
       oneOf:
@@ -359,51 +415,67 @@ AirQualityObserved:
           type: array
         - format: uri
           type: string
-      type: Property
+      x-ngsi:
+        type: Property
     sh2:
       description: 'Hydrogen sulfide detected'
       minimum: 0
-      type: Property
+      type: number
+      x-ngsi:
+        type: Property
     so2:
       description: 'Sulfur dioxide detected'
       minimum: 0
-      type: Property
+      type: number
+      x-ngsi:
+        type: Property
     source:
       description: 'A sequence of characters giving the original source of the entity data as a URL. Recommended to be the fully qualified domain name of the source provider, or the URL to the source object.'
-      type: Property
+      type: string
+      x-ngsi:
+        type: Property
     temperature:
       description: 'Temperature of the item'
-      type: Property
+      type: number
+      x-ngsi:
+        type: Property
     type:
       description: 'NGSI Entity type'
       enum:
         - AirQualityObserved
-      type: Property
+      type: string
+      x-ngsi:
+        type: Property
     typeofLocation:
       description: 'Type of location of the sampled item'
       enum:
         - indoor
         - outdoor
-      type: Property
+      type: string
       x-ngsi:
         model: https://schema.org/Text
+        type: Property
     volatileOrganicCompoundsTotal:
       description: 'Alkanes <C10, ketones <C6, aldehydes <C10, carboxylic acids <C5, aspirits<C7, Alkenes <C8, Aromatics'
       minimum: 0
-      type: Property
+      type: number
+      x-ngsi:
+        type: Property
     windDirection:
       description: 'Direction of the weather vane'
       maximum: 180
       minimum: -180
-      type: Property
+      type: number
       x-ngsi:
         model: http://schema.org/Number
+        type: Property
     windSpeed:
       description: 'Intensity of the wind'
       minimum: 0
-      type: Property
+      type: number
       x-ngsi:
         model: http//schema.org/Number
+        type: Property
   required:
     - id
     - type

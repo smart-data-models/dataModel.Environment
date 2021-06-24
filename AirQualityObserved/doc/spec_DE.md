@@ -1,11 +1,12 @@
 Entität: AirQualityObserved  
 ===========================  
 [Offene Lizenz](https://github.com/smart-data-models//dataModel.Environment/blob/master/AirQualityObserved/LICENSE.md)  
+[Dokument automatisch generiert](https://docs.google.com/presentation/d/e/2PACX-1vTs-Ng5dIAwkg91oTTUdt8ua7woBXhPnwavZ0FxgR8BsAI_Ek3C5q97Nd94HS8KhP-r_quD4H0fgyt3/pub?start=false&loop=false&delayms=3000#slide=id.gb715ace035_0_60)  
 Globale Beschreibung: **Eine Beobachtung der Luftqualitätsbedingungen an einem bestimmten Ort und zu einer bestimmten Zeit.**  
 
 ## Liste der Eigenschaften  
 
-- `address`: Die Postanschrift  - `airQualityIndex`: Der Luftqualitätsindex ist eine Zahl, die die Qualität der Luft an einem bestimmten Tag angibt.  - `airQualityLevel`: Allgemeiner qualitativer Grad der gesundheitlichen Besorgnis entsprechend der beobachteten Luftqualität  - `alternateName`: Ein alternativer Name für diesen Artikel  - `areaServed`: Übergeordneter Bereich, zu dem diese Luftqualitätsmessung gehört  - `as`: Arsen nachgewiesen  - `c6h6`: Benzol nachgewiesen  - `cd`: Cadmium nachgewiesen  - `co`: Kohlenmonoxid erkannt  - `co2`: Kohlendioxid erkannt  - `coLevel`: Qualitatives Vorhandensein von Kohlenmonoxid  - `dataProvider`: Eine Folge von Zeichen, die den Anbieter der harmonisierten Dateneinheit identifiziert.  - `dateCreated`: Zeitstempel der Entitätserstellung. Dieser wird normalerweise von der Speicherplattform zugewiesen.  - `dateModified`: Zeitstempel der letzten Änderung der Entität. Dieser wird in der Regel von der Speicherplattform vergeben.  - `dateObserved`: Das Datum und die Uhrzeit dieser Beobachtung im ISO8601 UTC-Format  - `description`: Eine Beschreibung dieses Artikels  - `id`: Eindeutiger Bezeichner der Entität  - `location`:   - `name`: Der Name dieses Elements.  - `ni`: Nickel erkannt  - `False`: Stickstoffmonoxid erkannt  - `no2`: Stickstoffdioxid erkannt  - `nox`: Andere Stickstoffoxide nachgewiesen  - `o3`: Ozon erkannt  - `owner`: Eine Liste mit einer JSON-kodierten Zeichenfolge, die auf die eindeutigen Ids der Eigentümer verweist  - `pb`: Blei erkannt  - `pm10`: Feinstaub mit einem Durchmesser von 10 Mikrometern oder weniger  - `pm25`: Partikel mit einem Durchmesser von 2,5 Mikrometern oder weniger  - `precipitation`: Wassermenge Regen  - `refDevice`: Ein Verweis auf das/die Gerät(e), das/die diese Beobachtung aufgezeichnet hat/haben.  - `refPointOfInterest`: Ein Verweis auf einen Punkt von Interesse (normalerweise eine Luftqualitätsstation), der mit dieser Beobachtung verbunden ist.  - `refWeatherObserved`:  Das beobachtete Wetter in Verbindung mit den von dieser Einheit beschriebenen Luftqualitätsbedingungen.  - `relativeHumidity`: Feuchte in der Luft  - `reliability`: Zuverlässigkeit (Prozentsatz, ausgedrückt in Teilen pro eins) entsprechend der beobachteten Luftqualität  - `seeAlso`: Liste von uri, die auf zusätzliche Ressourcen über das Element verweist  - `sh2`: Schwefelwasserstoff nachgewiesen  - `so2`: Schwefeldioxid erkannt  - `source`: Eine Folge von Zeichen, die die ursprüngliche Quelle der Entitätsdaten als URL angibt. Empfohlen wird der voll qualifizierte Domänenname des Quellanbieters oder die URL zum Quellobjekt.  - `temperature`: Temperatur des Artikels  - `type`: NGSI Entity-Typ  - `typeofLocation`: Art des Standortes des abgetasteten Artikels  - `volatileOrganicCompoundsTotal`: Alkane <C10, Ketone <C6, Aldehyde <C10, Carbonsäuren <C5, Aspirite<C7, Alkene <C8, Aromaten  - `windDirection`: Richtung der Wetterfahne  - `windSpeed`: Intensität des Windes    
+- `address`: Die Postanschrift  - `airQualityIndex`: Der Luftqualitätsindex ist eine Zahl, die die Qualität der Luft an einem bestimmten Tag angibt.  - `airQualityLevel`: Allgemeiner qualitativer Grad der gesundheitlichen Besorgnis entsprechend der beobachteten Luftqualität  - `alternateName`: Ein alternativer Name für diesen Artikel  - `areaServed`: Übergeordneter Bereich, zu dem diese Luftqualitätsmessung gehört  - `as`: Arsen nachgewiesen  - `c6h6`: Benzol nachgewiesen  - `cd`: Cadmium nachgewiesen  - `co`: Kohlenmonoxid erkannt  - `co2`: Kohlendioxid erkannt  - `coLevel`: Qualitatives Vorhandensein von Kohlenmonoxid  - `dataProvider`: Eine Folge von Zeichen, die den Anbieter der harmonisierten Dateneinheit identifiziert.  - `dateCreated`: Zeitstempel der Entitätserstellung. Dieser wird normalerweise von der Speicherplattform zugewiesen.  - `dateModified`: Zeitstempel der letzten Änderung der Entität. Dieser wird in der Regel von der Speicherplattform vergeben.  - `dateObserved`: Das Datum und die Uhrzeit dieser Beobachtung im ISO8601 UTC-Format  - `description`: Eine Beschreibung dieses Artikels  - `id`: Eindeutiger Bezeichner der Entität  - `location`: Geojson-Referenz auf das Element. Es kann Punkt, LineString, Polygon, MultiPoint, MultiLineString oder MultiPolygon sein  - `name`: Der Name dieses Elements.  - `ni`: Nickel erkannt  - `False`: Stickstoffmonoxid erkannt  - `no2`: Stickstoffdioxid erkannt  - `nox`: Andere Stickstoffoxide nachgewiesen  - `o3`: Ozon erkannt  - `owner`: Eine Liste mit einer JSON-kodierten Zeichenfolge, die auf die eindeutigen Ids der Eigentümer verweist  - `pb`: Blei erkannt  - `pm10`: Feinstaub mit einem Durchmesser von 10 Mikrometern oder weniger  - `pm25`: Partikel mit einem Durchmesser von 2,5 Mikrometern oder weniger  - `precipitation`: Wassermenge Regen  - `refDevice`: Ein Verweis auf das/die Gerät(e), das/die diese Beobachtung aufgezeichnet hat/haben.  - `refPointOfInterest`: Ein Verweis auf einen Punkt von Interesse (normalerweise eine Luftqualitätsstation), der mit dieser Beobachtung verbunden ist.  - `refWeatherObserved`:  Das beobachtete Wetter in Verbindung mit den von dieser Einheit beschriebenen Luftqualitätsbedingungen.  - `relativeHumidity`: Feuchte in der Luft  - `reliability`: Zuverlässigkeit (Prozentsatz, ausgedrückt in Teilen pro eins) entsprechend der beobachteten Luftqualität  - `seeAlso`: Liste von uri, die auf zusätzliche Ressourcen über das Element verweist  - `sh2`: Schwefelwasserstoff nachgewiesen  - `so2`: Schwefeldioxid erkannt  - `source`: Eine Folge von Zeichen, die die ursprüngliche Quelle der Entitätsdaten als URL angibt. Empfohlen wird der voll qualifizierte Domänenname des Quellanbieters oder die URL zum Quellobjekt.  - `temperature`: Temperatur des Artikels  - `type`: NGSI Entity-Typ  - `typeofLocation`: Art des Standortes des abgetasteten Artikels  - `volatileOrganicCompoundsTotal`: Alkane <C10, Ketone <C6, Aldehyde <C10, Carbonsäuren <C5, Aspirite<C7, Alkene <C8, Aromaten  - `windDirection`: Richtung der Wetterfahne  - `windSpeed`: Intensität des Windes    
 Erforderliche Eigenschaften  
 - `dateObserved`  - `id`  - `location`  - `type`  ## Datenmodell Beschreibung der Eigenschaften  
 Alphabetisch sortiert (für Details anklicken)  
@@ -26,14 +27,11 @@ AirQualityObserved:
         addressRegion:    
           description: 'Property. The region in which the locality is, and which is in the country. Model:''https://schema.org/addressRegion'''    
           type: string    
-        areaServed:    
-          description: 'Property. The geographic area where a service or offered item is provided. Model:''https://schema.org/areaServed'''    
-          type: string    
         postOfficeBoxNumber:    
-          description: 'Property. The post office box number for PO box addresses. For example, Spain. Model:''https://schema.org/postOfficeBoxNumber'''    
+          description: 'Property. The post office box number for PO box addresses. For example, 03578. Model:''https://schema.org/postOfficeBoxNumber'''    
           type: string    
         postalCode:    
-          description: 'Property. The postal code. For example, Spain. Model:''https://schema.org/https://schema.org/postalCode'''    
+          description: 'Property. The postal code. For example, 24004. Model:''https://schema.org/https://schema.org/postalCode'''    
           type: string    
         streetAddress:    
           description: 'Property. The street address. Model:''https://schema.org/streetAddress'''    
@@ -118,10 +116,10 @@ AirQualityObserved:
       description: 'Unique identifier of the entity'    
       type: Property    
     location:    
-      $id: https://geojson.org/schema/Geometry.json    
-      $schema: "http://json-schema.org/draft-07/schema#"    
+      description: 'Geojson reference to the item. It can be Point, LineString, Polygon, MultiPoint, MultiLineString or MultiPolygon'    
       oneOf:    
-        - properties:    
+        - description: 'Geoproperty. Geojson reference to the item. Point'    
+          properties:    
             bbox:    
               items:    
                 type: number    
@@ -141,7 +139,8 @@ AirQualityObserved:
             - coordinates    
           title: 'GeoJSON Point'    
           type: object    
-        - properties:    
+        - description: 'Geoproperty. Geojson reference to the item. LineString'    
+          properties:    
             bbox:    
               items:    
                 type: number    
@@ -164,7 +163,8 @@ AirQualityObserved:
             - coordinates    
           title: 'GeoJSON LineString'    
           type: object    
-        - properties:    
+        - description: 'Geoproperty. Geojson reference to the item. Polygon'    
+          properties:    
             bbox:    
               items:    
                 type: number    
@@ -189,7 +189,8 @@ AirQualityObserved:
             - coordinates    
           title: 'GeoJSON Polygon'    
           type: object    
-        - properties:    
+        - description: 'Geoproperty. Geojson reference to the item. MultiPoint'    
+          properties:    
             bbox:    
               items:    
                 type: number    
@@ -211,7 +212,8 @@ AirQualityObserved:
             - coordinates    
           title: 'GeoJSON MultiPoint'    
           type: object    
-        - properties:    
+        - description: 'Geoproperty. Geojson reference to the item. MultiLineString'    
+          properties:    
             bbox:    
               items:    
                 type: number    
@@ -236,7 +238,8 @@ AirQualityObserved:
             - coordinates    
           title: 'GeoJSON MultiLineString'    
           type: object    
-        - properties:    
+        - description: 'Geoproperty. Geojson reference to the item. MultiLineString'    
+          properties:    
             bbox:    
               items:    
                 type: number    
@@ -263,7 +266,7 @@ AirQualityObserved:
             - coordinates    
           title: 'GeoJSON MultiPolygon'    
           type: object    
-      title: 'GeoJSON Geometry'    
+      type: Geoproperty    
     name:    
       description: 'The name of this item.'    
       type: Property    
@@ -366,8 +369,8 @@ AirQualityObserved:
       description: 'list of uri pointing to additional resources about the item'    
       oneOf:    
         - items:    
-            - format: uri    
-              type: string    
+            format: uri    
+            type: string    
           minItems: 1    
           type: array    
         - format: uri    
