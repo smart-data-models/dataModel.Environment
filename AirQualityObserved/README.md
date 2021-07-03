@@ -5,7 +5,7 @@ Version: 0.0.1
 
 An observation of air quality conditions at a certain place and time.
 
-This data models will be extended when new polutants' measurements will be required
+This data model will be extended when new polutants' measurements will be required
 ### Specification
 
 Link to the [interactive specification](https://swagger.lab.fiware.org/?url=https://smart-data-models.github.io/dataModel.Environment/AirQualityObserved/swagger.yaml)
