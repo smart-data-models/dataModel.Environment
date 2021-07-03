@@ -4,6 +4,7 @@ Version: 0.0.1
 ## Description 
 
 An observation of air quality conditions at a certain place and time.
+
 This data models will be extended when new polutants' measurements will be required
 ### Specification
 
