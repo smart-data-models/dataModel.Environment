@@ -14,6 +14,24 @@
       "type": "string",
       "minLength": 2,
       "description": "Property. Overall qualitative level of health concern corresponding to the air quality observed. Model:'https://schema.org/Tex' "
+    },
+    "TimeSeriesAggregation": {
+      "type": "object",
+      "description": "Property. Object defining the possible processed results based on a measurement",
+      "properties": {
+        "avgOverTime": {
+          "type": "number"
+        },
+        "minOverTime": {
+          "type": "number"
+        },
+        "maxOverTime": {
+          "type": "number"
+        },
+        "instValue": {
+          "type": "number"
+        }
+      }
     }
   }
 }
