@@ -1,0 +1,161 @@
+{
+	"@context": ["https://smartdatamodels.org/context.jsonld",
+		"https://uri.etsi.org/ngsi-ld/v1/ngsi-ld-core-context.jsonld"
+	],
+	"type": ["iudx:EnvAQM"],
+	"airPressure": 990,
+	"pm2p5": {
+		"instValue": 10.1,
+		"avgOverTime": 10.1,
+		"minOverTime": 10.1,
+		"maxOverTime": 56.8
+	},
+	"co": {
+		"instValue": 10.1,
+		"avgOverTime": 10.1,
+		"minOverTime": 10.1,
+		"maxOverTime": 56.8
+	},
+	"pm10": {
+		"instValue": 10.1,
+		"avgOverTime": 10.1,
+		"minOverTime": 10.1,
+		"maxOverTime": 56.8
+	},
+	"airTemperature": {
+		"instValue": 10.1,
+		"avgOverTime": 10.1,
+		"minOverTime": 10.1,
+		"maxOverTime": 56.8
+	},
+	"atmosphericPressure": {
+		"instValue": 10.1,
+		"avgOverTime": 10.1,
+		"minOverTime": 10.1,
+		"maxOverTime": 56.8
+	},
+	"uv": {
+		"instValue": 10.1,
+		"avgOverTime": 10.1,
+		"minOverTime": 10.1,
+		"maxOverTime": 56.8
+	},
+	"ambientNoise": {
+		"instValue": 10.1,
+		"avgOverTime": 10.1,
+		"minOverTime": 10.1,
+		"maxOverTime": 56.8
+	},
+	"illuminance": 3319.41,
+	"relativeHumidity": {
+		"instValue": 10.1,
+		"avgOverTime": 10.1,
+		"minOverTime": 10.1,
+		"maxOverTime": 56.8
+	},
+	"airQualityIndex": 90,
+	"airQualityLevel": "SATISFATORY",
+	"aqiMajorPollutant": "no2",
+	"observationDateTime": "2020-09-16T11:00:00+05:30",
+	"o3": {
+		"instValue": 10.1,
+		"avgOverTime": 10.1,
+		"minOverTime": 10.1,
+		"maxOverTime": 56.8
+	},
+	"no2": {
+		"instValue": 10.1,
+		"avgOverTime": 10.1,
+		"minOverTime": 10.1,
+		"maxOverTime": 56.8
+	},
+	"co2": {
+		"instValue": 10.1,
+		"avgOverTime": 10.1,
+		"minOverTime": 10.1,
+		"maxOverTime": 56.8
+	},
+	"so2": {
+		"instValue": 10.1,
+		"avgOverTime": 10.1,
+		"minOverTime": 10.1,
+		"maxOverTime": 56.8
+	},
+	"deviceStatus": "ACTIVE",
+	"no": {
+		"instValue": 10.1,
+		"avgOverTime": 10.1,
+		"minOverTime": 10.1,
+		"maxOverTime": 56.8
+	},
+	"arsenic": {
+		"instValue": 10.1,
+		"avgOverTime": 10.1,
+		"minOverTime": 10.1,
+		"maxOverTime": 56.8
+	},
+	"nh3": {
+		"instValue": 10.1,
+		"avgOverTime": 10.1,
+		"minOverTime": 10.1,
+		"maxOverTime": 56.8
+	},
+	"precipitation": 10.2,
+	"benzene": {
+		"instValue": 10.1,
+		"avgOverTime": 10.1,
+		"minOverTime": 10.1,
+		"maxOverTime": 56.8
+	},
+	"versionInfo": {
+		"comments": "Version 1",
+		"endDateTime": "2020-09-16T11:00:00+05:30",
+		"startDateTime": "2020-09-16T11:00:00+05:30",
+		"versionName": "Version 1"
+	},
+	"solarRadiation": 3.65,
+	"nickel": {
+		"instValue": 10.1,
+		"avgOverTime": 10.1,
+		"minOverTime": 10.1,
+		"maxOverTime": 56.8
+	},
+	"pb": {
+		"instValue": 10.1,
+		"avgOverTime": 10.1,
+		"minOverTime": 10.1,
+		"maxOverTime": 56.8
+	},
+	"o2": {
+		"instValue": 10.1,
+		"avgOverTime": 10.1,
+		"minOverTime": 10.1,
+		"maxOverTime": 56.8
+	},
+	"deviceInfo": {
+		"deviceList": "12",
+		"deviceModel": {
+			"brandName": "Climo",
+			"manufacturerName": "Bosch",
+			"modelName": "sensor",
+			"areaServed": "Agartala",
+			"modelURL": "www.boschclimo.com"
+		},
+		"deviceBatteryStatus": "Connected",
+		"deviceName": "Climo",
+		"deviceID": "12345",
+		"RFID": "AB463478",
+		"deviceSimNumber": "12345678",
+		"measurand": "co2"
+	},
+	"bap": {
+		"instValue": 10.1,
+		"avgOverTime": 10.1,
+		"minOverTime": 10.1,
+		"maxOverTime": 56.8
+	},
+	"location": {
+		"type": "Point",
+		"coordinates": [91.28076, 23.831796]
+	}
+}
