@@ -7,9 +7,11 @@ Entität: AirQualityObserved
 
 ## Liste der Eigenschaften  
 
-- `address`: Die Postanschrift  - `airQualityIndex`: Der Luftqualitätsindex ist eine Zahl, die die Qualität der Luft an einem bestimmten Tag angibt.  - `airQualityLevel`: Allgemeiner qualitativer Grad der gesundheitlichen Besorgnis entsprechend der beobachteten Luftqualität  - `alternateName`: Ein alternativer Name für diesen Artikel  - `areaServed`: Übergeordneter Bereich, zu dem diese Luftqualitätsmessung gehört  - `as`: Arsen nachgewiesen  - `c6h6`: Benzol nachgewiesen  - `cd`: Cadmium nachgewiesen  - `co`: Kohlenmonoxid erkannt  - `co2`: Kohlendioxid erkannt  - `coLevel`: Qualitatives Vorhandensein von Kohlenmonoxid  - `dataProvider`: Eine Folge von Zeichen, die den Anbieter der harmonisierten Dateneinheit identifiziert.  - `dateCreated`: Zeitstempel der Entitätserstellung. Dieser wird normalerweise von der Speicherplattform zugewiesen.  - `dateModified`: Zeitstempel der letzten Änderung der Entität. Dieser wird in der Regel von der Speicherplattform vergeben.  - `dateObserved`: Das Datum und die Uhrzeit dieser Beobachtung im ISO8601 UTC-Format  - `description`: Eine Beschreibung dieses Artikels  - `id`: Eindeutiger Bezeichner der Entität  - `location`: Geojson-Referenz auf das Element. Es kann Punkt, LineString, Polygon, MultiPoint, MultiLineString oder MultiPolygon sein  - `name`: Der Name dieses Elements.  - `ni`: Nickel erkannt  - `no`: Stickstoffmonoxid erkannt  - `no2`: Stickstoffdioxid erkannt  - `nox`: Andere Stickstoffoxide nachgewiesen  - `o3`: Ozon erkannt  - `owner`: Eine Liste mit einer JSON-kodierten Zeichenfolge, die auf die eindeutigen Ids der Eigentümer verweist  - `pb`: Blei erkannt  - `pm10`: Feinstaub mit einem Durchmesser von 10 Mikrometern oder weniger  - `pm25`: Partikel mit einem Durchmesser von 2,5 Mikrometern oder weniger  - `precipitation`: Wassermenge Regen  - `refDevice`: Ein Verweis auf das/die Gerät(e), das/die diese Beobachtung aufgezeichnet hat/haben.  - `refPointOfInterest`: Ein Verweis auf einen Punkt von Interesse (normalerweise eine Luftqualitätsstation), der mit dieser Beobachtung verbunden ist.  - `refWeatherObserved`:  Das beobachtete Wetter in Verbindung mit den von dieser Einheit beschriebenen Luftqualitätsbedingungen.  - `relativeHumidity`: Feuchte in der Luft  - `reliability`: Zuverlässigkeit (Prozentsatz, ausgedrückt in Teilen pro eins) entsprechend der beobachteten Luftqualität  - `seeAlso`: Liste von uri, die auf zusätzliche Ressourcen über das Element verweist  - `sh2`: Schwefelwasserstoff nachgewiesen  - `so2`: Schwefeldioxid erkannt  - `source`: Eine Folge von Zeichen, die die ursprüngliche Quelle der Entitätsdaten als URL angibt. Empfohlen wird der voll qualifizierte Domänenname des Quellanbieters oder die URL zum Quellobjekt.  - `temperature`: Temperatur des Artikels  - `type`: NGSI Entity-Typ  - `typeofLocation`: Art des Standortes des abgetasteten Artikels  - `volatileOrganicCompoundsTotal`: Alkane <C10, Ketone <C6, Aldehyde <C10, Carbonsäuren <C5, Aspirite<C7, Alkene <C8, Aromaten  - `windDirection`: Richtung der Wetterfahne  - `windSpeed`: Intensität des Windes    
+- `address`: Die Postanschrift  - `airQualityIndex`: Der Luftqualitätsindex ist eine Zahl, mit der die Qualität der Luft an einem bestimmten Tag angegeben wird.  - `airQualityLevel`: Qualitatives Gesamtniveau der Gesundheitsbedenken entsprechend der beobachteten Luftqualität  - `alternateName`: Ein alternativer Name für diesen Artikel  - `areaServed`: Übergeordnetes Gebiet, zu dem diese Luftqualitätsmessung gehört  - `as`: Arsen nachgewiesen  - `c6h6`: Benzol nachgewiesen  - `cd`: Cadmium nachgewiesen  - `co`: Kohlenmonoxid nachgewiesen  - `co2`: Kohlendioxid nachgewiesen  - `coLevel`: Qualitatives Vorhandensein von Kohlenmonoxid  - `dataProvider`: Eine Folge von Zeichen zur Identifizierung des Anbieters der harmonisierten Dateneinheit.  - `dateCreated`: Zeitstempel der Entitätserstellung. Dieser wird in der Regel von der Speicherplattform zugewiesen.  - `dateModified`: Zeitstempel der letzten Änderung der Entität. Dieser wird in der Regel von der Speicherplattform vergeben.  - `dateObserved`: Das Datum und die Uhrzeit dieser Beobachtung im ISO8601 UTC-Format  - `description`: Eine Beschreibung dieses Artikels  - `id`: Eindeutiger Bezeichner der Entität  - `location`: Geojson-Referenz auf das Element. Es kann Punkt, LineString, Polygon, MultiPoint, MultiLineString oder MultiPolygon sein  - `name`: Der Name dieses Artikels.  - `ni`: Nickel nachgewiesen  - `no`: Stickstoffmonoxid nachgewiesen  - `no2`: Stickstoffdioxid nachgewiesen  - `nox`: Andere Stickstoffoxide nachgewiesen  - `o3`: Ozon nachgewiesen  - `owner`: Eine Liste mit einer JSON-kodierten Zeichenfolge, die auf die eindeutigen Kennungen der Eigentümer verweist  - `pb`: Blei nachgewiesen  - `pm10`: Feinstaub mit einem Durchmesser von 10 Mikrometern oder weniger  - `pm25`: Partikel mit einem Durchmesser von 2,5 Mikrometern oder weniger  - `precipitation`: Menge des Regenwassers  - `refDevice`: Ein Verweis auf das/die Gerät(e), das/die diese Beobachtung aufgezeichnet hat/haben.  - `refPointOfInterest`: Ein Verweis auf einen Punkt von Interesse (in der Regel eine Luftqualitätsstation) im Zusammenhang mit dieser Beobachtung.  - `refWeatherObserved`:  Wetterbeobachtungen im Zusammenhang mit den von dieser Stelle beschriebenen Luftqualitätsbedingungen.  - `relativeHumidity`: Luftfeuchtigkeit  - `reliability`: Zuverlässigkeit (Prozentsatz, ausgedrückt in Teilen pro eins) entsprechend der beobachteten Luftqualität  - `seeAlso`: Liste von URLs, die auf zusätzliche Ressourcen zu dem Artikel verweisen  - `sh2`: Schwefelwasserstoff nachgewiesen  - `so2`: Schwefeldioxid nachgewiesen  - `source`: Eine Folge von Zeichen, die die ursprüngliche Quelle der Entitätsdaten als URL angibt. Empfohlen wird der vollständig qualifizierte Domänenname des Quellanbieters oder die URL des Quellobjekts.  - `temperature`: Temperatur des Gegenstandes  - `type`: NGSI Entitätstyp  - `typeofLocation`: Art des Standorts des beprobten Gegenstands  - `volatileOrganicCompoundsTotal`: Alkane <C10, Ketone <C6, Aldehyde <C10, Carbonsäuren <C5, Aspirite<C7, Alkene <C8, Aromaten  - `windDirection`: Richtung der Wetterfahne  - `windSpeed`: Intensität des Windes    
 Erforderliche Eigenschaften  
-- `dateObserved`  - `id`  - `location`  - `type`  ## Datenmodell Beschreibung der Eigenschaften  
+- `dateObserved`  - `id`  - `location`  - `type`    
+Nicht alle Schadstoffe sind in diesem Datenmodell enthalten. Wenn Sie das Modell um neue Schadstoffe erweitern möchten, verweisen Sie bitte auf diese Quelle http://dd.eionet.europa.eu/vocabulary/aq/pollutant/view?page=1#vocabularyConceptResults, in der die meisten Schadstoffe aufgeführt sind.  
+## Datenmodell Beschreibung der Eigenschaften  
 Alphabetisch sortiert (für Details anklicken)  
 <details><summary><strong>full yaml details</strong></summary>    
 ```yaml  
@@ -502,7 +504,7 @@ AirQualityObserved:
 </details>    
 ## Beispiel-Nutzlasten  
 #### AirQualityObserved NGSI-v2 key-values Beispiel  
-Hier ist ein Beispiel für eine AirQualityObserved im JSON-LD-Format als Key-Values. Dies ist kompatibel mit NGSI-v2 bei Verwendung von `options=keyValues` und liefert die Kontextdaten einer einzelnen Entität.  
+Hier ist ein Beispiel einer AirQualityObserved im JSON-LD-Format als Schlüsselwerte. Dies ist kompatibel mit NGSI-v2, wenn `options=keyValues` verwendet wird und liefert die Kontextdaten einer einzelnen Entität.  
 ```json  
 {  
   "id": "Madrid-AmbientObserved-28079004-2016-03-15T11:00:00",  
@@ -538,7 +540,7 @@ AirQualityObserved:
 }  
 ```  
 #### AirQualityObserved NGSI-v2 normalisiert Beispiel  
-Hier ist ein Beispiel für ein AirQualityObserved im JSON-LD-Format wie normalisiert. Dies ist kompatibel mit NGSI-v2, wenn keine Optionen verwendet werden und liefert die Kontextdaten einer einzelnen Entität.  
+Hier ist ein Beispiel für eine AirQualityObserved im JSON-LD-Format in normalisierter Form. Dies ist kompatibel mit NGSI-v2, wenn keine Optionen verwendet werden, und liefert die Kontextdaten einer einzelnen Entität.  
 ```json  
 {  
   "id": "Madrid-AmbientObserved-28079004-2016-03-15T11:00:00",  
@@ -644,7 +646,7 @@ AirQualityObserved:
 }  
 ```  
 #### AirQualityObserved NGSI-LD key-values Beispiel  
-Hier ist ein Beispiel für eine AirQualityObserved im JSON-LD-Format als Key-Values. Dies ist kompatibel mit NGSI-LD bei Verwendung von `options=keyValues` und liefert die Kontextdaten einer einzelnen Entität.  
+Hier ist ein Beispiel für eine AirQualityObserved im JSON-LD-Format als Schlüsselwerte. Dies ist kompatibel mit NGSI-LD, wenn `options=keyValues` verwendet wird und liefert die Kontextdaten einer einzelnen Entität.  
 ```json  
 {  
   "id": "urn:ngsi-ld:AirQualityObserved:Madrid-AmbientObserved-28079004-2016-03-15T11:00:00",  
@@ -756,7 +758,7 @@ AirQualityObserved:
 }  
 ```  
 #### AirQualityObserved NGSI-LD normalisiert Beispiel  
-Hier ist ein Beispiel für ein AirQualityObserved im JSON-LD-Format wie normalisiert. Dies ist kompatibel mit NGSI-LD, wenn keine Optionen verwendet werden und liefert die Kontextdaten einer einzelnen Entität.  
+Hier ist ein Beispiel für ein AirQualityObserved im JSON-LD-Format in normalisierter Form. Dies ist kompatibel mit NGSI-LD, wenn keine Optionen verwendet werden, und liefert die Kontextdaten einer einzelnen Entität.  
 ```json  
 {  
   "@context": [  
