@@ -2,8 +2,8 @@
 description: This is a compilation list of the current adopters of the data model AirQualityMonitoring of the Subject Environment.
 currentAdopters:
 -
- adopter: 
- description: 
+ adopter: IUDX
+ description: Used by various institutions for Air Quality Monitoring.
  mail: 
  organization: 
  project: 

@@ -1,11 +1,10 @@
 {
   "$schema": "http://json-schema.org/schema#",
   "$schemaVersion": "0.0.1",
-  "$id": "https://smart-data-models.github.io/dataModel.Environment/EnvAQM/schema.json",
-  "title": " Smart Data Models - EnvAQM",
+  "$id": "https://smart-data-models.github.io/dataModel.Environment/AirQualityMonitoring/schema.json",
+  "title": " Smart Data Models - Air quality Monitoring",
   "description": "Air Quality Monitoring (AQM) Data Model.",
   "type": "object",
-  "additionalProperties": false,
   "allOf": [
     {
       "$ref": "https://smart-data-models.github.io/data-models/common-schema.json#/definitions/GSMA-Commons"
