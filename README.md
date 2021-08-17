@@ -8,6 +8,8 @@ The following entity types are available:
 
 - [AirQualityObserved](https://github.com/smart-data-models/dataModel.Environment/blob/master/AirQualityObserved/README.md). An observation of air quality conditions at a certain place and time.
 
+- [AirQualityMonitoring](https://github.com/smart-data-models/dataModel.Environment/blob/master/AirQualityMonitoring/README.md). Air Quality Monitoring (AQM) Data Model.
+
 - [ElectroMagneticObserved](https://github.com/smart-data-models/dataModel.Environment/blob/master/ElectroMagneticObserved/README.md). The Data Model is intended to measure excessive electric and magnetic fields (EMFs), or radiation in a work or public environment according to the level of exposure to electromagnetic fields on the air. The frequency of the hertzian waves is conventionally lower than 300 GHz, propagating in space without artificial guide. They are between 9 kHz and 300 GHz.
 
 - [NoiseLevelObserved](https://github.com/smart-data-models/dataModel.Environment/blob/master/NoiseLevelObserved/README.md). An observation of those acoustic parameters that estimate noise pressure levels at a certain place and time. 
