@@ -1,0 +1,358 @@
+AirQualityMonitoring:
+  description: 'Air Quality Monitoring (AQM) Data Model.'
+  properties:
+    airQualityIndex:
+      description: 'Overall Air Quality Index (AQI) for the observed air quality.'
+      type: number
+      x-ngsi:
+        model: https://schema.org/Number
+        type: Property
+    airQualityLevel:
+      description: 'Air Quality Category Indication. Qualitative level defined according to the local health agencies. For example, ''GOOD'', ''MODERATE'', ''POOR'', ''UNHEALTHY'', ''SEVERE'', ''HAZARDOUS'' etc.'
+      type: string
+      x-ngsi:
+        model: https://schema.org/Text
+        type: Property
+    airTemperatureTSA:
+      description: 'Object defining the possible processed results based on a measurement'
+      properties: &airqualitymonitoring_-_properties_-_ambientnoisetsa_-_properties
+        avgOverTime:
+          type: number
+        instValue:
+          type: number
+        maxOverTime:
+          type: number
+        minOverTime:
+          type: number
+      type: object
+      x-ngsi:
+        type: Property
+    alternateName:
+      description: 'An alternative name for this item'
+      type: string
+      x-ngsi:
+        type: Property
+    ambientNoiseTSA:
+      description: 'Object defining the possible processed results based on a measurement'
+      properties: *airqualitymonitoring_-_properties_-_ambientnoisetsa_-_properties
+      type: object
+      x-ngsi:
+        type: Property
+    aqiMajorPollutant:
+      description: 'Major pollutant in the Air Quality Index (AQI). Enum:''arsenic, bap, benzene, co2, nh3, no, no2, o2, o3, so2, pb'''
+      enum:
+        - arsenic
+        - bap
+        - benzene
+        - co2
+        - nh3
+        - no
+        - no2
+        - o2
+        - o3
+        - so2
+        - pb
+      type: string
+      x-ngsi:
+        model: https://schema.org/Text
+        type: Property
+    arsenicTSA:
+      description: 'Object defining the possible processed results based on a measurement'
+      properties: *airqualitymonitoring_-_properties_-_ambientnoisetsa_-_properties
+      type: object
+      x-ngsi:
+        type: Property
+    atmosphericPressure:
+      description: 'Observed air (atmospheric or barometric) pressure.'
+      type: number
+      x-ngsi:
+        model: https://schema.org/Number
+        type: Property
+    atmosphericPressureTSA:
+      description: 'Object defining the possible processed results based on a measurement'
+      properties: *airqualitymonitoring_-_properties_-_ambientnoisetsa_-_properties
+      type: object
+      x-ngsi:
+        type: Property
+    bapTSA:
+      description: 'Object defining the possible processed results based on a measurement'
+      properties: *airqualitymonitoring_-_properties_-_ambientnoisetsa_-_properties
+      type: object
+      x-ngsi:
+        type: Property
+    benzeneTSA:
+      description: 'Object defining the possible processed results based on a measurement'
+      properties: *airqualitymonitoring_-_properties_-_ambientnoisetsa_-_properties
+      type: object
+      x-ngsi:
+        type: Property
+    co2TSA:
+      description: 'Object defining the possible processed results based on a measurement'
+      properties: *airqualitymonitoring_-_properties_-_ambientnoisetsa_-_properties
+      type: object
+      x-ngsi:
+        type: Property
+    coTSA:
+      description: 'Object defining the possible processed results based on a measurement'
+      properties: *airqualitymonitoring_-_properties_-_ambientnoisetsa_-_properties
+      type: object
+      x-ngsi:
+        type: Property
+    dataProvider:
+      description: 'A sequence of characters identifying the provider of the harmonised data entity.'
+      type: string
+      x-ngsi:
+        type: Property
+    dateCreated:
+      description: 'Entity creation timestamp. This will usually be allocated by the storage platform.'
+      format: date-time
+      type: string
+      x-ngsi:
+        type: Property
+    dateModified:
+      description: 'Timestamp of the last modification of the entity. This will usually be allocated by the storage platform.'
+      format: date-time
+      type: string
+      x-ngsi:
+        type: Property
+    description:
+      description: 'A description of this item'
+      type: string
+      x-ngsi:
+        type: Property
+    deviceInfo:
+      description: 'Information about the device associated with the observations.'
+      properties:
+        RFID:
+          description: 'Property. Model:''https://schema.org/Text''. Gives the ID of the RFID reader.'
+          type: string
+        deviceBatteryStatus:
+          description: 'Property. Model:''https://schema.org/Text''. Gives the Battery charging status of the reporting device(Connected, Disconnected).'
+          type: string
+        deviceID:
+          description: 'Property. Model:''https://schema.org/Text''. Device ID of the physical sensor/ measurement station corresponding to this observation.'
+          type: string
+        deviceList:
+          description: 'Property. Model:''https://schema.org/Text''. Information of device part number and sub devices corresponding to this observation.'
+          type: string
+        deviceModel:
+          description: 'Property. Describes the information of the device, sensor or system in consideration.'
+          properties:
+            areaServed:
+              description: 'Property. Model:''https://schema.org/Text''. Area served by the entity or a service. '
+              type: string
+            brandName:
+              description: 'Property. Model:''https://schema.org/Text''. Name of the brand associated with an entity, e.g., sensor, device etc.'
+              type: string
+            manufacturerName:
+              description: 'Property. Model:''https://schema.org/Text''. Name of the manufacturer associated with an entity, e.g., sensor, device etc.'
+              type: string
+            modelName:
+              description: 'Property. Model:''https://schema.org/Text''. Name of a specific model associated with an entity, e.g., sensor, device etc.'
+              type: string
+            modelURL:
+              description: 'Property. Model:''https://schema.org/Text''. URL providing further information of a specific model associated with an entity, e.g., sensor, device etc.'
+              type: string
+          type: object
+        deviceName:
+          description: 'Property. Model:''https://schema.org/Text''. Device Name or Station name of the sensor device/station corresponding to this observation.'
+          type: string
+        deviceSimNumber:
+          description: 'Property. Model:''https://schema.org/Text''. Gives the sim number of the device in the waste management vehicle.'
+          type: string
+        measurand:
+          description: 'Property. Model:''https://schema.org/Text''. Property/properties sensed/observed/measured by the device.'
+          type: string
+        refDevice:
+          anyOf:
+            - description: 'Property. Identifier format of any NGSI entity'
+              maxLength: 256
+              minLength: 1
+              pattern: ^[\w\-\.\{\}\$\+\*\[\]`|~^@!,:\\]+$
+              type: string
+            - description: 'Property. Identifier format of any NGSI entity'
+              format: uri
+              type: string
+          description: 'Relationship. Unique identifier of the entity'
+      type: object
+      x-ngsi:
+        type: Property
+    deviceStatus:
+      description: 'Indicates the status of physical device or devices.'
+      type: string
+      x-ngsi:
+        model: https://schema.org/Text
+        type: Property
+    id:
+      anyOf: &airqualitymonitoring_-_properties_-_owner_-_items_-_anyof
+        - description: 'Property. Identifier format of any NGSI entity'
+          maxLength: 256
+          minLength: 1
+          pattern: ^[\w\-\.\{\}\$\+\*\[\]`|~^@!,:\\]+$
+          type: string
+        - description: 'Property. Identifier format of any NGSI entity'
+          format: uri
+          type: string
+      description: 'Unique identifier of the entity'
+      x-ngsi:
+        type: Property
+    illuminance:
+      description: 'Measured illuminance'
+      minimum: 0
+      type: number
+      x-ngsi:
+        type: Property
+    name:
+      description: 'The name of this item.'
+      type: string
+      x-ngsi:
+        type: Property
+    nh3TSA:
+      description: 'Object defining the possible processed results based on a measurement'
+      properties: *airqualitymonitoring_-_properties_-_ambientnoisetsa_-_properties
+      type: object
+      x-ngsi:
+        type: Property
+    nickelTSA:
+      description: 'Object defining the possible processed results based on a measurement'
+      properties: *airqualitymonitoring_-_properties_-_ambientnoisetsa_-_properties
+      type: object
+      x-ngsi:
+        type: Property
+    no2TSA:
+      description: 'Object defining the possible processed results based on a measurement'
+      properties: *airqualitymonitoring_-_properties_-_ambientnoisetsa_-_properties
+      type: object
+      x-ngsi:
+        type: Property
+    noTSA:
+      description: 'Object defining the possible processed results based on a measurement'
+      properties: *airqualitymonitoring_-_properties_-_ambientnoisetsa_-_properties
+      type: object
+      x-ngsi:
+        type: Property
+    o2TSA:
+      description: 'Object defining the possible processed results based on a measurement'
+      properties: *airqualitymonitoring_-_properties_-_ambientnoisetsa_-_properties
+      type: object
+      x-ngsi:
+        type: Property
+    o3TSA:
+      description: 'Object defining the possible processed results based on a measurement'
+      properties: *airqualitymonitoring_-_properties_-_ambientnoisetsa_-_properties
+      type: object
+      x-ngsi:
+        type: Property
+    observationDateTime:
+      description: 'Last reported time of observation.'
+      format: date-time
+      type: string
+      x-ngsi:
+        model: https://schema.org/DateTime
+        type: Property
+    owner:
+      description: 'A List containing a JSON encoded sequence of characters referencing the unique Ids of the owner(s)'
+      items:
+        anyOf: *airqualitymonitoring_-_properties_-_owner_-_items_-_anyof
+        description: 'Property. Unique identifier of the entity'
+      type: array
+      x-ngsi:
+        type: Property
+    pbTSA:
+      description: 'Object defining the possible processed results based on a measurement'
+      properties: *airqualitymonitoring_-_properties_-_ambientnoisetsa_-_properties
+      type: object
+      x-ngsi:
+        type: Property
+    pm10TSA:
+      description: 'Object defining the possible processed results based on a measurement'
+      properties: *airqualitymonitoring_-_properties_-_ambientnoisetsa_-_properties
+      type: object
+      x-ngsi:
+        type: Property
+    pm25TSA:
+      description: 'Object defining the possible processed results based on a measurement'
+      properties: *airqualitymonitoring_-_properties_-_ambientnoisetsa_-_properties
+      type: object
+      x-ngsi:
+        type: Property
+    precipitation:
+      description: 'Observed precipitation/rainfall level over a given duration.'
+      type: number
+      x-ngsi:
+        model: https://schema.org/Number
+        type: Property
+    relativeHumidityTSA:
+      description: 'Object defining the possible processed results based on a measurement'
+      properties: *airqualitymonitoring_-_properties_-_ambientnoisetsa_-_properties
+      type: object
+      x-ngsi:
+        type: Property
+    seeAlso:
+      description: 'list of uri pointing to additional resources about the item'
+      oneOf:
+        - items:
+            format: uri
+            type: string
+          minItems: 1
+          type: array
+        - format: uri
+          type: string
+      x-ngsi:
+        type: Property
+    so2TSA:
+      description: 'Object defining the possible processed results based on a measurement'
+      properties: *airqualitymonitoring_-_properties_-_ambientnoisetsa_-_properties
+      type: object
+      x-ngsi:
+        type: Property
+    solarRadiation:
+      description: 'Instantaneous solar radiation measured in kW/m2'
+      type: number
+      x-ngsi:
+        model: http://schema.org/Number
+        type: Property
+        units: kW/m2
+    source:
+      description: 'A sequence of characters giving the original source of the entity data as a URL. Recommended to be the fully qualified domain name of the source provider, or the URL to the source object.'
+      type: string
+      x-ngsi:
+        type: Property
+    type:
+      description: 'NGSI type. it has to be AirQualityMonitoring'
+      enum:
+        - AirQualityMonitoring
+      type: string
+      x-ngsi:
+        type: Property
+    uvTSA:
+      description: 'Object defining the possible processed results based on a measurement'
+      properties: *airqualitymonitoring_-_properties_-_ambientnoisetsa_-_properties
+      type: object
+      x-ngsi:
+        type: Property
+    versionInfo:
+      description: 'Version information corresponding to this observation.'
+      properties:
+        comments:
+          description: 'Property. Model:''https://schema.org/Text''. User comments corresponding to this observation.'
+          type: string
+        endDateTime:
+          description: 'Property. Model:''https://schema.org/DateTime''. Reported end time corresponding to this observation.'
+          format: date-time
+          type: string
+        startDateTime:
+          description: 'Property. Model:''https://schema.org/DateTime''. Reported start time corresponding to this observation.'
+          format: date-time
+          type: string
+        versionName:
+          description: 'Property. Model:''https://schema.org/Text''. Version name corresponding to this observation'
+          type: string
+      type: object
+      x-ngsi:
+        type: Property
+  required:
+    - id
+    - type
+  type: object
+  version: 0.0.1
