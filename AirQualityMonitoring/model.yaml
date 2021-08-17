@@ -14,7 +14,7 @@ AirQualityMonitoring:
         model: https://schema.org/Text
         type: Property
     airTemperatureTSA:
-      description: 'Object defining the possible processed results based on a measurement'
+      description: 'Object defining the temporal processing of a basic property during a period. It provides Maximum, minimum, instant value and average'
       properties: &airqualitymonitoring_-_properties_-_ambientnoisetsa_-_properties
         avgOverTime:
           type: number
@@ -33,7 +33,7 @@ AirQualityMonitoring:
       x-ngsi:
         type: Property
     ambientNoiseTSA:
-      description: 'Object defining the possible processed results based on a measurement'
+      description: 'Object defining the temporal processing of a basic property during a period. It provides Maximum, minimum, instant value and average'
       properties: *airqualitymonitoring_-_properties_-_ambientnoisetsa_-_properties
       type: object
       x-ngsi:
@@ -57,7 +57,7 @@ AirQualityMonitoring:
         model: https://schema.org/Text
         type: Property
     arsenicTSA:
-      description: 'Object defining the possible processed results based on a measurement'
+      description: 'Object defining the temporal processing of a basic property during a period. It provides Maximum, minimum, instant value and average'
       properties: *airqualitymonitoring_-_properties_-_ambientnoisetsa_-_properties
       type: object
       x-ngsi:
@@ -69,31 +69,31 @@ AirQualityMonitoring:
         model: https://schema.org/Number
         type: Property
     atmosphericPressureTSA:
-      description: 'Object defining the possible processed results based on a measurement'
+      description: 'Object defining the temporal processing of a basic property during a period. It provides Maximum, minimum, instant value and average'
       properties: *airqualitymonitoring_-_properties_-_ambientnoisetsa_-_properties
       type: object
       x-ngsi:
         type: Property
     bapTSA:
-      description: 'Object defining the possible processed results based on a measurement'
+      description: 'Object defining the temporal processing of a basic property during a period. It provides Maximum, minimum, instant value and average'
       properties: *airqualitymonitoring_-_properties_-_ambientnoisetsa_-_properties
       type: object
       x-ngsi:
         type: Property
     benzeneTSA:
-      description: 'Object defining the possible processed results based on a measurement'
+      description: 'Object defining the temporal processing of a basic property during a period. It provides Maximum, minimum, instant value and average'
       properties: *airqualitymonitoring_-_properties_-_ambientnoisetsa_-_properties
       type: object
       x-ngsi:
         type: Property
     co2TSA:
-      description: 'Object defining the possible processed results based on a measurement'
+      description: 'Object defining the temporal processing of a basic property during a period. It provides Maximum, minimum, instant value and average'
       properties: *airqualitymonitoring_-_properties_-_ambientnoisetsa_-_properties
       type: object
       x-ngsi:
         type: Property
     coTSA:
-      description: 'Object defining the possible processed results based on a measurement'
+      description: 'Object defining the temporal processing of a basic property during a period. It provides Maximum, minimum, instant value and average'
       properties: *airqualitymonitoring_-_properties_-_ambientnoisetsa_-_properties
       type: object
       x-ngsi:
@@ -208,37 +208,37 @@ AirQualityMonitoring:
       x-ngsi:
         type: Property
     nh3TSA:
-      description: 'Object defining the possible processed results based on a measurement'
+      description: 'Object defining the temporal processing of a basic property during a period. It provides Maximum, minimum, instant value and average'
       properties: *airqualitymonitoring_-_properties_-_ambientnoisetsa_-_properties
       type: object
       x-ngsi:
         type: Property
     nickelTSA:
-      description: 'Object defining the possible processed results based on a measurement'
+      description: 'Object defining the temporal processing of a basic property during a period. It provides Maximum, minimum, instant value and average'
       properties: *airqualitymonitoring_-_properties_-_ambientnoisetsa_-_properties
       type: object
       x-ngsi:
         type: Property
     no2TSA:
-      description: 'Object defining the possible processed results based on a measurement'
+      description: 'Object defining the temporal processing of a basic property during a period. It provides Maximum, minimum, instant value and average'
       properties: *airqualitymonitoring_-_properties_-_ambientnoisetsa_-_properties
       type: object
       x-ngsi:
         type: Property
     noTSA:
-      description: 'Object defining the possible processed results based on a measurement'
+      description: 'Object defining the temporal processing of a basic property during a period. It provides Maximum, minimum, instant value and average'
       properties: *airqualitymonitoring_-_properties_-_ambientnoisetsa_-_properties
       type: object
       x-ngsi:
         type: Property
     o2TSA:
-      description: 'Object defining the possible processed results based on a measurement'
+      description: 'Object defining the temporal processing of a basic property during a period. It provides Maximum, minimum, instant value and average'
       properties: *airqualitymonitoring_-_properties_-_ambientnoisetsa_-_properties
       type: object
       x-ngsi:
         type: Property
     o3TSA:
-      description: 'Object defining the possible processed results based on a measurement'
+      description: 'Object defining the temporal processing of a basic property during a period. It provides Maximum, minimum, instant value and average'
       properties: *airqualitymonitoring_-_properties_-_ambientnoisetsa_-_properties
       type: object
       x-ngsi:
@@ -259,19 +259,19 @@ AirQualityMonitoring:
       x-ngsi:
         type: Property
     pbTSA:
-      description: 'Object defining the possible processed results based on a measurement'
+      description: 'Object defining the temporal processing of a basic property during a period. It provides Maximum, minimum, instant value and average'
       properties: *airqualitymonitoring_-_properties_-_ambientnoisetsa_-_properties
       type: object
       x-ngsi:
         type: Property
     pm10TSA:
-      description: 'Object defining the possible processed results based on a measurement'
+      description: 'Object defining the temporal processing of a basic property during a period. It provides Maximum, minimum, instant value and average'
       properties: *airqualitymonitoring_-_properties_-_ambientnoisetsa_-_properties
       type: object
       x-ngsi:
         type: Property
     pm25TSA:
-      description: 'Object defining the possible processed results based on a measurement'
+      description: 'Object defining the temporal processing of a basic property during a period. It provides Maximum, minimum, instant value and average'
       properties: *airqualitymonitoring_-_properties_-_ambientnoisetsa_-_properties
       type: object
       x-ngsi:
@@ -283,7 +283,7 @@ AirQualityMonitoring:
         model: https://schema.org/Number
         type: Property
     relativeHumidityTSA:
-      description: 'Object defining the possible processed results based on a measurement'
+      description: 'Object defining the temporal processing of a basic property during a period. It provides Maximum, minimum, instant value and average'
       properties: *airqualitymonitoring_-_properties_-_ambientnoisetsa_-_properties
       type: object
       x-ngsi:
@@ -301,7 +301,7 @@ AirQualityMonitoring:
       x-ngsi:
         type: Property
     so2TSA:
-      description: 'Object defining the possible processed results based on a measurement'
+      description: 'Object defining the temporal processing of a basic property during a period. It provides Maximum, minimum, instant value and average'
       properties: *airqualitymonitoring_-_properties_-_ambientnoisetsa_-_properties
       type: object
       x-ngsi:
@@ -326,7 +326,7 @@ AirQualityMonitoring:
       x-ngsi:
         type: Property
     uvTSA:
-      description: 'Object defining the possible processed results based on a measurement'
+      description: 'Object defining the temporal processing of a basic property during a period. It provides Maximum, minimum, instant value and average'
       properties: *airqualitymonitoring_-_properties_-_ambientnoisetsa_-_properties
       type: object
       x-ngsi:
