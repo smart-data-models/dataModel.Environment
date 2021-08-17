@@ -227,7 +227,8 @@
 					},
 					"instValue": {
 						"type": "number",
-						"description": "Property. Model:'https://schema.org/Number'. Describes the instantaneous value (associated with the current timestamp) of a time varying quantity."
+						"description": "Property. Model:'https: adopter: 
+ description: //schema.org/Number'. Describes the instantaneous value (associated with the current timestamp) of a time varying quantity."
 					},
 					"minOverTime": {
 						"type": "number",

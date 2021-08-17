@@ -1,0 +1,37 @@
+{
+  "id": "uri:ngsi:WaterObserved:MNCA-001",
+  "type": "Feature",
+  "geometry": {
+    "type": "Point",
+    "coordinates": [
+      43.66481,
+      7.196545
+    ]
+  },
+  "properties": {
+    "type": "WaterObserved",
+    "name": "STLRT-MNCA-AP-WO-012",
+    "alternateName": "Var River Alert for safety procedure for Airport",
+    "description": "Observation of Evolution of the water levels",
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        43.66481,
+        7.196545
+      ]
+    },
+    "areaServed": "Nice Airport",
+    "refDevice": "uri:ngsi:Device:T2-NP-018",
+    "dateObserved": "2020-03-17T08:45:00.209Z",
+    "flow": 12,
+    "height": 3.52,
+    "measuredArea": 250,
+    "objectArea": 35,
+    "objectHeightAverage": 1.75,
+    "objectHeightMax": 2.25,
+    "objectVolume": 17.5,
+    "@context": [
+      "https://smartdatamodels.org/context.jsonld"
+    ]
+  }
+}

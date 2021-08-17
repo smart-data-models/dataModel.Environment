@@ -3,12 +3,15 @@ Entity: AirQualityObserved
 [Open License](https://github.com/smart-data-models//dataModel.Environment/blob/master/AirQualityObserved/LICENSE.md)  
 [document generated automatically](https://docs.google.com/presentation/d/e/2PACX-1vTs-Ng5dIAwkg91oTTUdt8ua7woBXhPnwavZ0FxgR8BsAI_Ek3C5q97Nd94HS8KhP-r_quD4H0fgyt3/pub?start=false&loop=false&delayms=3000#slide=id.gb715ace035_0_60)  
 Global description: **An observation of air quality conditions at a certain place and time.**  
+version: 0.0.1  
 
 ## List of properties  
 
-- `address`: The mailing address  - `airQualityIndex`: Air quality index is a number used to report the quality of the air on any given day.  - `airQualityLevel`: Overall qualitative level of health concern corresponding to the air quality observed  - `alternateName`: An alternative name for this item  - `areaServed`: Higher level area to which this air quality measurement belongs to  - `as`: Arsenic detected  - `c6h6`: Benzene detected  - `cd`: Cadmium detected  - `co`: Carbon Monoxide detected  - `co2`: Carbon Dioxide detected  - `coLevel`: Qualitative Carbon Monoxide presence  - `dataProvider`: A sequence of characters identifying the provider of the harmonised data entity.  - `dateCreated`: Entity creation timestamp. This will usually be allocated by the storage platform.  - `dateModified`: Timestamp of the last modification of the entity. This will usually be allocated by the storage platform.  - `dateObserved`: The date and time of this observation in ISO8601 UTCformat  - `description`: A description of this item  - `id`: Unique identifier of the entity  - `location`: Geojson reference to the item. It can be Point, LineString, Polygon, MultiPoint, MultiLineString or MultiPolygon  - `name`: The name of this item.  - `ni`: Nickel detected  - `False`: Nitrogen monoxide detected  - `no2`: Nitrogen dioxide detected  - `nox`: Other Nitrogen oxides detected  - `o3`: Ozone detected  - `owner`: A List containing a JSON encoded sequence of characters referencing the unique Ids of the owner(s)  - `pb`: Lead detected  - `pm10`: Particulate matter 10 micrometers or less in diameter  - `pm25`: Particulate matter 2.5 micrometers or less in diameter  - `precipitation`: Amount of water rain  - `refDevice`: A reference to the device(s) which captured this observation.  - `refPointOfInterest`: A reference to a point of interest (usually an air quality station) associated to this observation.  - `refWeatherObserved`:  Weather observed associated to the air quality conditions described by this entity.  - `relativeHumidity`: Humidity in the Air  - `reliability`: Reliability (percentage, expressed in parts per one) corresponding to the air quality observed  - `seeAlso`: list of uri pointing to additional resources about the item  - `sh2`: Hydrogen sulfide detected  - `so2`: Sulfur dioxide detected  - `source`: A sequence of characters giving the original source of the entity data as a URL. Recommended to be the fully qualified domain name of the source provider, or the URL to the source object.  - `temperature`: Temperature of the item  - `type`: NGSI Entity type  - `typeofLocation`: Type of location of the sampled item  - `volatileOrganicCompoundsTotal`: Alkanes <C10, ketones <C6, aldehydes <C10, carboxylic acids <C5, aspirits<C7, Alkenes <C8, Aromatics  - `windDirection`: Direction of the weather vane  - `windSpeed`: Intensity of the wind    
+- `address`: The mailing address  - `airQualityIndex`: Air quality index is a number used to report the quality of the air on any given day.  - `airQualityLevel`: Overall qualitative level of health concern corresponding to the air quality observed  - `alternateName`: An alternative name for this item  - `areaServed`: Higher level area to which this air quality measurement belongs to  - `as`: Arsenic detected  - `c6h6`: Benzene detected  - `cd`: Cadmium detected  - `co`: Carbon Monoxide detected  - `co2`: Carbon Dioxide detected  - `coLevel`: Qualitative Carbon Monoxide presence  - `dataProvider`: A sequence of characters identifying the provider of the harmonised data entity.  - `dateCreated`: Entity creation timestamp. This will usually be allocated by the storage platform.  - `dateModified`: Timestamp of the last modification of the entity. This will usually be allocated by the storage platform.  - `dateObserved`: The date and time of this observation in ISO8601 UTCformat  - `description`: A description of this item  - `id`: Unique identifier of the entity  - `location`: Geojson reference to the item. It can be Point, LineString, Polygon, MultiPoint, MultiLineString or MultiPolygon  - `name`: The name of this item.  - `ni`: Nickel detected  - `no`: Nitrogen monoxide detected  - `no2`: Nitrogen dioxide detected  - `nox`: Other Nitrogen oxides detected  - `o3`: Ozone detected  - `owner`: A List containing a JSON encoded sequence of characters referencing the unique Ids of the owner(s)  - `pb`: Lead detected  - `pm10`: Particulate matter 10 micrometers or less in diameter  - `pm25`: Particulate matter 2.5 micrometers or less in diameter  - `precipitation`: Amount of water rain  - `refDevice`: A reference to the device(s) which captured this observation.  - `refPointOfInterest`: A reference to a point of interest (usually an air quality station) associated to this observation.  - `refWeatherObserved`:  Weather observed associated to the air quality conditions described by this entity.  - `relativeHumidity`: Humidity in the Air  - `reliability`: Reliability (percentage, expressed in parts per one) corresponding to the air quality observed  - `seeAlso`: list of uri pointing to additional resources about the item  - `sh2`: Hydrogen sulfide detected  - `so2`: Sulfur dioxide detected  - `source`: A sequence of characters giving the original source of the entity data as a URL. Recommended to be the fully qualified domain name of the source provider, or the URL to the source object.  - `temperature`: Temperature of the item  - `type`: NGSI Entity type  - `typeofLocation`: Type of location of the sampled item  - `volatileOrganicCompoundsTotal`: Alkanes <C10, ketones <C6, aldehydes <C10, carboxylic acids <C5, aspirits<C7, Alkenes <C8, Aromatics  - `windDirection`: Direction of the weather vane  - `windSpeed`: Intensity of the wind    
 Required properties  
-- `dateObserved`  - `id`  - `location`  - `type`  ## Data Model description of properties  
+- `dateObserved`  - `id`  - `location`  - `type`    
+Not all pollutants are included in this data model. In case of new ones to extend the model please refer to this source http://dd.eionet.europa.eu/vocabulary/aq/pollutant/view?page=1#vocabularyConceptResults where most of the are listed.  
+## Data Model description of properties  
 Sorted alphabetically (click for details)  
 <details><summary><strong>full yaml details</strong></summary>    
 ```yaml  
@@ -36,73 +39,99 @@ AirQualityObserved:
         streetAddress:    
           description: 'Property. The street address. Model:''https://schema.org/streetAddress'''    
           type: string    
-      type: Property    
+      type: object    
       x-ngsi:    
         model: https://schema.org/address    
+        type: Property    
     airQualityIndex:    
       description: 'Air quality index is a number used to report the quality of the air on any given day.'    
       minimum: 0    
-      type: Property    
+      type: integer    
       x-ngsi:    
         model: https://schema.org/Number    
+        type: Property    
     airQualityLevel:    
       description: 'Overall qualitative level of health concern corresponding to the air quality observed'    
       minLength: 2    
-      type: Property    
+      type: string    
       x-ngsi:    
         model: 'https://schema.org/Tex '    
+        type: Property    
     alternateName:    
       description: 'An alternative name for this item'    
-      type: Property    
+      type: string    
+      x-ngsi:    
+        type: Property    
     areaServed:    
       description: 'Higher level area to which this air quality measurement belongs to'    
-      type: Property    
+      type: string    
       x-ngsi:    
         model: 'https://schema.org/Text '    
+        type: Property    
     as:    
       description: 'Arsenic detected'    
       minimum: 0    
-      type: Property    
+      type: number    
       x-ngsi:    
         model: https://schema.org/Number    
+        type: Property    
     c6h6:    
       description: 'Benzene detected'    
       minimum: 0    
-      type: Property    
+      type: number    
+      x-ngsi:    
+        type: Property    
     cd:    
       description: 'Cadmium detected'    
       minimum: 0    
-      type: Property    
+      type: number    
+      x-ngsi:    
+        type: Property    
     co:    
       description: 'Carbon Monoxide detected'    
       minimum: 0    
-      type: Property    
+      type: number    
+      x-ngsi:    
+        type: Property    
     co2:    
       description: 'Carbon Dioxide detected'    
       minimum: 0    
-      type: Property    
+      type: number    
+      x-ngsi:    
+        type: Property    
     coLevel:    
       description: 'Qualitative Carbon Monoxide presence'    
-      type: Property    
+      type: string    
+      x-ngsi:    
+        type: Property    
     dataProvider:    
       description: 'A sequence of characters identifying the provider of the harmonised data entity.'    
-      type: Property    
+      type: string    
+      x-ngsi:    
+        type: Property    
     dateCreated:    
       description: 'Entity creation timestamp. This will usually be allocated by the storage platform.'    
       format: date-time    
-      type: Property    
+      type: string    
+      x-ngsi:    
+        type: Property    
     dateModified:    
       description: 'Timestamp of the last modification of the entity. This will usually be allocated by the storage platform.'    
       format: date-time    
-      type: Property    
+      type: string    
+      x-ngsi:    
+        type: Property    
     dateObserved:    
       description: 'The date and time of this observation in ISO8601 UTCformat'    
-      type: Property    
+      type: string    
       x-ngsi:    
         model: 'https://schema.org/Text '    
+        type: Property    
     description:    
       description: 'A description of this item'    
-      type: Property    
+      type: string    
+      x-ngsi:    
+        type: Property    
     id:    
       anyOf: &airqualityobserved_-_properties_-_owner_-_items_-_anyof    
         - description: 'Property. Identifier format of any NGSI entity'    
@@ -114,7 +143,8 @@ AirQualityObserved:
           format: uri    
           type: string    
       description: 'Unique identifier of the entity'    
-      type: Property    
+      x-ngsi:    
+        type: Property    
     location:    
       description: 'Geojson reference to the item. It can be Point, LineString, Polygon, MultiPoint, MultiLineString or MultiPolygon'    
       oneOf:    
@@ -266,54 +296,76 @@ AirQualityObserved:
             - coordinates    
           title: 'GeoJSON MultiPolygon'    
           type: object    
-      type: Geoproperty    
+      x-ngsi:    
+        type: Geoproperty    
     name:    
       description: 'The name of this item.'    
-      type: Property    
+      type: string    
+      x-ngsi:    
+        type: Property    
     ni:    
       description: 'Nickel detected'    
       minimum: 0    
-      type: Property    
+      type: number    
+      x-ngsi:    
+        type: Property    
     no:    
       description: 'Nitrogen monoxide detected'    
       minimum: 0    
-      type: Property    
+      type: number    
+      x-ngsi:    
+        type: Property    
     no2:    
       description: 'Nitrogen dioxide detected'    
       minimum: 0    
-      type: Property    
+      type: number    
+      x-ngsi:    
+        type: Property    
     nox:    
       description: 'Other Nitrogen oxides detected'    
       minimum: 0    
-      type: Property    
+      type: number    
+      x-ngsi:    
+        type: Property    
     o3:    
       description: 'Ozone detected'    
       minimum: 0    
-      type: Property    
+      type: number    
+      x-ngsi:    
+        type: Property    
     owner:    
       description: 'A List containing a JSON encoded sequence of characters referencing the unique Ids of the owner(s)'    
       items:    
         anyOf: *airqualityobserved_-_properties_-_owner_-_items_-_anyof    
         description: 'Property. Unique identifier of the entity'    
-      type: Property    
+      type: array    
+      x-ngsi:    
+        type: Property    
     pb:    
       description: 'Lead detected'    
       minimum: 0    
-      type: Property    
+      type: number    
+      x-ngsi:    
+        type: Property    
     pm10:    
       description: 'Particulate matter 10 micrometers or less in diameter'    
       minimum: 0    
-      type: Property    
+      type: number    
+      x-ngsi:    
+        type: Property    
     pm25:    
       description: 'Particulate matter 2.5 micrometers or less in diameter'    
       minimum: 0    
-      type: Property    
+      type: number    
+      x-ngsi:    
+        type: Property    
     precipitation:    
       description: 'Amount of water rain'    
       minimum: 0    
-      type: Property    
+      type: number    
       x-ngsi:    
         model: https://schema.org/Number    
+        type: Property    
         units: 'Liters per square meter.'    
     refDevice:    
       anyOf:    
@@ -326,7 +378,8 @@ AirQualityObserved:
           format: uri    
           type: string    
       description: 'A reference to the device(s) which captured this observation.'    
-      type: Relationship    
+      x-ngsi:    
+        type: Relationship    
     refPointOfInterest:    
       anyOf:    
         - description: 'Property. Identifier format of any NGSI entity'    
@@ -338,7 +391,8 @@ AirQualityObserved:
           format: uri    
           type: string    
       description: 'A reference to a point of interest (usually an air quality station) associated to this observation.'    
-      type: Relationship    
+      x-ngsi:    
+        type: Relationship    
     refWeatherObserved:    
       anyOf:    
         - description: 'Property. Identifier format of any NGSI entity'    
@@ -350,21 +404,24 @@ AirQualityObserved:
           format: uri    
           type: string    
       description: ' Weather observed associated to the air quality conditions described by this entity.'    
-      type: Relationship    
+      x-ngsi:    
+        type: Relationship    
     relativeHumidity:    
       description: 'Humidity in the Air'    
       maximum: 1    
       minimum: 0    
-      type: Property    
+      type: number    
       x-ngsi:    
         model: https://schema.org/Number    
+        type: Property    
     reliability:    
       description: 'Reliability (percentage, expressed in parts per one) corresponding to the air quality observed'    
       maximum: 1.0    
       minimum: 0    
-      type: Property    
+      type: number    
       x-ngsi:    
         model: 'https://schema.org/Number '    
+        type: Property    
     seeAlso:    
       description: 'list of uri pointing to additional resources about the item'    
       oneOf:    
@@ -375,57 +432,74 @@ AirQualityObserved:
           type: array    
         - format: uri    
           type: string    
-      type: Property    
+      x-ngsi:    
+        type: Property    
     sh2:    
       description: 'Hydrogen sulfide detected'    
       minimum: 0    
-      type: Property    
+      type: number    
+      x-ngsi:    
+        type: Property    
     so2:    
       description: 'Sulfur dioxide detected'    
       minimum: 0    
-      type: Property    
+      type: number    
+      x-ngsi:    
+        type: Property    
     source:    
       description: 'A sequence of characters giving the original source of the entity data as a URL. Recommended to be the fully qualified domain name of the source provider, or the URL to the source object.'    
-      type: Property    
+      type: string    
+      x-ngsi:    
+        type: Property    
     temperature:    
       description: 'Temperature of the item'    
-      type: Property    
+      type: number    
+      x-ngsi:    
+        type: Property    
     type:    
       description: 'NGSI Entity type'    
       enum:    
         - AirQualityObserved    
-      type: Property    
+      type: string    
+      x-ngsi:    
+        type: Property    
     typeofLocation:    
       description: 'Type of location of the sampled item'    
       enum:    
         - indoor    
         - outdoor    
-      type: Property    
+      type: string    
       x-ngsi:    
         model: https://schema.org/Text    
+        type: Property    
     volatileOrganicCompoundsTotal:    
       description: 'Alkanes <C10, ketones <C6, aldehydes <C10, carboxylic acids <C5, aspirits<C7, Alkenes <C8, Aromatics'    
       minimum: 0    
-      type: Property    
+      type: number    
+      x-ngsi:    
+        type: Property    
     windDirection:    
       description: 'Direction of the weather vane'    
       maximum: 180    
       minimum: -180    
-      type: Property    
+      type: number    
       x-ngsi:    
         model: http://schema.org/Number    
+        type: Property    
     windSpeed:    
       description: 'Intensity of the wind'    
       minimum: 0    
-      type: Property    
+      type: number    
       x-ngsi:    
         model: http//schema.org/Number    
+        type: Property    
   required:    
     - id    
     - type    
     - dateObserved    
     - location    
   type: object    
+  version: 0.0.1    
 ```  
 </details>    
 ## Example payloads    

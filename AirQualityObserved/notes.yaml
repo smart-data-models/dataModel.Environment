@@ -1,0 +1,8 @@
+notesHeader:
+  Not all pollutants are included in this data model. In case of new ones to extend the model please refer to this source http://dd.eionet.europa.eu/vocabulary/aq/pollutant/view?page=1#vocabularyConceptResults where most of the are listed.
+notesMiddle:
+
+notesFooter:
+
+notesReadme:
+  This data model will be extended when new polutants' measurements will be required. This source http://dd.eionet.europa.eu/vocabulary/aq/pollutant/view?page=1#vocabularyConceptResults provide with the new names and definitions.
