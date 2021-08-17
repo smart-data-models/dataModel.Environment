@@ -7,7 +7,7 @@ Entité : AirQualityMonitoring
 
 ## Liste des propriétés  
 
-- `airQualityIndex`: Indice de qualité de l'air (IQA) global pour la qualité de l'air observée.  - `airQualityLevel`: Indication de la catégorie de qualité de l'air. Niveau qualitatif défini en fonction des agences sanitaires locales. Par exemple, "BON", "MODÉRÉ", "MAUVAIS", "MAUVAIS", "SÉRIEUX", "DANGEREUX", etc.  - `airTemperatureTSA`: Objet définissant les résultats possibles traités sur la base d'une mesure  - `alternateName`: Un nom alternatif pour cet élément  - `ambientNoiseTSA`: Objet définissant les résultats possibles traités sur la base d'une mesure  - `aqiMajorPollutant`: Polluant majeur dans l'indice de qualité de l'air (IQA). Enum : "arsenic, bap, benzène, co2, nh3, no, no2, o2, o3, so2, pb".  - `arsenicTSA`: Objet définissant les résultats possibles traités sur la base d'une mesure  - `atmosphericPressure`: Pression atmosphérique (atmosphérique ou barométrique) observée.  - `atmosphericPressureTSA`: Objet définissant les résultats possibles traités sur la base d'une mesure  - `bapTSA`: Objet définissant les résultats possibles traités sur la base d'une mesure  - `benzeneTSA`: Objet définissant les résultats possibles traités sur la base d'une mesure  - `co2TSA`: Objet définissant les résultats possibles traités sur la base d'une mesure  - `coTSA`: Objet définissant les résultats possibles traités sur la base d'une mesure  - `dataProvider`: Une séquence de caractères identifiant le fournisseur de l'entité de données harmonisées.  - `dateCreated`: Horodatage de la création de l'entité. Celui-ci sera généralement attribué par la plateforme de stockage.  - `dateModified`: Horodatage de la dernière modification de l'entité. Il sera généralement attribué par la plateforme de stockage.  - `description`: Une description de cet article  - `deviceInfo`: Informations sur le dispositif associé aux observations.  - `deviceStatus`: Indique l'état du ou des dispositifs physiques.  - `id`: Identifiant unique de l'entité  - `illuminance`: Éclairement mesuré  - `name`: Le nom de cet élément.  - `nh3TSA`: Objet définissant les résultats possibles traités sur la base d'une mesure  - `nickelTSA`: Objet définissant les résultats possibles traités sur la base d'une mesure  - `no2TSA`: Objet définissant les résultats possibles traités sur la base d'une mesure  - `noTSA`: Objet définissant les résultats possibles traités sur la base d'une mesure  - `o2TSA`: Objet définissant les résultats possibles traités sur la base d'une mesure  - `o3TSA`: Objet définissant les résultats possibles traités sur la base d'une mesure  - `observationDateTime`: Dernière heure d'observation signalée.  - `owner`: Une liste contenant une séquence de caractères codée en JSON référençant les identifiants uniques du ou des propriétaires.  - `pbTSA`: Objet définissant les résultats possibles traités sur la base d'une mesure  - `pm10TSA`: Objet définissant les résultats possibles traités sur la base d'une mesure  - `pm25TSA`: Objet définissant les résultats possibles traités sur la base d'une mesure  - `precipitation`: Niveau de précipitations/pluie observé sur une durée donnée.  - `relativeHumidityTSA`: Objet définissant les résultats possibles traités sur la base d'une mesure  - `seeAlso`: liste d'uri pointant vers des ressources supplémentaires sur l'élément  - `so2TSA`: Objet définissant les résultats possibles traités sur la base d'une mesure  - `solarRadiation`: Rayonnement solaire instantané mesuré en kW/m2  - `source`: Une séquence de caractères donnant la source originale des données de l'entité sous forme d'URL. Il est recommandé d'utiliser le nom de domaine entièrement qualifié du fournisseur source ou l'URL de l'objet source.  - `type`: Type de NGSI. Il doit s'agir de AirQualityMonitoring.  - `uvTSA`: Objet définissant les résultats possibles traités sur la base d'une mesure  - `versionInfo`: Informations sur la version correspondant à cette observation.    
+- `airQualityIndex`: Indice de qualité de l'air (IQA) global pour la qualité de l'air observée.  - `airQualityLevel`: Indication de la catégorie de qualité de l'air. Niveau qualitatif défini en fonction des agences sanitaires locales. Par exemple, "BON", "MODÉRÉ", "MAUVAIS", "MAUVAIS", "SÉRIEUX", "DANGEREUX", etc.  - `airTemperatureTSA`: Objet définissant le traitement temporel d'une propriété de base pendant une période. Il fournit les valeurs maximale, minimale, instantanée et moyenne.  - `alternateName`: Un nom alternatif pour cet élément  - `ambientNoiseTSA`: Objet définissant le traitement temporel d'une propriété de base pendant une période. Il fournit les valeurs maximale, minimale, instantanée et moyenne.  - `aqiMajorPollutant`: Polluant majeur dans l'indice de qualité de l'air (IQA). Enum : "arsenic, bap, benzène, co2, nh3, no, no2, o2, o3, so2, pb".  - `arsenicTSA`: Objet définissant le traitement temporel d'une propriété de base pendant une période. Il fournit les valeurs maximale, minimale, instantanée et moyenne.  - `atmosphericPressure`: Pression atmosphérique (atmosphérique ou barométrique) observée.  - `atmosphericPressureTSA`: Objet définissant le traitement temporel d'une propriété de base pendant une période. Il fournit les valeurs maximale, minimale, instantanée et moyenne.  - `bapTSA`: Objet définissant le traitement temporel d'une propriété de base pendant une période. Il fournit les valeurs maximale, minimale, instantanée et moyenne.  - `benzeneTSA`: Objet définissant le traitement temporel d'une propriété de base pendant une période. Il fournit les valeurs maximale, minimale, instantanée et moyenne.  - `co2TSA`: Objet définissant le traitement temporel d'une propriété de base pendant une période. Il fournit les valeurs maximale, minimale, instantanée et moyenne.  - `coTSA`: Objet définissant le traitement temporel d'une propriété de base pendant une période. Il fournit les valeurs maximale, minimale, instantanée et moyenne.  - `dataProvider`: Une séquence de caractères identifiant le fournisseur de l'entité de données harmonisées.  - `dateCreated`: Horodatage de la création de l'entité. Celui-ci sera généralement attribué par la plateforme de stockage.  - `dateModified`: Horodatage de la dernière modification de l'entité. Il sera généralement attribué par la plateforme de stockage.  - `description`: Une description de cet article  - `deviceInfo`: Informations sur le dispositif associé aux observations.  - `deviceStatus`: Indique l'état du ou des dispositifs physiques.  - `id`: Identifiant unique de l'entité  - `illuminance`: Éclairement mesuré  - `name`: Le nom de cet élément.  - `nh3TSA`: Objet définissant le traitement temporel d'une propriété de base pendant une période. Il fournit les valeurs maximale, minimale, instantanée et moyenne.  - `nickelTSA`: Objet définissant le traitement temporel d'une propriété de base pendant une période. Il fournit les valeurs maximale, minimale, instantanée et moyenne.  - `no2TSA`: Objet définissant le traitement temporel d'une propriété de base pendant une période. Il fournit les valeurs maximum, minimum, instantanée et moyenne.  - `noTSA`: Objet définissant le traitement temporel d'une propriété de base pendant une période. Il fournit les valeurs maximale, minimale, instantanée et moyenne.  - `o2TSA`: Objet définissant le traitement temporel d'une propriété de base pendant une période. Il fournit les valeurs maximum, minimum, instantanée et moyenne.  - `o3TSA`: Objet définissant le traitement temporel d'une propriété de base pendant une période. Il fournit les valeurs maximale, minimale, instantanée et moyenne.  - `observationDateTime`: Dernière heure d'observation signalée.  - `owner`: Une liste contenant une séquence de caractères codés JSON référençant les identifiants uniques du ou des propriétaires.  - `pbTSA`: Objet définissant le traitement temporel d'une propriété de base pendant une période. Il fournit les valeurs maximum, minimum, instantanée et moyenne.  - `pm10TSA`: Objet définissant le traitement temporel d'une propriété de base pendant une période. Il fournit les valeurs maximale, minimale, instantanée et moyenne.  - `pm25TSA`: Objet définissant le traitement temporel d'une propriété de base pendant une période. Il fournit les valeurs maximale, minimale, instantanée et moyenne.  - `precipitation`: Niveau de précipitations/pluie observé sur une durée donnée.  - `relativeHumidityTSA`: Objet définissant le traitement temporel d'une propriété de base pendant une période. Il fournit les valeurs maximale, minimale, instantanée et moyenne.  - `seeAlso`: liste d'uri pointant vers des ressources supplémentaires sur l'élément  - `so2TSA`: Objet définissant le traitement temporel d'une propriété de base pendant une période. Il fournit les valeurs maximale, minimale, instantanée et moyenne.  - `solarRadiation`: Rayonnement solaire instantané mesuré en kW/m2  - `source`: Une séquence de caractères donnant la source originale des données de l'entité sous forme d'URL. Il est recommandé d'utiliser le nom de domaine entièrement qualifié du fournisseur source ou l'URL de l'objet source.  - `type`: Type de NGSI. Il doit s'agir de AirQualityMonitoring.  - `uvTSA`: Objet définissant le traitement temporel d'une propriété de base pendant une période. Il fournit les valeurs maximum, minimum, instantanée et moyenne.  - `versionInfo`: Informations sur la version correspondant à cette observation.    
 Propriétés requises  
 - `id`  - `type`  ## Description des propriétés du modèle de données  
 Classés par ordre alphabétique (cliquez pour plus de détails)  
@@ -29,7 +29,7 @@ AirQualityMonitoring:
         model: https://schema.org/Text    
         type: Property    
     airTemperatureTSA:    
-      description: 'Object defining the possible processed results based on a measurement'    
+      description: 'Object defining the temporal processing of a basic property during a period. It provides Maximum, minimum, instant value and average'    
       properties: &airqualitymonitoring_-_properties_-_ambientnoisetsa_-_properties    
         avgOverTime:    
           type: number    
@@ -48,7 +48,7 @@ AirQualityMonitoring:
       x-ngsi:    
         type: Property    
     ambientNoiseTSA:    
-      description: 'Object defining the possible processed results based on a measurement'    
+      description: 'Object defining the temporal processing of a basic property during a period. It provides Maximum, minimum, instant value and average'    
       properties: *airqualitymonitoring_-_properties_-_ambientnoisetsa_-_properties    
       type: object    
       x-ngsi:    
@@ -72,7 +72,7 @@ AirQualityMonitoring:
         model: https://schema.org/Text    
         type: Property    
     arsenicTSA:    
-      description: 'Object defining the possible processed results based on a measurement'    
+      description: 'Object defining the temporal processing of a basic property during a period. It provides Maximum, minimum, instant value and average'    
       properties: *airqualitymonitoring_-_properties_-_ambientnoisetsa_-_properties    
       type: object    
       x-ngsi:    
@@ -84,31 +84,31 @@ AirQualityMonitoring:
         model: https://schema.org/Number    
         type: Property    
     atmosphericPressureTSA:    
-      description: 'Object defining the possible processed results based on a measurement'    
+      description: 'Object defining the temporal processing of a basic property during a period. It provides Maximum, minimum, instant value and average'    
       properties: *airqualitymonitoring_-_properties_-_ambientnoisetsa_-_properties    
       type: object    
       x-ngsi:    
         type: Property    
     bapTSA:    
-      description: 'Object defining the possible processed results based on a measurement'    
+      description: 'Object defining the temporal processing of a basic property during a period. It provides Maximum, minimum, instant value and average'    
       properties: *airqualitymonitoring_-_properties_-_ambientnoisetsa_-_properties    
       type: object    
       x-ngsi:    
         type: Property    
     benzeneTSA:    
-      description: 'Object defining the possible processed results based on a measurement'    
+      description: 'Object defining the temporal processing of a basic property during a period. It provides Maximum, minimum, instant value and average'    
       properties: *airqualitymonitoring_-_properties_-_ambientnoisetsa_-_properties    
       type: object    
       x-ngsi:    
         type: Property    
     co2TSA:    
-      description: 'Object defining the possible processed results based on a measurement'    
+      description: 'Object defining the temporal processing of a basic property during a period. It provides Maximum, minimum, instant value and average'    
       properties: *airqualitymonitoring_-_properties_-_ambientnoisetsa_-_properties    
       type: object    
       x-ngsi:    
         type: Property    
     coTSA:    
-      description: 'Object defining the possible processed results based on a measurement'    
+      description: 'Object defining the temporal processing of a basic property during a period. It provides Maximum, minimum, instant value and average'    
       properties: *airqualitymonitoring_-_properties_-_ambientnoisetsa_-_properties    
       type: object    
       x-ngsi:    
@@ -223,37 +223,37 @@ AirQualityMonitoring:
       x-ngsi:    
         type: Property    
     nh3TSA:    
-      description: 'Object defining the possible processed results based on a measurement'    
+      description: 'Object defining the temporal processing of a basic property during a period. It provides Maximum, minimum, instant value and average'    
       properties: *airqualitymonitoring_-_properties_-_ambientnoisetsa_-_properties    
       type: object    
       x-ngsi:    
         type: Property    
     nickelTSA:    
-      description: 'Object defining the possible processed results based on a measurement'    
+      description: 'Object defining the temporal processing of a basic property during a period. It provides Maximum, minimum, instant value and average'    
       properties: *airqualitymonitoring_-_properties_-_ambientnoisetsa_-_properties    
       type: object    
       x-ngsi:    
         type: Property    
     no2TSA:    
-      description: 'Object defining the possible processed results based on a measurement'    
+      description: 'Object defining the temporal processing of a basic property during a period. It provides Maximum, minimum, instant value and average'    
       properties: *airqualitymonitoring_-_properties_-_ambientnoisetsa_-_properties    
       type: object    
       x-ngsi:    
         type: Property    
     noTSA:    
-      description: 'Object defining the possible processed results based on a measurement'    
+      description: 'Object defining the temporal processing of a basic property during a period. It provides Maximum, minimum, instant value and average'    
       properties: *airqualitymonitoring_-_properties_-_ambientnoisetsa_-_properties    
       type: object    
       x-ngsi:    
         type: Property    
     o2TSA:    
-      description: 'Object defining the possible processed results based on a measurement'    
+      description: 'Object defining the temporal processing of a basic property during a period. It provides Maximum, minimum, instant value and average'    
       properties: *airqualitymonitoring_-_properties_-_ambientnoisetsa_-_properties    
       type: object    
       x-ngsi:    
         type: Property    
     o3TSA:    
-      description: 'Object defining the possible processed results based on a measurement'    
+      description: 'Object defining the temporal processing of a basic property during a period. It provides Maximum, minimum, instant value and average'    
       properties: *airqualitymonitoring_-_properties_-_ambientnoisetsa_-_properties    
       type: object    
       x-ngsi:    
@@ -274,19 +274,19 @@ AirQualityMonitoring:
       x-ngsi:    
         type: Property    
     pbTSA:    
-      description: 'Object defining the possible processed results based on a measurement'    
+      description: 'Object defining the temporal processing of a basic property during a period. It provides Maximum, minimum, instant value and average'    
       properties: *airqualitymonitoring_-_properties_-_ambientnoisetsa_-_properties    
       type: object    
       x-ngsi:    
         type: Property    
     pm10TSA:    
-      description: 'Object defining the possible processed results based on a measurement'    
+      description: 'Object defining the temporal processing of a basic property during a period. It provides Maximum, minimum, instant value and average'    
       properties: *airqualitymonitoring_-_properties_-_ambientnoisetsa_-_properties    
       type: object    
       x-ngsi:    
         type: Property    
     pm25TSA:    
-      description: 'Object defining the possible processed results based on a measurement'    
+      description: 'Object defining the temporal processing of a basic property during a period. It provides Maximum, minimum, instant value and average'    
       properties: *airqualitymonitoring_-_properties_-_ambientnoisetsa_-_properties    
       type: object    
       x-ngsi:    
@@ -298,7 +298,7 @@ AirQualityMonitoring:
         model: https://schema.org/Number    
         type: Property    
     relativeHumidityTSA:    
-      description: 'Object defining the possible processed results based on a measurement'    
+      description: 'Object defining the temporal processing of a basic property during a period. It provides Maximum, minimum, instant value and average'    
       properties: *airqualitymonitoring_-_properties_-_ambientnoisetsa_-_properties    
       type: object    
       x-ngsi:    
@@ -316,7 +316,7 @@ AirQualityMonitoring:
       x-ngsi:    
         type: Property    
     so2TSA:    
-      description: 'Object defining the possible processed results based on a measurement'    
+      description: 'Object defining the temporal processing of a basic property during a period. It provides Maximum, minimum, instant value and average'    
       properties: *airqualitymonitoring_-_properties_-_ambientnoisetsa_-_properties    
       type: object    
       x-ngsi:    
@@ -341,7 +341,7 @@ AirQualityMonitoring:
       x-ngsi:    
         type: Property    
     uvTSA:    
-      description: 'Object defining the possible processed results based on a measurement'    
+      description: 'Object defining the temporal processing of a basic property during a period. It provides Maximum, minimum, instant value and average'    
       properties: *airqualitymonitoring_-_properties_-_ambientnoisetsa_-_properties    
       type: object    
       x-ngsi:    
