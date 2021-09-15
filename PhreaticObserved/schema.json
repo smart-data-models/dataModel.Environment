@@ -88,5 +88,12 @@
                 }
             }
         }
+    ],
+    "required": [
+        "id",
+        "type",
+        "location",
+        "dateObserved",
+        "measurementType"
     ]
 }
