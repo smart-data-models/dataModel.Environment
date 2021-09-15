@@ -102,5 +102,12 @@
                 }
             }
         }
+    ],
+    "required": [
+        "id",
+        "type",
+        "location",
+        "dateObserved",
+        "rainFallRadarContent"
     ]
 }
