@@ -110,5 +110,11 @@
                 }
             }
         }
+    ],
+    "required": [
+        "id",
+        "type",
+        "dateObserved",
+        "location"
     ]
 }
