@@ -1,3 +1,4 @@
 {
-    "$schema": "http://json-schema.org/schema#"
+    "$schema": "http://json-schema.org/schema#",
+    "$id ": "https://smart-data-models.github.io/data-models/Environment/PhreaticObserved/schema.json"
 }
