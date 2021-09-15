@@ -4,5 +4,6 @@
     "modelTags": "",
     "$id": "https://smart-data-models.github.io/dataModel.Environment/AirQualityMonitoring/schema.json",
     "title": " Smart Data Models - Air quality Monitoring",
-    "description": "Air Quality Monitoring (AQM) Data Model."
+    "description": "Air Quality Monitoring (AQM) Data Model.",
+    "type": "object"
 }
