@@ -1,5 +1,6 @@
 {
     "$schema": "http://json-schema.org/schema#",
     "modelTags": "",
-    "$id": "https://smart-data-models.github.io/data-models/Environment/WaterObserved/schema.js"
+    "$id": "https://smart-data-models.github.io/data-models/Environment/WaterObserved/schema.js",
+    "$schemaVersion": "0.0.2"
 }
