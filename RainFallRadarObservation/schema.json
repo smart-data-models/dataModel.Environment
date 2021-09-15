@@ -1,5 +1,6 @@
 {
     "$schema": "http://json-schema.org/schema#",
     "modelTags": "",
-    "$id": "https://smart-data-models.github.io/dataModel.Weather/RainFallRadarObserved/schema.json"
+    "$id": "https://smart-data-models.github.io/dataModel.Weather/RainFallRadarObserved/schema.json",
+    "title": "Rain Fall Radar Observation schema"
 }
