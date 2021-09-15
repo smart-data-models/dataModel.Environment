@@ -5,5 +5,98 @@
     "$id": "https://smart-data-models.github.io/dataModel.Environment/NoiseLevelObserved/schema.json",
     "title": " - Noise Level observed schema",
     "description": "An observation of those acoustic parameters that estimate noise pressure levels at a certain place and time. ",
-    "type": "object"
+    "type": "object",
+    "allOf": [
+        {
+            "$ref": "https://smart-data-models.github.io/data-models/common-schema.json#/definitions/GSMA-Commons"
+        },
+        {
+            "$ref": "https://smart-data-models.github.io/data-models/common-schema.json#/definitions/Location-Commons"
+        },
+        {
+            "properties": {
+                "type": {
+                    "type": "string",
+                    "enum": [
+                        "NoiseLevelObserved"
+                    ],
+                    "description": "Property. NGSI Entity type"
+                },
+                "dateObserved": {
+                    "type": "string",
+                    "description": "Property. The date and time of this observation represented by an ISO8601 interval."
+                },
+                "dateObservedFrom": {
+                    "type": "string",
+                    "format": "date-time",
+                    "description": "Property. Model:'https://schema.org/DateTime'. Observation period start date and time."
+                },
+                "dateObservedTo": {
+                    "type": "string",
+                    "format": "date-time",
+                    "description": "Property. Model:'https://schema.org/Text'. Observation period end date and time. See dateObserved."
+                },
+                "sonometerClass": {
+                    "type": "string",
+                    "enum": [
+                        "0",
+                        "1",
+                        "2"
+                    ],
+                    "description": "Property. Model:'https://schema.org/Text'. Class of sonometer (0, 1, 2) according to ANSI used for taking this observation"
+                },
+                "refDevice": {
+                    "anyOf": [
+                        {
+                            "type": "string",
+                            "minLength": 1,
+                            "maxLength": 256,
+                            "pattern": "^[\\w\\-\\.\\{\\}\\$\\+\\*\\[\\]`|~^@!,:\\\\]+$",
+                            "description": "Property. Identifier format of any NGSI entity"
+                        },
+                        {
+                            "type": "string",
+                            "format": "uri",
+                            "description": "Property. Identifier format of any NGSI entity"
+                        }
+                    ],
+                    "description": "Relationship. A reference to the device which captured this observation."
+                },
+                "refPointOfInterest": {
+                    "anyOf": [
+                        {
+                            "type": "string",
+                            "minLength": 1,
+                            "maxLength": 256,
+                            "pattern": "^[\\w\\-\\.\\{\\}\\$\\+\\*\\[\\]`|~^@!,:\\\\]+$",
+                            "description": "Property. Identifier format of any NGSI entity"
+                        },
+                        {
+                            "type": "string",
+                            "format": "uri",
+                            "description": "Property. Identifier format of any NGSI entity"
+                        }
+                    ],
+                    "description": "Relationship. A reference to a point of interest associated to this observation."
+                },
+                "refWeatherObserved": {
+                    "anyOf": [
+                        {
+                            "type": "string",
+                            "minLength": 1,
+                            "maxLength": 256,
+                            "pattern": "^[\\w\\-\\.\\{\\}\\$\\+\\*\\[\\]`|~^@!,:\\\\]+$",
+                            "description": "Property. Identifier format of any NGSI entity"
+                        },
+                        {
+                            "type": "string",
+                            "format": "uri",
+                            "description": "Property. Identifier format of any NGSI entity"
+                        }
+                    ],
+                    "description": "Relationship. Reference to the associated weather conditions."
+                }
+            }
+        }
+    ]
 }
