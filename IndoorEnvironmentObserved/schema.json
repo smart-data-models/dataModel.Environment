@@ -4,5 +4,6 @@
     "$id": "https://smart-data-models.github.io/data-models/dataModel.Environment/schema.json",
     "$schemaVersion": "0.0.1",
     "title": "Smart Data Models - Indoor air and climate observed conditions schema",
-    "description": "An observation of air and climate conditions for indoor environments."
+    "description": "An observation of air and climate conditions for indoor environments.",
+    "type": "object"
 }
