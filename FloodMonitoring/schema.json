@@ -4,5 +4,6 @@
     "modelTags": "",
     "$id": "https://smart-data-models.github.io/dataModel.Environment/FloodMonitoring/schema.json",
     "title": " Smart Data Models - FloodMonitoring",
-    "description": "Flood Sensor Data Model intended to represent the level of flooding w.r.t water flow/level at a certain water mass(river, lake,etc.).."
+    "description": "Flood Sensor Data Model intended to represent the level of flooding w.r.t water flow/level at a certain water mass(river, lake,etc.)..",
+    "type": "object"
 }
