@@ -4,5 +4,103 @@
     "$id": "https://smart-data-models.github.io/dataModel.Weather/RainFallRadarObserved/schema.json",
     "title": "Rain Fall Radar Observation schema",
     "description": "The Data Model is intended to measure the water slides on a predefined area by a set of 4 Location represented by a Geo property format.",
-    "type": "object"
+    "type": "object",
+    "allOf": [
+        {
+            "$ref": "https://smart-data-models.github.io/data-models/common-schema.json#/definitions/GSMA-Commons"
+        },
+        {
+            "$ref": "https://smart-data-models.github.io/data-models/common-schema.json#/definitions/Location-Commons"
+        },
+        {
+            "$ref": "https://smart-data-models.github.io/dataModel.Weather/weather-schema.json#/definitions/Weather-Commons"
+        },
+        {
+            "properties": {
+                "type": {
+                    "type": "string",
+                    "enum": [
+                        "RainFallRadarObserved"
+                    ],
+                    "description": "Property. NGSI Entity type. It has to be RainFallRadarObserved"
+                },
+                "refDevice": {
+                    "anyOf": [
+                        {
+                            "type": "string",
+                            "minLength": 1,
+                            "maxLength": 256,
+                            "pattern": "^[\\w\\-\\.\\{\\}\\$\\+\\*\\[\\]`|~^@!,:\\\\]+$",
+                            "description": "Property. Identifier format of any NGSI entity"
+                        },
+                        {
+                            "type": "string",
+                            "format": "uri",
+                            "description": "Property. Identifier format of any NGSI entity"
+                        }
+                    ],
+                    "description": "Relationship. Reference to a [Device](https://github.com/smart-data-models/dataModel.Device/blob/master/Device/doc/spec.md) which captured this observation. Model:'https://schema.org/URL'"
+                },
+                "refPointOfInterest": {
+                    "anyOf": [
+                        {
+                            "type": "string",
+                            "minLength": 1,
+                            "maxLength": 256,
+                            "pattern": "^[\\w\\-\\.\\{\\}\\$\\+\\*\\[\\]`|~^@!,:\\\\]+$",
+                            "description": "Property. Identifier format of any NGSI entity"
+                        },
+                        {
+                            "type": "string",
+                            "format": "uri",
+                            "description": "Property. Identifier format of any NGSI entity"
+                        }
+                    ],
+                    "description": "Relationship. Reference to a [PointOfInterest](https://github.com/smart-data-models/dataModel.PointOfInterest/blob/master/PointOfInterest/doc/spec.md) linked with the observation. Model:'https://schema.org/URL'"
+                },
+                "dateObserved": {
+                    "type": "string",
+                    "format": "date-time",
+                    "description": "Property. The date and time of this observation in ISO8601 UTC format. It can be represented by a specific time instant or by an ISO8601 interval. Model:'https://schema.org/DateTime'"
+                },
+                "dateObservedFrom": {
+                    "type": "string",
+                    "format": "date-time",
+                    "description": "Property. Observation period start date and time. See dateObserved. It can be represented by a specific time instant or by an ISO8601 interval. Model:'https://schema.org/DateTime'"
+                },
+                "dateObservedTo": {
+                    "type": "string",
+                    "format": "date-time",
+                    "description": "Property. Observation period end date and time. See dateObserved. It can be represented by a specific time instant or by an ISO8601 interval. Model:'https://schema.org/DateTime'"
+                },
+                "rainFallRadarContent": {
+                    "type": "string",
+                    "description": "Property. Path and filename which provided the information observed. Model:'https://schema.org/Text'"
+                },
+                "numberOfRow": {
+                    "type": "number",
+                    "minimum": 0,
+                    "description": "Property. Number of Rows allowing the reading of the `rainFallradarContent` attribute. Model:'https://schema.org/Number'"
+                },
+                "numberOfCol": {
+                    "type": "number",
+                    "minimum": 0,
+                    "description": "Property. Number of Cols allowing the reading of the `rainFallradarContent` attribute. Model:'https://schema.org/Number'"
+                },
+                "cellsSize": {
+                    "type": "number",
+                    "description": "Property. Size of each cell constituting the radar. The unit code (text) of measurement is given using the [UN/CEFACT Common Codes](http://wiki.goodrelations-vocabulary.org/Documentation/UN/CEFACT_Common_Codes). For instance, **MTR** represents **Meters**. Model:'https://schema.org/Number'"
+                },
+                "mapScale": {
+                    "type": "string",
+                    "description": "Property. Map Scale. Relationship between the length of the cellSize and its representation on the map. Model:'https://schema.org/Text'"
+                },
+                "measuredArea": {
+                    "type": "number",
+                    "minimum": 0,
+                    "description": "Property. Reference of the surface measured. The unit code (text) is given using the [UN/CEFACT Common Codes](http://wiki.goodrelations-vocabulary.org/Documentation/UN/CEFACT_Common_Codes). For instance, **MTK** represents Square Meters. Model:'https://schema.org/Number'. Units:'square meters'"
+                }
+            }
+        }
+    ]
 }
