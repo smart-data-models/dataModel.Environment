@@ -5,5 +5,56 @@
     "$id": "https://smart-data-models.github.io/dataModel.Environment/AeroAllergenObserved/schema.json",
     "title": " - Pollen levels observed schema",
     "description": "An observation of pollen levels at a certain place and time.",
-    "type": "object"
+    "type": "object",
+    "allOf": [
+        {
+            "$ref": "https://smart-data-models.github.io/data-models/common-schema.json#/definitions/GSMA-Commons"
+        },
+        {
+            "$ref": "https://smart-data-models.github.io/data-models/common-schema.json#/definitions/Location-Commons"
+        },
+        {
+            "properties": {
+                "type": {
+                    "type": "string",
+                    "enum": [
+                        "AeroAllergenObserved"
+                    ],
+                    "description": "Property. NGSI Entity type"
+                },
+                "dateObserved": {
+                    "type": "string",
+                    "description": "Property. The date and time of this observation in ISO8601 UTCformat. It can be represented by a specific time instant or by an ISO8601 interval."
+                },
+                "allergenRisk": {
+                    "type": "string",
+                    "enum": [
+                        "none",
+                        "low",
+                        "moderate",
+                        "high",
+                        "veryHigh"
+                    ],
+                    "description": "Property. Overall allergen risk corresponding to the aero allergens observed."
+                },
+                "refDevice": {
+                    "anyOf": [
+                        {
+                            "type": "string",
+                            "minLength": 1,
+                            "maxLength": 256,
+                            "pattern": "^[\\w\\-\\.\\{\\}\\$\\+\\*\\[\\]`|~^@!,:\\\\]+$",
+                            "description": "Property. Identifier format of any NGSI entity"
+                        },
+                        {
+                            "type": "string",
+                            "format": "uri",
+                            "description": "Property. Identifier format of any NGSI entity"
+                        }
+                    ],
+                    "description": "Relationship. A reference to the device(s) which captured this observation."
+                }
+            }
+        }
+    ]
 }
