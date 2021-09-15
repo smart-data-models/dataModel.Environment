@@ -4,5 +4,6 @@
     "modelTags": "",
     "$id": "https://smart-data-models.github.io/dataModel.Environment/AeroAllergenObserved/schema.json",
     "title": " - Pollen levels observed schema",
-    "description": "An observation of pollen levels at a certain place and time."
+    "description": "An observation of pollen levels at a certain place and time.",
+    "type": "object"
 }
