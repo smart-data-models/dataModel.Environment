@@ -3,5 +3,6 @@
     "modelTags": "",
     "$id": "https://smart-data-models.github.io/dataModel.Weather/RainFallRadarObserved/schema.json",
     "title": "Rain Fall Radar Observation schema",
-    "description": "The Data Model is intended to measure the water slides on a predefined area by a set of 4 Location represented by a Geo property format."
+    "description": "The Data Model is intended to measure the water slides on a predefined area by a set of 4 Location represented by a Geo property format.",
+    "type": "object"
 }
