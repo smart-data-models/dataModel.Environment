@@ -5,5 +5,112 @@
     "$schemaVersion": "0.0.2",
     "title": "Water Observed schema",
     "description": " Water observation data model is intended to represent the parameters of flow, level and volume of water observed, as well as the swell information, over a fixed or variable area. This observation also includes the masses of floating objects on this area. The data collected is provided by Sensors, Cameras,Water stations positioned at specific or sensitive locations for rivers, streams, torrent, lakes, seas, etc.",
-    "type": "object"
+    "type": "object",
+    "allOf": [
+        {
+            "$ref": "https://smart-data-models.github.io/data-models/common-schema.json#/definitions/GSMA-Commons"
+        },
+        {
+            "$ref": "https://smart-data-models.github.io/data-models/common-schema.json#/definitions/Location-Commons"
+        },
+        {
+            "properties": {
+                "type": {
+                    "type": "string",
+                    "enum": [
+                        "WaterObserved"
+                    ],
+                    "description": "Property. NGSI Entity type. It has to be WaterObserved"
+                },
+                "refDevice": {
+                    "anyOf": [
+                        {
+                            "type": "string",
+                            "minLength": 1,
+                            "maxLength": 256,
+                            "pattern": "^[\\w\\-\\.\\{\\}\\$\\+\\*\\[\\]`|~^@!,:\\\\]+$",
+                            "description": "Property. Identifier format of any NGSI entity"
+                        },
+                        {
+                            "type": "string",
+                            "format": "uri",
+                            "description": "Property. Identifier format of any NGSI entity"
+                        }
+                    ],
+                    "description": "Relationship. A reference to a point of interest associated to this observation."
+                },
+                "dateObserved": {
+                    "type": "string",
+                    "format": "date-time",
+                    "description": "Property. Model:'https://schema.org/DateTime'. Date and time of this observation represented by an ISO8601 UTC format."
+                },
+                "dateObservedFrom": {
+                    "type": "string",
+                    "format": "date-time",
+                    "description": "Property. Model:'https://schema.org/DateTime'. Observation period : Start date and time in an ISO8601 UTC format."
+                },
+                "dateObservedTo": {
+                    "type": "string",
+                    "format": "date-time",
+                    "description": "Property. Model:'https://schema.org/DateTime'. Observation period : End date and time in an ISO8601 UTC format."
+                },
+                "flow": {
+                    "type": "number",
+                    "minimum": 0,
+                    "description": "Property. Model:'https://schema.org/Number'. Water Flow observed. The unit code (text) of measurement given using the UN/CEFACAT"
+                },
+                "height": {
+                    "type": "number",
+                    "minimum": 0,
+                    "description": "Property. Model:'https://schema.org/height'. Water height - Level reach on alert coasts."
+                },
+                "swellHeight": {
+                    "type": "number",
+                    "minimum": 0,
+                    "description": "Property. Model:'https://schema.org/height'. Swell height observed."
+                },
+                "swellPeriod": {
+                    "type": "number",
+                    "minimum": 0,
+                    "description": "Property. Model:'https://schema.org/Number'. Swells period observed."
+                },
+                "swellDirection": {
+                    "type": "number",
+                    "minimum": 0,
+                    "maximum": 360,
+                    "description": "Property. Model:'https://schema.org/Number'. Swells Direction observed."
+                },
+                "waveLength": {
+                    "type": "number",
+                    "minimum": 0,
+                    "description": "Property. Model:'https://schema.org/Number'. Wave Length observed. "
+                },
+                "measuredArea": {
+                    "type": "number",
+                    "minimum": 0,
+                    "description": "Property. Model:'https://schema.org/Number'. Reference of the surface measured. Units:'square meters'. The unit code (text) of measurement given using the [UN/CEFACT Common Codes](http://wiki.goodrelations-vocabulary.org/Documentation/UN/CEFACT_Common_Codes) (max. 3 characters). For instance, <code>MTK</code> represents M\u00b2."
+                },
+                "objectArea": {
+                    "type": "number",
+                    "minimum": 0,
+                    "description": "Property. Model:'https://schema.org/Number'. Percentage occupied by floating object in the area. The unit code (text) of measurement given using the [UN/CEFACT Common Codes](http://wiki.goodrelations-vocabulary.org/Documentation/UN/CEFACT_Common_Codes) (max. 3 characters). For instance, <code>P1</code> represents Percentage."
+                },
+                "objectHeightAverage": {
+                    "type": "number",
+                    "minimum": 0,
+                    "description": "Property. Model:'https://schema.org/Number'. Average height raised. Units:'meters'. The unit code (text) of measurement given using the [UN/CEFACT Common Codes](http://wiki.goodrelations-vocabulary.org/Documentation/UN/CEFACT_Common_Codes) (max. 3 characters). For instance, <code>MTR</code> represents Meter."
+                },
+                "objectHeightMax": {
+                    "type": "number",
+                    "minimum": 0,
+                    "description": "Property. Model:'https://schema.org/Number'. Maximum height raised. Units:'meters'. The unit code (text) of measurement given using the [UN/CEFACT Common Codes](http://wiki.goodrelations-vocabulary.org/Documentation/UN/CEFACT_Common_Codes) (max. 3 characters). For instance, <code>MTR</code> represents Meter."
+                },
+                "objectVolume": {
+                    "type": "number",
+                    "minimum": 0,
+                    "description": "Property. Model:'https://schema.org/Number'. Estimated volume raised. The unit code (text) of measurement given using the [UN/CEFACT Common Codes](http://wiki.goodrelations-vocabulary.org/Documentation/UN/CEFACT_Common_Codes) (max. 3 characters). For instance, <code>MTQ</code> represents Cubic Meters. Units:'cubic meters'"
+                }
+            }
+        }
+    ]
 }
