@@ -98,5 +98,12 @@
                 }
             }
         }
+    ],
+    "required": [
+        "id",
+        "type",
+        "dateObservedFrom",
+        "dateObservedTo",
+        "location"
     ]
 }
