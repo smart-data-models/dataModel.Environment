@@ -5,5 +5,110 @@
     "$schemaVersion": "0.0.1",
     "title": "Smart Data Models - Indoor air and climate observed conditions schema",
     "description": "An observation of air and climate conditions for indoor environments.",
-    "type": "object"
+    "type": "object",
+    "allOf": [
+        {
+            "$ref": "https://smart-data-models.github.io/data-models/common-schema.json#/definitions/GSMA-Commons"
+        },
+        {
+            "$ref": "https://smart-data-models.github.io/data-models/common-schema.json#/definitions/Location-Commons"
+        },
+        {
+            "properties": {
+                "type": {
+                    "type": "string",
+                    "enum": [
+                        "IndoorEnvironmentObserved"
+                    ],
+                    "description": "Property. NGSI Entity type"
+                },
+                "dateObserved": {
+                    "type": "string",
+                    "description": "Property. Date and time of the observation in ISO8601"
+                },
+                "refDevice": {
+                    "anyOf": [
+                        {
+                            "type": "string",
+                            "minLength": 1,
+                            "maxLength": 256,
+                            "pattern": "^[\\w\\-\\.\\{\\}\\$\\+\\*\\[\\]`|~^@!,:\\\\]+$",
+                            "description": "Property. Identifier format of any NGSI entity"
+                        },
+                        {
+                            "type": "string",
+                            "format": "uri",
+                            "description": "Property. Identifier format of any NGSI entity"
+                        }
+                    ],
+                    "description": "Relationship. A reference to the device(s) which captured this observation."
+                },
+                "refPointOfInterest": {
+                    "anyOf": [
+                        {
+                            "type": "string",
+                            "minLength": 1,
+                            "maxLength": 256,
+                            "pattern": "^[\\w\\-\\.\\{\\}\\$\\+\\*\\[\\]`|~^@!,:\\\\]+$",
+                            "description": "Property. Identifier format of any NGSI entity"
+                        },
+                        {
+                            "type": "string",
+                            "format": "uri",
+                            "description": "Property. Identifier format of any NGSI entity"
+                        }
+                    ],
+                    "description": "Relationship. A reference to a point of interest associated to this observation."
+                },
+                "sensorPlacement": {
+                    "type": "string",
+                    "enum": [
+                        "northWall",
+                        "southWall",
+                        "eastWall",
+                        "westWall",
+                        "center",
+                        "floor",
+                        "roof",
+                        "ceiling"
+                    ],
+                    "description": "Property. Position of the sensor"
+                },
+                "sensorHeight": {
+                    "type": "number",
+                    "minimum": 0,
+                    "description": "Property. Height of the sensor (distance from the floor)"
+                },
+                "peopleCount": {
+                    "type": "number",
+                    "minimum": 0,
+                    "description": "Property. Number of people in the room"
+                },
+                "temperature": {
+                    "type": "number",
+                    "minimum": 0,
+                    "description": "Property. Measured temperature"
+                },
+                "relativeHumidity": {
+                    "type": "number",
+                    "minimum": 0,
+                    "description": "Property. Measured humidity"
+                },
+                "atmosphericPressure": {
+                    "type": "number",
+                    "minimum": 0,
+                    "description": "Property. Measured atmospheric pressure"
+                },
+                "illuminance": {
+                    "type": "number",
+                    "minimum": 0,
+                    "description": "Property. Measured illuminance"
+                },
+                "co2": {
+                    "type": "number",
+                    "description": "Property. The measured interior C02 concentration nominally in mg/L. Units:'mg per liter'"
+                }
+            }
+        }
+    ]
 }
