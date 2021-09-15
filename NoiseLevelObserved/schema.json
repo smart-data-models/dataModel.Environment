@@ -4,5 +4,6 @@
     "modelTags": "",
     "$id": "https://smart-data-models.github.io/dataModel.Environment/NoiseLevelObserved/schema.json",
     "title": " - Noise Level observed schema",
-    "description": "An observation of those acoustic parameters that estimate noise pressure levels at a certain place and time. "
+    "description": "An observation of those acoustic parameters that estimate noise pressure levels at a certain place and time. ",
+    "type": "object"
 }
