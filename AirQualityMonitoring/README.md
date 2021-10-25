@@ -8,7 +8,7 @@ Air Quality Monitoring (AQM) Data Model.
 This data model will be extended when new polutants' measurements will be required
 ### Specification
 
-Link to the [interactive specification](https://swagger.lab.fiware.org/?url=https://github.com/smart-data-models/dataModel.Environment/blob/master/AirQualityMonitoring/swagger.yaml)
+Link to the [interactive specification](https://swagger.lab.fiware.org/?url=https://raw.githubusercontent.com/smart-data-models/dataModel.Environment/master/AirQualityMonitoring/swagger.yaml)
 
 Link to the [specification](https://github.com/smart-data-models/dataModel.Environment/blob/master/AirQualityMonitoring/doc/spec.md)
 
