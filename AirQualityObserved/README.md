@@ -8,7 +8,7 @@ An observation of air quality conditions at a certain place and time.
 This data model will be extended when new polutants' measurements will be required. This source http://dd.eionet.europa.eu/vocabulary/aq/pollutant/view?page=1#vocabularyConceptResults provide with the new names and definitions.
 ### Specification
 
-Link to the [interactive specification](https://swagger.lab.fiware.org/?url=https://github.com/smart-data-models/dataModel.Environment/blob/master/AirQualityObserved/swagger.yaml)
+Link to the [interactive specification](https://swagger.lab.fiware.org/?url=https://raw.githubusercontent.com/smart-data-models/dataModel.Environment/master/AirQualityObserved/swagger.yaml)
 
 Link to the [specification](https://github.com/smart-data-models/dataModel.Environment/blob/master/AirQualityObserved/doc/spec.md)
 
