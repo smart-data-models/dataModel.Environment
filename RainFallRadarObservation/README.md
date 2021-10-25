@@ -6,7 +6,7 @@ Version: 0.0.1
 The Data Model is intended to measure the water slides on a predefined area by a set of 4 Location represented by a Geo property format.
 ### Specification
 
-Link to the [interactive specification](https://swagger.lab.fiware.org/?url=https://github.com/smart-data-models/dataModel.Environment/blob/master/RainFallRadarObservation/swagger.yaml)
+Link to the [interactive specification](https://swagger.lab.fiware.org/?url=https://raw.githubusercontent.com/smart-data-models/dataModel.Environment/master/RainFallRadarObservation/swagger.yaml)
 
 Link to the [specification](https://github.com/smart-data-models/dataModel.Environment/blob/master/RainFallRadarObservation/doc/spec.md)
 
