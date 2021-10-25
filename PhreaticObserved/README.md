@@ -6,7 +6,7 @@ Version: 0.0.1
 The Data Model is intended to measure, observe and control the level and quality of groundwater at a given time (T), by a fixed or mobile monitoring system. Depending on the device used, it is also possible to measure the quality of water such as its electrical conductivity, its salt content, its temperature, etc. In this case, the values measured are processed by the Data Model `WaterObserved` and `WaterQualityObserved`. Additional Information about Attributes: For attributes dedicated to water, a MetaData attribute can also be used. it contains the `TimeStamp` in seconds, the `qualification` and control `status` of the measurement.
 ### Specification
 
-Link to the [interactive specification](https://swagger.lab.fiware.org/?url=https://github.com/smart-data-models/dataModel.Environment/blob/master/PhreaticObserved/swagger.yaml)
+Link to the [interactive specification](https://swagger.lab.fiware.org/?url=https://raw.githubusercontent.com/smart-data-models/dataModel.Environment/master/PhreaticObserved/swagger.yaml)
 
 Link to the [specification](https://github.com/smart-data-models/dataModel.Environment/blob/master/PhreaticObserved/doc/spec.md)
 
