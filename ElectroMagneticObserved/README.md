@@ -6,7 +6,7 @@ Version: 0.1.0
 The Data Model is intended to measure excessive electric and magnetic fields (EMFs), or radiation in a work or public environment according to the level of exposure to electromagnetic fields on the air. The frequency of the hertzian waves is conventionally lower than 300 GHz, propagating in space without artificial guide. They are between 9 kHz and 300 GHz.
 ### Specification
 
-Link to the [interactive specification](https://swagger.lab.fiware.org/?url=https://github.com/smart-data-models/dataModel.Environment/blob/master/ElectroMagneticObserved/swagger.yaml)
+Link to the [interactive specification](https://swagger.lab.fiware.org/?url=https://raw.githubusercontent.com/smart-data-models/dataModel.Environment/master/ElectroMagneticObserved/swagger.yaml)
 
 Link to the [specification](https://github.com/smart-data-models/dataModel.Environment/blob/master/ElectroMagneticObserved/doc/spec.md)
 
