@@ -6,7 +6,7 @@ Version: 0.0.1
 An observation of air and climate conditions for indoor environments.
 ### Specification
 
-Link to the [interactive specification](https://swagger.lab.fiware.org/?url=https://github.com/smart-data-models/dataModel.Environment/blob/master/IndoorEnvironmentObserved/swagger.yaml)
+Link to the [interactive specification](https://swagger.lab.fiware.org/?url=https://raw.githubusercontent.com/smart-data-models/dataModel.Environment/master/IndoorEnvironmentObserved/swagger.yaml)
 
 Link to the [specification](https://github.com/smart-data-models/dataModel.Environment/blob/master/IndoorEnvironmentObserved/doc/spec.md)
 
