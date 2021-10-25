@@ -6,7 +6,7 @@ Version: 0.0.1
 An observation of those acoustic parameters that estimate noise pressure levels at a certain place and time. 
 ### Specification
 
-Link to the [interactive specification](https://swagger.lab.fiware.org/?url=https://github.com/smart-data-models/dataModel.Environment/blob/master/NoiseLevelObserved/swagger.yaml)
+Link to the [interactive specification](https://swagger.lab.fiware.org/?url=https://raw.githubusercontent.com/smart-data-models/dataModel.Environment/master/NoiseLevelObserved/swagger.yaml)
 
 Link to the [specification](https://github.com/smart-data-models/dataModel.Environment/blob/master/NoiseLevelObserved/doc/spec.md)
 
