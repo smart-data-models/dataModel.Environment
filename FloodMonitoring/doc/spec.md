@@ -36,51 +36,67 @@ FloodMonitoring:
         streetAddress:    
           description: 'Property. The street address. Model:''https://schema.org/streetAddress'''    
           type: string    
-      type: Property    
+      type: object    
       x-ngsi:    
         model: https://schema.org/address    
+        type: Property    
     alertLevel:    
       description: 'Reference alert level threshold value set for the sensing station corresponding to this observation. An Alert signal is generated if the current level crosses the alert level threshold value.'    
-      type: Property    
+      type: number    
       x-ngsi:    
         model: https://schema.org/Number    
+        type: Property    
     alternateName:    
       description: 'An alternative name for this item'    
-      type: Property    
+      type: string    
+      x-ngsi:    
+        type: Property    
     areaServed:    
       description: 'The geographic area where a service or offered item is provided'    
-      type: Property    
+      type: string    
       x-ngsi:    
         model: https://schema.org/Text    
+        type: Property    
     currentLevel:    
       description: 'Current flooding level indicated by the sensing station corresponding to this observation, computed using referenceLevel and measuredDistance(currentLevel = referenceLevel - measuredDistance).'    
-      type: Property    
+      type: number    
       x-ngsi:    
         model: https://schema.org/Number    
+        type: Property    
     dangerLevel:    
       description: 'Reference danger level threshold value set for the sensing station corresponding to this observation. Flood level status is marked danger if the current level crosses the danger level threshold value.'    
-      type: Property    
+      type: number    
       x-ngsi:    
         model: https://schema.org/Number    
+        type: Property    
     dataProvider:    
       description: 'A sequence of characters identifying the provider of the harmonised data entity.'    
-      type: Property    
+      type: string    
+      x-ngsi:    
+        type: Property    
     dateCreated:    
       description: 'Entity creation timestamp. This will usually be allocated by the storage platform.'    
       format: date-time    
-      type: Property    
+      type: string    
+      x-ngsi:    
+        type: Property    
     dateModified:    
       description: 'Timestamp of the last modification of the entity. This will usually be allocated by the storage platform.'    
       format: date-time    
-      type: Property    
+      type: string    
+      x-ngsi:    
+        type: Property    
     description:    
       description: 'A description of this item'    
-      type: Property    
+      type: string    
+      x-ngsi:    
+        type: Property    
     floodLevelStatus:    
       description: 'Flood level status indication given by the flood sensing device. The status is marked Danger if the current level is higher than the danger level threshold value.'    
-      type: Property    
+      type: string    
       x-ngsi:    
         model: https://schema.org/Text    
+        type: Property    
     id:    
       anyOf: &floodmonitoring_-_properties_-_owner_-_items_-_anyof    
         - description: 'Property. Identifier format of any NGSI entity'    
@@ -92,7 +108,8 @@ FloodMonitoring:
           format: uri    
           type: string    
       description: 'Unique identifier of the entity'    
-      type: Property    
+      x-ngsi:    
+        type: Property    
     location:    
       description: 'Geojson reference to the item. It can be Point, LineString, Polygon, MultiPoint, MultiLineString or MultiPolygon'    
       oneOf:    
@@ -244,32 +261,40 @@ FloodMonitoring:
             - coordinates    
           title: 'GeoJSON MultiPolygon'    
           type: object    
-      type: Geoproperty    
+      x-ngsi:    
+        type: Geoproperty    
     measuredDistance:    
       description: 'Describes the distance measured by the sensor, from the sensor tip to the upper surface of water.'    
-      type: Property    
+      type: number    
       x-ngsi:    
         model: https://schema.org/Number    
+        type: Property    
     name:    
       description: 'The name of this item.'    
-      type: Property    
+      type: string    
+      x-ngsi:    
+        type: Property    
     observationDateTime:    
       description: 'Last reported time of observation.'    
       format: date-time    
-      type: Property    
+      type: string    
       x-ngsi:    
         model: https://schema.org/DateTime    
+        type: Property    
     owner:    
       description: 'A List containing a JSON encoded sequence of characters referencing the unique Ids of the owner(s)'    
       items:    
         anyOf: *floodmonitoring_-_properties_-_owner_-_items_-_anyof    
         description: 'Property. Unique identifier of the entity'    
-      type: Property    
+      type: array    
+      x-ngsi:    
+        type: Property    
     referenceLevel:    
       description: 'Describes the vertical distance from river bed to sensor tip.'    
-      type: Property    
+      type: number    
       x-ngsi:    
         model: https://schema.org/Number    
+        type: Property    
     seeAlso:    
       description: 'list of uri pointing to additional resources about the item'    
       oneOf:    
@@ -280,20 +305,26 @@ FloodMonitoring:
           type: array    
         - format: uri    
           type: string    
-      type: Property    
+      x-ngsi:    
+        type: Property    
     source:    
       description: 'A sequence of characters giving the original source of the entity data as a URL. Recommended to be the fully qualified domain name of the source provider, or the URL to the source object.'    
-      type: Property    
+      type: string    
+      x-ngsi:    
+        type: Property    
     stationID:    
       description: 'A unique anonymous identifier assigned to the station corresponding to this observation.'    
-      type: Property    
+      type: string    
       x-ngsi:    
         model: https://schema.org/Text    
+        type: Property    
     type:    
       description: 'It has to be FloodMonitoring. NGSI Entity type.'    
       enum:    
         - FloodMonitoring    
-      type: Property    
+      type: string    
+      x-ngsi:    
+        type: Property    
   required:    
     - id    
     - type    
