@@ -99,6 +99,11 @@ RainFallRadarObservation:
       type: number
       x-ngsi:
         type: Property
+    gustSpeed:
+      description: 'A sudden burst of high-speed wind over the observed average wind speed lasting only for a few seconds.'
+      type: number
+      x-ngsi:
+        type: Property
     id:
       anyOf: &rainfallradarobservation_-_properties_-_owner_-_items_-_anyof
         - description: 'Property. Identifier format of any NGSI entity'
@@ -348,7 +353,7 @@ RainFallRadarObservation:
         model: https://schema.org/URL
         type: Relationship
     relativeHumidity:
-      description: 'Humidity in the Air'
+      description: 'Humidity in the Air. Observed instantaneous relative humidity (water vapour in air)'
       maximum: 1
       minimum: 0
       type: number
@@ -427,3 +432,9 @@ RainFallRadarObservation:
     - dateObserved
     - rainFallRadarContent
   type: object
+  x-derived-from: ""
+  x-disclaimer: 'Redistribution and use in source and binary forms, with or without modification, are permitted  provided that the license conditions are met. Copyleft (c) 2021 Contributors to Smart Data Models Program'
+  x-license-url: https://github.com/smart-data-models/dataModel.Environment/blob/master/RainFallRadarObservation/LICENSE.md
+  x-model-schema: https://smart-data-models.github.io/dataModel.Weather/RainFallRadarObserved/schema.json
+  x-model-tags: ""
+  x-version: 0.0.1
