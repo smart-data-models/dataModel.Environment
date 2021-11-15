@@ -2,11 +2,11 @@ Entität: RainFallRadarObservation
 =================================  
 [Offene Lizenz](https://github.com/smart-data-models//dataModel.Environment/blob/master/RainFallRadarObservation/LICENSE.md)  
 [Dokument automatisch generiert](https://docs.google.com/presentation/d/e/2PACX-1vTs-Ng5dIAwkg91oTTUdt8ua7woBXhPnwavZ0FxgR8BsAI_Ek3C5q97Nd94HS8KhP-r_quD4H0fgyt3/pub?start=false&loop=false&delayms=3000#slide=id.gb715ace035_0_60)  
-Globale Beschreibung: **Das Datenmodell dient dazu, die Wasserrutschen auf einem vordefinierten Gebiet durch einen Satz von 4 Standorten zu messen, die durch ein Geo-Eigenschaftsformat dargestellt werden.  
+Globale Beschreibung: **Das Datenmodell soll die Wasserrutschen auf einem vordefinierten Gebiet durch eine Reihe von 4 Standorten messen, die durch ein Geo-Eigenschaftsformat dargestellt werden.**  
 
 ## Liste der Eigenschaften  
 
-- `address`: Die Postanschrift  - `alternateName`: Ein alternativer Name für diesen Artikel  - `areaServed`: Das geografische Gebiet, in dem eine Dienstleistung oder ein angebotener Artikel erbracht wird  - `atmosphericPressure`: Der beobachtete atmosphärische Druck, gemessen in Hecto Pascals  - `cellsSize`: Größe jeder Zelle, aus der das Radar besteht. Der Einheitencode (Text) der Messung wird unter Verwendung der [UN/CEFACT Common Codes](http://wiki.goodrelations-vocabulary.org/Documentation/UN/CEFACT_Common_Codes) angegeben. Zum Beispiel steht **MTR** für **Meter**.  - `dataProvider`: Eine Folge von Zeichen, die den Anbieter der harmonisierten Dateneinheit identifiziert.  - `dateCreated`: Zeitstempel der Entitätserstellung. Dieser wird normalerweise von der Speicherplattform zugewiesen.  - `dateModified`: Zeitstempel der letzten Änderung der Entität. Dieser wird in der Regel von der Speicherplattform vergeben.  - `dateObserved`: Das Datum und die Uhrzeit dieser Beobachtung im ISO8601 UTC-Format. Sie kann durch einen bestimmten Zeitpunkt oder durch ein ISO8601-Intervall dargestellt werden  - `dateObservedFrom`: Startdatum und -uhrzeit des Beobachtungszeitraums. Siehe dateObserved. Er kann durch einen bestimmten Zeitpunkt oder durch ein ISO8601-Intervall dargestellt werden  - `dateObservedTo`: Datum und Uhrzeit des Endes des Beobachtungszeitraums. Siehe dateObserved. Es kann durch einen bestimmten Zeitpunkt oder durch ein ISO8601-Intervall dargestellt werden  - `description`: Eine Beschreibung dieses Artikels  - `feelLikesTemperature`: Temperaturaufwertung des Artikels  - `id`: Eindeutiger Bezeichner der Entität  - `illuminance`: (https://en.wikipedia.org/wiki/Illuminance), gemessen in Lux (lx) oder Lumen pro Quadratmeter (cd-sr-m-2).  - `location`: Geojson-Referenz auf das Element. Es kann Punkt, LineString, Polygon, MultiPoint, MultiLineString oder MultiPolygon sein  - `mapScale`: Kartenmaßstab. Beziehung zwischen der Länge der cellSize und ihrer Darstellung auf der Karte  - `measuredArea`: Referenz der gemessenen Oberfläche. Der Einheitencode (Text) wird unter Verwendung der [UN/CEFACT Common Codes] (http://wiki.goodrelations-vocabulary.org/Documentation/UN/CEFACT_Common_Codes) angegeben. Zum Beispiel steht **MTK** für Quadratmeter  - `name`: Der Name dieses Elements.  - `numberOfCol`: Anzahl der Spalten, die das Auslesen des Attributs `rainFallradarContent` ermöglichen  - `numberOfRow`: Anzahl der Zeilen, die das Lesen des Attributs `rainFallradarContent` erlauben  - `owner`: Eine Liste mit einer JSON-kodierten Zeichenfolge, die auf die eindeutigen Ids der Eigentümer verweist  - `rainFallRadarContent`: Pfad und Dateiname, der die beobachteten Informationen liefert  - `refDevice`: Verweis auf ein [Gerät](https://github.com/smart-data-models/dataModel.Device/blob/master/Device/doc/spec.md), das diese Beobachtung aufgezeichnet hat  - `refPointOfInterest`: Verweis auf einen [PointOfInterest](https://github.com/smart-data-models/dataModel.PointOfInterest/blob/master/PointOfInterest/doc/spec.md), der mit der Beobachtung verknüpft ist  - `relativeHumidity`: Feuchte in der Luft  - `seeAlso`: Liste von uri, die auf zusätzliche Ressourcen über das Element verweist  - `source`: Eine Folge von Zeichen, die die ursprüngliche Quelle der Entitätsdaten als URL angibt. Empfohlen wird der voll qualifizierte Domänenname des Quellanbieters oder die URL zum Quellobjekt.  - `temperature`: Temperatur des Artikels  - `type`: NGSI Entity-Typ. Es muss RainFallRadarObserved sein  - `visibility`: Kategorien der Sichtbarkeit  - `weatherType`: Textbeschreibung des Wetters  - `windDirection`: Richtung der Windwette  - `windSpeed`: Intensität des Windes    
+- `address`: Die Postanschrift  - `alternateName`: Ein alternativer Name für diesen Artikel  - `areaServed`: Das geografische Gebiet, in dem eine Dienstleistung oder ein angebotener Artikel erbracht wird  - `atmosphericPressure`: Der beobachtete atmosphärische Druck, gemessen in Hecto-Pascal  - `cellsSize`: Größe der einzelnen Zellen, aus denen das Radar besteht. Der Einheitencode (Text) der Messung wird unter Verwendung der [UN/CEFACT Common Codes] (http://wiki.goodrelations-vocabulary.org/Documentation/UN/CEFACT_Common_Codes) angegeben. Zum Beispiel steht **MTR** für **Meter**.  - `dataProvider`: Eine Folge von Zeichen zur Identifizierung des Anbieters der harmonisierten Dateneinheit.  - `dateCreated`: Zeitstempel der Entitätserstellung. Dieser wird in der Regel von der Speicherplattform zugewiesen.  - `dateModified`: Zeitstempel der letzten Änderung der Entität. Dieser wird in der Regel von der Speicherplattform vergeben.  - `dateObserved`: Das Datum und die Uhrzeit dieser Beobachtung im ISO8601 UTC-Format. Sie können durch einen bestimmten Zeitpunkt oder ein ISO8601-Intervall dargestellt werden  - `dateObservedFrom`: Datum und Uhrzeit des Beginns des Beobachtungszeitraums. Siehe dateObserved. Er kann durch einen bestimmten Zeitpunkt oder durch ein ISO8601-Intervall dargestellt werden  - `dateObservedTo`: Datum und Uhrzeit des Endes des Beobachtungszeitraums. Siehe dateObserved. Es kann durch einen bestimmten Zeitpunkt oder durch ein ISO8601-Intervall dargestellt werden  - `description`: Eine Beschreibung dieses Artikels  - `feelLikesTemperature`: Bewertung der Temperatur des Gegenstands  - `gustSpeed`: Ein plötzlicher Ausbruch von Wind mit hoher Geschwindigkeit, der die beobachtete durchschnittliche Windgeschwindigkeit übersteigt und nur wenige Sekunden dauert.  - `id`: Eindeutiger Bezeichner der Entität  - `illuminance`: (https://en.wikipedia.org/wiki/Illuminance), gemessen in Lux (lx) oder Lumen pro Quadratmeter (cd-sr-m-2).  - `location`: Geojson-Referenz auf das Element. Es kann Punkt, LineString, Polygon, MultiPoint, MultiLineString oder MultiPolygon sein  - `mapScale`: Kartenmaßstab. Beziehung zwischen der Länge der cellSize und ihrer Darstellung auf der Karte  - `measuredArea`: Referenz der gemessenen Oberfläche. Der Einheitencode (Text) wird unter Verwendung der [UN/CEFACT Common Codes] (http://wiki.goodrelations-vocabulary.org/Documentation/UN/CEFACT_Common_Codes) angegeben. Zum Beispiel steht **MTK** für Quadratmeter  - `name`: Der Name dieses Artikels.  - `numberOfCol`: Anzahl der Spalten, die das Lesen des Attributs "RainFallradarContent" ermöglichen  - `numberOfRow`: Anzahl der Zeilen, die das Lesen des Attributs "RainFallradarContent" ermöglichen  - `owner`: Eine Liste mit einer JSON-kodierten Zeichenfolge, die auf die eindeutigen Kennungen der Eigentümer verweist  - `rainFallRadarContent`: Pfad und Dateiname, die die beobachteten Informationen liefern  - `refDevice`: Verweis auf ein [Gerät] (https://github.com/smart-data-models/dataModel.Device/blob/master/Device/doc/spec.md), das diese Beobachtung gemacht hat  - `refPointOfInterest`: Verweis auf einen [PointOfInterest](https://github.com/smart-data-models/dataModel.PointOfInterest/blob/master/PointOfInterest/doc/spec.md), der mit der Beobachtung verknüpft ist  - `relativeHumidity`: Feuchte in der Luft. Beobachtete momentane relative Luftfeuchtigkeit (Wasserdampf in der Luft)  - `seeAlso`: Liste von URLs, die auf zusätzliche Ressourcen zu dem Artikel verweisen  - `source`: Eine Folge von Zeichen, die die ursprüngliche Quelle der Entitätsdaten als URL angibt. Empfohlen wird der voll qualifizierte Domänenname des Quellanbieters oder die URL des Quellobjekts.  - `temperature`: Temperatur des Gegenstandes  - `type`: NGSI-Entitätstyp. Es muss RainFallRadarObserved sein.  - `visibility`: Kategorien der Sichtbarkeit  - `weatherType`: Textbeschreibung des Wetters  - `windDirection`: Wette auf die Windrichtung  - `windSpeed`: Intensität des Windes    
 Erforderliche Eigenschaften  
 - `dateObserved`  - `id`  - `location`  - `rainFallRadarContent`  - `type`  ## Datenmodell Beschreibung der Eigenschaften  
 Alphabetisch sortiert (für Details anklicken)  
@@ -36,64 +36,88 @@ RainFallRadarObservation:
         streetAddress:    
           description: 'Property. The street address. Model:''https://schema.org/streetAddress'''    
           type: string    
-      type: Property    
+      type: object    
       x-ngsi:    
         model: https://schema.org/address    
+        type: Property    
     alternateName:    
       description: 'An alternative name for this item'    
-      type: Property    
+      type: string    
+      x-ngsi:    
+        type: Property    
     areaServed:    
       description: 'The geographic area where a service or offered item is provided'    
-      type: Property    
+      type: string    
       x-ngsi:    
         model: https://schema.org/Text    
+        type: Property    
     atmosphericPressure:    
       description: 'The atmospheric pressure observed measured in Hecto Pascals'    
       minimum: 0    
-      type: Property    
+      type: number    
       x-ngsi:    
         model: https://schema.org/Number    
+        type: Property    
         units: 'Hecto pascals'    
     cellsSize:    
       description: 'Size of each cell constituting the radar. The unit code (text) of measurement is given using the [UN/CEFACT Common Codes](http://wiki.goodrelations-vocabulary.org/Documentation/UN/CEFACT_Common_Codes). For instance, **MTR** represents **Meters**'    
-      type: Property    
+      type: number    
       x-ngsi:    
         model: https://schema.org/Number    
+        type: Property    
     dataProvider:    
       description: 'A sequence of characters identifying the provider of the harmonised data entity.'    
-      type: Property    
+      type: string    
+      x-ngsi:    
+        type: Property    
     dateCreated:    
       description: 'Entity creation timestamp. This will usually be allocated by the storage platform.'    
       format: date-time    
-      type: Property    
+      type: string    
+      x-ngsi:    
+        type: Property    
     dateModified:    
       description: 'Timestamp of the last modification of the entity. This will usually be allocated by the storage platform.'    
       format: date-time    
-      type: Property    
+      type: string    
+      x-ngsi:    
+        type: Property    
     dateObserved:    
       description: 'The date and time of this observation in ISO8601 UTC format. It can be represented by a specific time instant or by an ISO8601 interval'    
       format: date-time    
-      type: Property    
+      type: string    
       x-ngsi:    
         model: https://schema.org/DateTime    
+        type: Property    
     dateObservedFrom:    
       description: 'Observation period start date and time. See dateObserved. It can be represented by a specific time instant or by an ISO8601 interval'    
       format: date-time    
-      type: Property    
+      type: string    
       x-ngsi:    
         model: https://schema.org/DateTime    
+        type: Property    
     dateObservedTo:    
       description: 'Observation period end date and time. See dateObserved. It can be represented by a specific time instant or by an ISO8601 interval'    
       format: date-time    
-      type: Property    
+      type: string    
       x-ngsi:    
         model: https://schema.org/DateTime    
+        type: Property    
     description:    
       description: 'A description of this item'    
-      type: Property    
+      type: string    
+      x-ngsi:    
+        type: Property    
     feelLikesTemperature:    
       description: 'Temperature appreciation of the item'    
-      type: Property    
+      type: number    
+      x-ngsi:    
+        type: Property    
+    gustSpeed:    
+      description: 'A sudden burst of high-speed wind over the observed average wind speed lasting only for a few seconds.'    
+      type: number    
+      x-ngsi:    
+        type: Property    
     id:    
       anyOf: &rainfallradarobservation_-_properties_-_owner_-_items_-_anyof    
         - description: 'Property. Identifier format of any NGSI entity'    
@@ -105,13 +129,15 @@ RainFallRadarObservation:
           format: uri    
           type: string    
       description: 'Unique identifier of the entity'    
-      type: Property    
+      x-ngsi:    
+        type: Property    
     illuminance:    
       description: '(https://en.wikipedia.org/wiki/Illuminance) observed measured in lux (lx) or lumens per square metre (cd·sr·m−2).'    
       minimum: 0    
-      type: Property    
+      type: number    
       x-ngsi:    
         model: https://schema.org/Number    
+        type: Property    
     location:    
       description: 'Geojson reference to the item. It can be Point, LineString, Polygon, MultiPoint, MultiLineString or MultiPolygon'    
       oneOf:    
@@ -263,45 +289,55 @@ RainFallRadarObservation:
             - coordinates    
           title: 'GeoJSON MultiPolygon'    
           type: object    
-      type: Geoproperty    
+      x-ngsi:    
+        type: Geoproperty    
     mapScale:    
       description: 'Map Scale. Relationship between the length of the cellSize and its representation on the map'    
-      type: Property    
+      type: string    
       x-ngsi:    
         model: https://schema.org/Text    
+        type: Property    
     measuredArea:    
       description: 'Reference of the surface measured. The unit code (text) is given using the [UN/CEFACT Common Codes](http://wiki.goodrelations-vocabulary.org/Documentation/UN/CEFACT_Common_Codes). For instance, **MTK** represents Square Meters'    
       minimum: 0    
-      type: Property    
+      type: number    
       x-ngsi:    
         model: https://schema.org/Number    
+        type: Property    
         units: 'square meters'    
     name:    
       description: 'The name of this item.'    
-      type: Property    
+      type: string    
+      x-ngsi:    
+        type: Property    
     numberOfCol:    
       description: 'Number of Cols allowing the reading of the `rainFallradarContent` attribute'    
       minimum: 0    
-      type: Property    
+      type: number    
       x-ngsi:    
         model: https://schema.org/Number    
+        type: Property    
     numberOfRow:    
       description: 'Number of Rows allowing the reading of the `rainFallradarContent` attribute'    
       minimum: 0    
-      type: Property    
+      type: number    
       x-ngsi:    
         model: https://schema.org/Number    
+        type: Property    
     owner:    
       description: 'A List containing a JSON encoded sequence of characters referencing the unique Ids of the owner(s)'    
       items:    
         anyOf: *rainfallradarobservation_-_properties_-_owner_-_items_-_anyof    
         description: 'Property. Unique identifier of the entity'    
-      type: Property    
+      type: array    
+      x-ngsi:    
+        type: Property    
     rainFallRadarContent:    
       description: 'Path and filename which provided the information observed'    
-      type: Property    
+      type: string    
       x-ngsi:    
         model: https://schema.org/Text    
+        type: Property    
     refDevice:    
       anyOf:    
         - description: 'Property. Identifier format of any NGSI entity'    
@@ -313,9 +349,9 @@ RainFallRadarObservation:
           format: uri    
           type: string    
       description: 'Reference to a [Device](https://github.com/smart-data-models/dataModel.Device/blob/master/Device/doc/spec.md) which captured this observation'    
-      type: Relationship    
       x-ngsi:    
         model: https://schema.org/URL    
+        type: Relationship    
     refPointOfInterest:    
       anyOf:    
         - description: 'Property. Identifier format of any NGSI entity'    
@@ -327,14 +363,16 @@ RainFallRadarObservation:
           format: uri    
           type: string    
       description: 'Reference to a [PointOfInterest](https://github.com/smart-data-models/dataModel.PointOfInterest/blob/master/PointOfInterest/doc/spec.md) linked with the observation'    
-      type: Relationship    
       x-ngsi:    
         model: https://schema.org/URL    
+        type: Relationship    
     relativeHumidity:    
-      description: 'Humidity in the Air'    
+      description: 'Humidity in the Air. Observed instantaneous relative humidity (water vapour in air)'    
       maximum: 1    
       minimum: 0    
-      type: Property    
+      type: number    
+      x-ngsi:    
+        type: Property    
     seeAlso:    
       description: 'list of uri pointing to additional resources about the item'    
       oneOf:    
@@ -345,18 +383,25 @@ RainFallRadarObservation:
           type: array    
         - format: uri    
           type: string    
-      type: Property    
+      x-ngsi:    
+        type: Property    
     source:    
       description: 'A sequence of characters giving the original source of the entity data as a URL. Recommended to be the fully qualified domain name of the source provider, or the URL to the source object.'    
-      type: Property    
+      type: string    
+      x-ngsi:    
+        type: Property    
     temperature:    
       description: 'Temperature of the item'    
-      type: Property    
+      type: number    
+      x-ngsi:    
+        type: Property    
     type:    
       description: 'NGSI Entity type. It has to be RainFallRadarObserved'    
       enum:    
         - RainFallRadarObserved    
-      type: Property    
+      type: string    
+      x-ngsi:    
+        type: Property    
     visibility:    
       anyOf:    
         - enum:    
@@ -370,27 +415,30 @@ RainFallRadarObservation:
         - minimum: 0    
           type: number    
       description: 'Categories of visibility'    
-      type: Property    
       x-ngsi:    
         model: http://schema.org/Text    
+        type: Property    
     weatherType:    
       description: 'Text description of the weather'    
-      type: Property    
+      type: string    
       x-ngsi:    
         model: http://schema.org/Text.    
+        type: Property    
     windDirection:    
       description: 'Direction of the wind bet'    
       maximum: 180    
       minimum: -180    
-      type: Property    
+      type: number    
       x-ngsi:    
         model: http://schema.org/Number    
+        type: Property    
     windSpeed:    
       description: 'Intensity of the wind'    
       minimum: 0    
-      type: Property    
+      type: number    
       x-ngsi:    
         model: http//schema.org/Number    
+        type: Property    
   required:    
     - id    
     - type    
@@ -398,11 +446,17 @@ RainFallRadarObservation:
     - dateObserved    
     - rainFallRadarContent    
   type: object    
+  x-derived-from: ""    
+  x-disclaimer: 'Redistribution and use in source and binary forms, with or without modification, are permitted  provided that the license conditions are met. Copyleft (c) 2021 Contributors to Smart Data Models Program'    
+  x-license-url: https://github.com/smart-data-models/dataModel.Environment/blob/master/RainFallRadarObservation/LICENSE.md    
+  x-model-schema: https://smart-data-models.github.io/dataModel.Weather/RainFallRadarObserved/schema.json    
+  x-model-tags: ""    
+  x-version: 0.0.1    
 ```  
 </details>    
 ## Beispiel-Nutzlasten  
 #### RainFallRadarObservation NGSI-v2 key-values Beispiel  
-Hier ist ein Beispiel für eine RainFallRadarObservation im JSON-LD-Format als Key-Values. Dies ist kompatibel mit NGSI-v2 bei Verwendung von `options=keyValues` und liefert die Kontextdaten einer einzelnen Entität.  
+Hier ist ein Beispiel für eine RainFallRadarObservation im JSON-LD-Format als Schlüsselwerte. Dies ist kompatibel mit NGSI-v2, wenn `options=keyValues` verwendet wird und liefert die Kontextdaten einer einzelnen Entität.  
 ```json  
 {  
   "id": "urn:ngsi-ld:RainFallRadarObserved:RainFallRadarObserved:MNCA-RFRO-018",  
@@ -439,7 +493,7 @@ RainFallRadarObservation:
 }  
 ```  
 #### RainFallRadarObservation NGSI-v2 normalisiert Beispiel  
-Hier ist ein Beispiel für eine RainFallRadarObservation im JSON-LD-Format wie normalisiert. Dies ist kompatibel mit NGSI-v2, wenn keine Optionen verwendet werden, und liefert die Kontextdaten einer einzelnen Entität.  
+Hier ist ein Beispiel für eine RainFallRadarObservation im JSON-LD-Format in normalisierter Form. Dies ist kompatibel mit NGSI-v2, wenn keine Optionen verwendet werden, und liefert die Kontextdaten einer einzelnen Entität.  
 ```json  
 {  
 	"id": "urn:ngsi-ld:RainFallRadarObserved:RainFallRadarObserved:MNCA-RFRO-018",  
@@ -533,7 +587,7 @@ RainFallRadarObservation:
 }  
 ```  
 #### RainFallRadarObservation NGSI-LD key-values Beispiel  
-Hier ist ein Beispiel für eine RainFallRadarObservation im JSON-LD-Format als Key-Values. Dies ist kompatibel mit NGSI-LD bei Verwendung von `options=keyValues` und liefert die Kontextdaten einer einzelnen Entität.  
+Hier ist ein Beispiel für eine RainFallRadarObservation im JSON-LD-Format als Key-Values. Dies ist mit NGSI-LD kompatibel, wenn `options=keyValues` verwendet wird und liefert die Kontextdaten einer einzelnen Entität.  
 ```json  
 {  
   "id": "urn:ngsi-ld:RainFallRadarObserved:RainFallRadarObserved:MNCA-RFRO-018",  
@@ -648,7 +702,7 @@ RainFallRadarObservation:
 }  
 ```  
 #### RainFallRadarObservation NGSI-LD normalisiert Beispiel  
-Hier ist ein Beispiel für eine RainFallRadarObservation im JSON-LD-Format wie normalisiert. Dies ist kompatibel mit NGSI-LD, wenn keine Optionen verwendet werden, und liefert die Kontextdaten einer einzelnen Entität.  
+Hier ist ein Beispiel für eine RainFallRadarObservation im JSON-LD-Format in normalisierter Form. Dies ist kompatibel mit NGSI-LD, wenn keine Optionen verwendet werden, und liefert die Kontextdaten einer einzelnen Entität.  
 ```json  
 {  
   "id": "urn:ngsi-ld:RainFallRadarObserved:RainFallRadarObserved:MNCA-RFRO-018",  
