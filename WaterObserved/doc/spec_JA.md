@@ -1,17 +1,17 @@
-Entidad: AguaObservada  
-======================  
-[Licencia abierta](https://github.com/smart-data-models//dataModel.Environment/blob/master/WaterObserved/LICENSE.md)  
-[documento generado automáticamente](https://docs.google.com/presentation/d/e/2PACX-1vTs-Ng5dIAwkg91oTTUdt8ua7woBXhPnwavZ0FxgR8BsAI_Ek3C5q97Nd94HS8KhP-r_quD4H0fgyt3/pub?start=false&loop=false&delayms=3000#slide=id.gb715ace035_0_60)  
-Descripción global: ** El modelo de datos de observación del agua está destinado a representar los parámetros de flujo, nivel y volumen de agua observados, así como la información sobre el oleaje, sobre un área fija o variable. Esta observación también incluye las masas de objetos flotantes en esta área. Los datos recogidos son proporcionados por Sensores, Cámaras, Estaciones de Agua posicionadas en lugares específicos o sensibles para ríos, arroyos, torrentes, lagos, mares, etc.**.  
+エンティティWaterObserved  
+===================  
+[オープンライセンス](https://github.com/smart-data-models//dataModel.Environment/blob/master/WaterObserved/LICENSE.md)  
+[document generated automatically](https://docs.google.com/presentation/d/e/2PACX-1vTs-Ng5dIAwkg91oTTUdt8ua7woBXhPnwavZ0FxgR8BsAI_Ek3C5q97Nd94HS8KhP-r_quD4H0fgyt3/pub?start=false&loop=false&delayms=3000#slide=id.gb715ace035_0_60)  
+グローバルな記述です。** 水域観測データモデルは、固定または可変のエリアで観測された水の流れ、水位、水量のパラメータと、うねりの情報を表現することを目的としています。この観測には、その領域にある浮遊物の質量も含まれる。収集されたデータは、河川、小川、急流、湖、海などの特定の場所や敏感な場所に配置されたセンサー、カメラ、ウォーターステーションによって提供されます。  
 
-## Lista de propiedades  
+## プロパティのリスト  
 
-- `address`: La dirección postal  - `alternateName`: Un nombre alternativo para este artículo  - `areaServed`: La zona geográfica en la que se presta un servicio o se ofrece un artículo  - `dataProvider`: Una secuencia de caracteres que identifica al proveedor de la entidad de datos armonizada.  - `dateCreated`: Marca de tiempo de creación de la entidad. Suele ser asignada por la plataforma de almacenamiento.  - `dateModified`: Marca de tiempo de la última modificación de la entidad. Normalmente será asignada por la plataforma de almacenamiento.  - `dateObserved`: Fecha y hora de esta observación representada por un formato ISO8601 UTC.  - `dateObservedFrom`: Período de observación : Fecha y hora de inicio en formato ISO8601 UTC.  - `dateObservedTo`: Período de observación : Fecha y hora de finalización en formato ISO8601 UTC.  - `description`: Una descripción de este artículo  - `flow`: Flujo de agua observado. El código de la unidad (texto) de medida dado utilizando el UN/CEFACAT  - `height`: Altura del agua - Alcance del nivel en las costas de alerta.  - `id`: Identificador único de la entidad  - `location`: Referencia Geojson al elemento. Puede ser Point, LineString, Polygon, MultiPoint, MultiLineString o MultiPolygon  - `measuredArea`: Referencia de la superficie medida. El código de la unidad (texto) de medida dado utilizando los [Códigos comunes UN/CEFACT](http://wiki.goodrelations-vocabulary.org/Documentation/UN/CEFACT_Common_Codes) (máx. 3 caracteres). Por ejemplo, <código>MTK</código> representa M².  - `name`: El nombre de este artículo.  - `objectArea`: Porcentaje ocupado por el objeto flotante en la zona. El código de la unidad (texto) de medida que se da utilizando los [Códigos Comunes UN/CEFACT](http://wiki.goodrelations-vocabulary.org/Documentation/UN/CEFACT_Common_Codes) (máx. 3 caracteres). Por ejemplo, <código>P1</código> representa el Porcentaje.  - `objectHeightAverage`: Altura media elevada. El código de la unidad (texto) de medida que se da utilizando los [Códigos Comunes UN/CEFACT](http://wiki.goodrelations-vocabulary.org/Documentation/UN/CEFACT_Common_Codes) (máx. 3 caracteres). Por ejemplo, <código>MTR</código> representa el Metro.  - `objectHeightMax`: Altura máxima elevada. El código de la unidad (texto) de medida dado utilizando los [Códigos comunes UN/CEFACT](http://wiki.goodrelations-vocabulary.org/Documentation/UN/CEFACT_Common_Codes) (máx. 3 caracteres). Por ejemplo, <código>MTR</código> representa el Metro.  - `objectVolume`: Volumen estimado recaudado. El código de la unidad (texto) de medida que se da utilizando los [Códigos Comunes UN/CEFACT](http://wiki.goodrelations-vocabulary.org/Documentation/UN/CEFACT_Common_Codes) (máximo 3 caracteres). Por ejemplo, <código>MTQ</código> representa Metros Cúbicos  - `owner`: Una lista que contiene una secuencia de caracteres codificada en JSON que hace referencia a los identificadores únicos de los propietarios  - `refDevice`: Una referencia a un punto de interés asociado a esta observación.  - `seeAlso`: lista de uri que apuntan a recursos adicionales sobre el artículo  - `source`: Una secuencia de caracteres que indica la fuente original de los datos de la entidad en forma de URL. Se recomienda que sea el nombre de dominio completo del proveedor de origen o la URL del objeto de origen.  - `swellDirection`: Dirección de las marejadas observadas.  - `swellHeight`: Altura del oleaje observada.  - `swellPeriod`: Periodo de oleaje observado.  - `type`: Tipo de entidad NGSI. Tiene que ser WaterObserved  - `waveLength`: Longitud de onda observada.    
-Propiedades requeridas  
+- `address`: 郵送先住所  - `alternateName`: このアイテムの別称  - `areaServed`: サービスや提供されるアイテムが提供される地理的なエリア  - `dataProvider`: 調和されたデータ・エンティティの提供者を識別する一連の文字。  - `dateCreated`: エンティティの作成タイムスタンプ。これは通常、ストレージプラットフォームによって割り当てられます。  - `dateModified`: エンティティが最後に変更された時のタイムスタンプ。これは通常、ストレージプラットフォームによって割り当てられます。  - `dateObserved`: この観測の日付と時刻をISO8601のUTCフォーマットで表したもの。  - `dateObservedFrom`: 観測期間 :開始日時がISO8601 UTC形式で表示されます。  - `dateObservedTo`: 観測期間 :終了日時がISO8601 UTC形式で表示されています。  - `description`: このアイテムの説明  - `flow`: 観測された水流。UN/CEFACATを用いて与えられた測定の単位コード（テキスト）。  - `height`: 水面の高さ - 警報が出ている海岸では水平に達する。  - `id`: エンティティのユニークな識別子  - `location`: アイテムへのGeojson参照。Point、LineString、Polygon、MultiPoint、MultiLineString、MultiPolygonのいずれかです。  - `measuredArea`: 測定された表面のリファレンス。UN/CEFACT Common Codes](http://wiki.goodrelations-vocabulary.org/Documentation/UN/CEFACT_Common_Codes)を用いて与えられた測定の単位コード(テキスト)です(最大3文字)。例えば、<code>MTK</code>はM²を表します。  - `name`: このアイテムの名前です。  - `objectArea`: エリア内の浮遊物が占める割合。UN/CEFACT Common Codes](http://wiki.goodrelations-vocabulary.org/Documentation/UN/CEFACT_Common_Codes)を用いて与えられる測定の単位コード(テキスト)である(最大3文字)。例えば、<code>P1</code>はPercentageを表します。  - `objectHeightAverage`: 平均身長を上げた状態。UN/CEFACT Common Codes](http://wiki.goodrelations-vocabulary.org/Documentation/UN/CEFACT_Common_Codes)を使用して与えられる測定の単位コード(テキスト)です(最大3文字)。例えば、<code>MTR</code>はメートルを表す。  - `objectHeightMax`: 最大の高さを上げたもの。UN/CEFACT Common Codes](http://wiki.goodrelations-vocabulary.org/Documentation/UN/CEFACT_Common_Codes)を用いて与えられる測定の単位コード(テキスト)です(最大3文字)。例えば、<code>MTR</code>はメートルを表す。  - `objectVolume`: 推定調達量。UN/CEFACT Common Codes](http://wiki.goodrelations-vocabulary.org/Documentation/UN/CEFACT_Common_Codes)を用いて与えられる測定の単位コード（テキスト）（最大3文字）。例えば、<code>MTQ</code>はCubic Metersを表す。  - `owner`: オーナーのIDを参照するJSONエンコードされた文字列を含むリスト  - `refDevice`: この観測に関連した興味のあるポイントへの参照です。  - `seeAlso`: アイテムに関する追加リソースを示すuriのリスト  - `source`: エンティティデータのオリジナルソースをURLで示す一連の文字。ソースプロバイダの完全修飾ドメイン名、またはソースオブジェクトのURLであることが推奨されます。  - `swellDirection`: うねりの方向が観測されました。  - `swellHeight`: うねりの高さを観測。  - `swellPeriod`: うねりが発生しました。  - `type`: NGSI Entityタイプ。それはWaterObservedでなければならない。  - `waveLength`: 観測された波長。    
+必須項目  
 - `dateObserved`  - `id`  - `location`  - `type`    
-El modelo de datos de observación del agua tiene por objeto representar los parámetros de flujo, nivel y volumen de agua observados, así como la información sobre el oleaje, en una zona fija o variable. Esta observación también incluye las masas de objetos flotantes en esta área.  Los datos recogidos son proporcionados por [Sensores], [Cámaras], [Estaciones acuáticas] colocados en lugares específicos o sensibles para los ríos, arroyos, torrentes, lagos, mares, etc.  
-## Descripción del modelo de datos de las propiedades  
-Ordenados alfabéticamente (haga clic para ver los detalles)  
+水域観測データモデルは、固定または可変のエリアで観測された水の流れ、水位、水量のパラメータと、うねりの情報を表現することを目的としています。この観測には、そのエリアにある浮遊物の質量も含まれます。  収集されたデータは、河川、小川、激流、湖、海などの特定の場所や敏感な場所に配置された「センサー」、「カメラ」、「ウォーターステーション」によって提供されます。  
+## データモデルによるプロパティの記述  
+アルファベット順（クリックすると詳細が表示されます）  
 <details><summary><strong>full yaml details</strong></summary>    
 ```yaml  
 WaterObserved:    
@@ -408,9 +408,9 @@ WaterObserved:
   x-version: 0.0.2    
 ```  
 </details>    
-## Ejemplo de carga útil  
-#### WaterObserved NGSI-v2 key-values Ejemplo  
-Aquí hay un ejemplo de un WaterObserved en formato JSON-LD como valores-clave. Esto es compatible con NGSI-v2 cuando se utiliza `options=keyValues` y devuelve los datos de contexto de una entidad individual.  
+## ペイロードの例  
+#### WaterObserved NGSI-v2 キーバリューの例  
+WaterObservedをJSON-LD形式でkey-valuesにした例を示します。これは`options=keyValues`を使用した場合のNGSI-v2との互換性があり、個々のエンティティのコンテキストデータを返します。  
 ```json  
 {  
   "id": "WaterObserved:MNCA-001",  
@@ -437,8 +437,8 @@ WaterObserved:
   "objectVolume": 17.5  
 }  
 ```  
-#### AguaObservada NGSI-v2 normalizada Ejemplo  
-Este es un ejemplo de un WaterObserved en formato JSON-LD normalizado. Esto es compatible con NGSI-v2 cuando no se utilizan opciones y devuelve los datos de contexto de una entidad individual.  
+#### WaterObserved NGSI-v2 正規化例  
+ここでは、正規化されたJSON-LD形式のWaterObservedの例を示します。これは、オプションを使用しない場合のNGSI-v2との互換性があり、個々のエンティティのコンテキストデータを返します。  
 ```json  
 {  
   "id": "WaterObserved:MNCA-001",  
@@ -507,8 +507,8 @@ WaterObserved:
   }  
 }  
 ```  
-#### WaterObserved NGSI-LD key-values Ejemplo  
-Aquí hay un ejemplo de un WaterObserved en formato JSON-LD como valores-clave. Esto es compatible con NGSI-LD cuando se utiliza `options=keyValues` y devuelve los datos de contexto de una entidad individual.  
+#### WaterObserved NGSI-LDのキーバリューの例  
+WaterObservedをkey-valuesとしてJSON-LD形式で出力した例です。これは`options=keyValues`を使った場合のNGSI-LDとの互換性があり、個々のエンティティのコンテキストデータを返します。  
 ```json  
 {  
   "id": "uri:ngsi:WaterObserved:MNCA-001",  
@@ -538,8 +538,8 @@ WaterObserved:
   ]  
 }  
 ```  
-#### AguaObservada NGSI-LD normalizada Ejemplo  
-Este es un ejemplo de un WaterObserved en formato JSON-LD normalizado. Esto es compatible con NGSI-LD cuando no se utilizan opciones y devuelve los datos de contexto de una entidad individual.  
+#### WaterObserved NGSI-LDの正規化例  
+ここでは、正規化されたJSON-LD形式のWaterObservedの例を示します。これはオプションを使用しない場合のNGSI-LDとの互換性があり、個々のエンティティのコンテキストデータを返します。  
 ```json  
 {  
   "id": "urn:ngsi:WaterObserved:MNCA-001",  

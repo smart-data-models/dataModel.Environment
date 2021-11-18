@@ -1,15 +1,15 @@
-Entity: NoiseLevelObserved  
+Entità: NoiseLevelObserved  
 ==========================  
-[Open License](https://github.com/smart-data-models//dataModel.Environment/blob/master/NoiseLevelObserved/LICENSE.md)  
-[document generated automatically](https://docs.google.com/presentation/d/e/2PACX-1vTs-Ng5dIAwkg91oTTUdt8ua7woBXhPnwavZ0FxgR8BsAI_Ek3C5q97Nd94HS8KhP-r_quD4H0fgyt3/pub?start=false&loop=false&delayms=3000#slide=id.gb715ace035_0_60)  
-Global description: **An observation of those acoustic parameters that estimate noise pressure levels at a certain place and time. **  
+[Licenza aperta](https://github.com/smart-data-models//dataModel.Environment/blob/master/NoiseLevelObserved/LICENSE.md)  
+[documento generato automaticamente](https://docs.google.com/presentation/d/e/2PACX-1vTs-Ng5dIAwkg91oTTUdt8ua7woBXhPnwavZ0FxgR8BsAI_Ek3C5q97Nd94HS8KhP-r_quD4H0fgyt3/pub?start=false&loop=false&delayms=3000#slide=id.gb715ace035_0_60)  
+Descrizione globale: **Un'osservazione di quei parametri acustici che stimano i livelli di pressione acustica in un certo luogo e tempo. **  
 
-## List of properties  
+## Elenco delle proprietà  
 
-- `address`: The mailing address  - `alternateName`: An alternative name for this item  - `areaServed`: The geographic area where a service or offered item is provided  - `dataProvider`: A sequence of characters identifying the provider of the harmonised data entity.  - `dateCreated`: Entity creation timestamp. This will usually be allocated by the storage platform.  - `dateModified`: Timestamp of the last modification of the entity. This will usually be allocated by the storage platform.  - `dateObserved`: The date and time of this observation represented by an ISO8601 interval.  - `dateObservedFrom`: Observation period start date and time.  - `dateObservedTo`: Observation period end date and time. See dateObserved.  - `description`: A description of this item  - `id`: Unique identifier of the entity  - `location`: Geojson reference to the item. It can be Point, LineString, Polygon, MultiPoint, MultiLineString or MultiPolygon  - `name`: The name of this item.  - `owner`: A List containing a JSON encoded sequence of characters referencing the unique Ids of the owner(s)  - `refDevice`: A reference to the device which captured this observation.  - `refPointOfInterest`: A reference to a point of interest associated to this observation.  - `refWeatherObserved`: Reference to the associated weather conditions.  - `seeAlso`: list of uri pointing to additional resources about the item  - `sonometerClass`: Class of sonometer (0, 1, 2) according to ANSI used for taking this observation  - `source`: A sequence of characters giving the original source of the entity data as a URL. Recommended to be the fully qualified domain name of the source provider, or the URL to the source object.  - `type`: NGSI Entity type    
-Required properties  
-- `dateObservedFrom`  - `dateObservedTo`  - `id`  - `location`  - `type`  ## Data Model description of properties  
-Sorted alphabetically (click for details)  
+- `address`: L'indirizzo postale  - `alternateName`: Un nome alternativo per questa voce  - `areaServed`: L'area geografica in cui viene fornito un servizio o un articolo offerto  - `dataProvider`: Una sequenza di caratteri che identifica il fornitore dell'entità di dati armonizzata.  - `dateCreated`: Timestamp di creazione dell'entità. Questo sarà di solito assegnato dalla piattaforma di archiviazione.  - `dateModified`: Timestamp dell'ultima modifica dell'entità. Questo sarà di solito assegnato dalla piattaforma di archiviazione.  - `dateObserved`: La data e l'ora di questa osservazione rappresentata da un intervallo ISO8601.  - `dateObservedFrom`: Data e ora di inizio del periodo di osservazione.  - `dateObservedTo`: Data e ora di fine del periodo di osservazione. Vedere dateObserved.  - `description`: Una descrizione di questo articolo  - `id`: Identificatore unico dell'entità  - `location`: Riferimento Geojson all'elemento. Può essere Point, LineString, Polygon, MultiPoint, MultiLineString o MultiPolygon  - `name`: Il nome di questo articolo.  - `owner`: Una lista contenente una sequenza di caratteri codificata in JSON che si riferisce agli ID unici dei proprietari  - `refDevice`: Un riferimento al dispositivo che ha catturato questa osservazione.  - `refPointOfInterest`: Un riferimento a un punto di interesse associato a questa osservazione.  - `refWeatherObserved`: Riferimento alle condizioni meteorologiche associate.  - `seeAlso`: elenco di uri che puntano a risorse aggiuntive sull'elemento  - `sonometerClass`: Classe del sonometro (0, 1, 2) secondo l'ANSI usato per prendere questa osservazione  - `source`: Una sequenza di caratteri che dà la fonte originale dei dati dell'entità come URL. Si raccomanda di essere il nome di dominio completamente qualificato del fornitore di origine, o l'URL dell'oggetto di origine.  - `type`: Tipo di entità NGSI    
+Proprietà richieste  
+- `dateObservedFrom`  - `dateObservedTo`  - `id`  - `location`  - `type`  ## Descrizione del modello di dati delle proprietà  
+Ordinati in ordine alfabetico (clicca per i dettagli)  
 <details><summary><strong>full yaml details</strong></summary>    
 ```yaml  
 NoiseLevelObserved:    
@@ -359,9 +359,9 @@ NoiseLevelObserved:
   x-version: 0.0.1    
 ```  
 </details>    
-## Example payloads    
-#### NoiseLevelObserved NGSI-v2 key-values Example    
-Here is an example of a NoiseLevelObserved in JSON-LD format as key-values. This is compatible with NGSI-v2 when  using `options=keyValues` and returns the context data of an individual entity.  
+## Esempio di payloads  
+#### Valori chiave NGSI-v2 NoiseLevelObserved Esempio  
+Ecco un esempio di NoiseLevelObserved in formato JSON-LD come valori chiave. Questo è compatibile con NGSI-v2 quando si usa `options=keyValues` e restituisce i dati di contesto di una singola entità.  
 ```json  
 {  
   "id": "Vitoria-NoiseLevelObserved-2016-12-28T11:00:00_2016-12-28T12:00:00",  
@@ -378,8 +378,8 @@ NoiseLevelObserved:
   }  
 }  
 ```  
-#### NoiseLevelObserved NGSI-v2 normalized Example    
-Here is an example of a NoiseLevelObserved in JSON-LD format as normalized. This is compatible with NGSI-v2 when not using options and returns the context data of an individual entity.  
+#### NoiseLevelObserved NGSI-v2 normalizzato Esempio  
+Ecco un esempio di NoiseLevelObserved in formato JSON-LD normalizzato. Questo è compatibile con NGSI-v2 quando non usa opzioni e restituisce i dati di contesto di una singola entità.  
 ```json  
 {  
   "dateObservedFrom": {  
@@ -413,8 +413,8 @@ NoiseLevelObserved:
   }  
 }  
 ```  
-#### NoiseLevelObserved NGSI-LD key-values Example    
-Here is an example of a NoiseLevelObserved in JSON-LD format as key-values. This is compatible with NGSI-LD when  using `options=keyValues` and returns the context data of an individual entity.  
+#### Valori chiave NGSI-LD NoiseLevelObserved Esempio  
+Ecco un esempio di NoiseLevelObserved in formato JSON-LD come valori chiave. Questo è compatibile con NGSI-LD quando si usa `options=keyValues` e restituisce i dati di contesto di una singola entità.  
 ```json  
 {  
   "id": "urn:ngsi-ld:NoiseLevelObserved:Vitoria-NoiseLevelObserved-2016-12-28T11:00:00_2016-12-28T12:00:00",  
@@ -465,8 +465,8 @@ NoiseLevelObserved:
   ]  
 }  
 ```  
-#### NoiseLevelObserved NGSI-LD normalized Example    
-Here is an example of a NoiseLevelObserved in JSON-LD format as normalized. This is compatible with NGSI-LD when not using options and returns the context data of an individual entity.  
+#### NoiseLevelObserved NGSI-LD normalizzato Esempio  
+Ecco un esempio di NoiseLevelObserved in formato JSON-LD normalizzato. Questo è compatibile con NGSI-LD quando non usa opzioni e restituisce i dati di contesto di una singola entità.  
 ```json  
 {  
   "@context": [  

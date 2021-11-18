@@ -1,15 +1,15 @@
-Entidad: RainFallRadarObservation  
-=================================  
-[Licencia abierta](https://github.com/smart-data-models//dataModel.Environment/blob/master/RainFallRadarObservation/LICENSE.md)  
-[documento generado automáticamente](https://docs.google.com/presentation/d/e/2PACX-1vTs-Ng5dIAwkg91oTTUdt8ua7woBXhPnwavZ0FxgR8BsAI_Ek3C5q97Nd94HS8KhP-r_quD4H0fgyt3/pub?start=false&loop=false&delayms=3000#slide=id.gb715ace035_0_60)  
-Descripción global: **El modelo de datos está destinado a medir los deslizamientos de agua en un área predefinida por un conjunto de 4 Ubicación representada por un formato de propiedad Geo.**  
+エンティティRainFallRadarObservation（レインフォールレーダーオブザベーション  
+==================================================  
+[オープンライセンス](https://github.com/smart-data-models//dataModel.Environment/blob/master/RainFallRadarObservation/LICENSE.md)  
+[document generated automatically](https://docs.google.com/presentation/d/e/2PACX-1vTs-Ng5dIAwkg91oTTUdt8ua7woBXhPnwavZ0FxgR8BsAI_Ek3C5q97Nd94HS8KhP-r_quD4H0fgyt3/pub?start=false&loop=false&delayms=3000#slide=id.gb715ace035_0_60)  
+グローバルな記述です。**このデータモデルは、Geoプロパティ形式で表現された4つのLocationのセットによって、定義されたエリアでのウォータースライドを測定することを目的としています。  
 
-## Lista de propiedades  
+## プロパティのリスト  
 
-- `address`: La dirección postal  - `alternateName`: Un nombre alternativo para este artículo  - `areaServed`: La zona geográfica en la que se presta un servicio o se ofrece un artículo  - `atmosphericPressure`: La presión atmosférica observada medida en Hecto Pascales  - `cellsSize`: Tamaño de cada célula que constituye el radar. El código de la unidad (texto) de medida se da utilizando los [Códigos Comunes UN/CEFACT](http://wiki.goodrelations-vocabulary.org/Documentation/UN/CEFACT_Common_Codes). Por ejemplo, **MTR** representa **Metros**  - `dataProvider`: Una secuencia de caracteres que identifica al proveedor de la entidad de datos armonizada.  - `dateCreated`: Marca de tiempo de creación de la entidad. Suele ser asignada por la plataforma de almacenamiento.  - `dateModified`: Marca de tiempo de la última modificación de la entidad. Normalmente será asignada por la plataforma de almacenamiento.  - `dateObserved`: La fecha y la hora de esta observación en formato ISO8601 UTC. Puede ser representada por un instante de tiempo específico o por un intervalo ISO8601  - `dateObservedFrom`: Fecha y hora de inicio del periodo de observación. Véase dateObserved. Puede ser representado por un instante de tiempo específico o por un intervalo ISO8601  - `dateObservedTo`: Fecha y hora de finalización del periodo de observación. Véase dateObserved. Puede ser representado por un instante de tiempo específico o por un intervalo ISO8601  - `description`: Una descripción de este artículo  - `feelLikesTemperature`: Apreciación de la temperatura del artículo  - `gustSpeed`: Una ráfaga repentina de viento de alta velocidad por encima de la velocidad media del viento observada que dura sólo unos segundos.  - `id`: Identificador único de la entidad  - `illuminance`: (https://en.wikipedia.org/wiki/Illuminance) observado medido en lux (lx) o lúmenes por metro cuadrado (cd-sr-m-2).  - `location`: Referencia Geojson al elemento. Puede ser Point, LineString, Polygon, MultiPoint, MultiLineString o MultiPolygon  - `mapScale`: Escala del mapa. Relación entre la longitud de la cellSize y su representación en el mapa.  - `measuredArea`: Referencia de la superficie medida. El código de la unidad (texto) se indica utilizando los [Códigos comunes de la ONU/CEFACT] (http://wiki.goodrelations-vocabulary.org/Documentation/UN/CEFACT_Common_Codes). Por ejemplo, **MTK** representa los metros cuadrados  - `name`: El nombre de este artículo.  - `numberOfCol`: Número de columnas que permiten la lectura del atributo `rainFallradarContent`.  - `numberOfRow`: Número de filas que permiten la lectura del atributo `rainFallradarContent`.  - `owner`: Una lista que contiene una secuencia de caracteres codificada en JSON que hace referencia a los identificadores únicos de los propietarios  - `rainFallRadarContent`: Ruta y nombre del archivo que proporcionó la información observada  - `refDevice`: Referencia a un [Dispositivo](https://github.com/smart-data-models/dataModel.Device/blob/master/Device/doc/spec.md) que captó esta observación  - `refPointOfInterest`: Referencia a un [PointOfInterest](https://github.com/smart-data-models/dataModel.PointOfInterest/blob/master/PointOfInterest/doc/spec.md) vinculado a la observación  - `relativeHumidity`: Humedad en el aire. Humedad relativa instantánea observada (vapor de agua en el aire)  - `seeAlso`: lista de uri que apuntan a recursos adicionales sobre el artículo  - `source`: Una secuencia de caracteres que indica la fuente original de los datos de la entidad en forma de URL. Se recomienda que sea el nombre de dominio completo del proveedor de origen o la URL del objeto de origen.  - `temperature`: Temperatura del artículo  - `type`: Tipo de entidad NGSI. Tiene que ser RainFallRadarObserved  - `visibility`: Categorías de visibilidad  - `weatherType`: Descripción textual del tiempo  - `windDirection`: Dirección de la apuesta del viento  - `windSpeed`: Intensidad del viento    
-Propiedades requeridas  
-- `dateObserved`  - `id`  - `location`  - `rainFallRadarContent`  - `type`  ## Descripción del modelo de datos de las propiedades  
-Ordenados alfabéticamente (haga clic para ver los detalles)  
+- `address`: 郵送先住所  - `alternateName`: このアイテムの別称  - `areaServed`: サービスや提供されるアイテムが提供される地理的なエリア  - `atmosphericPressure`: 気圧はヘクトパスカルで測定される。  - `cellsSize`: レーダーを構成する各セルの大きさ。測定の単位コード（テキスト）は、[UN/CEFACT Common Codes](http://wiki.goodrelations-vocabulary.org/Documentation/UN/CEFACT_Common_Codes)を用いて与えられます。例えば、**MTR**は**Meters**を表します。  - `dataProvider`: 調和されたデータ・エンティティの提供者を識別する一連の文字。  - `dateCreated`: エンティティの作成タイムスタンプ。これは通常、ストレージプラットフォームによって割り当てられます。  - `dateModified`: エンティティが最後に変更された時のタイムスタンプ。これは通常、ストレージプラットフォームによって割り当てられます。  - `dateObserved`: この観測の日付と時刻をISO8601 UTC形式で表したもの。特定の時間の瞬間、またはISO8601のインターバルで表すことができます。  - `dateObservedFrom`: 観測期間の開始日時が設定されています。dateObserved参照。特定の時間の瞬間、またはISO8601のインターバルで表すことができます。  - `dateObservedTo`: 観測期間の終了日と時間。dateObservedを参照してください。特定の時間の瞬間、またはISO8601のインターバルで表すことができます。  - `description`: このアイテムの説明  - `feelLikesTemperature`: アイテムの鑑賞温度  - `gustSpeed`: 観測された平均風速を超える高速の風が、数秒間だけ突然吹くこと。  - `id`: エンティティのユニークな識別子  - `illuminance`: (https://en.wikipedia.org/wiki/Illuminance）は、ルクス（lx）またはルーメン/平方メートル（cd-sr-m-2）で測定して観察されます。  - `location`: アイテムへのGeojson参照。Point、LineString、Polygon、MultiPoint、MultiLineString、MultiPolygonのいずれかです。  - `mapScale`: 地図の縮尺。セルサイズの長さと地図上の表現との関係  - `measuredArea`: 測定された表面の基準。単位コード（テキスト）は、[UN/CEFACT Common Codes](http://wiki.goodrelations-vocabulary.org/Documentation/UN/CEFACT_Common_Codes)を用いて与えられる。例えば、**MTK**はSquare Metersを表します。  - `name`: このアイテムの名前です。  - `numberOfCol`: rainFallradarContent`属性の読み取りを許可するコルの数  - `numberOfRow`: rainFallradarContent`属性の読み取りを許可する行数  - `owner`: オーナーのIDを参照するJSONエンコードされた文字列を含むリスト  - `rainFallRadarContent`: 観測された情報を提供したパスとファイル名  - `refDevice`: この観察を捉えた[デバイス](https://github.com/smart-data-models/dataModel.Device/blob/master/Device/doc/spec.md)への言及  - `refPointOfInterest`: 観測に関連する[PointOfInterest](https://github.com/smart-data-models/dataModel.PointOfInterest/blob/master/PointOfInterest/doc/spec.md)への言及  - `relativeHumidity`: 空気中の湿度。観測された瞬間の相対湿度（空気中の水蒸気量）  - `seeAlso`: アイテムに関する追加リソースを示すuriのリスト  - `source`: エンティティデータのオリジナルソースをURLで示す一連の文字。ソースプロバイダの完全修飾ドメイン名、またはソースオブジェクトのURLであることが推奨されます。  - `temperature`: アイテムの温度  - `type`: NGSIのEntityタイプ。RainFallRadarObservedでなければならない。  - `visibility`: 視認性のカテゴリー  - `weatherType`: 天気のテキスト説明  - `windDirection`: 風切り音の方向  - `windSpeed`: 風の強さ    
+必須項目  
+- `dateObserved`  - `id`  - `location`  - `rainFallRadarContent`  - `type`  ## データモデルによるプロパティの記述  
+アルファベット順（クリックすると詳細が表示されます）  
 <details><summary><strong>full yaml details</strong></summary>    
 ```yaml  
 RainFallRadarObservation:    
@@ -454,9 +454,9 @@ RainFallRadarObservation:
   x-version: 0.0.1    
 ```  
 </details>    
-## Ejemplo de carga útil  
-#### RainFallRadarObservation NGSI-v2 key-values Ejemplo  
-Aquí hay un ejemplo de una RainFallRadarObservation en formato JSON-LD como valores-clave. Esto es compatible con NGSI-v2 cuando se utiliza `options=keyValues` y devuelve los datos de contexto de una entidad individual.  
+## ペイロードの例  
+#### RainFallRadarObservation NGSI-v2 キーバリューの例  
+JSON-LD形式のRainFallRadarObservationをkey-valuesで表現した例です。これは`options=keyValues`を使った場合のNGSI-v2との互換性があり、個々のエンティティのコンテキストデータを返します。  
 ```json  
 {  
   "id": "urn:ngsi-ld:RainFallRadarObserved:RainFallRadarObserved:MNCA-RFRO-018",  
@@ -492,8 +492,8 @@ RainFallRadarObservation:
   "measuredArea": 250  
 }  
 ```  
-#### RainFallRadarObservation NGSI-v2 normalizado Ejemplo  
-Este es un ejemplo de una RainFallRadarObservation en formato JSON-LD normalizado. Esto es compatible con NGSI-v2 cuando no se utilizan opciones y devuelve los datos de contexto de una entidad individual.  
+#### RainFallRadarObservation NGSI-v2の正規化例。  
+ここでは、JSON-LD形式のRainFallRadarObservationを正規化した例を示します。これは、オプションを使用しない場合のNGSI-v2との互換性があり、個々のエンティティのコンテキストデータを返します。  
 ```json  
 {  
 	"id": "urn:ngsi-ld:RainFallRadarObserved:RainFallRadarObserved:MNCA-RFRO-018",  
@@ -586,8 +586,8 @@ RainFallRadarObservation:
 	}  
 }  
 ```  
-#### RainFallRadarObservation NGSI-LD key-values Ejemplo  
-Aquí hay un ejemplo de una RainFallRadarObservation en formato JSON-LD como valores-clave. Esto es compatible con NGSI-LD cuando se utiliza `options=keyValues` y devuelve los datos de contexto de una entidad individual.  
+#### RainFallRadarObservation NGSI-LDのキーバリューの例  
+JSON-LD形式でRainFallRadarObservationをkey-valuesとして表現した例です。これは、`options=keyValues`を使った場合のNGSI-LDとの互換性があり、個々のエンティティのコンテキストデータを返します。  
 ```json  
 {  
   "id": "urn:ngsi-ld:RainFallRadarObserved:RainFallRadarObserved:MNCA-RFRO-018",  
@@ -701,8 +701,8 @@ RainFallRadarObservation:
   ]  
 }  
 ```  
-#### RainFallRadarObservation NGSI-LD normalizado Ejemplo  
-Este es un ejemplo de una RainFallRadarObservation en formato JSON-LD normalizado. Esto es compatible con NGSI-LD cuando no se utilizan opciones y devuelve los datos de contexto de una entidad individual.  
+#### RainFallRadarObservation NGSI-LDの正規化例。  
+ここでは、JSON-LD形式のRainFallRadarObservationを正規化した例を示します。これは、オプションを使用しない場合のNGSI-LDとの互換性があり、個々のエンティティのコンテキストデータを返します。  
 ```json  
 {  
   "id": "urn:ngsi-ld:RainFallRadarObserved:RainFallRadarObserved:MNCA-RFRO-018",  

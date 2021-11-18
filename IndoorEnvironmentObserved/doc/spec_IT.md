@@ -1,15 +1,15 @@
-Entité : IndoorEnvironmentObserved  
-==================================  
-[Licence ouverte] (https://github.com/smart-data-models//dataModel.Environment/blob/master/IndoorEnvironmentObserved/LICENSE.md)  
-[document généré automatiquement] (https://docs.google.com/presentation/d/e/2PACX-1vTs-Ng5dIAwkg91oTTUdt8ua7woBXhPnwavZ0FxgR8BsAI_Ek3C5q97Nd94HS8KhP-r_quD4H0fgyt3/pub?start=false&loop=false&delayms=3000#slide=id.gb715ace035_0_60)  
-Description globale : **Observation des conditions atmosphériques et climatiques des environnements intérieurs.**  
+Entità: IndoorEnvironmentObserved  
+=================================  
+[Licenza aperta](https://github.com/smart-data-models//dataModel.Environment/blob/master/IndoorEnvironmentObserved/LICENSE.md)  
+[documento generato automaticamente](https://docs.google.com/presentation/d/e/2PACX-1vTs-Ng5dIAwkg91oTTUdt8ua7woBXhPnwavZ0FxgR8BsAI_Ek3C5q97Nd94HS8KhP-r_quD4H0fgyt3/pub?start=false&loop=false&delayms=3000#slide=id.gb715ace035_0_60)  
+Descrizione globale: **Un'osservazione delle condizioni dell'aria e del clima per gli ambienti interni.  
 
-## Liste des propriétés  
+## Elenco delle proprietà  
 
-- `address`: L'adresse postale  - `alternateName`: Un nom alternatif pour cet élément  - `areaServed`: La zone géographique où un service ou un article offert est fourni  - `atmosphericPressure`: Pression atmosphérique mesurée  - `co2`: La concentration intérieure mesurée de C02 nominalement en mg/L  - `dataProvider`: Une séquence de caractères identifiant le fournisseur de l'entité de données harmonisées.  - `dateCreated`: Horodatage de la création de l'entité. Celui-ci sera généralement attribué par la plateforme de stockage.  - `dateModified`: Horodatage de la dernière modification de l'entité. Il sera généralement attribué par la plateforme de stockage.  - `dateObserved`: Date et heure de l'observation en ISO8601  - `description`: Une description de cet article  - `id`: Identifiant unique de l'entité  - `illuminance`: Éclairement mesuré  - `location`: Référence Geojson à l'élément. Il peut s'agir d'un point, d'une ligne, d'un polygone, d'un point multiple, d'une ligne multiple ou d'un polygone multiple.  - `name`: Le nom de cet élément.  - `owner`: Une liste contenant une séquence de caractères codée en JSON référençant les identifiants uniques du ou des propriétaires.  - `peopleCount`: Nombre de personnes dans la salle  - `refDevice`: Une référence au(x) dispositif(s) qui a (ont) capturé cette observation.  - `refPointOfInterest`: Une référence à un point d'intérêt associé à cette observation.  - `relativeHumidity`: Humidité mesurée  - `seeAlso`: liste d'uri pointant vers des ressources supplémentaires sur l'élément  - `sensorHeight`: Hauteur du capteur (distance par rapport au sol)  - `sensorPlacement`: Position du capteur  - `source`: Une séquence de caractères donnant la source originale des données de l'entité sous forme d'URL. Il est recommandé d'utiliser le nom de domaine entièrement qualifié du fournisseur source ou l'URL de l'objet source.  - `temperature`: Température mesurée  - `type`: NGSI Type d'entité    
-Propriétés requises  
-- `dateObserved`  - `id`  - `location`  - `type`  ## Description des propriétés du modèle de données  
-Classés par ordre alphabétique (cliquez pour plus de détails)  
+- `address`: L'indirizzo postale  - `alternateName`: Un nome alternativo per questa voce  - `areaServed`: L'area geografica in cui viene fornito un servizio o un articolo offerto  - `atmosphericPressure`: Pressione atmosferica misurata  - `co2`: La concentrazione interna di C02 misurata nominalmente in mg/L  - `dataProvider`: Una sequenza di caratteri che identifica il fornitore dell'entità di dati armonizzata.  - `dateCreated`: Timestamp di creazione dell'entità. Questo sarà di solito assegnato dalla piattaforma di archiviazione.  - `dateModified`: Timestamp dell'ultima modifica dell'entità. Questo sarà di solito assegnato dalla piattaforma di archiviazione.  - `dateObserved`: Data e ora dell'osservazione in ISO8601  - `description`: Una descrizione di questo articolo  - `id`: Identificatore unico dell'entità  - `illuminance`: Illuminamento misurato  - `location`: Riferimento Geojson all'elemento. Può essere Point, LineString, Polygon, MultiPoint, MultiLineString o MultiPolygon  - `name`: Il nome di questo articolo.  - `owner`: Una lista contenente una sequenza di caratteri codificata in JSON che si riferisce agli ID unici dei proprietari  - `peopleCount`: Numero di persone nella stanza  - `refDevice`: Un riferimento al dispositivo o ai dispositivi che hanno catturato questa osservazione.  - `refPointOfInterest`: Un riferimento a un punto di interesse associato a questa osservazione.  - `relativeHumidity`: Umidità misurata  - `seeAlso`: elenco di uri che puntano a risorse aggiuntive sull'elemento  - `sensorHeight`: Altezza del sensore (distanza dal pavimento)  - `sensorPlacement`: Posizione del sensore  - `source`: Una sequenza di caratteri che dà la fonte originale dei dati dell'entità come URL. Si raccomanda di essere il nome di dominio completamente qualificato del fornitore di origine, o l'URL dell'oggetto di origine.  - `temperature`: Temperatura misurata  - `type`: Tipo di entità NGSI    
+Proprietà richieste  
+- `dateObserved`  - `id`  - `location`  - `type`  ## Descrizione del modello di dati delle proprietà  
+Ordinati in ordine alfabetico (clicca per i dettagli)  
 <details><summary><strong>full yaml details</strong></summary>    
 ```yaml  
 IndoorEnvironmentObserved:    
@@ -377,9 +377,9 @@ IndoorEnvironmentObserved:
   x-version: 0.0.1    
 ```  
 </details>    
-## Exemples de charges utiles  
-#### Valeurs-clés de la NGSI-v2 IndoorEnvironmentObserved Exemple  
-Voici un exemple d'IndoorEnvironmentObserved au format JSON-LD sous forme de valeurs-clés. Ceci est compatible avec la NGSI-v2 lorsqu'on utilise `options=keyValues` et renvoie les données contextuelles d'une entité individuelle.  
+## Esempio di payloads  
+#### Valori chiave NGSI-v2 di IndoorEnvironmentObserved Esempio  
+Ecco un esempio di IndoorEnvironmentObserved in formato JSON-LD come valori chiave. Questo è compatibile con NGSI-v2 quando si usa `options=keyValues` e restituisce i dati di contesto di una singola entità.  
 ```json  
 {  
         "id": "urn:ngsi:MuseoDemo_Room_1",  
@@ -410,8 +410,8 @@ IndoorEnvironmentObserved:
         "SO2": 11  
 }  
 ```  
-#### IndoorEnvironmentObserved NGSI-v2 normalisé Exemple  
-Voici un exemple d'IndoorEnvironmentObserved au format JSON-LD tel que normalisé. Ce format est compatible avec la NGSI-v2 lorsqu'il n'utilise pas d'options et renvoie les données contextuelles d'une entité individuelle.  
+#### IndoorEnvironmentObserved NGSI-v2 normalizzato Esempio  
+Ecco un esempio di un IndoorEnvironmentObserved in formato JSON-LD come normalizzato. Questo è compatibile con NGSI-v2 quando non usa opzioni e restituisce i dati di contesto di una singola entità.  
 ```json  
 {  
     "id": "urn:ngsi:MuseoDemo_Room_1",  
@@ -507,8 +507,8 @@ IndoorEnvironmentObserved:
     }  
 }  
 ```  
-#### Valeurs clés NGSI-LD IndoorEnvironmentObserved Exemple  
-Voici un exemple d'IndoorEnvironmentObserved au format JSON-LD en tant que valeurs-clés. Ceci est compatible avec NGSI-LD en utilisant `options=keyValues` et renvoie les données contextuelles d'une entité individuelle.  
+#### Valori-chiave NGSI-LD osservati nell'ambiente interno Esempio  
+Ecco un esempio di IndoorEnvironmentObserved in formato JSON-LD come valori chiave. Questo è compatibile con NGSI-LD quando si usa `options=keyValues` e restituisce i dati di contesto di una singola entità.  
 ```json  
 {  
   "id": "urn:ngsi-ld:IndoorEnvironmentObserved:urn:ngsi:MuseoDemo_Room_1",  
@@ -587,8 +587,8 @@ IndoorEnvironmentObserved:
   ]  
 }  
 ```  
-#### IndoorEnvironmentObserved NGSI-LD normalisé Exemple  
-Voici un exemple d'IndoorEnvironmentObserved au format JSON-LD tel que normalisé. Ce format est compatible avec NGSI-LD lorsqu'il n'utilise pas d'options et renvoie les données contextuelles d'une entité individuelle.  
+#### IndoorEnvironmentObserved NGSI-LD normalizzato Esempio  
+Ecco un esempio di un IndoorEnvironmentObserved in formato JSON-LD normalizzato. Questo è compatibile con NGSI-LD quando non usa opzioni e restituisce i dati di contesto di una singola entità.  
 ```json  
 {  
     "id": "urn:ngsi-ld:IndoorEnvironmentObserved:urn:ngsi:MuseoDemo_Room_1",  

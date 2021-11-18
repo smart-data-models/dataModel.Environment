@@ -1,17 +1,17 @@
-Entidad: AguaObservada  
-======================  
-[Licencia abierta](https://github.com/smart-data-models//dataModel.Environment/blob/master/WaterObserved/LICENSE.md)  
-[documento generado automáticamente](https://docs.google.com/presentation/d/e/2PACX-1vTs-Ng5dIAwkg91oTTUdt8ua7woBXhPnwavZ0FxgR8BsAI_Ek3C5q97Nd94HS8KhP-r_quD4H0fgyt3/pub?start=false&loop=false&delayms=3000#slide=id.gb715ace035_0_60)  
-Descripción global: ** El modelo de datos de observación del agua está destinado a representar los parámetros de flujo, nivel y volumen de agua observados, así como la información sobre el oleaje, sobre un área fija o variable. Esta observación también incluye las masas de objetos flotantes en esta área. Los datos recogidos son proporcionados por Sensores, Cámaras, Estaciones de Agua posicionadas en lugares específicos o sensibles para ríos, arroyos, torrentes, lagos, mares, etc.**.  
+Entità: WaterObserved  
+=====================  
+[Licenza aperta](https://github.com/smart-data-models//dataModel.Environment/blob/master/WaterObserved/LICENSE.md)  
+[documento generato automaticamente](https://docs.google.com/presentation/d/e/2PACX-1vTs-Ng5dIAwkg91oTTUdt8ua7woBXhPnwavZ0FxgR8BsAI_Ek3C5q97Nd94HS8KhP-r_quD4H0fgyt3/pub?start=false&loop=false&delayms=3000#slide=id.gb715ace035_0_60)  
+Descrizione globale: ** Il modello di dati di osservazione dell'acqua ha lo scopo di rappresentare i parametri di flusso, livello e volume dell'acqua osservati, così come le informazioni sul moto ondoso, su un'area fissa o variabile. Questa osservazione include anche le masse di oggetti galleggianti su quest'area. I dati raccolti sono forniti da sensori, telecamere, stazioni idriche posizionate in luoghi specifici o sensibili per fiumi, ruscelli, torrenti, laghi, mari, ecc.  
 
-## Lista de propiedades  
+## Elenco delle proprietà  
 
-- `address`: La dirección postal  - `alternateName`: Un nombre alternativo para este artículo  - `areaServed`: La zona geográfica en la que se presta un servicio o se ofrece un artículo  - `dataProvider`: Una secuencia de caracteres que identifica al proveedor de la entidad de datos armonizada.  - `dateCreated`: Marca de tiempo de creación de la entidad. Suele ser asignada por la plataforma de almacenamiento.  - `dateModified`: Marca de tiempo de la última modificación de la entidad. Normalmente será asignada por la plataforma de almacenamiento.  - `dateObserved`: Fecha y hora de esta observación representada por un formato ISO8601 UTC.  - `dateObservedFrom`: Período de observación : Fecha y hora de inicio en formato ISO8601 UTC.  - `dateObservedTo`: Período de observación : Fecha y hora de finalización en formato ISO8601 UTC.  - `description`: Una descripción de este artículo  - `flow`: Flujo de agua observado. El código de la unidad (texto) de medida dado utilizando el UN/CEFACAT  - `height`: Altura del agua - Alcance del nivel en las costas de alerta.  - `id`: Identificador único de la entidad  - `location`: Referencia Geojson al elemento. Puede ser Point, LineString, Polygon, MultiPoint, MultiLineString o MultiPolygon  - `measuredArea`: Referencia de la superficie medida. El código de la unidad (texto) de medida dado utilizando los [Códigos comunes UN/CEFACT](http://wiki.goodrelations-vocabulary.org/Documentation/UN/CEFACT_Common_Codes) (máx. 3 caracteres). Por ejemplo, <código>MTK</código> representa M².  - `name`: El nombre de este artículo.  - `objectArea`: Porcentaje ocupado por el objeto flotante en la zona. El código de la unidad (texto) de medida que se da utilizando los [Códigos Comunes UN/CEFACT](http://wiki.goodrelations-vocabulary.org/Documentation/UN/CEFACT_Common_Codes) (máx. 3 caracteres). Por ejemplo, <código>P1</código> representa el Porcentaje.  - `objectHeightAverage`: Altura media elevada. El código de la unidad (texto) de medida que se da utilizando los [Códigos Comunes UN/CEFACT](http://wiki.goodrelations-vocabulary.org/Documentation/UN/CEFACT_Common_Codes) (máx. 3 caracteres). Por ejemplo, <código>MTR</código> representa el Metro.  - `objectHeightMax`: Altura máxima elevada. El código de la unidad (texto) de medida dado utilizando los [Códigos comunes UN/CEFACT](http://wiki.goodrelations-vocabulary.org/Documentation/UN/CEFACT_Common_Codes) (máx. 3 caracteres). Por ejemplo, <código>MTR</código> representa el Metro.  - `objectVolume`: Volumen estimado recaudado. El código de la unidad (texto) de medida que se da utilizando los [Códigos Comunes UN/CEFACT](http://wiki.goodrelations-vocabulary.org/Documentation/UN/CEFACT_Common_Codes) (máximo 3 caracteres). Por ejemplo, <código>MTQ</código> representa Metros Cúbicos  - `owner`: Una lista que contiene una secuencia de caracteres codificada en JSON que hace referencia a los identificadores únicos de los propietarios  - `refDevice`: Una referencia a un punto de interés asociado a esta observación.  - `seeAlso`: lista de uri que apuntan a recursos adicionales sobre el artículo  - `source`: Una secuencia de caracteres que indica la fuente original de los datos de la entidad en forma de URL. Se recomienda que sea el nombre de dominio completo del proveedor de origen o la URL del objeto de origen.  - `swellDirection`: Dirección de las marejadas observadas.  - `swellHeight`: Altura del oleaje observada.  - `swellPeriod`: Periodo de oleaje observado.  - `type`: Tipo de entidad NGSI. Tiene que ser WaterObserved  - `waveLength`: Longitud de onda observada.    
-Propiedades requeridas  
+- `address`: L'indirizzo postale  - `alternateName`: Un nome alternativo per questa voce  - `areaServed`: L'area geografica in cui viene fornito un servizio o un articolo offerto  - `dataProvider`: Una sequenza di caratteri che identifica il fornitore dell'entità di dati armonizzata.  - `dateCreated`: Timestamp di creazione dell'entità. Questo sarà di solito assegnato dalla piattaforma di archiviazione.  - `dateModified`: Timestamp dell'ultima modifica dell'entità. Questo sarà di solito assegnato dalla piattaforma di archiviazione.  - `dateObserved`: Data e ora di questa osservazione rappresentata da un formato ISO8601 UTC.  - `dateObservedFrom`: Periodo di osservazione : Data e ora di inizio in formato ISO8601 UTC.  - `dateObservedTo`: Periodo di osservazione : Data e ora di fine in formato ISO8601 UTC.  - `description`: Una descrizione di questo articolo  - `flow`: Flusso d'acqua osservato. Il codice dell'unità (testo) di misura dato usando la UN/CEFACAT  - `height`: Altezza dell'acqua - Livello raggiunto sulle coste allertate.  - `id`: Identificatore unico dell'entità  - `location`: Riferimento Geojson all'elemento. Può essere Point, LineString, Polygon, MultiPoint, MultiLineString o MultiPolygon  - `measuredArea`: Riferimento della superficie misurata. Il codice dell'unità (testo) di misura dato usando i [Codici comuni UN/CEFACT](http://wiki.goodrelations-vocabulary.org/Documentation/UN/CEFACT_Common_Codes) (max. 3 caratteri). Per esempio, <code>MTK</code> rappresenta M².  - `name`: Il nome di questo articolo.  - `objectArea`: Percentuale occupata da un oggetto galleggiante nell'area. Il codice dell'unità (testo) di misura dato usando i [Codici comuni UN/CEFACT](http://wiki.goodrelations-vocabulary.org/Documentation/UN/CEFACT_Common_Codes) (massimo 3 caratteri). Per esempio, <code>P1</code> rappresenta la Percentuale.  - `objectHeightAverage`: Altezza media sollevata. Il codice dell'unità (testo) di misura dato usando i [Codici comuni UN/CEFACT](http://wiki.goodrelations-vocabulary.org/Documentation/UN/CEFACT_Common_Codes) (massimo 3 caratteri). Per esempio, <code>MTR</code> rappresenta il metro.  - `objectHeightMax`: Altezza massima sollevata. Il codice dell'unità (testo) di misura dato usando i [Codici comuni UN/CEFACT](http://wiki.goodrelations-vocabulary.org/Documentation/UN/CEFACT_Common_Codes) (massimo 3 caratteri). Per esempio, <code>MTR</code> rappresenta Meter.  - `objectVolume`: Volume stimato sollevato. Il codice dell'unità (testo) di misura dato usando i [codici comuni UN/CEFACT](http://wiki.goodrelations-vocabulary.org/Documentation/UN/CEFACT_Common_Codes) (massimo 3 caratteri). Per esempio, <code>MTQ</code> rappresenta i metri cubi  - `owner`: Una lista contenente una sequenza di caratteri codificata in JSON che si riferisce agli ID unici dei proprietari  - `refDevice`: Un riferimento a un punto di interesse associato a questa osservazione.  - `seeAlso`: elenco di uri che puntano a risorse aggiuntive sull'elemento  - `source`: Una sequenza di caratteri che dà la fonte originale dei dati dell'entità come URL. Si raccomanda di essere il nome di dominio completamente qualificato del fornitore di origine, o l'URL dell'oggetto di origine.  - `swellDirection`: Direzione delle mareggiate osservata.  - `swellHeight`: Altezza delle onde osservata.  - `swellPeriod`: Periodo di mareggiate osservato.  - `type`: Tipo di entità NGSI. Deve essere WaterObserved  - `waveLength`: Lunghezza d'onda osservata.    
+Proprietà richieste  
 - `dateObserved`  - `id`  - `location`  - `type`    
-El modelo de datos de observación del agua tiene por objeto representar los parámetros de flujo, nivel y volumen de agua observados, así como la información sobre el oleaje, en una zona fija o variable. Esta observación también incluye las masas de objetos flotantes en esta área.  Los datos recogidos son proporcionados por [Sensores], [Cámaras], [Estaciones acuáticas] colocados en lugares específicos o sensibles para los ríos, arroyos, torrentes, lagos, mares, etc.  
-## Descripción del modelo de datos de las propiedades  
-Ordenados alfabéticamente (haga clic para ver los detalles)  
+Il modello di dati di osservazione dell'acqua è destinato a rappresentare i parametri di flusso, livello e volume dell'acqua osservati, così come le informazioni sul moto ondoso, su un'area fissa o variabile. Questa osservazione include anche le masse di oggetti galleggianti su quest'area.  I dati raccolti sono forniti da [Sensori], [Telecamere], [Stazioni idriche] posizionate in luoghi specifici o sensibili per fiumi, torrenti, torrenti, laghi, mari, ecc.  
+## Descrizione del modello di dati delle proprietà  
+Ordinati in ordine alfabetico (clicca per i dettagli)  
 <details><summary><strong>full yaml details</strong></summary>    
 ```yaml  
 WaterObserved:    
@@ -408,9 +408,9 @@ WaterObserved:
   x-version: 0.0.2    
 ```  
 </details>    
-## Ejemplo de carga útil  
-#### WaterObserved NGSI-v2 key-values Ejemplo  
-Aquí hay un ejemplo de un WaterObserved en formato JSON-LD como valores-clave. Esto es compatible con NGSI-v2 cuando se utiliza `options=keyValues` y devuelve los datos de contexto de una entidad individual.  
+## Esempio di payloads  
+#### WaterObserved NGSI-v2 valori chiave Esempio  
+Ecco un esempio di un WaterObserved in formato JSON-LD come valori-chiave. Questo è compatibile con NGSI-v2 quando si usa `options=keyValues` e restituisce i dati di contesto di una singola entità.  
 ```json  
 {  
   "id": "WaterObserved:MNCA-001",  
@@ -437,8 +437,8 @@ WaterObserved:
   "objectVolume": 17.5  
 }  
 ```  
-#### AguaObservada NGSI-v2 normalizada Ejemplo  
-Este es un ejemplo de un WaterObserved en formato JSON-LD normalizado. Esto es compatible con NGSI-v2 cuando no se utilizan opciones y devuelve los datos de contexto de una entidad individual.  
+#### AcquaOsservata NGSI-v2 normalizzata Esempio  
+Ecco un esempio di un WaterObserved in formato JSON-LD normalizzato. Questo è compatibile con NGSI-v2 quando non usa opzioni e restituisce i dati di contesto di una singola entità.  
 ```json  
 {  
   "id": "WaterObserved:MNCA-001",  
@@ -507,8 +507,8 @@ WaterObserved:
   }  
 }  
 ```  
-#### WaterObserved NGSI-LD key-values Ejemplo  
-Aquí hay un ejemplo de un WaterObserved en formato JSON-LD como valores-clave. Esto es compatible con NGSI-LD cuando se utiliza `options=keyValues` y devuelve los datos de contexto de una entidad individual.  
+#### Acqua Osservata NGSI-LD valori chiave Esempio  
+Ecco un esempio di un WaterObserved in formato JSON-LD come key-values. Questo è compatibile con NGSI-LD quando si usa `options=keyValues` e restituisce i dati di contesto di una singola entità.  
 ```json  
 {  
   "id": "uri:ngsi:WaterObserved:MNCA-001",  
@@ -538,8 +538,8 @@ WaterObserved:
   ]  
 }  
 ```  
-#### AguaObservada NGSI-LD normalizada Ejemplo  
-Este es un ejemplo de un WaterObserved en formato JSON-LD normalizado. Esto es compatible con NGSI-LD cuando no se utilizan opciones y devuelve los datos de contexto de una entidad individual.  
+#### Acqua Osservata NGSI-LD normalizzata Esempio  
+Ecco un esempio di un WaterObserved in formato JSON-LD normalizzato. Questo è compatibile con NGSI-LD quando non usa opzioni e restituisce i dati di contesto di una singola entità.  
 ```json  
 {  
   "id": "urn:ngsi:WaterObserved:MNCA-001",  

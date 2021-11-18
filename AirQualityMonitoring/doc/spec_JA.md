@@ -1,15 +1,15 @@
-Entité : AirQualityMonitoring  
-=============================  
-[Licence ouverte] (https://github.com/smart-data-models//dataModel.Environment/blob/master/AirQualityMonitoring/LICENSE.md)  
-[document généré automatiquement] (https://docs.google.com/presentation/d/e/2PACX-1vTs-Ng5dIAwkg91oTTUdt8ua7woBXhPnwavZ0FxgR8BsAI_Ek3C5q97Nd94HS8KhP-r_quD4H0fgyt3/pub?start=false&loop=false&delayms=3000#slide=id.gb715ace035_0_60)  
-Description globale : **Modèle de données pour la surveillance de la qualité de l'air (AQM).**  
+エンティティAirQualityMonitoring  
+==========================  
+[オープンライセンス](https://github.com/smart-data-models//dataModel.Environment/blob/master/AirQualityMonitoring/LICENSE.md)  
+[document generated automatically](https://docs.google.com/presentation/d/e/2PACX-1vTs-Ng5dIAwkg91oTTUdt8ua7woBXhPnwavZ0FxgR8BsAI_Ek3C5q97Nd94HS8KhP-r_quD4H0fgyt3/pub?start=false&loop=false&delayms=3000#slide=id.gb715ace035_0_60)  
+グローバルな記述です。**Air Quality Monitoring (AQM) Data Modelの略です。  
 
-## Liste des propriétés  
+## プロパティのリスト  
 
-- `airQualityIndex`: Indice de qualité de l'air (IQA) global pour la qualité de l'air observée.  - `airQualityLevel`: Indication de la catégorie de qualité de l'air. Niveau qualitatif défini en fonction des agences sanitaires locales. Par exemple, "BON", "MODÉRÉ", "MAUVAIS", "MAUVAIS", "SÉRIEUX", "DANGEREUX", etc.  - `airTemperatureTSA`: Objet définissant le traitement temporel d'une propriété de base pendant une période. Il fournit les valeurs maximale, minimale, instantanée et moyenne.  - `alternateName`: Un nom alternatif pour cet élément  - `ambientNoiseTSA`: Objet définissant le traitement temporel d'une propriété de base pendant une période. Il fournit les valeurs maximale, minimale, instantanée et moyenne.  - `aqiMajorPollutant`: Polluant majeur dans l'indice de qualité de l'air (IQA). Enum : 'arsenic, bap, benzène, co2, nh3, no, no2, o2, o3, so2, pb'.  - `arsenicTSA`: Objet définissant le traitement temporel d'une propriété de base pendant une période. Il fournit les valeurs maximum, minimum, instantanée et moyenne.  - `atmosphericPressure`: Pression atmosphérique (atmosphérique ou barométrique) observée.  - `atmosphericPressureTSA`: Objet définissant le traitement temporel d'une propriété de base pendant une période. Il fournit les valeurs maximale, minimale, instantanée et moyenne.  - `bapTSA`: Objet définissant le traitement temporel d'une propriété de base pendant une période. Il fournit les valeurs maximum, minimum, instantanée et moyenne.  - `benzeneTSA`: Objet définissant le traitement temporel d'une propriété de base pendant une période. Il fournit les valeurs maximale, minimale, instantanée et moyenne.  - `co2TSA`: Objet définissant le traitement temporel d'une propriété de base pendant une période. Il fournit les valeurs maximale, minimale, instantanée et moyenne.  - `coTSA`: Objet définissant le traitement temporel d'une propriété de base pendant une période. Il fournit les valeurs maximum, minimum, instantanée et moyenne.  - `dataProvider`: Une séquence de caractères identifiant le fournisseur de l'entité de données harmonisées.  - `dateCreated`: Horodatage de la création de l'entité. Celui-ci sera généralement attribué par la plateforme de stockage.  - `dateModified`: Horodatage de la dernière modification de l'entité. Il sera généralement attribué par la plateforme de stockage.  - `description`: Une description de cet article  - `deviceInfo`: Informations sur le dispositif associé aux observations.  - `deviceStatus`: Indique l'état du ou des dispositifs physiques.  - `id`: Identifiant unique de l'entité  - `illuminance`: Éclairement mesuré  - `name`: Le nom de cet élément.  - `nh3TSA`: Objet définissant le traitement temporel d'une propriété de base pendant une période. Il fournit les valeurs maximum, minimum, instantanée et moyenne.  - `nickelTSA`: Objet définissant le traitement temporel d'une propriété de base pendant une période. Il fournit les valeurs maximum, minimum, instantanée et moyenne.  - `no2TSA`: Objet définissant le traitement temporel d'une propriété de base pendant une période. Il fournit les valeurs maximum, minimum, instantanée et moyenne.  - `noTSA`: Objet définissant le traitement temporel d'une propriété de base pendant une période. Il fournit les valeurs maximum, minimum, instantanée et moyenne.  - `o2TSA`: Objet définissant le traitement temporel d'une propriété de base pendant une période. Il fournit les valeurs maximale, minimale, instantanée et moyenne.  - `o3TSA`: Objet définissant le traitement temporel d'une propriété de base pendant une période. Il fournit les valeurs maximum, minimum, instantanée et moyenne.  - `observationDateTime`: Dernière heure d'observation signalée.  - `owner`: Une liste contenant une séquence de caractères codée en JSON référençant les identifiants uniques du ou des propriétaires.  - `pbTSA`: Objet définissant le traitement temporel d'une propriété de base pendant une période. Il fournit les valeurs maximum, minimum, instantanée et moyenne.  - `pm10TSA`: Objet définissant le traitement temporel d'une propriété de base pendant une période. Il fournit les valeurs maximale, minimale, instantanée et moyenne.  - `pm25TSA`: Objet définissant le traitement temporel d'une propriété de base pendant une période. Il fournit les valeurs maximale, minimale, instantanée et moyenne.  - `precipitation`: Niveau de précipitations/pluie observé sur une durée donnée.  - `relativeHumidityTSA`: Objet définissant le traitement temporel d'une propriété de base pendant une période. Il fournit les valeurs maximum, minimum, instantanée et moyenne.  - `seeAlso`: liste d'uri pointant vers des ressources supplémentaires sur l'élément  - `so2TSA`: Objet définissant le traitement temporel d'une propriété de base pendant une période. Il fournit les valeurs maximale, minimale, instantanée et moyenne.  - `solarRadiation`: Rayonnement solaire instantané mesuré en kW/m2  - `source`: Une séquence de caractères donnant la source originale des données de l'entité sous forme d'URL. Il est recommandé d'utiliser le nom de domaine entièrement qualifié du fournisseur source ou l'URL de l'objet source.  - `type`: Type de NGSI. Il doit s'agir de AirQualityMonitoring.  - `uvTSA`: Objet définissant le traitement temporel d'une propriété de base pendant une période. Il fournit les valeurs maximale, minimale, instantanée et moyenne.  - `versionInfo`: Informations sur la version correspondant à cette observation.    
-Propriétés requises  
-- `id`  - `type`  ## Description des propriétés du modèle de données  
-Classés par ordre alphabétique (cliquez pour plus de détails)  
+- `airQualityIndex`: 観測された大気質を表す総合的な大気質指標（AQI）。  - `airQualityLevel`: 空気の質のカテゴリー表示。地域の保健機関に応じて定義された質的レベル。例えば、「GOOD」、「MODERATE」、「POOR」、「UNHEALTHY」、「SEVERE」、「HAZARDOUS」など。  - `airTemperatureTSA`: ある期間における基本プロパティの時間的な処理を定義するオブジェクト。最大値、最小値、瞬時値、平均値を提供します。  - `alternateName`: このアイテムの別称  - `ambientNoiseTSA`: ある期間における基本プロパティの時間的な処理を定義するオブジェクト。最大値、最小値、瞬時値、平均値を提供します。  - `aqiMajorPollutant`: 大気質指標(AQI)の主要汚染物質。Enum:'arsenic, bap, benzene, co2, nh3, no, no2, o2, o3, so2, pb'.  - `arsenicTSA`: ある期間における基本プロパティの時間的な処理を定義するオブジェクト。最大値、最小値、瞬時値、平均値を提供します。  - `atmosphericPressure`: 観測された気圧（大気圧または気圧計）。  - `atmosphericPressureTSA`: ある期間における基本プロパティの時間的な処理を定義するオブジェクト。最大値、最小値、瞬時値、平均値を提供します。  - `bapTSA`: ある期間における基本プロパティの時間的な処理を定義するオブジェクト。最大値、最小値、瞬時値、平均値を提供します。  - `benzeneTSA`: ある期間における基本プロパティの時間的な処理を定義するオブジェクト。最大値、最小値、瞬時値、平均値を提供します。  - `co2TSA`: ある期間における基本プロパティの時間的な処理を定義するオブジェクト。最大値、最小値、瞬時値、平均値を提供します。  - `coTSA`: ある期間における基本プロパティの時間的な処理を定義するオブジェクト。最大値、最小値、瞬時値、平均値を提供します。  - `dataProvider`: 調和されたデータ・エンティティの提供者を識別する一連の文字。  - `dateCreated`: エンティティの作成タイムスタンプ。これは通常、ストレージプラットフォームによって割り当てられます。  - `dateModified`: エンティティが最後に変更された時のタイムスタンプ。これは通常、ストレージプラットフォームによって割り当てられます。  - `description`: このアイテムの説明  - `deviceInfo`: オブザベーションに関連するデバイスに関する情報です。  - `deviceStatus`: 物理的なデバイスまたは機器の状態を示す。  - `id`: エンティティのユニークな識別子  - `illuminance`: 実測照度  - `name`: このアイテムの名前です。  - `nh3TSA`: ある期間における基本プロパティの時間的な処理を定義するオブジェクト。最大値、最小値、瞬時値、平均値を提供します。  - `nickelTSA`: ある期間における基本プロパティの時間的な処理を定義するオブジェクト。最大値、最小値、瞬時値、平均値を提供します。  - `no2TSA`: ある期間における基本プロパティの時間的な処理を定義するオブジェクト。最大値、最小値、瞬時値、平均値を提供します。  - `noTSA`: ある期間における基本プロパティの時間的な処理を定義するオブジェクト。最大値、最小値、瞬時値、平均値を提供します。  - `o2TSA`: ある期間における基本プロパティの時間的な処理を定義するオブジェクト。最大値、最小値、瞬時値、平均値を提供します。  - `o3TSA`: ある期間における基本プロパティの時間的な処理を定義するオブジェクト。最大値、最小値、瞬時値、平均値を提供します。  - `observationDateTime`: 最後に報告された観測時刻。  - `owner`: オーナーのIDを参照するJSONエンコードされた文字列を含むリスト  - `pbTSA`: ある期間における基本プロパティの時間的な処理を定義するオブジェクト。最大値、最小値、瞬時値、平均値を提供します。  - `pm10TSA`: ある期間における基本プロパティの時間的な処理を定義するオブジェクト。最大値、最小値、瞬時値、平均値を提供します。  - `pm25TSA`: ある期間における基本プロパティの時間的な処理を定義するオブジェクト。最大値、最小値、瞬時値、平均値を提供します。  - `precipitation`: 一定期間の降水量・降雨量を観測したもの。  - `relativeHumidityTSA`: ある期間における基本プロパティの時間的な処理を定義するオブジェクト。最大値、最小値、瞬時値、平均値を提供します。  - `seeAlso`: アイテムに関する追加リソースを示すuriのリスト  - `so2TSA`: ある期間における基本プロパティの時間的な処理を定義するオブジェクト。最大値、最小値、瞬時値、平均値を提供します。  - `solarRadiation`: 瞬間日射量（単位：kW/m2  - `source`: エンティティデータのオリジナルソースをURLで示す一連の文字。ソースプロバイダの完全修飾ドメイン名、またはソースオブジェクトのURLであることが推奨されます。  - `type`: NGSIタイプ。AirQualityMonitoringである必要があります。  - `uvTSA`: ある期間における基本プロパティの時間的な処理を定義するオブジェクト。最大値、最小値、瞬時値、平均値を提供します。  - `versionInfo`: この観測に対応するバージョン情報    
+必須項目  
+- `id`  - `type`  ## データモデルによるプロパティの記述  
+アルファベット順（クリックすると詳細が表示されます）  
 <details><summary><strong>full yaml details</strong></summary>    
 ```yaml  
 AirQualityMonitoring:    
@@ -377,9 +377,9 @@ AirQualityMonitoring:
   x-version: 0.0.1    
 ```  
 </details>    
-## Exemples de charges utiles  
-#### Surveillance de la qualité de l'air Valeurs-clés NGSI-v2 Exemple  
-Voici un exemple de AirQualityMonitoring au format JSON-LD en tant que valeurs-clés. Ceci est compatible avec NGSI-v2 lorsque l'on utilise `options=keyValues` et renvoie les données contextuelles d'une entité individuelle.  
+## ペイロードの例  
+#### AirQualityMonitoring NGSI-v2のキーバリューの例  
+AirQualityMonitoringをkey-valuesとしてJSON-LD形式で出力した例です。これは`options=keyValues`を使用した場合のNGSI-v2との互換性があり、個々のエンティティのコンテキストデータを返します。  
 ```json  
 {  
   "id": "urn:ngsi-ld:AirQualityMonitoring:id:ARET:00795717",  
@@ -584,8 +584,8 @@ AirQualityMonitoring:
   }  
 }  
 ```  
-#### AirQualityMonitoring NGSI-v2 normalisé Exemple  
-Voici un exemple de AirQualityMonitoring au format JSON-LD tel que normalisé. Ce format est compatible avec la norme NGSI-v2 lorsqu'il n'utilise pas d'options et renvoie les données contextuelles d'une entité individuelle.  
+#### AirQualityMonitoring NGSI-v2 正規化例  
+AirQualityMonitoringをJSON-LD形式で正規化した例を示します。これは、オプションを使用しない場合のNGSI-v2との互換性があり、個々のエンティティのコンテキストデータを返します。  
 ```json  
 {  
   "id": "urn:ngsi-ld:AirQualityMonitoring:id:MUTW:63473748",  
@@ -907,8 +907,8 @@ AirQualityMonitoring:
   ]  
 }  
 ```  
-#### Surveillance de la qualité de l'air Valeurs-clés NGSI-LD Exemple  
-Voici un exemple de AirQualityMonitoring au format JSON-LD en tant que valeurs-clés. Ceci est compatible avec NGSI-LD quand on utilise `options=keyValues` et renvoie les données contextuelles d'une entité individuelle.  
+#### AirQualityMonitoring NGSI-LDのキーバリューの例  
+AirQualityMonitoringをkey-valuesとしてJSON-LD形式で出力した例です。これは`options=keyValues`を使った場合のNGSI-LDとの互換性があり、個々のエンティティのコンテキストデータを返します。  
 ```json  
 {  
   "id": "urn:ngsi-ld:AirQualityMonitoring:id:ARET:00795717",  
@@ -1116,8 +1116,8 @@ AirQualityMonitoring:
   ]  
 }  
 ```  
-#### Surveillance de la qualité de l'air NGSI-LD normalisé Exemple  
-Voici un exemple de AirQualityMonitoring au format JSON-LD tel que normalisé. Ce format est compatible avec NGSI-LD lorsqu'il n'utilise pas d'options et renvoie les données contextuelles d'une entité individuelle.  
+#### AirQualityMonitoring NGSI-LD 正規化例  
+AirQualityMonitoringをJSON-LD形式で正規化した例を示します。これは、オプションを使用しない場合のNGSI-LDとの互換性があり、個々のエンティティのコンテキストデータを返します。  
 ```json  
 {  
   "id": "urn:ngsi-ld:AirQualityMonitoring:id:ARET:00795717",  

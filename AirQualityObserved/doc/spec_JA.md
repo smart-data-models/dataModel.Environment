@@ -1,17 +1,17 @@
-Entidad: AirQualityObserved  
-===========================  
-[Licencia abierta](https://github.com/smart-data-models//dataModel.Environment/blob/master/AirQualityObserved/LICENSE.md)  
-[documento generado automáticamente](https://docs.google.com/presentation/d/e/2PACX-1vTs-Ng5dIAwkg91oTTUdt8ua7woBXhPnwavZ0FxgR8BsAI_Ek3C5q97Nd94HS8KhP-r_quD4H0fgyt3/pub?start=false&loop=false&delayms=3000#slide=id.gb715ace035_0_60)  
-Descripción global: **Una observación de las condiciones de calidad del aire en un lugar y momento determinados.**  
+エンティティAirQualityObserved  
+========================  
+[オープンライセンス](https://github.com/smart-data-models//dataModel.Environment/blob/master/AirQualityObserved/LICENSE.md)  
+[document generated automatically](https://docs.google.com/presentation/d/e/2PACX-1vTs-Ng5dIAwkg91oTTUdt8ua7woBXhPnwavZ0FxgR8BsAI_Ek3C5q97Nd94HS8KhP-r_quD4H0fgyt3/pub?start=false&loop=false&delayms=3000#slide=id.gb715ace035_0_60)  
+グローバルな記述。**ある場所、ある時間帯の空気の状態を観察すること。  
 
-## Lista de propiedades  
+## プロパティのリスト  
 
-- `address`: La dirección postal  - `airQualityIndex`: El índice de calidad del aire es un número utilizado para informar de la calidad del aire en un día determinado.  - `airQualityLevel`: Nivel cualitativo global de preocupación por la salud correspondiente a la calidad del aire observada  - `alternateName`: Un nombre alternativo para este artículo  - `areaServed`: Área de nivel superior a la que pertenece esta medición de la calidad del aire  - `as`: Arsénico detectado  - `c6h6`: Se ha detectado benceno  - `cd`: Cadmio detectado  - `co`: Monóxido de carbono detectado  - `co2`: Dióxido de carbono detectado  - `coLevel`: Presencia cualitativa de monóxido de carbono  - `dataProvider`: Una secuencia de caracteres que identifica al proveedor de la entidad de datos armonizada.  - `dateCreated`: Marca de tiempo de creación de la entidad. Suele ser asignada por la plataforma de almacenamiento.  - `dateModified`: Marca de tiempo de la última modificación de la entidad. Normalmente será asignada por la plataforma de almacenamiento.  - `dateObserved`: La fecha y la hora de esta observación en formato ISO8601 UTC  - `description`: Una descripción de este artículo  - `id`: Identificador único de la entidad  - `location`: Referencia Geojson al elemento. Puede ser Point, LineString, Polygon, MultiPoint, MultiLineString o MultiPolygon  - `name`: El nombre de este artículo.  - `ni`: Níquel detectado  - `no`: Monóxido de nitrógeno detectado  - `no2`: Dióxido de nitrógeno detectado  - `nox`: Otros óxidos de nitrógeno detectados  - `o3`: Ozono detectado  - `owner`: Una lista que contiene una secuencia de caracteres codificada en JSON que hace referencia a los identificadores únicos de los propietarios  - `pb`: Plomo detectado  - `pm10`: Partículas de 10 micrómetros o menos de diámetro  - `pm25`: Partículas de 2,5 micrómetros o menos de diámetro  - `precipitation`: Cantidad de agua de lluvia  - `refDevice`: Una referencia al dispositivo o dispositivos que captaron esta observación.  - `refPointOfInterest`: Una referencia a un punto de interés (normalmente una estación de calidad del aire) asociada a esta observación.  - `refWeatherObserved`:  Tiempo observado asociado a las condiciones de calidad del aire descritas por esta entidad.  - `relativeHumidity`: Humedad en el aire  - `reliability`: Fiabilidad (porcentaje, expresado en partes por uno) correspondiente a la calidad del aire observada  - `seeAlso`: lista de uri que apuntan a recursos adicionales sobre el artículo  - `sh2`: Sulfuro de hidrógeno detectado  - `so2`: Dióxido de azufre detectado  - `source`: Una secuencia de caracteres que indica la fuente original de los datos de la entidad en forma de URL. Se recomienda que sea el nombre de dominio completo del proveedor de origen o la URL del objeto de origen.  - `temperature`: Temperatura del artículo  - `type`: NGSI Tipo de entidad  - `typeofLocation`: Tipo de ubicación del elemento muestreado  - `volatileOrganicCompoundsTotal`: Alcanos <C10, cetonas <C6, aldehídos <C10, ácidos carboxílicos <C5, aspirinas<C7, alquenos <C8, aromáticos  - `windDirection`: Dirección de la veleta  - `windSpeed`: Intensidad del viento    
-Propiedades requeridas  
+- `address`: 郵送先住所  - `airQualityIndex`: 大気質指標とは、ある日の空気の質を表す数値です。  - `airQualityLevel`: 観測された大気質に対応する健康懸念の全体的な質的レベル  - `alternateName`: このアイテムの別称  - `areaServed`: この大気質測定が属する高レベルのエリア  - `as`: ヒ素を検出  - `c6h6`: ベンゼンの検出  - `cd`: カドミウム検出  - `co`: 一酸化炭素の検出  - `co2`: 二酸化炭素の検出  - `coLevel`: 定性的な一酸化炭素の存在  - `dataProvider`: 調和されたデータ・エンティティの提供者を識別する一連の文字。  - `dateCreated`: エンティティの作成タイムスタンプ。これは通常、ストレージプラットフォームによって割り当てられます。  - `dateModified`: エンティティが最後に変更された時のタイムスタンプ。これは通常、ストレージプラットフォームによって割り当てられます。  - `dateObserved`: この観測の日付と時刻をISO8601 UTCフォーマットで表示します。  - `description`: このアイテムの説明  - `id`: エンティティのユニークな識別子  - `location`: アイテムへのGeojson参照。Point、LineString、Polygon、MultiPoint、MultiLineString、MultiPolygonのいずれかです。  - `name`: このアイテムの名前です。  - `ni`: ニッケル検出  - `no`: 一酸化窒素の検出  - `no2`: 二酸化窒素の検出  - `nox`: その他の窒素酸化物の検出  - `o3`: オゾン検出  - `owner`: オーナーのIDを参照するJSONエンコードされた文字列を含むリスト  - `pb`: 鉛を検出  - `pm10`: 直径10μm以下の粒子状物質  - `pm25`: 直径2.5マイクロメートル以下の粒子状物質  - `precipitation`: 水の雨の量  - `refDevice`: この観測データを取得した機器を示す情報。  - `refPointOfInterest`: この観測に関連した注目点（通常はエアークォリティステーション）への参照。  - `refWeatherObserved`: このエンティティによって記述された空気品質条件に関連して観測された天候。  - `relativeHumidity`: 空気中の湿度  - `reliability`: 観測された空気の質に対応する信頼性（パーセンテージ、単位：百分率  - `seeAlso`: アイテムに関する追加リソースを示すuriのリスト  - `sh2`: 硫化水素の検出  - `so2`: 二酸化硫黄の検出  - `source`: エンティティデータのオリジナルソースをURLで示す一連の文字。ソースプロバイダの完全修飾ドメイン名、またはソースオブジェクトのURLであることが推奨されます。  - `temperature`: アイテムの温度  - `type`: NGSI エンティティタイプ  - `typeofLocation`: サンプリングされたアイテムのロケーションのタイプ  - `volatileOrganicCompoundsTotal`: アルカン＜C10＞、ケトン＜C6＞、アルデヒド＜C10＞、カルボン酸＜C5＞、アスピリッツ＜C7＞、アルケン＜C8＞、芳香族類  - `windDirection`: 風見鶏の方向  - `windSpeed`: 風の強さ    
+必須項目  
 - `dateObserved`  - `id`  - `location`  - `type`    
-No todos los contaminantes están incluidos en este modelo de datos. En caso de que haya nuevos contaminantes para ampliar el modelo, consulte esta fuente http://dd.eionet.europa.eu/vocabulary/aq/pollutant/view?page=1#vocabularyConceptResults, donde se enumeran la mayoría de ellos.  
-## Descripción del modelo de datos de las propiedades  
-Ordenados alfabéticamente (haga clic para ver los detalles)  
+すべての汚染物質がこのデータモデルに含まれているわけではありません。モデルを拡張するために新しい物質を追加する場合は、ほとんどの物質がリストアップされているこのソース http://dd.eionet.europa.eu/vocabulary/aq/pollutant/view?page=1#vocabularyConceptResults を参照してください。  
+## データモデルによるプロパティの記述  
+アルファベット順（クリックすると詳細が表示されます）  
 <details><summary><strong>full yaml details</strong></summary>    
 ```yaml  
 AirQualityObserved:    
@@ -506,9 +506,9 @@ AirQualityObserved:
   x-version: 0.0.1    
 ```  
 </details>    
-## Ejemplo de carga útil  
-#### AirQualityObserved NGSI-v2 key-values Ejemplo  
-Aquí hay un ejemplo de un AirQualityObserved en formato JSON-LD como valores-clave. Esto es compatible con NGSI-v2 cuando se utiliza `options=keyValues` y devuelve los datos de contexto de una entidad individual.  
+## ペイロードの例  
+#### AirQualityObserved NGSI-v2 key-values 例  
+AirQualityObservedをkey-valuesとしてJSON-LD形式で出力した例です。これは`options=keyValues`を使用した場合のNGSI-v2との互換性があり、個々のエンティティのコンテキストデータを返します。  
 ```json  
 {  
   "id": "Madrid-AmbientObserved-28079004-2016-03-15T11:00:00",  
@@ -543,8 +543,8 @@ AirQualityObserved:
   "refPointOfInterest": "28079004-Pza.deEspanya"  
 }  
 ```  
-#### AirQualityObserved NGSI-v2 normalizado Ejemplo  
-Aquí hay un ejemplo de un AirQualityObserved en formato JSON-LD normalizado. Esto es compatible con NGSI-v2 cuando no se utilizan opciones y devuelve los datos de contexto de una entidad individual.  
+#### AirQualityObserved NGSI-v2を正規化した例。  
+AirQualityObservedを正規化したJSON-LD形式の例を示します。これは、オプションを使用しない場合のNGSI-v2との互換性があり、個々のエンティティのコンテキストデータを返します。  
 ```json  
 {  
   "id": "Madrid-AmbientObserved-28079004-2016-03-15T11:00:00",  
@@ -649,8 +649,8 @@ AirQualityObserved:
   }  
 }  
 ```  
-#### AirQualityObserved NGSI-LD key-values Ejemplo  
-Aquí hay un ejemplo de un AirQualityObserved en formato JSON-LD como valores-clave. Esto es compatible con NGSI-LD cuando se utiliza `options=keyValues` y devuelve los datos de contexto de una entidad individual.  
+#### AirQualityObserved NGSI-LD のキーバリューの例  
+AirQualityObservedをkey-valuesとしてJSON-LD形式で出力した例です。これは、`options=keyValues`を使った場合のNGSI-LDとの互換性があり、個々のエンティティのコンテキストデータを返します。  
 ```json  
 {  
   "id": "urn:ngsi-ld:AirQualityObserved:Madrid-AmbientObserved-28079004-2016-03-15T11:00:00",  
@@ -761,8 +761,8 @@ AirQualityObserved:
   ]  
 }  
 ```  
-#### AirQualityObserved NGSI-LD normalizado Ejemplo  
-Este es un ejemplo de AirQualityObserved en formato JSON-LD normalizado. Esto es compatible con NGSI-LD cuando no se utilizan opciones y devuelve los datos de contexto de una entidad individual.  
+#### AirQualityObserved NGSI-LDを正規化した例。  
+AirQualityObservedを正規化したJSON-LD形式の例を示します。これは、オプションを使用しない場合のNGSI-LDとの互換性があり、個々のエンティティのコンテキストデータを返します。  
 ```json  
 {  
   "@context": [  

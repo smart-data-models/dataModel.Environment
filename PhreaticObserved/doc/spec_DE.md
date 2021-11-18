@@ -2,11 +2,11 @@ Entität: PhreaticObserved
 =========================  
 [Offene Lizenz](https://github.com/smart-data-models//dataModel.Environment/blob/master/PhreaticObserved/LICENSE.md)  
 [Dokument automatisch generiert](https://docs.google.com/presentation/d/e/2PACX-1vTs-Ng5dIAwkg91oTTUdt8ua7woBXhPnwavZ0FxgR8BsAI_Ek3C5q97Nd94HS8KhP-r_quD4H0fgyt3/pub?start=false&loop=false&delayms=3000#slide=id.gb715ace035_0_60)  
-Globale Beschreibung: **Das Datenmodell dient der Messung, Beobachtung und Kontrolle des Pegels und der Qualität des Grundwassers zu einem bestimmten Zeitpunkt (T), durch ein festes oder mobiles Überwachungssystem. Je nach verwendetem Gerät ist es auch möglich, die Qualität des Wassers zu messen, wie z. B. seine elektrische Leitfähigkeit, seinen Salzgehalt, seine Temperatur usw. In diesem Fall werden die gemessenen Werte durch das Datenmodell `WaterObserved` und `WaterQualityObserved` verarbeitet. Zusätzliche Informationen über Attribute: Für Attribute, die sich auf Wasser beziehen, kann auch ein MetaData-Attribut verwendet werden. Es enthält den `TimeStamp` in Sekunden, die `Qualification` und den `Status` der Messung.  
+Globale Beschreibung: **Das Datenmodell dient der Messung, Beobachtung und Kontrolle des Pegels und der Qualität des Grundwassers zu einem bestimmten Zeitpunkt (T) mit Hilfe eines festen oder mobilen Überwachungssystems. Je nach verwendetem Gerät ist es auch möglich, die Qualität des Wassers zu messen, z. B. seine elektrische Leitfähigkeit, seinen Salzgehalt, seine Temperatur usw. In diesem Fall werden die gemessenen Werte durch das Datenmodell `WaterObserved` und `WaterQualityObserved` verarbeitet. Zusätzliche Informationen über Attribute: Für Attribute, die sich auf Wasser beziehen, kann auch ein MetaData-Attribut verwendet werden. Es enthält den "Zeitstempel" in Sekunden, die "Qualifikation" und den "Kontrollstatus" der Messung.  
 
 ## Liste der Eigenschaften  
 
-- `address`: Die Postanschrift  - `alternateName`: Ein alternativer Name für diesen Artikel  - `areaServed`: Das geografische Gebiet, in dem eine Dienstleistung oder ein angebotener Artikel erbracht wird  - `dataProvider`: Eine Folge von Zeichen, die den Anbieter der harmonisierten Dateneinheit identifiziert.  - `dateCreated`: Zeitstempel der Entitätserstellung. Dieser wird normalerweise von der Speicherplattform zugewiesen.  - `dateModified`: Zeitstempel der letzten Änderung der Entität. Dieser wird in der Regel von der Speicherplattform vergeben.  - `dateObserved`: Das Datum und die Uhrzeit dieser Beobachtung im Format ISO8601 UTC  - `dateObservedFrom`: Beobachtungszeitraum : Startdatum und -uhrzeit im Format ISO8601 UTC  - `dateObservedTo`: Beobachtungszeitraum : Enddatum und -uhrzeit im Format ISO8601 UTC  - `depth`: Tiefe des Trinkwassers, seit seiner Identifizierung `waterTable`. Der Einheitencode (Text) der Messung, der unter Verwendung der [UN/CEFACT Common Codes](http://wiki.goodrelations-vocabulary.org/Documentation/UN/CEFACT_Common_Codes) angegeben wird (max. 3 Zeichen). Zum Beispiel steht <code> MTR </code> für Meter.  - `description`: Eine Beschreibung dieses Artikels  - `id`: Eindeutiger Bezeichner der Entität  - `investigationDepth`: Maximale Tiefe, in der die Untersuchung durchgeführt wurde. Der Einheitencode (Text) der Messung, der unter Verwendung der [UN/CEFACT Common Codes](http://wiki.goodrelations-vocabulary.org/Documentation/UN/CEFACT_Common_Codes) angegeben wird (max. 3 Zeichen). Zum Beispiel, <code>MTR</code> steht für Meter  - `isMobile`: Das verwendete Gerät ist fest (False) oder mobil (True)  - `location`: Geojson-Referenz auf das Element. Es kann Punkt, LineString, Polygon, MultiPoint, MultiLineString oder MultiPolygon sein  - `measurementType`: Beobachtungszeitraum : Art der verarbeiteten Messung. Enum:'Tiefe, Volumen, Qualität, andere'  - `name`: Der Name dieses Elements.  - `owner`: Eine Liste mit einer JSON-kodierten Zeichenfolge, die auf die eindeutigen Ids der Eigentümer verweist  - `pollutionRate`: Rate der Verschmutzung. Der Einheitencode (Text) der Messung, der unter Verwendung der [UN/CEFACT Common Codes](http://wiki.goodrelations-vocabulary.org/Documentation/UN/CEFACT_Common_Codes) angegeben wird (max. 3 Zeichen). Zum Beispiel steht P1 für Prozent.  - `pressure`: Wasserdruck. Der Einheitencode (Text) der Messung, der unter Verwendung der [UN/CEFACT Common Codes](http://wiki.goodrelations-vocabulary.org/Documentation/UN/CEFACT_Common_Codes) angegeben wird (max. 3 Zeichen). Zum Beispiel steht <code>BAR</code> für Bar.  - `refDevice`: Verweis auf die Geräte, die Daten liefern  - `residueLevel`: Rückstand gefunden  - `seeAlso`: Liste von uri, die auf zusätzliche Ressourcen über das Element verweist  - `source`: Eine Folge von Zeichen, die die ursprüngliche Quelle der Entitätsdaten als URL angibt. Empfohlen wird der voll qualifizierte Domänenname des Quellanbieters oder die URL zum Quellobjekt.  - `type`: NGSI Entity-Typ. Es muss PhreaticObserved sein  - `waterTable`: Pegel, bei dem während dieser Untersuchung Wasser gefunden wurde. Der Einheitencode (Text) der Messung, der unter Verwendung der [UN/CEFACT Common Codes](http://wiki.goodrelations-vocabulary.org/Documentation/UN/CEFACT_Common_Codes) angegeben wird (max. 3 Zeichen). Zum Beispiel steht <code>MTR</code> für Meter.    
+- `address`: Die Postanschrift  - `alternateName`: Ein alternativer Name für diesen Artikel  - `areaServed`: Das geografische Gebiet, in dem eine Dienstleistung oder ein angebotener Artikel erbracht wird  - `dataProvider`: Eine Folge von Zeichen zur Identifizierung des Anbieters der harmonisierten Dateneinheit.  - `dateCreated`: Zeitstempel der Entitätserstellung. Dieser wird in der Regel von der Speicherplattform zugewiesen.  - `dateModified`: Zeitstempel der letzten Änderung der Entität. Dieser wird in der Regel von der Speicherplattform vergeben.  - `dateObserved`: Das Datum und die Uhrzeit dieser Beobachtung im ISO8601 UTC-Format  - `dateObservedFrom`: Beobachtungszeitraum : Startdatum und -zeit im ISO8601 UTC-Format  - `dateObservedTo`: Beobachtungszeitraum : Enddatum und -zeit im ISO8601 UTC-Format  - `depth`: Tiefe des Trinkwassers, seit seiner Identifizierung `waterTable`. Der Code der Maßeinheit (Text), der unter Verwendung der [UN/CEFACT Common Codes](http://wiki.goodrelations-vocabulary.org/Documentation/UN/CEFACT_Common_Codes) angegeben wird (max. 3 Zeichen). Zum Beispiel steht <code> MTR </code> für Meter.  - `description`: Eine Beschreibung dieses Artikels  - `id`: Eindeutiger Bezeichner der Entität  - `investigationDepth`: Maximale Tiefe, in der die Untersuchung durchgeführt wurde. Der Code der Maßeinheit (Text), der unter Verwendung der [UN/CEFACT Common Codes](http://wiki.goodrelations-vocabulary.org/Documentation/UN/CEFACT_Common_Codes) angegeben wird (max. 3 Zeichen). Zum Beispiel steht <code>MTR</code> für Meter  - `isMobile`: Das verwendete Gerät ist fest (False) oder mobil (True)  - `location`: Geojson-Referenz auf das Element. Es kann Punkt, LineString, Polygon, MultiPoint, MultiLineString oder MultiPolygon sein  - `measurementType`: Beobachtungszeitraum : Art der verarbeiteten Messung. Enum:'Tiefe, Volumen, Qualität, andere'  - `name`: Der Name dieses Artikels.  - `owner`: Eine Liste mit einer JSON-kodierten Zeichenfolge, die auf die eindeutigen Kennungen der Eigentümer verweist  - `pollutionRate`: Grad der Verschmutzung. Der Code der Maßeinheit (Text), der unter Verwendung der [UN/CEFACT Common Codes](http://wiki.goodrelations-vocabulary.org/Documentation/UN/CEFACT_Common_Codes) angegeben wird (max. 3 Zeichen). Zum Beispiel steht P1 für Prozent.  - `pressure`: Wasserdruck. Der Code der Maßeinheit (Text), der unter Verwendung der [UN/CEFACT Common Codes](http://wiki.goodrelations-vocabulary.org/Documentation/UN/CEFACT_Common_Codes) angegeben wird (max. 3 Zeichen). Zum Beispiel steht <code>BAR</code> für Bar.  - `refDevice`: Hinweis auf die Geräte, die Daten liefern  - `residueLevel`: Festgestellter Rückstandsgehalt  - `seeAlso`: Liste von URLs, die auf zusätzliche Ressourcen zu dem Artikel verweisen  - `source`: Eine Folge von Zeichen, die die ursprüngliche Quelle der Entitätsdaten als URL angibt. Empfohlen wird der voll qualifizierte Domänenname des Quellanbieters oder die URL des Quellobjekts.  - `type`: NGSI-Entitätstyp. Es muss PhreaticObserved sein  - `waterTable`: Pegel, bei dem während dieser Untersuchung Wasser gefunden wurde. Der Code der Maßeinheit (Text), der unter Verwendung der [UN/CEFACT Common Codes](http://wiki.goodrelations-vocabulary.org/Documentation/UN/CEFACT_Common_Codes) angegeben wird (max. 3 Zeichen). Zum Beispiel steht <code>MTR</code> für Meter.    
 Erforderliche Eigenschaften  
 - `dateObserved`  - `id`  - `location`  - `measurementType`  - `type`  ## Datenmodell Beschreibung der Eigenschaften  
 Alphabetisch sortiert (für Details anklicken)  
@@ -36,54 +36,70 @@ PhreaticObserved:
         streetAddress:    
           description: 'Property. The street address. Model:''https://schema.org/streetAddress'''    
           type: string    
-      type: Property    
+      type: object    
       x-ngsi:    
         model: https://schema.org/address    
+        type: Property    
     alternateName:    
       description: 'An alternative name for this item'    
-      type: Property    
+      type: string    
+      x-ngsi:    
+        type: Property    
     areaServed:    
       description: 'The geographic area where a service or offered item is provided'    
-      type: Property    
+      type: string    
       x-ngsi:    
         model: https://schema.org/Text    
+        type: Property    
     dataProvider:    
       description: 'A sequence of characters identifying the provider of the harmonised data entity.'    
-      type: Property    
+      type: string    
+      x-ngsi:    
+        type: Property    
     dateCreated:    
       description: 'Entity creation timestamp. This will usually be allocated by the storage platform.'    
       format: date-time    
-      type: Property    
+      type: string    
+      x-ngsi:    
+        type: Property    
     dateModified:    
       description: 'Timestamp of the last modification of the entity. This will usually be allocated by the storage platform.'    
       format: date-time    
-      type: Property    
+      type: string    
+      x-ngsi:    
+        type: Property    
     dateObserved:    
       description: 'The date and time of this observation in ISO8601 UTC format'    
       format: date-time    
-      type: Property    
+      type: string    
       x-ngsi:    
         model: https://schema.org/DateTime    
+        type: Property    
     dateObservedFrom:    
       description: 'Observation period : Start date and time in an ISO8601 UTC format'    
       format: date-time    
-      type: Property    
+      type: string    
       x-ngsi:    
         model: https://schema.org/DateTime    
+        type: Property    
     dateObservedTo:    
       description: 'Observation period : End date and time in an ISO8601 UTC format'    
       format: date-time    
-      type: Property    
+      type: string    
       x-ngsi:    
         model: https://schema.org/DateTime    
+        type: Property    
     depth:    
       description: 'Depth of drinking water, since its identification `waterTable`. The unit code (text) of measurement given using the [UN/CEFACT Common Codes](http://wiki.goodrelations-vocabulary.org/Documentation/UN/CEFACT_Common_Codes) (max. 3 characters). For instance, <code> MTR </code> represents Meter.'    
-      type: Property    
+      type: number    
       x-ngsi:    
         model: https://schema.org/depth    
+        type: Property    
     description:    
       description: 'A description of this item'    
-      type: Property    
+      type: string    
+      x-ngsi:    
+        type: Property    
     id:    
       anyOf: &phreaticobserved_-_properties_-_owner_-_items_-_anyof    
         - description: 'Property. Identifier format of any NGSI entity'    
@@ -95,18 +111,21 @@ PhreaticObserved:
           format: uri    
           type: string    
       description: 'Unique identifier of the entity'    
-      type: Property    
+      x-ngsi:    
+        type: Property    
     investigationDepth:    
       description: 'Maximum depth where the investigation was made. The unit code (text) of measurement given using the [UN/CEFACT Common Codes](http://wiki.goodrelations-vocabulary.org/Documentation/UN/CEFACT_Common_Codes) (max. 3 characters). For instance, <code>MTR</code> represents Meter'    
-      type: Property    
+      type: number    
       x-ngsi:    
         model: https://schema.org/DateTime    
+        type: Property    
         units: meters    
     isMobile:    
       description: 'The device used is Fixed (False) or Mobile (True)'    
-      type: Property    
+      type: boolean    
       x-ngsi:    
         model: https://schema.org/Boolean    
+        type: Property    
     location:    
       description: 'Geojson reference to the item. It can be Point, LineString, Polygon, MultiPoint, MultiLineString or MultiPolygon'    
       oneOf:    
@@ -258,7 +277,8 @@ PhreaticObserved:
             - coordinates    
           title: 'GeoJSON MultiPolygon'    
           type: object    
-      type: Geoproperty    
+      x-ngsi:    
+        type: Geoproperty    
     measurementType:    
       description: 'Observation period : Type of measurement processed. Enum:''depth, volume, quality, other'''    
       items:    
@@ -269,44 +289,53 @@ PhreaticObserved:
           - other    
         type: string    
       minItems: 0    
-      type: Property    
+      type: array    
       uniqueItems: false    
       x-ngsi:    
         model: https://schema.org/Text    
+        type: Property    
     name:    
       description: 'The name of this item.'    
-      type: Property    
+      type: string    
+      x-ngsi:    
+        type: Property    
     owner:    
       description: 'A List containing a JSON encoded sequence of characters referencing the unique Ids of the owner(s)'    
       items:    
         anyOf: *phreaticobserved_-_properties_-_owner_-_items_-_anyof    
         description: 'Property. Unique identifier of the entity'    
-      type: Property    
+      type: array    
+      x-ngsi:    
+        type: Property    
     pollutionRate:    
       description: 'Rate of pollution. The unit code (text) of measurement given using the [UN/CEFACT Common Codes](http://wiki.goodrelations-vocabulary.org/Documentation/UN/CEFACT_Common_Codes) (max. 3 characters). For instance, P1 represents Percentage.'    
-      type: Property    
+      type: number    
       x-ngsi:    
         model: https://schema.org/Number    
+        type: Property    
     pressure:    
       description: 'Water Pressure. The unit code (text) of measurement given using the [UN/CEFACT Common Codes](http://wiki.goodrelations-vocabulary.org/Documentation/UN/CEFACT_Common_Codes) (max. 3 characters). For instance, <code>BAR</code> represents Bar.'    
       minimum: 0    
-      type: Property    
+      type: number    
       x-ngsi:    
         model: https://schema.org/DateTime    
+        type: Property    
         units: Bar    
     refDevice:    
       description: 'Reference to the devices providing data'    
       items:    
         anyOf: *phreaticobserved_-_properties_-_owner_-_items_-_anyof    
         description: 'Property. Unique identifier of the entity'    
-      type: Relationship    
+      type: array    
       x-ngsi:    
         model: https://scehma.org/URL    
+        type: Relationship    
     residueLevel:    
       description: 'Residue level found'    
-      type: Property    
+      type: number    
       x-ngsi:    
         model: https://schema.org/Number.    
+        type: Property    
     seeAlso:    
       description: 'list of uri pointing to additional resources about the item'    
       oneOf:    
@@ -317,20 +346,26 @@ PhreaticObserved:
           type: array    
         - format: uri    
           type: string    
-      type: Property    
+      x-ngsi:    
+        type: Property    
     source:    
       description: 'A sequence of characters giving the original source of the entity data as a URL. Recommended to be the fully qualified domain name of the source provider, or the URL to the source object.'    
-      type: Property    
+      type: string    
+      x-ngsi:    
+        type: Property    
     type:    
       description: 'NGSI Entity type. It has to be PhreaticObserved'    
       enum:    
         - PhreaticObserved    
-      type: Property    
+      type: string    
+      x-ngsi:    
+        type: Property    
     waterTable:    
       description: 'Level at which water was found during this investigation. The unit code (text) of measurement given using the [UN/CEFACT Common Codes](http://wiki.goodrelations-vocabulary.org/Documentation/UN/CEFACT_Common_Codes) (max. 3 characters). For instance, <code>MTR</code> represents Meter.'    
-      type: Property    
+      type: number    
       x-ngsi:    
         model: https://schema.org/Number    
+        type: Property    
         units: meter    
   required:    
     - id    
@@ -339,11 +374,17 @@ PhreaticObserved:
     - dateObserved    
     - measurementType    
   type: object    
+  x-derived-from: ""    
+  x-disclaimer: 'Redistribution and use in source and binary forms, with or without modification, are permitted  provided that the license conditions are met. Copyleft (c) 2021 Contributors to Smart Data Models Program'    
+  x-license-url: https://github.com/smart-data-models/dataModel.Environment/blob/master/PhreaticObserved/LICENSE.md    
+  x-model-schema: ""    
+  x-model-tags: ""    
+  x-version: 0.0.1    
 ```  
 </details>    
 ## Beispiel-Nutzlasten  
 #### PhreaticObserved NGSI-v2 key-values Beispiel  
-Hier ist ein Beispiel für ein PhreaticObserved im JSON-LD-Format als Key-Values. Dies ist kompatibel mit NGSI-v2 bei Verwendung von `options=keyValues` und liefert die Kontextdaten einer einzelnen Entität.  
+Hier ist ein Beispiel für ein PhreaticObserved im JSON-LD-Format als Key-Values. Dies ist kompatibel mit NGSI-v2, wenn `options=keyValues` verwendet wird und liefert die Kontextdaten einer einzelnen Entität.  
 ```json  
 {  
   "id": "urn:ngsi-ld:PhreaticObserved:PhreaticObserved:MNCA-001",  
@@ -374,7 +415,7 @@ PhreaticObserved:
 }  
 ```  
 #### PhreaticObserved NGSI-v2 normalisiert Beispiel  
-Hier ist ein Beispiel für ein PhreaticObserved im JSON-LD-Format wie normalisiert. Dies ist kompatibel mit NGSI-v2, wenn keine Optionen verwendet werden, und liefert die Kontextdaten einer einzelnen Entität.  
+Hier ist ein Beispiel für ein PhreaticObserved im JSON-LD-Format in normalisierter Form. Dies ist kompatibel mit NGSI-v2, wenn keine Optionen verwendet werden, und liefert die Kontextdaten einer einzelnen Entität.  
 ```json  
 {  
 	"id": "urn:ngsi-ld:PhreaticObserved:PhreaticObserved:MNCA-001",  
@@ -562,7 +603,7 @@ PhreaticObserved:
 }  
 ```  
 #### PhreaticObserved NGSI-LD normalisiert Beispiel  
-Hier ist ein Beispiel für ein PhreaticObserved im JSON-LD-Format wie normalisiert. Dies ist kompatibel mit NGSI-LD, wenn keine Optionen verwendet werden, und liefert die Kontextdaten einer einzelnen Entität.  
+Hier ist ein Beispiel für ein PhreaticObserved im JSON-LD-Format in normalisierter Form. Dies ist kompatibel mit NGSI-LD, wenn keine Optionen verwendet werden, und liefert die Kontextdaten einer einzelnen Entität.  
 ```json  
 {  
   "id": "urn:ngsi-ld:PhreaticObserved:PhreaticObserved:MNCA-001",  
