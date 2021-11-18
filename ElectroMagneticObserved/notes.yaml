@@ -1,7 +1,28 @@
 notesHeader:
+  The Data Model is intended to measure excessive electric and magnetic fields (EMFs), radiation in a work or public environment according to the level of exposure to electromagnetic fields in the air (`inside` or `outside`).  For the attributes `eMF`, there are various ways they can be actually measured. For this purpose the `measurementType` Meta Data Attribute can be used. It can have the following values
+    - Instant.	From the specific instant of time
+    - average.	The average of a time period
+    - maximum.	The maximum of a time period
+    - minimum.	The minimum of a time period.
+
+  When using the [average, minimum, maximum] values another Meta Data attribute called `measurementInterval` should be used to give the length of the measurement period in Seconds.
+  Also the `timestamp` Meta Data attribute should be the end time of the measurement period.
+
+  The frequency of the hertzian waves is conventionally lower than 300 GHz, propagating in space without artificial guide. They are between 9 kHz and 300 GHz.
+
+  The following attributes are used to qualify the measurements and must be part of the description of the [device] as a configuration element.
+  - FrequencyBands 	Range of limits for the frequency.
+  - Lower. Unit Code Mega Hertz (MHz)
+  - Higher. Unit Code Giga Hertz (A86)
+  - detectionLimits	Range of limits for the detection limits.
+      - Lower. Unit Code Volt Per Meter (D50)
+      - Higher. Unit Code Volt Per Meter (D50)
+  - Installation. How the device is installed
+      - C1. Positioning of the device in relation to a ground reference system.
+      - Value = Ground, Wall, Pole, aerial, roofing, other
+      - C2. Positioning of the device in relation to an external / internal reference
+      - Value = Inside / Outside
 
 notesMiddle:
 
 notesFooter:
-
-notesReadme:
