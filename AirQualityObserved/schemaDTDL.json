@@ -1,0 +1,394 @@
+{
+    "@id": "dtmi:com:ngsi-ld:AirQualityObserved;0",
+    "@type": "Interface",
+    "@context": "dtmi:dtdl:context;2",
+    "comment": " - Air quality observed schema adapted to DTDL from smartdatamodels.org. Source: https://raw.githubusercontent.com/smart-data-models/dataModel.Environment/master/AirQualityObserved/schema.json",
+    "description": "An observation of air quality conditions at a certain place and time.",
+    "displayName": "AirQualityObserved",
+    "contents": [
+        {
+            "name": "airQualityIndex",
+            "writable": true,
+            "displayName": "airQualityIndex",
+            "@type": "Property",
+            "schema": "integer",
+            "comment": "Air quality index is a number used to report the quality of the air on any given day."
+        },
+        {
+            "name": "airQualityLevel",
+            "writable": true,
+            "displayName": "airQualityLevel",
+            "@type": "Property",
+            "schema": "string",
+            "comment": "Overall qualitative level of health concern corresponding to the air quality observed"
+        },
+        {
+            "name": "alternateName",
+            "writable": true,
+            "displayName": "alternateName",
+            "@type": "Property",
+            "schema": "string",
+            "comment": "An alternative name for this item"
+        },
+        {
+            "name": "areaServed",
+            "writable": true,
+            "displayName": "areaServed",
+            "@type": "Property",
+            "schema": "string",
+            "comment": "Higher level area to which this air quality measurement belongs to"
+        },
+        {
+            "name": "as",
+            "writable": true,
+            "displayName": "as",
+            "@type": "Property",
+            "schema": "long",
+            "comment": "Arsenic detected"
+        },
+        {
+            "name": "c6h6",
+            "writable": true,
+            "displayName": "c6h6",
+            "@type": "Property",
+            "schema": "long",
+            "comment": "Benzene detected"
+        },
+        {
+            "name": "cd",
+            "writable": true,
+            "displayName": "cd",
+            "@type": "Property",
+            "schema": "long",
+            "comment": "Cadmium detected"
+        },
+        {
+            "name": "co",
+            "writable": true,
+            "displayName": "co",
+            "@type": "Property",
+            "schema": "long",
+            "comment": "Carbon Monoxide detected"
+        },
+        {
+            "name": "co2",
+            "writable": true,
+            "displayName": "co2",
+            "@type": "Property",
+            "schema": "long",
+            "comment": "Carbon Dioxide detected"
+        },
+        {
+            "name": "coLevel",
+            "writable": true,
+            "displayName": "coLevel",
+            "@type": "Property",
+            "schema": "string",
+            "comment": "Qualitative Carbon Monoxide presence"
+        },
+        {
+            "name": "dataProvider",
+            "writable": true,
+            "displayName": "dataProvider",
+            "@type": "Property",
+            "schema": "string",
+            "comment": "A sequence of characters identifying the provider of the harmonised data entity."
+        },
+        {
+            "name": "dateCreated",
+            "writable": true,
+            "displayName": "dateCreated",
+            "@type": "Property",
+            "schema": "dateTime",
+            "comment": "Entity creation timestamp. This will usually be allocated by the storage platform."
+        },
+        {
+            "name": "dateModified",
+            "writable": true,
+            "displayName": "dateModified",
+            "@type": "Property",
+            "schema": "dateTime",
+            "comment": "Timestamp of the last modification of the entity. This will usually be allocated by the storage platform."
+        },
+        {
+            "name": "dateObserved",
+            "writable": true,
+            "displayName": "dateObserved",
+            "@type": "Property",
+            "schema": "string",
+            "comment": "The date and time of this observation in ISO8601 UTCformat"
+        },
+        {
+            "name": "description",
+            "writable": true,
+            "displayName": "description",
+            "@type": "Property",
+            "schema": "string",
+            "comment": "A description of this item"
+        },
+        {
+            "name": "name",
+            "writable": true,
+            "displayName": "name",
+            "@type": "Property",
+            "schema": "string",
+            "comment": "The name of this item."
+        },
+        {
+            "name": "ni",
+            "writable": true,
+            "displayName": "ni",
+            "@type": "Property",
+            "schema": "long",
+            "comment": "Nickel detected"
+        },
+        {
+            "name": "no",
+            "writable": true,
+            "displayName": "no",
+            "@type": "Property",
+            "schema": "long",
+            "comment": "Nitrogen monoxide detected"
+        },
+        {
+            "name": "no2",
+            "writable": true,
+            "displayName": "no2",
+            "@type": "Property",
+            "schema": "long",
+            "comment": "Nitrogen dioxide detected"
+        },
+        {
+            "name": "nox",
+            "writable": true,
+            "displayName": "nox",
+            "@type": "Property",
+            "schema": "long",
+            "comment": "Other Nitrogen oxides detected"
+        },
+        {
+            "name": "o3",
+            "writable": true,
+            "displayName": "o3",
+            "@type": "Property",
+            "schema": "long",
+            "comment": "Ozone detected"
+        },
+        {
+            "name": "pb",
+            "writable": true,
+            "displayName": "pb",
+            "@type": "Property",
+            "schema": "long",
+            "comment": "Lead detected"
+        },
+        {
+            "name": "pm10",
+            "writable": true,
+            "displayName": "pm10",
+            "@type": "Property",
+            "schema": "long",
+            "comment": "Particulate matter 10 micrometers or less in diameter"
+        },
+        {
+            "name": "pm25",
+            "writable": true,
+            "displayName": "pm25",
+            "@type": "Property",
+            "schema": "long",
+            "comment": "Particulate matter 2.5 micrometers or less in diameter"
+        },
+        {
+            "name": "precipitation",
+            "writable": true,
+            "displayName": "precipitation",
+            "@type": "Property",
+            "schema": "long",
+            "comment": "Amount of water rain"
+        },
+        {
+            "name": "refDevice",
+            "writable": true,
+            "displayName": "refDevice"
+        },
+        {
+            "name": "refPointOfInterest",
+            "writable": true,
+            "displayName": "refPointOfInterest"
+        },
+        {
+            "name": "refWeatherObserved",
+            "writable": true,
+            "displayName": "refWeatherObserved"
+        },
+        {
+            "name": "relativeHumidity",
+            "writable": true,
+            "displayName": "relativeHumidity",
+            "@type": "Property",
+            "schema": "long",
+            "comment": "Humidity in the Air"
+        },
+        {
+            "name": "reliability",
+            "writable": true,
+            "displayName": "reliability",
+            "@type": "Property",
+            "schema": "long",
+            "comment": "Reliability (percentage, expressed in parts per one) corresponding to the air quality observed"
+        },
+        {
+            "name": "seeAlso",
+            "writable": true,
+            "displayName": "seeAlso"
+        },
+        {
+            "name": "sh2",
+            "writable": true,
+            "displayName": "sh2",
+            "@type": "Property",
+            "schema": "long",
+            "comment": "Hydrogen sulfide detected"
+        },
+        {
+            "name": "so2",
+            "writable": true,
+            "displayName": "so2",
+            "@type": "Property",
+            "schema": "long",
+            "comment": "Sulfur dioxide detected"
+        },
+        {
+            "name": "source",
+            "writable": true,
+            "displayName": "source",
+            "@type": "Property",
+            "schema": "string",
+            "comment": "A sequence of characters giving the original source of the entity data as a URL. Recommended to be the fully qualified domain name of the source provider, or the URL to the source object."
+        },
+        {
+            "name": "temperature",
+            "writable": true,
+            "displayName": "temperature",
+            "@type": "Property",
+            "schema": "long",
+            "comment": "Temperature of the item"
+        },
+        {
+            "name": "volatileOrganicCompoundsTotal",
+            "writable": true,
+            "displayName": "volatileOrganicCompoundsTotal",
+            "@type": "Property",
+            "schema": "long",
+            "comment": "Alkanes <C10, ketones <C6, aldehydes <C10, carboxylic acids <C5, aspirits<C7, Alkenes <C8, Aromatics"
+        },
+        {
+            "name": "windDirection",
+            "writable": true,
+            "displayName": "windDirection",
+            "@type": "Property",
+            "schema": "long",
+            "comment": "Direction of the weather vane"
+        },
+        {
+            "name": "windSpeed",
+            "writable": true,
+            "displayName": "windSpeed",
+            "@type": "Property",
+            "schema": "long",
+            "comment": "Intensity of the wind"
+        },
+        {
+            "@type": "Telemetry",
+            "name": "owner",
+            "schema": {
+                "@type": "Array",
+                "elementSchema": "string"
+            },
+            "comment": "A List containing a JSON encoded sequence of characters referencing the unique Ids of the owner(s)",
+            "displayName": "owner"
+        },
+        {
+            "@type": "object",
+            "name": "address",
+            "comment": "The mailing address",
+            "displayName": "address",
+            "fields": [
+                {
+                    "name": "addressCountry",
+                    "schema": "string"
+                },
+                {
+                    "name": "addressLocality",
+                    "schema": "string"
+                },
+                {
+                    "name": "addressRegion",
+                    "schema": "string"
+                },
+                {
+                    "name": "postOfficeBoxNumber",
+                    "schema": "string"
+                },
+                {
+                    "name": "postalCode",
+                    "schema": "string"
+                },
+                {
+                    "name": "streetAddress",
+                    "schema": "string"
+                }
+            ]
+        },
+        {
+            "@type": "Telemetry",
+            "name": "location_Point",
+            "schema": "point"
+        },
+        {
+            "@type": "Telemetry",
+            "name": "location_LineString",
+            "schema": "lineString"
+        },
+        {
+            "@type": "Telemetry",
+            "name": "location_Polygon",
+            "schema": "polygon"
+        },
+        {
+            "@type": "Telemetry",
+            "name": "location_MultiPoint",
+            "schema": "multiPoint"
+        },
+        {
+            "@type": "Telemetry",
+            "name": "location_MultiLineString",
+            "schema": "multiLineString"
+        },
+        {
+            "@type": "Telemetry",
+            "name": "location_MultiPolygon",
+            "schema": "multiPolygon"
+        },
+        {
+            "@type": "Telemetry",
+            "name": "typeofLocation",
+            "schema": {
+                "@type": "Enum",
+                "valueSchema": "string",
+                "enumValues": [
+                    {
+                        "name": "indoor",
+                        "displayName": "indoor",
+                        "enumValue": 1
+                    },
+                    {
+                        "name": "outdoor",
+                        "displayName": "outdoor",
+                        "enumValue": 2
+                    }
+                ]
+            }
+        }
+    ]
+}
