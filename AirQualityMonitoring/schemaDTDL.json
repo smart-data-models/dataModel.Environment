@@ -1,0 +1,758 @@
+{
+    "@id": "dtmi:com:ngsi-ld:AirQualityMonitoring;0",
+    "@type": "Interface",
+    "@context": "dtmi:dtdl:context;2",
+    "comment": " Smart Data Models - Air quality Monitoring adapted to DTDL from smartdatamodels.org. Source: https://raw.githubusercontent.com/smart-data-models/dataModel.Environment/master/AirQualityMonitoring/schema.json",
+    "description": "Air Quality Monitoring (AQM) Data Model.",
+    "displayName": "AirQualityMonitoring",
+    "contents": [
+        {
+            "name": "airQualityIndex",
+            "writable": true,
+            "displayName": "airQualityIndex",
+            "@type": "Property",
+            "schema": "long",
+            "comment": "Overall Air Quality Index (AQI) for the observed air quality."
+        },
+        {
+            "name": "airQualityLevel",
+            "writable": true,
+            "displayName": "airQualityLevel",
+            "@type": "Property",
+            "schema": "string",
+            "comment": "Air Quality Category Indication. Qualitative level defined according to the local health agencies. For example, 'GOOD', 'MODERATE', 'POOR', 'UNHEALTHY', 'SEVERE', 'HAZARDOUS' etc."
+        },
+        {
+            "name": "alternateName",
+            "writable": true,
+            "displayName": "alternateName",
+            "@type": "Property",
+            "schema": "string",
+            "comment": "An alternative name for this item"
+        },
+        {
+            "name": "atmosphericPressure",
+            "writable": true,
+            "displayName": "atmosphericPressure",
+            "@type": "Property",
+            "schema": "long",
+            "comment": "Observed air (atmospheric or barometric) pressure."
+        },
+        {
+            "name": "dataProvider",
+            "writable": true,
+            "displayName": "dataProvider",
+            "@type": "Property",
+            "schema": "string",
+            "comment": "A sequence of characters identifying the provider of the harmonised data entity."
+        },
+        {
+            "name": "dateCreated",
+            "writable": true,
+            "displayName": "dateCreated",
+            "@type": "Property",
+            "schema": "dateTime",
+            "comment": "Entity creation timestamp. This will usually be allocated by the storage platform."
+        },
+        {
+            "name": "dateModified",
+            "writable": true,
+            "displayName": "dateModified",
+            "@type": "Property",
+            "schema": "dateTime",
+            "comment": "Timestamp of the last modification of the entity. This will usually be allocated by the storage platform."
+        },
+        {
+            "name": "description",
+            "writable": true,
+            "displayName": "description",
+            "@type": "Property",
+            "schema": "string",
+            "comment": "A description of this item"
+        },
+        {
+            "name": "deviceStatus",
+            "writable": true,
+            "displayName": "deviceStatus",
+            "@type": "Property",
+            "schema": "string",
+            "comment": "Indicates the status of physical device or devices."
+        },
+        {
+            "name": "illuminance",
+            "writable": true,
+            "displayName": "illuminance",
+            "@type": "Property",
+            "schema": "long",
+            "comment": "Measured illuminance"
+        },
+        {
+            "name": "name",
+            "writable": true,
+            "displayName": "name",
+            "@type": "Property",
+            "schema": "string",
+            "comment": "The name of this item."
+        },
+        {
+            "name": "observationDateTime",
+            "writable": true,
+            "displayName": "observationDateTime",
+            "@type": "Property",
+            "schema": "dateTime",
+            "comment": "Last reported time of observation."
+        },
+        {
+            "name": "precipitation",
+            "writable": true,
+            "displayName": "precipitation",
+            "@type": "Property",
+            "schema": "long",
+            "comment": "Observed precipitation/rainfall level over a given duration."
+        },
+        {
+            "name": "seeAlso",
+            "writable": true,
+            "displayName": "seeAlso"
+        },
+        {
+            "name": "solarRadiation",
+            "writable": true,
+            "displayName": "solarRadiation",
+            "@type": "Property",
+            "schema": "long",
+            "comment": "Instantaneous solar radiation measured in kW/m2"
+        },
+        {
+            "name": "source",
+            "writable": true,
+            "displayName": "source",
+            "@type": "Property",
+            "schema": "string",
+            "comment": "A sequence of characters giving the original source of the entity data as a URL. Recommended to be the fully qualified domain name of the source provider, or the URL to the source object."
+        },
+        {
+            "@type": "Telemetry",
+            "name": "owner",
+            "schema": {
+                "@type": "Array",
+                "elementSchema": "string"
+            },
+            "comment": "A List containing a JSON encoded sequence of characters referencing the unique Ids of the owner(s)",
+            "displayName": "owner"
+        },
+        {
+            "@type": "object",
+            "name": "airTemperatureTSA",
+            "comment": "Object defining the temporal processing of a basic property during a period. It provides Maximum, minimum, instant value and average",
+            "displayName": "airTemperatureTSA",
+            "fields": [
+                {
+                    "name": "avgOverTime",
+                    "schema": "long"
+                },
+                {
+                    "name": "instValue",
+                    "schema": "long"
+                },
+                {
+                    "name": "maxOverTime",
+                    "schema": "long"
+                },
+                {
+                    "name": "minOverTime",
+                    "schema": "long"
+                }
+            ]
+        },
+        {
+            "@type": "object",
+            "name": "ambientNoiseTSA",
+            "comment": "Object defining the temporal processing of a basic property during a period. It provides Maximum, minimum, instant value and average",
+            "displayName": "ambientNoiseTSA",
+            "fields": [
+                {
+                    "name": "avgOverTime",
+                    "schema": "long"
+                },
+                {
+                    "name": "instValue",
+                    "schema": "long"
+                },
+                {
+                    "name": "maxOverTime",
+                    "schema": "long"
+                },
+                {
+                    "name": "minOverTime",
+                    "schema": "long"
+                }
+            ]
+        },
+        {
+            "@type": "object",
+            "name": "arsenicTSA",
+            "comment": "Object defining the temporal processing of a basic property during a period. It provides Maximum, minimum, instant value and average",
+            "displayName": "arsenicTSA",
+            "fields": [
+                {
+                    "name": "avgOverTime",
+                    "schema": "long"
+                },
+                {
+                    "name": "instValue",
+                    "schema": "long"
+                },
+                {
+                    "name": "maxOverTime",
+                    "schema": "long"
+                },
+                {
+                    "name": "minOverTime",
+                    "schema": "long"
+                }
+            ]
+        },
+        {
+            "@type": "object",
+            "name": "atmosphericPressureTSA",
+            "comment": "Object defining the temporal processing of a basic property during a period. It provides Maximum, minimum, instant value and average",
+            "displayName": "atmosphericPressureTSA",
+            "fields": [
+                {
+                    "name": "avgOverTime",
+                    "schema": "long"
+                },
+                {
+                    "name": "instValue",
+                    "schema": "long"
+                },
+                {
+                    "name": "maxOverTime",
+                    "schema": "long"
+                },
+                {
+                    "name": "minOverTime",
+                    "schema": "long"
+                }
+            ]
+        },
+        {
+            "@type": "object",
+            "name": "bapTSA",
+            "comment": "Object defining the temporal processing of a basic property during a period. It provides Maximum, minimum, instant value and average",
+            "displayName": "bapTSA",
+            "fields": [
+                {
+                    "name": "avgOverTime",
+                    "schema": "long"
+                },
+                {
+                    "name": "instValue",
+                    "schema": "long"
+                },
+                {
+                    "name": "maxOverTime",
+                    "schema": "long"
+                },
+                {
+                    "name": "minOverTime",
+                    "schema": "long"
+                }
+            ]
+        },
+        {
+            "@type": "object",
+            "name": "benzeneTSA",
+            "comment": "Object defining the temporal processing of a basic property during a period. It provides Maximum, minimum, instant value and average",
+            "displayName": "benzeneTSA",
+            "fields": [
+                {
+                    "name": "avgOverTime",
+                    "schema": "long"
+                },
+                {
+                    "name": "instValue",
+                    "schema": "long"
+                },
+                {
+                    "name": "maxOverTime",
+                    "schema": "long"
+                },
+                {
+                    "name": "minOverTime",
+                    "schema": "long"
+                }
+            ]
+        },
+        {
+            "@type": "object",
+            "name": "co2TSA",
+            "comment": "Object defining the temporal processing of a basic property during a period. It provides Maximum, minimum, instant value and average",
+            "displayName": "co2TSA",
+            "fields": [
+                {
+                    "name": "avgOverTime",
+                    "schema": "long"
+                },
+                {
+                    "name": "instValue",
+                    "schema": "long"
+                },
+                {
+                    "name": "maxOverTime",
+                    "schema": "long"
+                },
+                {
+                    "name": "minOverTime",
+                    "schema": "long"
+                }
+            ]
+        },
+        {
+            "@type": "object",
+            "name": "coTSA",
+            "comment": "Object defining the temporal processing of a basic property during a period. It provides Maximum, minimum, instant value and average",
+            "displayName": "coTSA",
+            "fields": [
+                {
+                    "name": "avgOverTime",
+                    "schema": "long"
+                },
+                {
+                    "name": "instValue",
+                    "schema": "long"
+                },
+                {
+                    "name": "maxOverTime",
+                    "schema": "long"
+                },
+                {
+                    "name": "minOverTime",
+                    "schema": "long"
+                }
+            ]
+        },
+        {
+            "@type": "object",
+            "name": "deviceInfo",
+            "comment": "Information about the device associated with the observations.",
+            "displayName": "deviceInfo",
+            "fields": [
+                {
+                    "name": "RFID",
+                    "schema": "string"
+                },
+                {
+                    "name": "deviceBatteryStatus",
+                    "schema": "string"
+                },
+                {
+                    "name": "deviceID",
+                    "schema": "string"
+                },
+                {
+                    "name": "deviceList",
+                    "schema": "string"
+                },
+                {
+                    "name": "deviceModel",
+                    "schema": "object"
+                },
+                {
+                    "name": "deviceName",
+                    "schema": "string"
+                },
+                {
+                    "name": "deviceSimNumber",
+                    "schema": "string"
+                },
+                {
+                    "name": "measurand",
+                    "schema": "string"
+                },
+                {
+                    "name": "refDevice",
+                    "schema": "string"
+                }
+            ]
+        },
+        {
+            "@type": "object",
+            "name": "nh3TSA",
+            "comment": "Object defining the temporal processing of a basic property during a period. It provides Maximum, minimum, instant value and average",
+            "displayName": "nh3TSA",
+            "fields": [
+                {
+                    "name": "avgOverTime",
+                    "schema": "long"
+                },
+                {
+                    "name": "instValue",
+                    "schema": "long"
+                },
+                {
+                    "name": "maxOverTime",
+                    "schema": "long"
+                },
+                {
+                    "name": "minOverTime",
+                    "schema": "long"
+                }
+            ]
+        },
+        {
+            "@type": "object",
+            "name": "nickelTSA",
+            "comment": "Object defining the temporal processing of a basic property during a period. It provides Maximum, minimum, instant value and average",
+            "displayName": "nickelTSA",
+            "fields": [
+                {
+                    "name": "avgOverTime",
+                    "schema": "long"
+                },
+                {
+                    "name": "instValue",
+                    "schema": "long"
+                },
+                {
+                    "name": "maxOverTime",
+                    "schema": "long"
+                },
+                {
+                    "name": "minOverTime",
+                    "schema": "long"
+                }
+            ]
+        },
+        {
+            "@type": "object",
+            "name": "no2TSA",
+            "comment": "Object defining the temporal processing of a basic property during a period. It provides Maximum, minimum, instant value and average",
+            "displayName": "no2TSA",
+            "fields": [
+                {
+                    "name": "avgOverTime",
+                    "schema": "long"
+                },
+                {
+                    "name": "instValue",
+                    "schema": "long"
+                },
+                {
+                    "name": "maxOverTime",
+                    "schema": "long"
+                },
+                {
+                    "name": "minOverTime",
+                    "schema": "long"
+                }
+            ]
+        },
+        {
+            "@type": "object",
+            "name": "noTSA",
+            "comment": "Object defining the temporal processing of a basic property during a period. It provides Maximum, minimum, instant value and average",
+            "displayName": "noTSA",
+            "fields": [
+                {
+                    "name": "avgOverTime",
+                    "schema": "long"
+                },
+                {
+                    "name": "instValue",
+                    "schema": "long"
+                },
+                {
+                    "name": "maxOverTime",
+                    "schema": "long"
+                },
+                {
+                    "name": "minOverTime",
+                    "schema": "long"
+                }
+            ]
+        },
+        {
+            "@type": "object",
+            "name": "o2TSA",
+            "comment": "Object defining the temporal processing of a basic property during a period. It provides Maximum, minimum, instant value and average",
+            "displayName": "o2TSA",
+            "fields": [
+                {
+                    "name": "avgOverTime",
+                    "schema": "long"
+                },
+                {
+                    "name": "instValue",
+                    "schema": "long"
+                },
+                {
+                    "name": "maxOverTime",
+                    "schema": "long"
+                },
+                {
+                    "name": "minOverTime",
+                    "schema": "long"
+                }
+            ]
+        },
+        {
+            "@type": "object",
+            "name": "o3TSA",
+            "comment": "Object defining the temporal processing of a basic property during a period. It provides Maximum, minimum, instant value and average",
+            "displayName": "o3TSA",
+            "fields": [
+                {
+                    "name": "avgOverTime",
+                    "schema": "long"
+                },
+                {
+                    "name": "instValue",
+                    "schema": "long"
+                },
+                {
+                    "name": "maxOverTime",
+                    "schema": "long"
+                },
+                {
+                    "name": "minOverTime",
+                    "schema": "long"
+                }
+            ]
+        },
+        {
+            "@type": "object",
+            "name": "pbTSA",
+            "comment": "Object defining the temporal processing of a basic property during a period. It provides Maximum, minimum, instant value and average",
+            "displayName": "pbTSA",
+            "fields": [
+                {
+                    "name": "avgOverTime",
+                    "schema": "long"
+                },
+                {
+                    "name": "instValue",
+                    "schema": "long"
+                },
+                {
+                    "name": "maxOverTime",
+                    "schema": "long"
+                },
+                {
+                    "name": "minOverTime",
+                    "schema": "long"
+                }
+            ]
+        },
+        {
+            "@type": "object",
+            "name": "pm10TSA",
+            "comment": "Object defining the temporal processing of a basic property during a period. It provides Maximum, minimum, instant value and average",
+            "displayName": "pm10TSA",
+            "fields": [
+                {
+                    "name": "avgOverTime",
+                    "schema": "long"
+                },
+                {
+                    "name": "instValue",
+                    "schema": "long"
+                },
+                {
+                    "name": "maxOverTime",
+                    "schema": "long"
+                },
+                {
+                    "name": "minOverTime",
+                    "schema": "long"
+                }
+            ]
+        },
+        {
+            "@type": "object",
+            "name": "pm25TSA",
+            "comment": "Object defining the temporal processing of a basic property during a period. It provides Maximum, minimum, instant value and average",
+            "displayName": "pm25TSA",
+            "fields": [
+                {
+                    "name": "avgOverTime",
+                    "schema": "long"
+                },
+                {
+                    "name": "instValue",
+                    "schema": "long"
+                },
+                {
+                    "name": "maxOverTime",
+                    "schema": "long"
+                },
+                {
+                    "name": "minOverTime",
+                    "schema": "long"
+                }
+            ]
+        },
+        {
+            "@type": "object",
+            "name": "relativeHumidityTSA",
+            "comment": "Object defining the temporal processing of a basic property during a period. It provides Maximum, minimum, instant value and average",
+            "displayName": "relativeHumidityTSA",
+            "fields": [
+                {
+                    "name": "avgOverTime",
+                    "schema": "long"
+                },
+                {
+                    "name": "instValue",
+                    "schema": "long"
+                },
+                {
+                    "name": "maxOverTime",
+                    "schema": "long"
+                },
+                {
+                    "name": "minOverTime",
+                    "schema": "long"
+                }
+            ]
+        },
+        {
+            "@type": "object",
+            "name": "so2TSA",
+            "comment": "Object defining the temporal processing of a basic property during a period. It provides Maximum, minimum, instant value and average",
+            "displayName": "so2TSA",
+            "fields": [
+                {
+                    "name": "avgOverTime",
+                    "schema": "long"
+                },
+                {
+                    "name": "instValue",
+                    "schema": "long"
+                },
+                {
+                    "name": "maxOverTime",
+                    "schema": "long"
+                },
+                {
+                    "name": "minOverTime",
+                    "schema": "long"
+                }
+            ]
+        },
+        {
+            "@type": "object",
+            "name": "uvTSA",
+            "comment": "Object defining the temporal processing of a basic property during a period. It provides Maximum, minimum, instant value and average",
+            "displayName": "uvTSA",
+            "fields": [
+                {
+                    "name": "avgOverTime",
+                    "schema": "long"
+                },
+                {
+                    "name": "instValue",
+                    "schema": "long"
+                },
+                {
+                    "name": "maxOverTime",
+                    "schema": "long"
+                },
+                {
+                    "name": "minOverTime",
+                    "schema": "long"
+                }
+            ]
+        },
+        {
+            "@type": "object",
+            "name": "versionInfo",
+            "comment": "Version information corresponding to this observation.",
+            "displayName": "versionInfo",
+            "fields": [
+                {
+                    "name": "comments",
+                    "schema": "string"
+                },
+                {
+                    "name": "endDateTime",
+                    "schema": "dateTime"
+                },
+                {
+                    "name": "startDateTime",
+                    "schema": "dateTime"
+                },
+                {
+                    "name": "versionName",
+                    "schema": "string"
+                }
+            ]
+        },
+        {
+            "@type": "Telemetry",
+            "name": "aqiMajorPollutant",
+            "schema": {
+                "@type": "Enum",
+                "valueSchema": "string",
+                "enumValues": [
+                    {
+                        "name": "arsenic",
+                        "displayName": "arsenic",
+                        "enumValue": 1
+                    },
+                    {
+                        "name": "bap",
+                        "displayName": "bap",
+                        "enumValue": 2
+                    },
+                    {
+                        "name": "benzene",
+                        "displayName": "benzene",
+                        "enumValue": 3
+                    },
+                    {
+                        "name": "co2",
+                        "displayName": "co2",
+                        "enumValue": 4
+                    },
+                    {
+                        "name": "nh3",
+                        "displayName": "nh3",
+                        "enumValue": 5
+                    },
+                    {
+                        "name": "no",
+                        "displayName": "no",
+                        "enumValue": 6
+                    },
+                    {
+                        "name": "no2",
+                        "displayName": "no2",
+                        "enumValue": 7
+                    },
+                    {
+                        "name": "o2",
+                        "displayName": "o2",
+                        "enumValue": 8
+                    },
+                    {
+                        "name": "o3",
+                        "displayName": "o3",
+                        "enumValue": 9
+                    },
+                    {
+                        "name": "so2",
+                        "displayName": "so2",
+                        "enumValue": 10
+                    },
+                    {
+                        "name": "pb",
+                        "displayName": "pb",
+                        "enumValue": 11
+                    }
+                ]
+            }
+        }
+    ]
+}
