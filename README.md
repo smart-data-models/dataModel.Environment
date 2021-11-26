@@ -12,6 +12,8 @@ The following entity types are available:
 
 - [ElectroMagneticObserved](https://github.com/smart-data-models/dataModel.Environment/blob/master/ElectroMagneticObserved/README.md). The Data Model is intended to measure excessive electric and magnetic fields (EMFs), or radiation in a work or public environment according to the level of exposure to electromagnetic fields on the air. The frequency of the hertzian waves is conventionally lower than 300 GHz, propagating in space without artificial guide. They are between 9 kHz and 300 GHz.
 
+- [EnvironmentObserved](https://github.com/smart-data-models/dataModel.Environment/blob/master/EnvironmentObserved/README.md). This entity contains a harmonised description of the environmental conditions observed at a particular location and time. This entity is primarily associated with the vertical segment of the environment and agriculture but may also be used in smart home, smart cities, industry and related IoT applications.
+
 - [NoiseLevelObserved](https://github.com/smart-data-models/dataModel.Environment/blob/master/NoiseLevelObserved/README.md). An observation of those acoustic parameters that estimate noise pressure levels at a certain place and time. 
 
 - [WaterObserved](https://github.com/smart-data-models/dataModel.Environment/blob/master/WaterObserved/README.md).  Water observation data model is intended to represent the parameters of flow, level and volume of water observed, as well as the swell information, over a fixed or variable area. This observation also includes the masses of floating objects on this area. The data collected is provided by Sensors, Cameras,Water stations positioned at specific or sensitive locations for rivers, streams, torrent, lakes, seas, etc.
@@ -27,7 +29,7 @@ The following entity types are available:
 
 
 ### Contributors
-[Link](https://github.com/smart-data-models/dataModel.Environment/blob/master/CONTRIBUTORS.yaml) to the 8 current contributors of the data models of this Subject.
+[Link](https://github.com/smart-data-models/dataModel.Environment/blob/master/CONTRIBUTORS.yaml) to the 9 current contributors of the data models of this Subject.
 
 
 ### Contribution
