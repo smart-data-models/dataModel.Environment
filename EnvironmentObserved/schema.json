@@ -1,0 +1,114 @@
+{
+  "$schema": "http://json-schema.org/schema#",
+  "$schemaVersion": "0.0.1",
+  "modelTags": "GSMA",
+  "$id": "https://smart-data-models.github.io/dataModel.Environment/EnvironmentObserved/schema.json",
+  "title": "Smart Data models - Environment-Observed schema",
+  "description": "This entity contains a harmonised description of the environmental conditions observed at a particular location and time. This entity is primarily associated with the vertical segment of the environment and agriculture but may also be used in smart home, smart cities, industry and related IoT applications.",
+  "type": "object",
+  "allOf": [
+    {
+      "$ref": "https://smart-data-models.github.io/data-models/common-schema.json#/definitions/GSMA-Commons"
+    },
+    {
+      "$ref": "https://smart-data-models.github.io/data-models/common-schema.json#/definitions/Location-Commons"
+    },
+    {
+      "properties": {
+        "type": {
+          "type": "string",
+          "description": "Property. NGSI Entity identifier. It has to be EnvironmentObserved",
+          "enum": [
+            "EnvironmentObserved"
+          ]
+        },
+        "pointOfInterest": {
+          "type": "array",
+          "description": "Relationship. A reference to associated Points of Interest (e.g. monitoring stations) that the associated observations are related to.",
+          "items": {
+            "anyOf": [
+              {
+                "type": "string",
+                "minLength": 1,
+                "maxLength": 256,
+                "pattern": "^[\\w\\-\\.\\{\\}\\$\\+\\*\\[\\]`|~^@!,:\\\\]+$",
+                "description": "Property. Identifier format of any NGSI entity"
+              },
+              {
+                "type": "string",
+                "format": "uri",
+                "description": "Property. Identifier format of any NGSI entity"
+              }
+            ],
+            "description": "Relationship. A reference to associated Points of Interest (e.g. monitoring stations) that the associated observations are related to."
+          }
+        },
+        "weatherObserved": {
+          "type": "array",
+          "description": "Relationship. A reference to associated WeatherObserved entities.",
+          "items": {
+            "anyOf": [
+              {
+                "type": "string",
+                "minLength": 1,
+                "maxLength": 256,
+                "pattern": "^[\\w\\-\\.\\{\\}\\$\\+\\*\\[\\]`|~^@!,: \\\\]+$",
+                "description": "Property. Identifier format of any NGSI entity"
+              },
+              {
+                "type": "string",
+                "format": "uri",
+                "description": "Property. Identifier format of any NGSI entity"
+              }
+            ]
+          }
+        },
+        "airQualityObserved": {
+          "type": "array",
+          "description": "Relationship. A reference to associated AirQualityObserved entities.",
+          "items": {
+            "anyOf": [
+              {
+                "type": "string",
+                "minLength": 1,
+                "maxLength": 256,
+                "pattern": "^[\\w\\-\\.\\{\\}\\$\\+\\*\\[\\]`|~^@!,: \\\\]+$",
+                "description": "Property. Identifier format of any NGSI entity"
+              },
+              {
+                "type": "string",
+                "format": "uri",
+                "description": "Property. Identifier format of any NGSI entity"
+              }
+            ],
+            "description": "Relationship. A reference to associated AirQualityObserved entities."
+          }
+        },
+        "waterQualityObserved": {
+          "type": "array",
+          "description": "Relationship. A reference to associated WaterQualityObserved entities.",
+          "items": {
+            "anyOf": [
+              {
+                "type": "string",
+                "minLength": 1,
+                "maxLength": 256,
+                "pattern": "^[\\w\\-\\.\\{\\}\\$\\+\\*\\[\\]`|~^@!,: \\\\]+$",
+                "description": "Property. Identifier format of any NGSI entity"
+              },
+              {
+                "type": "string",
+                "format": "uri",
+                "description": "Property. Identifier format of any NGSI entity"
+              }
+            ]
+          }
+        }
+      }
+    }
+  ],
+  "required": [
+    "id",
+    "type"
+  ]
+}
