@@ -535,3 +535,4 @@ EnvironmentObserved:
   }  
 }  
 ```  
+Vedere [FAQ 10](https://smartdatamodels.org/index.php/faqs/) per avere una risposta su come trattare le unità di grandezza
