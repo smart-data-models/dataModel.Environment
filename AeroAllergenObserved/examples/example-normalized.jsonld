@@ -1,34 +1,33 @@
 {
-  "@context": [
-    "https://smartdatamodels.org/context.jsonld",
-    "https://uri.etsi.org/ngsi-ld/v1/ngsi-ld-core-context.jsonld"
-  ],
-  "address": {
-    "addressCountry": "MX",
-    "addressLocality": "Ciudad de M\u00e9xico",
-    "streetAddress": "Colegio Franco-Ingl\u00e9s",
-    "type": "PostalAddress"
-  },
-  "allergenRisk": "moderate",
-  "alnus": 40,
-  "alnus_Allergenicity": "3",
-  "alnus_Level": "moderate",
-  "casuarina": 1,
-  "casuarina_Allergenicity": "3",
-  "casuarina_Level": "low",
-  "dateObserved": {
-    "@type": "DateTime",
-    "@value": "2018-02-11T00:00:00.00Z"
-  },
-  "id": "urn:ngsi-ld:AeroAllergenObserved:AeroAllergenObserved-CDMX-Pollen-Cuajimalpa",
-  "location": {
-    "coordinates": [
-      -99.276977,
-      19.381877
-    ],
-    "type": "Point"
-  },
-  "modifiedAt": "2018-02-16T17:24:39.00Z",
-  "source": "http://rema.atmosfera.unam.mx/rema/",
-  "type": "AeroAllergenObserved"
+    "id": "urn:ngsi-ld:AeroAllergenObserved:AeroAllergenObserved-CDMX-Pollen-Cuajimalpa",
+    "type": "AeroAllergenObserved",
+    "address": {
+        "addressCountry": "MX",
+        "addressLocality": "Ciudad de M\u00e9xico",
+        "streetAddress": "Colegio Franco-Ingl\u00e9s",
+        "type": "PostalAddress"
+    },
+    "allergenRisk": "moderate",
+    "alnus": 40,
+    "alnus_Allergenicity": "3",
+    "alnus_Level": "moderate",
+    "casuarina": 1,
+    "casuarina_Allergenicity": "3",
+    "casuarina_Level": "low",
+    "dateObserved": {
+        "@type": "DateTime",
+        "@value": "2018-02-11T00:00:00.00Z"
+    },
+    "location": {
+        "coordinates": [
+            -99.276977,
+            19.381877
+        ],
+        "type": "Point"
+    },
+    "modifiedAt": "2018-02-16T17:24:39.00Z",
+    "source": "http://rema.atmosfera.unam.mx/rema/",
+    "@context": [
+        "https://uri.etsi.org/ngsi-ld/v1/ngsi-ld-core-context.jsonld"
+    ]
 }
