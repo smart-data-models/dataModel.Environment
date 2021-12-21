@@ -1,111 +1,112 @@
 {
-  "id": "urn:ngsi-ld:RainFallRadarObserved:RainFallRadarObserved:MNCA-RFRO-018",
-  "type": "RainFallRadarObserved",
-  "name": {
-    "type": "Property",
-    "value": "MNCA-RFRO-018"
-  },
-  "alternateName": {
-    "type": "Property",
-    "value": "AirPort \u0096 global Observation"
-  },
-  "description": {
-    "type": "Property",
-    "value": "Rain fall Radar Observation"
-  },
-  "location": {
-    "type": "GeoProperty",
-    "value": {
-      "type": "polygon",
-      "coordinates": [
-        [
-          [
-            43.66,
-            7.19
-          ],
-          [
-            44.66,
-            7.19
-          ],
-          [
-            44.66,
-            7.21
-          ],
-          [
-            43.66,
-            7.21
-          ],
-          [
-            43.66,
-            7.19
-          ]
-        ]
-      ]
-    }
-  },
-  "address": {
-    "type": "Property",
-    "value": {
-      "addressCountry": "FR",
-      "addressLocality": "Nice",
-      "streetAddress": "Airport Area Coverage + 4 km distance"
-    }
-  },
-  "areaServed": {
-    "type": "Property",
-    "value": "Nice Aeroport"
-  },
-  "refDevice": {
-    "type": "Relationship",
-    "object": "urn:ngsi-ld:Device:NCE-RFRO-018"
-  },
-  "dateObserved": {
-    "type": "Property",
-    "value": {
-      "type": "DateTime",
-      "value": "2020-03-17T08:30:00Z"
-    }
-  },
-  "dateObservedFrom": {
-    "type": "Property",
-    "value": {
-      "type": "DateTime",
-      "value": "2020-03-17T08:30:00Z"
-    }
-  },
-  "dateObservedTo": {
-    "type": "Property",
-    "value": {
-      "type": "DateTime",
-      "value": "2020-03-17T08:45:00Z"
-    }
-  },
-  "rainFallRadarContent": {
-    "type": "Property",
-    "value": "https://particuliers/rainFallRadar/NCE-RFRO-018-2020-03-17T08:30:00"
-  },
-  "numberOfRow": {
-    "type": "Property",
-    "value": 25
-  },
-  "numberOfCol": {
-    "type": "Property",
-    "value": 48
-  },
-  "cellsSize": {
-    "type": "Property",
-    "value": 1
-  },
-  "mapScale": {
-    "type": "Property",
-    "value": "1/10.000"
-  },
-  "measuredArea": {
-    "type": "Property",
-    "value": 250
-  },
-  "@context": [
-    "https://raw.githubusercontent.com/smart-data-models/data-models/master/context.jsonld",
-    "https://uri.etsi.org/ngsi-ld/v1/ngsi-ld-core-context.jsonld"
-  ]
+    "id": "urn:ngsi-ld:RainFallRadarObserved:RainFallRadarObserved:MNCA-RFRO-018",
+    "type": "RainFallRadarObserved",
+    "address": {
+        "type": "Property",
+        "value": {
+            "addressCountry": "FR",
+            "addressLocality": "Nice",
+            "streetAddress": "Airport Area Coverage + 4 km distance"
+        }
+    },
+    "alternateName": {
+        "type": "Property",
+        "value": "AirPort \u0096 global Observation"
+    },
+    "areaServed": {
+        "type": "Property",
+        "value": "Nice Aeroport"
+    },
+    "cellsSize": {
+        "type": "Property",
+        "value": 1
+    },
+    "dateObserved": {
+        "type": "Property",
+        "value": {
+            "type": "DateTime",
+            "value": "2020-03-17T08:30:00Z"
+        }
+    },
+    "dateObservedFrom": {
+        "type": "Property",
+        "value": {
+            "type": "DateTime",
+            "value": "2020-03-17T08:30:00Z"
+        }
+    },
+    "dateObservedTo": {
+        "type": "Property",
+        "value": {
+            "type": "DateTime",
+            "value": "2020-03-17T08:45:00Z"
+        }
+    },
+    "description": {
+        "type": "Property",
+        "value": "Rain fall Radar Observation"
+    },
+    "location": {
+        "type": "GeoProperty",
+        "value": {
+            "type": "polygon",
+            "coordinates": [
+                [
+                    [
+                        43.66,
+                        7.19
+                    ],
+                    [
+                        44.66,
+                        7.19
+                    ],
+                    [
+                        44.66,
+                        7.21
+                    ],
+                    [
+                        43.66,
+                        7.21
+                    ],
+                    [
+                        43.66,
+                        7.19
+                    ]
+                ]
+            ]
+        }
+    },
+    "mapScale": {
+        "type": "Property",
+        "value": "1/10.000"
+    },
+    "measuredArea": {
+        "type": "Property",
+        "value": 250
+    },
+    "name": {
+        "type": "Property",
+        "value": "MNCA-RFRO-018"
+    },
+    "numberOfCol": {
+        "type": "Property",
+        "value": 48
+    },
+    "numberOfRow": {
+        "type": "Property",
+        "value": 25
+    },
+    "rainFallRadarContent": {
+        "type": "Property",
+        "value": "https://particuliers/rainFallRadar/NCE-RFRO-018-2020-03-17T08:30:00"
+    },
+    "refDevice": {
+        "type": "Relationship",
+        "object": "urn:ngsi-ld:Device:NCE-RFRO-018"
+    },
+    "@context": [
+        "https://raw.githubusercontent.com/smart-data-models/data-models/master/context.jsonld",
+        "https://uri.etsi.org/ngsi-ld/v1/ngsi-ld-core-context.jsonld",
+        "https://raw.githubusercontent.com/smart-data-models/dataModel.Environment/master/context.jsonld"
+    ]
 }
