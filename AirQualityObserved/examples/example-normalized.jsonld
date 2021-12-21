@@ -1,40 +1,39 @@
 {
-  "@context": [
-    "https://smartdatamodels.org/context.jsonld",
-    "https://uri.etsi.org/ngsi-ld/v1/ngsi-ld-core-context.jsonld"
-  ],
-  "CO": 500,
-  "CO_Level": "moderate",
-  "NO": 45,
-  "NO2": 69,
-  "NOx": 139,
-  "SO2": 11,
-  "address": {
-    "addressCountry": "ES",
-    "addressLocality": "Madrid",
-    "streetAddress": "Plaza de Espa\u00f1a",
-    "type": "PostalAddress"
-  },
-  "airQualityIndex": 65,
-  "airQualityLevel": "moderate",
-  "areaServed": "Brooklands",
-  "dateObserved": "2016-03-15T11:00:00/2016-03-15T12:00:00",
-  "id": "urn:ngsi-ld:AirQualityObserved:Madrid-AmbientObserved-28079004-2016-03-15T11:00:00",
-  "location": {
-    "coordinates": [
-      -3.712247222222222,
-      40.423852777777775
-    ],
-    "type": "Point"
-  },
-  "typeOfLocation": "outdoor",
-  "precipitation": 0,
-  "refPointOfInterest": "urn:ngsi-ld:PointOfInterest:28079004-Pza.deEspanya",
-  "relativeHumidity": 0.54,
-  "reliability": 0.7,
-  "source": "http://datos.madrid.es",
-  "temperature": 12.2,
-  "type": "AirQualityObserved",
-  "windDirection": 186,
-  "windSpeed": 0.64
+    "id": "urn:ngsi-ld:AirQualityObserved:Madrid-AmbientObserved-28079004-2016-03-15T11:00:00",
+    "type": "AirQualityObserved",
+    "CO": 500,
+    "CO_Level": "moderate",
+    "NO": 45,
+    "NO2": 69,
+    "NOx": 139,
+    "SO2": 11,
+    "address": {
+        "addressCountry": "ES",
+        "addressLocality": "Madrid",
+        "streetAddress": "Plaza de Espa\u00f1a",
+        "type": "PostalAddress"
+    },
+    "airQualityIndex": 65,
+    "airQualityLevel": "moderate",
+    "areaServed": "Brooklands",
+    "dateObserved": "2016-03-15T11:00:00/2016-03-15T12:00:00",
+    "location": {
+        "coordinates": [
+            -3.712247222222222,
+            40.423852777777775
+        ],
+        "type": "Point"
+    },
+    "precipitation": 0,
+    "refPointOfInterest": "urn:ngsi-ld:PointOfInterest:28079004-Pza.deEspanya",
+    "relativeHumidity": 0.54,
+    "reliability": 0.7,
+    "source": "http://datos.madrid.es",
+    "temperature": 12.2,
+    "typeOfLocation": "outdoor",
+    "windDirection": 186,
+    "windSpeed": 0.64,
+    "@context": [
+        "https://uri.etsi.org/ngsi-ld/v1/ngsi-ld-core-context.jsonld"
+    ]
 }
