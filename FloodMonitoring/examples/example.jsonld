@@ -1,46 +1,46 @@
 {
-  "id": "urn:ngsi-ld:FloodMonitoring:Pune-NoiseLevelObserved",
-  "type": "FloodMonitoring",
-  "alertLevel": {
-    "type": "Property",
-    "value": 11.0,
-    "unitCode": "MTR"
-  },
-  "measuredDistance": {
-    "type": "Property",
-    "value": 4.22,
-    "unitCode": "MTR"
-  },
-  "currentLevel": {
-    "type": "Property",
-    "value": 1.98,
-    "unitCode": "MTR"
-  },
-  "dangerLevel": {
-    "type": "Property",
-    "value": 26.0,
-    "unitCode": "MTR"
-  },
-  "observationDateTime": {
-    "type": "string",
-    "format": "date-time",
-    "value": "2020-09-16T13:30:00+05:30"
-  },
-  "referenceLevel": {
-    "type": "Property",
-    "value": 4.2,
-    "unitCode": "MTR"
-  },
-  "floodLevelStatus": {
-    "type": "string",
-    "value": "Normal"
-  },
-  "stationID": {
-    "type": "string",
-    "value": "FWR013"
-  },
-  "@context": [
-    "https://smartdatamodels.org/context.jsonld",
-    "https://uri.etsi.org/ngsi-ld/v1/ngsi-ld-core-context.jsonld"
-  ]
+    "id": "urn:ngsi-ld:FloodMonitoring:Pune-NoiseLevelObserved",
+    "type": "FloodMonitoring",
+    "alertLevel": {
+        "type": "Property",
+        "value": 11.0,
+        "unitCode": "MTR"
+    },
+    "currentLevel": {
+        "type": "Property",
+        "value": 1.98,
+        "unitCode": "MTR"
+    },
+    "dangerLevel": {
+        "type": "Property",
+        "value": 26.0,
+        "unitCode": "MTR"
+    },
+    "floodLevelStatus": {
+        "type": "string",
+        "value": "Normal"
+    },
+    "measuredDistance": {
+        "type": "Property",
+        "value": 4.22,
+        "unitCode": "MTR"
+    },
+    "observationDateTime": {
+        "type": "string",
+        "format": "date-time",
+        "value": "2020-09-16T13:30:00+05:30"
+    },
+    "referenceLevel": {
+        "type": "Property",
+        "value": 4.2,
+        "unitCode": "MTR"
+    },
+    "stationID": {
+        "type": "string",
+        "value": "FWR013"
+    },
+    "@context": [
+        "https://uri.etsi.org/ngsi-ld/v1/ngsi-ld-core-context.jsonld",
+        "https://raw.githubusercontent.com/smart-data-models/dataModel.Environment/master/context.jsonld"
+    ]
 }
