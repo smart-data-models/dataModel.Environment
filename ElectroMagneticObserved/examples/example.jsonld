@@ -1,70 +1,70 @@
 {
-  "id": "urn:ngsi-ld:ElectroMagneticObserved:ElectroMagneticObserved:MNCA-EM-018",
-  "type": "ElectroMagneticObserved",
-  "name": {
-    "type": "Property",
-    "value": "MNCA-EM-018"
-  },
-  "alternateName": {
-    "type": "Property",
-    "value": "AirPort \u0096 global Observation"
-  },
-  "description": {
-    "type": "Property",
-    "value": "EMF observation"
-  },
-  "location": {
-    "type": "GeoProperty",
-    "value": {
-      "type": "Point",
-      "coordinates": [
-        43.66481,
-        7.196545
-      ]
-    }
-  },
-  "address": {
-    "type": "Property",
-    "value": {
-      "addressCountry": "FR",
-      "addressLocality": "Nice",
-      "streetAddress": "Terminal 2 - Parking 7"
-    }
-  },
-  "areaServed": {
-    "type": "Property",
-    "value": "Nice Aeroport"
-  },
-  "refDevice": {
-    "type": "Relationship",
-    "object": "urn:ngsi-ld:Device:NCE-T2-P7-EM03"
-  },
-  "dateObserved": {
-    "type": "Property",
-    "value": {
-      "type": "DateTime",
-      "value": "2020-03-17T08:45:00Z"
-    }
-  },
-  "eMF": {
-    "type": "Property",
-    "value": 950.12,
-    "observedAt": "2020-03-17TT08:45:00Z",
-    "measurementType": {
-      "type": "Property",
-      "value": "Instant"
+    "id": "urn:ngsi-ld:ElectroMagneticObserved:ElectroMagneticObserved:MNCA-EM-018",
+    "type": "ElectroMagneticObserved",
+    "address": {
+        "type": "Property",
+        "value": {
+            "addressCountry": "FR",
+            "addressLocality": "Nice",
+            "streetAddress": "Terminal 2 - Parking 7"
+        }
     },
-    "measurementInterval": {
-      "type": "Property",
-      "value": 1
-    }
-  },
-  "reliability": {
-    "type": "Property",
-    "value": 0.993
-  },
-  "@context": [
-    "https://smartdatamodels.org/context.jsonld",
-    "https://uri.etsi.org/ngsi-ld/v1/ngsi-ld-core-context.jsonld"
-  ]
+    "alternateName": {
+        "type": "Property",
+        "value": "AirPort \u0096 global Observation"
+    },
+    "areaServed": {
+        "type": "Property",
+        "value": "Nice Aeroport"
+    },
+    "dateObserved": {
+        "type": "Property",
+        "value": {
+            "type": "DateTime",
+            "value": "2020-03-17T08:45:00Z"
+        }
+    },
+    "description": {
+        "type": "Property",
+        "value": "EMF observation"
+    },
+    "eMF": {
+        "type": "Property",
+        "value": 950.12,
+        "observedAt": "2020-03-17TT08:45:00Z",
+        "measurementType": {
+            "type": "Property",
+            "value": "Instant"
+        },
+        "measurementInterval": {
+            "type": "Property",
+            "value": 1
+        }
+    },
+    "location": {
+        "type": "GeoProperty",
+        "value": {
+            "type": "Point",
+            "coordinates": [
+                43.66481,
+                7.196545
+            ]
+        }
+    },
+    "name": {
+        "type": "Property",
+        "value": "MNCA-EM-018"
+    },
+    "refDevice": {
+        "type": "Relationship",
+        "object": "urn:ngsi-ld:Device:NCE-T2-P7-EM03"
+    },
+    "reliability": {
+        "type": "Property",
+        "value": 0.993
+    },
+    "@context": [
+        "https://uri.etsi.org/ngsi-ld/v1/ngsi-ld-core-context.jsonld",
+        "https://raw.githubusercontent.com/smart-data-models/dataModel.Environment/master/context.jsonld"
+    ]
 }
