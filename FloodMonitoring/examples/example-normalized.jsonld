@@ -1,14 +1,13 @@
 {
-  "@context": [
-    "https://smartdatamodels.org/context.jsonld",
-    "https://uri.etsi.org/ngsi-ld/v1/ngsi-ld-core-context.jsonld"
-  ],
-  "alertLevel": 10.0,
-  "measuredDistance": 3.22,
-  "currentLevel": 0.98,
-  "dangerLevel": 25.0,
-  "observationDateTime": "2020-09-16T13:30:00+05:30",
-  "referenceLevel": 4.2,
-  "floodLevelStatus": "Normal",
-  "stationID": "FWR013"
+    "alertLevel": 10.0,
+    "currentLevel": 0.98,
+    "dangerLevel": 25.0,
+    "floodLevelStatus": "Normal",
+    "measuredDistance": 3.22,
+    "observationDateTime": "2020-09-16T13:30:00+05:30",
+    "referenceLevel": 4.2,
+    "stationID": "FWR013",
+    "@context": [
+        "https://uri.etsi.org/ngsi-ld/v1/ngsi-ld-core-context.jsonld"
+    ]
 }
