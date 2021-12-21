@@ -1,69 +1,67 @@
 {
-  "id": "urn:ngsi:WaterObserved:MNCA-001",
-  "type": "WaterObserved",
-  "name": {
-    "type": "Property",
-    "value": "STLRT-MNCA-AP-WO-012"
-  },
-  "alternateName": {
-    "type": "Property",
-    "value": "Var River Alert for safety procedure for Airport"
-  },
-  "description": {
-    "type": "Property",
-    "value": "Observation of Evolution of the water levels"
-  },
-  "location": {
-    "type": "Geoproperty",
-    "value": {
-      "type": "Point",
-      "coordinates": [
-        43.66481,
-        7.196545
-      ]
-    }
-  },
-  "areaServed": {
-    "type": "Property",
-    "value": "Nice Airport"
-  },
-  "refDevice": {
-    "type": "Relationship",
-    "object": "uri:ngsi:Device:T2-NP-018"
-  },
-  "dateObserved": {
-    "type": "Relationship",
-    "object": "2020-03-17T08:45:00.209Z"
-  },
-  "flow": {
-    "type": "Number",
-    "value": 12
-  },
-  "height": {
-    "type": "Number",
-    "value": 3.52
-  },
-  "measuredArea": {
-    "type": "Number",
-    "value": 250
-  },
-  "objectArea": {
-    "type": "Number",
-    "value": 35
-  },
-  "objectHeightAverage": {
-    "type": "Number",
-    "value": 1.75
-  },
-  "objectHeightMax": {
-    "type": "Number",
-    "value": 2.25
-  },
-  "objectVolume": {
-    "type": "Number",
-    "value": 17.5
-  },
-  "@context": [
-    "https://smartdatamodels.org/context.jsonld"
-  ]
+    "id": "urn:ngsi:WaterObserved:MNCA-001",
+    "type": "WaterObserved",
+    "alternateName": {
+        "type": "Property",
+        "value": "Var River Alert for safety procedure for Airport"
+    },
+    "areaServed": {
+        "type": "Property",
+        "value": "Nice Airport"
+    },
+    "dateObserved": {
+        "type": "Relationship",
+        "object": "2020-03-17T08:45:00.209Z"
+    },
+    "description": {
+        "type": "Property",
+        "value": "Observation of Evolution of the water levels"
+    },
+    "flow": {
+        "type": "Number",
+        "value": 12
+    },
+    "height": {
+        "type": "Number",
+        "value": 3.52
+    },
+    "location": {
+        "type": "Geoproperty",
+        "value": {
+            "type": "Point",
+            "coordinates": [
+                43.66481,
+                7.196545
+            ]
+        }
+    },
+    "measuredArea": {
+        "type": "Number",
+        "value": 250
+    },
+    "name": {
+        "type": "Property",
+        "value": "STLRT-MNCA-AP-WO-012"
+    },
+    "objectArea": {
+        "type": "Number",
+        "value": 35
+    },
+    "objectHeightAverage": {
+        "type": "Number",
+        "value": 1.75
+    },
+    "objectHeightMax": {
+        "type": "Number",
+        "value": 2.25
+    },
+    "objectVolume": {
+        "type": "Number",
+        "value": 17.5
+    },
+    "refDevice": {
+        "type": "Relationship",
+        "object": "uri:ngsi:Device:T2-NP-018"
+    },
+    "@context": []
 }
