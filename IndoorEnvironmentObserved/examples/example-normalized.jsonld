@@ -1,46 +1,6 @@
 {
     "id": "urn:ngsi-ld:IndoorEnvironmentObserved:urn:ngsi:MuseoDemo_Room_1",
     "type": "IndoorEnvironmentObserved",
-    "dateObserved": {
-        "type": "Property",
-        "value": "2016-03-15T11:00:00/2016-03-15T12:00:00"
-    },
-    "refPointOfInterest": {
-        "type": "Relationship",
-        "object": "urn:ngsi-ld:PointOfInterest:urn:ngsi:MuseoDemo"
-    },
-    "location": {
-        "type": "GeoProperty",
-        "value": {
-            "type": "Point",
-            "coordinates": [40, 11]
-        }
-    },
-    "address": {
-        "type": "Property",
-        "value": {
-            "addressCountry": "IT",
-            "addressLocality": "Demo city",
-            "streetAddress": "Demo address",
-            "type": "PostalAddress"
-        }
-    },
-    "peopleCount": {
-        "type": "Property",
-        "value": 10
-    },
-    "temperature": {
-        "type": "Property",
-        "value": 12.2
-    },
-    "relativeHumidity": {
-        "type": "Property",
-        "value": 0.54
-    },
-    "illuminance": {
-        "type": "Property",
-        "value": 1000
-    },
     "CO": {
         "type": "Property",
         "value": 500,
@@ -51,20 +11,63 @@
         "value": 45,
         "unitCode": "GQ"
     },
-    "NOx": {
-        "type": "Property",
-        "value": 139,
-        "unitCode": "GQ"
-    },
     "NO2": {
         "type": "Property",
         "value": 69,
+        "unitCode": "GQ"
+    },
+    "NOx": {
+        "type": "Property",
+        "value": 139,
         "unitCode": "GQ"
     },
     "SO2": {
         "type": "Property",
         "value": 11,
         "unitCode": "GQ"
+    },
+    "address": {
+        "type": "Property",
+        "value": {
+            "addressCountry": "IT",
+            "addressLocality": "Demo city",
+            "streetAddress": "Demo address",
+            "type": "PostalAddress"
+        }
+    },
+    "dateObserved": {
+        "type": "Property",
+        "value": "2016-03-15T11:00:00/2016-03-15T12:00:00"
+    },
+    "illuminance": {
+        "type": "Property",
+        "value": 1000
+    },
+    "location": {
+        "type": "GeoProperty",
+        "value": {
+            "type": "Point",
+            "coordinates": [
+                40,
+                11
+            ]
+        }
+    },
+    "peopleCount": {
+        "type": "Property",
+        "value": 10
+    },
+    "refPointOfInterest": {
+        "type": "Relationship",
+        "object": "urn:ngsi-ld:PointOfInterest:urn:ngsi:MuseoDemo"
+    },
+    "relativeHumidity": {
+        "type": "Property",
+        "value": 0.54
+    },
+    "temperature": {
+        "type": "Property",
+        "value": 12.2
     },
     "@context": [
         "https://fiware.github.io/data-models/context.jsonld",
