@@ -1,54 +1,54 @@
 {
-  "id": "urn:ngsi-ld:RainFallRadarObserved:RainFallRadarObserved:MNCA-RFRO-018",
-  "type": "RainFallRadarObserved",
-  "name": "MNCA-RFRO-018",
-  "alternateName": "AirPort global Observation",
-  "description": "Rain fall Radar Observation",
-  "location": {
-    "type": "Polygon",
-    "coordinates": [
-      [
-        [
-          43.66,
-          7.19
-        ],
-        [
-          44.66,
-          7.19
-        ],
-        [
-          44.66,
-          7.21
-        ],
-        [
-          43.66,
-          7.21
-        ],
-        [
-          43.66,
-          7.19
+    "id": "urn:ngsi-ld:RainFallRadarObserved:RainFallRadarObserved:MNCA-RFRO-018",
+    "type": "RainFallRadarObserved",
+    "address": {
+        "addressCountry": "FR",
+        "addressLocality": "Nice",
+        "streetAddress": "Airport Area Coverage + 4 km distance"
+    },
+    "alternateName": "AirPort global Observation",
+    "areaServed": "Nice Aeroport",
+    "cellsSize": 1,
+    "dateObserved": "2020-03-17T08:30:00Z",
+    "dateObservedFrom": "2020-03-17T08:30:00Z",
+    "dateObservedTo": "2020-03-17T08:45:00Z",
+    "description": "Rain fall Radar Observation",
+    "location": {
+        "type": "Polygon",
+        "coordinates": [
+            [
+                [
+                    43.66,
+                    7.19
+                ],
+                [
+                    44.66,
+                    7.19
+                ],
+                [
+                    44.66,
+                    7.21
+                ],
+                [
+                    43.66,
+                    7.21
+                ],
+                [
+                    43.66,
+                    7.19
+                ]
+            ]
         ]
-      ]
+    },
+    "mapScale": "1/10.000",
+    "measuredArea": 250,
+    "name": "MNCA-RFRO-018",
+    "numberOfCol": 48,
+    "numberOfRow": 25,
+    "rainFallRadarContent": "https://particuliers/rainFallRadar/NCE-RFRO-018-2020-03-17T08:30:00",
+    "refDevice": "urn:ngsi-ld:Device:NCE-RFRO-018",
+    "@context": [
+        "https://raw.githubusercontent.com/smart-data-models/data-models/master/context.jsonld",
+        "https://uri.etsi.org/ngsi-ld/v1/ngsi-ld-core-context.jsonld"
     ]
-  },
-  "address": {
-    "addressCountry": "FR",
-    "addressLocality": "Nice",
-    "streetAddress": "Airport Area Coverage + 4 km distance"
-  },
-  "areaServed": "Nice Aeroport",
-  "refDevice": "urn:ngsi-ld:Device:NCE-RFRO-018",
-  "dateObserved": "2020-03-17T08:30:00Z",
-  "dateObservedFrom": "2020-03-17T08:30:00Z",
-  "dateObservedTo": "2020-03-17T08:45:00Z",
-  "rainFallRadarContent": "https://particuliers/rainFallRadar/NCE-RFRO-018-2020-03-17T08:30:00",
-  "numberOfRow": 25,
-  "numberOfCol": 48,
-  "cellsSize": 1,
-  "mapScale": "1/10.000",
-  "measuredArea": 250,
-  "@context": [
-    "https://raw.githubusercontent.com/smart-data-models/data-models/master/context.jsonld",
-    "https://uri.etsi.org/ngsi-ld/v1/ngsi-ld-core-context.jsonld"
-  ]
 }
