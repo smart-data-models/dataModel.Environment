@@ -1,31 +1,30 @@
 {
-  "id": "urn:ngsi-ld:PhreaticObserved:PhreaticObserved:MNCA-001",
-  "type": "PhreaticObserved",
-  "name": "STLRT-MNCA-NP-015",
-  "description": "Measurement corresponding to the level and quality of groundwater closed from Airport River Saint Laurent du Var.",
-  "location": {
-    "type": "Point",
-    "coordinates": [
-      43.66481,
-      7.196545
+    "id": "urn:ngsi-ld:PhreaticObserved:PhreaticObserved:MNCA-001",
+    "type": "PhreaticObserved",
+    "areaServed": "Nice Airport",
+    "dateObserved": "2020-07-07T15:05:59.408Z",
+    "depth": 20.45,
+    "description": "Measurement corresponding to the level and quality of groundwater closed from Airport River Saint Laurent du Var.",
+    "investigationDepth": 22.35,
+    "isMobile": false,
+    "location": {
+        "type": "Point",
+        "coordinates": [
+            43.66481,
+            7.196545
+        ]
+    },
+    "measurementType": [
+        "depth",
+        "volume"
+    ],
+    "name": "STLRT-MNCA-NP-015",
+    "pressure": 2.12,
+    "refDevice": [
+        "urn:ngsi-ld:Device:T1-NP-015"
+    ],
+    "waterTable": 12.75,
+    "@context": [
+        "https://uri.etsi.org/ngsi-ld/v1/ngsi-ld-core-context.jsonld"
     ]
-  },
-  "areaServed": "Nice Airport",
-  "dateObserved": "2020-07-07T15:05:59.408Z",
-  "refDevice": [
-    "urn:ngsi-ld:Device:T1-NP-015"
-  ],
-  "isMobile": false,
-  "measurementType": [
-    "depth",
-    "volume"
-  ],
-  "investigationDepth": 22.35,
-  "waterTable": 12.75,
-  "depth": 20.45,
-  "pressure": 2.12,
-  "@context": [
-    "https://smartdatamodels.org/context.jsonld",
-    "https://uri.etsi.org/ngsi-ld/v1/ngsi-ld-core-context.jsonld"
-  ]
 }
