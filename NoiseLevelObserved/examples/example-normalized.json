@@ -1,12 +1,16 @@
 {
+  "id": "Vitoria-NoiseLevelObserved-2016-12-28T11:00:00_2016-12-28T12:00:00",
+  "type": "NoiseLevelObserved",
   "dateObservedFrom": {
     "type": "DateTime",
     "value": "2016-12-28T11:00:00.00Z"
   },
   "LAmax": {
+    "type": "Number",
     "value": 94.5
   },
   "LAeq": {
+    "type": "Number",
     "value": 67.8
   },
   "dateObservedTo": {
@@ -14,18 +18,21 @@
     "value": "2016-12-28T12:00:00.00Z"
   },
   "LAeq_d": {
+    "type": "Number",
     "value": 65.4
   },
   "location": {
     "type": "geo:json",
     "value": {
       "type": "Point",
-      "coordinates": [-2.698, 42.8491]
+      "coordinates": [
+        -2.698,
+        42.8491
+      ]
     }
   },
-  "type": "NoiseLevelObserved",
-  "id": "Vitoria-NoiseLevelObserved-2016-12-28T11:00:00_2016-12-28T12:00:00",
   "LAS": {
+    "type": "Number",
     "value": 91.6
   }
 }

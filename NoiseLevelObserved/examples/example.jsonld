@@ -1,48 +1,26 @@
 {
-    "id": "urn:ngsi-ld:NoiseLevelObserved:Vitoria-NoiseLevelObserved-2016-12-28T11:00:00_2016-12-28T12:00:00",
-    "type": "NoiseLevelObserved",
-    "LAS": {
-        "type": "Property",
-        "value": 91.6
-    },
-    "LAeq": {
-        "type": "Property",
-        "value": 67.8
-    },
-    "LAeq_d": {
-        "type": "Property",
-        "value": 65.4
-    },
-    "LAmax": {
-        "type": "Property",
-        "value": 94.5
-    },
-    "dateObservedFrom": {
-        "type": "Property",
-        "value": {
-            "@type": "DateTime",
-            "@value": "2016-12-28T11:00:00.00Z"
-        }
-    },
-    "dateObservedTo": {
-        "type": "Property",
-        "value": {
-            "@type": "DateTime",
-            "@value": "2016-12-28T12:00:00.00Z"
-        }
-    },
-    "location": {
-        "type": "GeoProperty",
-        "value": {
-            "type": "Point",
-            "coordinates": [
-                -2.698,
-                42.8491
-            ]
-        }
-    },
-    "@context": [
-        "https://uri.etsi.org/ngsi-ld/v1/ngsi-ld-core-context.jsonld",
-        "https://raw.githubusercontent.com/smart-data-models/dataModel.Environment/master/context.jsonld"
-    ]
+  "id": "urn:ngsi-ld:NoiseLevelObserved:Vitoria-NoiseLevelObserved-2016-12-28T11:00:00_2016-12-28T12:00:00",
+  "type": "NoiseLevelObserved",
+  "LAS": 91.6,
+  "LAeq": 67.8,
+  "LAeq_d": 65.4,
+  "LAmax": 94.5,
+  "dateObservedFrom": {
+    "@type": "DateTime",
+    "@value": "2016-12-28T11:00:00.00Z"
+  },
+  "dateObservedTo": {
+    "@type": "DateTime",
+    "@value": "2016-12-28T12:00:00.00Z"
+  },
+  "location": {
+    "coordinates": [
+      -2.698,
+      42.8491
+    ],
+    "type": "Point"
+  },
+  "@context": [
+    "https://uri.etsi.org/ngsi-ld/v1/ngsi-ld-core-context.jsonld"
+  ]
 }
