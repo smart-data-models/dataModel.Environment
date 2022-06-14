@@ -112,6 +112,22 @@
       "LAmax": {
         "type": "number",
         "description": "Property. Acoustic level frequency weigthed (A-weghting) maximum sound level"
+      },
+      "noiseFrequency": {
+        "type": "number",
+        "description": "Property. Measurement frequency of the used sensor."
+      },
+      "obstacles": {
+        "type": "string",
+        "description": "Property. Type of potential obstacles between the sensor and the noise source."
+      },
+      "heightAVR": {
+        "type": "string",
+        "description": "Property. Type of potential obstacles between the sensor and the noise source."
+      },
+      "distanceAverage": {
+        "type": "string",
+        "description": "Property. Average distance between sensor and potential noise sources."
       }
     }
   ],
