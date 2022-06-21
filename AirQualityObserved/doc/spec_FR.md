@@ -1,12 +1,14 @@
-Entité : AirQualityObserved  
+[![Smart Data Models](https://smartdatamodels.org/wp-content/uploads/2022/01/SmartDataModels_logo.png "Logo")](https://smartdatamodels.org)  
+Entité : AirQualityObserved  
 ===========================  
 [Licence ouverte] (https://github.com/smart-data-models//dataModel.Environment/blob/master/AirQualityObserved/LICENSE.md)  
 [document généré automatiquement] (https://docs.google.com/presentation/d/e/2PACX-1vTs-Ng5dIAwkg91oTTUdt8ua7woBXhPnwavZ0FxgR8BsAI_Ek3C5q97Nd94HS8KhP-r_quD4H0fgyt3/pub?start=false&loop=false&delayms=3000#slide=id.gb715ace035_0_60)  
 Description globale : **Observation des conditions de qualité de l'air à un endroit et à un moment donnés**.  
+version : 0.1.0  
 
 ## Liste des propriétés  
 
-- `address`: L'adresse postale  - `airQualityIndex`: L'indice de qualité de l'air est un chiffre utilisé pour rendre compte de la qualité de l'air un jour donné.  - `airQualityLevel`: Niveau qualitatif global de préoccupation sanitaire correspondant à la qualité de l'air observée  - `alternateName`: Un nom alternatif pour cet élément  - `areaServed`: Zone de niveau supérieur à laquelle appartient cette mesure de la qualité de l'air  - `as`: Arsenic détecté  - `c6h6`: Benzène détecté  - `cd`: Cadmium détecté  - `co`: Monoxyde de carbone détecté  - `co2`: Dioxyde de carbone détecté  - `coLevel`: Présence qualitative de monoxyde de carbone  - `dataProvider`: Une séquence de caractères identifiant le fournisseur de l'entité de données harmonisées.  - `dateCreated`: Horodatage de la création de l'entité. Celui-ci sera généralement attribué par la plateforme de stockage.  - `dateModified`: Horodatage de la dernière modification de l'entité. Il sera généralement attribué par la plateforme de stockage.  - `dateObserved`: La date et l'heure de cette observation en format ISO8601 UTC.  - `description`: Une description de cet article  - `id`: Identifiant unique de l'entité  - `location`: Référence Geojson à l'élément. Il peut s'agir d'un point, d'une ligne, d'un polygone, d'un point multiple, d'une ligne multiple ou d'un polygone multiple.  - `name`: Le nom de cet élément.  - `ni`: Nickel détecté  - `no`: Monoxyde d'azote détecté  - `no2`: Dioxyde d'azote détecté  - `nox`: Autres oxydes d'azote détectés  - `o3`: Ozone détecté  - `owner`: Une liste contenant une séquence de caractères codée en JSON référençant les identifiants uniques du ou des propriétaires.  - `pb`: Plomb détecté  - `pm10`: Particules d'un diamètre de 10 micromètres ou moins  - `pm25`: Particules d'un diamètre de 2,5 micromètres ou moins  - `precipitation`: Quantité d'eau de pluie  - `refDevice`: Une référence au(x) dispositif(s) qui a (ont) capturé cette observation.  - `refPointOfInterest`: Une référence à un point d'intérêt (généralement une station de qualité de l'air) associé à cette observation.  - `refWeatherObserved`:  Météo observée associée aux conditions de qualité de l'air décrites par cette entité.  - `relativeHumidity`: L'humidité dans l'air  - `reliability`: Fiabilité (pourcentage, exprimé en parties par un) correspondant à la qualité de l'air observée  - `seeAlso`: liste d'uri pointant vers des ressources supplémentaires sur l'article  - `sh2`: Sulfure d'hydrogène détecté  - `so2`: Dioxyde de soufre détecté  - `source`: Une séquence de caractères donnant la source originale des données de l'entité sous forme d'URL. Il est recommandé d'utiliser le nom de domaine entièrement qualifié du fournisseur source ou l'URL de l'objet source.  - `temperature`: Température de l'article  - `type`: NGSI Type d'entité  - `typeofLocation`: Type d'emplacement de l'élément échantillonné  - `volatileOrganicCompoundsTotal`: Alcanes <C10, cétones <C6, aldéhydes <C10, acides carboxyliques <C5, aspirants<C7, alcènes <C8, aromatiques  - `windDirection`: Direction de la girouette  - `windSpeed`: Intensité du vent    
+- `address`: L'adresse postale  - `airQualityIndex`: L'indice de qualité de l'air est un chiffre utilisé pour rendre compte de la qualité de l'air un jour donné.  - `airQualityLevel`: Niveau qualitatif global de préoccupation sanitaire correspondant à la qualité de l'air observée  - `alternateName`: Un nom alternatif pour cet élément  - `areaServed`: Zone de niveau supérieur à laquelle appartient cette mesure de la qualité de l'air  - `as`: Arsenic détecté  - `c6h6`: Benzène détecté  - `cd`: Cadmium détecté  - `co`: Monoxyde de carbone détecté  - `co2`: Dioxyde de carbone détecté  - `coLevel`: Présence qualitative de monoxyde de carbone  - `dataProvider`: Une séquence de caractères identifiant le fournisseur de l'entité de données harmonisées.  - `dateCreated`: Horodatage de la création de l'entité. Celui-ci sera généralement attribué par la plateforme de stockage.  - `dateModified`: Horodatage de la dernière modification de l'entité. Il sera généralement attribué par la plateforme de stockage.  - `dateObserved`: La date et l'heure de cette observation en format ISO8601 UTC.  - `description`: Une description de cet article  - `id`: Identifiant unique de l'entité  - `location`: Référence Geojson à l'élément. Il peut s'agir d'un point, d'une ligne, d'un polygone, d'un point multiple, d'une ligne multiple ou d'un polygone multiple.  - `name`: Le nom de cet élément.  - `ni`: Nickel détecté  - `no`: Monoxyde d'azote détecté  - `no2`: Dioxyde d'azote détecté  - `nox`: Autres oxydes d'azote détectés  - `o3`: Ozone détecté  - `owner`: Une liste contenant une séquence de caractères codée en JSON référençant les identifiants uniques du ou des propriétaires.  - `pb`: Plomb détecté  - `pm1`: Particules de 1 micromètre ou moins de diamètre.  - `pm10`: Particules d'un diamètre de 10 micromètres ou moins  - `pm25`: Particules d'un diamètre de 2,5 micromètres ou moins  - `precipitation`: Quantité d'eau de pluie  - `refDevice`: Une référence au(x) dispositif(s) qui a (ont) capturé cette observation.  - `refPointOfInterest`: Une référence à un point d'intérêt (généralement une station de qualité de l'air) associé à cette observation.  - `refWeatherObserved`:  Météo observée associée aux conditions de qualité de l'air décrites par cette entité.  - `relativeHumidity`: L'humidité dans l'air  - `reliability`: Fiabilité (pourcentage, exprimé en parties par un) correspondant à la qualité de l'air observée  - `seeAlso`: liste d'uri pointant vers des ressources supplémentaires sur l'élément  - `sh2`: Sulfure d'hydrogène détecté  - `so2`: Dioxyde de soufre détecté  - `source`: Une séquence de caractères donnant la source originale des données de l'entité sous forme d'URL. Il est recommandé d'utiliser le nom de domaine entièrement qualifié du fournisseur source ou l'URL de l'objet source.  - `temperature`: Température de l'article  - `type`: NGSI Type d'entité  - `typeofLocation`: Type d'emplacement de l'élément échantillonné  - `volatileOrganicCompoundsTotal`: Alcanes <C10, cétones <C6, aldéhydes <C10, acides carboxyliques <C5, aspirants<C7, alcènes <C8, aromatiques  - `windDirection`: Direction de la girouette  - `windSpeed`: Intensité du vent    
 Propriétés requises  
 - `dateObserved`  - `id`  - `location`  - `type`    
 Tous les polluants ne sont pas inclus dans ce modèle de données. En cas de nouveaux polluants, pour étendre le modèle, veuillez vous référer à cette source http://dd.eionet.europa.eu/vocabulary/aq/pollutant/view?page=1#vocabularyConceptResults où la plupart d'entre eux sont répertoriés.  
@@ -346,6 +348,11 @@ AirQualityObserved:
       type: number    
       x-ngsi:    
         type: Property    
+    pm1:    
+      description: 'Particulate matter 1 micrometers or less in diameter.'    
+      type: number    
+      x-ngsi:    
+        type: Property    
     pm10:    
       description: 'Particulate matter 10 micrometers or less in diameter'    
       minimum: 0    
@@ -503,7 +510,7 @@ AirQualityObserved:
   x-license-url: https://github.com/smart-data-models/dataModel.Environment/blob/master/AirQualityObserved/LICENSE.md    
   x-model-schema: https://smart-data-models.github.io/dataModel.Environment/AirQualityObserved/schema.json    
   x-model-tags: ""    
-  x-version: 0.0.1    
+  x-version: 0.1.0    
 ```  
 </details>    
 ## Exemples de charges utiles  
@@ -544,7 +551,7 @@ AirQualityObserved:
 }  
 ```  
 #### AirQualityObserved NGSI-v2 normalisé Exemple  
-Voici un exemple de AirQualityObserved au format JSON-LD tel que normalisé. Ce format est compatible avec la NGSI-v2 lorsqu'il n'utilise pas d'options et renvoie les données contextuelles d'une entité individuelle.  
+Voici un exemple de AirQualityObserved au format JSON-LD tel que normalisé. Ceci est compatible avec la NGSI-v2 lorsqu'elle n'utilise pas d'options et renvoie les données contextuelles d'une entité individuelle.  
 ```json  
 {  
   "id": "Madrid-AmbientObserved-28079004-2016-03-15T11:00:00",  
@@ -649,160 +656,159 @@ AirQualityObserved:
   }  
 }  
 ```  
-#### AirQualityObserved Valeurs-clés NGSI-LD Exemple  
+#### Valeurs-clés NGSI-LD AirQualityObserved Exemple  
 Voici un exemple de AirQualityObserved au format JSON-LD en tant que valeurs-clés. Ceci est compatible avec NGSI-LD en utilisant `options=keyValues` et renvoie les données contextuelles d'une entité individuelle.  
 ```json  
 {  
-  "id": "urn:ngsi-ld:AirQualityObserved:Madrid-AmbientObserved-28079004-2016-03-15T11:00:00",  
-  "type": "AirQualityObserved",  
-  "dateObserved": {  
-    "type": "Property",  
-    "value": "2016-03-15T11:00:00/2016-03-15T12:00:00"  
-  },  
-  "areaServed": {  
-    "type": "Property",  
-    "value": "Brooklands"  
-  },  
-  "airQualityLevel": {  
-    "type": "Property",  
-    "value": "moderate"  
-  },  
-  "CO": {  
-    "type": "Property",  
-    "value": 500,  
-    "unitCode": "GP"  
-  },  
-  "temperature": {  
-    "type": "Property",  
-    "value": 12.2  
-  },  
-  "NO": {  
-    "type": "Property",  
-    "value": 45,  
-    "unitCode": "GQ"  
-  },  
-  "refPointOfInterest": {  
-    "type": "Relationship",  
-    "object": "urn:ngsi-ld:PointOfInterest:28079004-Pza.deEspanya"  
-  },  
-  "windDirection": {  
-    "type": "Property",  
-    "value": 186  
-  },  
-  "source": {  
-    "type": "Property",  
-    "value": "http://datos.madrid.es"  
-  },  
-  "windSpeed": {  
-    "type": "Property",  
-    "value": 0.64  
-  },  
-  "SO2": {  
-    "type": "Property",  
-    "value": 11,  
-    "unitCode": "GQ"  
-  },  
-  "NOx": {  
-    "type": "Property",  
-    "value": 139,  
-    "unitCode": "GQ"  
-  },  
-  "location": {  
-    "type": "GeoProperty",  
-    "value": {  
-      "type": "Point",  
-      "coordinates": [  
-        -3.712247222222222,  
-        40.423852777777775  
-      ]  
-    }  
-  },  
-  "typeOfLocation": {  
-    "type": "Property",  
-    "value": "outdoor"  
-  },  
-  "airQualityIndex": {  
-    "type": "Property",  
-    "value": 65  
-  },  
-  "address": {  
-    "type": "Property",  
-    "value": {  
-      "addressCountry": "ES",  
-      "addressLocality": "Madrid",  
-      "streetAddress": "Plaza de Espa\u00f1a",  
-      "type": "PostalAddress"  
-    }  
-  },  
-  "reliability": {  
-    "type": "Property",  
-    "value": 0.7  
-  },  
-  "relativeHumidity": {  
-    "type": "Property",  
-    "value": 0.54  
-  },  
-  "precipitation": {  
-    "type": "Property",  
-    "value": 0  
-  },  
-  "NO2": {  
-    "type": "Property",  
-    "value": 69,  
-    "unitCode": "GQ"  
-  },  
-  "CO_Level": {  
-    "type": "Property",  
-    "value": "moderate"  
-  },  
-  "@context": [  
-    "https://smartdatamodels.org/context.jsonld",  
-    "https://uri.etsi.org/ngsi-ld/v1/ngsi-ld-core-context.jsonld"  
-  ]  
+    "id": "urn:ngsi-ld:AirQualityObserved:Madrid-AmbientObserved-28079004-2016-03-15T11:00:00",  
+    "type": "AirQualityObserved",  
+    "CO": {  
+        "type": "Property",  
+        "value": 500,  
+        "unitCode": "GP"  
+    },  
+    "CO_Level": {  
+        "type": "Property",  
+        "value": "moderate"  
+    },  
+    "NO": {  
+        "type": "Property",  
+        "value": 45,  
+        "unitCode": "GQ"  
+    },  
+    "NO2": {  
+        "type": "Property",  
+        "value": 69,  
+        "unitCode": "GQ"  
+    },  
+    "NOx": {  
+        "type": "Property",  
+        "value": 139,  
+        "unitCode": "GQ"  
+    },  
+    "SO2": {  
+        "type": "Property",  
+        "value": 11,  
+        "unitCode": "GQ"  
+    },  
+    "address": {  
+        "type": "Property",  
+        "value": {  
+            "addressCountry": "ES",  
+            "addressLocality": "Madrid",  
+            "streetAddress": "Plaza de Espa\u00f1a",  
+            "type": "PostalAddress"  
+        }  
+    },  
+    "airQualityIndex": {  
+        "type": "Property",  
+        "value": 65  
+    },  
+    "airQualityLevel": {  
+        "type": "Property",  
+        "value": "moderate"  
+    },  
+    "areaServed": {  
+        "type": "Property",  
+        "value": "Brooklands"  
+    },  
+    "dateObserved": {  
+        "type": "Property",  
+        "value": "2016-03-15T11:00:00/2016-03-15T12:00:00"  
+    },  
+    "location": {  
+        "type": "GeoProperty",  
+        "value": {  
+            "type": "Point",  
+            "coordinates": [  
+                -3.712247222222222,  
+                40.423852777777775  
+            ]  
+        }  
+    },  
+    "precipitation": {  
+        "type": "Property",  
+        "value": 0  
+    },  
+    "refPointOfInterest": {  
+        "type": "Relationship",  
+        "object": "urn:ngsi-ld:PointOfInterest:28079004-Pza.deEspanya"  
+    },  
+    "relativeHumidity": {  
+        "type": "Property",  
+        "value": 0.54  
+    },  
+    "reliability": {  
+        "type": "Property",  
+        "value": 0.7  
+    },  
+    "source": {  
+        "type": "Property",  
+        "value": "http://datos.madrid.es"  
+    },  
+    "temperature": {  
+        "type": "Property",  
+        "value": 12.2  
+    },  
+    "typeOfLocation": {  
+        "type": "Property",  
+        "value": "outdoor"  
+    },  
+    "windDirection": {  
+        "type": "Property",  
+        "value": 186  
+    },  
+    "windSpeed": {  
+        "type": "Property",  
+        "value": 0.64  
+    },  
+    "@context": [  
+        "https://uri.etsi.org/ngsi-ld/v1/ngsi-ld-core-context.jsonld",  
+        "https://raw.githubusercontent.com/smart-data-models/dataModel.Environment/master/context.jsonld"  
+    ]  
 }  
 ```  
 #### AirQualityObserved NGSI-LD normalisé Exemple  
 Voici un exemple de AirQualityObserved au format JSON-LD tel que normalisé. Ce format est compatible avec NGSI-LD lorsqu'il n'utilise pas d'options et renvoie les données contextuelles d'une entité individuelle.  
 ```json  
 {  
-  "@context": [  
-    "https://smartdatamodels.org/context.jsonld",  
-    "https://uri.etsi.org/ngsi-ld/v1/ngsi-ld-core-context.jsonld"  
-  ],  
-  "CO": 500,  
-  "CO_Level": "moderate",  
-  "NO": 45,  
-  "NO2": 69,  
-  "NOx": 139,  
-  "SO2": 11,  
-  "address": {  
-    "addressCountry": "ES",  
-    "addressLocality": "Madrid",  
-    "streetAddress": "Plaza de Espa\u00f1a",  
-    "type": "PostalAddress"  
-  },  
-  "airQualityIndex": 65,  
-  "airQualityLevel": "moderate",  
-  "areaServed": "Brooklands",  
-  "dateObserved": "2016-03-15T11:00:00/2016-03-15T12:00:00",  
-  "id": "urn:ngsi-ld:AirQualityObserved:Madrid-AmbientObserved-28079004-2016-03-15T11:00:00",  
-  "location": {  
-    "coordinates": [  
-      -3.712247222222222,  
-      40.423852777777775  
-    ],  
-    "type": "Point"  
-  },  
-  "typeOfLocation": "outdoor",  
-  "precipitation": 0,  
-  "refPointOfInterest": "urn:ngsi-ld:PointOfInterest:28079004-Pza.deEspanya",  
-  "relativeHumidity": 0.54,  
-  "reliability": 0.7,  
-  "source": "http://datos.madrid.es",  
-  "temperature": 12.2,  
-  "type": "AirQualityObserved",  
-  "windDirection": 186,  
-  "windSpeed": 0.64  
+    "id": "urn:ngsi-ld:AirQualityObserved:Madrid-AmbientObserved-28079004-2016-03-15T11:00:00",  
+    "type": "AirQualityObserved",  
+    "CO": 500,  
+    "CO_Level": "moderate",  
+    "NO": 45,  
+    "NO2": 69,  
+    "NOx": 139,  
+    "SO2": 11,  
+    "address": {  
+        "addressCountry": "ES",  
+        "addressLocality": "Madrid",  
+        "streetAddress": "Plaza de Espa\u00f1a",  
+        "type": "PostalAddress"  
+    },  
+    "airQualityIndex": 65,  
+    "airQualityLevel": "moderate",  
+    "areaServed": "Brooklands",  
+    "dateObserved": "2016-03-15T11:00:00/2016-03-15T12:00:00",  
+    "location": {  
+        "coordinates": [  
+            -3.712247222222222,  
+            40.423852777777775  
+        ],  
+        "type": "Point"  
+    },  
+    "precipitation": 0,  
+    "refPointOfInterest": "urn:ngsi-ld:PointOfInterest:28079004-Pza.deEspanya",  
+    "relativeHumidity": 0.54,  
+    "reliability": 0.7,  
+    "source": "http://datos.madrid.es",  
+    "temperature": 12.2,  
+    "typeOfLocation": "outdoor",  
+    "windDirection": 186,  
+    "windSpeed": 0.64,  
+    "@context": [  
+        "https://uri.etsi.org/ngsi-ld/v1/ngsi-ld-core-context.jsonld"  
+    ]  
 }  
 ```  
-Voir [FAQ 10](https://smartdatamodels.org/index.php/faqs/) pour obtenir une réponse sur la façon de traiter les unités de magnitude
+Voir [FAQ 10](https://smartdatamodels.org/index.php/faqs/) pour obtenir une réponse sur la façon de traiter les unités de magnitude.  
