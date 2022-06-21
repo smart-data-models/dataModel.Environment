@@ -183,6 +183,14 @@
             "comment": "Lead detected"
         },
         {
+            "name": "pm1",
+            "writable": true,
+            "displayName": "pm1",
+            "@type": "Property",
+            "schema": "long",
+            "comment": "Particulate matter 1 micrometers or less in diameter."
+        },
+        {
             "name": "pm10",
             "writable": true,
             "displayName": "pm10",
