@@ -1,12 +1,14 @@
-Entidad: NoiseLevelObserved  
+[![Smart Data Models](https://smartdatamodels.org/wp-content/uploads/2022/01/SmartDataModels_logo.png "Logo")](https://smartdatamodels.org)  
+Entidad: NoiseLevelObserved  
 ===========================  
 [Licencia abierta](https://github.com/smart-data-models//dataModel.Environment/blob/master/NoiseLevelObserved/LICENSE.md)  
 [documento generado automáticamente](https://docs.google.com/presentation/d/e/2PACX-1vTs-Ng5dIAwkg91oTTUdt8ua7woBXhPnwavZ0FxgR8BsAI_Ek3C5q97Nd94HS8KhP-r_quD4H0fgyt3/pub?start=false&loop=false&delayms=3000#slide=id.gb715ace035_0_60)  
 Descripción global: **Una observación de aquellos parámetros acústicos que estiman los niveles de presión acústica en un lugar y momento determinados. **  
+versión: 0.2.0  
 
 ## Lista de propiedades  
 
-- `address`: La dirección postal  - `alternateName`: Un nombre alternativo para este artículo  - `areaServed`: La zona geográfica en la que se presta un servicio o se ofrece un artículo  - `dataProvider`: Una secuencia de caracteres que identifica al proveedor de la entidad de datos armonizada.  - `dateCreated`: Marca de tiempo de creación de la entidad. Suele ser asignada por la plataforma de almacenamiento.  - `dateModified`: Marca de tiempo de la última modificación de la entidad. Normalmente será asignada por la plataforma de almacenamiento.  - `dateObserved`: La fecha y hora de esta observación representada por un intervalo ISO8601.  - `dateObservedFrom`: Fecha y hora de inicio del periodo de observación.  - `dateObservedTo`: Fecha y hora de finalización del periodo de observación. Véase dateObserved.  - `description`: Una descripción de este artículo  - `id`: Identificador único de la entidad  - `location`: Referencia Geojson al elemento. Puede ser Point, LineString, Polygon, MultiPoint, MultiLineString o MultiPolygon  - `name`: El nombre de este artículo.  - `owner`: Una lista que contiene una secuencia de caracteres codificada en JSON que hace referencia a los identificadores únicos de los propietarios  - `refDevice`: Una referencia al dispositivo que captó esta observación.  - `refPointOfInterest`: Una referencia a un punto de interés asociado a esta observación.  - `refWeatherObserved`: Referencia a las condiciones meteorológicas asociadas.  - `seeAlso`: lista de uri que apuntan a recursos adicionales sobre el artículo  - `sonometerClass`: Clase de sonómetro (0, 1, 2) según ANSI utilizado para tomar esta observación  - `source`: Una secuencia de caracteres que indica la fuente original de los datos de la entidad en forma de URL. Se recomienda que sea el nombre de dominio completo del proveedor de origen, o la URL del objeto de origen.  - `type`: NGSI Tipo de entidad    
+- `address`: La dirección postal  - `alternateName`: Un nombre alternativo para este artículo  - `areaServed`: La zona geográfica en la que se presta un servicio o se ofrece un artículo  - `dataProvider`: Una secuencia de caracteres que identifica al proveedor de la entidad de datos armonizada.  - `dateCreated`: Marca de tiempo de creación de la entidad. Suele ser asignada por la plataforma de almacenamiento.  - `dateModified`: Marca de tiempo de la última modificación de la entidad. Normalmente será asignada por la plataforma de almacenamiento.  - `dateObserved`: La fecha y hora de esta observación representada por un intervalo ISO8601.  - `dateObservedFrom`: Fecha y hora de inicio del periodo de observación.  - `dateObservedTo`: Fecha y hora de finalización del periodo de observación. Véase dateObserved.  - `description`: Una descripción de este artículo  - `id`: Identificador único de la entidad  - `location`: Referencia Geojson al elemento. Puede ser Point, LineString, Polygon, MultiPoint, MultiLineString o MultiPolygon  - `name`: El nombre de este artículo.  - `owner`: Una lista que contiene una secuencia de caracteres codificada en JSON que hace referencia a los identificadores únicos de los propietarios  - `refDevice`: Una referencia al dispositivo que captó esta observación.  - `refPointOfInterest`: Una referencia a un punto de interés asociado a esta observación.  - `refWeatherObserved`: Referencia a las condiciones meteorológicas asociadas.  - `seeAlso`: lista de uri que apuntan a recursos adicionales sobre el artículo  - `sonometerClass`: Clase de sonómetro (0, 1, 2) según ANSI utilizado para tomar esta observación  - `source`: Una secuencia de caracteres que indica la fuente original de los datos de la entidad en forma de URL. Se recomienda que sea el nombre de dominio completo del proveedor de origen o la URL del objeto de origen.  - `type`: NGSI Tipo de entidad    
 Propiedades requeridas  
 - `dateObservedFrom`  - `dateObservedTo`  - `id`  - `location`  - `type`  ## Descripción del modelo de datos de las propiedades  
 Ordenados alfabéticamente (haga clic para ver los detalles)  
@@ -356,7 +358,7 @@ NoiseLevelObserved:
   x-license-url: https://github.com/smart-data-models/dataModel.Environment/blob/master/NoiseLevelObserved/LICENSE.md    
   x-model-schema: https://smart-data-models.github.io/dataModel.Environment/NoiseLevelObserved/schema.json    
   x-model-tags: ""    
-  x-version: 0.0.1    
+  x-version: 0.2.0    
 ```  
 </details>    
 ## Ejemplo de carga útil  
@@ -382,14 +384,18 @@ NoiseLevelObserved:
 Este es un ejemplo de NoiseLevelObserved en formato JSON-LD normalizado. Esto es compatible con NGSI-v2 cuando no se utilizan opciones y devuelve los datos de contexto de una entidad individual.  
 ```json  
 {  
+  "id": "Vitoria-NoiseLevelObserved-2016-12-28T11:00:00_2016-12-28T12:00:00",  
+  "type": "NoiseLevelObserved",  
   "dateObservedFrom": {  
     "type": "DateTime",  
     "value": "2016-12-28T11:00:00.00Z"  
   },  
   "LAmax": {  
+    "type": "Number",  
     "value": 94.5  
   },  
   "LAeq": {  
+    "type": "Number",  
     "value": 67.8  
   },  
   "dateObservedTo": {  
@@ -397,18 +403,21 @@ NoiseLevelObserved:
     "value": "2016-12-28T12:00:00.00Z"  
   },  
   "LAeq_d": {  
+    "type": "Number",  
     "value": 65.4  
   },  
   "location": {  
     "type": "geo:json",  
     "value": {  
       "type": "Point",  
-      "coordinates": [-2.698, 42.8491]  
+      "coordinates": [  
+        -2.698,  
+        42.8491  
+      ]  
     }  
   },  
-  "type": "NoiseLevelObserved",  
-  "id": "Vitoria-NoiseLevelObserved-2016-12-28T11:00:00_2016-12-28T12:00:00",  
   "LAS": {  
+    "type": "Number",  
     "value": 91.6  
   }  
 }  
@@ -419,60 +428,6 @@ NoiseLevelObserved:
 {  
   "id": "urn:ngsi-ld:NoiseLevelObserved:Vitoria-NoiseLevelObserved-2016-12-28T11:00:00_2016-12-28T12:00:00",  
   "type": "NoiseLevelObserved",  
-  "dateObservedFrom": {  
-    "type": "Property",  
-    "value": {  
-      "@type": "DateTime",  
-      "@value": "2016-12-28T11:00:00.00Z"  
-    }  
-  },  
-  "LAmax": {  
-    "type": "Property",  
-    "value": 94.5  
-  },  
-  "LAeq": {  
-    "type": "Property",  
-    "value": 67.8  
-  },  
-  "dateObservedTo": {  
-    "type": "Property",  
-    "value": {  
-      "@type": "DateTime",  
-      "@value": "2016-12-28T12:00:00.00Z"  
-    }  
-  },  
-  "LAeq_d": {  
-    "type": "Property",  
-    "value": 65.4  
-  },  
-  "location": {  
-    "type": "GeoProperty",  
-    "value": {  
-      "type": "Point",  
-      "coordinates": [  
-        -2.698,  
-        42.8491  
-      ]  
-    }  
-  },  
-  "LAS": {  
-    "type": "Property",  
-    "value": 91.6  
-  },  
-  "@context": [  
-    "https://smartdatamodels.org/context.jsonld",  
-    "https://uri.etsi.org/ngsi-ld/v1/ngsi-ld-core-context.jsonld"  
-  ]  
-}  
-```  
-#### NoiseLevelObserved NGSI-LD normalizado Ejemplo  
-Este es un ejemplo de NoiseLevelObserved en formato JSON-LD normalizado. Esto es compatible con NGSI-LD cuando no se utilizan opciones y devuelve los datos de contexto de una entidad individual.  
-```json  
-{  
-  "@context": [  
-    "https://smartdatamodels.org/context.jsonld",  
-    "https://uri.etsi.org/ngsi-ld/v1/ngsi-ld-core-context.jsonld"  
-  ],  
   "LAS": 91.6,  
   "LAeq": 67.8,  
   "LAeq_d": 65.4,  
@@ -485,7 +440,6 @@ NoiseLevelObserved:
     "@type": "DateTime",  
     "@value": "2016-12-28T12:00:00.00Z"  
   },  
-  "id": "urn:ngsi-ld:NoiseLevelObserved:Vitoria-NoiseLevelObserved-2016-12-28T11:00:00_2016-12-28T12:00:00",  
   "location": {  
     "coordinates": [  
       -2.698,  
@@ -493,7 +447,61 @@ NoiseLevelObserved:
     ],  
     "type": "Point"  
   },  
-  "type": "NoiseLevelObserved"  
+  "@context": [  
+    "https://uri.etsi.org/ngsi-ld/v1/ngsi-ld-core-context.jsonld"  
+  ]  
 }  
 ```  
-Consulte [FAQ 10](https://smartdatamodels.org/index.php/faqs/) para obtener una respuesta sobre cómo tratar las unidades de magnitud
+#### NoiseLevelObserved NGSI-LD normalizado Ejemplo  
+Este es un ejemplo de NoiseLevelObserved en formato JSON-LD normalizado. Esto es compatible con NGSI-LD cuando no se utilizan opciones y devuelve los datos de contexto de una entidad individual.  
+```json  
+{  
+  "id": "urn:ngsi-ld:NoiseLevelObserved:Vitoria-NoiseLevelObserved-2016-12-28T11:00:00_2016-12-28T12:00:00",  
+  "type": "NoiseLevelObserved",  
+  "LAS": {  
+    "type": "Property",  
+    "value": 91.6  
+  },  
+  "LAeq": {  
+    "type": "Property",  
+    "value": 67.8  
+  },  
+  "LAeq_d": {  
+    "type": "Property",  
+    "value": 65.4  
+  },  
+  "LAmax": {  
+    "type": "Property",  
+    "value": 94.5  
+  },  
+  "dateObservedFrom": {  
+    "type": "Property",  
+    "value": {  
+      "@type": "DateTime",  
+      "@value": "2016-12-28T11:00:00.00Z"  
+    }  
+  },  
+  "dateObservedTo": {  
+    "type": "Property",  
+    "value": {  
+      "@type": "DateTime",  
+      "@value": "2016-12-28T12:00:00.00Z"  
+    }  
+  },  
+  "location": {  
+    "type": "GeoProperty",  
+    "value": {  
+      "type": "Point",  
+      "coordinates": [  
+        -2.698,  
+        42.8491  
+      ]  
+    }  
+  },  
+  "@context": [  
+    "https://uri.etsi.org/ngsi-ld/v1/ngsi-ld-core-context.jsonld",  
+    "https://raw.githubusercontent.com/smart-data-models/dataModel.Environment/master/context.jsonld"  
+  ]  
+}  
+```  
+Consulte [FAQ 10](https://smartdatamodels.org/index.php/faqs/) para obtener una respuesta sobre cómo tratar las unidades de magnitud  
