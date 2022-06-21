@@ -1,15 +1,17 @@
-エンティティNoiseLevelObserved  
+[![Smart Data Models](https://smartdatamodels.org/wp-content/uploads/2022/01/SmartDataModels_logo.png "Logo")](https://smartdatamodels.org)  
+エンティティNoiseLevelObserved  
 ========================  
 [オープンライセンス](https://github.com/smart-data-models//dataModel.Environment/blob/master/NoiseLevelObserved/LICENSE.md)  
-[document generated automatically](https://docs.google.com/presentation/d/e/2PACX-1vTs-Ng5dIAwkg91oTTUdt8ua7woBXhPnwavZ0FxgR8BsAI_Ek3C5q97Nd94HS8KhP-r_quD4H0fgyt3/pub?start=false&loop=false&delayms=3000#slide=id.gb715ace035_0_60)  
-グローバルな説明。**ある場所、ある時間における音圧レベルを推定するための音響パラメータを観測すること。  
+[ドキュメント自動生成](https://docs.google.com/presentation/d/e/2PACX-1vTs-Ng5dIAwkg91oTTUdt8ua7woBXhPnwavZ0FxgR8BsAI_Ek3C5q97Nd94HS8KhP-r_quD4H0fgyt3/pub?start=false&loop=false&delayms=3000#slide=id.gb715ace035_0_60)  
+グローバルな記述。**ある場所と時間における音圧レベルを推定する音響パラメータを観測すること。**  
+バージョン: 0.2.0  
 
-## プロパティのリスト  
+## プロパティ一覧  
 
-- `address`: 郵送先住所  - `alternateName`: このアイテムの別称  - `areaServed`: サービスや提供されるアイテムが提供される地理的なエリア  - `dataProvider`: 調和されたデータ・エンティティの提供者を識別する一連の文字。  - `dateCreated`: エンティティの作成タイムスタンプ。これは通常、ストレージプラットフォームによって割り当てられます。  - `dateModified`: エンティティが最後に変更された時のタイムスタンプ。これは通常、ストレージプラットフォームによって割り当てられます。  - `dateObserved`: この観測の日時をISO8601のインターバルで表したもの。  - `dateObservedFrom`: 観察期間の開始日時が記載されています。  - `dateObservedTo`: 観測期間の終了日と時間。dateObservedを参照。  - `description`: このアイテムの説明  - `id`: エンティティのユニークな識別子  - `location`: アイテムへのGeojson参照。Point、LineString、Polygon、MultiPoint、MultiLineString、MultiPolygonのいずれかです。  - `name`: このアイテムの名前です。  - `owner`: オーナーのIDを参照するJSONエンコードされた文字列を含むリスト  - `refDevice`: この観測データを取得した機器を指す。  - `refPointOfInterest`: この観測に関連した興味のあるポイントへの参照です。  - `refWeatherObserved`: 関連する気象条件への言及  - `seeAlso`: アイテムに関する追加リソースを示すuriのリスト  - `sonometerClass`: 観察に使用したANSI準拠のソノメーターのクラス(0, 1, 2)  - `source`: エンティティデータのオリジナルソースをURLで示す一連の文字。ソースプロバイダの完全修飾ドメイン名、またはソースオブジェクトのURLであることが推奨されます。  - `type`: NGSI エンティティタイプ    
-必須項目  
-- `dateObservedFrom`  - `dateObservedTo`  - `id`  - `location`  - `type`  ## データモデルによるプロパティの記述  
-アルファベット順（クリックすると詳細が表示されます）  
+- `address`: 郵送先住所  - `alternateName`: この項目の別称  - `areaServed`: サービスまたは提供品が提供される地理的な地域  - `dataProvider`: 調和されたデータエンティティの提供者を識別する一連の文字。  - `dateCreated`: エンティティの作成タイムスタンプ。これは通常、ストレージプラットフォームによって割り当てられる。  - `dateModified`: エンティティの最終更新のタイムスタンプ。これは通常、ストレージプラットフォームによって割り当てられる。  - `dateObserved`: この観測の日時をISO8601のインターバルで表現したもの。  - `dateObservedFrom`: 観測期間開始日時。  - `dateObservedTo`: 観測期間終了日時。dateObservedを参照。  - `description`: このアイテムの説明  - `id`: エンティティの一意な識別子  - `location`: アイテムへの Geojson リファレンス。Point, LineString, Polygon, MultiPoint, MultiLineString, MultiPolygonのいずれかを指定することができる。  - `name`: このアイテムの名称です。  - `owner`: 所有者の一意のIDを参照するJSONエンコードされた文字列を含むリストです。  - `refDevice`: この観測を捉えた装置への言及。  - `refPointOfInterest`: この観測に関連する注目点への参照。  - `refWeatherObserved`: 関連する気象条件について言及する。  - `seeAlso`: 項目に関する追加リソースを指すURIのリスト。  - `sonometerClass`: この観測に使用されたANSIによるソノメータのクラス（0、1、2  - `source`: エンティティデータの元のソースをURLで示す一連の文字。ソースプロバイダの完全修飾ドメイン名、またはソースオブジェクトのURLであることが推奨されます。  - `type`: NGSI エンティティタイプ    
+必要なプロパティ  
+- `dateObservedFrom`  - `dateObservedTo`  - `id`  - `location`  - `type`  ## プロパティのデータモデル記述  
+アルファベット順に並びます（クリックで詳細へ）  
 <details><summary><strong>full yaml details</strong></summary>    
 ```yaml  
 NoiseLevelObserved:    
@@ -356,12 +358,12 @@ NoiseLevelObserved:
   x-license-url: https://github.com/smart-data-models/dataModel.Environment/blob/master/NoiseLevelObserved/LICENSE.md    
   x-model-schema: https://smart-data-models.github.io/dataModel.Environment/NoiseLevelObserved/schema.json    
   x-model-tags: ""    
-  x-version: 0.0.1    
+  x-version: 0.2.0    
 ```  
 </details>    
 ## ペイロードの例  
-#### NoiseLevelObserved NGSI-v2 key-values 例  
-NoiseLevelObservedをkey-valuesとしてJSON-LD形式で表現した例を示します。これは`options=keyValues`を使用した場合のNGSI-v2との互換性があり、個々のエンティティのコンテキストデータを返します。  
+#### NoiseLevelObserved NGSI-v2 key-value の例。  
+以下は、NoiseLevelObservedをJSON-LD形式でkey-valuesとした例である。これは、`options=keyValues`を使用した場合にNGSI-v2と互換性があり、個々のエンティティのコンテキストデータを返します。  
 ```json  
 {  
   "id": "Vitoria-NoiseLevelObserved-2016-12-28T11:00:00_2016-12-28T12:00:00",  
@@ -378,18 +380,22 @@ NoiseLevelObserved:
   }  
 }  
 ```  
-#### NoiseLevelObserved NGSI-v2を正規化した例。  
-ここでは、正規化されたJSON-LD形式のNoiseLevelObservedの例を示します。これは、オプションを使用しない場合のNGSI-v2との互換性があり、個々のエンティティのコンテキストデータを返します。  
+#### NoiseLevelObserved NGSI-v2 正規化例  
+NoiseLevelObserved を JSON-LD 形式で正規化した例を示す。これは、オプションを使用しない場合、NGSI-v2と互換性があり、個々のエンティティのコンテキストデータを返します。  
 ```json  
 {  
+  "id": "Vitoria-NoiseLevelObserved-2016-12-28T11:00:00_2016-12-28T12:00:00",  
+  "type": "NoiseLevelObserved",  
   "dateObservedFrom": {  
     "type": "DateTime",  
     "value": "2016-12-28T11:00:00.00Z"  
   },  
   "LAmax": {  
+    "type": "Number",  
     "value": 94.5  
   },  
   "LAeq": {  
+    "type": "Number",  
     "value": 67.8  
   },  
   "dateObservedTo": {  
@@ -397,56 +403,11 @@ NoiseLevelObserved:
     "value": "2016-12-28T12:00:00.00Z"  
   },  
   "LAeq_d": {  
+    "type": "Number",  
     "value": 65.4  
   },  
   "location": {  
     "type": "geo:json",  
-    "value": {  
-      "type": "Point",  
-      "coordinates": [-2.698, 42.8491]  
-    }  
-  },  
-  "type": "NoiseLevelObserved",  
-  "id": "Vitoria-NoiseLevelObserved-2016-12-28T11:00:00_2016-12-28T12:00:00",  
-  "LAS": {  
-    "value": 91.6  
-  }  
-}  
-```  
-#### NoiseLevelObserved NGSI-LDキーバリューの例  
-NoiseLevelObservedをkey-valuesとしてJSON-LD形式で表現した例を示します。これは、`options=keyValues`を使った場合のNGSI-LDとの互換性があり、個々のエンティティのコンテキストデータを返します。  
-```json  
-{  
-  "id": "urn:ngsi-ld:NoiseLevelObserved:Vitoria-NoiseLevelObserved-2016-12-28T11:00:00_2016-12-28T12:00:00",  
-  "type": "NoiseLevelObserved",  
-  "dateObservedFrom": {  
-    "type": "Property",  
-    "value": {  
-      "@type": "DateTime",  
-      "@value": "2016-12-28T11:00:00.00Z"  
-    }  
-  },  
-  "LAmax": {  
-    "type": "Property",  
-    "value": 94.5  
-  },  
-  "LAeq": {  
-    "type": "Property",  
-    "value": 67.8  
-  },  
-  "dateObservedTo": {  
-    "type": "Property",  
-    "value": {  
-      "@type": "DateTime",  
-      "@value": "2016-12-28T12:00:00.00Z"  
-    }  
-  },  
-  "LAeq_d": {  
-    "type": "Property",  
-    "value": 65.4  
-  },  
-  "location": {  
-    "type": "GeoProperty",  
     "value": {  
       "type": "Point",  
       "coordinates": [  
@@ -456,23 +417,17 @@ NoiseLevelObserved:
     }  
   },  
   "LAS": {  
-    "type": "Property",  
+    "type": "Number",  
     "value": 91.6  
-  },  
-  "@context": [  
-    "https://smartdatamodels.org/context.jsonld",  
-    "https://uri.etsi.org/ngsi-ld/v1/ngsi-ld-core-context.jsonld"  
-  ]  
+  }  
 }  
 ```  
-#### NoiseLevelObserved NGSI-LDを正規化した例。  
-ここでは、正規化されたJSON-LD形式のNoiseLevelObservedの例を示します。これは、オプションを使用しない場合のNGSI-LDとの互換性があり、個々のエンティティのコンテキストデータを返します。  
+#### NoiseLevelObserved NGSI-LD key-value の例。  
+NoiseLevelObservedをJSON-LD形式でkey-valuesとした例です。これは、`options=keyValues`を使用した場合にNGSI-LDと互換性があり、個々のエンティティのコンテキストデータを返します。  
 ```json  
 {  
-  "@context": [  
-    "https://smartdatamodels.org/context.jsonld",  
-    "https://uri.etsi.org/ngsi-ld/v1/ngsi-ld-core-context.jsonld"  
-  ],  
+  "id": "urn:ngsi-ld:NoiseLevelObserved:Vitoria-NoiseLevelObserved-2016-12-28T11:00:00_2016-12-28T12:00:00",  
+  "type": "NoiseLevelObserved",  
   "LAS": 91.6,  
   "LAeq": 67.8,  
   "LAeq_d": 65.4,  
@@ -485,7 +440,6 @@ NoiseLevelObserved:
     "@type": "DateTime",  
     "@value": "2016-12-28T12:00:00.00Z"  
   },  
-  "id": "urn:ngsi-ld:NoiseLevelObserved:Vitoria-NoiseLevelObserved-2016-12-28T11:00:00_2016-12-28T12:00:00",  
   "location": {  
     "coordinates": [  
       -2.698,  
@@ -493,7 +447,61 @@ NoiseLevelObserved:
     ],  
     "type": "Point"  
   },  
-  "type": "NoiseLevelObserved"  
+  "@context": [  
+    "https://uri.etsi.org/ngsi-ld/v1/ngsi-ld-core-context.jsonld"  
+  ]  
 }  
 ```  
-マグニチュード単位の扱いについては、[FAQ 10](https://smartdatamodels.org/index.php/faqs/)を参照してください。
+#### NoiseLevelObserved NGSI-LD 正規化例  
+NoiseLevelObserved を JSON-LD 形式で正規化した例を示す。これはオプションを使用しない場合、NGSI-LDと互換性があり、個々のエンティティのコンテキストデータを返します。  
+```json  
+{  
+  "id": "urn:ngsi-ld:NoiseLevelObserved:Vitoria-NoiseLevelObserved-2016-12-28T11:00:00_2016-12-28T12:00:00",  
+  "type": "NoiseLevelObserved",  
+  "LAS": {  
+    "type": "Property",  
+    "value": 91.6  
+  },  
+  "LAeq": {  
+    "type": "Property",  
+    "value": 67.8  
+  },  
+  "LAeq_d": {  
+    "type": "Property",  
+    "value": 65.4  
+  },  
+  "LAmax": {  
+    "type": "Property",  
+    "value": 94.5  
+  },  
+  "dateObservedFrom": {  
+    "type": "Property",  
+    "value": {  
+      "@type": "DateTime",  
+      "@value": "2016-12-28T11:00:00.00Z"  
+    }  
+  },  
+  "dateObservedTo": {  
+    "type": "Property",  
+    "value": {  
+      "@type": "DateTime",  
+      "@value": "2016-12-28T12:00:00.00Z"  
+    }  
+  },  
+  "location": {  
+    "type": "GeoProperty",  
+    "value": {  
+      "type": "Point",  
+      "coordinates": [  
+        -2.698,  
+        42.8491  
+      ]  
+    }  
+  },  
+  "@context": [  
+    "https://uri.etsi.org/ngsi-ld/v1/ngsi-ld-core-context.jsonld",  
+    "https://raw.githubusercontent.com/smart-data-models/dataModel.Environment/master/context.jsonld"  
+  ]  
+}  
+```  
+マグニチュード単位の扱いについては、[FAQ 10](https://smartdatamodels.org/index.php/faqs/)を参照してください。  
