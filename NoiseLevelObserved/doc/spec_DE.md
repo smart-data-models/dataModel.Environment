@@ -1,12 +1,14 @@
-Entität: NoiseLevelObserved  
+[![Smart Data Models](https://smartdatamodels.org/wp-content/uploads/2022/01/SmartDataModels_logo.png "Logo")](https://smartdatamodels.org)  
+Entität: NoiseLevelObserved  
 ===========================  
 [Offene Lizenz](https://github.com/smart-data-models//dataModel.Environment/blob/master/NoiseLevelObserved/LICENSE.md)  
 [Dokument automatisch generiert](https://docs.google.com/presentation/d/e/2PACX-1vTs-Ng5dIAwkg91oTTUdt8ua7woBXhPnwavZ0FxgR8BsAI_Ek3C5q97Nd94HS8KhP-r_quD4H0fgyt3/pub?start=false&loop=false&delayms=3000#slide=id.gb715ace035_0_60)  
-Globale Beschreibung: **Eine Beobachtung derjenigen akustischen Parameter, die den Schalldruckpegel an einem bestimmten Ort und zu einer bestimmten Zeit abschätzen. **  
+Globale Beschreibung: **Eine Beobachtung derjenigen akustischen Parameter, die den Schalldruckpegel an einem bestimmten Ort und zu einer bestimmten Zeit schätzen. **  
+Version: 0.2.0  
 
 ## Liste der Eigenschaften  
 
-- `address`: Die Postanschrift  - `alternateName`: Ein alternativer Name für diesen Artikel  - `areaServed`: Das geografische Gebiet, in dem eine Dienstleistung oder ein angebotener Artikel erbracht wird  - `dataProvider`: Eine Folge von Zeichen zur Identifizierung des Anbieters der harmonisierten Dateneinheit.  - `dateCreated`: Zeitstempel der Entitätserstellung. Dieser wird in der Regel von der Speicherplattform zugewiesen.  - `dateModified`: Zeitstempel der letzten Änderung der Entität. Dieser wird in der Regel von der Speicherplattform vergeben.  - `dateObserved`: Das Datum und die Uhrzeit dieser Beobachtung, dargestellt durch ein ISO8601-Intervall.  - `dateObservedFrom`: Datum und Uhrzeit des Beginns des Beobachtungszeitraums.  - `dateObservedTo`: Datum und Uhrzeit des Endes des Beobachtungszeitraums. Siehe dateObserved.  - `description`: Eine Beschreibung dieses Artikels  - `id`: Eindeutiger Bezeichner der Entität  - `location`: Geojson-Referenz auf das Element. Es kann Punkt, LineString, Polygon, MultiPoint, MultiLineString oder MultiPolygon sein  - `name`: Der Name dieses Artikels.  - `owner`: Eine Liste mit einer JSON-kodierten Zeichenfolge, die auf die eindeutigen Kennungen der Eigentümer verweist  - `refDevice`: Ein Hinweis auf das Gerät, das diese Beobachtung aufgezeichnet hat.  - `refPointOfInterest`: Ein Verweis auf einen Punkt von Interesse, der mit dieser Beobachtung verbunden ist.  - `refWeatherObserved`: Hinweis auf die damit verbundenen Wetterbedingungen.  - `seeAlso`: Liste von URLs, die auf zusätzliche Ressourcen zu dem Artikel verweisen  - `sonometerClass`: Klasse des Sonometers (0, 1, 2) nach ANSI, das für diese Beobachtung verwendet wird  - `source`: Eine Folge von Zeichen, die die ursprüngliche Quelle der Entitätsdaten als URL angibt. Empfohlen wird der voll qualifizierte Domänenname des Quellanbieters oder die URL des Quellobjekts.  - `type`: NGSI Entitätstyp    
+- `address`: Die Postanschrift  - `alternateName`: Ein alternativer Name für diesen Artikel  - `areaServed`: Das geografische Gebiet, in dem eine Dienstleistung oder ein angebotener Artikel erbracht wird  - `dataProvider`: Eine Folge von Zeichen zur Identifizierung des Anbieters der harmonisierten Dateneinheit.  - `dateCreated`: Zeitstempel der Entitätserstellung. Dieser wird in der Regel von der Speicherplattform zugewiesen.  - `dateModified`: Zeitstempel der letzten Änderung der Entität. Dieser wird in der Regel von der Speicherplattform vergeben.  - `dateObserved`: Das Datum und die Uhrzeit dieser Beobachtung, dargestellt durch ein ISO8601-Intervall.  - `dateObservedFrom`: Datum und Uhrzeit des Beginns des Beobachtungszeitraums.  - `dateObservedTo`: Datum und Uhrzeit des Endes des Beobachtungszeitraums. Siehe dateObserved.  - `description`: Eine Beschreibung dieses Artikels  - `id`: Eindeutiger Bezeichner der Entität  - `location`: Geojson-Referenz auf das Element. Es kann Punkt, LineString, Polygon, MultiPoint, MultiLineString oder MultiPolygon sein  - `name`: Der Name dieses Artikels.  - `owner`: Eine Liste mit einer JSON-kodierten Zeichenfolge, die auf die eindeutigen Kennungen der Eigentümer verweist  - `refDevice`: Ein Hinweis auf das Gerät, das diese Beobachtung aufgezeichnet hat.  - `refPointOfInterest`: Ein Verweis auf einen Punkt von Interesse, der mit dieser Beobachtung verbunden ist.  - `refWeatherObserved`: Hinweis auf die damit verbundenen Wetterbedingungen.  - `seeAlso`: Liste von URLs, die auf zusätzliche Ressourcen zu dem Artikel verweisen  - `sonometerClass`: Klasse des Sonometers (0, 1, 2) nach ANSI, das für diese Beobachtung verwendet wird  - `source`: Eine Folge von Zeichen, die die ursprüngliche Quelle der Entitätsdaten als URL angibt. Es wird empfohlen, den voll qualifizierten Domänennamen des Quellanbieters oder die URL des Quellobjekts zu verwenden.  - `type`: NGSI Entitätstyp    
 Erforderliche Eigenschaften  
 - `dateObservedFrom`  - `dateObservedTo`  - `id`  - `location`  - `type`  ## Datenmodell Beschreibung der Eigenschaften  
 Alphabetisch sortiert (für Details anklicken)  
@@ -356,7 +358,7 @@ NoiseLevelObserved:
   x-license-url: https://github.com/smart-data-models/dataModel.Environment/blob/master/NoiseLevelObserved/LICENSE.md    
   x-model-schema: https://smart-data-models.github.io/dataModel.Environment/NoiseLevelObserved/schema.json    
   x-model-tags: ""    
-  x-version: 0.0.1    
+  x-version: 0.2.0    
 ```  
 </details>    
 ## Beispiel-Nutzlasten  
@@ -382,14 +384,18 @@ NoiseLevelObserved:
 Hier ist ein Beispiel für einen NoiseLevelObserved im JSON-LD-Format in normalisierter Form. Dies ist kompatibel mit NGSI-v2, wenn keine Optionen verwendet werden, und liefert die Kontextdaten einer einzelnen Entität.  
 ```json  
 {  
+  "id": "Vitoria-NoiseLevelObserved-2016-12-28T11:00:00_2016-12-28T12:00:00",  
+  "type": "NoiseLevelObserved",  
   "dateObservedFrom": {  
     "type": "DateTime",  
     "value": "2016-12-28T11:00:00.00Z"  
   },  
   "LAmax": {  
+    "type": "Number",  
     "value": 94.5  
   },  
   "LAeq": {  
+    "type": "Number",  
     "value": 67.8  
   },  
   "dateObservedTo": {  
@@ -397,18 +403,21 @@ NoiseLevelObserved:
     "value": "2016-12-28T12:00:00.00Z"  
   },  
   "LAeq_d": {  
+    "type": "Number",  
     "value": 65.4  
   },  
   "location": {  
     "type": "geo:json",  
     "value": {  
       "type": "Point",  
-      "coordinates": [-2.698, 42.8491]  
+      "coordinates": [  
+        -2.698,  
+        42.8491  
+      ]  
     }  
   },  
-  "type": "NoiseLevelObserved",  
-  "id": "Vitoria-NoiseLevelObserved-2016-12-28T11:00:00_2016-12-28T12:00:00",  
   "LAS": {  
+    "type": "Number",  
     "value": 91.6  
   }  
 }  
@@ -419,60 +428,6 @@ NoiseLevelObserved:
 {  
   "id": "urn:ngsi-ld:NoiseLevelObserved:Vitoria-NoiseLevelObserved-2016-12-28T11:00:00_2016-12-28T12:00:00",  
   "type": "NoiseLevelObserved",  
-  "dateObservedFrom": {  
-    "type": "Property",  
-    "value": {  
-      "@type": "DateTime",  
-      "@value": "2016-12-28T11:00:00.00Z"  
-    }  
-  },  
-  "LAmax": {  
-    "type": "Property",  
-    "value": 94.5  
-  },  
-  "LAeq": {  
-    "type": "Property",  
-    "value": 67.8  
-  },  
-  "dateObservedTo": {  
-    "type": "Property",  
-    "value": {  
-      "@type": "DateTime",  
-      "@value": "2016-12-28T12:00:00.00Z"  
-    }  
-  },  
-  "LAeq_d": {  
-    "type": "Property",  
-    "value": 65.4  
-  },  
-  "location": {  
-    "type": "GeoProperty",  
-    "value": {  
-      "type": "Point",  
-      "coordinates": [  
-        -2.698,  
-        42.8491  
-      ]  
-    }  
-  },  
-  "LAS": {  
-    "type": "Property",  
-    "value": 91.6  
-  },  
-  "@context": [  
-    "https://smartdatamodels.org/context.jsonld",  
-    "https://uri.etsi.org/ngsi-ld/v1/ngsi-ld-core-context.jsonld"  
-  ]  
-}  
-```  
-#### NoiseLevelObserved NGSI-LD normalized Beispiel  
-Hier ist ein Beispiel für einen NoiseLevelObserved im JSON-LD-Format in normalisierter Form. Dies ist kompatibel mit NGSI-LD, wenn keine Optionen verwendet werden, und liefert die Kontextdaten einer einzelnen Entität.  
-```json  
-{  
-  "@context": [  
-    "https://smartdatamodels.org/context.jsonld",  
-    "https://uri.etsi.org/ngsi-ld/v1/ngsi-ld-core-context.jsonld"  
-  ],  
   "LAS": 91.6,  
   "LAeq": 67.8,  
   "LAeq_d": 65.4,  
@@ -485,7 +440,6 @@ NoiseLevelObserved:
     "@type": "DateTime",  
     "@value": "2016-12-28T12:00:00.00Z"  
   },  
-  "id": "urn:ngsi-ld:NoiseLevelObserved:Vitoria-NoiseLevelObserved-2016-12-28T11:00:00_2016-12-28T12:00:00",  
   "location": {  
     "coordinates": [  
       -2.698,  
@@ -493,7 +447,61 @@ NoiseLevelObserved:
     ],  
     "type": "Point"  
   },  
-  "type": "NoiseLevelObserved"  
+  "@context": [  
+    "https://uri.etsi.org/ngsi-ld/v1/ngsi-ld-core-context.jsonld"  
+  ]  
 }  
 ```  
-Siehe [FAQ 10](https://smartdatamodels.org/index.php/faqs/), um eine Antwort auf die Frage zu erhalten, wie man mit Größeneinheiten umgeht
+#### NoiseLevelObserved NGSI-LD normalized Beispiel  
+Hier ist ein Beispiel für einen NoiseLevelObserved im JSON-LD-Format in normalisierter Form. Dies ist mit NGSI-LD kompatibel, wenn keine Optionen verwendet werden, und liefert die Kontextdaten einer einzelnen Entität.  
+```json  
+{  
+  "id": "urn:ngsi-ld:NoiseLevelObserved:Vitoria-NoiseLevelObserved-2016-12-28T11:00:00_2016-12-28T12:00:00",  
+  "type": "NoiseLevelObserved",  
+  "LAS": {  
+    "type": "Property",  
+    "value": 91.6  
+  },  
+  "LAeq": {  
+    "type": "Property",  
+    "value": 67.8  
+  },  
+  "LAeq_d": {  
+    "type": "Property",  
+    "value": 65.4  
+  },  
+  "LAmax": {  
+    "type": "Property",  
+    "value": 94.5  
+  },  
+  "dateObservedFrom": {  
+    "type": "Property",  
+    "value": {  
+      "@type": "DateTime",  
+      "@value": "2016-12-28T11:00:00.00Z"  
+    }  
+  },  
+  "dateObservedTo": {  
+    "type": "Property",  
+    "value": {  
+      "@type": "DateTime",  
+      "@value": "2016-12-28T12:00:00.00Z"  
+    }  
+  },  
+  "location": {  
+    "type": "GeoProperty",  
+    "value": {  
+      "type": "Point",  
+      "coordinates": [  
+        -2.698,  
+        42.8491  
+      ]  
+    }  
+  },  
+  "@context": [  
+    "https://uri.etsi.org/ngsi-ld/v1/ngsi-ld-core-context.jsonld",  
+    "https://raw.githubusercontent.com/smart-data-models/dataModel.Environment/master/context.jsonld"  
+  ]  
+}  
+```  
+Siehe [FAQ 10] (https://smartdatamodels.org/index.php/faqs/), um eine Antwort auf die Frage zu erhalten, wie man mit Größeneinheiten umgeht  
