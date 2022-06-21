@@ -17,6 +17,10 @@ Enlace a la [Especificación en español](https://github.com/smart-data-models/d
 Lien vers le [spécification en français](https://github.com/smart-data-models/dataModel.Environment/blob/master/AirQualityMonitoring/doc/spec_FR.md)
 
 Link zur [deutschen Spezifikation](https://github.com/smart-data-models/dataModel.Environment/blob/master/AirQualityMonitoring/doc/spec_DE.md)
+
+Link alla [specifica](https://github.com/smart-data-models/dataModel.Environment/blob/master/AirQualityMonitoring/doc/spec_IT.md)
+
+[仕様へのリンク](https://github.com/smart-data-models/dataModel.Environment/blob/master/AirQualityMonitoring/doc/spec_JA.md)
 ### Examples
 
 Link to the [example](https://smart-data-models.github.io/dataModel.Environment/AirQualityMonitoring/examples/example.json) (keyvalues) for NGSI v2
