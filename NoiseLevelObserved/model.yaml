@@ -342,4 +342,4 @@ NoiseLevelObserved:
   x-license-url: https://github.com/smart-data-models/dataModel.Environment/blob/master/NoiseLevelObserved/LICENSE.md
   x-model-schema: https://smart-data-models.github.io/dataModel.Environment/NoiseLevelObserved/schema.json
   x-model-tags: ""
-  x-version: 0.0.1
+  x-version: 0.2.0
