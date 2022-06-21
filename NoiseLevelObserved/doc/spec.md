@@ -1,8 +1,10 @@
-Entity: NoiseLevelObserved  
+[![Smart Data Models](https://smartdatamodels.org/wp-content/uploads/2022/01/SmartDataModels_logo.png "Logo")](https://smartdatamodels.org)  
+Entity: NoiseLevelObserved  
 ==========================  
 [Open License](https://github.com/smart-data-models//dataModel.Environment/blob/master/NoiseLevelObserved/LICENSE.md)  
 [document generated automatically](https://docs.google.com/presentation/d/e/2PACX-1vTs-Ng5dIAwkg91oTTUdt8ua7woBXhPnwavZ0FxgR8BsAI_Ek3C5q97Nd94HS8KhP-r_quD4H0fgyt3/pub?start=false&loop=false&delayms=3000#slide=id.gb715ace035_0_60)  
 Global description: **An observation of those acoustic parameters that estimate noise pressure levels at a certain place and time. **  
+version: 0.2.0  
 
 ## List of properties  
 
@@ -356,7 +358,7 @@ NoiseLevelObserved:
   x-license-url: https://github.com/smart-data-models/dataModel.Environment/blob/master/NoiseLevelObserved/LICENSE.md    
   x-model-schema: https://smart-data-models.github.io/dataModel.Environment/NoiseLevelObserved/schema.json    
   x-model-tags: ""    
-  x-version: 0.0.1    
+  x-version: 0.2.0    
 ```  
 </details>    
 ## Example payloads    
@@ -382,14 +384,18 @@ NoiseLevelObserved:
 Here is an example of a NoiseLevelObserved in JSON-LD format as normalized. This is compatible with NGSI-v2 when not using options and returns the context data of an individual entity.  
 ```json  
 {  
+  "id": "Vitoria-NoiseLevelObserved-2016-12-28T11:00:00_2016-12-28T12:00:00",  
+  "type": "NoiseLevelObserved",  
   "dateObservedFrom": {  
     "type": "DateTime",  
     "value": "2016-12-28T11:00:00.00Z"  
   },  
   "LAmax": {  
+    "type": "Number",  
     "value": 94.5  
   },  
   "LAeq": {  
+    "type": "Number",  
     "value": 67.8  
   },  
   "dateObservedTo": {  
@@ -397,18 +403,21 @@ NoiseLevelObserved:
     "value": "2016-12-28T12:00:00.00Z"  
   },  
   "LAeq_d": {  
+    "type": "Number",  
     "value": 65.4  
   },  
   "location": {  
     "type": "geo:json",  
     "value": {  
       "type": "Point",  
-      "coordinates": [-2.698, 42.8491]  
+      "coordinates": [  
+        -2.698,  
+        42.8491  
+      ]  
     }  
   },  
-  "type": "NoiseLevelObserved",  
-  "id": "Vitoria-NoiseLevelObserved-2016-12-28T11:00:00_2016-12-28T12:00:00",  
   "LAS": {  
+    "type": "Number",  
     "value": 91.6  
   }  
 }  
@@ -419,60 +428,6 @@ NoiseLevelObserved:
 {  
   "id": "urn:ngsi-ld:NoiseLevelObserved:Vitoria-NoiseLevelObserved-2016-12-28T11:00:00_2016-12-28T12:00:00",  
   "type": "NoiseLevelObserved",  
-  "dateObservedFrom": {  
-    "type": "Property",  
-    "value": {  
-      "@type": "DateTime",  
-      "@value": "2016-12-28T11:00:00.00Z"  
-    }  
-  },  
-  "LAmax": {  
-    "type": "Property",  
-    "value": 94.5  
-  },  
-  "LAeq": {  
-    "type": "Property",  
-    "value": 67.8  
-  },  
-  "dateObservedTo": {  
-    "type": "Property",  
-    "value": {  
-      "@type": "DateTime",  
-      "@value": "2016-12-28T12:00:00.00Z"  
-    }  
-  },  
-  "LAeq_d": {  
-    "type": "Property",  
-    "value": 65.4  
-  },  
-  "location": {  
-    "type": "GeoProperty",  
-    "value": {  
-      "type": "Point",  
-      "coordinates": [  
-        -2.698,  
-        42.8491  
-      ]  
-    }  
-  },  
-  "LAS": {  
-    "type": "Property",  
-    "value": 91.6  
-  },  
-  "@context": [  
-    "https://smartdatamodels.org/context.jsonld",  
-    "https://uri.etsi.org/ngsi-ld/v1/ngsi-ld-core-context.jsonld"  
-  ]  
-}  
-```  
-#### NoiseLevelObserved NGSI-LD normalized Example    
-Here is an example of a NoiseLevelObserved in JSON-LD format as normalized. This is compatible with NGSI-LD when not using options and returns the context data of an individual entity.  
-```json  
-{  
-  "@context": [  
-    "https://smartdatamodels.org/context.jsonld",  
-    "https://uri.etsi.org/ngsi-ld/v1/ngsi-ld-core-context.jsonld"  
-  ],  
   "LAS": 91.6,  
   "LAeq": 67.8,  
   "LAeq_d": 65.4,  
@@ -485,7 +440,6 @@ NoiseLevelObserved:
     "@type": "DateTime",  
     "@value": "2016-12-28T12:00:00.00Z"  
   },  
-  "id": "urn:ngsi-ld:NoiseLevelObserved:Vitoria-NoiseLevelObserved-2016-12-28T11:00:00_2016-12-28T12:00:00",  
   "location": {  
     "coordinates": [  
       -2.698,  
@@ -493,7 +447,61 @@ NoiseLevelObserved:
     ],  
     "type": "Point"  
   },  
-  "type": "NoiseLevelObserved"  
+  "@context": [  
+    "https://uri.etsi.org/ngsi-ld/v1/ngsi-ld-core-context.jsonld"  
+  ]  
 }  
 ```  
-See [FAQ 10](https://smartdatamodels.org/index.php/faqs/) to get an answer on how to deal with magnitude units
+#### NoiseLevelObserved NGSI-LD normalized Example    
+Here is an example of a NoiseLevelObserved in JSON-LD format as normalized. This is compatible with NGSI-LD when not using options and returns the context data of an individual entity.  
+```json  
+{  
+  "id": "urn:ngsi-ld:NoiseLevelObserved:Vitoria-NoiseLevelObserved-2016-12-28T11:00:00_2016-12-28T12:00:00",  
+  "type": "NoiseLevelObserved",  
+  "LAS": {  
+    "type": "Property",  
+    "value": 91.6  
+  },  
+  "LAeq": {  
+    "type": "Property",  
+    "value": 67.8  
+  },  
+  "LAeq_d": {  
+    "type": "Property",  
+    "value": 65.4  
+  },  
+  "LAmax": {  
+    "type": "Property",  
+    "value": 94.5  
+  },  
+  "dateObservedFrom": {  
+    "type": "Property",  
+    "value": {  
+      "@type": "DateTime",  
+      "@value": "2016-12-28T11:00:00.00Z"  
+    }  
+  },  
+  "dateObservedTo": {  
+    "type": "Property",  
+    "value": {  
+      "@type": "DateTime",  
+      "@value": "2016-12-28T12:00:00.00Z"  
+    }  
+  },  
+  "location": {  
+    "type": "GeoProperty",  
+    "value": {  
+      "type": "Point",  
+      "coordinates": [  
+        -2.698,  
+        42.8491  
+      ]  
+    }  
+  },  
+  "@context": [  
+    "https://uri.etsi.org/ngsi-ld/v1/ngsi-ld-core-context.jsonld",  
+    "https://raw.githubusercontent.com/smart-data-models/dataModel.Environment/master/context.jsonld"  
+  ]  
+}  
+```  
+See [FAQ 10](https://smartdatamodels.org/index.php/faqs/) to get an answer on how to deal with magnitude units  
