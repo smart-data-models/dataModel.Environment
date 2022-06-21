@@ -16,9 +16,9 @@ AirQualityMonitoring:
     airTemperatureTSA:
       description: 'Object defining the temporal processing of a basic property during a period. It provides Maximum, minimum, instant value and average'
       properties: &airqualitymonitoring_-_properties_-_ambientnoisetsa_-_properties
-        avgOverTime:
-          type: number
         instValue:
+          type: number
+        instvalue:
           type: number
         maxOverTime:
           type: number
@@ -347,6 +347,9 @@ AirQualityMonitoring:
           type: string
         versionName:
           description: 'Property. Model:''https://schema.org/Text''. Version name corresponding to this observation'
+          type: string
+        windType:
+          description: 'Property. Wind type dominate during the last 24 hours.'
           type: string
       type: object
       x-ngsi:
