@@ -330,6 +330,11 @@ AirQualityObserved:
       type: number
       x-ngsi:
         type: Property
+    pm1:
+      description: 'Particulate matter 1 micrometers or less in diameter.'
+      type: number
+      x-ngsi:
+        type: Property
     pm10:
       description: 'Particulate matter 10 micrometers or less in diameter'
       minimum: 0
@@ -487,4 +492,4 @@ AirQualityObserved:
   x-license-url: https://github.com/smart-data-models/dataModel.Environment/blob/master/AirQualityObserved/LICENSE.md
   x-model-schema: https://smart-data-models.github.io/dataModel.Environment/AirQualityObserved/schema.json
   x-model-tags: ""
-  x-version: 0.0.1
+  x-version: 0.1.0
