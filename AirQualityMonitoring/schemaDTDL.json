@@ -148,11 +148,11 @@
             "displayName": "airTemperatureTSA",
             "fields": [
                 {
-                    "name": "avgOverTime",
+                    "name": "instValue",
                     "schema": "long"
                 },
                 {
-                    "name": "instValue",
+                    "name": "instvalue",
                     "schema": "long"
                 },
                 {
@@ -172,11 +172,11 @@
             "displayName": "ambientNoiseTSA",
             "fields": [
                 {
-                    "name": "avgOverTime",
+                    "name": "instValue",
                     "schema": "long"
                 },
                 {
-                    "name": "instValue",
+                    "name": "instvalue",
                     "schema": "long"
                 },
                 {
@@ -196,11 +196,11 @@
             "displayName": "arsenicTSA",
             "fields": [
                 {
-                    "name": "avgOverTime",
+                    "name": "instValue",
                     "schema": "long"
                 },
                 {
-                    "name": "instValue",
+                    "name": "instvalue",
                     "schema": "long"
                 },
                 {
@@ -220,11 +220,11 @@
             "displayName": "atmosphericPressureTSA",
             "fields": [
                 {
-                    "name": "avgOverTime",
+                    "name": "instValue",
                     "schema": "long"
                 },
                 {
-                    "name": "instValue",
+                    "name": "instvalue",
                     "schema": "long"
                 },
                 {
@@ -244,11 +244,11 @@
             "displayName": "bapTSA",
             "fields": [
                 {
-                    "name": "avgOverTime",
+                    "name": "instValue",
                     "schema": "long"
                 },
                 {
-                    "name": "instValue",
+                    "name": "instvalue",
                     "schema": "long"
                 },
                 {
@@ -268,11 +268,11 @@
             "displayName": "benzeneTSA",
             "fields": [
                 {
-                    "name": "avgOverTime",
+                    "name": "instValue",
                     "schema": "long"
                 },
                 {
-                    "name": "instValue",
+                    "name": "instvalue",
                     "schema": "long"
                 },
                 {
@@ -292,11 +292,11 @@
             "displayName": "co2TSA",
             "fields": [
                 {
-                    "name": "avgOverTime",
+                    "name": "instValue",
                     "schema": "long"
                 },
                 {
-                    "name": "instValue",
+                    "name": "instvalue",
                     "schema": "long"
                 },
                 {
@@ -316,11 +316,11 @@
             "displayName": "coTSA",
             "fields": [
                 {
-                    "name": "avgOverTime",
+                    "name": "instValue",
                     "schema": "long"
                 },
                 {
-                    "name": "instValue",
+                    "name": "instvalue",
                     "schema": "long"
                 },
                 {
@@ -384,11 +384,11 @@
             "displayName": "nh3TSA",
             "fields": [
                 {
-                    "name": "avgOverTime",
+                    "name": "instValue",
                     "schema": "long"
                 },
                 {
-                    "name": "instValue",
+                    "name": "instvalue",
                     "schema": "long"
                 },
                 {
@@ -408,11 +408,11 @@
             "displayName": "nickelTSA",
             "fields": [
                 {
-                    "name": "avgOverTime",
+                    "name": "instValue",
                     "schema": "long"
                 },
                 {
-                    "name": "instValue",
+                    "name": "instvalue",
                     "schema": "long"
                 },
                 {
@@ -432,11 +432,11 @@
             "displayName": "no2TSA",
             "fields": [
                 {
-                    "name": "avgOverTime",
+                    "name": "instValue",
                     "schema": "long"
                 },
                 {
-                    "name": "instValue",
+                    "name": "instvalue",
                     "schema": "long"
                 },
                 {
@@ -456,11 +456,11 @@
             "displayName": "noTSA",
             "fields": [
                 {
-                    "name": "avgOverTime",
+                    "name": "instValue",
                     "schema": "long"
                 },
                 {
-                    "name": "instValue",
+                    "name": "instvalue",
                     "schema": "long"
                 },
                 {
@@ -480,11 +480,11 @@
             "displayName": "o2TSA",
             "fields": [
                 {
-                    "name": "avgOverTime",
+                    "name": "instValue",
                     "schema": "long"
                 },
                 {
-                    "name": "instValue",
+                    "name": "instvalue",
                     "schema": "long"
                 },
                 {
@@ -504,11 +504,11 @@
             "displayName": "o3TSA",
             "fields": [
                 {
-                    "name": "avgOverTime",
+                    "name": "instValue",
                     "schema": "long"
                 },
                 {
-                    "name": "instValue",
+                    "name": "instvalue",
                     "schema": "long"
                 },
                 {
@@ -528,11 +528,11 @@
             "displayName": "pbTSA",
             "fields": [
                 {
-                    "name": "avgOverTime",
+                    "name": "instValue",
                     "schema": "long"
                 },
                 {
-                    "name": "instValue",
+                    "name": "instvalue",
                     "schema": "long"
                 },
                 {
@@ -552,11 +552,11 @@
             "displayName": "pm10TSA",
             "fields": [
                 {
-                    "name": "avgOverTime",
+                    "name": "instValue",
                     "schema": "long"
                 },
                 {
-                    "name": "instValue",
+                    "name": "instvalue",
                     "schema": "long"
                 },
                 {
@@ -576,11 +576,11 @@
             "displayName": "pm25TSA",
             "fields": [
                 {
-                    "name": "avgOverTime",
+                    "name": "instValue",
                     "schema": "long"
                 },
                 {
-                    "name": "instValue",
+                    "name": "instvalue",
                     "schema": "long"
                 },
                 {
@@ -600,11 +600,11 @@
             "displayName": "relativeHumidityTSA",
             "fields": [
                 {
-                    "name": "avgOverTime",
+                    "name": "instValue",
                     "schema": "long"
                 },
                 {
-                    "name": "instValue",
+                    "name": "instvalue",
                     "schema": "long"
                 },
                 {
@@ -624,11 +624,11 @@
             "displayName": "so2TSA",
             "fields": [
                 {
-                    "name": "avgOverTime",
+                    "name": "instValue",
                     "schema": "long"
                 },
                 {
-                    "name": "instValue",
+                    "name": "instvalue",
                     "schema": "long"
                 },
                 {
@@ -648,11 +648,11 @@
             "displayName": "uvTSA",
             "fields": [
                 {
-                    "name": "avgOverTime",
+                    "name": "instValue",
                     "schema": "long"
                 },
                 {
-                    "name": "instValue",
+                    "name": "instvalue",
                     "schema": "long"
                 },
                 {
@@ -685,6 +685,10 @@
                 },
                 {
                     "name": "versionName",
+                    "schema": "string"
+                },
+                {
+                    "name": "windType",
                     "schema": "string"
                 }
             ]
