@@ -1,6 +1,6 @@
 {
   "$schema": "http://json-schema.org/schema#",
-  "$schemaVersion": "0.0.2",
+  "$schemaVersion": "0.1.0",
   "modelTags": "",
   "$id": "https://smart-data-models.github.io/dataModel.Environment/AirQualityObserved/schema.json",
   "title": " - Air quality observed schema",
@@ -213,30 +213,10 @@
           "description": "Property. Model:'http//schema.org/Number'. Intensity of the wind",
           "minimum": 0
         },
-          "pm1": {
-              "type": "number",
-              "description": "Property. Particulate matter 1 micrometers or less in diameter."
-          },
-           "h2s": {
-              "type": "number",
-              "description": "Property. Hydrogen sulphide detected (olfactory pollution)."
-          },
-          "unburntHC": {
-              "type": "number",
-              "description": "Property. Unburnt hydrocarbons detected."
-          },
-          "chci": {
-              "type": "number",
-              "description": "Property. 1,2-Dichloroethene detected."
-          },
-          "butadiene13": {
-              "type": "number",
-              "description": "Property. 1,3-Butadiene detected."
-          },
-          "ciclohexane": {
-              "type": "number",
-              "description": "Property. Ciclohexane detected."
-          }
+        "pm1": {
+          "type": "number",
+          "description": "Property. Particulate matter 1 micrometers or less in diameter."
+        }
       }
     }
   ],

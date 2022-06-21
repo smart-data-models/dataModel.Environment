@@ -1,0 +1,76 @@
+{
+  "$schema": "http://json-schema.org/schema#",
+  "$schemaVersion": "0.0.1",
+  "modelTags": "",
+  "$id": "https://smart-data-models.github.io/dataModel.Environment/NoisePollution/schema.json",
+  "title": " Smart Data Models - Noise Pollution",
+  "description": "Noise Pollution data model merges specific and punctual noise measurements (coming, e.g. from NoiseLevelObservation entities) into average parameters referred to city areas, providing a more city-related data about noise pollution status and evolution.",
+  "type": "object",
+  "allOf": [
+    {
+      "$ref": "https://smart-data-models.github.io/data-models/common-schema.json#/definitions/GSMA-Commons"
+    },
+    {
+      "$ref": "https://smart-data-models.github.io/data-models/common-schema.json#/definitions/Location-Commons/properties"
+    },
+    {
+      "properties": {
+        "type": {
+          "type": "string",
+          "enum": [
+            "NoisePollution"
+          ],
+          "description": "Property. NGSI type. it has to be NoisePollution"
+        },
+        "noiseAnnoyanceIndex": {
+          "type": "number",
+          "description": "Property. Index (1 to 10) according to noise annoyance level",
+          "min": 1,
+          "max": 10
+        },
+        "noiseExceedThreshold": {
+          "type": "number",
+          "description": "Property. Percentage of time for which the noise level exceeded a certain threshold (e.g. 65dB for 2h/4h)"
+        },
+        "noiseOrigin": {
+          "type": "string",
+          "description": "Property. Main origin (source) of the recorded noise at installation of the sensor"
+        },
+        "buildingsType": {
+          "type": "string",
+          "description": "Property. Type of predominant buildings within the measurement area at installation of the sensor"
+        },
+        "groundType": {
+          "type": "string",
+          "description": "Property. Type of predominant ground in the measurement area at installation of the sensor"
+        },
+        "wallsType": {
+          "type": "string",
+          "description": "Property. Facade material types dominant in the measurement area at installation of the sensor"
+        },
+        "LAmax2": {
+          "type": "number",
+          "description": "Property. Maximum sound level recorded for the last 2 hours"
+        },
+        "LAeq2": {
+          "type": "number",
+          "description": "Property. Average sound level over the last 2 hours"
+        },
+        "dateObservedFrom": {
+          "type": "string",
+          "format": "date-time",
+          "description": "Property. Observation period start date and time"
+        },
+        "dateObservedTo": {
+          "type": "string",
+          "format": "date-time",
+          "description": "Property. End date and time of the observation period"
+        }
+      }
+    }
+  ],
+  "required": [
+    "id",
+    "type"
+  ]
+}

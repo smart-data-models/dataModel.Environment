@@ -19,7 +19,7 @@
       "type": "object",
       "description": "Property. Object defining the temporal processing of a basic property during a period. It provides Maximum, minimum, instant value and average",
       "properties": {
-        "avgOverTime": {
+        "instvalue": {
           "type": "number"
         },
         "minOverTime": {

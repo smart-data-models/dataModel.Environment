@@ -1,6 +1,6 @@
 {
   "$schema": "http://json-schema.org/schema#",
-  "$schemaVersion": "0.1.0",
+  "$schemaVersion": "0.2.0",
   "modelTags": "",
   "$id": "https://smart-data-models.github.io/dataModel.Environment/NoiseLevelObserved/schema.json",
   "title": " - Noise Level observed schema",
@@ -113,15 +113,11 @@
         "type": "number",
         "description": "Property. Acoustic level frequency weigthed (A-weghting) maximum sound level"
       },
-      "noiseFrequency": {
-        "type": "number",
-        "description": "Property. Measurement frequency of the used sensor."
-      },
       "obstacles": {
         "type": "string",
         "description": "Property. Type of potential obstacles between the sensor and the noise source."
       },
-      "heightAVR": {
+      "heightAverage": {
         "type": "string",
         "description": "Property. Type of potential obstacles between the sensor and the noise source."
       },
