@@ -1,9 +1,9 @@
 {
   "$schema": "http://json-schema.org/schema#",
-  "$schemaVersion": "0.1.0",
+  "$schemaVersion": "0.1.1",
   "modelTags": "",
   "$id": "https://smart-data-models.github.io/dataModel.Environment/AirQualityObserved/schema.json",
-  "title": " - Air quality observed schema",
+  "title": "Smart Data Models - Air quality observed schema",
   "description": "An observation of air quality conditions at a certain place and time.",
   "type": "object",
   "allOf": [
@@ -216,6 +216,12 @@
         "pm1": {
           "type": "number",
           "description": "Property. Particulate matter 1 micrometers or less in diameter."
+        },
+        "relativeHumidity": {
+          "type": "number",
+          "description": "Property. Relative Humidity of the air (a number between 0 and 1 representing the range of 0% to 100%)",
+          "minimum": 0,
+          "maximum": 1
         }
       }
     }
