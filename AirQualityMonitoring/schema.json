@@ -1,9 +1,9 @@
 {
   "$schema": "http://json-schema.org/schema#",
-  "$schemaVersion": "0.0.1",
-  "modelTags": "",
+  "$schemaVersion": "0.0.2",
+  "modelTags": "GreenMov",
   "$id": "https://smart-data-models.github.io/dataModel.Environment/AirQualityMonitoring/schema.json",
-  "title": " Smart Data Models - Air quality Monitoring",
+  "title": "Smart Data Models - Air quality Monitoring",
   "description": "Air Quality Monitoring (AQM) Data Model.",
   "type": "object",
   "allOf": [
@@ -277,7 +277,8 @@
               "description": "Property. Wind type dominate during the last 24 hours."
             }
           }
-        }
+        },
+
       }
     }
   ],
