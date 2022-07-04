@@ -28,10 +28,6 @@
           "min": 1,
           "max": 10
         },
-        "noiseExceedThreshold": {
-          "type": "number",
-          "description": "Property. Percentage of time for which the noise level exceeded a certain threshold (e.g. 65dB for 2h/4h)"
-        },
         "noiseOrigin": {
           "type": "string",
           "description": "Property. Main origin (source) of the recorded noise at installation of the sensor"
