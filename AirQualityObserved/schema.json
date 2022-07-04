@@ -20,7 +20,7 @@
           "enum": [
             "AirQualityObserved"
           ],
-          "description": "Property. NGSI Entity type"
+          "description": "Property. NGSI Entity type. It has to be AirQualityObserved"
         },
         "dateObserved": {
           "type": "string",

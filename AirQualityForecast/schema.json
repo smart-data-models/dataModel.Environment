@@ -1,0 +1,105 @@
+{
+  "$schema": "http://json-schema.org/schema#",
+  "$schemaVersion": "0.0.1",
+  "modelTags": "",
+  "$id": "https://smart-data-models.github.io/dataModel.Environment/AirQualityForecast/schema.json",
+  "title": "Smart Data Models - Air quality Forecast schema",
+  "description": "A forecast of air quality conditions valid during a period",
+  "type": "object",
+  "allOf": [
+    {
+      "$ref": "https://smart-data-models.github.io/data-models/common-schema.json#/definitions/GSMA-Commons"
+    },
+    {
+      "$ref": "https://smart-data-models.github.io/data-models/common-schema.json#/definitions/Location-Commons"
+    },
+    {
+      "properties": {
+        "type": {
+          "type": "string",
+          "enum": [
+            "AirQualityForecast"
+          ],
+          "description": "Property. NGSI Entity type: it has to be AirQualityForecast"
+        },
+        "airQualityIndex": {
+          "type": "integer",
+          "minimum": 0,
+          "description": "Property. Model:'https://schema.org/Number'. Air quality index is a number used to report the quality of the air on any given day."
+        },
+        "airQualityLevel": {
+          "$ref": "https://raw.githubusercontent.com/smart-data-models/dataModel.Environment/master/Environment-schema.json#/definitions/airQualityLevel"
+        },
+        "co2": {
+          "type": "number",
+          "minimum": 0,
+          "description": "Property. Carbon Dioxide forecasted"
+        },
+        "no2": {
+          "type": "number",
+          "minimum": 0,
+          "description": "Property. Nitrogen dioxide forecasted"
+        },
+        "o3": {
+          "type": "number",
+          "minimum": 0,
+          "description": "Property. Ozone forecasted"
+        },
+        "nox": {
+          "type": "number",
+          "minimum": 0,
+          "description": "Property. Other Nitrogen oxides forecasted"
+        },
+        "so2": {
+          "type": "number",
+          "minimum": 0,
+          "description": "Property. Sulfur dioxide detected"
+        },
+        "pm10": {
+          "type": "number",
+          "minimum": 0,
+          "description": "Property. Particulate matter 10 micrometers or less in diameter"
+        },
+        "pm25": {
+          "type": "number",
+          "minimum": 0,
+          "description": "Property. Particulate matter 2.5 micrometers or less in diameter"
+        },
+        "temperature": {
+          "type": "number",
+          "description": "Property. Temperature of the item"
+        },
+        "relativeHumidity": {
+          "type": "number",
+          "minimum": 0,
+          "maximum": 1,
+          "description": "Property. Model:'https://schema.org/Number'. Humidity in the Air"
+        },
+        "windSpeed": {
+          "type": "number",
+          "description": "Property. Model:'http//schema.org/Number'. Intensity of the wind",
+          "minimum": 0
+        },
+        "precipitation": {
+          "type": "number",
+          "minimum": 0,
+          "description": "Property. Model:'https://schema.org/Number'. Amount of water rain. Units:'Liters per square meter'."
+        },
+        "validFrom": {
+          "type": "string",
+          "format": "date-time",
+          "description": "Property. The start of the validity period for this forecast as a ISO8601 format"
+        }
+      },
+      "validTo": {
+        "type": "string",
+        "format": "date-time",
+        "description": "Property. The end of the validity period for this forecast as a ISO8601 format"
+      }
+    }
+  ],
+  "required": [
+    "id",
+    "type"
+  ]
+}
