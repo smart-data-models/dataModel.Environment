@@ -1,9 +1,9 @@
 {
   "$schema": "http://json-schema.org/schema#",
   "$schemaVersion": "0.2.1",
-  "modelTags": "",
+  "modelTags": "GreenMov",
   "$id": "https://smart-data-models.github.io/dataModel.Environment/NoiseLevelObserved/schema.json",
-  "title": " - Noise Level observed schema",
+  "title": " Smart Data Models - Noise Level observed schema",
   "description": "An observation of those acoustic parameters that estimate noise pressure levels at a certain place and time. ",
   "type": "object",
   "allOf": [
