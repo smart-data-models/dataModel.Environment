@@ -1,6 +1,6 @@
 {
   "$schema": "http://json-schema.org/schema#",
-  "$schemaVersion": "0.2.0",
+  "$schemaVersion": "0.2.1",
   "modelTags": "",
   "$id": "https://smart-data-models.github.io/dataModel.Environment/NoiseLevelObserved/schema.json",
   "title": " - Noise Level observed schema",
@@ -119,11 +119,11 @@
       },
       "heightAverage": {
         "type": "string",
-        "description": "Property. Type of potential obstacles between the sensor and the noise source."
+        "description": "Property. Type of potential obstacles between the sensor and the noise source. Units:'meters'"
       },
       "distanceAverage": {
         "type": "string",
-        "description": "Property. Average distance between sensor and potential noise sources."
+        "description": "Property. Average distance between sensor and potential noise sources. Units:'meters'"
       }
     }
   ],

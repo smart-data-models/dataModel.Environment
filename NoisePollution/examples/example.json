@@ -1,0 +1,55 @@
+{
+  "id": "urn:ngsi-ld:NoisePollution:id:XMMT:74956987",
+  "dateCreated": "2006-05-11T21:15:07Z",
+  "dateModified": "2013-09-11T17:49:48Z",
+  "source": "Federal law may assume. Mrs memory all less only bar return. Prevent area understand fall bad a hear.",
+  "name": "Hour their job somebody agree stay crime.",
+  "alternateName": "Question leader produce media what. Her avoid senior none machine structure.",
+  "description": "Dinner box with significant man specific chance. Campaign maintain would agree two social deep.",
+  "dataProvider": "Treat age send mission detail Republican peace. Down wind exactly reality and front.",
+  "owner": [
+    "urn:ngsi-ld:NoisePollution:items:RBAG:17407300",
+    "urn:ngsi-ld:NoisePollution:items:RRSD:08625543"
+  ],
+  "seeAlso": [
+    "urn:ngsi-ld:NoisePollution:items:LLNB:38101243",
+    "urn:ngsi-ld:NoisePollution:items:AYYD:15473285"
+  ],
+  "location": {
+    "type": "Point",
+    "coordinates": [
+      -80.586153,
+      -78.517252
+    ]
+  },
+  "address": {
+    "streetAddress": "From nature beyond. Right tax again financial study. Know explain visit doctor more night almost nothing.",
+    "addressLocality": "Would be research management next police. Seat truth husband kid value. Property past kitchen pick weight husband play.",
+    "addressRegion": "Onto morning bring begin. Difficult agree behind beyond street. Federal building pay.",
+    "addressCountry": "Green become this space half at method lot. Law create catch attention number himself. Rich seem effect style fact world ability.",
+    "postalCode": "Activity three eye carry. Group impact language wife shoulder tend or.",
+    "postOfficeBoxNumber": "Near reveal road miss. Bring tend already far point food technology. We you up school memory contain."
+  },
+  "areaServed": "Certainly amount care product source and. Change personal employee southern central. Improve trade majority represent this kind even.",
+  "type": "NoisePollution",
+  "noiseAnnoyanceIndex": {
+    "type": "Property",
+    "value": 445.6
+  },
+  "noiseOrigin": "Their air rock build. Magazine student when avoid.",
+  "buildingsType": "Many north she. Teach religious safe may article remain environment.",
+  "groundType": "Front pick power last threat forward dream any. Finish travel we peace owner each police push. Pattern exist true fine class.",
+  "wallsType": "Exist science matter sound morning sign my clearly. How money few money. Common research study gas machine.",
+  "LAmax2": {
+    "type": "Property",
+    "value": 941.4
+  },
+  "LAeq2": {
+    "type": "Property",
+    "value": 994.2
+  },
+  "dateObservedFrom": "1997-04-25T18:54:52Z",
+  "dateObservedTo": "1982-01-06T03:44:23Z",
+
+}
+

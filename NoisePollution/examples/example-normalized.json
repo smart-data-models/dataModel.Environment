@@ -1,0 +1,107 @@
+{
+  "id": "urn:ngsi-ld:NoisePollution:id:QKTI:70363241",
+  "dateCreated": {
+    "type": "DateTime",
+    "value": "2002-05-18T19:30:30Z"
+  },
+  "dateModified": {
+    "type": "DateTime",
+    "value": "2012-12-03T07:35:05Z"
+  },
+  "source": {
+    "type": "Text",
+    "value": "Force court place doctor method official particular. Sound toward tax gun. Company attack training reality once guy."
+  },
+  "name": {
+    "type": "Text",
+    "value": "International decide up opportunity that. Tv everyone arrive nature down participant according. Develop respond share hope full."
+  },
+  "alternateName": {
+    "type": "Text",
+    "value": "Structure always various attack identify event quality church. Party arrive condition thought start under sign. Education apply skin trip amount Republican itself."
+  },
+  "description": {
+    "type": "Text",
+    "value": "Partner whole bad its happen source. Democratic street mind expert after. Down break season worry card guess beat. Blood the cut daughter."
+  },
+  "dataProvider": {
+    "type": "Text",
+    "value": "Claim beyond democratic resource time herself consumer. Claim debate prove push factor special affect. Event popular cultural reality your."
+  },
+  "owner": {
+    "type": "array",
+    "value": [
+      "urn:ngsi-ld:NoisePollution:items:KNPO:78663390",
+      "urn:ngsi-ld:NoisePollution:items:UMTG:00574017"
+    ]
+  },
+  "seeAlso": {
+    "type": "array",
+    "value": [
+      "urn:ngsi-ld:NoisePollution:items:JZLT:62956271"
+    ]
+  },
+  "location": {
+    "type": "geo:json",
+    "value": {
+      "type": "Point",
+      "coordinates": [
+        68.577075,
+        -11.265563
+      ]
+    }
+  },
+  "address": {
+    "type": "Text",
+    "value": {
+      "streetAddress": "Office pass star word.",
+      "addressLocality": "Respond exactly our. Serious detail future hundred college foreign summer.",
+      "addressRegion": "Suggest agreement rich choose inside. Third exist car course.",
+      "addressCountry": "Seven serious better nation. Research simple never between art. During minute side country region he.",
+      "postalCode": "Model decision firm common leader. Thus since card population school likely. Upon type green best.",
+      "postOfficeBoxNumber": "Political alone significant wife front focus weight. Clearly whom term cost hair who."
+    }
+  },
+  "areaServed": {
+    "type": "Text",
+    "value": "Top after not simple debate best team design. Among full source ability under social certain. Interview his relate bank hope never national home."
+  },
+  "type": "NoisePollution",
+  "noiseAnnoyanceIndex": {
+    "type": "Number",
+    "value": 889.9
+  },
+  "noiseOrigin": {
+    "type": "Text",
+    "value": "Economy page decade stand every short. College business whatever seek."
+  },
+  "buildingsType": {
+    "type": "Text",
+    "value": "Section plant business increase federal him clear. General herself state."
+  },
+  "groundType": {
+    "type": "Text",
+    "value": "May couple their director hour pull. Recent what international government."
+  },
+  "wallsType": {
+    "type": "Text",
+    "value": "Read job summer message way group. Training six bed spend speak. Majority exactly mission factor system after become generation."
+  },
+  "LAmax2": {
+    "type": "Number",
+    "value": 291.9
+  },
+  "LAeq2": {
+    "type": "Number",
+    "value": 371.0
+  },
+  "dateObservedFrom": {
+    "type": "DateTime",
+    "value": "2013-02-15T19:15:12Z"
+  },
+  "dateObservedTo": {
+    "type": "DateTime",
+    "value": "2014-09-21T06:37:19Z"
+  }
+}
+
