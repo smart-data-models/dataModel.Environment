@@ -117,6 +117,7 @@
         "type": "@type",
         "typeofLocation": "https://smartdatamodels.org/dataModel.Environment/typeofLocation",
         "uvTSA": "https://smartdatamodels.org/dataModel.Environment/uvTSA",
+        "validFrom": "https://smartdatamodels.org/dataModel.Environment/validFrom",
         "versionInfo": "https://smartdatamodels.org/dataModel.Environment/versionInfo",
         "visibility": "https://smartdatamodels.org/dataModel.Environment/visibility",
         "volatileOrganicCompoundsTotal": "https://smartdatamodels.org/dataModel.Environment/volatileOrganicCompoundsTotal",
