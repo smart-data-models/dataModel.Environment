@@ -3,7 +3,7 @@
 =============================  
 [Licenza aperta](https://github.com/smart-data-models//dataModel.Environment/blob/master/NoisePollution/LICENSE.md)  
 [documento generato automaticamente](https://docs.google.com/presentation/d/e/2PACX-1vTs-Ng5dIAwkg91oTTUdt8ua7woBXhPnwavZ0FxgR8BsAI_Ek3C5q97Nd94HS8KhP-r_quD4H0fgyt3/pub?start=false&loop=false&delayms=3000#slide=id.gb715ace035_0_60)  
-Descrizione globale: **Il modello di dati sull'inquinamento acustico fonde misurazioni specifiche e puntuali del rumore (provenienti, ad esempio, da entità NoiseLevelObservation) in parametri medi riferiti alle aree cittadine, fornendo dati più legati alla città sullo stato e l'evoluzione dell'inquinamento acustico.**  
+Descrizione globale: **Il modello di dati sull'inquinamento acustico fonde misurazioni specifiche e puntuali del rumore (provenienti, ad esempio, da entità NoiseLevelObservation) in parametri medi riferiti alle aree cittadine, fornendo dati più legati alla città sullo stato e sull'evoluzione dell'inquinamento acustico.**  
 versione: 0.0.1  
 
 ## Elenco delle proprietà  
@@ -156,8 +156,240 @@ NoisePollution:
 ```  
 </details>    
 ## Esempi di payload  
-Non è disponibile l'esempio di un NoisePollution in formato JSON-LD come valori-chiave. Questo è compatibile con NGSI-v2 quando si usa `options=keyValues` e restituisce i dati di contesto di una singola entità.  
-Non è disponibile l'esempio di un NoisePollution in formato JSON-LD normalizzato. Questo è compatibile con NGSI-v2 quando non si utilizzano le opzioni e restituisce i dati di contesto di una singola entità.  
-Non è disponibile l'esempio di un NoisePollution in formato JSON-LD come valori-chiave. Questo è compatibile con NGSI-LD quando si usa `options=keyValues` e restituisce i dati di contesto di una singola entità.  
-Non è disponibile l'esempio di un NoisePollution in formato JSON-LD normalizzato. Questo è compatibile con NGSI-LD quando non si usano le opzioni e restituisce i dati di contesto di una singola entità.  
+#### Valori-chiave di NoisePollution NGSI-v2 Esempio  
+Ecco un esempio di NoisePollution in formato JSON-LD come valori-chiave. Questo è compatibile con NGSI-v2 quando si usa `options=keyValues` e restituisce i dati di contesto di una singola entità.  
+```json  
+{  
+  "id": "urn:ngsi-ld:NoisePollution:France-NoisePollution-12345_2022-07-01T18:00:00_2022-07-01T00:00:00",  
+  "type": "NoisePollution",  
+  "Laeq2": 85,  
+  "Lamax2": 75,  
+  "Lanight": 45,  
+  "NoiseAnnoyanceIndex": 3,  
+  "address": {  
+    "addressCountry": "France",  
+    "addressLocality": "Nice",  
+    "postalCode": "06200",  
+    "type": "PostalAddress"  
+  },  
+  "buildingsType": "residential",  
+  "dataProvider": "IMREDD_UCA_Nice",  
+  "dateObservedFrom": {  
+    "@type": "DateTime",  
+    "@value": "2022-07-01T10:40:01.00Z"  
+  },  
+  "dateObservedTo": {  
+    "@type": "DateTime",  
+    "@value": "2022-07-01T12:40:01.00Z"  
+  },  
+  "exposureType": "short term exposure",  
+  "groundType": "concrete",  
+  "location": {  
+    "coordinates": [  
+      7.2032497427380235,  
+      43.68056738083439  
+    ],  
+    "type": "Point"  
+  },  
+  "noiseOrigin": "traffic",  
+  "wallsType": "glass"  
+}  
+```  
+#### Inquinamento acustico NGSI-v2 normalizzato Esempio  
+Ecco un esempio di NoisePollution in formato JSON-LD normalizzato. Questo è compatibile con NGSI-v2 quando non si utilizzano le opzioni e restituisce i dati di contesto di una singola entità.  
+```json  
+{  
+  "id": "urn:ngsi-ld:NoisePollution:France-NoisePollution-12345_2022-07-01T18:00:00_2022-07-01T00:00:00",  
+  "type": "NoisePollution",  
+  "address": {  
+    "type": "StructuredValue",  
+    "value": {  
+      "addressCountry": "France",  
+      "postalCode": "06200",  
+      "addressLocality": "Nice",  
+      "type": "PostalAddress"  
+    }  
+  },  
+  "location": {  
+    "type": "geo:json",  
+    "value": {  
+      "type": "Point",  
+      "coordinates": [  
+        7.2032497427380235,  
+        43.68056738083439  
+      ]  
+    }  
+  },  
+  "dataProvider": {  
+    "type": "Property",  
+    "value": "IMREDD_UCA_Nice"  
+  },  
+  "dateObservedFrom": {  
+    "type":  "DateTime",  
+      "value": "2022-07-01T10:40:01.00Z"  
+  },  
+  "dateObservedTo": {  
+    "type": "DateTime",  
+      "value": "2022-07-01T12:40:01.00Z"  
+  },  
+  "NoiseAnnoyanceIndex": {  
+    "type": "Number",  
+    "value": 3  
+  },  
+  "Lanight": {  
+    "type": "Number",  
+    "value": 45  
+  },  
+  "noiseOrigin": {  
+    "type": "Text",  
+    "value": "traffic"  
+  },  
+  "exposureType": {  
+    "type": "Property",  
+    "value": "short term exposure"  
+  },  
+  "buildingsType": {  
+    "type": "Text",  
+    "value": "residential"  
+  },  
+  "groundType": {  
+    "type": "Text",  
+    "value": "concrete"  
+  },  
+  "wallsType": {  
+    "type": "Text",  
+    "value": "glass"  
+  },  
+  "Lamax2": {  
+    "type": "Number",  
+    "value": 75  
+  },  
+  "Laeq2": {  
+    "type": "Number",  
+    "value": 85  
+  }  
+}  
+```  
+#### Inquinamento acustico Valori chiave NGSI-LD Esempio  
+Ecco un esempio di NoisePollution in formato JSON-LD come valori-chiave. Questo è compatibile con NGSI-LD quando si usa `options=keyValues` e restituisce i dati di contesto di una singola entità.  
+```json  
+{  
+  "id": "urn:ngsi-ld:NoisePollution:France-NoisePollution-12345_2022-07-01T18:00:00_2022-07-01T00:00:00",  
+  "type": "NoisePollution",  
+  "Laeq2": 85,  
+  "Lamax2": 75,  
+  "Lanight": 45,  
+  "NoiseAnnoyanceIndex": 3,  
+  "address": {  
+    "addressCountry": "France",  
+    "addressLocality": "Nice",  
+    "postalCode": "06200",  
+    "type": "PostalAddress"  
+  },  
+  "buildingsType": "residential",  
+  "dataProvider": "IMREDD_UCA_Nice",  
+  "dateObservedFrom": "2022-07-01T10:40:01.00Z",  
+  "dateObservedTo": "2022-07-01T12:40:01.00Z",  
+  "exposureType": "short term exposure",  
+  "groundType": "concrete",  
+  "location": {  
+    "coordinates": [  
+      7.2032497427380235,  
+      43.68056738083439  
+    ],  
+    "type": "Point"  
+  },  
+  "noiseOrigin": "traffic",  
+  "wallsType": "glass",  
+  "@context": [  
+    "https://uri.etsi.org/ngsi-ld/v1/ngsi-ld-core-context.jsonld",  
+    "https://raw.githubusercontent.com/smart-data-models/dataModel.Environment/master/context.jsonld"  
+  ]  
+}  
+```  
+#### Inquinamento acustico NGSI-LD normalizzato Esempio  
+Ecco un esempio di NoisePollution in formato JSON-LD normalizzato. Questo è compatibile con NGSI-LD quando non si utilizzano opzioni e restituisce i dati di contesto di una singola entità.  
+```json  
+{  
+  "id": "urn:ngsi-ld:NoisePollution:France-NoisePollution-12345_2022-07-01T18:00:00_2022-07-01T00:00:00",  
+  "type": "NoisePollution",  
+  "address": {  
+    "type": "Property",  
+    "value": {  
+      "addressCountry": "France",  
+      "postalCode": "06200",  
+      "addressLocality": "Nice",  
+      "type": "PostalAddress"  
+    }  
+  },  
+  "location": {  
+    "type": "GeoProperty",  
+    "value": {  
+      "type": "Point",  
+      "coordinates": [  
+        7.2032497427380235,  
+        43.68056738083439  
+      ]  
+    }  
+  },  
+  "dataProvider": {  
+    "type": "Property",  
+    "value": "IMREDD_UCA_Nice"  
+  },  
+  "dateObservedFrom": {  
+    "type": "Property",  
+    "value": {  
+      "@type": "DateTime",  
+      "@value": "2022-07-01T10:40:01.00Z"  
+    }  
+  },  
+  "dateObservedTo": {  
+    "type": "Property",  
+    "value": {  
+      "@type": "DateTime",  
+      "@value": "2022-07-01T12:40:01.00Z"  
+    }  
+  },  
+  "NoiseAnnoyanceIndex": {  
+    "type": "Property",  
+    "value": 3  
+  },  
+  "Lanight": {  
+    "type": "Property",  
+    "value": 45  
+  },  
+  "noiseOrigin": {  
+    "type": "Property",  
+    "value": "traffic"  
+  },  
+  "exposureType": {  
+    "type": "Property",  
+    "value": "short term exposure"  
+  },  
+  "buildingsType": {  
+    "type": "Property",  
+    "value": "residential"  
+  },  
+  "groundType": {  
+    "type": "Property",  
+    "value": "concrete"  
+  },  
+  "wallsType": {  
+    "type": "Property",  
+    "value": "glass"  
+  },  
+  "Lamax2": {  
+    "type": "Property",  
+    "value": 75  
+  },  
+  "Laeq2": {  
+    "type": "Property",  
+    "value": 85  
+  },  
+  "@context": [  
+    "https://uri.etsi.org/ngsi-ld/v1/ngsi-ld-core-context.jsonld",  
+    "https://raw.githubusercontent.com/smart-data-models/dataModel.Environment/master/context.jsonld"  
+  ]  
+}  
+```  
 Vedere [FAQ 10](https://smartdatamodels.org/index.php/faqs/) per ottenere una risposta su come gestire le unità di grandezza.  
