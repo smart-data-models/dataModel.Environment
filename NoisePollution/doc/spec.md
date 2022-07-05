@@ -156,8 +156,240 @@ NoisePollution:
 ```  
 </details>    
 ## Example payloads    
-Not available the example of a NoisePollution in JSON-LD format as key-values. This is compatible with NGSI-v2 when  using `options=keyValues` and returns the context data of an individual entity.  
-Not available the example of a NoisePollution in JSON-LD format as normalized. This is compatible with NGSI-v2 when not using options and returns the context data of an individual entity.  
-Not available the example of a NoisePollution in JSON-LD format as key-values. This is compatible with NGSI-LD when  using `options=keyValues` and returns the context data of an individual entity.  
-Not available the example of a NoisePollution in JSON-LD format as normalized. This is compatible with NGSI-LD when not using options and returns the context data of an individual entity.  
+#### NoisePollution NGSI-v2 key-values Example    
+Here is an example of a NoisePollution in JSON-LD format as key-values. This is compatible with NGSI-v2 when  using `options=keyValues` and returns the context data of an individual entity.  
+```json  
+{  
+  "id": "urn:ngsi-ld:NoisePollution:France-NoisePollution-12345_2022-07-01T18:00:00_2022-07-01T00:00:00",  
+  "type": "NoisePollution",  
+  "Laeq2": 85,  
+  "Lamax2": 75,  
+  "Lanight": 45,  
+  "NoiseAnnoyanceIndex": 3,  
+  "address": {  
+    "addressCountry": "France",  
+    "addressLocality": "Nice",  
+    "postalCode": "06200",  
+    "type": "PostalAddress"  
+  },  
+  "buildingsType": "residential",  
+  "dataProvider": "IMREDD_UCA_Nice",  
+  "dateObservedFrom": {  
+    "@type": "DateTime",  
+    "@value": "2022-07-01T10:40:01.00Z"  
+  },  
+  "dateObservedTo": {  
+    "@type": "DateTime",  
+    "@value": "2022-07-01T12:40:01.00Z"  
+  },  
+  "exposureType": "short term exposure",  
+  "groundType": "concrete",  
+  "location": {  
+    "coordinates": [  
+      7.2032497427380235,  
+      43.68056738083439  
+    ],  
+    "type": "Point"  
+  },  
+  "noiseOrigin": "traffic",  
+  "wallsType": "glass"  
+}  
+```  
+#### NoisePollution NGSI-v2 normalized Example    
+Here is an example of a NoisePollution in JSON-LD format as normalized. This is compatible with NGSI-v2 when not using options and returns the context data of an individual entity.  
+```json  
+{  
+  "id": "urn:ngsi-ld:NoisePollution:France-NoisePollution-12345_2022-07-01T18:00:00_2022-07-01T00:00:00",  
+  "type": "NoisePollution",  
+  "address": {  
+    "type": "StructuredValue",  
+    "value": {  
+      "addressCountry": "France",  
+      "postalCode": "06200",  
+      "addressLocality": "Nice",  
+      "type": "PostalAddress"  
+    }  
+  },  
+  "location": {  
+    "type": "geo:json",  
+    "value": {  
+      "type": "Point",  
+      "coordinates": [  
+        7.2032497427380235,  
+        43.68056738083439  
+      ]  
+    }  
+  },  
+  "dataProvider": {  
+    "type": "Property",  
+    "value": "IMREDD_UCA_Nice"  
+  },  
+  "dateObservedFrom": {  
+    "type":  "DateTime",  
+      "value": "2022-07-01T10:40:01.00Z"  
+  },  
+  "dateObservedTo": {  
+    "type": "DateTime",  
+      "value": "2022-07-01T12:40:01.00Z"  
+  },  
+  "NoiseAnnoyanceIndex": {  
+    "type": "Number",  
+    "value": 3  
+  },  
+  "Lanight": {  
+    "type": "Number",  
+    "value": 45  
+  },  
+  "noiseOrigin": {  
+    "type": "Text",  
+    "value": "traffic"  
+  },  
+  "exposureType": {  
+    "type": "Property",  
+    "value": "short term exposure"  
+  },  
+  "buildingsType": {  
+    "type": "Text",  
+    "value": "residential"  
+  },  
+  "groundType": {  
+    "type": "Text",  
+    "value": "concrete"  
+  },  
+  "wallsType": {  
+    "type": "Text",  
+    "value": "glass"  
+  },  
+  "Lamax2": {  
+    "type": "Number",  
+    "value": 75  
+  },  
+  "Laeq2": {  
+    "type": "Number",  
+    "value": 85  
+  }  
+}  
+```  
+#### NoisePollution NGSI-LD key-values Example    
+Here is an example of a NoisePollution in JSON-LD format as key-values. This is compatible with NGSI-LD when  using `options=keyValues` and returns the context data of an individual entity.  
+```json  
+{  
+  "id": "urn:ngsi-ld:NoisePollution:France-NoisePollution-12345_2022-07-01T18:00:00_2022-07-01T00:00:00",  
+  "type": "NoisePollution",  
+  "Laeq2": 85,  
+  "Lamax2": 75,  
+  "Lanight": 45,  
+  "NoiseAnnoyanceIndex": 3,  
+  "address": {  
+    "addressCountry": "France",  
+    "addressLocality": "Nice",  
+    "postalCode": "06200",  
+    "type": "PostalAddress"  
+  },  
+  "buildingsType": "residential",  
+  "dataProvider": "IMREDD_UCA_Nice",  
+  "dateObservedFrom": "2022-07-01T10:40:01.00Z",  
+  "dateObservedTo": "2022-07-01T12:40:01.00Z",  
+  "exposureType": "short term exposure",  
+  "groundType": "concrete",  
+  "location": {  
+    "coordinates": [  
+      7.2032497427380235,  
+      43.68056738083439  
+    ],  
+    "type": "Point"  
+  },  
+  "noiseOrigin": "traffic",  
+  "wallsType": "glass",  
+  "@context": [  
+    "https://uri.etsi.org/ngsi-ld/v1/ngsi-ld-core-context.jsonld",  
+    "https://raw.githubusercontent.com/smart-data-models/dataModel.Environment/master/context.jsonld"  
+  ]  
+}  
+```  
+#### NoisePollution NGSI-LD normalized Example    
+Here is an example of a NoisePollution in JSON-LD format as normalized. This is compatible with NGSI-LD when not using options and returns the context data of an individual entity.  
+```json  
+{  
+  "id": "urn:ngsi-ld:NoisePollution:France-NoisePollution-12345_2022-07-01T18:00:00_2022-07-01T00:00:00",  
+  "type": "NoisePollution",  
+  "address": {  
+    "type": "Property",  
+    "value": {  
+      "addressCountry": "France",  
+      "postalCode": "06200",  
+      "addressLocality": "Nice",  
+      "type": "PostalAddress"  
+    }  
+  },  
+  "location": {  
+    "type": "GeoProperty",  
+    "value": {  
+      "type": "Point",  
+      "coordinates": [  
+        7.2032497427380235,  
+        43.68056738083439  
+      ]  
+    }  
+  },  
+  "dataProvider": {  
+    "type": "Property",  
+    "value": "IMREDD_UCA_Nice"  
+  },  
+  "dateObservedFrom": {  
+    "type": "Property",  
+    "value": {  
+      "@type": "DateTime",  
+      "@value": "2022-07-01T10:40:01.00Z"  
+    }  
+  },  
+  "dateObservedTo": {  
+    "type": "Property",  
+    "value": {  
+      "@type": "DateTime",  
+      "@value": "2022-07-01T12:40:01.00Z"  
+    }  
+  },  
+  "NoiseAnnoyanceIndex": {  
+    "type": "Property",  
+    "value": 3  
+  },  
+  "Lanight": {  
+    "type": "Property",  
+    "value": 45  
+  },  
+  "noiseOrigin": {  
+    "type": "Property",  
+    "value": "traffic"  
+  },  
+  "exposureType": {  
+    "type": "Property",  
+    "value": "short term exposure"  
+  },  
+  "buildingsType": {  
+    "type": "Property",  
+    "value": "residential"  
+  },  
+  "groundType": {  
+    "type": "Property",  
+    "value": "concrete"  
+  },  
+  "wallsType": {  
+    "type": "Property",  
+    "value": "glass"  
+  },  
+  "Lamax2": {  
+    "type": "Property",  
+    "value": 75  
+  },  
+  "Laeq2": {  
+    "type": "Property",  
+    "value": 85  
+  },  
+  "@context": [  
+    "https://uri.etsi.org/ngsi-ld/v1/ngsi-ld-core-context.jsonld",  
+    "https://raw.githubusercontent.com/smart-data-models/dataModel.Environment/master/context.jsonld"  
+  ]  
+}  
+```  
 See [FAQ 10](https://smartdatamodels.org/index.php/faqs/) to get an answer on how to deal with magnitude units  
