@@ -6,6 +6,8 @@ These data models describe the main entities involved with smart applications th
 The following entity types are available:
 - [AeroAllergenObserved](https://github.com/smart-data-models/dataModel.Environment/blob/master/AeroAllergenObserved/README.md). An observation of pollen levels at a certain place and time.
 
+- [AirQualityForecast](https://github.com/smart-data-models/dataModel.Environment/blob/master/AirQualityForecast/README.md). A forecast of air quality conditions valid during a period
+
 - [AirQualityObserved](https://github.com/smart-data-models/dataModel.Environment/blob/master/AirQualityObserved/README.md). An observation of air quality conditions at a certain place and time.
 
 - [AirQualityMonitoring](https://github.com/smart-data-models/dataModel.Environment/blob/master/AirQualityMonitoring/README.md). Air Quality Monitoring (AQM) Data Model.
