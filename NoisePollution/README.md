@@ -20,6 +20,14 @@ Link alla [specifica](https://github.com/smart-data-models/dataModel.Environment
 
 [仕様へのリンク](https://github.com/smart-data-models/dataModel.Environment/blob/master/NoisePollution/doc/spec_JA.md)
 ### Examples
+
+Link to the [example](https://smart-data-models.github.io/dataModel.Environment/NoisePollution/examples/example.json) (keyvalues) for NGSI v2
+
+Link to the [example](https://smart-data-models.github.io/dataModel.Environment/NoisePollution/examples/example.jsonld) (keyvalues) for NGSI-LD
+
+Link to the [example](https://smart-data-models.github.io/dataModel.Environment/NoisePollution/examples/example-normalized.json) (normalized) for NGSI-V2
+
+Link to the [example](https://smart-data-models.github.io/dataModel.Environment/NoisePollution/examples/example-normalized.jsonld) (normalized) for NGSI-LD
 ### Dynamic Examples generation
 
 Link to the [Generator](https://smartdatamodels.org/extra/ngsi-ld_generator.php?schemaUrl=https://raw.githubusercontent.com/smart-data-models/dataModel.Environment/master/NoisePollution/schema.json&email=info@smartdatamodels.org) of NGSI-LD normalized payloads compliant with this data model. Refresh for new values
