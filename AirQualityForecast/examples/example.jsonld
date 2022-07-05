@@ -1,0 +1,47 @@
+{
+  "id": "urn:ngsi-ld:AirQualityForecast:France-AirQualityForecast-12345_2022-07-01T18:00:00_2022-07-01T00:00:00",
+  "type": "AirQualityForecast",
+  "address": {
+    "addressCountry": "France",
+    "addressLocality": "Nice",
+    "postalCode": "06200",
+    "type": "PostalAddress"
+  },
+  "airQualityIndex": 3,
+  "airQualityLevel": "moderate",
+  "co2": 45,
+  "dataProvider": "IMREDD_UCA_Nice",
+  "dateIssued": {
+    "@type": "DateTime",
+    "@value": "2022-07-01T10:40:01.00Z"
+  },
+  "dateRetrieved": {
+    "@type": "DateTime",
+    "@value": "2022-07-01T12:57:24.00Z"
+  },
+  "location": {
+    "coordinates": [
+      7.2032497427380235,
+      43.68056738083439
+    ],
+    "type": "Point"
+  },
+  "no2": 69,
+  "nox": 139,
+  "o3": 100,
+  "pm10": 19,
+  "pm25": 21,
+  "precipitation": 0,
+  "relativeHumidity": 0.54,
+  "so2": 11,
+  "temperature": 12.2,
+  "typeOfLocation": "outdoor",
+  "validFrom": "2022-07-01T17:00:00.00Z",
+  "validTo": "2022-07-01T18:00:00.00Z",
+  "validity": "2022-07-01T17:00:00+01:00/2022-07-01T18:00:00+01:00",
+  "windSpeed": 0.64,
+  "@context": [
+    "https://uri.etsi.org/ngsi-ld/v1/ngsi-ld-core-context.jsonld",
+    "https://raw.githubusercontent.com/smart-data-models/dataModel.Environment/master/context.jsonld"
+  ]
+}

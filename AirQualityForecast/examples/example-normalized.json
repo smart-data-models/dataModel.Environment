@@ -1,0 +1,109 @@
+{
+  "id": "urn:ngsi-ld:AirQualityForecast:France-AirQualityForecast-12345_2022-07-01T18:00:00_2022-07-01T00:00:00",
+  "type": "AirQualityForecast",
+  "address": {
+    "type": "PostalAddress",
+    "value": {
+      "addressCountry": "France",
+      "postalCode": "06200",
+      "addressLocality": "Nice"
+    }
+  },
+  "location": {
+    "type": "geo:json",
+    "value": {
+      "type": "Point",
+      "coordinates": [
+        7.2032497427380235,
+        43.68056738083439
+      ]
+    }
+  },
+  "dataProvider": {
+    "type": "Text",
+    "value": "IMREDD_UCA_Nice"
+  },
+  "dateIssued": {
+    "type": "DateTime",
+    "value": "2022-07-01T10:40:01.00Z"
+  },
+  "dateRetrieved": {
+    "type": "DateTime",
+    "value": "2022-07-01T12:57:24.00Z"
+  },
+  "validFrom": {
+    "type": "DateTime",
+    "value": "2022-07-01T17:00:00.00Z"
+  },
+  "validTo": {
+    "type": "DateTime",
+    "value": "2022-07-01T18:00:00.00Z"
+  },
+  "validity": {
+    "type": "Text",
+    "value": "2022-07-01T17:00:00+01:00/2022-07-01T18:00:00+01:00"
+  },
+  "airQualityIndex": {
+    "type": "Number",
+    "value": 3
+  },
+  "airQualityLevel": {
+    "type": "Text",
+    "value": "moderate"
+  },
+  "co2": {
+    "type": "Number",
+    "value": 45,
+    "unitCode": "GQ"
+  },
+  "no2": {
+    "type": "Number",
+    "value": 69,
+    "unitCode": "GQ"
+  },
+  "o3": {
+    "type": "Number",
+    "value": 100,
+    "unitCode": "GQ"
+  },
+  "nox": {
+    "type": "Number",
+    "value": 139,
+    "unitCode": "GQ"
+  },
+  "so2": {
+    "type": "Number",
+    "value": 11,
+    "unitCode": "GQ"
+  },
+  "pm10": {
+    "type": "Number",
+    "value": 19,
+    "unitCode": "GQ"
+  },
+  "pm25": {
+    "type": "Number",
+    "value": 21,
+    "unitCode": "GQ"
+  },
+  "temperature": {
+    "type": "Number",
+    "value": 12.2
+  },
+  "relativeHumidity": {
+    "type": "Number",
+    "value": 0.54
+  },
+  "windSpeed": {
+    "type": "Number",
+    "value": 0.64
+  },
+  "precipitation": {
+    "type": "Number",
+    "value": 0
+  },
+  "typeOfLocation": {
+    "type": "Text",
+    "value": "outdoor"
+  }
+}
