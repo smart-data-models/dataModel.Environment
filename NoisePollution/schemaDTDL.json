@@ -2,7 +2,7 @@
     "@id": "dtmi:com:ngsi-ld:NoisePollution;0",
     "@type": "Interface",
     "@context": "dtmi:dtdl:context;2",
-    "comment": " Smart Data Models - Noise Pollution adapted to DTDL from smartdatamodels.org. Source: https://raw.githubusercontent.com/smart-data-models/dataModel.Environment/master/NoisePollution/schema.json",
+    "comment": "Smart Data Models - Noise Pollution adapted to DTDL from smartdatamodels.org. Source: https://raw.githubusercontent.com/smart-data-models/dataModel.Environment/master/NoisePollution/schema.json",
     "description": "Noise Pollution data model merges specific and punctual noise measurements (coming, e.g. from NoiseLevelObservation entities) into average parameters referred to city areas, providing a more city-related data about noise pollution status and evolution.",
     "displayName": "NoisePollution",
     "contents": [
