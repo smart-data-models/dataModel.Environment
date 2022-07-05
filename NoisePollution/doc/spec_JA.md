@@ -8,7 +8,7 @@
 
 ## プロパティ一覧  
 
-- `LAeq2`: 過去2時間の平均音圧レベル  - `LAmax2`: 過去2時間に記録された最大騒音レベル  - `alternateName`: この項目の別称  - `buildingsType`: センサー設置時の測定エリア内の主な建物の種類  - `dataProvider`: 調和されたデータエンティティの提供者を識別する一連の文字。  - `dateCreated`: エンティティの作成タイムスタンプ。これは通常、ストレージプラットフォームによって割り当てられる。  - `dateModified`: エンティティの最終更新のタイムスタンプ。これは通常、ストレージプラットフォームによって割り当てられる。  - `dateObservedFrom`: 観測期間開始日時  - `dateObservedTo`: 観測期間終了日時  - `description`: このアイテムの説明  - `groundType`: センサー設置時の測定エリア内の優勢地盤の種類  - `id`: エンティティの一意な識別子  - `name`: このアイテムの名称です。  - `noiseAnnoyanceIndex`: 騒音の大きさによる指数（1〜10）。  - `noiseOrigin`: センサー設置時の記録されたノイズの主な発生源（ソース  - `owner`: 所有者の一意のIDを参照するJSONエンコードされた文字列を含むリストです。  - `seeAlso`: 項目に関する追加リソースを指すURIのリスト。  - `source`: エンティティデータの元のソースをURLで示す一連の文字。ソースプロバイダの完全修飾ドメイン名、またはソースオブジェクトのURLであることが推奨されます。  - `type`: NGSIタイプ。NoisePollutionである必要があります。  - `wallsType`: センサー設置時に測定範囲内で主流となっているファサード素材の種類    
+- `LAeq2`: 過去2時間の平均音圧レベル  - `LAmax2`: 過去2時間に記録された最大騒音レベル  - `alternateName`: この項目の別称  - `buildingsType`: センサー設置時の測定範囲内の主な建物の種類  - `dataProvider`: 調和されたデータエンティティの提供者を識別する一連の文字。  - `dateCreated`: エンティティの作成タイムスタンプ。これは通常、ストレージプラットフォームによって割り当てられる。  - `dateModified`: エンティティの最終更新のタイムスタンプ。これは通常、ストレージプラットフォームによって割り当てられる。  - `dateObservedFrom`: 観測期間開始日時  - `dateObservedTo`: 観測期間終了日時  - `description`: このアイテムの説明  - `groundType`: センサー設置時の測定エリア内の優勢地盤の種類  - `id`: エンティティの一意な識別子  - `name`: このアイテムの名称です。  - `noiseAnnoyanceIndex`: 騒音の大きさによる指数（1〜10）。  - `noiseOrigin`: センサー設置時の記録されたノイズの主な発生源（ソース  - `owner`: 所有者の一意のIDを参照するJSONエンコードされた文字列を含むリストです。  - `seeAlso`: 項目に関する追加リソースを指すURIのリスト。  - `source`: エンティティデータの元のソースをURLで示す一連の文字。ソースプロバイダの完全修飾ドメイン名、またはソースオブジェクトのURLであることが推奨されます。  - `type`: NGSIタイプ。NoisePollutionである必要があります。  - `wallsType`: センサー設置時に測定範囲内で主流となっているファサード素材の種類    
 必要なプロパティ  
 - `id`  - `type`  ## プロパティのデータモデル記述  
 アルファベット順に並びます（クリックで詳細へ）  
@@ -156,8 +156,240 @@ NoisePollution:
 ```  
 </details>    
 ## ペイロードの例  
-NoisePollutionの例をJSON-LD形式でkey-valuesとして利用することはできません。これは、`options=keyValues`を使用した場合にNGSI-v2と互換性があり、個々のエンティティのコンテキストデータが返される。  
-NoisePollution を JSON-LD 形式で正規化した例は利用不可。オプションを使用しない場合はNGSI-v2と互換性があり、個々のエンティティのコンテキストデータが返される。  
-NoisePollutionの例をJSON-LD形式でkey-valuesとして利用することはできません。これは、`options=keyValues`を使用した場合にNGSI-LDと互換性があり、個々のエンティティのコンテキストデータが返される。  
-NoisePollution を JSON-LD 形式で正規化した例は利用不可。オプションを使用しない場合のNGSI-LDと互換性があり、個々のエンティティのコンテキストデータが返される。  
+#### NoisePollution NGSI-v2 key-value の例。  
+NoisePollutionをJSON-LD形式でkey-valuesにした例です。これは `options=keyValues` を使用した場合に NGSI-v2 と互換性があり、個々のエンティティのコンテキストデータが返される。  
+```json  
+{  
+  "id": "urn:ngsi-ld:NoisePollution:France-NoisePollution-12345_2022-07-01T18:00:00_2022-07-01T00:00:00",  
+  "type": "NoisePollution",  
+  "Laeq2": 85,  
+  "Lamax2": 75,  
+  "Lanight": 45,  
+  "NoiseAnnoyanceIndex": 3,  
+  "address": {  
+    "addressCountry": "France",  
+    "addressLocality": "Nice",  
+    "postalCode": "06200",  
+    "type": "PostalAddress"  
+  },  
+  "buildingsType": "residential",  
+  "dataProvider": "IMREDD_UCA_Nice",  
+  "dateObservedFrom": {  
+    "@type": "DateTime",  
+    "@value": "2022-07-01T10:40:01.00Z"  
+  },  
+  "dateObservedTo": {  
+    "@type": "DateTime",  
+    "@value": "2022-07-01T12:40:01.00Z"  
+  },  
+  "exposureType": "short term exposure",  
+  "groundType": "concrete",  
+  "location": {  
+    "coordinates": [  
+      7.2032497427380235,  
+      43.68056738083439  
+    ],  
+    "type": "Point"  
+  },  
+  "noiseOrigin": "traffic",  
+  "wallsType": "glass"  
+}  
+```  
+#### NoisePollution NGSI-v2 正規化例  
+NoisePollution を JSON-LD 形式で正規化した例を示します。これはオプションを使用しない場合、NGSI-v2と互換性があり、個々のエンティティのコンテキストデータを返します。  
+```json  
+{  
+  "id": "urn:ngsi-ld:NoisePollution:France-NoisePollution-12345_2022-07-01T18:00:00_2022-07-01T00:00:00",  
+  "type": "NoisePollution",  
+  "address": {  
+    "type": "StructuredValue",  
+    "value": {  
+      "addressCountry": "France",  
+      "postalCode": "06200",  
+      "addressLocality": "Nice",  
+      "type": "PostalAddress"  
+    }  
+  },  
+  "location": {  
+    "type": "geo:json",  
+    "value": {  
+      "type": "Point",  
+      "coordinates": [  
+        7.2032497427380235,  
+        43.68056738083439  
+      ]  
+    }  
+  },  
+  "dataProvider": {  
+    "type": "Property",  
+    "value": "IMREDD_UCA_Nice"  
+  },  
+  "dateObservedFrom": {  
+    "type":  "DateTime",  
+      "value": "2022-07-01T10:40:01.00Z"  
+  },  
+  "dateObservedTo": {  
+    "type": "DateTime",  
+      "value": "2022-07-01T12:40:01.00Z"  
+  },  
+  "NoiseAnnoyanceIndex": {  
+    "type": "Number",  
+    "value": 3  
+  },  
+  "Lanight": {  
+    "type": "Number",  
+    "value": 45  
+  },  
+  "noiseOrigin": {  
+    "type": "Text",  
+    "value": "traffic"  
+  },  
+  "exposureType": {  
+    "type": "Property",  
+    "value": "short term exposure"  
+  },  
+  "buildingsType": {  
+    "type": "Text",  
+    "value": "residential"  
+  },  
+  "groundType": {  
+    "type": "Text",  
+    "value": "concrete"  
+  },  
+  "wallsType": {  
+    "type": "Text",  
+    "value": "glass"  
+  },  
+  "Lamax2": {  
+    "type": "Number",  
+    "value": 75  
+  },  
+  "Laeq2": {  
+    "type": "Number",  
+    "value": 85  
+  }  
+}  
+```  
+#### NoisePollution NGSI-LD key-value の例  
+NoisePollutionをJSON-LD形式でkey-valuesにした例です。これは `options=keyValues` を使用した場合に NGSI-LD と互換性があり、個々のエンティティのコンテキストデータが返される。  
+```json  
+{  
+  "id": "urn:ngsi-ld:NoisePollution:France-NoisePollution-12345_2022-07-01T18:00:00_2022-07-01T00:00:00",  
+  "type": "NoisePollution",  
+  "Laeq2": 85,  
+  "Lamax2": 75,  
+  "Lanight": 45,  
+  "NoiseAnnoyanceIndex": 3,  
+  "address": {  
+    "addressCountry": "France",  
+    "addressLocality": "Nice",  
+    "postalCode": "06200",  
+    "type": "PostalAddress"  
+  },  
+  "buildingsType": "residential",  
+  "dataProvider": "IMREDD_UCA_Nice",  
+  "dateObservedFrom": "2022-07-01T10:40:01.00Z",  
+  "dateObservedTo": "2022-07-01T12:40:01.00Z",  
+  "exposureType": "short term exposure",  
+  "groundType": "concrete",  
+  "location": {  
+    "coordinates": [  
+      7.2032497427380235,  
+      43.68056738083439  
+    ],  
+    "type": "Point"  
+  },  
+  "noiseOrigin": "traffic",  
+  "wallsType": "glass",  
+  "@context": [  
+    "https://uri.etsi.org/ngsi-ld/v1/ngsi-ld-core-context.jsonld",  
+    "https://raw.githubusercontent.com/smart-data-models/dataModel.Environment/master/context.jsonld"  
+  ]  
+}  
+```  
+#### NoisePollution NGSI-LD 正規化例  
+NoisePollution を JSON-LD 形式で正規化した例を示します。これはオプションを使用しない場合のNGSI-LDと互換性があり、個々のエンティティのコンテキストデータを返します。  
+```json  
+{  
+  "id": "urn:ngsi-ld:NoisePollution:France-NoisePollution-12345_2022-07-01T18:00:00_2022-07-01T00:00:00",  
+  "type": "NoisePollution",  
+  "address": {  
+    "type": "Property",  
+    "value": {  
+      "addressCountry": "France",  
+      "postalCode": "06200",  
+      "addressLocality": "Nice",  
+      "type": "PostalAddress"  
+    }  
+  },  
+  "location": {  
+    "type": "GeoProperty",  
+    "value": {  
+      "type": "Point",  
+      "coordinates": [  
+        7.2032497427380235,  
+        43.68056738083439  
+      ]  
+    }  
+  },  
+  "dataProvider": {  
+    "type": "Property",  
+    "value": "IMREDD_UCA_Nice"  
+  },  
+  "dateObservedFrom": {  
+    "type": "Property",  
+    "value": {  
+      "@type": "DateTime",  
+      "@value": "2022-07-01T10:40:01.00Z"  
+    }  
+  },  
+  "dateObservedTo": {  
+    "type": "Property",  
+    "value": {  
+      "@type": "DateTime",  
+      "@value": "2022-07-01T12:40:01.00Z"  
+    }  
+  },  
+  "NoiseAnnoyanceIndex": {  
+    "type": "Property",  
+    "value": 3  
+  },  
+  "Lanight": {  
+    "type": "Property",  
+    "value": 45  
+  },  
+  "noiseOrigin": {  
+    "type": "Property",  
+    "value": "traffic"  
+  },  
+  "exposureType": {  
+    "type": "Property",  
+    "value": "short term exposure"  
+  },  
+  "buildingsType": {  
+    "type": "Property",  
+    "value": "residential"  
+  },  
+  "groundType": {  
+    "type": "Property",  
+    "value": "concrete"  
+  },  
+  "wallsType": {  
+    "type": "Property",  
+    "value": "glass"  
+  },  
+  "Lamax2": {  
+    "type": "Property",  
+    "value": 75  
+  },  
+  "Laeq2": {  
+    "type": "Property",  
+    "value": 85  
+  },  
+  "@context": [  
+    "https://uri.etsi.org/ngsi-ld/v1/ngsi-ld-core-context.jsonld",  
+    "https://raw.githubusercontent.com/smart-data-models/dataModel.Environment/master/context.jsonld"  
+  ]  
+}  
+```  
 マグニチュード単位の扱いについては、[FAQ 10](https://smartdatamodels.org/index.php/faqs/)を参照してください。  
