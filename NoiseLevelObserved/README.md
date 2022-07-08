@@ -1,5 +1,6 @@
-# NoiseLevelObserved
-Version: 0.2.0
+[![Smart Data Models](https://smartdatamodels.org/wp-content/uploads/2022/01/SmartDataModels_logo.png "Logo")](https://smartdatamodels.org)
+# NoiseLevelObserved
+Version: 0.2.1
 
 ## Description 
 
