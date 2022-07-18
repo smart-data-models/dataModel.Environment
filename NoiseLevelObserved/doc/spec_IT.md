@@ -4,11 +4,11 @@
 [Licenza aperta](https://github.com/smart-data-models//dataModel.Environment/blob/master/NoiseLevelObserved/LICENSE.md)  
 [documento generato automaticamente](https://docs.google.com/presentation/d/e/2PACX-1vTs-Ng5dIAwkg91oTTUdt8ua7woBXhPnwavZ0FxgR8BsAI_Ek3C5q97Nd94HS8KhP-r_quD4H0fgyt3/pub?start=false&loop=false&delayms=3000#slide=id.gb715ace035_0_60)  
 Descrizione globale: **Osservazione di quei parametri acustici che stimano i livelli di pressione sonora in un determinato luogo e momento. **  
-versione: 0.2.0  
+versione: 0.2.1  
 
 ## Elenco delle proprietà  
 
-- `address`: L'indirizzo postale  - `alternateName`: Un nome alternativo per questa voce  - `areaServed`: L'area geografica in cui viene fornito il servizio o l'articolo offerto.  - `dataProvider`: Una sequenza di caratteri che identifica il fornitore dell'entità di dati armonizzata.  - `dateCreated`: Timestamp di creazione dell'entità. Di solito viene assegnato dalla piattaforma di archiviazione.  - `dateModified`: Timestamp dell'ultima modifica dell'entità. Di solito viene assegnato dalla piattaforma di archiviazione.  - `dateObserved`: La data e l'ora di questa osservazione sono rappresentate da un intervallo ISO8601.  - `dateObservedFrom`: Data e ora di inizio del periodo di osservazione.  - `dateObservedTo`: Data e ora di fine del periodo di osservazione. Vedere dataOsservata.  - `description`: Descrizione dell'articolo  - `id`: Identificatore univoco dell'entità  - `location`: Riferimento geojson all'elemento. Può essere un punto, una stringa di linea, un poligono, un multi-punto, una stringa di linea o un poligono multiplo.  - `name`: Il nome di questo elemento.  - `owner`: Un elenco contenente una sequenza di caratteri codificata JSON che fa riferimento agli ID univoci dei proprietari.  - `refDevice`: Un riferimento al dispositivo che ha catturato questa osservazione.  - `refPointOfInterest`: Riferimento a un punto di interesse associato a questa osservazione.  - `refWeatherObserved`: Riferimento alle condizioni meteorologiche associate.  - `seeAlso`: elenco di uri che puntano a risorse aggiuntive sull'elemento  - `sonometerClass`: Classe del sonometro (0, 1, 2) secondo l'ANSI usato per l'osservazione  - `source`: Una sequenza di caratteri che indica la fonte originale dei dati dell'entità come URL. Si consiglia di utilizzare il nome di dominio completamente qualificato del provider di origine o l'URL dell'oggetto di origine.  - `type`: NGSI Tipo di entità    
+- `address`: L'indirizzo postale  - `alternateName`: Un nome alternativo per questa voce  - `areaServed`: L'area geografica in cui viene fornito il servizio o l'articolo offerto.  - `dataProvider`: Una sequenza di caratteri che identifica il fornitore dell'entità di dati armonizzata.  - `dateCreated`: Timestamp di creazione dell'entità. Di solito viene assegnato dalla piattaforma di archiviazione.  - `dateModified`: Timestamp dell'ultima modifica dell'entità. Di solito viene assegnato dalla piattaforma di archiviazione.  - `dateObserved`: La data e l'ora di questa osservazione sono rappresentate da un intervallo ISO8601.  - `dateObservedFrom`: Data e ora di inizio del periodo di osservazione.  - `dateObservedTo`: Data e ora di fine del periodo di osservazione. Vedere dataOsservata.  - `description`: Descrizione dell'articolo  - `id`: Identificatore univoco dell'entità  - `location`: Riferimento Geojson all'elemento. Può essere un punto, una stringa di linea, un poligono, un multi-punto, una stringa di linea o un poligono multiplo.  - `name`: Il nome di questo elemento.  - `owner`: Un elenco contenente una sequenza di caratteri codificata JSON che fa riferimento agli ID univoci dei proprietari.  - `refDevice`: Un riferimento al dispositivo che ha catturato questa osservazione.  - `refPointOfInterest`: Riferimento a un punto di interesse associato a questa osservazione.  - `refWeatherObserved`: Riferimento alle condizioni meteorologiche associate.  - `seeAlso`: elenco di uri che puntano a risorse aggiuntive sull'elemento  - `sonometerClass`: Classe del sonometro (0, 1, 2) secondo l'ANSI usato per l'osservazione  - `source`: Una sequenza di caratteri che indica la fonte originale dei dati dell'entità come URL. Si consiglia di utilizzare il nome di dominio completamente qualificato del provider di origine o l'URL dell'oggetto di origine.  - `type`: NGSI Tipo di entità    
 Proprietà richieste  
 - `dateObservedFrom`  - `dateObservedTo`  - `id`  - `location`  - `type`  ## Modello di dati descrizione delle proprietà  
 Ordinati in ordine alfabetico (clicca per i dettagli)  
@@ -357,8 +357,8 @@ NoiseLevelObserved:
   x-disclaimer: 'Redistribution and use in source and binary forms, with or without modification, are permitted  provided that the license conditions are met. Copyleft (c) 2021 Contributors to Smart Data Models Program'    
   x-license-url: https://github.com/smart-data-models/dataModel.Environment/blob/master/NoiseLevelObserved/LICENSE.md    
   x-model-schema: https://smart-data-models.github.io/dataModel.Environment/NoiseLevelObserved/schema.json    
-  x-model-tags: ""    
-  x-version: 0.2.0    
+  x-model-tags: GreenMov    
+  x-version: 0.2.1    
 ```  
 </details>    
 ## Esempi di payload  
@@ -380,7 +380,7 @@ NoiseLevelObserved:
   }  
 }  
 ```  
-#### RumoreLivelloOsservato NGSI-v2 normalizzato Esempio  
+#### Livello di rumore osservato NGSI-v2 normalizzato Esempio  
 Ecco un esempio di NoiseLevelObserved in formato JSON-LD normalizzato. Questo è compatibile con NGSI-v2 quando non si utilizzano le opzioni e restituisce i dati di contesto di una singola entità.  
 ```json  
 {  
