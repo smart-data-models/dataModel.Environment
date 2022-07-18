@@ -4,11 +4,11 @@
 [オープンライセンス](https://github.com/smart-data-models//dataModel.Environment/blob/master/NoiseLevelObserved/LICENSE.md)  
 [ドキュメント自動生成](https://docs.google.com/presentation/d/e/2PACX-1vTs-Ng5dIAwkg91oTTUdt8ua7woBXhPnwavZ0FxgR8BsAI_Ek3C5q97Nd94HS8KhP-r_quD4H0fgyt3/pub?start=false&loop=false&delayms=3000#slide=id.gb715ace035_0_60)  
 グローバルな記述。**ある場所と時間における音圧レベルを推定する音響パラメータを観測すること。**  
-バージョン: 0.2.0  
+バージョン: 0.2.1  
 
 ## プロパティ一覧  
 
-- `address`: 郵送先住所  - `alternateName`: この項目の別称  - `areaServed`: サービスまたは提供品が提供される地理的な地域  - `dataProvider`: 調和されたデータエンティティの提供者を識別する一連の文字。  - `dateCreated`: エンティティの作成タイムスタンプ。これは通常、ストレージプラットフォームによって割り当てられる。  - `dateModified`: エンティティの最終更新のタイムスタンプ。これは通常、ストレージプラットフォームによって割り当てられる。  - `dateObserved`: この観測の日時をISO8601のインターバルで表現したもの。  - `dateObservedFrom`: 観測期間開始日時。  - `dateObservedTo`: 観測期間終了日時。dateObservedを参照。  - `description`: このアイテムの説明  - `id`: エンティティの一意な識別子  - `location`: アイテムへの Geojson リファレンス。Point, LineString, Polygon, MultiPoint, MultiLineString, MultiPolygonのいずれかを指定することができる。  - `name`: このアイテムの名称です。  - `owner`: 所有者の一意のIDを参照するJSONエンコードされた文字列を含むリストです。  - `refDevice`: この観測を捉えた装置への言及。  - `refPointOfInterest`: この観測に関連する注目点への参照。  - `refWeatherObserved`: 関連する気象条件について言及する。  - `seeAlso`: 項目に関する追加リソースを指すURIのリスト。  - `sonometerClass`: この観測に使用されたANSIによるソノメータのクラス（0、1、2  - `source`: エンティティデータの元のソースをURLで示す一連の文字。ソースプロバイダの完全修飾ドメイン名、またはソースオブジェクトのURLであることが推奨されます。  - `type`: NGSI エンティティタイプ    
+- `address`: 郵送先住所  - `alternateName`: この項目の別称  - `areaServed`: サービスまたは提供品が提供される地理的な地域  - `dataProvider`: 調和されたデータエンティティの提供者を識別する一連の文字。  - `dateCreated`: エンティティの作成タイムスタンプ。これは通常、ストレージプラットフォームによって割り当てられる。  - `dateModified`: エンティティの最終更新のタイムスタンプ。これは通常、ストレージプラットフォームによって割り当てられる。  - `dateObserved`: この観測の日時をISO8601のインターバルで表現したもの。  - `dateObservedFrom`: 観測期間開始日時。  - `dateObservedTo`: 観測期間終了日時。dateObservedを参照。  - `description`: このアイテムの説明  - `id`: エンティティの一意な識別子  - `location`: アイテムへの Geojson リファレンス。Point, LineString, Polygon, MultiPoint, MultiLineString, MultiPolygonのいずれかを指定することができる。  - `name`: このアイテムの名称です。  - `owner`: 所有者の一意のIDを参照するJSONエンコードされた文字列を含むリストです。  - `refDevice`: この観測を捉えた装置への言及。  - `refPointOfInterest`: この観測に関連する注目点への参照。  - `refWeatherObserved`: 関連する気象条件について言及する。  - `seeAlso`: 項目に関する追加リソースを指すURIのリスト。  - `sonometerClass`: この観測に使用されたANSIによるソノメータのクラス（0, 1, 2）  - `source`: エンティティデータの元のソースをURLで示す一連の文字。ソースプロバイダの完全修飾ドメイン名、またはソースオブジェクトのURLであることが推奨されます。  - `type`: NGSI エンティティタイプ    
 必要なプロパティ  
 - `dateObservedFrom`  - `dateObservedTo`  - `id`  - `location`  - `type`  ## プロパティのデータモデル記述  
 アルファベット順に並びます（クリックで詳細へ）  
@@ -357,8 +357,8 @@ NoiseLevelObserved:
   x-disclaimer: 'Redistribution and use in source and binary forms, with or without modification, are permitted  provided that the license conditions are met. Copyleft (c) 2021 Contributors to Smart Data Models Program'    
   x-license-url: https://github.com/smart-data-models/dataModel.Environment/blob/master/NoiseLevelObserved/LICENSE.md    
   x-model-schema: https://smart-data-models.github.io/dataModel.Environment/NoiseLevelObserved/schema.json    
-  x-model-tags: ""    
-  x-version: 0.2.0    
+  x-model-tags: GreenMov    
+  x-version: 0.2.1    
 ```  
 </details>    
 ## ペイロードの例  
