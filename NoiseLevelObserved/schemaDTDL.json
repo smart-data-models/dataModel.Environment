@@ -2,7 +2,7 @@
     "@id": "dtmi:com:ngsi-ld:NoiseLevelObserved;0",
     "@type": "Interface",
     "@context": "dtmi:dtdl:context;2",
-    "comment": " - Noise Level observed schema adapted to DTDL from smartdatamodels.org. Source: https://raw.githubusercontent.com/smart-data-models/dataModel.Environment/master/NoiseLevelObserved/schema.json",
+    "comment": " Smart Data Models - Noise Level observed schema adapted to DTDL from smartdatamodels.org. Source: https://raw.githubusercontent.com/smart-data-models/dataModel.Environment/master/NoiseLevelObserved/schema.json",
     "description": "An observation of those acoustic parameters that estimate noise pressure levels at a certain place and time. ",
     "displayName": "NoiseLevelObserved",
     "contents": [
