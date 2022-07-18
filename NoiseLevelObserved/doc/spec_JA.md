@@ -8,7 +8,7 @@
 
 ## プロパティ一覧  
 
-- `address`: 郵送先住所  - `alternateName`: この項目の別称  - `areaServed`: サービスまたは提供品が提供される地理的な地域  - `dataProvider`: 調和されたデータエンティティの提供者を識別する一連の文字。  - `dateCreated`: エンティティの作成タイムスタンプ。これは通常、ストレージプラットフォームによって割り当てられる。  - `dateModified`: エンティティの最終更新のタイムスタンプ。これは通常、ストレージプラットフォームによって割り当てられる。  - `dateObserved`: この観測の日時をISO8601のインターバルで表現したもの。  - `dateObservedFrom`: 観測期間開始日時。  - `dateObservedTo`: 観測期間終了日時。dateObservedを参照。  - `description`: このアイテムの説明  - `id`: エンティティの一意な識別子  - `location`: アイテムへの Geojson リファレンス。Point, LineString, Polygon, MultiPoint, MultiLineString, MultiPolygonのいずれかを指定することができる。  - `name`: このアイテムの名称です。  - `owner`: 所有者の一意のIDを参照するJSONエンコードされた文字列を含むリストです。  - `refDevice`: この観測を捉えた装置への言及。  - `refPointOfInterest`: この観測に関連する注目点への参照。  - `refWeatherObserved`: 関連する気象条件について言及する。  - `seeAlso`: 項目に関する追加リソースを指すURIのリスト。  - `sonometerClass`: この観測に使用されたANSIによるソノメータのクラス（0, 1, 2）  - `source`: エンティティデータの元のソースをURLで示す一連の文字。ソースプロバイダの完全修飾ドメイン名、またはソースオブジェクトのURLであることが推奨されます。  - `type`: NGSI エンティティタイプ    
+- `LAS`: ゆっくりした音、1秒mor以上上下する音の周波数重み付け（A-weighting）です。  - `LAeq`: 周波数で重み付けしたLeqサウンドレベル（A-weighting）。  - `LAeq_d`: 音響レベルの周波数（A-weighting）1日相当分  - `LAmax`: 音響レベル周波数特性（A-weigting）最大音圧レベル  - `address`: 郵送先住所  - `alternateName`: この項目の別称  - `areaServed`: サービスまたは提供品が提供される地理的な地域  - `dataProvider`: 調和されたデータエンティティの提供者を識別する一連の文字。  - `dateCreated`: エンティティの作成タイムスタンプ。これは通常、ストレージプラットフォームによって割り当てられる。  - `dateModified`: エンティティの最終更新のタイムスタンプ。これは通常、ストレージプラットフォームによって割り当てられる。  - `dateObserved`: この観測の日時をISO8601のインターバルで表現したもの。  - `dateObservedFrom`: 観測期間開始日時。  - `dateObservedTo`: 観測期間終了日時。dateObservedを参照。  - `description`: このアイテムの説明  - `distanceAverage`: センサーと潜在的なノイズ源との平均距離  - `heightAverage`: センサーとノイズ源との間にある潜在的な障害物の種類  - `id`: エンティティの一意な識別子  - `location`: アイテムへの Geojson リファレンス。Point, LineString, Polygon, MultiPoint, MultiLineString, MultiPolygonのいずれかを指定することができる。  - `name`: このアイテムの名称です。  - `obstacles`: センサーとノイズ源との間にある潜在的な障害物の種類。  - `owner`: 所有者の一意のIDを参照するJSONエンコードされた文字列を含むリスト  - `refDevice`: この観測を捉えた装置への言及。  - `refPointOfInterest`: この観測に関連する注目点への参照。  - `refWeatherObserved`: 関連する気象条件について言及する。  - `seeAlso`: 項目に関する追加リソースを指すURIのリスト。  - `sonometerClass`: この観測に使用されたANSIによるソノメータのクラス（0, 1, 2）  - `source`: エンティティデータの元のソースをURLで示す一連の文字。ソースプロバイダの完全修飾ドメイン名、またはソースオブジェクトのURLであることが推奨されます。  - `type`: NGSI エンティティタイプ    
 必要なプロパティ  
 - `dateObservedFrom`  - `dateObservedTo`  - `id`  - `location`  - `type`  ## プロパティのデータモデル記述  
 アルファベット順に並びます（クリックで詳細へ）  
@@ -17,6 +17,26 @@
 NoiseLevelObserved:    
   description: 'An observation of those acoustic parameters that estimate noise pressure levels at a certain place and time. '    
   properties:    
+    LAS:    
+      description: 'The frequency weighted sound level (A-weighting) for a slow sound, one second mor more up and down.'    
+      type: number    
+      x-ngsi:    
+        type: Property    
+    LAeq:    
+      description: 'The frequency weighted Leq sound level (A-weighting).'    
+      type: number    
+      x-ngsi:    
+        type: Property    
+    LAeq_d:    
+      description: 'Acoustic Level frequency weigthed (A-weghting) equivalent for  a day'    
+      type: number    
+      x-ngsi:    
+        type: Property    
+    LAmax:    
+      description: 'Acoustic level frequency weigthed (A-weghting) maximum sound level'    
+      type: number    
+      x-ngsi:    
+        type: Property    
     address:    
       description: 'The mailing address'    
       properties:    
@@ -94,6 +114,18 @@ NoiseLevelObserved:
       type: string    
       x-ngsi:    
         type: Property    
+    distanceAverage:    
+      description: 'Average distance between sensor and potential noise sources'    
+      type: string    
+      x-ngsi:    
+        type: Property    
+        units: meters    
+    heightAverage:    
+      description: 'Type of potential obstacles between the sensor and the noise source'    
+      type: string    
+      x-ngsi:    
+        type: Property    
+        units: meters    
     id:    
       anyOf: &noiselevelobserved_-_properties_-_owner_-_items_-_anyof    
         - description: 'Property. Identifier format of any NGSI entity'    
@@ -262,6 +294,11 @@ NoiseLevelObserved:
         type: Geoproperty    
     name:    
       description: 'The name of this item.'    
+      type: string    
+      x-ngsi:    
+        type: Property    
+    obstacles:    
+      description: 'Type of potential obstacles between the sensor and the noise source.'    
       type: string    
       x-ngsi:    
         type: Property    
