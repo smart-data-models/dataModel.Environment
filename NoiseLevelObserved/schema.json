@@ -95,35 +95,35 @@
             }
           ],
           "description": "Relationship. Reference to the associated weather conditions."
+        },
+        "LAS": {
+          "type": "number",
+          "description": "Property. The frequency weighted sound level (A-weighting) for a slow sound, one second mor more up and down."
+        },
+        "LAeq": {
+          "type": "number",
+          "description": "Property. The frequency weighted Leq sound level (A-weighting)."
+        },
+        "LAeq_d": {
+          "type": "number",
+          "description": "Property. Acoustic Level frequency weigthed (A-weghting) equivalent for  a day"
+        },
+        "LAmax": {
+          "type": "number",
+          "description": "Property. Acoustic level frequency weigthed (A-weghting) maximum sound level"
+        },
+        "obstacles": {
+          "type": "string",
+          "description": "Property. Type of potential obstacles between the sensor and the noise source."
+        },
+        "heightAverage": {
+          "type": "string",
+          "description": "Property. Type of potential obstacles between the sensor and the noise source. Units:'meters'"
+        },
+        "distanceAverage": {
+          "type": "string",
+          "description": "Property. Average distance between sensor and potential noise sources. Units:'meters'"
         }
-      },
-      "LAS": {
-        "type": "number",
-        "description": "Property. The frequency weighted sound level (A-weighting) for a slow sound, one second mor more up and down."
-      },
-      "LAeq": {
-        "type": "number",
-        "description": "Property. The frequency weighted Leq sound level (A-weighting)."
-      },
-      "LAeq_d": {
-        "type": "number",
-        "description": "Property. Acoustic Level frequency weigthed (A-weghting) equivalent for  a day"
-      },
-      "LAmax": {
-        "type": "number",
-        "description": "Property. Acoustic level frequency weigthed (A-weghting) maximum sound level"
-      },
-      "obstacles": {
-        "type": "string",
-        "description": "Property. Type of potential obstacles between the sensor and the noise source."
-      },
-      "heightAverage": {
-        "type": "string",
-        "description": "Property. Type of potential obstacles between the sensor and the noise source. Units:'meters'"
-      },
-      "distanceAverage": {
-        "type": "string",
-        "description": "Property. Average distance between sensor and potential noise sources. Units:'meters'"
       }
     }
   ],
