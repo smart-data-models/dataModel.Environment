@@ -7,6 +7,38 @@
     "displayName": "NoiseLevelObserved",
     "contents": [
         {
+            "name": "LAS",
+            "writable": true,
+            "displayName": "LAS",
+            "@type": "Property",
+            "schema": "long",
+            "comment": "The frequency weighted sound level (A-weighting) for a slow sound, one second mor more up and down."
+        },
+        {
+            "name": "LAeq",
+            "writable": true,
+            "displayName": "LAeq",
+            "@type": "Property",
+            "schema": "long",
+            "comment": "The frequency weighted Leq sound level (A-weighting)."
+        },
+        {
+            "name": "LAeq_d",
+            "writable": true,
+            "displayName": "LAeq_d",
+            "@type": "Property",
+            "schema": "long",
+            "comment": "Acoustic Level frequency weigthed (A-weghting) equivalent for  a day"
+        },
+        {
+            "name": "LAmax",
+            "writable": true,
+            "displayName": "LAmax",
+            "@type": "Property",
+            "schema": "long",
+            "comment": "Acoustic level frequency weigthed (A-weghting) maximum sound level"
+        },
+        {
             "name": "alternateName",
             "writable": true,
             "displayName": "alternateName",
@@ -79,12 +111,36 @@
             "comment": "A description of this item"
         },
         {
+            "name": "distanceAverage",
+            "writable": true,
+            "displayName": "distanceAverage",
+            "@type": "Property",
+            "schema": "string",
+            "comment": "Average distance between sensor and potential noise sources"
+        },
+        {
+            "name": "heightAverage",
+            "writable": true,
+            "displayName": "heightAverage",
+            "@type": "Property",
+            "schema": "string",
+            "comment": "Type of potential obstacles between the sensor and the noise source"
+        },
+        {
             "name": "name",
             "writable": true,
             "displayName": "name",
             "@type": "Property",
             "schema": "string",
             "comment": "The name of this item."
+        },
+        {
+            "name": "obstacles",
+            "writable": true,
+            "displayName": "obstacles",
+            "@type": "Property",
+            "schema": "string",
+            "comment": "Type of potential obstacles between the sensor and the noise source."
         },
         {
             "name": "refDevice",
