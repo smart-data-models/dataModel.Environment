@@ -8,7 +8,7 @@
 
 ## Lista de propiedades  
 
-- `address`: La dirección postal  - `alternateName`: Un nombre alternativo para este artículo  - `areaServed`: La zona geográfica en la que se presta un servicio o se ofrece un artículo  - `dataProvider`: Una secuencia de caracteres que identifica al proveedor de la entidad de datos armonizada.  - `dateCreated`: Marca de tiempo de creación de la entidad. Suele ser asignada por la plataforma de almacenamiento.  - `dateModified`: Marca de tiempo de la última modificación de la entidad. Normalmente será asignada por la plataforma de almacenamiento.  - `dateObserved`: La fecha y hora de esta observación representada por un intervalo ISO8601.  - `dateObservedFrom`: Fecha y hora de inicio del periodo de observación.  - `dateObservedTo`: Fecha y hora de finalización del periodo de observación. Véase dateObserved.  - `description`: Una descripción de este artículo  - `id`: Identificador único de la entidad  - `location`: Referencia Geojson al elemento. Puede ser Point, LineString, Polygon, MultiPoint, MultiLineString o MultiPolygon  - `name`: El nombre de este artículo.  - `owner`: Una lista que contiene una secuencia de caracteres codificada en JSON que hace referencia a los identificadores únicos de los propietarios  - `refDevice`: Una referencia al dispositivo que captó esta observación.  - `refPointOfInterest`: Una referencia a un punto de interés asociado a esta observación.  - `refWeatherObserved`: Referencia a las condiciones meteorológicas asociadas.  - `seeAlso`: lista de uri que apuntan a recursos adicionales sobre el artículo  - `sonometerClass`: Clase de sonómetro (0, 1, 2) según ANSI utilizado para tomar esta observación  - `source`: Una secuencia de caracteres que indica la fuente original de los datos de la entidad en forma de URL. Se recomienda que sea el nombre de dominio completo del proveedor de origen o la URL del objeto de origen.  - `type`: NGSI Tipo de entidad    
+- `LAS`: El nivel sonoro ponderado en frecuencia (ponderación A) para un sonido lento, de un segundo o más hacia arriba y hacia abajo.  - `LAeq`: El nivel sonoro Leq ponderado en frecuencia (ponderación A).  - `LAeq_d`: Nivel acústico de frecuencia ponderada (A-weghting) equivalente para un día  - `LAmax`: Nivel acústico frecuencia ponderada (A-weghting) nivel sonoro máximo  - `address`: La dirección postal  - `alternateName`: Un nombre alternativo para este artículo  - `areaServed`: La zona geográfica en la que se presta un servicio o se ofrece un artículo  - `dataProvider`: Una secuencia de caracteres que identifica al proveedor de la entidad de datos armonizada.  - `dateCreated`: Marca de tiempo de creación de la entidad. Suele ser asignada por la plataforma de almacenamiento.  - `dateModified`: Marca de tiempo de la última modificación de la entidad. Normalmente será asignada por la plataforma de almacenamiento.  - `dateObserved`: La fecha y hora de esta observación representada por un intervalo ISO8601.  - `dateObservedFrom`: Fecha y hora de inicio del periodo de observación.  - `dateObservedTo`: Fecha y hora de finalización del periodo de observación. Véase dateObserved.  - `description`: Una descripción de este artículo  - `distanceAverage`: Distancia media entre el sensor y las posibles fuentes de ruido  - `heightAverage`: Tipo de obstáculos potenciales entre el sensor y la fuente de ruido  - `id`: Identificador único de la entidad  - `location`: Referencia Geojson al elemento. Puede ser Point, LineString, Polygon, MultiPoint, MultiLineString o MultiPolygon  - `name`: El nombre de este artículo.  - `obstacles`: Tipo de obstáculos potenciales entre el sensor y la fuente de ruido.  - `owner`: Una lista que contiene una secuencia de caracteres codificada en JSON que hace referencia a los identificadores únicos de los propietarios  - `refDevice`: Una referencia al dispositivo que captó esta observación.  - `refPointOfInterest`: Una referencia a un punto de interés asociado a esta observación.  - `refWeatherObserved`: Referencia a las condiciones meteorológicas asociadas.  - `seeAlso`: lista de uri que apuntan a recursos adicionales sobre el artículo  - `sonometerClass`: Clase de sonómetro (0, 1, 2) según ANSI utilizado para tomar esta observación  - `source`: Una secuencia de caracteres que indica la fuente original de los datos de la entidad en forma de URL. Se recomienda que sea el nombre de dominio completo del proveedor de origen o la URL del objeto de origen.  - `type`: NGSI Tipo de entidad    
 Propiedades requeridas  
 - `dateObservedFrom`  - `dateObservedTo`  - `id`  - `location`  - `type`  ## Descripción del modelo de datos de las propiedades  
 Ordenados alfabéticamente (haga clic para ver los detalles)  
@@ -17,6 +17,26 @@
 NoiseLevelObserved:    
   description: 'An observation of those acoustic parameters that estimate noise pressure levels at a certain place and time. '    
   properties:    
+    LAS:    
+      description: 'The frequency weighted sound level (A-weighting) for a slow sound, one second mor more up and down.'    
+      type: number    
+      x-ngsi:    
+        type: Property    
+    LAeq:    
+      description: 'The frequency weighted Leq sound level (A-weighting).'    
+      type: number    
+      x-ngsi:    
+        type: Property    
+    LAeq_d:    
+      description: 'Acoustic Level frequency weigthed (A-weghting) equivalent for  a day'    
+      type: number    
+      x-ngsi:    
+        type: Property    
+    LAmax:    
+      description: 'Acoustic level frequency weigthed (A-weghting) maximum sound level'    
+      type: number    
+      x-ngsi:    
+        type: Property    
     address:    
       description: 'The mailing address'    
       properties:    
@@ -94,6 +114,18 @@ NoiseLevelObserved:
       type: string    
       x-ngsi:    
         type: Property    
+    distanceAverage:    
+      description: 'Average distance between sensor and potential noise sources'    
+      type: string    
+      x-ngsi:    
+        type: Property    
+        units: meters    
+    heightAverage:    
+      description: 'Type of potential obstacles between the sensor and the noise source'    
+      type: string    
+      x-ngsi:    
+        type: Property    
+        units: meters    
     id:    
       anyOf: &noiselevelobserved_-_properties_-_owner_-_items_-_anyof    
         - description: 'Property. Identifier format of any NGSI entity'    
@@ -262,6 +294,11 @@ NoiseLevelObserved:
         type: Geoproperty    
     name:    
       description: 'The name of this item.'    
+      type: string    
+      x-ngsi:    
+        type: Property    
+    obstacles:    
+      description: 'Type of potential obstacles between the sensor and the noise source.'    
       type: string    
       x-ngsi:    
         type: Property    
