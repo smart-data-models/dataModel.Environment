@@ -1,6 +1,26 @@
 NoiseLevelObserved:
   description: 'An observation of those acoustic parameters that estimate noise pressure levels at a certain place and time. '
   properties:
+    LAS:
+      description: 'The frequency weighted sound level (A-weighting) for a slow sound, one second mor more up and down.'
+      type: number
+      x-ngsi:
+        type: Property
+    LAeq:
+      description: 'The frequency weighted Leq sound level (A-weighting).'
+      type: number
+      x-ngsi:
+        type: Property
+    LAeq_d:
+      description: 'Acoustic Level frequency weigthed (A-weghting) equivalent for  a day'
+      type: number
+      x-ngsi:
+        type: Property
+    LAmax:
+      description: 'Acoustic level frequency weigthed (A-weghting) maximum sound level'
+      type: number
+      x-ngsi:
+        type: Property
     address:
       description: 'The mailing address'
       properties:
@@ -78,6 +98,18 @@ NoiseLevelObserved:
       type: string
       x-ngsi:
         type: Property
+    distanceAverage:
+      description: 'Average distance between sensor and potential noise sources'
+      type: string
+      x-ngsi:
+        type: Property
+        units: meters
+    heightAverage:
+      description: 'Type of potential obstacles between the sensor and the noise source'
+      type: string
+      x-ngsi:
+        type: Property
+        units: meters
     id:
       anyOf: &noiselevelobserved_-_properties_-_owner_-_items_-_anyof
         - description: 'Property. Identifier format of any NGSI entity'
@@ -246,6 +278,11 @@ NoiseLevelObserved:
         type: Geoproperty
     name:
       description: 'The name of this item.'
+      type: string
+      x-ngsi:
+        type: Property
+    obstacles:
+      description: 'Type of potential obstacles between the sensor and the noise source.'
       type: string
       x-ngsi:
         type: Property
