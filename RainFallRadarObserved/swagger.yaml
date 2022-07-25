@@ -6,11 +6,11 @@
 components:
   schemas: 
     RainFallRadarObservation: 
-      $ref: "https://smart-data-models.github.io/dataModel.Environment/RainFallRadarObservation/model.yaml#/RainFallRadarObservation"
+      $ref: "https://smart-data-models.github.io/dataModel.Environment/RainFallRadarObserved/model.yaml#/RainFallRadarObserved"
 info:
   description:  |
     The Data Model is intended to measure the water slides on a predefined area by a set of 4 Location represented by a Geo property format.
-  title: RainFallRadarObservation
+  title: RainFallRadarObserved
   version: "1.0.0"
 openapi: "3.0.0"
 
@@ -25,7 +25,7 @@ paths:
           required: true
           schema: 
             enum: 
-              - RainFallRadarObservation
+              - RainFallRadarObserved
             type: string
       responses: 
         ? "200"
@@ -37,12 +37,12 @@ paths:
                   summary: "Key-Values Pairs"
                   value: 
                     - 
-                      $ref: "https://smart-data-models.github.io/dataModel.Environment/RainFallRadarObservation/examples/example.json"
+                      $ref: "https://smart-data-models.github.io/dataModel.Environment/RainFallRadarObserved/examples/example.json"
                 normalized: 
                   summary: "Normalized NGSI-LD"
                   value: 
                     - 
-                      $ref: "https://smart-data-models.github.io/dataModel.Environment/RainFallRadarObservation/examples/example-normalized.jsonld"
+                      $ref: "https://smart-data-models.github.io/dataModel.Environment/RainFallRadarObserved/examples/example-normalized.jsonld"
           description: OK
       tags: 
         - ngsi-ld
