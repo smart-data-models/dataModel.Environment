@@ -1,4 +1,4 @@
-RainFallRadarObservation:
+RainFallRadarObserved:
   description: 'The Data Model is intended to measure the water slides on a predefined area by a set of 4 Location represented by a Geo property format.'
   properties:
     address:
@@ -105,7 +105,7 @@ RainFallRadarObservation:
       x-ngsi:
         type: Property
     id:
-      anyOf: &rainfallradarobservation_-_properties_-_owner_-_items_-_anyof
+      anyOf: &rainfallradarobserved_-_properties_-_owner_-_items_-_anyof
         - description: 'Property. Identifier format of any NGSI entity'
           maxLength: 256
           minLength: 1
@@ -313,7 +313,7 @@ RainFallRadarObservation:
     owner:
       description: 'A List containing a JSON encoded sequence of characters referencing the unique Ids of the owner(s)'
       items:
-        anyOf: *rainfallradarobservation_-_properties_-_owner_-_items_-_anyof
+        anyOf: *rainfallradarobserved_-_properties_-_owner_-_items_-_anyof
         description: 'Property. Unique identifier of the entity'
       type: array
       x-ngsi:
@@ -412,8 +412,8 @@ RainFallRadarObservation:
         type: Property
     windDirection:
       description: 'Direction of the wind bet'
-      maximum: 180
-      minimum: -180
+      maximum: 360
+      minimum: 0
       type: number
       x-ngsi:
         model: http://schema.org/Number
