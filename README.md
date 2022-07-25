@@ -24,7 +24,7 @@ The following entity types are available:
 
 - [PhreaticObserved](https://github.com/smart-data-models/dataModel.Environment/blob/master/PhreaticObserved/README.md). The Data Model is intended to measure, observe and control the level and quality of groundwater at a given time (T), by a fixed or mobile monitoring system. Depending on the device used, it is also possible to measure the quality of water such as its electrical conductivity, its salt content, its temperature, etc. In this case, the values measured are processed by the Data Model `WaterObserved` and `WaterQualityObserved`. Additional Information about Attributes: For attributes dedicated to water, a MetaData attribute can also be used. it contains the `TimeStamp` in seconds, the `qualification` and control `status` of the measurement.
 
-- [RainFallRadarObservation](https://github.com/smart-data-models/dataModel.Environment/blob/master/RainFallRadarObservation/README.md). The Data Model is intended to measure the water slides on a predefined area by a set of 4 Location represented by a Geo property format.
+- [RainFallRadarObserved](https://github.com/smart-data-models/dataModel.Environment/blob/master/RainFallRadarObserved/README.md). The Data Model is intended to measure the water slides on a predefined area by a set of 4 Location represented by a Geo property format.
 
 - [IndoorEnvironmentObserved](https://github.com/smart-data-models/dataModel.Environment/blob/master/IndoorEnvironmentObserved/README.md). An observation of air and climate conditions for indoor environments.
 
