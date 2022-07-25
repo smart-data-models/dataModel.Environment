@@ -1,18 +1,20 @@
-エンティティRainFallRadarObservation（レインフォールレーダーオブザベーション  
-==================================================  
-[オープンライセンス](https://github.com/smart-data-models//dataModel.Environment/blob/master/RainFallRadarObservation/LICENSE.md)  
-[document generated automatically](https://docs.google.com/presentation/d/e/2PACX-1vTs-Ng5dIAwkg91oTTUdt8ua7woBXhPnwavZ0FxgR8BsAI_Ek3C5q97Nd94HS8KhP-r_quD4H0fgyt3/pub?start=false&loop=false&delayms=3000#slide=id.gb715ace035_0_60)  
-グローバルな記述です。**このデータモデルは、Geoプロパティ形式で表現された4つのLocationのセットによって、定義されたエリアでのウォータースライドを測定することを目的としています。  
+[![Smart Data Models](https://smartdatamodels.org/wp-content/uploads/2022/01/SmartDataModels_logo.png "Logo")](https://smartdatamodels.org)  
+エンティティRainFallRadarObserved  
+===========================  
+[オープンライセンス](https://github.com/smart-data-models//dataModel.Environment/blob/master/RainFallRadarObserved/LICENSE.md)  
+[ドキュメント自動生成](https://docs.google.com/presentation/d/e/2PACX-1vTs-Ng5dIAwkg91oTTUdt8ua7woBXhPnwavZ0FxgR8BsAI_Ek3C5q97Nd94HS8KhP-r_quD4H0fgyt3/pub?start=false&loop=false&delayms=3000#slide=id.gb715ace035_0_60)  
+グローバルな記述です。**Geo プロパティ形式で表現された 4 つの Location の集合によって、あらかじめ定義された領域の水 滑りを測定するためのデータモデルである**。  
+バージョン: 0.0.1  
 
-## プロパティのリスト  
+## プロパティ一覧  
 
-- `address`: 郵送先住所  - `alternateName`: このアイテムの別称  - `areaServed`: サービスや提供されるアイテムが提供される地理的なエリア  - `atmosphericPressure`: 気圧はヘクトパスカルで測定される。  - `cellsSize`: レーダーを構成する各セルの大きさ。測定の単位コード（テキスト）は、[UN/CEFACT Common Codes](http://wiki.goodrelations-vocabulary.org/Documentation/UN/CEFACT_Common_Codes)を用いて与えられます。例えば、**MTR**は**Meters**を表します。  - `dataProvider`: 調和されたデータ・エンティティの提供者を識別する一連の文字。  - `dateCreated`: エンティティの作成タイムスタンプ。これは通常、ストレージプラットフォームによって割り当てられます。  - `dateModified`: エンティティが最後に変更された時のタイムスタンプ。これは通常、ストレージプラットフォームによって割り当てられます。  - `dateObserved`: この観測の日付と時刻をISO8601 UTC形式で表したもの。特定の時間の瞬間、またはISO8601のインターバルで表すことができます。  - `dateObservedFrom`: 観測期間の開始日時が設定されています。dateObserved参照。特定の時間の瞬間、またはISO8601のインターバルで表すことができます。  - `dateObservedTo`: 観測期間の終了日と時間。dateObservedを参照してください。特定の時間の瞬間、またはISO8601のインターバルで表すことができます。  - `description`: このアイテムの説明  - `feelLikesTemperature`: アイテムの鑑賞温度  - `gustSpeed`: 観測された平均風速を超える高速の風が、数秒間だけ突然吹くこと。  - `id`: エンティティのユニークな識別子  - `illuminance`: (https://en.wikipedia.org/wiki/Illuminance）は、ルクス（lx）またはルーメン/平方メートル（cd-sr-m-2）で測定して観察されます。  - `location`: アイテムへのGeojson参照。Point、LineString、Polygon、MultiPoint、MultiLineString、MultiPolygonのいずれかです。  - `mapScale`: 地図の縮尺。セルサイズの長さと地図上の表現との関係  - `measuredArea`: 測定された表面の基準。単位コード（テキスト）は、[UN/CEFACT Common Codes](http://wiki.goodrelations-vocabulary.org/Documentation/UN/CEFACT_Common_Codes)を用いて与えられる。例えば、**MTK**はSquare Metersを表します。  - `name`: このアイテムの名前です。  - `numberOfCol`: rainFallradarContent`属性の読み取りを許可するコルの数  - `numberOfRow`: rainFallradarContent`属性の読み取りを許可する行数  - `owner`: オーナーのIDを参照するJSONエンコードされた文字列を含むリスト  - `rainFallRadarContent`: 観測された情報を提供したパスとファイル名  - `refDevice`: この観察を捉えた[デバイス](https://github.com/smart-data-models/dataModel.Device/blob/master/Device/doc/spec.md)への言及  - `refPointOfInterest`: 観測に関連する[PointOfInterest](https://github.com/smart-data-models/dataModel.PointOfInterest/blob/master/PointOfInterest/doc/spec.md)への言及  - `relativeHumidity`: 空気中の湿度。観測された瞬間の相対湿度（空気中の水蒸気量）  - `seeAlso`: アイテムに関する追加リソースを示すuriのリスト  - `source`: エンティティデータのオリジナルソースをURLで示す一連の文字。ソースプロバイダの完全修飾ドメイン名、またはソースオブジェクトのURLであることが推奨されます。  - `temperature`: アイテムの温度  - `type`: NGSIのEntityタイプ。RainFallRadarObservedでなければならない。  - `visibility`: 視認性のカテゴリー  - `weatherType`: 天気のテキスト説明  - `windDirection`: 風切り音の方向  - `windSpeed`: 風の強さ    
-必須項目  
-- `dateObserved`  - `id`  - `location`  - `rainFallRadarContent`  - `type`  ## データモデルによるプロパティの記述  
-アルファベット順（クリックすると詳細が表示されます）  
+- `address`: 郵送先住所  - `alternateName`: この項目の別称  - `areaServed`: サービスまたは提供品が提供される地理的な地域  - `atmosphericPressure`: ヘクトパスカルで観測される大気圧。  - `cellsSize`: レーダーを構成する各セルの大きさ。計測の単位コード（テキスト）は、[UN/CEFACT Common Codes](http://wiki.goodrelations-vocabulary.org/Documentation/UN/CEFACT_Common_Codes)を用いて与えられる。例えば、**MTR** は **Meters** を表す。  - `dataProvider`: 調和されたデータエンティティの提供者を識別する一連の文字。  - `dateCreated`: エンティティの作成タイムスタンプ。これは通常、ストレージプラットフォームによって割り当てられる。  - `dateModified`: エンティティの最終更新のタイムスタンプ。これは通常、ストレージプラットフォームによって割り当てられる。  - `dateObserved`: ISO8601 UTCフォーマットでのこの観測の日付と時間。これは特定の時間の瞬間かISO8601のインターバルで表すことができます。  - `dateObservedFrom`: 観測期間開始日時。dateObservedを参照。特定の時間の瞬間、またはISO8601のインターバルで表すことができる  - `dateObservedTo`: 観測期間終了日時。dateObservedを参照。特定の時間の瞬間、またはISO8601のインターバルで表すことができる  - `description`: このアイテムの説明  - `feelLikesTemperature`: アイテムの温度評価  - `gustSpeed`: 観測された平均風速を超える高速の風が突然発生し、数秒しか続かないこと。  - `id`: エンティティの一意な識別子  - `illuminance`: (https://en.wikipedia.org/wiki/Illuminance) ルクス（lx）またはルーメン／平方メートル（cd-sr-m-2）で観測された。  - `location`: アイテムへの Geojson リファレンス。Point, LineString, Polygon, MultiPoint, MultiLineString, MultiPolygonのいずれかを指定することができる。  - `mapScale`: 地図の縮尺。cellSizeの長さと地図上の表現の関係  - `measuredArea`: 測定した表面の基準。単位コード（テキスト）は、[UN/CEFACT Common Codes](http://wiki.goodrelations-vocabulary.org/Documentation/UN/CEFACT_Common_Codes)を用いて与えられる。例えば、**MTK**はSquare Meters（平方メートル）を表す。  - `name`: このアイテムの名称です。  - `numberOfCol`: rainFallradarContent` 属性の読み込みを許可するコルの数  - `numberOfRow`: rainFallradarContent` 属性の読み込みを許可する行数  - `owner`: 所有者の一意のIDを参照するJSONエンコードされた文字列を含むリスト  - `rainFallRadarContent`: 観測された情報を提供したパスとファイル名  - `refDevice`: この観測を捉えた[デバイス](https://github.com/smart-data-models/dataModel.Device/blob/master/Device/doc/spec.md)への言及  - `refPointOfInterest`: 観測とリンクしている[PointOfInterest](https://github.com/smart-data-models/dataModel.PointOfInterest/blob/master/PointOfInterest/doc/spec.md)への参照。  - `relativeHumidity`: 空気中の湿度。観測された瞬間的な相対湿度（空気中の水蒸気量）  - `seeAlso`: 項目に関する追加リソースを指すURIのリスト。  - `source`: エンティティデータの元のソースをURLで示す一連の文字。ソースプロバイダの完全修飾ドメイン名、またはソースオブジェクトのURLであることが推奨されます。  - `temperature`: アイテムの温度  - `type`: NGSI Entity タイプ。RainFallRadarObservedでなければならない。  - `visibility`: 視認性のカテゴリー  - `weatherType`: 天気予報のテキスト説明  - `windDirection`: 風のベットの向き  - `windSpeed`: 風の強さ    
+必要なプロパティ  
+- `dateObserved`  - `id`  - `location`  - `rainFallRadarContent`  - `type`  ## プロパティのデータモデル記述  
+アルファベット順に並びます（クリックで詳細へ）  
 <details><summary><strong>full yaml details</strong></summary>    
 ```yaml  
-RainFallRadarObservation:    
+RainFallRadarObserved:    
   description: 'The Data Model is intended to measure the water slides on a predefined area by a set of 4 Location represented by a Geo property format.'    
   properties:    
     address:    
@@ -119,7 +121,7 @@ RainFallRadarObservation:
       x-ngsi:    
         type: Property    
     id:    
-      anyOf: &rainfallradarobservation_-_properties_-_owner_-_items_-_anyof    
+      anyOf: &rainfallradarobserved_-_properties_-_owner_-_items_-_anyof    
         - description: 'Property. Identifier format of any NGSI entity'    
           maxLength: 256    
           minLength: 1    
@@ -327,7 +329,7 @@ RainFallRadarObservation:
     owner:    
       description: 'A List containing a JSON encoded sequence of characters referencing the unique Ids of the owner(s)'    
       items:    
-        anyOf: *rainfallradarobservation_-_properties_-_owner_-_items_-_anyof    
+        anyOf: *rainfallradarobserved_-_properties_-_owner_-_items_-_anyof    
         description: 'Property. Unique identifier of the entity'    
       type: array    
       x-ngsi:    
@@ -426,8 +428,8 @@ RainFallRadarObservation:
         type: Property    
     windDirection:    
       description: 'Direction of the wind bet'    
-      maximum: 180    
-      minimum: -180    
+      maximum: 360    
+      minimum: 0    
       type: number    
       x-ngsi:    
         model: http://schema.org/Number    
@@ -448,15 +450,15 @@ RainFallRadarObservation:
   type: object    
   x-derived-from: ""    
   x-disclaimer: 'Redistribution and use in source and binary forms, with or without modification, are permitted  provided that the license conditions are met. Copyleft (c) 2021 Contributors to Smart Data Models Program'    
-  x-license-url: https://github.com/smart-data-models/dataModel.Environment/blob/master/RainFallRadarObservation/LICENSE.md    
+  x-license-url: https://github.com/smart-data-models/dataModel.Environment/blob/master/RainFallRadarObserved/LICENSE.md    
   x-model-schema: https://smart-data-models.github.io/dataModel.Weather/RainFallRadarObserved/schema.json    
   x-model-tags: ""    
   x-version: 0.0.1    
 ```  
 </details>    
 ## ペイロードの例  
-#### RainFallRadarObservation NGSI-v2 キーバリューの例  
-JSON-LD形式のRainFallRadarObservationをkey-valuesで表現した例です。これは`options=keyValues`を使った場合のNGSI-v2との互換性があり、個々のエンティティのコンテキストデータを返します。  
+#### RainFallRadarObserved NGSI-v2 key-value の例。  
+以下はRainFallRadarObservedをJSON-LD形式でkey-valuesにした例である。これは、`options=keyValues`を使用した場合にNGSI-v2と互換性があり、個々のエンティティのコンテキストデータが返される。  
 ```json  
 {  
   "id": "urn:ngsi-ld:RainFallRadarObserved:RainFallRadarObserved:MNCA-RFRO-018",  
@@ -492,8 +494,8 @@ RainFallRadarObservation:
   "measuredArea": 250  
 }  
 ```  
-#### RainFallRadarObservation NGSI-v2の正規化例。  
-ここでは、JSON-LD形式のRainFallRadarObservationを正規化した例を示します。これは、オプションを使用しない場合のNGSI-v2との互換性があり、個々のエンティティのコンテキストデータを返します。  
+#### RainFallRadarObserved NGSI-v2 正規化例  
+以下は、RainFallRadarObservedを正規化したJSON-LD形式の例である。これはオプションを使用しない場合、NGSI-v2と互換性があり、個々のエンティティのコンテキストデータを返します。  
 ```json  
 {  
 	"id": "urn:ngsi-ld:RainFallRadarObserved:RainFallRadarObserved:MNCA-RFRO-018",  
@@ -586,177 +588,178 @@ RainFallRadarObservation:
 	}  
 }  
 ```  
-#### RainFallRadarObservation NGSI-LDのキーバリューの例  
-JSON-LD形式でRainFallRadarObservationをkey-valuesとして表現した例です。これは、`options=keyValues`を使った場合のNGSI-LDとの互換性があり、個々のエンティティのコンテキストデータを返します。  
+#### RainFallRadarObserved NGSI-LD キー値例  
+RainFallRadarObservedをJSON-LD形式でkey-valuesにした例です。これは、`options=keyValues`を使用した場合にNGSI-LDと互換性があり、個々のエンティティのコンテキストデータを返します。  
 ```json  
 {  
-  "id": "urn:ngsi-ld:RainFallRadarObserved:RainFallRadarObserved:MNCA-RFRO-018",  
-  "type": "RainFallRadarObserved",  
-  "name": {  
-    "type": "Property",  
-    "value": "MNCA-RFRO-018"  
-  },  
-  "alternateName": {  
-    "type": "Property",  
-    "value": "AirPort \u0096 global Observation"  
-  },  
-  "description": {  
-    "type": "Property",  
-    "value": "Rain fall Radar Observation"  
-  },  
-  "location": {  
-    "type": "GeoProperty",  
-    "value": {  
-      "type": "polygon",  
-      "coordinates": [  
-        [  
-          [  
-            43.66,  
-            7.19  
-          ],  
-          [  
-            44.66,  
-            7.19  
-          ],  
-          [  
-            44.66,  
-            7.21  
-          ],  
-          [  
-            43.66,  
-            7.21  
-          ],  
-          [  
-            43.66,  
-            7.19  
-          ]  
-        ]  
-      ]  
-    }  
-  },  
-  "address": {  
-    "type": "Property",  
-    "value": {  
-      "addressCountry": "FR",  
-      "addressLocality": "Nice",  
-      "streetAddress": "Airport Area Coverage + 4 km distance"  
-    }  
-  },  
-  "areaServed": {  
-    "type": "Property",  
-    "value": "Nice Aeroport"  
-  },  
-  "refDevice": {  
-    "type": "Relationship",  
-    "object": "urn:ngsi-ld:Device:NCE-RFRO-018"  
-  },  
-  "dateObserved": {  
-    "type": "Property",  
-    "value": {  
-      "type": "DateTime",  
-      "value": "2020-03-17T08:30:00Z"  
-    }  
-  },  
-  "dateObservedFrom": {  
-    "type": "Property",  
-    "value": {  
-      "type": "DateTime",  
-      "value": "2020-03-17T08:30:00Z"  
-    }  
-  },  
-  "dateObservedTo": {  
-    "type": "Property",  
-    "value": {  
-      "type": "DateTime",  
-      "value": "2020-03-17T08:45:00Z"  
-    }  
-  },  
-  "rainFallRadarContent": {  
-    "type": "Property",  
-    "value": "https://particuliers/rainFallRadar/NCE-RFRO-018-2020-03-17T08:30:00"  
-  },  
-  "numberOfRow": {  
-    "type": "Property",  
-    "value": 25  
-  },  
-  "numberOfCol": {  
-    "type": "Property",  
-    "value": 48  
-  },  
-  "cellsSize": {  
-    "type": "Property",  
-    "value": 1  
-  },  
-  "mapScale": {  
-    "type": "Property",  
-    "value": "1/10.000"  
-  },  
-  "measuredArea": {  
-    "type": "Property",  
-    "value": 250  
-  },  
-  "@context": [  
-    "https://raw.githubusercontent.com/smart-data-models/data-models/master/context.jsonld",  
-    "https://uri.etsi.org/ngsi-ld/v1/ngsi-ld-core-context.jsonld"  
-  ]  
-}  
-```  
-#### RainFallRadarObservation NGSI-LDの正規化例。  
-ここでは、JSON-LD形式のRainFallRadarObservationを正規化した例を示します。これは、オプションを使用しない場合のNGSI-LDとの互換性があり、個々のエンティティのコンテキストデータを返します。  
-```json  
-{  
-  "id": "urn:ngsi-ld:RainFallRadarObserved:RainFallRadarObserved:MNCA-RFRO-018",  
-  "type": "RainFallRadarObserved",  
-  "name": "MNCA-RFRO-018",  
-  "alternateName": "AirPort global Observation",  
-  "description": "Rain fall Radar Observation",  
-  "location": {  
-    "type": "Polygon",  
-    "coordinates": [  
-      [  
-        [  
-          43.66,  
-          7.19  
-        ],  
-        [  
-          44.66,  
-          7.19  
-        ],  
-        [  
-          44.66,  
-          7.21  
-        ],  
-        [  
-          43.66,  
-          7.21  
-        ],  
-        [  
-          43.66,  
-          7.19  
-        ]  
-      ]  
+    "id": "urn:ngsi-ld:RainFallRadarObserved:RainFallRadarObserved:MNCA-RFRO-018",  
+    "type": "RainFallRadarObserved",  
+    "address": {  
+        "type": "Property",  
+        "value": {  
+            "addressCountry": "FR",  
+            "addressLocality": "Nice",  
+            "streetAddress": "Airport Area Coverage + 4 km distance"  
+        }  
+    },  
+    "alternateName": {  
+        "type": "Property",  
+        "value": "AirPort \u0096 global Observation"  
+    },  
+    "areaServed": {  
+        "type": "Property",  
+        "value": "Nice Aeroport"  
+    },  
+    "cellsSize": {  
+        "type": "Property",  
+        "value": 1  
+    },  
+    "dateObserved": {  
+        "type": "Property",  
+        "value": {  
+            "type": "DateTime",  
+            "value": "2020-03-17T08:30:00Z"  
+        }  
+    },  
+    "dateObservedFrom": {  
+        "type": "Property",  
+        "value": {  
+            "type": "DateTime",  
+            "value": "2020-03-17T08:30:00Z"  
+        }  
+    },  
+    "dateObservedTo": {  
+        "type": "Property",  
+        "value": {  
+            "type": "DateTime",  
+            "value": "2020-03-17T08:45:00Z"  
+        }  
+    },  
+    "description": {  
+        "type": "Property",  
+        "value": "Rain fall Radar Observation"  
+    },  
+    "location": {  
+        "type": "GeoProperty",  
+        "value": {  
+            "type": "polygon",  
+            "coordinates": [  
+                [  
+                    [  
+                        43.66,  
+                        7.19  
+                    ],  
+                    [  
+                        44.66,  
+                        7.19  
+                    ],  
+                    [  
+                        44.66,  
+                        7.21  
+                    ],  
+                    [  
+                        43.66,  
+                        7.21  
+                    ],  
+                    [  
+                        43.66,  
+                        7.19  
+                    ]  
+                ]  
+            ]  
+        }  
+    },  
+    "mapScale": {  
+        "type": "Property",  
+        "value": "1/10.000"  
+    },  
+    "measuredArea": {  
+        "type": "Property",  
+        "value": 250  
+    },  
+    "name": {  
+        "type": "Property",  
+        "value": "MNCA-RFRO-018"  
+    },  
+    "numberOfCol": {  
+        "type": "Property",  
+        "value": 48  
+    },  
+    "numberOfRow": {  
+        "type": "Property",  
+        "value": 25  
+    },  
+    "rainFallRadarContent": {  
+        "type": "Property",  
+        "value": "https://particuliers/rainFallRadar/NCE-RFRO-018-2020-03-17T08:30:00"  
+    },  
+    "refDevice": {  
+        "type": "Relationship",  
+        "object": "urn:ngsi-ld:Device:NCE-RFRO-018"  
+    },  
+    "@context": [  
+        "https://raw.githubusercontent.com/smart-data-models/data-models/master/context.jsonld",  
+        "https://uri.etsi.org/ngsi-ld/v1/ngsi-ld-core-context.jsonld",  
+        "https://raw.githubusercontent.com/smart-data-models/dataModel.Environment/master/context.jsonld"  
     ]  
-  },  
-  "address": {  
-    "addressCountry": "FR",  
-    "addressLocality": "Nice",  
-    "streetAddress": "Airport Area Coverage + 4 km distance"  
-  },  
-  "areaServed": "Nice Aeroport",  
-  "refDevice": "urn:ngsi-ld:Device:NCE-RFRO-018",  
-  "dateObserved": "2020-03-17T08:30:00Z",  
-  "dateObservedFrom": "2020-03-17T08:30:00Z",  
-  "dateObservedTo": "2020-03-17T08:45:00Z",  
-  "rainFallRadarContent": "https://particuliers/rainFallRadar/NCE-RFRO-018-2020-03-17T08:30:00",  
-  "numberOfRow": 25,  
-  "numberOfCol": 48,  
-  "cellsSize": 1,  
-  "mapScale": "1/10.000",  
-  "measuredArea": 250,  
-  "@context": [  
-    "https://raw.githubusercontent.com/smart-data-models/data-models/master/context.jsonld",  
-    "https://uri.etsi.org/ngsi-ld/v1/ngsi-ld-core-context.jsonld"  
-  ]  
 }  
 ```  
-マグニチュード単位の扱いについては、[FAQ 10](https://smartdatamodels.org/index.php/faqs/)を参照してください。
+#### RainFallRadarObserved NGSI-LD 正規化例  
+以下は、RainFallRadarObservedを正規化したJSON-LD形式の例である。これはオプションを使用しない場合、NGSI-LDと互換性があり、個々のエンティティのコンテキストデータを返します。  
+```json  
+{  
+    "id": "urn:ngsi-ld:RainFallRadarObserved:RainFallRadarObserved:MNCA-RFRO-018",  
+    "type": "RainFallRadarObserved",  
+    "address": {  
+        "addressCountry": "FR",  
+        "addressLocality": "Nice",  
+        "streetAddress": "Airport Area Coverage + 4 km distance"  
+    },  
+    "alternateName": "AirPort global Observation",  
+    "areaServed": "Nice Aeroport",  
+    "cellsSize": 1,  
+    "dateObserved": "2020-03-17T08:30:00Z",  
+    "dateObservedFrom": "2020-03-17T08:30:00Z",  
+    "dateObservedTo": "2020-03-17T08:45:00Z",  
+    "description": "Rain fall Radar Observation",  
+    "location": {  
+        "type": "Polygon",  
+        "coordinates": [  
+            [  
+                [  
+                    43.66,  
+                    7.19  
+                ],  
+                [  
+                    44.66,  
+                    7.19  
+                ],  
+                [  
+                    44.66,  
+                    7.21  
+                ],  
+                [  
+                    43.66,  
+                    7.21  
+                ],  
+                [  
+                    43.66,  
+                    7.19  
+                ]  
+            ]  
+        ]  
+    },  
+    "mapScale": "1/10.000",  
+    "measuredArea": 250,  
+    "name": "MNCA-RFRO-018",  
+    "numberOfCol": 48,  
+    "numberOfRow": 25,  
+    "rainFallRadarContent": "https://particuliers/rainFallRadar/NCE-RFRO-018-2020-03-17T08:30:00",  
+    "refDevice": "urn:ngsi-ld:Device:NCE-RFRO-018",  
+    "@context": [  
+        "https://raw.githubusercontent.com/smart-data-models/data-models/master/context.jsonld",  
+        "https://uri.etsi.org/ngsi-ld/v1/ngsi-ld-core-context.jsonld"  
+    ]  
+}  
+```  
+マグニチュード単位の扱いについては、[FAQ 10](https://smartdatamodels.org/index.php/faqs/)を参照してください。  
