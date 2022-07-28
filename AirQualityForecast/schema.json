@@ -1,6 +1,6 @@
 {
   "$schema": "http://json-schema.org/schema#",
-  "$schemaVersion": "0.0.1",
+  "$schemaVersion": "0.0.2",
   "modelTags": "GreenMov",
   "$id": "https://smart-data-models.github.io/dataModel.Environment/AirQualityForecast/schema.json",
   "title": "Smart Data Models - Air quality Forecast schema",
@@ -89,16 +89,16 @@
           "type": "string",
           "format": "date-time",
           "description": "Property. The start of the validity period for this forecast as a ISO8601 format"
+        },
+        "validTo": {
+          "type": "string",
+          "format": "date-time",
+          "description": "Property. The end of the validity period for this forecast as a ISO8601 format"
+        },
+        "validity": {
+          "type": "string",
+          "description": "Property. Model:'https://schema.org/Text'. Includes the validity period for this forecast as a ISO8601 time interval."
         }
-      },
-      "validTo": {
-        "type": "string",
-        "format": "date-time",
-        "description": "Property. The end of the validity period for this forecast as a ISO8601 format"
-      },
-      "validity": {
-        "type": "string",
-        "description": "Property. Model:'https://schema.org/Text'. Includes the validity period for this forecast as a ISO8601 time interval."
       }
     }
   ],
