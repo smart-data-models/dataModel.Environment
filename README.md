@@ -16,6 +16,10 @@ The following entity types are available:
 
 - [EnvironmentObserved](https://github.com/smart-data-models/dataModel.Environment/blob/master/EnvironmentObserved/README.md). This entity contains a harmonised description of the environmental conditions observed at a particular location and time. This entity is primarily associated with the vertical segment of the environment and agriculture but may also be used in smart home, smart cities, industry and related IoT applications.
 
+- [FloodMonitoring](https://github.com/smart-data-models/dataModel.Environment/blob/master/FloodMonitoring/README.md). Flood Sensor Data Model intended to represent the level of flooding w.r.t water flow/level at a certain water mass(river, lake,etc.)..
+
+- [IndoorEnvironmentObserved](https://github.com/smart-data-models/dataModel.Environment/blob/master/IndoorEnvironmentObserved/README.md). An observation of air and climate conditions for indoor environments.
+
 - [NoiseLevelObserved](https://github.com/smart-data-models/dataModel.Environment/blob/master/NoiseLevelObserved/README.md). An observation of those acoustic parameters that estimate noise pressure levels at a certain place and time. 
 
 - [NoisePollution](https://github.com/smart-data-models/dataModel.Environment/blob/master/NoisePollution/README.md). Noise Pollution data model merges specific and punctual noise measurements (coming, e.g. from NoiseLevelObservation entities) into average parameters referred to city areas, providing a more city-related data about noise pollution status and evolution.
@@ -26,9 +30,9 @@ The following entity types are available:
 
 - [RainFallRadarObserved](https://github.com/smart-data-models/dataModel.Environment/blob/master/RainFallRadarObserved/README.md). The Data Model is intended to measure the water slides on a predefined area by a set of 4 Location represented by a Geo property format.
 
-- [IndoorEnvironmentObserved](https://github.com/smart-data-models/dataModel.Environment/blob/master/IndoorEnvironmentObserved/README.md). An observation of air and climate conditions for indoor environments.
+- [TrafficEnvironmentImpact](https://github.com/smart-data-models/dataModel.Environment/blob/master/TrafficEnvironmentImpact/README.md). Environmental Impact of traffic based on the vehicles traffic and their emission characteristics
 
-- [FloodMonitoring](https://github.com/smart-data-models/dataModel.Environment/blob/master/FloodMonitoring/README.md). Flood Sensor Data Model intended to represent the level of flooding w.r.t water flow/level at a certain water mass(river, lake,etc.)..
+- [TrafficEnvironmentImpactForecast](https://github.com/smart-data-models/dataModel.Environment/blob/master/TrafficEnvironmentImpactForecast/README.md). Environmental Impact of traffic based on the vehicles traffic expectations and their emission characteristics
 
 
 
