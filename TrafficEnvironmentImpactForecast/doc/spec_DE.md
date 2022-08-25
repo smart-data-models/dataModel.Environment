@@ -4,11 +4,11 @@
 [Offene Lizenz](https://github.com/smart-data-models//dataModel.Environment/blob/master/TrafficEnvironmentImpactForecast/LICENSE.md)  
 [Dokument automatisch generiert](https://docs.google.com/presentation/d/e/2PACX-1vTs-Ng5dIAwkg91oTTUdt8ua7woBXhPnwavZ0FxgR8BsAI_Ek3C5q97Nd94HS8KhP-r_quD4H0fgyt3/pub?start=false&loop=false&delayms=3000#slide=id.gb715ace035_0_60)  
 Globale Beschreibung: **Umweltauswirkungen des Verkehrs auf der Grundlage der Verkehrserwartungen der Fahrzeuge und ihrer Emissionsmerkmale**  
-Version: 0.0.1  
+Version: 0.0.2  
 
 ## Liste der Eigenschaften  
 
-- `address`: Die Postanschrift  - `alternateName`: Ein alternativer Name für diesen Artikel  - `areaServed`: Das geografische Gebiet, in dem eine Dienstleistung oder ein angebotener Artikel erbracht wird  - `co2`: Die erwartete C02-Emissionskonzentration  - `dataProvider`: Eine Folge von Zeichen zur Identifizierung des Anbieters der harmonisierten Dateneinheit.  - `dateCreated`: Zeitstempel der Entitätserstellung. Dieser wird in der Regel von der Speicherplattform zugewiesen.  - `dateIssued`: Das Datum und die Uhrzeit, zu der die Vorhersage vom Diensteanbieter erstellt wurde, im Format ISO8601 UTC.  - `dateModified`: Zeitstempel der letzten Änderung der Entität. Dieser wird in der Regel von der Speicherplattform vergeben.  - `description`: Eine Beschreibung dieses Artikels  - `id`: Eindeutiger Bezeichner der Entität  - `location`: Geojson-Referenz auf das Element. Es kann Punkt, LineString, Polygon, MultiPoint, MultiLineString oder MultiPolygon sein  - `name`: Der Name dieses Artikels.  - `owner`: Eine Liste mit einer JSON-kodierten Zeichenfolge, die auf die eindeutigen Kennungen der Eigentümer verweist  - `seeAlso`: Liste von URLs, die auf zusätzliche Ressourcen zu dem Artikel verweisen  - `source`: Eine Folge von Zeichen, die die ursprüngliche Quelle der Entitätsdaten als URL angibt. Es wird empfohlen, den voll qualifizierten Domänennamen des Quellanbieters oder die URL des Quellobjekts zu verwenden.  - `traffic`: Eigenschaft  - `type`: NGSI-Typ. Es muss TrafficEnvironmentImpactForecast sein.  - `validFrom`: Beginn des Gültigkeitszeitraums dieser Prognose im ISO8601-Format  - `validTo`: Das Ende des Gültigkeitszeitraums dieser Prognose im ISO8601-Format  - `validity`: Enthält den Gültigkeitszeitraum für diese Prognose als ISO8601-Zeitintervall.    
+- `address`: Die Postanschrift  - `alternateName`: Ein alternativer Name für diesen Artikel  - `areaServed`: Das geografische Gebiet, in dem eine Dienstleistung oder ein angebotener Artikel erbracht wird  - `co2`: Die erwartete C02-Emissionskonzentration  - `dataProvider`: Eine Folge von Zeichen zur Identifizierung des Anbieters der harmonisierten Dateneinheit.  - `dateCreated`: Zeitstempel der Entitätserstellung. Dieser wird in der Regel von der Speicherplattform zugewiesen.  - `dateIssued`: Das Datum und die Uhrzeit, zu der die Vorhersage vom Diensteanbieter erstellt wurde, im Format ISO8601 UTC.  - `dateModified`: Zeitstempel der letzten Änderung der Entität. Dieser wird in der Regel von der Speicherplattform vergeben.  - `description`: Eine Beschreibung dieses Artikels  - `id`: Eindeutiger Bezeichner der Entität  - `location`: Geojson-Referenz auf das Element. Es kann Punkt, LineString, Polygon, MultiPoint, MultiLineString oder MultiPolygon sein  - `name`: Der Name dieses Artikels.  - `owner`: Eine Liste mit einer JSON-kodierten Zeichenfolge, die auf die eindeutigen Kennungen der Eigentümer verweist  - `seeAlso`: Liste von URLs, die auf zusätzliche Ressourcen zu dem Artikel verweisen  - `source`: Eine Folge von Zeichen, die die ursprüngliche Quelle der Entitätsdaten als URL angibt. Es wird empfohlen, den voll qualifizierten Domänennamen des Quellanbieters oder die URL des Quellobjekts zu verwenden.  - `traffic`: Array von Objekten, die die erwarteten Werte für Intensität, Besetzung und Geschwindigkeit der verschiedenen Fahrzeugtypen enthalten  - `type`: NGSI-Typ. Es muss TrafficEnvironmentImpactForecast sein  - `validFrom`: Beginn des Gültigkeitszeitraums dieser Prognose im ISO8601-Format  - `validTo`: Das Ende des Gültigkeitszeitraums dieser Prognose im ISO8601-Format  - `validity`: Enthält den Gültigkeitszeitraum für diese Prognose als ISO8601-Zeitintervall.    
 Erforderliche Eigenschaften  
 - `id`  - `type`  ## Datenmodell Beschreibung der Eigenschaften  
 Alphabetisch sortiert (für Details anklicken)  
@@ -284,7 +284,7 @@ TrafficEnvironmentImpactForecast:
       x-ngsi:    
         type: Property    
     traffic:    
-      description: property    
+      description: 'Array of objects containing the expected values for intensity, occupation an speed of the different vehicle types'    
       items:    
         properties:    
           averageVehicleSpeedExpected:    
@@ -305,8 +305,10 @@ TrafficEnvironmentImpactForecast:
             type: string    
         type: object    
       type: array    
+      x-ngsi:    
+        type: Property    
     type:    
-      description: 'NGSI type. it has to be TrafficEnvironmentImpactForecast'    
+      description: 'NGSI type. It has to be TrafficEnvironmentImpactForecast'    
       enum:    
         - TrafficEnvironmentImpact    
       type: string    
@@ -338,8 +340,8 @@ TrafficEnvironmentImpactForecast:
   x-disclaimer: 'Redistribution and use in source and binary forms, with or without modification, are permitted  provided that the license conditions are met. Copyleft (c) 2022 Contributors to Smart Data Models Program'    
   x-license-url: https://github.com/smart-data-models/dataModel.Environment/blob/master/TrafficEnvironmentImpactForecast/LICENSE.md    
   x-model-schema: https://smart-data-models.github.io/dataModel.Environment/TrafficEnvironmentImpactForecast/schema.json    
-  x-model-tags: ""    
-  x-version: 0.0.1    
+  x-model-tags: GreenMov    
+  x-version: 0.0.2    
 ```  
 </details>    
 ## Beispiel-Nutzlasten  
