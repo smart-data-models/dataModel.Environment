@@ -4,11 +4,11 @@
 [Open License](https://github.com/smart-data-models//dataModel.Environment/blob/master/NoisePollutionForecast/LICENSE.md)  
 [document generated automatically](https://docs.google.com/presentation/d/e/2PACX-1vTs-Ng5dIAwkg91oTTUdt8ua7woBXhPnwavZ0FxgR8BsAI_Ek3C5q97Nd94HS8KhP-r_quD4H0fgyt3/pub?start=false&loop=false&delayms=3000#slide=id.gb715ace035_0_60)  
 Global description: **Noise Pollution forecast stores the expectation about noise pollution based on some input elements and the noise elements present.**  
-version: 0.0.1  
+version: 0.0.2  
 
 ## List of properties  
 
-- `LANight`: Average sound level recorded during the night (8h)  - `LAeq`: Average sound level (equivalent) recorded during the measuring time  - `LAeq2`: Average sound level over the last 2 hours  - `LAeq_d`: Average sound level during the day (8h)  - `LAmax`: Maximum sound level recorded during the measuring time  - `LAmax2`: Maximum sound level recorded for the last 2 hours  - `address`: The mailing address  - `alternateName`: An alternative name for this item  - `areaServed`: The geographic area where a service or offered item is provided  - `dataProvider`: A sequence of characters identifying the provider of the harmonised data entity.  - `dateCreated`: Entity creation timestamp. This will usually be allocated by the storage platform.  - `dateIssued`: The date and time the forecast was issued by the service provider in ISO8601 UTC format.  - `dateModified`: Timestamp of the last modification of the entity. This will usually be allocated by the storage platform.  - `description`: A description of this item  - `id`: Unique identifier of the entity  - `location`: Geojson reference to the item. It can be Point, LineString, Polygon, MultiPoint, MultiLineString or MultiPolygon  - `name`: The name of this item.  - `noiseAnnoyanceIndex`: Index (1 to 10) according to noise annoyance level  - `noiseOrigin`: Main origin (source) of the recorded noise at installation of the sensor  - `owner`: A List containing a JSON encoded sequence of characters referencing the unique Ids of the owner(s)  - `seeAlso`: list of uri pointing to additional resources about the item  - `source`: A sequence of characters giving the original source of the entity data as a URL. Recommended to be the fully qualified domain name of the source provider, or the URL to the source object.  - `type`: NGSI type. it has to be NoisePollutionForecast  - `validFrom`: The start of the validity period for this forecast as a ISO8601 format  - `validTo`: The end of the validity period for this forecast as a ISO8601 format  - `validity`: Includes the validity period for this forecast as a ISO8601 time interval.    
+- `LANight`: Average sound level recorded during the night (8h)  - `LAeq`: Average sound level (equivalent) recorded during the measuring time  - `LAeq2`: Average sound level over the last 2 hours  - `LAeq_d`: Average sound level during the day (8h)  - `LAmax`: Maximum sound level recorded during the measuring time  - `LAmax2`: Maximum sound level recorded for the last 2 hours  - `address`: The mailing address  - `alternateName`: An alternative name for this item  - `areaServed`: The geographic area where a service or offered item is provided  - `dataProvider`: A sequence of characters identifying the provider of the harmonised data entity.  - `dateCreated`: Entity creation timestamp. This will usually be allocated by the storage platform.  - `dateIssued`: The date and time the forecast was issued by the service provider in ISO8601 UTC format.  - `dateModified`: Timestamp of the last modification of the entity. This will usually be allocated by the storage platform.  - `description`: A description of this item  - `id`: Unique identifier of the entity  - `location`: Geojson reference to the item. It can be Point, LineString, Polygon, MultiPoint, MultiLineString or MultiPolygon  - `name`: The name of this item.  - `noiseAnnoyanceIndex`: Index (1 to 10) according to noise annoyance level  - `noiseOrigin`: Main origin (source) of the recorded noise at installation of the sensor  - `owner`: A List containing a JSON encoded sequence of characters referencing the unique Ids of the owner(s)  - `seeAlso`: list of uri pointing to additional resources about the item  - `source`: A sequence of characters giving the original source of the entity data as a URL. Recommended to be the fully qualified domain name of the source provider, or the URL to the source object.  - `type`: NGSI type. It has to be NoisePollutionForecast  - `validFrom`: The start of the validity period for this forecast as a ISO8601 format  - `validTo`: The end of the validity period for this forecast as a ISO8601 format  - `validity`: Includes the validity period for this forecast as a ISO8601 time interval.    
 Required properties  
 - `id`  - `type`  ## Data Model description of properties  
 Sorted alphabetically (click for details)  
@@ -320,7 +320,7 @@ NoisePollutionForecast:
       x-ngsi:    
         type: Property    
     type:    
-      description: 'NGSI type. it has to be NoisePollutionForecast'    
+      description: 'NGSI type. It has to be NoisePollutionForecast'    
       enum:    
         - NoisePollutionForecast    
       type: string    
@@ -352,8 +352,8 @@ NoisePollutionForecast:
   x-disclaimer: 'Redistribution and use in source and binary forms, with or without modification, are permitted  provided that the license conditions are met. Copyleft (c) 2022 Contributors to Smart Data Models Program'    
   x-license-url: https://github.com/smart-data-models/dataModel.Environment/blob/master/NoisePollutionForecast/LICENSE.md    
   x-model-schema: https://smart-data-models.github.io/dataModel.Environment/NoisePollutionForecast/schema.json    
-  x-model-tags: ""    
-  x-version: 0.0.1    
+  x-model-tags: GreenMov    
+  x-version: 0.0.2    
 ```  
 </details>    
 ## Example payloads    
