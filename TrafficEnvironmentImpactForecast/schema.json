@@ -1,7 +1,7 @@
 {
   "$schema": "http://json-schema.org/schema#",
-  "$schemaVersion": "0.0.1",
-  "modelTags": "",
+  "$schemaVersion": "0.0.2",
+  "modelTags": "GreenMov",
   "$id": "https://smart-data-models.github.io/dataModel.Environment/TrafficEnvironmentImpactForecast/schema.json",
   "title": "Smart Data Models - Traffic Environment Impact Forecast",
   "description": "Environmental Impact of traffic based on the vehicles traffic expectations and their emission characteristics",
@@ -20,7 +20,7 @@
           "enum": [
             "TrafficEnvironmentImpact"
           ],
-          "description": "Property. NGSI type. it has to be TrafficEnvironmentImpactForecast"
+          "description": "Property. NGSI type. It has to be TrafficEnvironmentImpactForecast"
         },
         "co2": {
           "type": "number",
@@ -47,7 +47,7 @@
         },
         "traffic": {
           "type": "array",
-          "description": "property",
+          "description": "Property. Array of objects containing the expected values for intensity, occupation an speed of the different vehicle types",
           "items": {
             "type": "object",
             "properties": {

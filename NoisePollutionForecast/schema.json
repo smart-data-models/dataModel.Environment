@@ -1,7 +1,7 @@
 {
   "$schema": "http://json-schema.org/schema#",
-  "$schemaVersion": "0.0.1",
-  "modelTags": "",
+  "$schemaVersion": "0.0.2",
+  "modelTags": "GreenMov",
   "$id": "https://smart-data-models.github.io/dataModel.Environment/NoisePollutionForecast/schema.json",
   "title": "Smart Data Models - Noise Pollution Forecast",
   "description": "Noise Pollution forecast stores the expectation about noise pollution based on some input elements and the noise elements present.",
@@ -20,7 +20,7 @@
           "enum": [
             "NoisePollutionForecast"
           ],
-          "description": "Property. NGSI type. it has to be NoisePollutionForecast"
+          "description": "Property. NGSI type. It has to be NoisePollutionForecast"
         },
         "noiseAnnoyanceIndex": {
           "type": "number",
