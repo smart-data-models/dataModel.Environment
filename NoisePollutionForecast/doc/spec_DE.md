@@ -4,11 +4,11 @@
 [Offene Lizenz](https://github.com/smart-data-models//dataModel.Environment/blob/master/NoisePollutionForecast/LICENSE.md)  
 [Dokument automatisch generiert](https://docs.google.com/presentation/d/e/2PACX-1vTs-Ng5dIAwkg91oTTUdt8ua7woBXhPnwavZ0FxgR8BsAI_Ek3C5q97Nd94HS8KhP-r_quD4H0fgyt3/pub?start=false&loop=false&delayms=3000#slide=id.gb715ace035_0_60)  
 Globale Beschreibung: **Vorhersage der Lärmbelastung speichert die Erwartung über die Lärmbelastung auf der Grundlage einiger Eingabeelemente und der vorhandenen Lärmelemente.**  
-Version: 0.0.1  
+Version: 0.0.2  
 
 ## Liste der Eigenschaften  
 
-- `LANight`: Durchschnittlicher Schallpegel in der Nacht (8h)  - `LAeq`: Durchschnittlicher Schallpegel (Äquivalent), der während der Messzeit aufgezeichnet wurde  - `LAeq2`: Durchschnittlicher Schallpegel der letzten 2 Stunden  - `LAeq_d`: Durchschnittlicher Schallpegel während des Tages (8h)  - `LAmax`: Maximaler Schallpegel, der während der Messzeit aufgezeichnet wurde  - `LAmax2`: Maximal aufgezeichneter Schallpegel der letzten 2 Stunden  - `address`: Die Postanschrift  - `alternateName`: Ein alternativer Name für diesen Artikel  - `areaServed`: Das geografische Gebiet, in dem eine Dienstleistung oder ein angebotener Artikel erbracht wird  - `dataProvider`: Eine Folge von Zeichen zur Identifizierung des Anbieters der harmonisierten Dateneinheit.  - `dateCreated`: Zeitstempel der Entitätserstellung. Dieser wird in der Regel von der Speicherplattform zugewiesen.  - `dateIssued`: Das Datum und die Uhrzeit, zu der die Vorhersage vom Diensteanbieter erstellt wurde, im Format ISO8601 UTC.  - `dateModified`: Zeitstempel der letzten Änderung der Entität. Dieser wird in der Regel von der Speicherplattform vergeben.  - `description`: Eine Beschreibung dieses Artikels  - `id`: Eindeutiger Bezeichner der Entität  - `location`: Geojson-Referenz auf das Element. Es kann Punkt, LineString, Polygon, MultiPoint, MultiLineString oder MultiPolygon sein  - `name`: Der Name dieses Artikels.  - `noiseAnnoyanceIndex`: Index (1 bis 10) nach dem Grad der Lärmbelästigung  - `noiseOrigin`: Hauptursache (Quelle) des aufgezeichneten Lärms bei der Installation des Sensors  - `owner`: Eine Liste mit einer JSON-kodierten Zeichenfolge, die auf die eindeutigen Kennungen der Eigentümer verweist  - `seeAlso`: Liste von URLs, die auf zusätzliche Ressourcen zu dem Artikel verweisen  - `source`: Eine Folge von Zeichen, die die ursprüngliche Quelle der Entitätsdaten als URL angibt. Es wird empfohlen, den voll qualifizierten Domänennamen des Quellanbieters oder die URL des Quellobjekts zu verwenden.  - `type`: NGSI-Typ. es muss NoisePollutionForecast sein  - `validFrom`: Beginn des Gültigkeitszeitraums dieser Prognose im ISO8601-Format  - `validTo`: Das Ende des Gültigkeitszeitraums dieser Prognose im ISO8601-Format  - `validity`: Enthält den Gültigkeitszeitraum für diese Prognose als ISO8601-Zeitintervall.    
+- `LANight`: Durchschnittlicher Schallpegel in der Nacht (8h)  - `LAeq`: Durchschnittlicher Schallpegel (Äquivalent), der während der Messzeit aufgezeichnet wurde  - `LAeq2`: Durchschnittlicher Schallpegel der letzten 2 Stunden  - `LAeq_d`: Durchschnittlicher Schallpegel während des Tages (8h)  - `LAmax`: Maximaler Schallpegel, der während der Messzeit aufgezeichnet wurde  - `LAmax2`: Maximal aufgezeichneter Schallpegel der letzten 2 Stunden  - `address`: Die Postanschrift  - `alternateName`: Ein alternativer Name für diesen Artikel  - `areaServed`: Das geografische Gebiet, in dem eine Dienstleistung oder ein angebotener Artikel erbracht wird  - `dataProvider`: Eine Folge von Zeichen zur Identifizierung des Anbieters der harmonisierten Dateneinheit.  - `dateCreated`: Zeitstempel der Entitätserstellung. Dieser wird in der Regel von der Speicherplattform zugewiesen.  - `dateIssued`: Das Datum und die Uhrzeit, zu der die Vorhersage vom Diensteanbieter erstellt wurde, im Format ISO8601 UTC.  - `dateModified`: Zeitstempel der letzten Änderung der Entität. Dieser wird in der Regel von der Speicherplattform vergeben.  - `description`: Eine Beschreibung dieses Artikels  - `id`: Eindeutiger Bezeichner der Entität  - `location`: Geojson-Referenz auf das Element. Es kann Punkt, LineString, Polygon, MultiPoint, MultiLineString oder MultiPolygon sein  - `name`: Der Name dieses Artikels.  - `noiseAnnoyanceIndex`: Index (1 bis 10) nach dem Grad der Lärmbelästigung  - `noiseOrigin`: Hauptursache (Quelle) des aufgezeichneten Lärms bei der Installation des Sensors  - `owner`: Eine Liste mit einer JSON-kodierten Zeichenfolge, die auf die eindeutigen Kennungen der Eigentümer verweist  - `seeAlso`: Liste von URLs, die auf zusätzliche Ressourcen zu dem Artikel verweisen  - `source`: Eine Folge von Zeichen, die die ursprüngliche Quelle der Entitätsdaten als URL angibt. Es wird empfohlen, den voll qualifizierten Domänennamen des Quellanbieters oder die URL des Quellobjekts zu verwenden.  - `type`: NGSI-Typ. Es muss NoisePollutionForecast sein  - `validFrom`: Beginn des Gültigkeitszeitraums dieser Prognose im ISO8601-Format  - `validTo`: Das Ende des Gültigkeitszeitraums dieser Prognose im ISO8601-Format  - `validity`: Enthält den Gültigkeitszeitraum für diese Prognose als ISO8601-Zeitintervall.    
 Erforderliche Eigenschaften  
 - `id`  - `type`  ## Datenmodell Beschreibung der Eigenschaften  
 Alphabetisch sortiert (für Details anklicken)  
@@ -320,7 +320,7 @@ NoisePollutionForecast:
       x-ngsi:    
         type: Property    
     type:    
-      description: 'NGSI type. it has to be NoisePollutionForecast'    
+      description: 'NGSI type. It has to be NoisePollutionForecast'    
       enum:    
         - NoisePollutionForecast    
       type: string    
@@ -352,8 +352,8 @@ NoisePollutionForecast:
   x-disclaimer: 'Redistribution and use in source and binary forms, with or without modification, are permitted  provided that the license conditions are met. Copyleft (c) 2022 Contributors to Smart Data Models Program'    
   x-license-url: https://github.com/smart-data-models/dataModel.Environment/blob/master/NoisePollutionForecast/LICENSE.md    
   x-model-schema: https://smart-data-models.github.io/dataModel.Environment/NoisePollutionForecast/schema.json    
-  x-model-tags: ""    
-  x-version: 0.0.1    
+  x-model-tags: GreenMov    
+  x-version: 0.0.2    
 ```  
 </details>    
 ## Beispiel-Nutzlasten  
