@@ -4,11 +4,11 @@
 [Licencia abierta](https://github.com/smart-data-models//dataModel.Environment/blob/master/TrafficEnvironmentImpact/LICENSE.md)  
 [documento generado automáticamente](https://docs.google.com/presentation/d/e/2PACX-1vTs-Ng5dIAwkg91oTTUdt8ua7woBXhPnwavZ0FxgR8BsAI_Ek3C5q97Nd94HS8KhP-r_quD4H0fgyt3/pub?start=false&loop=false&delayms=3000#slide=id.gb715ace035_0_60)  
 Descripción global: **Impacto ambiental del tráfico basado en el tráfico de vehículos y sus características de emisión**  
-versión: 0.0.1  
+versión: 0.0.2  
 
 ## Lista de propiedades  
 
-- `address`: La dirección postal  - `alternateName`: Un nombre alternativo para este artículo  - `areaServed`: La zona geográfica en la que se presta un servicio o se ofrece un artículo  - `co2`: La concentración de emisiones de C02 medida  - `dataProvider`: Una secuencia de caracteres que identifica al proveedor de la entidad de datos armonizada.  - `dateCreated`: Marca de tiempo de creación de la entidad. Suele ser asignada por la plataforma de almacenamiento.  - `dateModified`: Marca de tiempo de la última modificación de la entidad. Normalmente será asignada por la plataforma de almacenamiento.  - `dateObservedFrom`: Fecha de inicio de la medición (timestamp) en ISO 8601  - `dateObservedTo`: Fecha de finalización de la medición (timestamp) en ISO 8601  - `description`: Una descripción de este artículo  - `id`: Identificador único de la entidad  - `location`: Referencia Geojson al elemento. Puede ser Point, LineString, Polygon, MultiPoint, MultiLineString o MultiPolygon  - `name`: El nombre de este artículo.  - `owner`: Una lista que contiene una secuencia de caracteres codificada en JSON que hace referencia a los identificadores únicos de los propietarios  - `seeAlso`: lista de uri que apuntan a recursos adicionales sobre el artículo  - `source`: Una secuencia de caracteres que indica la fuente original de los datos de la entidad en forma de URL. Se recomienda que sea el nombre de dominio completo del proveedor de origen o la URL del objeto de origen.  - `traffic`: propiedad  - `type`: Tipo NGSI. Tiene que ser TrafficEnvironmentImpact    
+- `address`: La dirección postal  - `alternateName`: Un nombre alternativo para este artículo  - `areaServed`: La zona geográfica en la que se presta un servicio o se ofrece un artículo  - `co2`: La concentración de emisiones de C02 medida  - `dataProvider`: Una secuencia de caracteres que identifica al proveedor de la entidad de datos armonizada.  - `dateCreated`: Marca de tiempo de creación de la entidad. Suele ser asignada por la plataforma de almacenamiento.  - `dateModified`: Marca de tiempo de la última modificación de la entidad. Normalmente será asignada por la plataforma de almacenamiento.  - `dateObservedFrom`: Fecha de inicio de la medición (timestamp) en ISO 8601  - `dateObservedTo`: Fecha de finalización de la medición (timestamp) en ISO 8601  - `description`: Una descripción de este artículo  - `id`: Identificador único de la entidad  - `location`: Referencia Geojson al elemento. Puede ser Point, LineString, Polygon, MultiPoint, MultiLineString o MultiPolygon  - `name`: El nombre de este artículo.  - `owner`: Una lista que contiene una secuencia de caracteres codificada en JSON que hace referencia a los identificadores únicos de los propietarios  - `seeAlso`: lista de uri que apuntan a recursos adicionales sobre el artículo  - `source`: Una secuencia de caracteres que indica la fuente original de los datos de la entidad en forma de URL. Se recomienda que sea el nombre de dominio completo del proveedor de origen o la URL del objeto de origen.  - `traffic`: Conjunto de objetos que contienen los diferentes tipos de vehículos y sus relaciones con el objeto de las observaciones del flujo de tráfico  - `type`: Tipo de NGSI. Tiene que ser TrafficEnvironmentImpact    
 Propiedades requeridas  
 - `id`  - `type`  ## Descripción del modelo de datos de las propiedades  
 Ordenados alfabéticamente (haga clic para ver los detalles)  
@@ -290,7 +290,7 @@ TrafficEnvironmentImpact:
       x-ngsi:    
         type: Property    
     traffic:    
-      description: property    
+      description: 'Array of objects containing the different types of vehicles and its relations with the object of the traffic flow observations'    
       items:    
         properties:    
           refTrafficFlowObserved:    
@@ -305,12 +305,14 @@ TrafficEnvironmentImpact:
                 type: string    
             description: 'Relationship. Unique identifier of the entity TrafficObserved with the averageVehicleSpeed, averageOccupancy and intensity'    
           vehicleClass:    
-            description: 'Property. enumeration of the vehicle classes'    
+            description: 'Property. Enumeration of the vehicle classes'    
             type: string    
         type: object    
       type: array    
+      x-ngsi:    
+        type: Property    
     type:    
-      description: 'NGSI type. it has to be TrafficEnvironmentImpact'    
+      description: 'NGSI type. It has to be TrafficEnvironmentImpact'    
       enum:    
         - TrafficEnvironmentImpact    
       type: string    
@@ -324,8 +326,8 @@ TrafficEnvironmentImpact:
   x-disclaimer: 'Redistribution and use in source and binary forms, with or without modification, are permitted  provided that the license conditions are met. Copyleft (c) 2022 Contributors to Smart Data Models Program'    
   x-license-url: https://github.com/smart-data-models/dataModel.Environment/blob/master/TrafficEnvironmentImpact/LICENSE.md    
   x-model-schema: https://smart-data-models.github.io/dataModel.Environment/TrafficEnvironmentImpact/schema.json    
-  x-model-tags: ""    
-  x-version: 0.0.1    
+  x-model-tags: GreenMov    
+  x-version: 0.0.2    
 ```  
 </details>    
 ## Ejemplo de carga útil  
@@ -537,7 +539,7 @@ TrafficEnvironmentImpact:
 }  
 ```  
 #### Impacto ambiental del tráfico NGSI-LD normalizado Ejemplo  
-He aquí un ejemplo de un TrafficEnvironmentImpact en formato JSON-LD normalizado. Esto es compatible con NGSI-LD cuando no se utilizan opciones y devuelve los datos de contexto de una entidad individual.  
+Este es un ejemplo de un TrafficEnvironmentImpact en formato JSON-LD normalizado. Esto es compatible con NGSI-LD cuando no se utilizan opciones y devuelve los datos de contexto de una entidad individual.  
 ```json  
 {  
   "id": "urn:ngsi-ld:TrafficEnvironmentImpact:id:BGGK:76812356",  
