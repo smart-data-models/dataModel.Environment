@@ -4,11 +4,11 @@
 [Licenza aperta](https://github.com/smart-data-models//dataModel.Environment/blob/master/TrafficEnvironmentImpactForecast/LICENSE.md)  
 [documento generato automaticamente](https://docs.google.com/presentation/d/e/2PACX-1vTs-Ng5dIAwkg91oTTUdt8ua7woBXhPnwavZ0FxgR8BsAI_Ek3C5q97Nd94HS8KhP-r_quD4H0fgyt3/pub?start=false&loop=false&delayms=3000#slide=id.gb715ace035_0_60)  
 Descrizione globale: **Impatto ambientale del traffico basato sulle aspettative di traffico dei veicoli e sulle loro caratteristiche di emissione**  
-versione: 0.0.1  
+versione: 0.0.2  
 
 ## Elenco delle proprietà  
 
-- `address`: L'indirizzo postale  - `alternateName`: Un nome alternativo per questa voce  - `areaServed`: L'area geografica in cui viene fornito il servizio o l'articolo offerto.  - `co2`: La concentrazione di emissioni di C02 prevista  - `dataProvider`: Una sequenza di caratteri che identifica il fornitore dell'entità di dati armonizzata.  - `dateCreated`: Timestamp di creazione dell'entità. Di solito viene assegnato dalla piattaforma di archiviazione.  - `dateIssued`: La data e l'ora in cui la previsione è stata emessa dal fornitore di servizi in formato ISO8601 UTC.  - `dateModified`: Timestamp dell'ultima modifica dell'entità. Di solito viene assegnato dalla piattaforma di archiviazione.  - `description`: Descrizione dell'articolo  - `id`: Identificatore univoco dell'entità  - `location`: Riferimento Geojson all'elemento. Può essere un punto, una stringa di linea, un poligono, un multi-punto, una stringa di linea o un poligono multiplo.  - `name`: Il nome di questo elemento.  - `owner`: Un elenco contenente una sequenza di caratteri codificata JSON che fa riferimento agli ID univoci dei proprietari.  - `seeAlso`: elenco di uri che puntano a risorse aggiuntive sull'elemento  - `source`: Una sequenza di caratteri che indica la fonte originale dei dati dell'entità come URL. Si consiglia di utilizzare il nome di dominio completamente qualificato del provider di origine o l'URL dell'oggetto di origine.  - `traffic`: proprietà  - `type`: Tipo NGSI. deve essere TrafficEnvironmentImpactForecast.  - `validFrom`: L'inizio del periodo di validità di questa previsione in formato ISO8601.  - `validTo`: La fine del periodo di validità di questa previsione in formato ISO8601.  - `validity`: Include il periodo di validità di questa previsione come intervallo di tempo ISO8601.    
+- `address`: L'indirizzo postale  - `alternateName`: Un nome alternativo per questa voce  - `areaServed`: L'area geografica in cui viene fornito il servizio o l'articolo offerto.  - `co2`: La concentrazione di emissioni di C02 prevista  - `dataProvider`: Una sequenza di caratteri che identifica il fornitore dell'entità di dati armonizzata.  - `dateCreated`: Timestamp di creazione dell'entità. Di solito viene assegnato dalla piattaforma di archiviazione.  - `dateIssued`: La data e l'ora in cui la previsione è stata emessa dal fornitore di servizi in formato ISO8601 UTC.  - `dateModified`: Timestamp dell'ultima modifica dell'entità. Di solito viene assegnato dalla piattaforma di archiviazione.  - `description`: Descrizione dell'articolo  - `id`: Identificatore univoco dell'entità  - `location`: Riferimento Geojson all'elemento. Può essere un punto, una stringa di linea, un poligono, un multi-punto, una stringa di linea o un poligono multiplo.  - `name`: Il nome di questo elemento.  - `owner`: Un elenco contenente una sequenza di caratteri codificata JSON che fa riferimento agli ID univoci dei proprietari.  - `seeAlso`: elenco di uri che puntano a risorse aggiuntive sull'elemento  - `source`: Una sequenza di caratteri che indica la fonte originale dei dati dell'entità come URL. Si consiglia di utilizzare il nome di dominio completamente qualificato del provider di origine o l'URL dell'oggetto di origine.  - `traffic`: Array di oggetti contenenti i valori previsti per l'intensità, l'occupazione e la velocità dei diversi tipi di veicolo  - `type`: Tipo NGSI. Deve essere TrafficEnvironmentImpactForecast.  - `validFrom`: L'inizio del periodo di validità di questa previsione in formato ISO8601.  - `validTo`: La fine del periodo di validità di questa previsione in formato ISO8601.  - `validity`: Include il periodo di validità di questa previsione come intervallo di tempo ISO8601.    
 Proprietà richieste  
 - `id`  - `type`  ## Modello di dati descrizione delle proprietà  
 Ordinati in ordine alfabetico (clicca per i dettagli)  
@@ -284,7 +284,7 @@ TrafficEnvironmentImpactForecast:
       x-ngsi:    
         type: Property    
     traffic:    
-      description: property    
+      description: 'Array of objects containing the expected values for intensity, occupation an speed of the different vehicle types'    
       items:    
         properties:    
           averageVehicleSpeedExpected:    
@@ -305,8 +305,10 @@ TrafficEnvironmentImpactForecast:
             type: string    
         type: object    
       type: array    
+      x-ngsi:    
+        type: Property    
     type:    
-      description: 'NGSI type. it has to be TrafficEnvironmentImpactForecast'    
+      description: 'NGSI type. It has to be TrafficEnvironmentImpactForecast'    
       enum:    
         - TrafficEnvironmentImpact    
       type: string    
@@ -338,8 +340,8 @@ TrafficEnvironmentImpactForecast:
   x-disclaimer: 'Redistribution and use in source and binary forms, with or without modification, are permitted  provided that the license conditions are met. Copyleft (c) 2022 Contributors to Smart Data Models Program'    
   x-license-url: https://github.com/smart-data-models/dataModel.Environment/blob/master/TrafficEnvironmentImpactForecast/LICENSE.md    
   x-model-schema: https://smart-data-models.github.io/dataModel.Environment/TrafficEnvironmentImpactForecast/schema.json    
-  x-model-tags: ""    
-  x-version: 0.0.1    
+  x-model-tags: GreenMov    
+  x-version: 0.0.2    
 ```  
 </details>    
 ## Esempi di payload  
@@ -513,7 +515,7 @@ TrafficEnvironmentImpactForecast:
   }  
 }  
 ```  
-#### TrafficoAmbienteImpattoPrevisione Valori chiave NGSI-LD Esempio  
+#### TrafficoAmbienteImpattoPrevisione valori chiave NGSI-LD Esempio  
 Ecco un esempio di TrafficEnvironmentImpactForecast in formato JSON-LD come valori-chiave. Questo è compatibile con NGSI-LD quando si usa `options=keyValues` e restituisce i dati di contesto di una singola entità.  
 ```json  
 {  
