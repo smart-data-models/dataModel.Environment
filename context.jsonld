@@ -1,5 +1,6 @@
 {
     "@context": {
+        "LANight": "https://smartdatamodels.org/dataModel.Environment/LANight",
         "LAS": "https://smartdatamodels.org/dataModel.Environment/LAS",
         "LAeq": "https://smartdatamodels.org/dataModel.Environment/LAeq",
         "LAeq2": "https://smartdatamodels.org/dataModel.Environment/LAeq2",
@@ -36,6 +37,7 @@
         "dangerLevel": "https://smartdatamodels.org/dataModel.Environment/dangerLevel",
         "dataProvider": "https://smartdatamodels.org/dataProvider",
         "dateCreated": "https://smartdatamodels.org/dateCreated",
+        "dateIssued": "https://smartdatamodels.org/dataModel.Environment/dateIssued",
         "dateModified": "https://smartdatamodels.org/dateModified",
         "dateObserved": "https://smartdatamodels.org/dateObserved",
         "dateObservedFrom": "https://smartdatamodels.org/dataModel.Environment/dateObservedFrom",
@@ -121,10 +123,13 @@
         "swellHeight": "https://smartdatamodels.org/dataModel.Environment/swellHeight",
         "swellPeriod": "https://smartdatamodels.org/dataModel.Environment/swellPeriod",
         "temperature": "https://smartdatamodels.org/dataModel.Environment/temperature",
+        "traffic": "https://smartdatamodels.org/dataModel.Environment/traffic",
         "type": "@type",
         "typeofLocation": "https://smartdatamodels.org/dataModel.Environment/typeofLocation",
         "uvTSA": "https://smartdatamodels.org/dataModel.Environment/uvTSA",
         "validFrom": "https://smartdatamodels.org/dataModel.Environment/validFrom",
+        "validTo": "https://smartdatamodels.org/dataModel.Environment/validTo",
+        "validity": "https://smartdatamodels.org/dataModel.Environment/validity",
         "versionInfo": "https://smartdatamodels.org/dataModel.Environment/versionInfo",
         "visibility": "https://smartdatamodels.org/dataModel.Environment/visibility",
         "volatileOrganicCompoundsTotal": "https://smartdatamodels.org/dataModel.Environment/volatileOrganicCompoundsTotal",
