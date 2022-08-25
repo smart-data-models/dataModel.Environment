@@ -20,5 +20,7 @@
   "objectArea": 35,
   "objectHeightAverage": 1.75,
   "objectHeightMax": 2.25,
-  "objectVolume": 17.5
+  "objectVolume": 17.5,
+  "waterLevel": 2.4,
+  "waterDischarge": 3
 }
