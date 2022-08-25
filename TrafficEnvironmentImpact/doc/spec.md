@@ -4,11 +4,11 @@
 [Open License](https://github.com/smart-data-models//dataModel.Environment/blob/master/TrafficEnvironmentImpact/LICENSE.md)  
 [document generated automatically](https://docs.google.com/presentation/d/e/2PACX-1vTs-Ng5dIAwkg91oTTUdt8ua7woBXhPnwavZ0FxgR8BsAI_Ek3C5q97Nd94HS8KhP-r_quD4H0fgyt3/pub?start=false&loop=false&delayms=3000#slide=id.gb715ace035_0_60)  
 Global description: **Environmental Impact of traffic based on the vehicles traffic and their emission characteristics**  
-version: 0.0.1  
+version: 0.0.2  
 
 ## List of properties  
 
-- `address`: The mailing address  - `alternateName`: An alternative name for this item  - `areaServed`: The geographic area where a service or offered item is provided  - `co2`: The measured C02 emission concentration  - `dataProvider`: A sequence of characters identifying the provider of the harmonised data entity.  - `dateCreated`: Entity creation timestamp. This will usually be allocated by the storage platform.  - `dateModified`: Timestamp of the last modification of the entity. This will usually be allocated by the storage platform.  - `dateObservedFrom`: Date of the start of measurement (timestamp) in ISO 8601  - `dateObservedTo`: Date of the end of measurement (timestamp) in ISO 8601  - `description`: A description of this item  - `id`: Unique identifier of the entity  - `location`: Geojson reference to the item. It can be Point, LineString, Polygon, MultiPoint, MultiLineString or MultiPolygon  - `name`: The name of this item.  - `owner`: A List containing a JSON encoded sequence of characters referencing the unique Ids of the owner(s)  - `seeAlso`: list of uri pointing to additional resources about the item  - `source`: A sequence of characters giving the original source of the entity data as a URL. Recommended to be the fully qualified domain name of the source provider, or the URL to the source object.  - `traffic`: property  - `type`: NGSI type. it has to be TrafficEnvironmentImpact    
+- `address`: The mailing address  - `alternateName`: An alternative name for this item  - `areaServed`: The geographic area where a service or offered item is provided  - `co2`: The measured C02 emission concentration  - `dataProvider`: A sequence of characters identifying the provider of the harmonised data entity.  - `dateCreated`: Entity creation timestamp. This will usually be allocated by the storage platform.  - `dateModified`: Timestamp of the last modification of the entity. This will usually be allocated by the storage platform.  - `dateObservedFrom`: Date of the start of measurement (timestamp) in ISO 8601  - `dateObservedTo`: Date of the end of measurement (timestamp) in ISO 8601  - `description`: A description of this item  - `id`: Unique identifier of the entity  - `location`: Geojson reference to the item. It can be Point, LineString, Polygon, MultiPoint, MultiLineString or MultiPolygon  - `name`: The name of this item.  - `owner`: A List containing a JSON encoded sequence of characters referencing the unique Ids of the owner(s)  - `seeAlso`: list of uri pointing to additional resources about the item  - `source`: A sequence of characters giving the original source of the entity data as a URL. Recommended to be the fully qualified domain name of the source provider, or the URL to the source object.  - `traffic`: Array of objects containing the different types of vehicles and its relations with the object of the traffic flow observations  - `type`: NGSI type. It has to be TrafficEnvironmentImpact    
 Required properties  
 - `id`  - `type`  ## Data Model description of properties  
 Sorted alphabetically (click for details)  
@@ -290,7 +290,7 @@ TrafficEnvironmentImpact:
       x-ngsi:    
         type: Property    
     traffic:    
-      description: property    
+      description: 'Array of objects containing the different types of vehicles and its relations with the object of the traffic flow observations'    
       items:    
         properties:    
           refTrafficFlowObserved:    
@@ -305,12 +305,14 @@ TrafficEnvironmentImpact:
                 type: string    
             description: 'Relationship. Unique identifier of the entity TrafficObserved with the averageVehicleSpeed, averageOccupancy and intensity'    
           vehicleClass:    
-            description: 'Property. enumeration of the vehicle classes'    
+            description: 'Property. Enumeration of the vehicle classes'    
             type: string    
         type: object    
       type: array    
+      x-ngsi:    
+        type: Property    
     type:    
-      description: 'NGSI type. it has to be TrafficEnvironmentImpact'    
+      description: 'NGSI type. It has to be TrafficEnvironmentImpact'    
       enum:    
         - TrafficEnvironmentImpact    
       type: string    
@@ -324,8 +326,8 @@ TrafficEnvironmentImpact:
   x-disclaimer: 'Redistribution and use in source and binary forms, with or without modification, are permitted  provided that the license conditions are met. Copyleft (c) 2022 Contributors to Smart Data Models Program'    
   x-license-url: https://github.com/smart-data-models/dataModel.Environment/blob/master/TrafficEnvironmentImpact/LICENSE.md    
   x-model-schema: https://smart-data-models.github.io/dataModel.Environment/TrafficEnvironmentImpact/schema.json    
-  x-model-tags: ""    
-  x-version: 0.0.1    
+  x-model-tags: GreenMov    
+  x-version: 0.0.2    
 ```  
 </details>    
 ## Example payloads    
