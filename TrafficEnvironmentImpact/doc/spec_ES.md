@@ -382,7 +382,7 @@ TrafficEnvironmentImpact:
 }  
 ```  
 #### TrafficEnvironmentImpact NGSI-v2 normalizado Ejemplo  
-Aquí hay un ejemplo de un TrafficEnvironmentImpact en formato JSON-LD normalizado. Esto es compatible con NGSI-v2 cuando no se utilizan opciones y devuelve los datos de contexto de una entidad individual.  
+He aquí un ejemplo de un TrafficEnvironmentImpact en formato JSON-LD normalizado. Esto es compatible con NGSI-v2 cuando no se utilizan opciones y devuelve los datos de contexto de una entidad individual.  
 ```json  
 {  
   "id": "urn:ngsi-ld:TrafficEnvironmentImpact:id:BGGK:76812356",  
@@ -537,7 +537,7 @@ TrafficEnvironmentImpact:
 }  
 ```  
 #### Impacto ambiental del tráfico NGSI-LD normalizado Ejemplo  
-Este es un ejemplo de un TrafficEnvironmentImpact en formato JSON-LD normalizado. Esto es compatible con NGSI-LD cuando no se utilizan opciones y devuelve los datos de contexto de una entidad individual.  
+He aquí un ejemplo de un TrafficEnvironmentImpact en formato JSON-LD normalizado. Esto es compatible con NGSI-LD cuando no se utilizan opciones y devuelve los datos de contexto de una entidad individual.  
 ```json  
 {  
   "id": "urn:ngsi-ld:TrafficEnvironmentImpact:id:BGGK:76812356",  

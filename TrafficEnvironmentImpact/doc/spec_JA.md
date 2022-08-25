@@ -330,7 +330,7 @@ TrafficEnvironmentImpact:
 </details>    
 ## ペイロードの例  
 #### TrafficEnvironmentImpact NGSI-v2 key-value の例。  
-以下は、TrafficEnvironmentImpactをJSON-LD形式でkey-valuesにした例である。これは、`options=keyValues`を使用したときにNGSI-v2と互換性があり、個々のエンティティのコンテキストデータを返します。  
+以下は、TrafficEnvironmentImpactをJSON-LD形式でkey-valuesにした例である。これは、`options=keyValues`を使用した場合にNGSI-v2と互換性があり、個々のエンティティのコンテキストデータを返します。  
 ```json  
 {  
   "id": "urn:ngsi-ld:TrafficEnvironmentImpact:id:BGGK:76812356",  
