@@ -4,11 +4,11 @@
 [オープンライセンス](https://github.com/smart-data-models//dataModel.Environment/blob/master/TrafficEnvironmentImpactForecast/LICENSE.md)  
 [ドキュメント自動生成](https://docs.google.com/presentation/d/e/2PACX-1vTs-Ng5dIAwkg91oTTUdt8ua7woBXhPnwavZ0FxgR8BsAI_Ek3C5q97Nd94HS8KhP-r_quD4H0fgyt3/pub?start=false&loop=false&delayms=3000#slide=id.gb715ace035_0_60)  
 グローバルな記述**自動車の交通量の予想とその排出ガス特性に基づく交通の環境影響**。  
-バージョン: 0.0.1  
+バージョン: 0.0.2  
 
 ## プロパティ一覧  
 
-- `address`: 郵送先住所  - `alternateName`: この項目の別称  - `areaServed`: サービスまたは提供品が提供される地理的な地域  - `co2`: 予想されるC02排出濃度  - `dataProvider`: 調和されたデータエンティティの提供者を識別する一連の文字。  - `dateCreated`: エンティティの作成タイムスタンプ。これは通常、ストレージプラットフォームによって割り当てられる。  - `dateIssued`: サービスプロバイダが予報を発行した日時。ISO8601 UTCフォーマット。  - `dateModified`: エンティティの最終更新のタイムスタンプ。これは通常、ストレージプラットフォームによって割り当てられる。  - `description`: このアイテムの説明  - `id`: エンティティの一意な識別子  - `location`: アイテムへの Geojson リファレンス。Point, LineString, Polygon, MultiPoint, MultiLineString, MultiPolygonのいずれかを指定することができる。  - `name`: このアイテムの名称です。  - `owner`: 所有者の一意のIDを参照するJSONエンコードされた文字列を含むリストです。  - `seeAlso`: 項目に関する追加リソースを指すURIのリスト。  - `source`: エンティティデータの元のソースをURLで示す一連の文字。ソースプロバイダの完全修飾ドメイン名、またはソースオブジェクトのURLであることが推奨されます。  - `traffic`: 財産  - `type`: NGSIタイプ。TrafficEnvironmentImpactForecastでなければならない。  - `validFrom`: ISO8601形式で表したこの予報の有効期間の開始日  - `validTo`: ISO8601形式でのこの予報の有効期間の終了日  - `validity`: この予測の有効期間をISO8601時間間隔として含む。    
+- `address`: 郵送先住所  - `alternateName`: この項目の別称  - `areaServed`: サービスまたは提供品が提供される地理的な地域  - `co2`: 予想されるC02排出濃度  - `dataProvider`: 調和されたデータエンティティの提供者を識別する一連の文字。  - `dateCreated`: エンティティの作成タイムスタンプ。これは通常、ストレージプラットフォームによって割り当てられる。  - `dateIssued`: サービスプロバイダが予報を発行した日時。ISO8601 UTCフォーマット。  - `dateModified`: エンティティの最終更新のタイムスタンプ。これは通常、ストレージプラットフォームによって割り当てられる。  - `description`: このアイテムの説明  - `id`: エンティティの一意な識別子  - `location`: アイテムへの Geojson リファレンス。Point, LineString, Polygon, MultiPoint, MultiLineString, MultiPolygonのいずれかを指定することができる。  - `name`: このアイテムの名称です。  - `owner`: 所有者の一意のIDを参照するJSONエンコードされた文字列を含むリストです。  - `seeAlso`: 項目に関する追加リソースを指すURIのリスト。  - `source`: エンティティデータの元のソースをURLで示す一連の文字。ソースプロバイダの完全修飾ドメイン名、またはソースオブジェクトのURLであることが推奨されます。  - `traffic`: 異なる車種の強度、職業、速度に関する期待値を含むオブジェクトの配列。  - `type`: NGSIタイプ。TrafficEnvironmentImpactForecastでなければならない。  - `validFrom`: ISO8601形式で表したこの予報の有効期間の開始日  - `validTo`: ISO8601形式でのこの予報の有効期間の終了日  - `validity`: この予測の有効期間をISO8601時間間隔として含む。    
 必要なプロパティ  
 - `id`  - `type`  ## プロパティのデータモデル記述  
 アルファベット順に並びます（クリックで詳細へ）  
@@ -284,7 +284,7 @@ TrafficEnvironmentImpactForecast:
       x-ngsi:    
         type: Property    
     traffic:    
-      description: property    
+      description: 'Array of objects containing the expected values for intensity, occupation an speed of the different vehicle types'    
       items:    
         properties:    
           averageVehicleSpeedExpected:    
@@ -305,8 +305,10 @@ TrafficEnvironmentImpactForecast:
             type: string    
         type: object    
       type: array    
+      x-ngsi:    
+        type: Property    
     type:    
-      description: 'NGSI type. it has to be TrafficEnvironmentImpactForecast'    
+      description: 'NGSI type. It has to be TrafficEnvironmentImpactForecast'    
       enum:    
         - TrafficEnvironmentImpact    
       type: string    
@@ -338,8 +340,8 @@ TrafficEnvironmentImpactForecast:
   x-disclaimer: 'Redistribution and use in source and binary forms, with or without modification, are permitted  provided that the license conditions are met. Copyleft (c) 2022 Contributors to Smart Data Models Program'    
   x-license-url: https://github.com/smart-data-models/dataModel.Environment/blob/master/TrafficEnvironmentImpactForecast/LICENSE.md    
   x-model-schema: https://smart-data-models.github.io/dataModel.Environment/TrafficEnvironmentImpactForecast/schema.json    
-  x-model-tags: ""    
-  x-version: 0.0.1    
+  x-model-tags: GreenMov    
+  x-version: 0.0.2    
 ```  
 </details>    
 ## ペイロードの例  
