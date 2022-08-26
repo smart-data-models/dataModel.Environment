@@ -62,5 +62,13 @@
   "objectVolume": {
     "type": "Number",
     "value": 17.5
+  },
+  "waterLevel": {
+    "type": "Number",
+    "value": 2.4
+  },
+  "waterDischarge": {
+    "type": "Number",
+    "value": 3
   }
 }
