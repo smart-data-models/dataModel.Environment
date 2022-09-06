@@ -3,8 +3,8 @@
 =============================  
 [Licenza aperta](https://github.com/smart-data-models//dataModel.Environment/blob/master/NoisePollution/LICENSE.md)  
 [documento generato automaticamente](https://docs.google.com/presentation/d/e/2PACX-1vTs-Ng5dIAwkg91oTTUdt8ua7woBXhPnwavZ0FxgR8BsAI_Ek3C5q97Nd94HS8KhP-r_quD4H0fgyt3/pub?start=false&loop=false&delayms=3000#slide=id.gb715ace035_0_60)  
-Descrizione globale: **Il modello di dati sull'inquinamento acustico fonde misurazioni specifiche e puntuali del rumore (provenienti, ad esempio, da entità NoiseLevelObservation) in parametri medi riferiti alle aree cittadine, fornendo dati più legati alla città sullo stato e sull'evoluzione dell'inquinamento acustico.**  
-versione: 0.0.1  
+Descrizione globale: **Il modello di dati sull'inquinamento acustico fonde misurazioni specifiche e puntuali del rumore (provenienti, ad esempio, da entità NoiseLevelObservation) in parametri medi riferiti alle aree cittadine, fornendo dati più legati alla città sullo stato e l'evoluzione dell'inquinamento acustico.**  
+versione: 0.0.2  
 
 ## Elenco delle proprietà  
 
@@ -96,8 +96,8 @@ NoisePollution:
         type: Property    
     noiseAnnoyanceIndex:    
       description: 'Index (1 to 10) according to noise annoyance level'    
-      max: 10    
-      min: 1    
+      maximum: 10    
+      minimum: 1    
       type: number    
       x-ngsi:    
         type: Property    
@@ -148,11 +148,11 @@ NoisePollution:
     - type    
   type: object    
   x-derived-from: ""    
-  x-disclaimer: 'Redistribution and use in source and binary forms, with or without modification, are permitted  provided that the license conditions are met. Copyleft (c) 2021 Contributors to Smart Data Models Program'    
+  x-disclaimer: 'Redistribution and use in source and binary forms, with or without modification, are permitted  provided that the license conditions are met. Copyleft (c) 2022 Contributors to Smart Data Models Program'    
   x-license-url: https://github.com/smart-data-models/dataModel.Environment/blob/master/NoisePollution/LICENSE.md    
   x-model-schema: https://smart-data-models.github.io/dataModel.Environment/NoisePollution/schema.json    
   x-model-tags: ""    
-  x-version: 0.0.1    
+  x-version: 0.0.2    
 ```  
 </details>    
 ## Esempi di payload  
@@ -196,7 +196,7 @@ NoisePollution:
 }  
 ```  
 #### Inquinamento acustico NGSI-v2 normalizzato Esempio  
-Ecco un esempio di NoisePollution in formato JSON-LD normalizzato. Questo è compatibile con NGSI-v2 quando non si utilizzano le opzioni e restituisce i dati di contesto di una singola entità.  
+Ecco un esempio di NoisePollution in formato JSON-LD normalizzato. Questo è compatibile con NGSI-v2 quando non si usano le opzioni e restituisce i dati di contesto di una singola entità.  
 ```json  
 {  
   "id": "urn:ngsi-ld:NoisePollution:France-NoisePollution-12345_2022-07-01T18:00:00_2022-07-01T00:00:00",  
@@ -308,7 +308,7 @@ NoisePollution:
 }  
 ```  
 #### Inquinamento acustico NGSI-LD normalizzato Esempio  
-Ecco un esempio di NoisePollution in formato JSON-LD normalizzato. Questo è compatibile con NGSI-LD quando non si utilizzano opzioni e restituisce i dati di contesto di una singola entità.  
+Ecco un esempio di NoisePollution in formato JSON-LD normalizzato. Questo è compatibile con NGSI-LD quando non si usano opzioni e restituisce i dati di contesto di una singola entità.  
 ```json  
 {  
   "id": "urn:ngsi-ld:NoisePollution:France-NoisePollution-12345_2022-07-01T18:00:00_2022-07-01T00:00:00",  
