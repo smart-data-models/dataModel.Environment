@@ -3,12 +3,12 @@
 =======================  
 [Offene Lizenz](https://github.com/smart-data-models//dataModel.Environment/blob/master/NoisePollution/LICENSE.md)  
 [Dokument automatisch generiert](https://docs.google.com/presentation/d/e/2PACX-1vTs-Ng5dIAwkg91oTTUdt8ua7woBXhPnwavZ0FxgR8BsAI_Ek3C5q97Nd94HS8KhP-r_quD4H0fgyt3/pub?start=false&loop=false&delayms=3000#slide=id.gb715ace035_0_60)  
-Globale Beschreibung: **Das Datenmodell für die Lärmbelastung fasst spezifische und punktuelle Lärmmessungen (z. B. von NoiseLevelObservation-Entitäten) zu Durchschnittsparametern zusammen, die sich auf Stadtgebiete beziehen, und liefert so stadtbezogene Daten über den Stand und die Entwicklung der Lärmbelastung**.  
-Version: 0.0.1  
+Globale Beschreibung: **Das Datenmodell für die Lärmbelastung fasst spezifische und punktuelle Lärmmessungen (z. B. von NoiseLevelObservation-Entitäten) zu Durchschnittsparametern zusammen, die sich auf Stadtgebiete beziehen, und liefert so mehr stadtbezogene Daten über den Stand und die Entwicklung der Lärmbelastung**.  
+Version: 0.0.2  
 
 ## Liste der Eigenschaften  
 
-- `LAeq2`: Durchschnittlicher Schallpegel der letzten 2 Stunden  - `LAmax2`: Maximal aufgezeichneter Schallpegel der letzten 2 Stunden  - `alternateName`: Ein alternativer Name für diesen Artikel  - `buildingsType`: Art der vorherrschenden Gebäude im Messgebiet bei der Installation des Sensors  - `dataProvider`: Eine Folge von Zeichen zur Identifizierung des Anbieters der harmonisierten Dateneinheit.  - `dateCreated`: Zeitstempel der Entitätserstellung. Dieser wird in der Regel von der Speicherplattform zugewiesen.  - `dateModified`: Zeitstempel der letzten Änderung der Entität. Dieser wird in der Regel von der Speicherplattform vergeben.  - `dateObservedFrom`: Datum und Uhrzeit des Beginns des Beobachtungszeitraums  - `dateObservedTo`: Datum und Uhrzeit des Endes des Beobachtungszeitraums  - `description`: Eine Beschreibung dieses Artikels  - `groundType`: Art des vorherrschenden Bodens im Messgebiet bei der Installation des Sensors  - `id`: Eindeutiger Bezeichner der Entität  - `name`: Der Name dieses Artikels.  - `noiseAnnoyanceIndex`: Index (1 bis 10) nach dem Grad der Lärmbelästigung  - `noiseOrigin`: Hauptursache (Quelle) des aufgezeichneten Lärms bei der Installation des Sensors  - `owner`: Eine Liste mit einer JSON-kodierten Zeichenfolge, die auf die eindeutigen Kennungen der Eigentümer verweist  - `seeAlso`: Liste von URLs, die auf zusätzliche Ressourcen zu dem Artikel verweisen  - `source`: Eine Folge von Zeichen, die die ursprüngliche Quelle der Entitätsdaten als URL angibt. Es wird empfohlen, den voll qualifizierten Domänennamen des Quellanbieters oder die URL des Quellobjekts zu verwenden.  - `type`: NGSI-Typ. es muss NoisePollution sein  - `wallsType`: Bei der Installation des Sensors im Messbereich vorherrschende Fassadenmaterialtypen    
+- `LAeq2`: Durchschnittlicher Schallpegel der letzten 2 Stunden  - `LAmax2`: Maximal aufgezeichneter Schallpegel der letzten 2 Stunden  - `alternateName`: Ein alternativer Name für diesen Artikel  - `buildingsType`: Art der vorherrschenden Gebäude im Messgebiet bei der Installation des Sensors  - `dataProvider`: Eine Folge von Zeichen zur Identifizierung des Anbieters der harmonisierten Dateneinheit.  - `dateCreated`: Zeitstempel der Entitätserstellung. Dieser wird normalerweise von der Speicherplattform zugewiesen.  - `dateModified`: Zeitstempel der letzten Änderung der Entität. Dieser wird in der Regel von der Speicherplattform vergeben.  - `dateObservedFrom`: Datum und Uhrzeit des Beginns des Beobachtungszeitraums  - `dateObservedTo`: Datum und Uhrzeit des Endes des Beobachtungszeitraums  - `description`: Eine Beschreibung dieses Artikels  - `groundType`: Art des vorherrschenden Bodens im Messgebiet bei der Installation des Sensors  - `id`: Eindeutiger Bezeichner der Entität  - `name`: Der Name dieses Artikels.  - `noiseAnnoyanceIndex`: Index (1 bis 10) nach dem Grad der Lärmbelästigung  - `noiseOrigin`: Hauptursache (Quelle) des aufgezeichneten Lärms bei der Installation des Sensors  - `owner`: Eine Liste mit einer JSON-kodierten Zeichenfolge, die auf die eindeutigen Kennungen der Eigentümer verweist  - `seeAlso`: Liste von URLs, die auf zusätzliche Ressourcen zu dem Artikel verweisen  - `source`: Eine Folge von Zeichen, die die ursprüngliche Quelle der Entitätsdaten als URL angibt. Es wird empfohlen, den voll qualifizierten Domänennamen des Quellanbieters oder die URL des Quellobjekts zu verwenden.  - `type`: NGSI-Typ. es muss NoisePollution sein  - `wallsType`: Bei der Installation des Sensors im Messbereich vorherrschende Fassadenmaterialtypen    
 Erforderliche Eigenschaften  
 - `id`  - `type`  ## Datenmodell Beschreibung der Eigenschaften  
 Alphabetisch sortiert (für Details anklicken)  
@@ -96,8 +96,8 @@ NoisePollution:
         type: Property    
     noiseAnnoyanceIndex:    
       description: 'Index (1 to 10) according to noise annoyance level'    
-      max: 10    
-      min: 1    
+      maximum: 10    
+      minimum: 1    
       type: number    
       x-ngsi:    
         type: Property    
@@ -148,11 +148,11 @@ NoisePollution:
     - type    
   type: object    
   x-derived-from: ""    
-  x-disclaimer: 'Redistribution and use in source and binary forms, with or without modification, are permitted  provided that the license conditions are met. Copyleft (c) 2021 Contributors to Smart Data Models Program'    
+  x-disclaimer: 'Redistribution and use in source and binary forms, with or without modification, are permitted  provided that the license conditions are met. Copyleft (c) 2022 Contributors to Smart Data Models Program'    
   x-license-url: https://github.com/smart-data-models/dataModel.Environment/blob/master/NoisePollution/LICENSE.md    
   x-model-schema: https://smart-data-models.github.io/dataModel.Environment/NoisePollution/schema.json    
   x-model-tags: ""    
-  x-version: 0.0.1    
+  x-version: 0.0.2    
 ```  
 </details>    
 ## Beispiel-Nutzlasten  
