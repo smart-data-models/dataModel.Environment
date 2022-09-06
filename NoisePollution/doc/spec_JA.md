@@ -4,7 +4,7 @@
 [オープンライセンス](https://github.com/smart-data-models//dataModel.Environment/blob/master/NoisePollution/LICENSE.md)  
 [ドキュメント自動生成](https://docs.google.com/presentation/d/e/2PACX-1vTs-Ng5dIAwkg91oTTUdt8ua7woBXhPnwavZ0FxgR8BsAI_Ek3C5q97Nd94HS8KhP-r_quD4H0fgyt3/pub?start=false&loop=false&delayms=3000#slide=id.gb715ace035_0_60)  
 グローバルな説明**騒音公害データモデルは、特定の時間ごとの騒音測定値（NoiseLevelObservation エンティティなど）を都市部の平均パラメータに統合し、騒音公害の状況や進展について都市に関連したデータを提供します。  
-バージョン: 0.0.1  
+バージョン: 0.0.2  
 
 ## プロパティ一覧  
 
@@ -96,8 +96,8 @@ NoisePollution:
         type: Property    
     noiseAnnoyanceIndex:    
       description: 'Index (1 to 10) according to noise annoyance level'    
-      max: 10    
-      min: 1    
+      maximum: 10    
+      minimum: 1    
       type: number    
       x-ngsi:    
         type: Property    
@@ -148,11 +148,11 @@ NoisePollution:
     - type    
   type: object    
   x-derived-from: ""    
-  x-disclaimer: 'Redistribution and use in source and binary forms, with or without modification, are permitted  provided that the license conditions are met. Copyleft (c) 2021 Contributors to Smart Data Models Program'    
+  x-disclaimer: 'Redistribution and use in source and binary forms, with or without modification, are permitted  provided that the license conditions are met. Copyleft (c) 2022 Contributors to Smart Data Models Program'    
   x-license-url: https://github.com/smart-data-models/dataModel.Environment/blob/master/NoisePollution/LICENSE.md    
   x-model-schema: https://smart-data-models.github.io/dataModel.Environment/NoisePollution/schema.json    
   x-model-tags: ""    
-  x-version: 0.0.1    
+  x-version: 0.0.2    
 ```  
 </details>    
 ## ペイロードの例  
