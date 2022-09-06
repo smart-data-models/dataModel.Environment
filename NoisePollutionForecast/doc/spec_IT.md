@@ -4,7 +4,7 @@
 [Licenza aperta](https://github.com/smart-data-models//dataModel.Environment/blob/master/NoisePollutionForecast/LICENSE.md)  
 [documento generato automaticamente](https://docs.google.com/presentation/d/e/2PACX-1vTs-Ng5dIAwkg91oTTUdt8ua7woBXhPnwavZ0FxgR8BsAI_Ek3C5q97Nd94HS8KhP-r_quD4H0fgyt3/pub?start=false&loop=false&delayms=3000#slide=id.gb715ace035_0_60)  
 Descrizione globale: **La previsione dell'inquinamento acustico memorizza l'aspettativa sull'inquinamento acustico in base ad alcuni elementi di input e agli elementi di rumore presenti.**  
-versione: 0.0.2  
+versione: 0.0.3  
 
 ## Elenco delle proprietà  
 
@@ -284,8 +284,8 @@ NoisePollutionForecast:
         type: Property    
     noiseAnnoyanceIndex:    
       description: 'Index (1 to 10) according to noise annoyance level'    
-      max: 10    
-      min: 1    
+      maximum: 10    
+      minimum: 1    
       type: number    
       x-ngsi:    
         type: Property    
@@ -353,7 +353,7 @@ NoisePollutionForecast:
   x-license-url: https://github.com/smart-data-models/dataModel.Environment/blob/master/NoisePollutionForecast/LICENSE.md    
   x-model-schema: https://smart-data-models.github.io/dataModel.Environment/NoisePollutionForecast/schema.json    
   x-model-tags: GreenMov    
-  x-version: 0.0.2    
+  x-version: 0.0.3    
 ```  
 </details>    
 ## Esempi di payload  
@@ -406,7 +406,7 @@ NoisePollutionForecast:
   "dateIssued": "2022-08-23T05:05:35Z"  
 }  
 ```  
-#### Previsione dell'inquinamento acustico NGSI-v2 normalizzato Esempio  
+#### Previsione di inquinamento acustico NGSI-v2 normalizzato Esempio  
 Ecco un esempio di NoisePollutionForecast in formato JSON-LD normalizzato. Questo è compatibile con NGSI-v2 quando non si utilizzano le opzioni e restituisce i dati di contesto di una singola entità.  
 ```json  
 {  
