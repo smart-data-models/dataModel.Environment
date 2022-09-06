@@ -3,8 +3,8 @@
 ===============================  
 [Licence ouverte] (https://github.com/smart-data-models//dataModel.Environment/blob/master/NoisePollutionForecast/LICENSE.md)  
 [document généré automatiquement] (https://docs.google.com/presentation/d/e/2PACX-1vTs-Ng5dIAwkg91oTTUdt8ua7woBXhPnwavZ0FxgR8BsAI_Ek3C5q97Nd94HS8KhP-r_quD4H0fgyt3/pub?start=false&loop=false&delayms=3000#slide=id.gb715ace035_0_60)  
-Description globale : **La prévision de la pollution sonore stocke l'attente de la pollution sonore basée sur certains éléments d'entrée et les éléments de bruit présents.**  
-version : 0.0.2  
+Description globale : **La prévision de la pollution sonore enregistre l'attente concernant la pollution sonore en fonction de certains éléments d'entrée et des éléments de bruit présents.**  
+version : 0.0.3  
 
 ## Liste des propriétés  
 
@@ -284,8 +284,8 @@ NoisePollutionForecast:
         type: Property    
     noiseAnnoyanceIndex:    
       description: 'Index (1 to 10) according to noise annoyance level'    
-      max: 10    
-      min: 1    
+      maximum: 10    
+      minimum: 1    
       type: number    
       x-ngsi:    
         type: Property    
@@ -353,7 +353,7 @@ NoisePollutionForecast:
   x-license-url: https://github.com/smart-data-models/dataModel.Environment/blob/master/NoisePollutionForecast/LICENSE.md    
   x-model-schema: https://smart-data-models.github.io/dataModel.Environment/NoisePollutionForecast/schema.json    
   x-model-tags: GreenMov    
-  x-version: 0.0.2    
+  x-version: 0.0.3    
 ```  
 </details>    
 ## Exemples de charges utiles  
