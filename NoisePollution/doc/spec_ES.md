@@ -4,11 +4,11 @@
 [Licencia abierta](https://github.com/smart-data-models//dataModel.Environment/blob/master/NoisePollution/LICENSE.md)  
 [documento generado automáticamente](https://docs.google.com/presentation/d/e/2PACX-1vTs-Ng5dIAwkg91oTTUdt8ua7woBXhPnwavZ0FxgR8BsAI_Ek3C5q97Nd94HS8KhP-r_quD4H0fgyt3/pub?start=false&loop=false&delayms=3000#slide=id.gb715ace035_0_60)  
 Descripción global: **El modelo de datos de contaminación acústica fusiona las mediciones de ruido específicas y puntuales (procedentes, por ejemplo, de las entidades NoiseLevelObservation) en parámetros medios referidos a las zonas de la ciudad, proporcionando un dato más relacionado con la ciudad sobre el estado y la evolución de la contaminación acústica.**  
-versión: 0.0.1  
+versión: 0.0.2  
 
 ## Lista de propiedades  
 
-- `LAeq2`: Nivel sonoro medio en las últimas 2 horas  - `LAmax2`: Nivel sonoro máximo registrado en las últimas 2 horas  - `alternateName`: Un nombre alternativo para este artículo  - `buildingsType`: Tipo de edificios predominantes en la zona de medición en el momento de la instalación del sensor  - `dataProvider`: Una secuencia de caracteres que identifica al proveedor de la entidad de datos armonizada.  - `dateCreated`: Marca de tiempo de creación de la entidad. Suele ser asignada por la plataforma de almacenamiento.  - `dateModified`: Marca de tiempo de la última modificación de la entidad. Normalmente será asignada por la plataforma de almacenamiento.  - `dateObservedFrom`: Fecha y hora de inicio del periodo de observación  - `dateObservedTo`: Fecha y hora de finalización del periodo de observación  - `description`: Una descripción de este artículo  - `groundType`: Tipo de suelo predominante en la zona de medición en el momento de la instalación del sensor  - `id`: Identificador único de la entidad  - `name`: El nombre de este artículo.  - `noiseAnnoyanceIndex`: Índice (de 1 a 10) según el nivel de molestia del ruido  - `noiseOrigin`: Origen principal (fuente) del ruido registrado en la instalación del sensor  - `owner`: Una lista que contiene una secuencia de caracteres codificada en JSON que hace referencia a los identificadores únicos de los propietarios  - `seeAlso`: lista de uri que apuntan a recursos adicionales sobre el artículo  - `source`: Una secuencia de caracteres que indica la fuente original de los datos de la entidad en forma de URL. Se recomienda que sea el nombre de dominio completo del proveedor de origen o la URL del objeto de origen.  - `type`: Tipo NGSI. Tiene que ser NoisePollution  - `wallsType`: Tipos de materiales de fachada dominantes en la zona de medición en el momento de la instalación del sensor    
+- `LAeq2`: Nivel sonoro medio en las últimas 2 horas  - `LAmax2`: Nivel sonoro máximo registrado en las últimas 2 horas  - `alternateName`: Un nombre alternativo para este artículo  - `buildingsType`: Tipo de edificios predominantes en la zona de medición en el momento de la instalación del sensor  - `dataProvider`: Una secuencia de caracteres que identifica al proveedor de la entidad de datos armonizada.  - `dateCreated`: Marca de tiempo de creación de la entidad. Suele ser asignada por la plataforma de almacenamiento.  - `dateModified`: Marca de tiempo de la última modificación de la entidad. Normalmente será asignada por la plataforma de almacenamiento.  - `dateObservedFrom`: Fecha y hora de inicio del periodo de observación  - `dateObservedTo`: Fecha y hora de finalización del periodo de observación  - `description`: Una descripción de este artículo  - `groundType`: Tipo de suelo predominante en la zona de medición en el momento de la instalación del sensor  - `id`: Identificador único de la entidad  - `name`: El nombre de este artículo.  - `noiseAnnoyanceIndex`: Índice (de 1 a 10) según el nivel de molestia del ruido  - `noiseOrigin`: Origen principal (fuente) del ruido registrado en la instalación del sensor  - `owner`: Una lista que contiene una secuencia de caracteres codificada en JSON que hace referencia a los identificadores únicos de los propietarios  - `seeAlso`: lista de uri que apuntan a recursos adicionales sobre el artículo  - `source`: Una secuencia de caracteres que indica la fuente original de los datos de la entidad en forma de URL. Se recomienda que sea el nombre de dominio completo del proveedor de origen, o la URL del objeto de origen.  - `type`: Tipo NGSI. Tiene que ser NoisePollution  - `wallsType`: Tipos de materiales de fachada dominantes en la zona de medición en el momento de la instalación del sensor    
 Propiedades requeridas  
 - `id`  - `type`  ## Descripción del modelo de datos de las propiedades  
 Ordenados alfabéticamente (haga clic para ver los detalles)  
@@ -96,8 +96,8 @@ NoisePollution:
         type: Property    
     noiseAnnoyanceIndex:    
       description: 'Index (1 to 10) according to noise annoyance level'    
-      max: 10    
-      min: 1    
+      maximum: 10    
+      minimum: 1    
       type: number    
       x-ngsi:    
         type: Property    
@@ -148,11 +148,11 @@ NoisePollution:
     - type    
   type: object    
   x-derived-from: ""    
-  x-disclaimer: 'Redistribution and use in source and binary forms, with or without modification, are permitted  provided that the license conditions are met. Copyleft (c) 2021 Contributors to Smart Data Models Program'    
+  x-disclaimer: 'Redistribution and use in source and binary forms, with or without modification, are permitted  provided that the license conditions are met. Copyleft (c) 2022 Contributors to Smart Data Models Program'    
   x-license-url: https://github.com/smart-data-models/dataModel.Environment/blob/master/NoisePollution/LICENSE.md    
   x-model-schema: https://smart-data-models.github.io/dataModel.Environment/NoisePollution/schema.json    
   x-model-tags: ""    
-  x-version: 0.0.1    
+  x-version: 0.0.2    
 ```  
 </details>    
 ## Ejemplo de carga útil  
