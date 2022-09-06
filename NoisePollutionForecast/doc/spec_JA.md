@@ -4,7 +4,7 @@
 [オープンライセンス](https://github.com/smart-data-models//dataModel.Environment/blob/master/NoisePollutionForecast/LICENSE.md)  
 [ドキュメント自動生成](https://docs.google.com/presentation/d/e/2PACX-1vTs-Ng5dIAwkg91oTTUdt8ua7woBXhPnwavZ0FxgR8BsAI_Ek3C5q97Nd94HS8KhP-r_quD4H0fgyt3/pub?start=false&loop=false&delayms=3000#slide=id.gb715ace035_0_60)  
 グローバルな記述です。**Noise Pollution forecast stores expected about noise pollution based on some input elements and the noise elements present.** （騒音公害予測は、いくつかの入力要素と存在する騒音要素に基づく騒音公害に関する予測を格納する。  
-バージョン: 0.0.2  
+バージョン: 0.0.3  
 
 ## プロパティ一覧  
 
@@ -284,8 +284,8 @@ NoisePollutionForecast:
         type: Property    
     noiseAnnoyanceIndex:    
       description: 'Index (1 to 10) according to noise annoyance level'    
-      max: 10    
-      min: 1    
+      maximum: 10    
+      minimum: 1    
       type: number    
       x-ngsi:    
         type: Property    
@@ -353,12 +353,12 @@ NoisePollutionForecast:
   x-license-url: https://github.com/smart-data-models/dataModel.Environment/blob/master/NoisePollutionForecast/LICENSE.md    
   x-model-schema: https://smart-data-models.github.io/dataModel.Environment/NoisePollutionForecast/schema.json    
   x-model-tags: GreenMov    
-  x-version: 0.0.2    
+  x-version: 0.0.3    
 ```  
 </details>    
 ## ペイロードの例  
 #### NoisePollutionForecast NGSI-v2 key-value の例。  
-NoisePollutionForecastをJSON-LD形式でkey-valuesにした例です。これは、`options=keyValues`を使用したときにNGSI-v2と互換性があり、個々のエンティティのコンテキストデータを返します。  
+NoisePollutionForecastをJSON-LD形式でkey-valuesにした例です。これは、`options=keyValues`を使用した場合にNGSI-v2と互換性があり、個々のエンティティのコンテキストデータを返します。  
 ```json  
 {  
   "id": "urn:ngsi-ld:NoisePollution:France-NoisePollutionForecast-12345_2022-07-01T18:00:00_2022-07-01T00:00:00",  
