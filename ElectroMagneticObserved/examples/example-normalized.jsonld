@@ -25,6 +25,7 @@
     "refDevice": "urn:ngsi-ld:Device:NCE-T2-P7-EM03",
     "reliability": 0.993,
     "@context": [
-        "https://uri.etsi.org/ngsi-ld/v1/ngsi-ld-core-context.jsonld"
+        "https://uri.etsi.org/ngsi-ld/v1/ngsi-ld-core-context.jsonld",
+        "https://raw.githubusercontent.com/smart-data-models/dataModel.Environment/master/context.jsonld"
     ]
 }
