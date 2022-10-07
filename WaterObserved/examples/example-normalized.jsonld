@@ -63,5 +63,7 @@
         "type": "Relationship",
         "object": "uri:ngsi:Device:T2-NP-018"
     },
-    "@context": []
+    "@context": [
+        "https://raw.githubusercontent.com/smart-data-models/dataModel.Environment/master/context.jsonld"
+    ]
 }
