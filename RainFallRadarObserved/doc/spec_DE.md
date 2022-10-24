@@ -1,17 +1,31 @@
+<!-- 10-Header -->  
 [![Smart Data Models](https://smartdatamodels.org/wp-content/uploads/2022/01/SmartDataModels_logo.png "Logo")](https://smartdatamodels.org)  
 Entität: RainFallRadarObserved  
-==============================  
+==============================<!-- /10-Header -->  
+<!-- 15-License -->  
 [Offene Lizenz](https://github.com/smart-data-models//dataModel.Environment/blob/master/RainFallRadarObserved/LICENSE.md)  
 [Dokument automatisch generiert](https://docs.google.com/presentation/d/e/2PACX-1vTs-Ng5dIAwkg91oTTUdt8ua7woBXhPnwavZ0FxgR8BsAI_Ek3C5q97Nd94HS8KhP-r_quD4H0fgyt3/pub?start=false&loop=false&delayms=3000#slide=id.gb715ace035_0_60)  
+<!-- /15-License -->  
+<!-- 20-Description -->  
 Globale Beschreibung: **Das Datenmodell soll die Wasserrutschen auf einem vordefinierten Gebiet durch eine Reihe von 4 Standorten messen, die durch ein Geo-Eigenschaftsformat dargestellt werden.**  
 Version: 0.0.1  
+<!-- /20-Description -->  
+<!-- 30-PropertiesList -->  
 
 ## Liste der Eigenschaften  
 
-- `address`: Die Postanschrift  - `alternateName`: Ein alternativer Name für diesen Artikel  - `areaServed`: Das geografische Gebiet, in dem eine Dienstleistung oder ein angebotener Artikel erbracht wird  - `atmosphericPressure`: Der beobachtete atmosphärische Druck, gemessen in Hecto-Pascal  - `cellsSize`: Größe der einzelnen Zellen, aus denen das Radar besteht. Der Einheitencode (Text) der Messung wird unter Verwendung der [UN/CEFACT Common Codes] (http://wiki.goodrelations-vocabulary.org/Documentation/UN/CEFACT_Common_Codes) angegeben. Zum Beispiel steht **MTR** für **Meter**.  - `dataProvider`: Eine Folge von Zeichen zur Identifizierung des Anbieters der harmonisierten Dateneinheit.  - `dateCreated`: Zeitstempel der Entitätserstellung. Dieser wird in der Regel von der Speicherplattform zugewiesen.  - `dateModified`: Zeitstempel der letzten Änderung der Entität. Dieser wird in der Regel von der Speicherplattform vergeben.  - `dateObserved`: Das Datum und die Uhrzeit dieser Beobachtung im ISO8601 UTC-Format. Sie können durch einen bestimmten Zeitpunkt oder ein ISO8601-Intervall dargestellt werden  - `dateObservedFrom`: Datum und Uhrzeit des Beginns des Beobachtungszeitraums. Siehe dateObserved. Er kann durch einen bestimmten Zeitpunkt oder durch ein ISO8601-Intervall dargestellt werden  - `dateObservedTo`: Datum und Uhrzeit des Endes des Beobachtungszeitraums. Siehe dateObserved. Es kann durch einen bestimmten Zeitpunkt oder durch ein ISO8601-Intervall dargestellt werden  - `description`: Eine Beschreibung dieses Artikels  - `feelLikesTemperature`: Bewertung der Temperatur des Gegenstands  - `gustSpeed`: Ein plötzlicher Ausbruch von Wind mit hoher Geschwindigkeit, der die beobachtete durchschnittliche Windgeschwindigkeit übersteigt und nur wenige Sekunden dauert.  - `id`: Eindeutiger Bezeichner der Entität  - `illuminance`: (https://en.wikipedia.org/wiki/Illuminance), gemessen in Lux (lx) oder Lumen pro Quadratmeter (cd-sr-m-2).  - `location`: Geojson-Referenz auf das Element. Es kann Punkt, LineString, Polygon, MultiPoint, MultiLineString oder MultiPolygon sein  - `mapScale`: Kartenmaßstab. Beziehung zwischen der Länge der cellSize und ihrer Darstellung auf der Karte  - `measuredArea`: Referenz der gemessenen Oberfläche. Der Einheitencode (Text) wird unter Verwendung der [UN/CEFACT Common Codes] (http://wiki.goodrelations-vocabulary.org/Documentation/UN/CEFACT_Common_Codes) angegeben. Zum Beispiel steht **MTK** für Quadratmeter  - `name`: Der Name dieses Artikels.  - `numberOfCol`: Anzahl der Spalten, die das Lesen des Attributs "RainFallradarContent" ermöglichen  - `numberOfRow`: Anzahl der Zeilen, die das Lesen des Attributs "RainFallradarContent" ermöglichen  - `owner`: Eine Liste mit einer JSON-kodierten Zeichenfolge, die auf die eindeutigen Kennungen der Eigentümer verweist  - `rainFallRadarContent`: Pfad und Dateiname, die die beobachteten Informationen liefern  - `refDevice`: Verweis auf ein [Gerät] (https://github.com/smart-data-models/dataModel.Device/blob/master/Device/doc/spec.md), das diese Beobachtung gemacht hat  - `refPointOfInterest`: Verweis auf einen [PointOfInterest](https://github.com/smart-data-models/dataModel.PointOfInterest/blob/master/PointOfInterest/doc/spec.md), der mit der Beobachtung verknüpft ist  - `relativeHumidity`: Feuchte in der Luft. Beobachtete momentane relative Luftfeuchtigkeit (Wasserdampf in der Luft)  - `seeAlso`: Liste von URLs, die auf zusätzliche Ressourcen zu dem Artikel verweisen  - `source`: Eine Folge von Zeichen, die die ursprüngliche Quelle der Entitätsdaten als URL angibt. Es wird empfohlen, den voll qualifizierten Domänennamen des Quellanbieters oder die URL des Quellobjekts zu verwenden.  - `temperature`: Temperatur des Gegenstandes  - `type`: NGSI-Entitätstyp. Es muss RainFallRadarObserved sein  - `visibility`: Kategorien der Sichtbarkeit  - `weatherType`: Textbeschreibung des Wetters  - `windDirection`: Wette auf die Windrichtung  - `windSpeed`: Intensität des Windes    
+<sup><sub>[*] Wenn es für ein Attribut keinen Typ gibt, kann es mehrere Typen oder verschiedene Formate/Muster haben</sub></sup>.  
+- `address[object]`: Die Postanschrift  . Model: [https://schema.org/address](https://schema.org/address)- `alternateName[string]`: Ein alternativer Name für diesen Artikel  - `areaServed[string]`: Das geografische Gebiet, in dem eine Dienstleistung oder ein angebotener Artikel erbracht wird  . Model: [https://schema.org/Text](https://schema.org/Text)- `atmosphericPressure[number]`: Der beobachtete atmosphärische Druck, gemessen in Hecto-Pascal  . Model: [https://schema.org/Number](https://schema.org/Number)- `cellsSize[number]`: Größe der einzelnen Zellen, aus denen das Radar besteht. Der Einheitencode (Text) der Messung wird unter Verwendung der [UN/CEFACT Common Codes] (http://wiki.goodrelations-vocabulary.org/Documentation/UN/CEFACT_Common_Codes) angegeben. Zum Beispiel steht **MTR** für **Meter**.  . Model: [https://schema.org/Number](https://schema.org/Number)- `dataProvider[string]`: Eine Folge von Zeichen zur Identifizierung des Anbieters der harmonisierten Dateneinheit.  - `dateCreated[string]`: Zeitstempel der Entitätserstellung. Dieser wird in der Regel von der Speicherplattform zugewiesen.  - `dateModified[string]`: Zeitstempel der letzten Änderung der Entität. Dieser wird in der Regel von der Speicherplattform vergeben.  - `dateObserved[string]`: Das Datum und die Uhrzeit dieser Beobachtung im ISO8601 UTC-Format. Sie können durch einen bestimmten Zeitpunkt oder ein ISO8601-Intervall dargestellt werden  . Model: [https://schema.org/DateTime](https://schema.org/DateTime)- `dateObservedFrom[string]`: Datum und Uhrzeit des Beginns des Beobachtungszeitraums. Siehe dateObserved. Er kann durch einen bestimmten Zeitpunkt oder durch ein ISO8601-Intervall dargestellt werden  . Model: [https://schema.org/DateTime](https://schema.org/DateTime)- `dateObservedTo[string]`: Datum und Uhrzeit des Endes des Beobachtungszeitraums. Siehe dateObserved. Es kann durch einen bestimmten Zeitpunkt oder durch ein ISO8601-Intervall dargestellt werden  . Model: [https://schema.org/DateTime](https://schema.org/DateTime)- `description[string]`: Eine Beschreibung dieses Artikels  - `feelLikesTemperature[number]`: Bewertung der Temperatur des Gegenstands  - `gustSpeed[number]`: Ein plötzlicher Ausbruch von Wind mit hoher Geschwindigkeit, der die beobachtete durchschnittliche Windgeschwindigkeit übersteigt und nur wenige Sekunden dauert.  - `id[*]`: Eindeutiger Bezeichner der Entität  - `illuminance[number]`: (https://en.wikipedia.org/wiki/Illuminance), gemessen in Lux (lx) oder Lumen pro Quadratmeter (cd-sr-m-2).  . Model: [https://schema.org/Number](https://schema.org/Number)- `location[*]`: Geojson-Referenz auf das Element. Es kann Punkt, LineString, Polygon, MultiPoint, MultiLineString oder MultiPolygon sein  - `mapScale[string]`: Kartenmaßstab. Beziehung zwischen der Länge der cellSize und ihrer Darstellung auf der Karte  . Model: [https://schema.org/Text](https://schema.org/Text)- `measuredArea[number]`: Referenz der gemessenen Oberfläche. Der Einheitencode (Text) wird unter Verwendung der [UN/CEFACT Common Codes] (http://wiki.goodrelations-vocabulary.org/Documentation/UN/CEFACT_Common_Codes) angegeben. Zum Beispiel steht **MTK** für Quadratmeter  . Model: [https://schema.org/Number](https://schema.org/Number)- `name[string]`: Der Name dieses Artikels.  - `numberOfCol[number]`: Anzahl der Spalten, die das Lesen des Attributs "RainFallradarContent" ermöglichen  . Model: [https://schema.org/Number](https://schema.org/Number)- `numberOfRow[number]`: Anzahl der Zeilen, die das Lesen des Attributs "RainFallradarContent" ermöglichen  . Model: [https://schema.org/Number](https://schema.org/Number)- `owner[array]`: Eine Liste mit einer JSON-kodierten Zeichenfolge, die auf die eindeutigen Kennungen der Eigentümer verweist  - `rainFallRadarContent[string]`: Pfad und Dateiname, die die beobachteten Informationen liefern  . Model: [https://schema.org/Text](https://schema.org/Text)- `refDevice[*]`: Verweis auf ein [Gerät] (https://github.com/smart-data-models/dataModel.Device/blob/master/Device/doc/spec.md), das diese Beobachtung gemacht hat  . Model: [https://schema.org/URL](https://schema.org/URL)- `refPointOfInterest[*]`: Verweis auf einen [PointOfInterest](https://github.com/smart-data-models/dataModel.PointOfInterest/blob/master/PointOfInterest/doc/spec.md), der mit der Beobachtung verknüpft ist  . Model: [https://schema.org/URL](https://schema.org/URL)- `relativeHumidity[number]`: Feuchte in der Luft. Beobachtete momentane relative Luftfeuchtigkeit (Wasserdampf in der Luft)  - `seeAlso[*]`: Liste von URLs, die auf zusätzliche Ressourcen zu dem Artikel verweisen  - `source[string]`: Eine Folge von Zeichen, die die ursprüngliche Quelle der Entitätsdaten als URL angibt. Empfohlen wird der voll qualifizierte Domänenname des Quellanbieters oder die URL des Quellobjekts.  - `temperature[number]`: Temperatur des Gegenstandes  - `type[string]`: NGSI-Entitätstyp. Es muss RainFallRadarObserved sein  - `visibility[*]`: Kategorien der Sichtbarkeit  . Model: [http://schema.org/Text](http://schema.org/Text)- `weatherType[string]`: Textbeschreibung des Wetters  . Model: [http://schema.org/Text.](http://schema.org/Text.)- `windDirection[number]`: Wette auf die Windrichtung  . Model: [http://schema.org/Number](http://schema.org/Number)- `windSpeed[number]`: Intensität des Windes  . Model: [http//schema.org/Number](http//schema.org/Number)<!-- /30-PropertiesList -->  
+<!-- 35-RequiredProperties -->  
 Erforderliche Eigenschaften  
-- `dateObserved`  - `id`  - `location`  - `rainFallRadarContent`  - `type`  ## Datenmodell Beschreibung der Eigenschaften  
+- `dateObserved`  - `id`  - `location`  - `rainFallRadarContent`  - `type`  <!-- /35-RequiredProperties -->  
+<!-- 40-RequiredProperties -->  
+<!-- /40-RequiredProperties -->  
+<!-- 50-DataModelHeader -->  
+## Datenmodell Beschreibung der Eigenschaften  
 Alphabetisch sortiert (für Details anklicken)  
+<!-- /50-DataModelHeader -->  
+<!-- 60-ModelYaml -->  
 <details><summary><strong>full yaml details</strong></summary>    
 ```yaml  
 RainFallRadarObserved:    
@@ -456,9 +470,14 @@ RainFallRadarObserved:
   x-version: 0.0.1    
 ```  
 </details>    
+<!-- /60-ModelYaml -->  
+<!-- 70-MiddleNotes -->  
+<!-- /70-MiddleNotes -->  
+<!-- 80-Examples -->  
 ## Beispiel-Nutzlasten  
 #### RainFallRadarObserved NGSI-v2 key-values Beispiel  
 Hier ist ein Beispiel für ein RainFallRadarObserved im JSON-LD-Format als Schlüsselwerte. Dies ist kompatibel mit NGSI-v2, wenn `options=keyValues` verwendet wird und liefert die Kontextdaten einer einzelnen Entität.  
+<details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
   "id": "urn:ngsi-ld:RainFallRadarObserved:RainFallRadarObserved:MNCA-RFRO-018",  
@@ -494,8 +513,10 @@ RainFallRadarObserved:
   "measuredArea": 250  
 }  
 ```  
+</details>  
 #### RainFallRadarObserved NGSI-v2 normalisiert Beispiel  
 Hier ist ein Beispiel für ein RainFallRadarObserved im JSON-LD-Format in normalisierter Form. Dies ist kompatibel mit NGSI-v2, wenn keine Optionen verwendet werden, und liefert die Kontextdaten einer einzelnen Entität.  
+<details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
 	"id": "urn:ngsi-ld:RainFallRadarObserved:RainFallRadarObserved:MNCA-RFRO-018",  
@@ -588,8 +609,10 @@ RainFallRadarObserved:
 	}  
 }  
 ```  
+</details>  
 #### RainFallRadarObserved NGSI-LD key-values Beispiel  
 Hier ist ein Beispiel für ein RainFallRadarObserved im JSON-LD-Format als Schlüsselwerte. Dies ist kompatibel mit NGSI-LD, wenn `options=keyValues` verwendet wird und liefert die Kontextdaten einer einzelnen Entität.  
+<details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
     "id": "urn:ngsi-ld:RainFallRadarObserved:RainFallRadarObserved:MNCA-RFRO-018",  
@@ -704,8 +727,10 @@ RainFallRadarObserved:
     ]  
 }  
 ```  
+</details>  
 #### RainFallRadarObserved NGSI-LD normalisiert Beispiel  
 Hier ist ein Beispiel für ein RainFallRadarObserved im JSON-LD-Format in normalisierter Form. Dies ist mit NGSI-LD kompatibel, wenn keine Optionen verwendet werden, und liefert die Kontextdaten einer einzelnen Entität.  
+<details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
     "id": "urn:ngsi-ld:RainFallRadarObserved:RainFallRadarObserved:MNCA-RFRO-018",  
@@ -758,8 +783,17 @@ RainFallRadarObserved:
     "refDevice": "urn:ngsi-ld:Device:NCE-RFRO-018",  
     "@context": [  
         "https://raw.githubusercontent.com/smart-data-models/data-models/master/context.jsonld",  
-        "https://uri.etsi.org/ngsi-ld/v1/ngsi-ld-core-context.jsonld"  
+        "https://uri.etsi.org/ngsi-ld/v1/ngsi-ld-core-context.jsonld",  
+        "https://raw.githubusercontent.com/smart-data-models/dataModel.Environment/master/context.jsonld"  
     ]  
 }  
 ```  
+</details><!-- /80-Examples -->  
+<!-- 90-FooterNotes -->  
+<!-- /90-FooterNotes -->  
+<!-- 95-Units -->  
 Siehe [FAQ 10] (https://smartdatamodels.org/index.php/faqs/), um eine Antwort auf die Frage zu erhalten, wie man mit Größeneinheiten umgeht  
+<!-- /95-Units -->  
+<!-- 97-LastFooter -->  
+---  
+[Smart Data Models](https://smartdatamodels.org) +++ [Contribution Manual](https://bit.ly/contribution_manual) +++ [About](https://bit.ly/Introduction_SDM)<!-- /97-LastFooter -->  
