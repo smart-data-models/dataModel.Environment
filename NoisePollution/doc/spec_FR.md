@@ -1,17 +1,31 @@
+<!-- 10-Header -->  
 [![Smart Data Models](https://smartdatamodels.org/wp-content/uploads/2022/01/SmartDataModels_logo.png "Logo")](https://smartdatamodels.org)  
 Entité : NoisePollution  
-=======================  
+=======================<!-- /10-Header -->  
+<!-- 15-License -->  
 [Licence ouverte] (https://github.com/smart-data-models//dataModel.Environment/blob/master/NoisePollution/LICENSE.md)  
 [document généré automatiquement] (https://docs.google.com/presentation/d/e/2PACX-1vTs-Ng5dIAwkg91oTTUdt8ua7woBXhPnwavZ0FxgR8BsAI_Ek3C5q97Nd94HS8KhP-r_quD4H0fgyt3/pub?start=false&loop=false&delayms=3000#slide=id.gb715ace035_0_60)  
+<!-- /15-License -->  
+<!-- 20-Description -->  
 Description globale : **Le modèle de données sur la pollution sonore fusionne des mesures de bruit spécifiques et ponctuelles (provenant, par exemple, d'entités NoiseLevelObservation) en paramètres moyens se rapportant aux zones urbaines, fournissant des données plus liées à la ville sur l'état et l'évolution de la pollution sonore**.  
 version : 0.0.2  
+<!-- /20-Description -->  
+<!-- 30-PropertiesList -->  
 
 ## Liste des propriétés  
 
-- `LAeq2`: Niveau sonore moyen sur les 2 dernières heures  - `LAmax2`: Niveau sonore maximal enregistré au cours des 2 dernières heures  - `alternateName`: Un nom alternatif pour cet élément  - `buildingsType`: Type de bâtiments prédominants dans la zone de mesure au moment de l'installation du capteur.  - `dataProvider`: Une séquence de caractères identifiant le fournisseur de l'entité de données harmonisées.  - `dateCreated`: Horodatage de la création de l'entité. Celui-ci sera généralement attribué par la plateforme de stockage.  - `dateModified`: Horodatage de la dernière modification de l'entité. Il sera généralement attribué par la plateforme de stockage.  - `dateObservedFrom`: Date et heure de début de la période d'observation  - `dateObservedTo`: Date et heure de fin de la période d'observation  - `description`: Une description de cet article  - `groundType`: Type de sol prédominant dans la zone de mesure lors de l'installation du capteur  - `id`: Identifiant unique de l'entité  - `name`: Le nom de cet élément.  - `noiseAnnoyanceIndex`: Indice (1 à 10) selon le niveau de gêne sonore  - `noiseOrigin`: Origine principale (source) du bruit enregistré lors de l'installation du capteur  - `owner`: Une liste contenant une séquence de caractères codée en JSON référençant les identifiants uniques du ou des propriétaires.  - `seeAlso`: liste d'uri pointant vers des ressources supplémentaires sur l'article  - `source`: Une séquence de caractères donnant la source originale des données de l'entité sous forme d'URL. Il est recommandé d'utiliser le nom de domaine entièrement qualifié du fournisseur source ou l'URL de l'objet source.  - `type`: Type de NGSI. Il doit s'agir de NoisePollution.  - `wallsType`: Types de matériaux de façade dominants dans la zone de mesure lors de l'installation du capteur    
+<sup><sub>[*] S'il n'y a pas de type dans un attribut, c'est parce qu'il pourrait avoir plusieurs types ou différents formats/modèles</sub></sup>.  
+- `LAeq2[number]`: Niveau sonore moyen sur les 2 dernières heures  - `LAmax2[number]`: Niveau sonore maximal enregistré au cours des 2 dernières heures  - `alternateName[string]`: Un nom alternatif pour cet élément  - `buildingsType[string]`: Type de bâtiments prédominants dans la zone de mesure au moment de l'installation du capteur.  - `dataProvider[string]`: Une séquence de caractères identifiant le fournisseur de l'entité de données harmonisées.  - `dateCreated[string]`: Horodatage de la création de l'entité. Celui-ci sera généralement attribué par la plateforme de stockage.  - `dateModified[string]`: Horodatage de la dernière modification de l'entité. Il sera généralement attribué par la plateforme de stockage.  - `dateObservedFrom[string]`: Date et heure de début de la période d'observation  - `dateObservedTo[string]`: Date et heure de fin de la période d'observation  - `description[string]`: Une description de cet article  - `groundType[string]`: Type de sol prédominant dans la zone de mesure lors de l'installation du capteur  - `id[*]`: Identifiant unique de l'entité  - `name[string]`: Le nom de cet élément.  - `noiseAnnoyanceIndex[number]`: Indice (1 à 10) selon le niveau de gêne sonore  - `noiseOrigin[string]`: Origine principale (source) du bruit enregistré lors de l'installation du capteur  - `owner[array]`: Une liste contenant une séquence de caractères codée en JSON référençant les identifiants uniques du ou des propriétaires.  - `seeAlso[*]`: liste d'uri pointant vers des ressources supplémentaires sur l'article  - `source[string]`: Une séquence de caractères donnant la source originale des données de l'entité sous forme d'URL. Il est recommandé d'utiliser le nom de domaine entièrement qualifié du fournisseur source ou l'URL de l'objet source.  - `type[string]`: Type de NGSI. Il doit s'agir de NoisePollution.  - `wallsType[string]`: Types de matériaux de façade dominants dans la zone de mesure lors de l'installation du capteur  <!-- /30-PropertiesList -->  
+<!-- 35-RequiredProperties -->  
 Propriétés requises  
-- `id`  - `type`  ## Description des propriétés du modèle de données  
+- `id`  - `type`  <!-- /35-RequiredProperties -->  
+<!-- 40-RequiredProperties -->  
+<!-- /40-RequiredProperties -->  
+<!-- 50-DataModelHeader -->  
+## Description des propriétés du modèle de données  
 Classés par ordre alphabétique (cliquez pour plus de détails)  
+<!-- /50-DataModelHeader -->  
+<!-- 60-ModelYaml -->  
 <details><summary><strong>full yaml details</strong></summary>    
 ```yaml  
 NoisePollution:    
@@ -155,9 +169,14 @@ NoisePollution:
   x-version: 0.0.2    
 ```  
 </details>    
+<!-- /60-ModelYaml -->  
+<!-- 70-MiddleNotes -->  
+<!-- /70-MiddleNotes -->  
+<!-- 80-Examples -->  
 ## Exemples de charges utiles  
 #### NoisePollution Valeurs-clés NGSI-v2 Exemple  
 Voici un exemple de NoisePollution au format JSON-LD sous forme de valeurs-clés. Ceci est compatible avec NGSI-v2 quand on utilise `options=keyValues` et renvoie les données contextuelles d'une entité individuelle.  
+<details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
   "id": "urn:ngsi-ld:NoisePollution:France-NoisePollution-12345_2022-07-01T18:00:00_2022-07-01T00:00:00",  
@@ -195,8 +214,10 @@ NoisePollution:
   "wallsType": "glass"  
 }  
 ```  
+</details>  
 #### NoisePollution NGSI-v2 normalisé Exemple  
 Voici un exemple de NoisePollution au format JSON-LD tel que normalisé. Ce format est compatible avec NGSI-v2 lorsqu'il n'utilise pas d'options et renvoie les données contextuelles d'une entité individuelle.  
+<details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
   "id": "urn:ngsi-ld:NoisePollution:France-NoisePollution-12345_2022-07-01T18:00:00_2022-07-01T00:00:00",  
@@ -270,8 +291,10 @@ NoisePollution:
   }  
 }  
 ```  
+</details>  
 #### NoisePollution Valeurs-clés NGSI-LD Exemple  
 Voici un exemple de NoisePollution au format JSON-LD sous forme de valeurs-clés. Ceci est compatible avec NGSI-LD quand on utilise `options=keyValues` et renvoie les données contextuelles d'une entité individuelle.  
+<details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
   "id": "urn:ngsi-ld:NoisePollution:France-NoisePollution-12345_2022-07-01T18:00:00_2022-07-01T00:00:00",  
@@ -307,8 +330,10 @@ NoisePollution:
   ]  
 }  
 ```  
+</details>  
 #### BruitPollution NGSI-LD normalisé Exemple  
 Voici un exemple de NoisePollution au format JSON-LD tel que normalisé. Ce format est compatible avec NGSI-LD lorsqu'il n'utilise pas d'options et renvoie les données contextuelles d'une entité individuelle.  
+<details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
   "id": "urn:ngsi-ld:NoisePollution:France-NoisePollution-12345_2022-07-01T18:00:00_2022-07-01T00:00:00",  
@@ -392,4 +417,12 @@ NoisePollution:
   ]  
 }  
 ```  
+</details><!-- /80-Examples -->  
+<!-- 90-FooterNotes -->  
+<!-- /90-FooterNotes -->  
+<!-- 95-Units -->  
 Voir [FAQ 10](https://smartdatamodels.org/index.php/faqs/) pour obtenir une réponse sur la façon de traiter les unités de magnitude.  
+<!-- /95-Units -->  
+<!-- 97-LastFooter -->  
+---  
+[Smart Data Models](https://smartdatamodels.org) +++ [Contribution Manual](https://bit.ly/contribution_manual) +++ [About](https://bit.ly/Introduction_SDM)<!-- /97-LastFooter -->  
