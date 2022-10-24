@@ -1,17 +1,31 @@
+<!-- 10-Header -->  
 [![Smart Data Models](https://smartdatamodels.org/wp-content/uploads/2022/01/SmartDataModels_logo.png "Logo")](https://smartdatamodels.org)  
 Entidad: AirQualityMonitoring  
-=============================  
+=============================<!-- /10-Header -->  
+<!-- 15-License -->  
 [Licencia abierta](https://github.com/smart-data-models//dataModel.Environment/blob/master/AirQualityMonitoring/LICENSE.md)  
 [documento generado automáticamente](https://docs.google.com/presentation/d/e/2PACX-1vTs-Ng5dIAwkg91oTTUdt8ua7woBXhPnwavZ0FxgR8BsAI_Ek3C5q97Nd94HS8KhP-r_quD4H0fgyt3/pub?start=false&loop=false&delayms=3000#slide=id.gb715ace035_0_60)  
+<!-- /15-License -->  
+<!-- 20-Description -->  
 Descripción global: **Modelo de datos de control de la calidad del aire (AQM).**  
 versión: 0.0.1  
+<!-- /20-Description -->  
+<!-- 30-PropertiesList -->  
 
 ## Lista de propiedades  
 
-- `airQualityIndex`: Índice global de calidad del aire (ICA) para la calidad del aire observada.  - `airQualityLevel`: Indicación de la categoría de la calidad del aire. Nivel cualitativo definido según los organismos sanitarios locales. Por ejemplo, "BUENA", "MODERADA", "POBRE", "INSALUBRE", "SEVERA", "PELIGROSA", etc.  - `airTemperatureTSA`: Objeto que define el tratamiento temporal de una propiedad básica durante un periodo. Proporciona el valor máximo, el mínimo, el valor instantáneo y la media.  - `alternateName`: Un nombre alternativo para este artículo  - `ambientNoiseTSA`: Objeto que define el tratamiento temporal de una propiedad básica durante un periodo. Proporciona el valor máximo, el mínimo, el valor instantáneo y la media.  - `aqiMajorPollutant`: Contaminante principal en el Índice de Calidad del Aire (ICA). Enum:'arsénico, bap, benceno, co2, nh3, no, no2, o2, o3, so2, pb'  - `arsenicTSA`: Objeto que define el tratamiento temporal de una propiedad básica durante un periodo. Proporciona el valor máximo, el mínimo, el valor instantáneo y la media.  - `atmosphericPressure`: Presión del aire (atmosférica o barométrica) observada.  - `atmosphericPressureTSA`: Objeto que define el tratamiento temporal de una propiedad básica durante un periodo. Proporciona el valor máximo, el mínimo, el valor instantáneo y la media.  - `bapTSA`: Objeto que define el tratamiento temporal de una propiedad básica durante un periodo. Proporciona el valor máximo, el mínimo, el valor instantáneo y la media.  - `benzeneTSA`: Objeto que define el tratamiento temporal de una propiedad básica durante un periodo. Proporciona el valor máximo, el mínimo, el valor instantáneo y la media.  - `co2TSA`: Objeto que define el tratamiento temporal de una propiedad básica durante un periodo. Proporciona el valor máximo, el mínimo, el valor instantáneo y la media.  - `coTSA`: Objeto que define el tratamiento temporal de una propiedad básica durante un periodo. Proporciona el valor máximo, el mínimo, el valor instantáneo y la media.  - `dataProvider`: Una secuencia de caracteres que identifica al proveedor de la entidad de datos armonizada.  - `dateCreated`: Marca de tiempo de creación de la entidad. Suele ser asignada por la plataforma de almacenamiento.  - `dateModified`: Marca de tiempo de la última modificación de la entidad. Normalmente será asignada por la plataforma de almacenamiento.  - `description`: Una descripción de este artículo  - `deviceInfo`: Información sobre el dispositivo asociado a las observaciones.  - `deviceStatus`: Indica el estado del dispositivo o dispositivos físicos.  - `id`: Identificador único de la entidad  - `illuminance`: Iluminancia medida  - `name`: El nombre de este artículo.  - `nh3TSA`: Objeto que define el tratamiento temporal de una propiedad básica durante un periodo. Proporciona el valor máximo, el mínimo, el valor instantáneo y la media.  - `nickelTSA`: Objeto que define el tratamiento temporal de una propiedad básica durante un periodo. Proporciona el valor máximo, el mínimo, el valor instantáneo y la media.  - `no2TSA`: Objeto que define el tratamiento temporal de una propiedad básica durante un periodo. Proporciona el valor máximo, el mínimo, el valor instantáneo y la media.  - `noTSA`: Objeto que define el tratamiento temporal de una propiedad básica durante un periodo. Proporciona el valor máximo, el mínimo, el valor instantáneo y la media.  - `o2TSA`: Objeto que define el tratamiento temporal de una propiedad básica durante un periodo. Proporciona el valor máximo, el mínimo, el valor instantáneo y la media.  - `o3TSA`: Objeto que define el tratamiento temporal de una propiedad básica durante un periodo. Proporciona el valor máximo, el mínimo, el valor instantáneo y la media.  - `observationDateTime`: Última hora de observación comunicada.  - `owner`: Una lista que contiene una secuencia de caracteres codificada en JSON que hace referencia a los identificadores únicos de los propietarios  - `pbTSA`: Objeto que define el tratamiento temporal de una propiedad básica durante un periodo. Proporciona el valor máximo, el mínimo, el valor instantáneo y la media.  - `pm10TSA`: Objeto que define el tratamiento temporal de una propiedad básica durante un periodo. Proporciona el valor máximo, el mínimo, el valor instantáneo y la media.  - `pm25TSA`: Objeto que define el tratamiento temporal de una propiedad básica durante un periodo. Proporciona el valor máximo, el mínimo, el valor instantáneo y la media.  - `precipitation`: Nivel de precipitación/lluvia observado en una duración determinada.  - `relativeHumidityTSA`: Objeto que define el tratamiento temporal de una propiedad básica durante un periodo. Proporciona el valor máximo, el mínimo, el valor instantáneo y la media.  - `seeAlso`: lista de uri que apuntan a recursos adicionales sobre el artículo  - `so2TSA`: Objeto que define el tratamiento temporal de una propiedad básica durante un periodo. Proporciona el valor máximo, el mínimo, el valor instantáneo y la media.  - `solarRadiation`: Radiación solar instantánea medida en kW/m2  - `source`: Una secuencia de caracteres que indica la fuente original de los datos de la entidad en forma de URL. Se recomienda que sea el nombre de dominio completo del proveedor de origen o la URL del objeto de origen.  - `type`: Tipo NGSI. Tiene que ser AirQualityMonitoring  - `uvTSA`: Objeto que define el tratamiento temporal de una propiedad básica durante un periodo. Proporciona el valor máximo, el mínimo, el valor instantáneo y la media.  - `versionInfo`: Información de la versión correspondiente a esta observación.    
+<sup><sub>[*] Si no hay un tipo en un atributo es porque puede tener varios tipos o diferentes formatos/patrones</sub></sup>  
+- `airQualityIndex[number]`: Índice global de calidad del aire (ICA) para la calidad del aire observada.  . Model: [https://schema.org/Number](https://schema.org/Number)- `airQualityLevel[string]`: Indicación de la categoría de la calidad del aire. Nivel cualitativo definido según los organismos sanitarios locales. Por ejemplo, "BUENA", "MODERADA", "POBRE", "INSALUBRE", "SEVERA", "PELIGROSA", etc.  . Model: [https://schema.org/Text](https://schema.org/Text)- `airTemperatureTSA[object]`: Objeto que define el tratamiento temporal de una propiedad básica durante un periodo. Proporciona el valor máximo, el mínimo, el valor instantáneo y la media.  - `alternateName[string]`: Un nombre alternativo para este artículo  - `ambientNoiseTSA[object]`: Objeto que define el tratamiento temporal de una propiedad básica durante un periodo. Proporciona el valor máximo, el mínimo, el valor instantáneo y la media.  - `aqiMajorPollutant[string]`: Contaminante principal en el Índice de Calidad del Aire (ICA). Enum:'arsénico, bap, benceno, co2, nh3, no, no2, o2, o3, so2, pb'  . Model: [https://schema.org/Text](https://schema.org/Text)- `arsenicTSA[object]`: Objeto que define el tratamiento temporal de una propiedad básica durante un periodo. Proporciona el valor máximo, el mínimo, el valor instantáneo y la media.  - `atmosphericPressure[number]`: Presión del aire (atmosférica o barométrica) observada.  . Model: [https://schema.org/Number](https://schema.org/Number)- `atmosphericPressureTSA[object]`: Objeto que define el tratamiento temporal de una propiedad básica durante un periodo. Proporciona el valor máximo, el mínimo, el valor instantáneo y la media.  - `bapTSA[object]`: Objeto que define el tratamiento temporal de una propiedad básica durante un periodo. Proporciona el valor máximo, el mínimo, el valor instantáneo y la media.  - `benzeneTSA[object]`: Objeto que define el tratamiento temporal de una propiedad básica durante un periodo. Proporciona el valor máximo, el mínimo, el valor instantáneo y la media.  - `co2TSA[object]`: Objeto que define el tratamiento temporal de una propiedad básica durante un periodo. Proporciona el valor máximo, el mínimo, el valor instantáneo y la media.  - `coTSA[object]`: Objeto que define el tratamiento temporal de una propiedad básica durante un periodo. Proporciona el valor máximo, el mínimo, el valor instantáneo y la media.  - `dataProvider[string]`: Una secuencia de caracteres que identifica al proveedor de la entidad de datos armonizada.  - `dateCreated[string]`: Marca de tiempo de creación de la entidad. Suele ser asignada por la plataforma de almacenamiento.  - `dateModified[string]`: Marca de tiempo de la última modificación de la entidad. Normalmente será asignada por la plataforma de almacenamiento.  - `description[string]`: Una descripción de este artículo  - `deviceInfo[object]`: Información sobre el dispositivo asociado a las observaciones.  - `deviceStatus[string]`: Indica el estado del dispositivo o dispositivos físicos.  . Model: [https://schema.org/Text](https://schema.org/Text)- `id[*]`: Identificador único de la entidad  - `illuminance[number]`: Iluminancia medida  - `name[string]`: El nombre de este artículo.  - `nh3TSA[object]`: Objeto que define el tratamiento temporal de una propiedad básica durante un periodo. Proporciona el valor máximo, el mínimo, el valor instantáneo y la media.  - `nickelTSA[object]`: Objeto que define el tratamiento temporal de una propiedad básica durante un periodo. Proporciona el valor máximo, el mínimo, el valor instantáneo y la media.  - `no2TSA[object]`: Objeto que define el tratamiento temporal de una propiedad básica durante un periodo. Proporciona el valor máximo, el mínimo, el valor instantáneo y la media.  - `noTSA[object]`: Objeto que define el tratamiento temporal de una propiedad básica durante un periodo. Proporciona el valor máximo, el mínimo, el valor instantáneo y la media.  - `o2TSA[object]`: Objeto que define el tratamiento temporal de una propiedad básica durante un periodo. Proporciona el valor máximo, el mínimo, el valor instantáneo y la media.  - `o3TSA[object]`: Objeto que define el tratamiento temporal de una propiedad básica durante un periodo. Proporciona el valor máximo, el mínimo, el valor instantáneo y la media.  - `observationDateTime[string]`: Última hora de observación comunicada.  . Model: [https://schema.org/DateTime](https://schema.org/DateTime)- `owner[array]`: Una lista que contiene una secuencia de caracteres codificada en JSON que hace referencia a los identificadores únicos de los propietarios  - `pbTSA[object]`: Objeto que define el tratamiento temporal de una propiedad básica durante un periodo. Proporciona el valor máximo, el mínimo, el valor instantáneo y la media.  - `pm10TSA[object]`: Objeto que define el tratamiento temporal de una propiedad básica durante un periodo. Proporciona el valor máximo, el mínimo, el valor instantáneo y la media.  - `pm25TSA[object]`: Objeto que define el tratamiento temporal de una propiedad básica durante un periodo. Proporciona el valor máximo, el mínimo, el valor instantáneo y la media.  - `precipitation[number]`: Nivel de precipitación/lluvia observado en una duración determinada.  . Model: [https://schema.org/Number](https://schema.org/Number)- `relativeHumidityTSA[object]`: Objeto que define el tratamiento temporal de una propiedad básica durante un periodo. Proporciona el valor máximo, el mínimo, el valor instantáneo y la media.  - `seeAlso[*]`: lista de uri que apuntan a recursos adicionales sobre el artículo  - `so2TSA[object]`: Objeto que define el tratamiento temporal de una propiedad básica durante un periodo. Proporciona el valor máximo, el mínimo, el valor instantáneo y la media.  - `solarRadiation[number]`: Radiación solar instantánea medida en kW/m2  . Model: [http://schema.org/Number](http://schema.org/Number)- `source[string]`: Una secuencia de caracteres que indica la fuente original de los datos de la entidad en forma de URL. Se recomienda que sea el nombre de dominio completo del proveedor de origen o la URL del objeto de origen.  - `type[string]`: Tipo NGSI. Tiene que ser AirQualityMonitoring  - `uvTSA[object]`: Objeto que define el tratamiento temporal de una propiedad básica durante un periodo. Proporciona el valor máximo, el mínimo, el valor instantáneo y la media.  - `versionInfo[object]`: Información de la versión correspondiente a esta observación.  <!-- /30-PropertiesList -->  
+<!-- 35-RequiredProperties -->  
 Propiedades requeridas  
-- `id`  - `type`  ## Descripción del modelo de datos de las propiedades  
+- `id`  - `type`  <!-- /35-RequiredProperties -->  
+<!-- 40-RequiredProperties -->  
+<!-- /40-RequiredProperties -->  
+<!-- 50-DataModelHeader -->  
+## Descripción del modelo de datos de las propiedades  
 Ordenados alfabéticamente (haga clic para ver los detalles)  
+<!-- /50-DataModelHeader -->  
+<!-- 60-ModelYaml -->  
 <details><summary><strong>full yaml details</strong></summary>    
 ```yaml  
 AirQualityMonitoring:    
@@ -382,9 +396,14 @@ AirQualityMonitoring:
   x-version: 0.0.1    
 ```  
 </details>    
+<!-- /60-ModelYaml -->  
+<!-- 70-MiddleNotes -->  
+<!-- /70-MiddleNotes -->  
+<!-- 80-Examples -->  
 ## Ejemplo de carga útil  
 #### AirQualityMonitoring NGSI-v2 key-values Ejemplo  
 Aquí hay un ejemplo de un AirQualityMonitoring en formato JSON-LD como key-values. Esto es compatible con NGSI-v2 cuando se utiliza `options=keyValues` y devuelve los datos de contexto de una entidad individual.  
+<details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
   "id": "urn:ngsi-ld:AirQualityMonitoring:id:ARET:00795717",  
@@ -589,8 +608,10 @@ AirQualityMonitoring:
   }  
 }  
 ```  
+</details>  
 #### AirQualityMonitoring NGSI-v2 normalizado Ejemplo  
 Aquí hay un ejemplo de un AirQualityMonitoring en formato JSON-LD normalizado. Esto es compatible con NGSI-v2 cuando no se utilizan opciones y devuelve los datos de contexto de una entidad individual.  
+<details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
   "id": "urn:ngsi-ld:AirQualityMonitoring:id:MUTW:63473748",  
@@ -912,8 +933,10 @@ AirQualityMonitoring:
   ]  
 }  
 ```  
+</details>  
 #### AirQualityMonitoring NGSI-LD key-values Ejemplo  
 Aquí hay un ejemplo de un AirQualityMonitoring en formato JSON-LD como key-values. Esto es compatible con NGSI-LD cuando se utiliza `options=keyValues` y devuelve los datos de contexto de una entidad individual.  
+<details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
     "id": "urn:ngsi-ld:AirQualityMonitoring:id:ARET:00795717",  
@@ -1121,8 +1144,10 @@ AirQualityMonitoring:
     ]  
 }  
 ```  
+</details>  
 #### AirQualityMonitoring NGSI-LD normalizado Ejemplo  
 Este es un ejemplo de un AirQualityMonitoring en formato JSON-LD normalizado. Esto es compatible con NGSI-LD cuando no se utilizan opciones y devuelve los datos de contexto de una entidad individual.  
+<details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
     "id": "urn:ngsi-ld:AirQualityMonitoring:id:ARET:00795717",  
@@ -1454,7 +1479,17 @@ AirQualityMonitoring:
             "comments": "Version 1"  
         }  
     },  
-    "@context": []  
+    "@context": [  
+        "https://raw.githubusercontent.com/smart-data-models/dataModel.Environment/master/context.jsonld"  
+    ]  
 }  
 ```  
+</details><!-- /80-Examples -->  
+<!-- 90-FooterNotes -->  
+<!-- /90-FooterNotes -->  
+<!-- 95-Units -->  
 Consulte [FAQ 10](https://smartdatamodels.org/index.php/faqs/) para obtener una respuesta sobre cómo tratar las unidades de magnitud  
+<!-- /95-Units -->  
+<!-- 97-LastFooter -->  
+---  
+[Smart Data Models](https://smartdatamodels.org) +++ [Contribution Manual](https://bit.ly/contribution_manual) +++ [About](https://bit.ly/Introduction_SDM)<!-- /97-LastFooter -->  
