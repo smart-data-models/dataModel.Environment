@@ -1,19 +1,32 @@
+<!-- 10-Header -->  
 [![Smart Data Models](https://smartdatamodels.org/wp-content/uploads/2022/01/SmartDataModels_logo.png "Logo")](https://smartdatamodels.org)  
 エンティティAirQualityObserved  
-========================  
+========================<!-- /10-Header -->  
+<!-- 15-License -->  
 [オープンライセンス](https://github.com/smart-data-models//dataModel.Environment/blob/master/AirQualityObserved/LICENSE.md)  
 [ドキュメント自動生成](https://docs.google.com/presentation/d/e/2PACX-1vTs-Ng5dIAwkg91oTTUdt8ua7woBXhPnwavZ0FxgR8BsAI_Ek3C5q97Nd94HS8KhP-r_quD4H0fgyt3/pub?start=false&loop=false&delayms=3000#slide=id.gb715ace035_0_60)  
-グローバルな記述。**ある場所と時間における大気の状態の観測。  
+<!-- /15-License -->  
+<!-- 20-Description -->  
+グローバルな記述。**ある場所と時間における大気の状態を観測すること。  
 バージョン: 0.1.0  
+<!-- /20-Description -->  
+<!-- 30-PropertiesList -->  
 
 ## プロパティ一覧  
 
-- `address`: 郵送先住所  - `airQualityIndex`: 大気質指標とは、ある日の大気の質を表す数値です。  - `airQualityLevel`: 観測された大気質に対応する健康への懸念の総合的な質的レベル  - `alternateName`: この項目の別称  - `areaServed`: この空気質測定が属する高次地域  - `as`: ヒ素を検出  - `c6h6`: ベンゼン検出  - `cd`: カドミウム検出  - `co`: 一酸化炭素を検出  - `co2`: 二酸化炭素を検出  - `coLevel`: 定性的な一酸化炭素の存在  - `dataProvider`: 調和されたデータエンティティの提供者を識別する一連の文字。  - `dateCreated`: エンティティの作成タイムスタンプ。これは通常、ストレージプラットフォームによって割り当てられる。  - `dateModified`: エンティティの最終更新のタイムスタンプ。これは通常、ストレージプラットフォームによって割り当てられる。  - `dateObserved`: ISO8601 UTC フォーマットによる観測日時  - `description`: このアイテムの説明  - `id`: エンティティの一意な識別子  - `location`: アイテムへの Geojson リファレンス。Point, LineString, Polygon, MultiPoint, MultiLineString, MultiPolygonのいずれかを指定することができる。  - `name`: このアイテムの名称です。  - `ni`: ニッケル検出  - `no`: 一酸化窒素を検出  - `no2`: 二酸化窒素を検出  - `nox`: その他の窒素酸化物検出  - `o3`: オゾン検出  - `owner`: 所有者の一意のIDを参照するJSONエンコードされた文字列を含むリストです。  - `pb`: 鉛検出  - `pm1`: 直径1μm以下の粒子状物質。  - `pm10`: 粒子状物質 直径10μm以下  - `pm25`: 粒子状物質 直径2.5μm以下  - `precipitation`: 水量雨量  - `refDevice`: この観測を捕捉した装置への参照。  - `refPointOfInterest`: この観測に関連するポイント（通常、大気質局）への参照。  - `refWeatherObserved`: このエンティティによって記述された大気質条件に関連する観測された天候。  - `relativeHumidity`: 空気中の湿度  - `reliability`: 観測された大気環境に対応する信頼性（％、単位：parts per one）。  - `seeAlso`: 項目に関する追加リソースを指すURIのリスト。  - `sh2`: 硫化水素を検出  - `so2`: 二酸化硫黄を検出  - `source`: エンティティデータの元のソースをURLで示す一連の文字。ソースプロバイダの完全修飾ドメイン名、またはソースオブジェクトのURLであることが推奨されます。  - `temperature`: アイテムの温度  - `type`: NGSI エンティティタイプ  - `typeofLocation`: サンプリングされたアイテムの場所の種類  - `volatileOrganicCompoundsTotal`: アルカン<C10、ケトン<C6、アルデヒド<C10、カルボン酸<C5、アスピリッツ<C7、アルケン<C8、芳香族>。  - `windDirection`: 風見鶏の方向  - `windSpeed`: 風の強さ    
+<sup><sub>[*] 属性にタイプがない場合、複数のタイプまたは異なるフォーマット/パターンを持つ可能性があるためです</sub></sup>。  
+- `address[object]`: 郵送先住所  . Model: [https://schema.org/address](https://schema.org/address)- `airQualityIndex[integer]`: 大気質指標とは、ある日の大気の質を表す数値です。  . Model: [https://schema.org/Number](https://schema.org/Number)- `airQualityLevel[string]`: 観測された大気質に対応する健康への懸念の総合的な質的レベル  . Model: [https://schema.org/Tex ](https://schema.org/Tex )- `alternateName[string]`: この項目の別称  - `areaServed[string]`: この空気質測定が属する高次地域  . Model: [https://schema.org/Text ](https://schema.org/Text )- `as[number]`: ヒ素を検出  . Model: [https://schema.org/Number](https://schema.org/Number)- `c6h6[number]`: ベンゼン検出  - `cd[number]`: カドミウム検出  - `co[number]`: 一酸化炭素検出  - `co2[number]`: 二酸化炭素を検出  - `coLevel[string]`: 定性的な一酸化炭素の存在  - `dataProvider[string]`: 調和されたデータエンティティの提供者を識別する一連の文字。  - `dateCreated[string]`: エンティティの作成タイムスタンプ。これは通常、ストレージプラットフォームによって割り当てられる。  - `dateModified[string]`: エンティティの最終更新のタイムスタンプ。これは通常、ストレージプラットフォームによって割り当てられる。  - `dateObserved[string]`: ISO8601 UTC フォーマットによる観測日時  . Model: [https://schema.org/Text ](https://schema.org/Text )- `description[string]`: このアイテムの説明  - `id[*]`: エンティティの一意な識別子  - `location[*]`: アイテムへの Geojson リファレンス。Point, LineString, Polygon, MultiPoint, MultiLineString, MultiPolygonのいずれかを指定することができる。  - `name[string]`: このアイテムの名称です。  - `ni[number]`: ニッケル検出  - `no[number]`: 一酸化窒素を検出  - `no2[number]`: 二酸化窒素を検出  - `nox[number]`: その他の窒素酸化物検出  - `o3[number]`: オゾン検出  - `owner[array]`: 所有者の一意のIDを参照するJSONエンコードされた文字列を含むリストです。  - `pb[number]`: 鉛検出  - `pm1[number]`: 直径1μm以下の粒子状物質。  - `pm10[number]`: 粒子状物質 直径10μm以下  - `pm25[number]`: 粒子状物質 直径2.5μm以下  - `precipitation[number]`: 水量雨量  . Model: [https://schema.org/Number](https://schema.org/Number)- `refDevice[*]`: この観測を捕捉した装置への参照。  - `refPointOfInterest[*]`: この観測に関連するポイント（通常、大気質局）への参照。  - `refWeatherObserved[*]`: このエンティティによって記述された大気質条件に関連する観測された天候。  - `relativeHumidity[number]`: 空気中の湿度  . Model: [https://schema.org/Number](https://schema.org/Number)- `reliability[number]`: 観測された大気環境に対応する信頼性（％、単位：parts per one）。  . Model: [https://schema.org/Number ](https://schema.org/Number )- `seeAlso[*]`: 項目に関する追加リソースを指すURIのリスト。  - `sh2[number]`: 硫化水素を検出  - `so2[number]`: 二酸化硫黄を検出  - `source[string]`: エンティティデータの元のソースをURLで示す一連の文字。ソースプロバイダの完全修飾ドメイン名、またはソースオブジェクトのURLであることが推奨されます。  - `temperature[number]`: アイテムの温度  - `type[string]`: NGSI エンティティタイプ  - `typeofLocation[string]`: サンプリングされたアイテムの場所の種類  . Model: [https://schema.org/Text](https://schema.org/Text)- `volatileOrganicCompoundsTotal[number]`: アルカン<C10、ケトン<C6、アルデヒド<C10、カルボン酸<C5、アスピリッツ<C7、アルケン<C8、芳香族>)  - `windDirection[number]`: 風見鶏の方向  . Model: [http://schema.org/Number](http://schema.org/Number)- `windSpeed[number]`: 風の強さ  . Model: [http//schema.org/Number](http//schema.org/Number)<!-- /30-PropertiesList -->  
+<!-- 35-RequiredProperties -->  
 必要なプロパティ  
-- `dateObserved`  - `id`  - `location`  - `type`    
+- `dateObserved`  - `id`  - `location`  - `type`  <!-- /35-RequiredProperties -->  
+<!-- 40-RequiredProperties -->  
 すべての汚染物質がこのデータモデルに含まれているわけではありません。モデルを拡張するために新しい汚染物質を追加する場合は、このソース http://dd.eionet.europa.eu/vocabulary/aq/pollutant/view?page=1#vocabularyConceptResults を参照してください。  
+<!-- /40-RequiredProperties -->  
+<!-- 50-DataModelHeader -->  
 ## プロパティのデータモデル記述  
 アルファベット順に並びます（クリックで詳細へ）  
+<!-- /50-DataModelHeader -->  
+<!-- 60-ModelYaml -->  
 <details><summary><strong>full yaml details</strong></summary>    
 ```yaml  
 AirQualityObserved:    
@@ -513,9 +526,14 @@ AirQualityObserved:
   x-version: 0.1.0    
 ```  
 </details>    
+<!-- /60-ModelYaml -->  
+<!-- 70-MiddleNotes -->  
+<!-- /70-MiddleNotes -->  
+<!-- 80-Examples -->  
 ## ペイロードの例  
 #### AirQualityObserved NGSI-v2 key-value の例。  
 AirQualityObservedをJSON-LD形式でkey-valuesとした例である。これは、`options=keyValues`を使用した場合にNGSI-v2と互換性があり、個々のエンティティのコンテキストデータを返します。  
+<details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
   "id": "Madrid-AmbientObserved-28079004-2016-03-15T11:00:00",  
@@ -550,8 +568,10 @@ AirQualityObserved:
   "refPointOfInterest": "28079004-Pza.deEspanya"  
 }  
 ```  
+</details>  
 #### AirQualityObserved NGSI-v2 正規化例  
 AirQualityObserved を JSON-LD 形式で正規化した例を示す。これは、オプションを使用しない場合、NGSI-v2と互換性があり、個々のエンティティのコンテキストデータを返します。  
+<details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
   "id": "Madrid-AmbientObserved-28079004-2016-03-15T11:00:00",  
@@ -656,8 +676,10 @@ AirQualityObserved:
   }  
 }  
 ```  
+</details>  
 #### AirQualityObserved NGSI-LD キー値例  
 AirQualityObservedをJSON-LD形式でkey-valuesとした例です。これは、`options=keyValues`を使用した場合にNGSI-LDと互換性があり、個々のエンティティのコンテキストデータを返します。  
+<details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
     "id": "urn:ngsi-ld:AirQualityObserved:Madrid-AmbientObserved-28079004-2016-03-15T11:00:00",  
@@ -768,8 +790,10 @@ AirQualityObserved:
     ]  
 }  
 ```  
+</details>  
 #### AirQualityObserved NGSI-LD 正規化例  
-AirQualityObserved を JSON-LD 形式で正規化した例です。これはオプションを使用しない場合、NGSI-LDと互換性があり、個々のエンティティのコンテキストデータを返します。  
+AirQualityObserved を JSON-LD 形式で正規化した例を示す。これはオプションを使用しない場合、NGSI-LDと互換性があり、個々のエンティティのコンテキストデータを返します。  
+<details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
     "id": "urn:ngsi-ld:AirQualityObserved:Madrid-AmbientObserved-28079004-2016-03-15T11:00:00",  
@@ -807,8 +831,17 @@ AirQualityObserved:
     "windDirection": 186,  
     "windSpeed": 0.64,  
     "@context": [  
-        "https://uri.etsi.org/ngsi-ld/v1/ngsi-ld-core-context.jsonld"  
+        "https://uri.etsi.org/ngsi-ld/v1/ngsi-ld-core-context.jsonld",  
+        "https://raw.githubusercontent.com/smart-data-models/dataModel.Environment/master/context.jsonld"  
     ]  
 }  
 ```  
+</details><!-- /80-Examples -->  
+<!-- 90-FooterNotes -->  
+<!-- /90-FooterNotes -->  
+<!-- 95-Units -->  
 マグニチュード単位の扱いについては、[FAQ 10](https://smartdatamodels.org/index.php/faqs/)を参照してください。  
+<!-- /95-Units -->  
+<!-- 97-LastFooter -->  
+---  
+[Smart Data Models](https://smartdatamodels.org) +++ [Contribution Manual](https://bit.ly/contribution_manual) +++ [About](https://bit.ly/Introduction_SDM)<!-- /97-LastFooter -->  
