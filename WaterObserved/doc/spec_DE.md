@@ -1,17 +1,32 @@
-Entität: WaterObserved  
-======================  
+<!-- 10-Header -->  
+[![Smart Data Models](https://smartdatamodels.org/wp-content/uploads/2022/01/SmartDataModels_logo.png "Logo")](https://smartdatamodels.org)  
+Entität: WaterObserved  
+======================<!-- /10-Header -->  
+<!-- 15-License -->  
 [Offene Lizenz](https://github.com/smart-data-models//dataModel.Environment/blob/master/WaterObserved/LICENSE.md)  
 [Dokument automatisch generiert](https://docs.google.com/presentation/d/e/2PACX-1vTs-Ng5dIAwkg91oTTUdt8ua7woBXhPnwavZ0FxgR8BsAI_Ek3C5q97Nd94HS8KhP-r_quD4H0fgyt3/pub?start=false&loop=false&delayms=3000#slide=id.gb715ace035_0_60)  
+<!-- /15-License -->  
+<!-- 20-Description -->  
 Globale Beschreibung: ** Das Datenmodell für die Wasserbeobachtung dient der Darstellung der Parameter Strömung, Pegel und Volumen des beobachteten Wassers sowie der Informationen über den Seegang in einem festen oder variablen Gebiet. Diese Beobachtung umfasst auch die Masse der schwimmenden Objekte in diesem Gebiet. Die gesammelten Daten werden von Sensoren, Kameras und Wasserstationen geliefert, die an bestimmten oder sensiblen Stellen von Flüssen, Bächen, Wildbächen, Seen, Meeren usw. positioniert sind**.  
+Version: 0.0.2  
+<!-- /20-Description -->  
+<!-- 30-PropertiesList -->  
 
 ## Liste der Eigenschaften  
 
-- `address`: Die Postanschrift  - `alternateName`: Ein alternativer Name für diesen Artikel  - `areaServed`: Das geografische Gebiet, in dem eine Dienstleistung oder ein angebotener Artikel erbracht wird  - `dataProvider`: Eine Folge von Zeichen zur Identifizierung des Anbieters der harmonisierten Dateneinheit.  - `dateCreated`: Zeitstempel der Entitätserstellung. Dieser wird in der Regel von der Speicherplattform zugewiesen.  - `dateModified`: Zeitstempel der letzten Änderung der Entität. Dieser wird in der Regel von der Speicherplattform vergeben.  - `dateObserved`: Datum und Uhrzeit dieser Beobachtung, dargestellt im ISO8601 UTC-Format.  - `dateObservedFrom`: Beobachtungszeitraum : Startdatum und -zeit im ISO8601 UTC-Format.  - `dateObservedTo`: Beobachtungszeitraum : Enddatum und -zeit im Format ISO8601 UTC.  - `description`: Eine Beschreibung dieses Artikels  - `flow`: Wasserdurchfluss beobachtet. Der Code der Maßeinheit (Text) wird unter Verwendung des UN/CEFACAT  - `height`: Höhe des Wasserspiegels - Höhe des Wasserspiegels an alarmierten Küsten.  - `id`: Eindeutiger Bezeichner der Entität  - `location`: Geojson-Referenz auf das Element. Es kann Punkt, LineString, Polygon, MultiPoint, MultiLineString oder MultiPolygon sein  - `measuredArea`: Referenz der gemessenen Oberfläche. Der Einheitencode (Text) des Maßes, der unter Verwendung der [UN/CEFACT Common Codes](http://wiki.goodrelations-vocabulary.org/Documentation/UN/CEFACT_Common_Codes) angegeben wird (max. 3 Zeichen). Zum Beispiel steht <code>MTK</code> für M².  - `name`: Der Name dieses Artikels.  - `objectArea`: Prozentualer Anteil des schwimmenden Objekts an der Fläche. Der Code der Maßeinheit (Text), der unter Verwendung der [UN/CEFACT Common Codes](http://wiki.goodrelations-vocabulary.org/Documentation/UN/CEFACT_Common_Codes) angegeben wird (max. 3 Zeichen). Zum Beispiel steht <code>P1</code> für den Prozentsatz.  - `objectHeightAverage`: Durchschnittlich angehobene Höhe. Der Code der Maßeinheit (Text), der unter Verwendung der [UN/CEFACT Common Codes](http://wiki.goodrelations-vocabulary.org/Documentation/UN/CEFACT_Common_Codes) angegeben wird (max. 3 Zeichen). Zum Beispiel steht <code>MTR</code> für Meter.  - `objectHeightMax`: Maximal angehobene Höhe. Der Code der Maßeinheit (Text), der unter Verwendung der [UN/CEFACT Common Codes](http://wiki.goodrelations-vocabulary.org/Documentation/UN/CEFACT_Common_Codes) angegeben wird (max. 3 Zeichen). Zum Beispiel steht <code>MTR</code> für Meter.  - `objectVolume`: Geschätztes gehobenes Volumen. Der Code der Maßeinheit (Text), der unter Verwendung der [UN/CEFACT Common Codes](http://wiki.goodrelations-vocabulary.org/Documentation/UN/CEFACT_Common_Codes) angegeben wird (max. 3 Zeichen). Zum Beispiel steht <code>MTQ</code> für Kubikmeter  - `owner`: Eine Liste mit einer JSON-kodierten Zeichenfolge, die auf die eindeutigen Kennungen der Eigentümer verweist  - `refDevice`: Ein Verweis auf einen Punkt von Interesse, der mit dieser Beobachtung verbunden ist.  - `seeAlso`: Liste von URLs, die auf zusätzliche Ressourcen zu dem Artikel verweisen  - `source`: Eine Folge von Zeichen, die die ursprüngliche Quelle der Entitätsdaten als URL angibt. Empfohlen wird der voll qualifizierte Domänenname des Quellanbieters oder die URL des Quellobjekts.  - `swellDirection`: Swells Richtung beobachtet.  - `swellHeight`: Beobachtete Seegangshöhe.  - `swellPeriod`: Schwellungsperiode beobachtet.  - `type`: NGSI-Entitätstyp. Es muss WaterObserved sein  - `waveLength`: Beobachtete Wellenlänge.    
+<sup><sub>[*] Wenn es für ein Attribut keinen Typ gibt, liegt das daran, dass es mehrere Typen oder unterschiedliche Formate/Muster haben kann</sub></sup>.  
+- `address[object]`: Die Postanschrift  . Model: [https://schema.org/address](https://schema.org/address)- `alternateName[string]`: Ein alternativer Name für diesen Artikel  - `areaServed[string]`: Das geografische Gebiet, in dem eine Dienstleistung oder ein angebotener Artikel erbracht wird  . Model: [https://schema.org/Text](https://schema.org/Text)- `dataProvider[string]`: Eine Folge von Zeichen zur Identifizierung des Anbieters der harmonisierten Dateneinheit.  - `dateCreated[string]`: Zeitstempel der Entitätserstellung. Dieser wird in der Regel von der Speicherplattform zugewiesen.  - `dateModified[string]`: Zeitstempel der letzten Änderung der Entität. Dieser wird in der Regel von der Speicherplattform vergeben.  - `dateObserved[string]`: Datum und Uhrzeit dieser Beobachtung, dargestellt im ISO8601 UTC-Format.  . Model: [https://schema.org/DateTime](https://schema.org/DateTime)- `dateObservedFrom[string]`: Beobachtungszeitraum : Startdatum und -zeit im ISO8601 UTC-Format.  . Model: [https://schema.org/DateTime](https://schema.org/DateTime)- `dateObservedTo[string]`: Beobachtungszeitraum : Enddatum und -zeit im Format ISO8601 UTC.  . Model: [https://schema.org/DateTime](https://schema.org/DateTime)- `description[string]`: Eine Beschreibung dieses Artikels  - `flow[number]`: Wasserdurchfluss beobachtet. Der Code der Maßeinheit (Text) wird unter Verwendung des UN/CEFACAT  . Model: [https://schema.org/Number](https://schema.org/Number)- `height[number]`: Höhe des Wasserspiegels - Höhe des Wasserspiegels an alarmierten Küsten.  . Model: [https://schema.org/height](https://schema.org/height)- `id[*]`: Eindeutiger Bezeichner der Entität  - `location[*]`: Geojson-Referenz auf das Element. Es kann Punkt, LineString, Polygon, MultiPoint, MultiLineString oder MultiPolygon sein  - `measuredArea[number]`: Referenz der gemessenen Oberfläche. Der Einheitencode (Text) des Maßes, der unter Verwendung der [UN/CEFACT Common Codes](http://wiki.goodrelations-vocabulary.org/Documentation/UN/CEFACT_Common_Codes) angegeben wird (max. 3 Zeichen). Zum Beispiel steht <code>MTK</code> für M².  . Model: [https://schema.org/Number](https://schema.org/Number)- `name[string]`: Der Name dieses Artikels.  - `objectArea[number]`: Prozentualer Anteil des schwimmenden Objekts an der Fläche. Der Code der Maßeinheit (Text), der unter Verwendung der [UN/CEFACT Common Codes](http://wiki.goodrelations-vocabulary.org/Documentation/UN/CEFACT_Common_Codes) angegeben wird (max. 3 Zeichen). Zum Beispiel steht <code>P1</code> für den Prozentsatz.  . Model: [https://schema.org/Number](https://schema.org/Number)- `objectHeightAverage[number]`: Durchschnittlich angehobene Höhe. Der Code der Maßeinheit (Text), der unter Verwendung der [UN/CEFACT Common Codes](http://wiki.goodrelations-vocabulary.org/Documentation/UN/CEFACT_Common_Codes) angegeben wird (max. 3 Zeichen). Zum Beispiel steht <code>MTR</code> für Meter.  . Model: [https://schema.org/Number](https://schema.org/Number)- `objectHeightMax[number]`: Maximal angehobene Höhe. Der Code der Maßeinheit (Text), der unter Verwendung der [UN/CEFACT Common Codes](http://wiki.goodrelations-vocabulary.org/Documentation/UN/CEFACT_Common_Codes) angegeben wird (max. 3 Zeichen). Zum Beispiel steht <code>MTR</code> für Meter.  . Model: [https://schema.org/Number](https://schema.org/Number)- `objectVolume[number]`: Geschätztes gehobenes Volumen. Der Code der Maßeinheit (Text), der unter Verwendung der [UN/CEFACT Common Codes](http://wiki.goodrelations-vocabulary.org/Documentation/UN/CEFACT_Common_Codes) angegeben wird (max. 3 Zeichen). Zum Beispiel steht <code>MTQ</code> für Kubikmeter  . Model: [https://schema.org/Number](https://schema.org/Number)- `owner[array]`: Eine Liste mit einer JSON-kodierten Zeichenfolge, die auf die eindeutigen Kennungen der Eigentümer verweist  - `refDevice[*]`: Ein Verweis auf einen Punkt von Interesse, der mit dieser Beobachtung verbunden ist.  - `seeAlso[*]`: Liste von URLs, die auf zusätzliche Ressourcen zu dem Artikel verweisen  - `source[string]`: Eine Folge von Zeichen, die die ursprüngliche Quelle der Entitätsdaten als URL angibt. Empfohlen wird der voll qualifizierte Domänenname des Quellanbieters oder die URL des Quellobjekts.  - `swellDirection[number]`: Swells Richtung beobachtet.  . Model: [https://schema.org/Number](https://schema.org/Number)- `swellHeight[number]`: Beobachtete Seegangshöhe.  . Model: [https://schema.org/height](https://schema.org/height)- `swellPeriod[number]`: Schwellungsperiode beobachtet.  . Model: [https://schema.org/Number](https://schema.org/Number)- `type[string]`: NGSI-Entitätstyp. Es muss WaterObserved sein  - `waveLength[number]`: Beobachtete Wellenlänge.  . Model: [https://schema.org/Number](https://schema.org/Number)<!-- /30-PropertiesList -->  
+<!-- 35-RequiredProperties -->  
 Erforderliche Eigenschaften  
-- `dateObserved`  - `id`  - `location`  - `type`    
+- `dateObserved`  - `id`  - `location`  - `type`  <!-- /35-RequiredProperties -->  
+<!-- 40-RequiredProperties -->  
 Das Datenmodell für die Wasserbeobachtung dient der Darstellung der Parameter Strömung, Pegel und Volumen des beobachteten Wassers sowie der Informationen über den Seegang in einem festen oder variablen Bereich. Diese Beobachtung umfasst auch die Masse der schwimmenden Objekte in diesem Gebiet.  Die gesammelten Daten werden von [Sensoren], [Kameras], [Wasserstationen] geliefert, die an spezifischen oder sensiblen Orten für Flüsse, Bäche, Wildbäche, Seen, Meere usw. aufgestellt sind.  
+<!-- /40-RequiredProperties -->  
+<!-- 50-DataModelHeader -->  
 ## Datenmodell Beschreibung der Eigenschaften  
 Alphabetisch sortiert (für Details anklicken)  
+<!-- /50-DataModelHeader -->  
+<!-- 60-ModelYaml -->  
 <details><summary><strong>full yaml details</strong></summary>    
 ```yaml  
 WaterObserved:    
@@ -408,9 +423,14 @@ WaterObserved:
   x-version: 0.0.2    
 ```  
 </details>    
+<!-- /60-ModelYaml -->  
+<!-- 70-MiddleNotes -->  
+<!-- /70-MiddleNotes -->  
+<!-- 80-Examples -->  
 ## Beispiel-Nutzlasten  
 #### WaterObserved NGSI-v2 key-values Beispiel  
-Hier ist ein Beispiel eines WaterObserved im JSON-LD-Format als Key-Values. Dies ist mit NGSI-v2 kompatibel, wenn `options=keyValues` verwendet wird, und liefert die Kontextdaten einer einzelnen Entität.  
+Hier ist ein Beispiel eines WaterObserved im JSON-LD-Format als Key-Values. Dies ist kompatibel mit NGSI-v2, wenn `options=keyValues` verwendet wird und liefert die Kontextdaten einer einzelnen Entität.  
+<details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
   "id": "WaterObserved:MNCA-001",  
@@ -434,11 +454,15 @@ WaterObserved:
   "objectArea": 35,  
   "objectHeightAverage": 1.75,  
   "objectHeightMax": 2.25,  
-  "objectVolume": 17.5  
+  "objectVolume": 17.5,  
+  "waterLevel": 2.4,  
+  "waterDischarge": 3  
 }  
 ```  
+</details>  
 #### WaterObserved NGSI-v2 normalisiert Beispiel  
 Hier ist ein Beispiel für ein WaterObserved im JSON-LD-Format in normalisierter Form. Dies ist kompatibel mit NGSI-v2, wenn keine Optionen verwendet werden, und liefert die Kontextdaten einer einzelnen Entität.  
+<details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
   "id": "WaterObserved:MNCA-001",  
@@ -504,111 +528,131 @@ WaterObserved:
   "objectVolume": {  
     "type": "Number",  
     "value": 17.5  
+  },  
+  "waterLevel": {  
+    "type": "Number",  
+    "value": 2.4  
+  },  
+  "waterDischarge": {  
+    "type": "Number",  
+    "value": 3  
   }  
 }  
 ```  
+</details>  
 #### WaterObserved NGSI-LD key-values Beispiel  
-Hier ist ein Beispiel eines WaterObserved im JSON-LD-Format als Key-Values. Dies ist mit NGSI-LD kompatibel, wenn `options=keyValues` verwendet wird und liefert die Kontextdaten einer einzelnen Entität.  
+Hier ist ein Beispiel eines WaterObserved im JSON-LD Format als Key-Values. Dies ist mit NGSI-LD kompatibel, wenn `options=keyValues` verwendet wird und liefert die Kontextdaten einer einzelnen Entität.  
+<details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
-  "id": "uri:ngsi:WaterObserved:MNCA-001",  
-  "type": "WaterObserved",  
-  "name": "STLRT-MNCA-AP-WO-012",  
-  "alternateName": "Var River Alert for safety procedure for Airport",  
-  "description": "Observation of Evolution of the water levels",  
-  "location": {  
-    "type": "Point",  
-    "coordinates": [  
-      43.66481,  
-      7.196545  
+    "id": "uri:ngsi:WaterObserved:MNCA-001",  
+    "type": "WaterObserved",  
+    "alternateName": "Var River Alert for safety procedure for Airport",  
+    "areaServed": "Nice Airport",  
+    "dateObserved": "2020-03-17T08:45:00.209Z",  
+    "description": "Observation of Evolution of the water levels",  
+    "flow": 12,  
+    "height": 3.52,  
+    "location": {  
+        "type": "Point",  
+        "coordinates": [  
+            43.66481,  
+            7.196545  
+        ]  
+    },  
+    "measuredArea": 250,  
+    "name": "STLRT-MNCA-AP-WO-012",  
+    "objectArea": 35,  
+    "objectHeightAverage": 1.75,  
+    "objectHeightMax": 2.25,  
+    "objectVolume": 17.5,  
+    "refDevice": "uri:ngsi:Device:T2-NP-018",  
+    "@context": [  
+        "https://raw.githubusercontent.com/smart-data-models/dataModel.Environment/master/context.jsonld"  
     ]  
-  },  
-  "areaServed": "Nice Airport",  
-  "refDevice": "uri:ngsi:Device:T2-NP-018",  
-  "dateObserved": "2020-03-17T08:45:00.209Z",  
-  "flow": 12,  
-  "height": 3.52,  
-  "measuredArea": 250,  
-  "objectArea": 35,  
-  "objectHeightAverage": 1.75,  
-  "objectHeightMax": 2.25,  
-  "objectVolume": 17.5,  
-  "@context": [  
-    "https://smartdatamodels.org/context.jsonld"  
-  ]  
 }  
 ```  
+</details>  
 #### WaterObserved NGSI-LD normalisiert Beispiel  
 Hier ist ein Beispiel für ein WaterObserved im JSON-LD-Format in normalisierter Form. Dies ist mit NGSI-LD kompatibel, wenn keine Optionen verwendet werden, und liefert die Kontextdaten einer einzelnen Entität.  
+<details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
-  "id": "urn:ngsi:WaterObserved:MNCA-001",  
-  "type": "WaterObserved",  
-  "name": {  
-    "type": "Property",  
-    "value": "STLRT-MNCA-AP-WO-012"  
-  },  
-  "alternateName": {  
-    "type": "Property",  
-    "value": "Var River Alert for safety procedure for Airport"  
-  },  
-  "description": {  
-    "type": "Property",  
-    "value": "Observation of Evolution of the water levels"  
-  },  
-  "location": {  
-    "type": "Geoproperty",  
-    "value": {  
-      "type": "Point",  
-      "coordinates": [  
-        43.66481,  
-        7.196545  
-      ]  
-    }  
-  },  
-  "areaServed": {  
-    "type": "Property",  
-    "value": "Nice Airport"  
-  },  
-  "refDevice": {  
-    "type": "Relationship",  
-    "object": "uri:ngsi:Device:T2-NP-018"  
-  },  
-  "dateObserved": {  
-    "type": "Relationship",  
-    "object": "2020-03-17T08:45:00.209Z"  
-  },  
-  "flow": {  
-    "type": "Number",  
-    "value": 12  
-  },  
-  "height": {  
-    "type": "Number",  
-    "value": 3.52  
-  },  
-  "measuredArea": {  
-    "type": "Number",  
-    "value": 250  
-  },  
-  "objectArea": {  
-    "type": "Number",  
-    "value": 35  
-  },  
-  "objectHeightAverage": {  
-    "type": "Number",  
-    "value": 1.75  
-  },  
-  "objectHeightMax": {  
-    "type": "Number",  
-    "value": 2.25  
-  },  
-  "objectVolume": {  
-    "type": "Number",  
-    "value": 17.5  
-  },  
-  "@context": [  
-    "https://smartdatamodels.org/context.jsonld"  
-  ]  
+    "id": "urn:ngsi:WaterObserved:MNCA-001",  
+    "type": "WaterObserved",  
+    "alternateName": {  
+        "type": "Property",  
+        "value": "Var River Alert for safety procedure for Airport"  
+    },  
+    "areaServed": {  
+        "type": "Property",  
+        "value": "Nice Airport"  
+    },  
+    "dateObserved": {  
+        "type": "Relationship",  
+        "object": "2020-03-17T08:45:00.209Z"  
+    },  
+    "description": {  
+        "type": "Property",  
+        "value": "Observation of Evolution of the water levels"  
+    },  
+    "flow": {  
+        "type": "Number",  
+        "value": 12  
+    },  
+    "height": {  
+        "type": "Number",  
+        "value": 3.52  
+    },  
+    "location": {  
+        "type": "Geoproperty",  
+        "value": {  
+            "type": "Point",  
+            "coordinates": [  
+                43.66481,  
+                7.196545  
+            ]  
+        }  
+    },  
+    "measuredArea": {  
+        "type": "Number",  
+        "value": 250  
+    },  
+    "name": {  
+        "type": "Property",  
+        "value": "STLRT-MNCA-AP-WO-012"  
+    },  
+    "objectArea": {  
+        "type": "Number",  
+        "value": 35  
+    },  
+    "objectHeightAverage": {  
+        "type": "Number",  
+        "value": 1.75  
+    },  
+    "objectHeightMax": {  
+        "type": "Number",  
+        "value": 2.25  
+    },  
+    "objectVolume": {  
+        "type": "Number",  
+        "value": 17.5  
+    },  
+    "refDevice": {  
+        "type": "Relationship",  
+        "object": "uri:ngsi:Device:T2-NP-018"  
+    },  
+    "@context": [  
+        "https://raw.githubusercontent.com/smart-data-models/dataModel.Environment/master/context.jsonld"  
+    ]  
 }  
 ```  
-Siehe [FAQ 10](https://smartdatamodels.org/index.php/faqs/), um eine Antwort auf die Frage zu erhalten, wie man mit Größeneinheiten umgeht
+</details><!-- /80-Examples -->  
+<!-- 90-FooterNotes -->  
+<!-- /90-FooterNotes -->  
+<!-- 95-Units -->  
+Siehe [FAQ 10] (https://smartdatamodels.org/index.php/faqs/), um eine Antwort auf die Frage zu erhalten, wie man mit Größeneinheiten umgeht  
+<!-- /95-Units -->  
+<!-- 97-LastFooter -->  
+---  
+[Smart Data Models](https://smartdatamodels.org) +++ [Contribution Manual](https://bit.ly/contribution_manual) +++ [About](https://bit.ly/Introduction_SDM)<!-- /97-LastFooter -->  
