@@ -1,17 +1,31 @@
+<!-- 10-Header -->  
 [![Smart Data Models](https://smartdatamodels.org/wp-content/uploads/2022/01/SmartDataModels_logo.png "Logo")](https://smartdatamodels.org)  
 Entité : TrafficEnvironmentImpact  
-=================================  
+=================================<!-- /10-Header -->  
+<!-- 15-License -->  
 [Licence ouverte] (https://github.com/smart-data-models//dataModel.Environment/blob/master/TrafficEnvironmentImpact/LICENSE.md)  
 [document généré automatiquement] (https://docs.google.com/presentation/d/e/2PACX-1vTs-Ng5dIAwkg91oTTUdt8ua7woBXhPnwavZ0FxgR8BsAI_Ek3C5q97Nd94HS8KhP-r_quD4H0fgyt3/pub?start=false&loop=false&delayms=3000#slide=id.gb715ace035_0_60)  
+<!-- /15-License -->  
+<!-- 20-Description -->  
 Description globale : **Incidence environnementale du trafic basée sur le trafic des véhicules et leurs caractéristiques d'émission**.  
 version : 0.0.2  
+<!-- /20-Description -->  
+<!-- 30-PropertiesList -->  
 
 ## Liste des propriétés  
 
-- `address`: L'adresse postale  - `alternateName`: Un nom alternatif pour cet élément  - `areaServed`: La zone géographique où un service ou un article offert est fourni  - `co2`: La concentration mesurée des émissions de C02  - `dataProvider`: Une séquence de caractères identifiant le fournisseur de l'entité de données harmonisées.  - `dateCreated`: Horodatage de la création de l'entité. Celui-ci sera généralement attribué par la plateforme de stockage.  - `dateModified`: Horodatage de la dernière modification de l'entité. Il sera généralement attribué par la plateforme de stockage.  - `dateObservedFrom`: Date du début de la mesure (horodatage) en ISO 8601  - `dateObservedTo`: Date de la fin de la mesure (horodatage) en ISO 8601  - `description`: Une description de cet article  - `id`: Identifiant unique de l'entité  - `location`: Référence Geojson à l'élément. Il peut s'agir d'un point, d'une ligne, d'un polygone, d'un point multiple, d'une ligne multiple ou d'un polygone multiple.  - `name`: Le nom de cet élément.  - `owner`: Une liste contenant une séquence de caractères codée en JSON référençant les identifiants uniques du ou des propriétaires.  - `seeAlso`: liste d'uri pointant vers des ressources supplémentaires sur l'élément  - `source`: Une séquence de caractères donnant la source originale des données de l'entité sous forme d'URL. Il est recommandé d'utiliser le nom de domaine entièrement qualifié du fournisseur source ou l'URL de l'objet source.  - `traffic`: Tableau d'objets contenant les différents types de véhicules et leurs relations avec l'objet d'observation du flux de trafic.  - `type`: Type de NGSI. Il doit s'agir de TrafficEnvironmentImpact.    
+<sup><sub>[*] S'il n'y a pas de type dans un attribut, c'est parce qu'il pourrait avoir plusieurs types ou différents formats/modèles</sub></sup>.  
+- `address[object]`: L'adresse postale  . Model: [https://schema.org/address](https://schema.org/address)- `alternateName[string]`: Un nom alternatif pour cet élément  - `areaServed[string]`: La zone géographique où un service ou un article offert est fourni  . Model: [https://schema.org/Text](https://schema.org/Text)- `co2[number]`: La concentration mesurée des émissions de C02  - `dataProvider[string]`: Une séquence de caractères identifiant le fournisseur de l'entité de données harmonisées.  - `dateCreated[string]`: Horodatage de la création de l'entité. Celui-ci sera généralement attribué par la plateforme de stockage.  - `dateModified[string]`: Horodatage de la dernière modification de l'entité. Il sera généralement attribué par la plateforme de stockage.  - `dateObservedFrom[string]`: Date du début de la mesure (horodatage) en ISO 8601  - `dateObservedTo[string]`: Date de la fin de la mesure (horodatage) en ISO 8601  - `description[string]`: Une description de cet article  - `id[*]`: Identifiant unique de l'entité  - `location[*]`: Référence Geojson à l'élément. Il peut s'agir d'un point, d'une ligne, d'un polygone, d'un point multiple, d'une ligne multiple ou d'un polygone multiple.  - `name[string]`: Le nom de cet élément.  - `owner[array]`: Une liste contenant une séquence de caractères codée en JSON référençant les identifiants uniques du ou des propriétaires.  - `seeAlso[*]`: liste d'uri pointant vers des ressources supplémentaires sur l'article  - `source[string]`: Une séquence de caractères donnant la source originale des données de l'entité sous forme d'URL. Il est recommandé d'utiliser le nom de domaine entièrement qualifié du fournisseur source ou l'URL de l'objet source.  - `traffic[array]`: Tableau d'objets contenant les différents types de véhicules et leurs relations avec l'objet d'observation du flux de trafic.  - `type[string]`: Type de NGSI. Il doit s'agir de TrafficEnvironmentImpact.  <!-- /30-PropertiesList -->  
+<!-- 35-RequiredProperties -->  
 Propriétés requises  
-- `id`  - `type`  ## Description des propriétés du modèle de données  
+- `id`  - `type`  <!-- /35-RequiredProperties -->  
+<!-- 40-RequiredProperties -->  
+<!-- /40-RequiredProperties -->  
+<!-- 50-DataModelHeader -->  
+## Description des propriétés du modèle de données  
 Classés par ordre alphabétique (cliquez pour plus de détails)  
+<!-- /50-DataModelHeader -->  
+<!-- 60-ModelYaml -->  
 <details><summary><strong>full yaml details</strong></summary>    
 ```yaml  
 TrafficEnvironmentImpact:    
@@ -330,9 +344,14 @@ TrafficEnvironmentImpact:
   x-version: 0.0.2    
 ```  
 </details>    
+<!-- /60-ModelYaml -->  
+<!-- 70-MiddleNotes -->  
+<!-- /70-MiddleNotes -->  
+<!-- 80-Examples -->  
 ## Exemples de charges utiles  
 #### TrafficEnvironmentImpact Valeurs-clés de la NGSI-v2 Exemple  
 Voici un exemple d'un TrafficEnvironmentImpact au format JSON-LD sous forme de valeurs-clés. Ceci est compatible avec NGSI-v2 lorsque l'on utilise `options=keyValues` et renvoie les données contextuelles d'une entité individuelle.  
+<details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
   "id": "urn:ngsi-ld:TrafficEnvironmentImpact:id:BGGK:76812356",  
@@ -383,8 +402,10 @@ TrafficEnvironmentImpact:
   ]  
 }  
 ```  
+</details>  
 #### TrafficEnvironmentImpact NGSI-v2 normalisé Exemple  
 Voici un exemple d'un TrafficEnvironmentImpact au format JSON-LD tel que normalisé. Ce format est compatible avec la NGSI-v2 lorsqu'il n'utilise pas d'options et renvoie les données contextuelles d'une entité individuelle.  
+<details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
   "id": "urn:ngsi-ld:TrafficEnvironmentImpact:id:BGGK:76812356",  
@@ -483,162 +504,176 @@ TrafficEnvironmentImpact:
   }  
 }  
 ```  
+</details>  
 #### TrafficEnvironmentImpact Valeurs-clés NGSI-LD Exemple  
 Voici un exemple d'un TrafficEnvironmentImpact au format JSON-LD sous forme de valeurs-clés. Ceci est compatible avec NGSI-LD lorsque l'on utilise `options=keyValues` et renvoie les données contextuelles d'une entité individuelle.  
+<details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
-  "id": "urn:ngsi-ld:TrafficEnvironmentImpact:id:BGGK:76812356",  
-  "type": "TrafficEnvironmentImpact",  
-  "dateCreated": "2022-08-17T05:21:50Z",  
-  "dateModified": "2022-08-30T08:09:40Z",  
-  "dateObservedFrom": "2022-08-30T08:09:40Z",  
-  "dateObservedTo": "2022-08-30T08:19:40Z",  
-  "source": "",  
-  "name": "Environmental impact",  
-  "alternateName": "",  
-  "description": "",  
-  "dataProvider": "City sensors",  
-  "owner": [  
-    "urn:ngsi-ld:TrafficEnvironmentImpact:items:FAVE:94166126",  
-    "urn:ngsi-ld:TrafficEnvironmentImpact:items:EWHQ:53940846"  
-  ],  
-  "seeAlso": [  
-    "urn:ngsi-ld:TrafficEnvironmentImpact:items:JSNF:11004684",  
-    "urn:ngsi-ld:TrafficEnvironmentImpact:items:HURK:65683455"  
-  ],  
-  "location": {  
-    "type": "Point",  
-    "coordinates": [  
-      43.7034,  
-      7.2663  
-    ]  
-  },  
-  "address": {  
-    "streetAddress": "Rue Frédéric Mistral",  
-    "addressLocality": "Valbonne",  
-    "addressRegion": "Sophia Antipolis",  
-    "addressCountry": "France",  
-    "postalCode": "06550",  
-    "postOfficeBoxNumber": ""  
-  },  
-  "areaServed": "",  
-  "co2": 582.3,  
-  "traffic": [  
-    {  
-      "vehicleClass": "A",  
-      "refTrafficFlowObserved": "urn:ngsi-ld:TrafficObserved:items:FAVE:94166126"  
+    "id": "urn:ngsi-ld:TrafficEnvironmentImpact:id:BGGK:76812356",  
+    "type": "TrafficEnvironmentImpact",  
+    "dateCreated": "2022-08-17T05:21:50Z",  
+    "dateModified": "2022-08-30T08:09:40Z",  
+    "dateObservedFrom": "2022-08-30T08:09:40Z",  
+    "dateObservedTo": "2022-08-30T08:19:40Z",  
+    "source": "",  
+    "name": "Environmental impact",  
+    "alternateName": "",  
+    "description": "",  
+    "dataProvider": "City sensors",  
+    "owner": [  
+        "urn:ngsi-ld:TrafficEnvironmentImpact:items:FAVE:94166126",  
+        "urn:ngsi-ld:TrafficEnvironmentImpact:items:EWHQ:53940846"  
+    ],  
+    "seeAlso": [  
+        "urn:ngsi-ld:TrafficEnvironmentImpact:items:JSNF:11004684",  
+        "urn:ngsi-ld:TrafficEnvironmentImpact:items:HURK:65683455"  
+    ],  
+    "location": {  
+        "type": "Point",  
+        "coordinates": [  
+            43.7034,  
+            7.2663  
+        ]  
     },  
-    {  
-      "vehicleClass": "B",  
-      "refTrafficFlowObserved":"urn:ngsi-ld:TrafficObserved:items:BAAE:94166236"  
-    }  
-  ],  
-  "@context": [  
-    "https://smartdatamodels.org/dataModel.Environment/context.jsonld"  
-  ]  
+    "address": {  
+        "streetAddress": "Rue Fr\u00e9d\u00e9ric Mistral",  
+        "addressLocality": "Valbonne",  
+        "addressRegion": "Sophia Antipolis",  
+        "addressCountry": "France",  
+        "postalCode": "06550",  
+        "postOfficeBoxNumber": ""  
+    },  
+    "areaServed": "",  
+    "co2": 582.3,  
+    "traffic": [  
+        {  
+            "vehicleClass": "A",  
+            "refTrafficFlowObserved": "urn:ngsi-ld:TrafficObserved:items:FAVE:94166126"  
+        },  
+        {  
+            "vehicleClass": "B",  
+            "refTrafficFlowObserved": "urn:ngsi-ld:TrafficObserved:items:BAAE:94166236"  
+        }  
+    ],  
+    "@context": [  
+        "https://smartdatamodels.org/dataModel.Environment/context.jsonld",  
+        "https://raw.githubusercontent.com/smart-data-models/dataModel.Environment/master/context.jsonld"  
+    ]  
 }  
 ```  
+</details>  
 #### Impact sur le trafic et l'environnement NGSI-LD normalisé Exemple  
 Voici un exemple d'un TrafficEnvironmentImpact au format JSON-LD tel que normalisé. Ce format est compatible avec NGSI-LD lorsqu'il n'utilise pas d'options et renvoie les données contextuelles d'une entité individuelle.  
+<details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
-  "id": "urn:ngsi-ld:TrafficEnvironmentImpact:id:BGGK:76812356",  
-  "type": "TrafficEnvironmentImpact",  
-  "dateCreated": {  
-    "type": "Property",  
-    "value": "2022-08-17T05:21:50Z"  
-  },  
-  "dateModified": {  
-    "type": "Property",  
-    "value": "2022-08-30T08:09:40Z"  
-  },  
-  "dateObservedFrom": {  
-    "type": "Property",  
-    "value": "2022-08-30T08:09:40Z"  
-  },  
-  "dateObservedTo": {  
-    "type": "Property",  
-    "value": "2022-08-30T08:19:40Z"  
-  },  
-  "source": {  
-    "type": "Property",  
-    "value": ""  
-  },  
-  "name": {  
-    "type": "Property",  
-    "value": "Environmental impact"  
-  },  
-  "alternateName": {  
-    "type": "Property",  
-    "value": ""  
-  },  
-  "description": {  
-    "type": "Property",  
-    "value": ""  
-  },  
-  "dataProvider": {  
-    "type": "Property",  
-    "value": "City sensors"  
-  },  
-  "owner": {  
-    "type": "Property",  
-    "value": [  
-      "urn:ngsi-ld:TrafficEnvironmentImpact:items:FAVE:94166126",  
-      "urn:ngsi-ld:TrafficEnvironmentImpact:items:EWHQ:53940846"  
-    ]  
-  },  
-  "seeAlso": {  
-    "type": "Property",  
-    "value": [  
-      "urn:ngsi-ld:TrafficEnvironmentImpact:items:JSNF:11004684",  
-      "urn:ngsi-ld:TrafficEnvironmentImpact:items:HURK:65683455"  
-    ]  
-  },  
-  "location": {  
-    "type": "Geoproperty",  
-    "value": {  
-      "type": "Point",  
-      "coordinates": [  
-        43.7034,  
-        7.2663  
-      ]  
-    }  
-  },  
-  "address": {  
-    "type": "Property",  
-    "value": {  
-      "streetAddress": "Rue Frédéric Mistral",  
-      "addressLocality": "Valbonne",  
-      "addressRegion": "Sophia Antipolis",  
-      "addressCountry": "France",  
-      "postalCode": "06550",  
-      "postOfficeBoxNumber": ""  
-    }  
-  },  
-  "areaServed": {  
-    "type": "Property",  
-    "value": ""  
-  },  
-  "co2": {  
-    "type": "Property",  
-    "value": 582.3  
-  },  
-  "traffic": {  
-    "type": "Property",  
-    "value": [  
-      {  
-        "vehicleClass": "A",  
-        "refTrafficFlowObserved": "urn:ngsi-ld:TrafficObserved:items:FAVE:94166126"  
-      },  
-      {  
-        "vehicleClass": "B",  
-        "refTrafficFlowObserved": "urn:ngsi-ld:TrafficObserved:items:BAAE:94166236"  
-      }  
-    ]  
-  },  
-  "@context": [  
-      "https://smartdatamodels.org/dataModel.Environment/context.jsonld"  
+    "id": "urn:ngsi-ld:TrafficEnvironmentImpact:id:BGGK:76812356",  
+    "type": "TrafficEnvironmentImpact",  
+    "dateCreated": {  
+        "type": "Property",  
+        "value": "2022-08-17T05:21:50Z"  
+    },  
+    "dateModified": {  
+        "type": "Property",  
+        "value": "2022-08-30T08:09:40Z"  
+    },  
+    "dateObservedFrom": {  
+        "type": "Property",  
+        "value": "2022-08-30T08:09:40Z"  
+    },  
+    "dateObservedTo": {  
+        "type": "Property",  
+        "value": "2022-08-30T08:19:40Z"  
+    },  
+    "source": {  
+        "type": "Property",  
+        "value": ""  
+    },  
+    "name": {  
+        "type": "Property",  
+        "value": "Environmental impact"  
+    },  
+    "alternateName": {  
+        "type": "Property",  
+        "value": ""  
+    },  
+    "description": {  
+        "type": "Property",  
+        "value": ""  
+    },  
+    "dataProvider": {  
+        "type": "Property",  
+        "value": "City sensors"  
+    },  
+    "owner": {  
+        "type": "Property",  
+        "value": [  
+            "urn:ngsi-ld:TrafficEnvironmentImpact:items:FAVE:94166126",  
+            "urn:ngsi-ld:TrafficEnvironmentImpact:items:EWHQ:53940846"  
+        ]  
+    },  
+    "seeAlso": {  
+        "type": "Property",  
+        "value": [  
+            "urn:ngsi-ld:TrafficEnvironmentImpact:items:JSNF:11004684",  
+            "urn:ngsi-ld:TrafficEnvironmentImpact:items:HURK:65683455"  
+        ]  
+    },  
+    "location": {  
+        "type": "Geoproperty",  
+        "value": {  
+            "type": "Point",  
+            "coordinates": [  
+                43.7034,  
+                7.2663  
+            ]  
+        }  
+    },  
+    "address": {  
+        "type": "Property",  
+        "value": {  
+            "streetAddress": "Rue Fr\u00e9d\u00e9ric Mistral",  
+            "addressLocality": "Valbonne",  
+            "addressRegion": "Sophia Antipolis",  
+            "addressCountry": "France",  
+            "postalCode": "06550",  
+            "postOfficeBoxNumber": ""  
+        }  
+    },  
+    "areaServed": {  
+        "type": "Property",  
+        "value": ""  
+    },  
+    "co2": {  
+        "type": "Property",  
+        "value": 582.3  
+    },  
+    "traffic": {  
+        "type": "Property",  
+        "value": [  
+            {  
+                "vehicleClass": "A",  
+                "refTrafficFlowObserved": "urn:ngsi-ld:TrafficObserved:items:FAVE:94166126"  
+            },  
+            {  
+                "vehicleClass": "B",  
+                "refTrafficFlowObserved": "urn:ngsi-ld:TrafficObserved:items:BAAE:94166236"  
+            }  
+        ]  
+    },  
+    "@context": [  
+        "https://smartdatamodels.org/dataModel.Environment/context.jsonld",  
+        "https://raw.githubusercontent.com/smart-data-models/dataModel.Environment/master/context.jsonld"  
     ]  
 }  
 ```  
+</details><!-- /80-Examples -->  
+<!-- 90-FooterNotes -->  
+<!-- /90-FooterNotes -->  
+<!-- 95-Units -->  
 Voir [FAQ 10](https://smartdatamodels.org/index.php/faqs/) pour obtenir une réponse sur la façon de traiter les unités de magnitude.  
+<!-- /95-Units -->  
+<!-- 97-LastFooter -->  
+---  
+[Smart Data Models](https://smartdatamodels.org) +++ [Contribution Manual](https://bit.ly/contribution_manual) +++ [About](https://bit.ly/Introduction_SDM)<!-- /97-LastFooter -->  
