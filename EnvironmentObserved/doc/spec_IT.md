@@ -1,15 +1,31 @@
-Entità: EnvironmentObserved  
-===========================  
+<!-- 10-Header -->  
+[![Smart Data Models](https://smartdatamodels.org/wp-content/uploads/2022/01/SmartDataModels_logo.png "Logo")](https://smartdatamodels.org)  
+Entità: AmbienteOsservato  
+=========================<!-- /10-Header -->  
+<!-- 15-License -->  
 [Licenza aperta](https://github.com/smart-data-models//dataModel.Environment/blob/master/EnvironmentObserved/LICENSE.md)  
 [documento generato automaticamente](https://docs.google.com/presentation/d/e/2PACX-1vTs-Ng5dIAwkg91oTTUdt8ua7woBXhPnwavZ0FxgR8BsAI_Ek3C5q97Nd94HS8KhP-r_quD4H0fgyt3/pub?start=false&loop=false&delayms=3000#slide=id.gb715ace035_0_60)  
-Descrizione globale: **Questa entità contiene una descrizione armonizzata delle condizioni ambientali osservate in un determinato luogo e tempo. Questa entità è principalmente associata al segmento verticale dell'ambiente e dell'agricoltura, ma può anche essere utilizzata in smart home, smart cities, industria e applicazioni IoT correlate.**  
+<!-- /15-License -->  
+<!-- 20-Description -->  
+Descrizione globale: **Questa entità contiene una descrizione armonizzata delle condizioni ambientali osservate in un determinato luogo e momento. Questa entità è associata principalmente al segmento verticale dell'ambiente e dell'agricoltura, ma può essere utilizzata anche nelle applicazioni smart home, smart city, industriali e IoT correlate.**  
+versione: 0.0.1  
+<!-- /20-Description -->  
+<!-- 30-PropertiesList -->  
 
 ## Elenco delle proprietà  
 
-- `address`: L'indirizzo postale  - `airQualityObserved`: Un riferimento alle entità associate AirQualityObserved.  - `alternateName`: Un nome alternativo per questa voce  - `areaServed`: L'area geografica in cui viene fornito un servizio o un articolo offerto  - `dataProvider`: Una sequenza di caratteri che identifica il fornitore dell'entità di dati armonizzata.  - `dateCreated`: Timestamp di creazione dell'entità. Questo sarà di solito assegnato dalla piattaforma di archiviazione.  - `dateModified`: Timestamp dell'ultima modifica dell'entità. Questo sarà di solito assegnato dalla piattaforma di archiviazione.  - `description`: Una descrizione di questo articolo  - `id`: Identificatore unico dell'entità  - `location`: Riferimento Geojson all'elemento. Può essere Point, LineString, Polygon, MultiPoint, MultiLineString o MultiPolygon  - `name`: Il nome di questo articolo.  - `owner`: Una lista contenente una sequenza di caratteri codificata in JSON che si riferisce agli ID unici dei proprietari  - `pointOfInterest`: Un riferimento ai punti di interesse associati (ad esempio stazioni di monitoraggio) a cui le osservazioni associate sono collegate.  - `seeAlso`: elenco di uri che puntano a risorse aggiuntive sull'elemento  - `source`: Una sequenza di caratteri che dà la fonte originale dei dati dell'entità come URL. Si raccomanda di essere il nome di dominio completamente qualificato del fornitore di origine, o l'URL dell'oggetto di origine.  - `type`: Identificatore di entità NGSI. Deve essere EnvironmentObserved  - `waterQualityObserved`: Un riferimento alle entità WaterQualityObserved associate.  - `weatherObserved`: Un riferimento alle entità associate WeatherObserved.    
+<sup><sub>[*] Se non c'è un tipo in un attributo è perché potrebbe avere diversi tipi o diversi formati/modelli</sub></sup>.  
+- `address[object]`: L'indirizzo postale  . Model: [https://schema.org/address](https://schema.org/address)- `airQualityObserved[array]`: Un riferimento alle entità AirQualityObserved associate.  - `alternateName[string]`: Un nome alternativo per questa voce  - `areaServed[string]`: L'area geografica in cui viene fornito il servizio o l'articolo offerto.  . Model: [https://schema.org/Text](https://schema.org/Text)- `dataProvider[string]`: Una sequenza di caratteri che identifica il fornitore dell'entità di dati armonizzata.  - `dateCreated[string]`: Timestamp di creazione dell'entità. Di solito viene assegnato dalla piattaforma di archiviazione.  - `dateModified[string]`: Timestamp dell'ultima modifica dell'entità. Di solito viene assegnato dalla piattaforma di archiviazione.  - `description[string]`: Descrizione dell'articolo  - `id[*]`: Identificatore univoco dell'entità  - `location[*]`: Riferimento geojson all'elemento. Può essere un punto, una stringa di linea, un poligono, un multi-punto, una stringa di linea o un poligono multiplo.  - `name[string]`: Il nome di questo elemento.  - `owner[array]`: Un elenco contenente una sequenza di caratteri codificata JSON che fa riferimento agli ID univoci dei proprietari.  - `pointOfInterest[array]`: Un riferimento ai punti di interesse associati (ad esempio, stazioni di monitoraggio) a cui si riferiscono le osservazioni associate.  - `seeAlso[*]`: elenco di uri che puntano a risorse aggiuntive sull'elemento  - `source[string]`: Una sequenza di caratteri che indica la fonte originale dei dati dell'entità come URL. Si consiglia di utilizzare il nome di dominio completamente qualificato del provider di origine o l'URL dell'oggetto di origine.  - `type[string]`: Identificatore dell'entità NGSI. Deve essere EnvironmentObserved  - `waterQualityObserved[array]`: Un riferimento alle entità WaterQualityObserved associate.  - `weatherObserved[array]`: Un riferimento alle entità WeatherObserved associate.  <!-- /30-PropertiesList -->  
+<!-- 35-RequiredProperties -->  
 Proprietà richieste  
-- `id`  - `type`  ## Descrizione del modello di dati delle proprietà  
+- `id`  - `type`  <!-- /35-RequiredProperties -->  
+<!-- 40-RequiredProperties -->  
+<!-- /40-RequiredProperties -->  
+<!-- 50-DataModelHeader -->  
+## Modello di dati descrizione delle proprietà  
 Ordinati in ordine alfabetico (clicca per i dettagli)  
+<!-- /50-DataModelHeader -->  
+<!-- 60-ModelYaml -->  
 <details><summary><strong>full yaml details</strong></summary>    
 ```yaml  
 EnvironmentObserved:    
@@ -350,9 +366,14 @@ EnvironmentObserved:
   x-version: 0.0.1    
 ```  
 </details>    
-## Esempio di payloads  
-#### AmbienteValori chiave NGSI-v2 osservati Esempio  
-Ecco un esempio di un EnvironmentObserved in formato JSON-LD come valori-chiave. Questo è compatibile con NGSI-v2 quando si usa `options=keyValues` e restituisce i dati di contesto di una singola entità.  
+<!-- /60-ModelYaml -->  
+<!-- 70-MiddleNotes -->  
+<!-- /70-MiddleNotes -->  
+<!-- 80-Examples -->  
+## Esempi di payload  
+#### AmbienteValori chiave osservati NGSI-v2 Esempio  
+Ecco un esempio di EnvironmentObserved in formato JSON-LD come valori-chiave. Questo è compatibile con NGSI-v2 quando si usa `options=keyValues` e restituisce i dati di contesto di una singola entità.  
+<details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
   "id": "urn:ngsi-ld:EnvironmentObserved:33f02632-74f4-4c96-9ba1-e26945de9481",  
@@ -385,8 +406,10 @@ EnvironmentObserved:
   ]  
 }  
 ```  
+</details>  
 #### AmbienteOsservato NGSI-v2 normalizzato Esempio  
-Ecco un esempio di un EnvironmentObserved in formato JSON-LD normalizzato. Questo è compatibile con NGSI-v2 quando non usa opzioni e restituisce i dati di contesto di una singola entità.  
+Ecco un esempio di EnvironmentObserved in formato JSON-LD normalizzato. Questo è compatibile con NGSI-v2 quando non si utilizzano opzioni e restituisce i dati di contesto di una singola entità.  
+<details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
   "id": "urn:ngsi-ld:EnvironmentObserved:33f02632-74f4-4c96-9ba1-e26945de9481",  
@@ -440,99 +463,113 @@ EnvironmentObserved:
   }  
 }  
 ```  
+</details>  
 #### AmbienteValori chiave NGSI-LD osservati Esempio  
-Ecco un esempio di un EnvironmentObserved in formato JSON-LD come valori-chiave. Questo è compatibile con NGSI-LD quando si usa `options=keyValues` e restituisce i dati di contesto di una singola entità.  
+Ecco un esempio di EnvironmentObserved in formato JSON-LD come valori-chiave. Questo è compatibile con NGSI-LD quando si usa `options=keyValues` e restituisce i dati di contesto di una singola entità.  
+<details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
-  "@context": [  
-    "https://smartdatamodels.github.io/dataModel.Environment/context.jsonld"  
-  ],  
-  "id": "urn:ngsi-ld:EnvironmentObserved:33f02632-74f4-4c96-9ba1-e26945de9481",  
-  "type": "EnvironmentObserved",  
-  "source": "https://source.example.com",  
-  "dataProvider": "https://provider.example.com",  
-  "location": {  
-    "type": "Point",  
-    "coordinates": [  
-      -104.99404,  
-      39.75621  
+    "id": "urn:ngsi-ld:EnvironmentObserved:33f02632-74f4-4c96-9ba1-e26945de9481",  
+    "type": "EnvironmentObserved",  
+    "airQualityObserved": [  
+        "urn:ngsi-ld:AirQualityObserved:4b8b09c9-ce54-46de-8067-5591e02d8f29",  
+        "urn:ngsi-ld:WeatherObserved:08a14933-b44d-4297-b2d2-2c3f3844012e"  
+    ],  
+    "dataProvider": "https://provider.example.com",  
+    "location": {  
+        "type": "Point",  
+        "coordinates": [  
+            -104.99404,  
+            39.75621  
+        ]  
+    },  
+    "pointOfInterest": [  
+        "urn:ngsi-ld:POI:cdfd9cb8-ae2b-47cb-a43a-b9767ffd5c84",  
+        "urn:ngsi-ld:POI:42dcd5ea-46db-11e8-bea0-772aba733f93",  
+        "urn:ngsi-ld:POI:4912d78e-46db-11e8-8572-ab2b8e55590b"  
+    ],  
+    "source": "https://source.example.com",  
+    "waterQualityObserved": [  
+        "urn:ngsi-ld:WeatherObserved:68a83e68-61e6-4e3c-975c-5b301c184ca6",  
+        "urn:ngsi-ld:WeatherObserved:b01518e3-2b60-4bbd-9783-3af0d660349e"  
+    ],  
+    "weatherObserved": [  
+        "urn:ngsi-ld:WeatherObserved:fae29f4c-0691-4bab-bef8-ad1cd165cc28",  
+        "urn:ngsi-ld:WeatherObserved:1c7a2711-ae38-4ea9-8f9f-627067067d53"  
+    ],  
+    "@context": [  
+        "https://smartdatamodels.github.io/dataModel.Environment/context.jsonld",  
+        "https://raw.githubusercontent.com/smart-data-models/dataModel.Environment/master/context.jsonld"  
     ]  
-  },  
-  "pointOfInterest": [  
-    "urn:ngsi-ld:POI:cdfd9cb8-ae2b-47cb-a43a-b9767ffd5c84",  
-    "urn:ngsi-ld:POI:42dcd5ea-46db-11e8-bea0-772aba733f93",  
-    "urn:ngsi-ld:POI:4912d78e-46db-11e8-8572-ab2b8e55590b"  
-  ],  
-  "weatherObserved": [  
-    "urn:ngsi-ld:WeatherObserved:fae29f4c-0691-4bab-bef8-ad1cd165cc28",  
-    "urn:ngsi-ld:WeatherObserved:1c7a2711-ae38-4ea9-8f9f-627067067d53"  
-  ],  
-  "airQualityObserved": [  
-    "urn:ngsi-ld:AirQualityObserved:4b8b09c9-ce54-46de-8067-5591e02d8f29",  
-    "urn:ngsi-ld:WeatherObserved:08a14933-b44d-4297-b2d2-2c3f3844012e"  
-  ],  
-  "waterQualityObserved": [  
-    "urn:ngsi-ld:WeatherObserved:68a83e68-61e6-4e3c-975c-5b301c184ca6",  
-    "urn:ngsi-ld:WeatherObserved:b01518e3-2b60-4bbd-9783-3af0d660349e"  
-  ]  
 }  
 ```  
+</details>  
 #### AmbienteOsservato NGSI-LD normalizzato Esempio  
-Ecco un esempio di un EnvironmentObserved in formato JSON-LD normalizzato. Questo è compatibile con NGSI-LD quando non usa opzioni e restituisce i dati di contesto di una singola entità.  
+Ecco un esempio di EnvironmentObserved in formato JSON-LD normalizzato. Questo è compatibile con NGSI-LD quando non si usano opzioni e restituisce i dati di contesto di una singola entità.  
+<details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
-  "@context": [  
-    "https://smartdatamodels.github.io/dataModel.Transportation/context.jsonld"  
-  ],  
-  "id": "urn:ngsi-ld:EnvironmentObserved:33f02632-74f4-4c96-9ba1-e26945de9481",  
-  "type": "EnvironmentObserved",  
-  "source": {  
-    "type": "Property",  
-    "value": "https://source.example.com"  
-  },  
-  "dataProvider": {  
-    "type": "Property",  
-    "value": "https://provider.example.com"  
-  },  
-  "location": {  
-    "type": "GeoProperty",  
-    "value": {  
-      "type": "Point",  
-      "coordinates": [  
-        -104.99404,  
-        39.75621  
-      ]  
-    }  
-  },  
-  "pointOfInterest": {  
-    "type": "Relationship",  
-    "object": [  
-      "urn:ngsi-ld:POI:cdfd9cb8-ae2b-47cb-a43a-b9767ffd5c84",  
-      "urn:ngsi-ld:POI:42dcd5ea-46db-11e8-bea0-772aba733f93",  
-      "urn:ngsi-ld:POI:4912d78e-46db-11e8-8572-ab2b8e55590b"  
+    "id": "urn:ngsi-ld:EnvironmentObserved:33f02632-74f4-4c96-9ba1-e26945de9481",  
+    "type": "EnvironmentObserved",  
+    "airQualityObserved": {  
+        "type": "Relationship",  
+        "object": [  
+            "urn:ngsi-ld:AirQualityObserved:4b8b09c9-ce54-46de-8067-5591e02d8f29",  
+            "urn:ngsi-ld:WeatherObserved:08a14933-b44d-4297-b2d2-2c3f3844012e"  
+        ]  
+    },  
+    "dataProvider": {  
+        "type": "Property",  
+        "value": "https://provider.example.com"  
+    },  
+    "location": {  
+        "type": "GeoProperty",  
+        "value": {  
+            "type": "Point",  
+            "coordinates": [  
+                -104.99404,  
+                39.75621  
+            ]  
+        }  
+    },  
+    "pointOfInterest": {  
+        "type": "Relationship",  
+        "object": [  
+            "urn:ngsi-ld:POI:cdfd9cb8-ae2b-47cb-a43a-b9767ffd5c84",  
+            "urn:ngsi-ld:POI:42dcd5ea-46db-11e8-bea0-772aba733f93",  
+            "urn:ngsi-ld:POI:4912d78e-46db-11e8-8572-ab2b8e55590b"  
+        ]  
+    },  
+    "source": {  
+        "type": "Property",  
+        "value": "https://source.example.com"  
+    },  
+    "waterQualityObserved": {  
+        "type": "Relationship",  
+        "object": [  
+            "urn:ngsi-ld:WeatherObserved:68a83e68-61e6-4e3c-975c-5b301c184ca6",  
+            "urn:ngsi-ld:WeatherObserved:b01518e3-2b60-4bbd-9783-3af0d660349e"  
+        ]  
+    },  
+    "weatherObserved": {  
+        "type": "Relationship",  
+        "object": [  
+            "urn:ngsi-ld:WeatherObserved:fae29f4c-0691-4bab-bef8-ad1cd165cc28",  
+            "urn:ngsi-ld:WeatherObserved:1c7a2711-ae38-4ea9-8f9f-627067067d53"  
+        ]  
+    },  
+    "@context": [  
+        "https://smartdatamodels.github.io/dataModel.Transportation/context.jsonld",  
+        "https://raw.githubusercontent.com/smart-data-models/dataModel.Environment/master/context.jsonld"  
     ]  
-  },  
-  "weatherObserved": {  
-    "type": "Relationship",  
-    "object": [  
-      "urn:ngsi-ld:WeatherObserved:fae29f4c-0691-4bab-bef8-ad1cd165cc28",  
-      "urn:ngsi-ld:WeatherObserved:1c7a2711-ae38-4ea9-8f9f-627067067d53"  
-    ]  
-  },  
-  "airQualityObserved": {  
-    "type": "Relationship",  
-    "object": [  
-      "urn:ngsi-ld:AirQualityObserved:4b8b09c9-ce54-46de-8067-5591e02d8f29",  
-      "urn:ngsi-ld:WeatherObserved:08a14933-b44d-4297-b2d2-2c3f3844012e"  
-    ]  
-  },  
-  "waterQualityObserved": {  
-    "type": "Relationship",  
-    "object": [  
-      "urn:ngsi-ld:WeatherObserved:68a83e68-61e6-4e3c-975c-5b301c184ca6",  
-      "urn:ngsi-ld:WeatherObserved:b01518e3-2b60-4bbd-9783-3af0d660349e"  
-    ]  
-  }  
 }  
 ```  
-Vedere [FAQ 10](https://smartdatamodels.org/index.php/faqs/) per avere una risposta su come trattare le unità di grandezza
+</details><!-- /80-Examples -->  
+<!-- 90-FooterNotes -->  
+<!-- /90-FooterNotes -->  
+<!-- 95-Units -->  
+Vedere [FAQ 10](https://smartdatamodels.org/index.php/faqs/) per ottenere una risposta su come gestire le unità di grandezza.  
+<!-- /95-Units -->  
+<!-- 97-LastFooter -->  
+---  
+[Smart Data Models](https://smartdatamodels.org) +++ [Contribution Manual](https://bit.ly/contribution_manual) +++ [About](https://bit.ly/Introduction_SDM)<!-- /97-LastFooter -->  
