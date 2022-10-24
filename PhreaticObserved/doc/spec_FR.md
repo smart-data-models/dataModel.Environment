@@ -1,15 +1,31 @@
-Entité : PhreaticObserved  
-=========================  
+<!-- 10-Header -->  
+[![Smart Data Models](https://smartdatamodels.org/wp-content/uploads/2022/01/SmartDataModels_logo.png "Logo")](https://smartdatamodels.org)  
+Entité : PhreaticObserved  
+=========================<!-- /10-Header -->  
+<!-- 15-License -->  
 [Licence ouverte] (https://github.com/smart-data-models//dataModel.Environment/blob/master/PhreaticObserved/LICENSE.md)  
 [document généré automatiquement] (https://docs.google.com/presentation/d/e/2PACX-1vTs-Ng5dIAwkg91oTTUdt8ua7woBXhPnwavZ0FxgR8BsAI_Ek3C5q97Nd94HS8KhP-r_quD4H0fgyt3/pub?start=false&loop=false&delayms=3000#slide=id.gb715ace035_0_60)  
+<!-- /15-License -->  
+<!-- 20-Description -->  
 Description globale : **Le modèle de données est destiné à mesurer, observer et contrôler le niveau et la qualité des eaux souterraines à un instant donné (T), par un système de surveillance fixe ou mobile. Selon le dispositif utilisé, il est également possible de mesurer la qualité de l'eau telle que sa conductivité électrique, sa teneur en sel, sa température, etc. Dans ce cas, les valeurs mesurées sont traitées par le modèle de données `WaterObserved` et `WaterQualityObserved`. Informations complémentaires sur les attributs : Pour les attributs dédiés à l'eau, un attribut MetaData peut également être utilisé. Il contient le `TimeStamp` en secondes, la `qualification` et le `status` de contrôle de la mesure.**  
+version : 0.0.1  
+<!-- /20-Description -->  
+<!-- 30-PropertiesList -->  
 
 ## Liste des propriétés  
 
-- `address`: L'adresse postale  - `alternateName`: Un nom alternatif pour cet élément  - `areaServed`: La zone géographique où un service ou un article offert est fourni  - `dataProvider`: Une séquence de caractères identifiant le fournisseur de l'entité de données harmonisées.  - `dateCreated`: Horodatage de la création de l'entité. Celui-ci sera généralement attribué par la plateforme de stockage.  - `dateModified`: Horodatage de la dernière modification de l'entité. Il sera généralement attribué par la plateforme de stockage.  - `dateObserved`: La date et l'heure de cette observation au format ISO8601 UTC.  - `dateObservedFrom`: Période d'observation : Date et heure de début dans un format ISO8601 UTC  - `dateObservedTo`: Période d'observation : Date et heure de fin dans un format ISO8601 UTC  - `depth`: Profondeur de l'eau potable, depuis son identification `waterTable`. Le code d'unité (texte) de mesure donné en utilisant les [Codes communs du CEFACT-ONU] (http://wiki.goodrelations-vocabulary.org/Documentation/UN/CEFACT_Common_Codes) (3 caractères maximum). Par exemple, <code> MTR </code> représente Mètre.  - `description`: Une description de cet article  - `id`: Identifiant unique de l'entité  - `investigationDepth`: Profondeur maximale où l'enquête a été effectuée. Le code d'unité (texte) de mesure donné en utilisant les [Codes communs du CEFACT-ONU] (http://wiki.goodrelations-vocabulary.org/Documentation/UN/CEFACT_Common_Codes) (3 caractères maximum). Par exemple, <code>MTR</code> représente Mètre  - `isMobile`: Le dispositif utilisé est fixe (faux) ou mobile (vrai).  - `location`: Référence Geojson à l'élément. Il peut s'agir d'un point, d'une ligne, d'un polygone, d'un point multiple, d'une ligne multiple ou d'un polygone multiple.  - `measurementType`: Période d'observation : Type de mesure traitée. Enum : 'profondeur, volume, qualité, autre'.  - `name`: Le nom de cet élément.  - `owner`: Une liste contenant une séquence de caractères codée en JSON référençant les identifiants uniques du ou des propriétaires.  - `pollutionRate`: Taux de pollution. Le code d'unité (texte) de mesure donné en utilisant les [Codes communs du CEFACT-ONU] (http://wiki.goodrelations-vocabulary.org/Documentation/UN/CEFACT_Common_Codes) (3 caractères maximum). Par exemple, P1 représente le pourcentage.  - `pressure`: Pression de l'eau. Le code d'unité (texte) de mesure donné en utilisant les [Codes communs du CEFACT-ONU] (http://wiki.goodrelations-vocabulary.org/Documentation/UN/CEFACT_Common_Codes) (3 caractères maximum). Par exemple, <code>BAR</code> représente le Bar.  - `refDevice`: Référence aux dispositifs fournissant des données  - `residueLevel`: Niveau de résidu trouvé  - `seeAlso`: liste d'uri pointant vers des ressources supplémentaires sur l'élément  - `source`: Une séquence de caractères donnant la source originale des données de l'entité sous forme d'URL. Il est recommandé d'utiliser le nom de domaine entièrement qualifié du fournisseur source ou l'URL de l'objet source.  - `type`: Type d'entité NGSI. Il doit être PhreaticObserved.  - `waterTable`: Niveau auquel l'eau a été trouvée au cours de cette enquête. Le code d'unité (texte) de mesure donné en utilisant les [Codes communs du CEFACT-ONU] (http://wiki.goodrelations-vocabulary.org/Documentation/UN/CEFACT_Common_Codes) (3 caractères maximum). Par exemple, <code>MTR</code> représente Mètre.    
+<sup><sub>[*] S'il n'y a pas de type dans un attribut, c'est parce qu'il pourrait avoir plusieurs types ou différents formats/modèles</sub></sup>.  
+- `address[object]`: L'adresse postale  . Model: [https://schema.org/address](https://schema.org/address)- `alternateName[string]`: Un nom alternatif pour cet élément  - `areaServed[string]`: La zone géographique où un service ou un article offert est fourni  . Model: [https://schema.org/Text](https://schema.org/Text)- `dataProvider[string]`: Une séquence de caractères identifiant le fournisseur de l'entité de données harmonisées.  - `dateCreated[string]`: Horodatage de la création de l'entité. Celui-ci sera généralement attribué par la plateforme de stockage.  - `dateModified[string]`: Horodatage de la dernière modification de l'entité. Il sera généralement attribué par la plateforme de stockage.  - `dateObserved[string]`: La date et l'heure de cette observation au format ISO8601 UTC.  . Model: [https://schema.org/DateTime](https://schema.org/DateTime)- `dateObservedFrom[string]`: Période d'observation : Date et heure de début dans un format ISO8601 UTC  . Model: [https://schema.org/DateTime](https://schema.org/DateTime)- `dateObservedTo[string]`: Période d'observation : Date et heure de fin dans un format ISO8601 UTC  . Model: [https://schema.org/DateTime](https://schema.org/DateTime)- `depth[number]`: Profondeur de l'eau potable, depuis son identification `waterTable`. Le code d'unité (texte) de mesure donné en utilisant les [Codes communs du CEFACT-ONU] (http://wiki.goodrelations-vocabulary.org/Documentation/UN/CEFACT_Common_Codes) (3 caractères maximum). Par exemple, <code> MTR </code> représente Mètre.  . Model: [https://schema.org/depth](https://schema.org/depth)- `description[string]`: Une description de cet article  - `id[*]`: Identifiant unique de l'entité  - `investigationDepth[number]`: Profondeur maximale à laquelle l'enquête a été effectuée. Le code d'unité (texte) de mesure donné en utilisant les [Codes communs du CEFACT-ONU] (http://wiki.goodrelations-vocabulary.org/Documentation/UN/CEFACT_Common_Codes) (3 caractères maximum). Par exemple, <code>MTR</code> représente Mètre  . Model: [https://schema.org/DateTime](https://schema.org/DateTime)- `isMobile[boolean]`: Le dispositif utilisé est fixe (faux) ou mobile (vrai).  . Model: [https://schema.org/Boolean](https://schema.org/Boolean)- `location[*]`: Référence Geojson à l'élément. Il peut s'agir d'un point, d'une ligne, d'un polygone, d'un point multiple, d'une ligne multiple ou d'un polygone multiple.  - `measurementType[array]`: Période d'observation : Type de mesure traitée. Enum : 'profondeur, volume, qualité, autre'.  . Model: [https://schema.org/Text](https://schema.org/Text)- `name[string]`: Le nom de cet élément.  - `owner[array]`: Une liste contenant une séquence de caractères codée en JSON référençant les identifiants uniques du ou des propriétaires.  - `pollutionRate[number]`: Taux de pollution. Le code d'unité (texte) de mesure donné en utilisant les [Codes communs du CEFACT-ONU] (http://wiki.goodrelations-vocabulary.org/Documentation/UN/CEFACT_Common_Codes) (3 caractères maximum). Par exemple, P1 représente le pourcentage.  . Model: [https://schema.org/Number](https://schema.org/Number)- `pressure[number]`: Pression de l'eau. Le code d'unité (texte) de mesure donné en utilisant les [Codes communs du CEFACT-ONU] (http://wiki.goodrelations-vocabulary.org/Documentation/UN/CEFACT_Common_Codes) (3 caractères maximum). Par exemple, <code>BAR</code> représente le Bar.  . Model: [https://schema.org/DateTime](https://schema.org/DateTime)- `refDevice[array]`: Référence aux dispositifs fournissant des données  . Model: [https://scehma.org/URL](https://scehma.org/URL)- `residueLevel[number]`: Niveau de résidu trouvé  . Model: [https://schema.org/Number.](https://schema.org/Number.)- `seeAlso[*]`: liste d'uri pointant vers des ressources supplémentaires sur l'élément  - `source[string]`: Une séquence de caractères donnant la source originale des données de l'entité sous forme d'URL. Il est recommandé d'utiliser le nom de domaine entièrement qualifié du fournisseur source ou l'URL de l'objet source.  - `type[string]`: Type d'entité NGSI. Il doit être PhreaticObserved.  - `waterTable[number]`: Niveau auquel l'eau a été trouvée au cours de cette enquête. Le code d'unité (texte) de mesure donné en utilisant les [Codes communs du CEFACT-ONU] (http://wiki.goodrelations-vocabulary.org/Documentation/UN/CEFACT_Common_Codes) (3 caractères maximum). Par exemple, <code>MTR</code> représente Mètre.  . Model: [https://schema.org/Number](https://schema.org/Number)<!-- /30-PropertiesList -->  
+<!-- 35-RequiredProperties -->  
 Propriétés requises  
-- `dateObserved`  - `id`  - `location`  - `measurementType`  - `type`  ## Description des propriétés du modèle de données  
+- `dateObserved`  - `id`  - `location`  - `measurementType`  - `type`  <!-- /35-RequiredProperties -->  
+<!-- 40-RequiredProperties -->  
+<!-- /40-RequiredProperties -->  
+<!-- 50-DataModelHeader -->  
+## Description des propriétés du modèle de données  
 Classés par ordre alphabétique (cliquez pour plus de détails)  
+<!-- /50-DataModelHeader -->  
+<!-- 60-ModelYaml -->  
 <details><summary><strong>full yaml details</strong></summary>    
 ```yaml  
 PhreaticObserved:    
@@ -382,9 +398,14 @@ PhreaticObserved:
   x-version: 0.0.1    
 ```  
 </details>    
+<!-- /60-ModelYaml -->  
+<!-- 70-MiddleNotes -->  
+<!-- /70-MiddleNotes -->  
+<!-- 80-Examples -->  
 ## Exemples de charges utiles  
-#### Valeurs clés de la NGSI-v2 observées par le phréatique Exemple  
+#### Valeurs-clés de la NGSI-v2 observées par le phréatique Exemple  
 Voici un exemple de PhreaticObserved au format JSON-LD sous forme de valeurs-clés. Ceci est compatible avec NGSI-v2 en utilisant `options=keyValues` et renvoie les données contextuelles d'une entité individuelle.  
+<details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
   "id": "urn:ngsi-ld:PhreaticObserved:PhreaticObserved:MNCA-001",  
@@ -414,8 +435,10 @@ PhreaticObserved:
   "pressure": 2.12  
 }  
 ```  
+</details>  
 #### PhréatiqueObservée NGSI-v2 normalisée Exemple  
 Voici un exemple d'un PhreaticObserved au format JSON-LD tel que normalisé. Ceci est compatible avec la NGSI-v2 lorsqu'elle n'utilise pas d'options et renvoie les données contextuelles d'une entité individuelle.  
+<details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
 	"id": "urn:ngsi-ld:PhreaticObserved:PhreaticObserved:MNCA-001",  
@@ -502,139 +525,151 @@ PhreaticObserved:
 	}  
 }  
 ```  
-#### Valeurs-clés NGSI-LD observées par les phréatiques Exemple  
+</details>  
+#### Valeurs-clés NGSI-LD observées par le phréatique Exemple  
 Voici un exemple de PhreaticObserved au format JSON-LD sous forme de valeurs-clés. Ceci est compatible avec NGSI-LD en utilisant `options=keyValues` et retourne les données contextuelles d'une entité individuelle.  
+<details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
-  "id": "urn:ngsi-ld:PhreaticObserved:PhreaticObserved:MNCA-001",  
-  "type": "PhreaticObserved",  
-  "name": {  
-    "type": "Property",  
-    "value": "STLRT-MNCA-NP-015"  
-  },  
-  "description": {  
-    "type": "Property",  
-    "value": "Measurement corresponding to the level and quality of groundwater closed from Airport River Saint Laurent du Var."  
-  },  
-  "location": {  
-    "type": "GeoProperty",  
-    "value": {  
-      "type": "Point",  
-      "coordinates": [  
-        43.66481,  
-        7.196545  
-      ]  
-    }  
-  },  
-  "areaServed": {  
-    "type": "Property",  
-    "value": "Nice Airport"  
-  },  
-  "dateObserved": {  
-    "type": "Property",  
-    "value": {  
-      "type": "DateTime",  
-      "value": "2020-07-07T15:05:59.408Z"  
-    }  
-  },  
-  "refDevice": {  
-    "type": "Relationship",  
-    "Object": [  
-      "urn:ngsi-ld:Device:T1-NP-015"  
+    "id": "urn:ngsi-ld:PhreaticObserved:PhreaticObserved:MNCA-001",  
+    "type": "PhreaticObserved",  
+    "areaServed": {  
+        "type": "Property",  
+        "value": "Nice Airport"  
+    },  
+    "dateObserved": {  
+        "type": "Property",  
+        "value": {  
+            "type": "DateTime",  
+            "value": "2020-07-07T15:05:59.408Z"  
+        }  
+    },  
+    "depth": {  
+        "type": "Property",  
+        "value": 20.45,  
+        "observedAt": "2020-03-17TT08:45:00Z",  
+        "qualification": {  
+            "type": "Property",  
+            "value": "Incorrect"  
+        },  
+        "status ": {  
+            "type": "Property",  
+            "value": "Level 1"  
+        }  
+    },  
+    "description": {  
+        "type": "Property",  
+        "value": "Measurement corresponding to the level and quality of groundwater closed from Airport River Saint Laurent du Var."  
+    },  
+    "investigationDepth": {  
+        "type": "Property",  
+        "value": 22.35  
+    },  
+    "isMobile": {  
+        "type": "Property",  
+        "value": false  
+    },  
+    "location": {  
+        "type": "GeoProperty",  
+        "value": {  
+            "type": "Point",  
+            "coordinates": [  
+                43.66481,  
+                7.196545  
+            ]  
+        }  
+    },  
+    "measurementType": {  
+        "type": "Property",  
+        "value": [  
+            "depth",  
+            "volume"  
+        ]  
+    },  
+    "name": {  
+        "type": "Property",  
+        "value": "STLRT-MNCA-NP-015"  
+    },  
+    "pressure": {  
+        "type": "Property",  
+        "value": 2.12,  
+        "observedAt": "2020-03-17TT08:45:00Z",  
+        "qualification": {  
+            "value": "Correct"  
+        },  
+        "status ": {  
+            "type": "Property",  
+            "value": "Level 3"  
+        }  
+    },  
+    "refDevice": {  
+        "type": "Relationship",  
+        "Object": [  
+            "urn:ngsi-ld:Device:T1-NP-015"  
+        ]  
+    },  
+    "waterTable": {  
+        "type": "Property",  
+        "value": 12.75,  
+        "observedAt": "2020-03-17TT08:45:00Z",  
+        "qualification": {  
+            "type": "Property",  
+            "value": "Correct"  
+        },  
+        "status ": {  
+            "type": "Property",  
+            "value": "Level 2"  
+        }  
+    },  
+    "@context": [  
+        "https://uri.etsi.org/ngsi-ld/v1/ngsi-ld-core-context.jsonld",  
+        "https://raw.githubusercontent.com/smart-data-models/dataModel.Environment/master/context.jsonld"  
     ]  
-  },  
-  "isMobile": {  
-    "type": "Property",  
-    "value": false  
-  },  
-  "measurementType": {  
-    "type": "Property",  
-    "value": [  
-      "depth",  
-      "volume"  
-    ]  
-  },  
-  "investigationDepth": {  
-    "type": "Property",  
-    "value": 22.35  
-  },  
-  "waterTable": {  
-    "type": "Property",  
-    "value": 12.75,  
-    "observedAt": "2020-03-17TT08:45:00Z",  
-    "qualification": {  
-      "type": "Property",  
-      "value": "Correct"  
-    },  
-    "status ": {  
-      "type": "Property",  
-      "value": "Level 2"  
-    }  
-  },  
-  "depth": {  
-    "type": "Property",  
-    "value": 20.45,  
-    "observedAt": "2020-03-17TT08:45:00Z",  
-    "qualification": {  
-      "type": "Property",  
-      "value": "Incorrect"  
-    },  
-    "status ": {  
-      "type": "Property",  
-      "value": "Level 1"  
-    }  
-  },  
-  "pressure": {  
-    "type": "Property",  
-    "value": 2.12,  
-    "observedAt": "2020-03-17TT08:45:00Z",  
-    "qualification": {  
-      "value": "Correct"  
-    },  
-    "status ": {  
-      "type": "Property",  
-      "value": "Level 3"  
-    }  
-  },  
-  "@context": [  
-    "https://smartdatamodels.org/context.jsonld",  
-    "https://uri.etsi.org/ngsi-ld/v1/ngsi-ld-core-context.jsonld"  
-  ]  
 }  
 ```  
+</details>  
 #### PhréatiqueObservée NGSI-LD normalisée Exemple  
 Voici un exemple d'un PhreaticObserved au format JSON-LD tel que normalisé. Ce format est compatible avec NGSI-LD lorsqu'il n'utilise pas d'options et renvoie les données contextuelles d'une entité individuelle.  
+<details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
-  "id": "urn:ngsi-ld:PhreaticObserved:PhreaticObserved:MNCA-001",  
-  "type": "PhreaticObserved",  
-  "name": "STLRT-MNCA-NP-015",  
-  "description": "Measurement corresponding to the level and quality of groundwater closed from Airport River Saint Laurent du Var.",  
-  "location": {  
-    "type": "Point",  
-    "coordinates": [  
-      43.66481,  
-      7.196545  
+    "id": "urn:ngsi-ld:PhreaticObserved:PhreaticObserved:MNCA-001",  
+    "type": "PhreaticObserved",  
+    "areaServed": "Nice Airport",  
+    "dateObserved": "2020-07-07T15:05:59.408Z",  
+    "depth": 20.45,  
+    "description": "Measurement corresponding to the level and quality of groundwater closed from Airport River Saint Laurent du Var.",  
+    "investigationDepth": 22.35,  
+    "isMobile": false,  
+    "location": {  
+        "type": "Point",  
+        "coordinates": [  
+            43.66481,  
+            7.196545  
+        ]  
+    },  
+    "measurementType": [  
+        "depth",  
+        "volume"  
+    ],  
+    "name": "STLRT-MNCA-NP-015",  
+    "pressure": 2.12,  
+    "refDevice": [  
+        "urn:ngsi-ld:Device:T1-NP-015"  
+    ],  
+    "waterTable": 12.75,  
+    "@context": [  
+        "https://uri.etsi.org/ngsi-ld/v1/ngsi-ld-core-context.jsonld",  
+        "https://raw.githubusercontent.com/smart-data-models/dataModel.Environment/master/context.jsonld"  
     ]  
-  },  
-  "areaServed": "Nice Airport",  
-  "dateObserved": "2020-07-07T15:05:59.408Z",  
-  "refDevice": [  
-    "urn:ngsi-ld:Device:T1-NP-015"  
-  ],  
-  "isMobile": false,  
-  "measurementType": [  
-    "depth",  
-    "volume"  
-  ],  
-  "investigationDepth": 22.35,  
-  "waterTable": 12.75,  
-  "depth": 20.45,  
-  "pressure": 2.12,  
-  "@context": [  
-    "https://smartdatamodels.org/context.jsonld",  
-    "https://uri.etsi.org/ngsi-ld/v1/ngsi-ld-core-context.jsonld"  
-  ]  
 }  
 ```  
-Voir [FAQ 10](https://smartdatamodels.org/index.php/faqs/) pour obtenir une réponse sur la façon de traiter les unités de magnitude
+</details><!-- /80-Examples -->  
+<!-- 90-FooterNotes -->  
+<!-- /90-FooterNotes -->  
+<!-- 95-Units -->  
+Voir [FAQ 10](https://smartdatamodels.org/index.php/faqs/) pour obtenir une réponse sur la façon de traiter les unités de magnitude.  
+<!-- /95-Units -->  
+<!-- 97-LastFooter -->  
+---  
+[Smart Data Models](https://smartdatamodels.org) +++ [Contribution Manual](https://bit.ly/contribution_manual) +++ [About](https://bit.ly/Introduction_SDM)<!-- /97-LastFooter -->  
