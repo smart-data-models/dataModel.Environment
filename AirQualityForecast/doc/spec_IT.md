@@ -1,17 +1,31 @@
+<!-- 10-Header -->  
 [![Smart Data Models](https://smartdatamodels.org/wp-content/uploads/2022/01/SmartDataModels_logo.png "Logo")](https://smartdatamodels.org)  
 Entità: Previsione della qualità dell'aria  
-==========================================  
+==========================================<!-- /10-Header -->  
+<!-- 15-License -->  
 [Licenza aperta](https://github.com/smart-data-models//dataModel.Environment/blob/master/AirQualityForecast/LICENSE.md)  
 [documento generato automaticamente](https://docs.google.com/presentation/d/e/2PACX-1vTs-Ng5dIAwkg91oTTUdt8ua7woBXhPnwavZ0FxgR8BsAI_Ek3C5q97Nd94HS8KhP-r_quD4H0fgyt3/pub?start=false&loop=false&delayms=3000#slide=id.gb715ace035_0_60)  
+<!-- /15-License -->  
+<!-- 20-Description -->  
 Descrizione globale: **Previsione delle condizioni di qualità dell'aria valida per un periodo**.  
 versione: 0.0.1  
+<!-- /20-Description -->  
+<!-- 30-PropertiesList -->  
 
 ## Elenco delle proprietà  
 
-- `address`: L'indirizzo postale  - `airQualityIndex`: L'indice di qualità dell'aria è un numero utilizzato per indicare la qualità dell'aria in un determinato giorno.  - `airQualityLevel`: Livello qualitativo complessivo di preoccupazione per la salute corrispondente alla qualità dell'aria osservata  - `alternateName`: Un nome alternativo per questa voce  - `areaServed`: L'area geografica in cui viene fornito il servizio o l'articolo offerto.  - `co2`: Anidride carbonica prevista  - `dataProvider`: Una sequenza di caratteri che identifica il fornitore dell'entità di dati armonizzata.  - `dateCreated`: Timestamp di creazione dell'entità. Di solito viene assegnato dalla piattaforma di archiviazione.  - `dateModified`: Timestamp dell'ultima modifica dell'entità. Di solito viene assegnato dalla piattaforma di archiviazione.  - `description`: Descrizione dell'articolo  - `id`: Identificatore univoco dell'entità  - `location`: Riferimento Geojson all'elemento. Può essere un punto, una stringa di linea, un poligono, un multi-punto, una stringa di linea o un poligono multiplo.  - `name`: Il nome di questo elemento.  - `no2`: Previsione di biossido di azoto  - `nox`: Altri ossidi di azoto previsti  - `o3`: Ozono previsto  - `owner`: Un elenco contenente una sequenza di caratteri codificata JSON che fa riferimento agli ID univoci dei proprietari.  - `pm10`: Particolato di diametro pari o inferiore a 10 micrometri  - `pm25`: Particolato di diametro non superiore a 2,5 micrometri  - `precipitation`: Quantità di acqua piovana  - `relativeHumidity`: Umidità nell'aria  - `seeAlso`: elenco di uri che puntano a risorse aggiuntive sull'elemento  - `so2`: Rilevato biossido di zolfo  - `source`: Una sequenza di caratteri che indica la fonte originale dei dati dell'entità come URL. Si consiglia di utilizzare il nome di dominio completamente qualificato del provider di origine o l'URL dell'oggetto di origine.  - `temperature`: Temperatura dell'articolo  - `type`: Tipo di entità NGSI: deve essere AirQualityForecast.  - `validFrom`: L'inizio del periodo di validità di questa previsione in formato ISO8601.  - `windSpeed`: Intensità del vento    
+<sup><sub>[*] Se non c'è un tipo in un attributo è perché potrebbe avere diversi tipi o diversi formati/modelli</sub></sup>.  
+- `address[object]`: L'indirizzo postale  . Model: [https://schema.org/address](https://schema.org/address)- `airQualityIndex[integer]`: L'indice di qualità dell'aria è un numero utilizzato per indicare la qualità dell'aria in un determinato giorno.  . Model: [https://schema.org/Number](https://schema.org/Number)- `airQualityLevel[string]`: Livello qualitativo complessivo di preoccupazione per la salute corrispondente alla qualità dell'aria osservata  . Model: [https://schema.org/Tex ](https://schema.org/Tex )- `alternateName[string]`: Un nome alternativo per questa voce  - `areaServed[string]`: L'area geografica in cui viene fornito il servizio o l'articolo offerto.  . Model: [https://schema.org/Text](https://schema.org/Text)- `co2[number]`: Anidride carbonica prevista  - `dataProvider[string]`: Una sequenza di caratteri che identifica il fornitore dell'entità di dati armonizzata.  - `dateCreated[string]`: Timestamp di creazione dell'entità. Di solito viene assegnato dalla piattaforma di archiviazione.  - `dateModified[string]`: Timestamp dell'ultima modifica dell'entità. Di solito viene assegnato dalla piattaforma di archiviazione.  - `description[string]`: Descrizione dell'articolo  - `id[*]`: Identificatore univoco dell'entità  - `location[*]`: Riferimento geojson all'elemento. Può essere un punto, una stringa di linea, un poligono, un multi-punto, una stringa di linea o un poligono multiplo.  - `name[string]`: Il nome di questo elemento.  - `no2[number]`: Previsione di biossido di azoto  - `nox[number]`: Altri ossidi di azoto previsti  - `o3[number]`: Ozono previsto  - `owner[array]`: Un elenco contenente una sequenza di caratteri codificata JSON che fa riferimento agli ID univoci dei proprietari.  - `pm10[number]`: Particolato di diametro pari o inferiore a 10 micrometri  - `pm25[number]`: Particolato di diametro non superiore a 2,5 micrometri  - `precipitation[number]`: Quantità di acqua piovana  . Model: [https://schema.org/Number](https://schema.org/Number)- `relativeHumidity[number]`: Umidità nell'aria  . Model: [https://schema.org/Number](https://schema.org/Number)- `seeAlso[*]`: elenco di uri che puntano a risorse aggiuntive sull'elemento  - `so2[number]`: Rilevato biossido di zolfo  - `source[string]`: Una sequenza di caratteri che indica la fonte originale dei dati dell'entità come URL. Si consiglia di utilizzare il nome di dominio completamente qualificato del provider di origine o l'URL dell'oggetto di origine.  - `temperature[number]`: Temperatura dell'articolo  - `type[string]`: Tipo di entità NGSI: deve essere AirQualityForecast.  - `validFrom[string]`: L'inizio del periodo di validità di questa previsione in formato ISO8601.  - `windSpeed[number]`: Intensità del vento  . Model: [http//schema.org/Number](http//schema.org/Number)<!-- /30-PropertiesList -->  
+<!-- 35-RequiredProperties -->  
 Proprietà richieste  
-- `id`  - `type`  ## Modello di dati descrizione delle proprietà  
+- `id`  - `type`  <!-- /35-RequiredProperties -->  
+<!-- 40-RequiredProperties -->  
+<!-- /40-RequiredProperties -->  
+<!-- 50-DataModelHeader -->  
+## Modello di dati descrizione delle proprietà  
 Ordinati in ordine alfabetico (clicca per i dettagli)  
+<!-- /50-DataModelHeader -->  
+<!-- 60-ModelYaml -->  
 <details><summary><strong>full yaml details</strong></summary>    
 ```yaml  
 AirQualityForecast:    
@@ -380,9 +394,14 @@ AirQualityForecast:
   x-version: 0.0.1    
 ```  
 </details>    
+<!-- /60-ModelYaml -->  
+<!-- 70-MiddleNotes -->  
+<!-- /70-MiddleNotes -->  
+<!-- 80-Examples -->  
 ## Esempi di payload  
 #### Valori chiave di AirQualityForecast NGSI-v2 Esempio  
 Ecco un esempio di AirQualityForecast in formato JSON-LD come valori-chiave. Questo è compatibile con NGSI-v2 quando si usa `options=keyValues` e restituisce i dati di contesto di una singola entità.  
+<details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
   "id": "urn:ngsi-ld:AirQualityForecast:France-AirQualityForecast-12345_2022-07-01T18:00:00_2022-07-01T00:00:00",  
@@ -428,8 +447,10 @@ AirQualityForecast:
   "windSpeed": 0.64  
 }  
 ```  
+</details>  
 #### AirQualityForecast NGSI-v2 normalizzato Esempio  
 Ecco un esempio di AirQualityForecast in formato JSON-LD normalizzato. Questo è compatibile con NGSI-v2 quando non si usano opzioni e restituisce i dati di contesto di una singola entità.  
+<details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
   "id": "urn:ngsi-ld:AirQualityForecast:France-AirQualityForecast-12345_2022-07-01T18:00:00_2022-07-01T00:00:00",  
@@ -541,8 +562,10 @@ AirQualityForecast:
   }  
 }  
 ```  
+</details>  
 #### AirQualityForecast Valori chiave NGSI-LD Esempio  
 Ecco un esempio di AirQualityForecast in formato JSON-LD come valori-chiave. Questo è compatibile con NGSI-LD quando si usa `options=keyValues` e restituisce i dati di contesto di una singola entità.  
+<details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
   "id": "urn:ngsi-ld:AirQualityForecast:France-AirQualityForecast-12345_2022-07-01T18:00:00_2022-07-01T00:00:00",  
@@ -592,8 +615,10 @@ AirQualityForecast:
   ]  
 }  
 ```  
+</details>  
 #### AirQualityForecast NGSI-LD normalizzato Esempio  
 Ecco un esempio di AirQualityForecast in formato JSON-LD normalizzato. Questo è compatibile con NGSI-LD quando non si utilizzano opzioni e restituisce i dati di contesto di una singola entità.  
+<details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
   "id": "urn:ngsi-ld:AirQualityForecast:France-AirQualityForecast-12345_2022-07-01T18:00:00_2022-07-01T00:00:00",  
@@ -722,4 +747,12 @@ AirQualityForecast:
   ]  
 }  
 ```  
+</details><!-- /80-Examples -->  
+<!-- 90-FooterNotes -->  
+<!-- /90-FooterNotes -->  
+<!-- 95-Units -->  
 Vedere [FAQ 10](https://smartdatamodels.org/index.php/faqs/) per ottenere una risposta su come gestire le unità di grandezza.  
+<!-- /95-Units -->  
+<!-- 97-LastFooter -->  
+---  
+[Smart Data Models](https://smartdatamodels.org) +++ [Contribution Manual](https://bit.ly/contribution_manual) +++ [About](https://bit.ly/Introduction_SDM)<!-- /97-LastFooter -->  
