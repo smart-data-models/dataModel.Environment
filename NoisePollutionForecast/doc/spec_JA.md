@@ -1,17 +1,31 @@
+<!-- 10-Header -->  
 [![Smart Data Models](https://smartdatamodels.org/wp-content/uploads/2022/01/SmartDataModels_logo.png "Logo")](https://smartdatamodels.org)  
 エンティティNoisePollutionForecast  
-============================  
+============================<!-- /10-Header -->  
+<!-- 15-License -->  
 [オープンライセンス](https://github.com/smart-data-models//dataModel.Environment/blob/master/NoisePollutionForecast/LICENSE.md)  
 [ドキュメント自動生成](https://docs.google.com/presentation/d/e/2PACX-1vTs-Ng5dIAwkg91oTTUdt8ua7woBXhPnwavZ0FxgR8BsAI_Ek3C5q97Nd94HS8KhP-r_quD4H0fgyt3/pub?start=false&loop=false&delayms=3000#slide=id.gb715ace035_0_60)  
+<!-- /15-License -->  
+<!-- 20-Description -->  
 グローバルな記述です。**Noise Pollution forecast stores expected about noise pollution based on some input elements and the noise elements present.** （騒音公害予測は、いくつかの入力要素と存在する騒音要素に基づく騒音公害に関する予測を格納する。  
 バージョン: 0.0.3  
+<!-- /20-Description -->  
+<!-- 30-PropertiesList -->  
 
 ## プロパティ一覧  
 
-- `LANight`: 夜間（8時間）の平均騒音値  - `LAeq`: 測定時間中に記録された平均騒音レベル(等価)  - `LAeq2`: 過去2時間の平均音圧レベル  - `LAeq_d`: 日中（8時間）の平均騒音レベル  - `LAmax`: 測定時間中に記録された最大騒音レベル  - `LAmax2`: 過去2時間に記録された最大騒音レベル  - `address`: 郵送先住所  - `alternateName`: この項目の別称  - `areaServed`: サービスまたは提供品が提供される地理的な地域  - `dataProvider`: 調和されたデータエンティティの提供者を識別する一連の文字。  - `dateCreated`: エンティティの作成タイムスタンプ。これは通常、ストレージプラットフォームによって割り当てられる。  - `dateIssued`: サービスプロバイダが予報を発行した日時。ISO8601 UTCフォーマット。  - `dateModified`: エンティティの最終更新のタイムスタンプ。これは通常、ストレージプラットフォームによって割り当てられる。  - `description`: このアイテムの説明  - `id`: エンティティの一意な識別子  - `location`: アイテムへの Geojson リファレンス。Point, LineString, Polygon, MultiPoint, MultiLineString, MultiPolygonのいずれかを指定することができる。  - `name`: このアイテムの名称です。  - `noiseAnnoyanceIndex`: 騒音の大きさによる指数（1〜10）。  - `noiseOrigin`: センサー設置時の記録されたノイズの主な発生源（ソース  - `owner`: 所有者の一意のIDを参照するJSONエンコードされた文字列を含むリストです。  - `seeAlso`: 項目に関する追加リソースを指すURIのリスト。  - `source`: エンティティデータの元のソースをURLで示す一連の文字。ソースプロバイダの完全修飾ドメイン名、またはソースオブジェクトのURLであることが推奨されます。  - `type`: NGSIタイプ。NoisePollutionForecastでなければならない。  - `validFrom`: ISO8601形式で表したこの予報の有効期間の開始日  - `validTo`: ISO8601形式でのこの予報の有効期間の終了日  - `validity`: この予測の有効期間をISO8601時間間隔として含む。    
+<sup><sub>[*] 属性にタイプがない場合、複数のタイプまたは異なるフォーマット/パターンを持つ可能性があるためです</sub></sup>。  
+- `LANight[number]`: 夜間（8時間）の平均騒音値  - `LAeq[number]`: 測定時間中に記録された平均騒音レベル(等価)  - `LAeq2[number]`: 過去2時間の平均音圧レベル  - `LAeq_d[number]`: 日中（8時間）の平均騒音レベル  - `LAmax[number]`: 測定時間中に記録された最大騒音レベル  - `LAmax2[number]`: 過去2時間に記録された最大騒音レベル  - `address[object]`: 郵送先住所  . Model: [https://schema.org/address](https://schema.org/address)- `alternateName[string]`: この項目の別称  - `areaServed[string]`: サービスまたは提供品が提供される地理的な地域  . Model: [https://schema.org/Text](https://schema.org/Text)- `dataProvider[string]`: 調和されたデータエンティティの提供者を識別する一連の文字。  - `dateCreated[string]`: エンティティの作成タイムスタンプ。これは通常、ストレージプラットフォームによって割り当てられる。  - `dateIssued[string]`: サービスプロバイダが予報を発行した日時。ISO8601 UTCフォーマット。  - `dateModified[string]`: エンティティの最終更新のタイムスタンプ。これは通常、ストレージプラットフォームによって割り当てられる。  - `description[string]`: このアイテムの説明  - `id[*]`: エンティティの一意な識別子  - `location[*]`: アイテムへの Geojson リファレンス。Point, LineString, Polygon, MultiPoint, MultiLineString, MultiPolygonのいずれかを指定することができる。  - `name[string]`: このアイテムの名称です。  - `noiseAnnoyanceIndex[number]`: 騒音の大きさによる指数（1〜10）。  - `noiseOrigin[string]`: センサー設置時の記録されたノイズの主な発生源（ソース  - `owner[array]`: 所有者の一意のIDを参照するJSONエンコードされた文字列を含むリスト  - `seeAlso[*]`: 項目に関する追加リソースを指すURIのリスト。  - `source[string]`: エンティティデータの元のソースをURLで示す一連の文字。ソースプロバイダの完全修飾ドメイン名、またはソースオブジェクトのURLであることが推奨されます。  - `type[string]`: NGSIタイプ。NoisePollutionForecastでなければならない。  - `validFrom[string]`: ISO8601形式で表したこの予報の有効期間の開始日  - `validTo[string]`: ISO8601形式でのこの予報の有効期間の終了日  - `validity[string]`: この予測の有効期間をISO8601時間間隔として含む。  . Model: [https://schema.org/Text](https://schema.org/Text)<!-- /30-PropertiesList -->  
+<!-- 35-RequiredProperties -->  
 必要なプロパティ  
-- `id`  - `type`  ## プロパティのデータモデル記述  
+- `id`  - `type`  <!-- /35-RequiredProperties -->  
+<!-- 40-RequiredProperties -->  
+<!-- /40-RequiredProperties -->  
+<!-- 50-DataModelHeader -->  
+## プロパティのデータモデル記述  
 アルファベット順に並びます（クリックで詳細へ）  
+<!-- /50-DataModelHeader -->  
+<!-- 60-ModelYaml -->  
 <details><summary><strong>full yaml details</strong></summary>    
 ```yaml  
 NoisePollutionForecast:    
@@ -356,9 +370,14 @@ NoisePollutionForecast:
   x-version: 0.0.3    
 ```  
 </details>    
+<!-- /60-ModelYaml -->  
+<!-- 70-MiddleNotes -->  
+<!-- /70-MiddleNotes -->  
+<!-- 80-Examples -->  
 ## ペイロードの例  
 #### NoisePollutionForecast NGSI-v2 key-value の例。  
 NoisePollutionForecastをJSON-LD形式でkey-valuesにした例です。これは、`options=keyValues`を使用した場合にNGSI-v2と互換性があり、個々のエンティティのコンテキストデータを返します。  
+<details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
   "id": "urn:ngsi-ld:NoisePollution:France-NoisePollutionForecast-12345_2022-07-01T18:00:00_2022-07-01T00:00:00",  
@@ -406,8 +425,10 @@ NoisePollutionForecast:
   "dateIssued": "2022-08-23T05:05:35Z"  
 }  
 ```  
+</details>  
 #### NoisePollutionForecast NGSI-v2 正規化例  
 NoisePollutionForecastをJSON-LD形式で正規化した例です。これは、オプションを使用しない場合、NGSI-v2と互換性があり、個々のエンティティのコンテキストデータを返します。  
+<details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
   "id": "urn:ngsi-ld:NoisePollution:France-NoisePollutionForecast-12345_2022-07-01T18:00:00_2022-07-01T00:00:00",  
@@ -527,60 +548,65 @@ NoisePollutionForecast:
   }  
 }  
 ```  
+</details>  
 #### NoisePollutionForecast NGSI-LD キー値例  
 NoisePollutionForecastをJSON-LD形式でkey-valuesにした例です。これは、`options=keyValues`を使用した場合にNGSI-LDと互換性があり、個々のエンティティのコンテキストデータが返されます。  
+<details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
-  "id": "urn:ngsi-ld:NoisePollution:France-NoisePollutionForecast-12345_2022-07-01T18:00:00_2022-07-01T00:00:00",  
-  "type": "NoisePollutionForecast",  
-  "dateCreated": "2022-07-22T17:37:38Z",  
-  "dateModified": "2022-10-22T02:05:56Z",  
-  "source": "",  
-  "name": "forecast",  
-  "alternateName": "",  
-  "description": "forecast tomorrow",  
-  "dataProvider": "service online Nice",  
-  "owner": [  
-    "urn:ngsi-ld:NoisePollutionForecast:items:IIZN:71750066",  
-    "urn:ngsi-ld:NoisePollutionForecast:items:HKJD:09603525"  
-  ],  
-  "seeAlso": [  
-    "urn:ngsi-ld:NoisePollutionForecast:items:UYHN:79392420",  
-    "urn:ngsi-ld:NoisePollutionForecast:items:VCCQ:21243558"  
-  ],  
-  "location": {  
-    "type": "Point",  
-    "coordinates": [  
-      7.2032497427380235,  
-      43.68056738083439  
+    "id": "urn:ngsi-ld:NoisePollution:France-NoisePollutionForecast-12345_2022-07-01T18:00:00_2022-07-01T00:00:00",  
+    "type": "NoisePollutionForecast",  
+    "dateCreated": "2022-07-22T17:37:38Z",  
+    "dateModified": "2022-10-22T02:05:56Z",  
+    "source": "",  
+    "name": "forecast",  
+    "alternateName": "",  
+    "description": "forecast tomorrow",  
+    "dataProvider": "service online Nice",  
+    "owner": [  
+        "urn:ngsi-ld:NoisePollutionForecast:items:IIZN:71750066",  
+        "urn:ngsi-ld:NoisePollutionForecast:items:HKJD:09603525"  
+    ],  
+    "seeAlso": [  
+        "urn:ngsi-ld:NoisePollutionForecast:items:UYHN:79392420",  
+        "urn:ngsi-ld:NoisePollutionForecast:items:VCCQ:21243558"  
+    ],  
+    "location": {  
+        "type": "Point",  
+        "coordinates": [  
+            7.2032497427380235,  
+            43.68056738083439  
+        ]  
+    },  
+    "address": {  
+        "addressCountry": "France",  
+        "addressLocality": "Nice",  
+        "postalCode": "06200",  
+        "type": "PostalAddress"  
+    },  
+    "areaServed": "",  
+    "noiseAnnoyanceIndex": 3.8,  
+    "LANight": 32.9,  
+    "LAmax2": 70.3,  
+    "LAeq2": 67.8,  
+    "noiseOrigin": "",  
+    "LAeq": 39.2,  
+    "LAeq_d": 66.2,  
+    "LAmax": 74.7,  
+    "validFrom": "2022-08-23T05:35:35Z",  
+    "validTo": "2022-08-24T05:35:35Z",  
+    "validity": "P1D",  
+    "dateIssued": "2022-08-23T05:05:35Z",  
+    "@context": [  
+        "https://smartdatamodels.org/dataModel.Environment/context.jsonld",  
+        "https://raw.githubusercontent.com/smart-data-models/dataModel.Environment/master/context.jsonld"  
     ]  
-  },  
-  "address": {  
-    "addressCountry": "France",  
-    "addressLocality": "Nice",  
-    "postalCode": "06200",  
-    "type": "PostalAddress"  
-  },  
-  "areaServed": "",  
-  "noiseAnnoyanceIndex": 3.8,  
-  "LANight": 32.9,  
-  "LAmax2": 70.3,  
-  "LAeq2": 67.8,  
-  "noiseOrigin": "",  
-  "LAeq": 39.2,  
-  "LAeq_d": 66.2,  
-  "LAmax": 74.7,  
-  "validFrom": "2022-08-23T05:35:35Z",  
-  "validTo": "2022-08-24T05:35:35Z",  
-  "validity": "P1D",  
-  "dateIssued": "2022-08-23T05:05:35Z",  
-  "@context": [  
-    "https://smartdatamodels.org/dataModel.Environment/context.jsonld"  
-  ]  
 }  
 ```  
+</details>  
 #### NoisePollutionForecast NGSI-LD正規化例  
-NoisePollutionForecastをJSON-LD形式で正規化した例です。これはオプションを使用しない場合、NGSI-LDと互換性があり、個々のエンティティのコンテキストデータを返します。  
+NoisePollutionForecastをJSON-LD形式で正規化した例です。これはオプションを使用しない場合のNGSI-LDと互換性があり、個々のエンティティのコンテキストデータを返します。  
+<details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
   "id": "urn:ngsi-ld:NoisePollution:France-NoisePollutionForecast-12345_2022-07-01T18:00:00_2022-07-01T00:00:00",  
@@ -713,9 +739,17 @@ NoisePollutionForecast:
       "@value": "2022-08-23T05:05:35Z"  
     }  
   },  
-  "@conProperty": [  
-    "https://smartdatamodels.org/dataModel.Environment/context.jsonld"  
+  "@context": [  
+       "https://raw.githubusercontent.com/smart-data-models/dataModel.Environment/master/context.jsonld"  
   ]  
 }  
 ```  
+</details><!-- /80-Examples -->  
+<!-- 90-FooterNotes -->  
+<!-- /90-FooterNotes -->  
+<!-- 95-Units -->  
 マグニチュード単位の扱いについては、[FAQ 10](https://smartdatamodels.org/index.php/faqs/)を参照してください。  
+<!-- /95-Units -->  
+<!-- 97-LastFooter -->  
+---  
+[Smart Data Models](https://smartdatamodels.org) +++ [Contribution Manual](https://bit.ly/contribution_manual) +++ [About](https://bit.ly/Introduction_SDM)<!-- /97-LastFooter -->  
