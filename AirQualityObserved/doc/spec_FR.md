@@ -1,19 +1,32 @@
+<!-- 10-Header -->  
 [![Smart Data Models](https://smartdatamodels.org/wp-content/uploads/2022/01/SmartDataModels_logo.png "Logo")](https://smartdatamodels.org)  
 Entité : AirQualityObserved  
-===========================  
+===========================<!-- /10-Header -->  
+<!-- 15-License -->  
 [Licence ouverte] (https://github.com/smart-data-models//dataModel.Environment/blob/master/AirQualityObserved/LICENSE.md)  
 [document généré automatiquement] (https://docs.google.com/presentation/d/e/2PACX-1vTs-Ng5dIAwkg91oTTUdt8ua7woBXhPnwavZ0FxgR8BsAI_Ek3C5q97Nd94HS8KhP-r_quD4H0fgyt3/pub?start=false&loop=false&delayms=3000#slide=id.gb715ace035_0_60)  
+<!-- /15-License -->  
+<!-- 20-Description -->  
 Description globale : **Observation des conditions de qualité de l'air à un endroit et à un moment donnés**.  
 version : 0.1.0  
+<!-- /20-Description -->  
+<!-- 30-PropertiesList -->  
 
 ## Liste des propriétés  
 
-- `address`: L'adresse postale  - `airQualityIndex`: L'indice de qualité de l'air est un chiffre utilisé pour rendre compte de la qualité de l'air un jour donné.  - `airQualityLevel`: Niveau qualitatif global de préoccupation sanitaire correspondant à la qualité de l'air observée  - `alternateName`: Un nom alternatif pour cet élément  - `areaServed`: Zone de niveau supérieur à laquelle appartient cette mesure de la qualité de l'air  - `as`: Arsenic détecté  - `c6h6`: Benzène détecté  - `cd`: Cadmium détecté  - `co`: Monoxyde de carbone détecté  - `co2`: Dioxyde de carbone détecté  - `coLevel`: Présence qualitative de monoxyde de carbone  - `dataProvider`: Une séquence de caractères identifiant le fournisseur de l'entité de données harmonisées.  - `dateCreated`: Horodatage de la création de l'entité. Celui-ci sera généralement attribué par la plateforme de stockage.  - `dateModified`: Horodatage de la dernière modification de l'entité. Il sera généralement attribué par la plateforme de stockage.  - `dateObserved`: La date et l'heure de cette observation en format ISO8601 UTC.  - `description`: Une description de cet article  - `id`: Identifiant unique de l'entité  - `location`: Référence Geojson à l'élément. Il peut s'agir d'un point, d'une ligne, d'un polygone, d'un point multiple, d'une ligne multiple ou d'un polygone multiple.  - `name`: Le nom de cet élément.  - `ni`: Nickel détecté  - `no`: Monoxyde d'azote détecté  - `no2`: Dioxyde d'azote détecté  - `nox`: Autres oxydes d'azote détectés  - `o3`: Ozone détecté  - `owner`: Une liste contenant une séquence de caractères codée en JSON référençant les identifiants uniques du ou des propriétaires.  - `pb`: Plomb détecté  - `pm1`: Particules de 1 micromètre ou moins de diamètre.  - `pm10`: Particules d'un diamètre de 10 micromètres ou moins  - `pm25`: Particules d'un diamètre de 2,5 micromètres ou moins  - `precipitation`: Quantité d'eau de pluie  - `refDevice`: Une référence au(x) dispositif(s) qui a (ont) capturé cette observation.  - `refPointOfInterest`: Une référence à un point d'intérêt (généralement une station de qualité de l'air) associé à cette observation.  - `refWeatherObserved`:  Météo observée associée aux conditions de qualité de l'air décrites par cette entité.  - `relativeHumidity`: L'humidité dans l'air  - `reliability`: Fiabilité (pourcentage, exprimé en parties par un) correspondant à la qualité de l'air observée  - `seeAlso`: liste d'uri pointant vers des ressources supplémentaires sur l'élément  - `sh2`: Sulfure d'hydrogène détecté  - `so2`: Dioxyde de soufre détecté  - `source`: Une séquence de caractères donnant la source originale des données de l'entité sous forme d'URL. Il est recommandé d'utiliser le nom de domaine entièrement qualifié du fournisseur source ou l'URL de l'objet source.  - `temperature`: Température de l'article  - `type`: NGSI Type d'entité  - `typeofLocation`: Type d'emplacement de l'élément échantillonné  - `volatileOrganicCompoundsTotal`: Alcanes <C10, cétones <C6, aldéhydes <C10, acides carboxyliques <C5, aspirants<C7, alcènes <C8, aromatiques  - `windDirection`: Direction de la girouette  - `windSpeed`: Intensité du vent    
+<sup><sub>[*] S'il n'y a pas de type dans un attribut, c'est parce qu'il pourrait avoir plusieurs types ou différents formats/modèles</sub></sup>.  
+- `address[object]`: L'adresse postale  . Model: [https://schema.org/address](https://schema.org/address)- `airQualityIndex[integer]`: L'indice de qualité de l'air est un chiffre utilisé pour rendre compte de la qualité de l'air un jour donné.  . Model: [https://schema.org/Number](https://schema.org/Number)- `airQualityLevel[string]`: Niveau qualitatif global de préoccupation sanitaire correspondant à la qualité de l'air observée  . Model: [https://schema.org/Tex ](https://schema.org/Tex )- `alternateName[string]`: Un nom alternatif pour cet élément  - `areaServed[string]`: Zone de niveau supérieur à laquelle appartient cette mesure de la qualité de l'air  . Model: [https://schema.org/Text ](https://schema.org/Text )- `as[number]`: Arsenic détecté  . Model: [https://schema.org/Number](https://schema.org/Number)- `c6h6[number]`: Benzène détecté  - `cd[number]`: Cadmium détecté  - `co[number]`: Monoxyde de carbone détecté  - `co2[number]`: Dioxyde de carbone détecté  - `coLevel[string]`: Présence qualitative de monoxyde de carbone  - `dataProvider[string]`: Une séquence de caractères identifiant le fournisseur de l'entité de données harmonisées.  - `dateCreated[string]`: Horodatage de la création de l'entité. Celui-ci sera généralement attribué par la plateforme de stockage.  - `dateModified[string]`: Horodatage de la dernière modification de l'entité. Il sera généralement attribué par la plateforme de stockage.  - `dateObserved[string]`: La date et l'heure de cette observation en format ISO8601 UTC.  . Model: [https://schema.org/Text ](https://schema.org/Text )- `description[string]`: Une description de cet article  - `id[*]`: Identifiant unique de l'entité  - `location[*]`: Référence Geojson à l'élément. Il peut s'agir d'un point, d'une ligne, d'un polygone, d'un point multiple, d'une ligne multiple ou d'un polygone multiple.  - `name[string]`: Le nom de cet élément.  - `ni[number]`: Nickel détecté  - `no[number]`: Monoxyde d'azote détecté  - `no2[number]`: Dioxyde d'azote détecté  - `nox[number]`: Autres oxydes d'azote détectés  - `o3[number]`: Ozone détecté  - `owner[array]`: Une liste contenant une séquence de caractères codée en JSON référençant les identifiants uniques du ou des propriétaires.  - `pb[number]`: Plomb détecté  - `pm1[number]`: Particules de 1 micromètre ou moins de diamètre.  - `pm10[number]`: Particules d'un diamètre de 10 micromètres ou moins  - `pm25[number]`: Particules d'un diamètre de 2,5 micromètres ou moins  - `precipitation[number]`: Quantité d'eau de pluie  . Model: [https://schema.org/Number](https://schema.org/Number)- `refDevice[*]`: Une référence au(x) dispositif(s) qui a (ont) capturé cette observation.  - `refPointOfInterest[*]`: Une référence à un point d'intérêt (généralement une station de qualité de l'air) associé à cette observation.  - `refWeatherObserved[*]`:  Météo observée associée aux conditions de qualité de l'air décrites par cette entité.  - `relativeHumidity[number]`: L'humidité dans l'air  . Model: [https://schema.org/Number](https://schema.org/Number)- `reliability[number]`: Fiabilité (pourcentage, exprimé en parties par un) correspondant à la qualité de l'air observée  . Model: [https://schema.org/Number ](https://schema.org/Number )- `seeAlso[*]`: liste d'uri pointant vers des ressources supplémentaires sur l'article  - `sh2[number]`: Sulfure d'hydrogène détecté  - `so2[number]`: Dioxyde de soufre détecté  - `source[string]`: Une séquence de caractères donnant la source originale des données de l'entité sous forme d'URL. Il est recommandé d'utiliser le nom de domaine entièrement qualifié du fournisseur source ou l'URL de l'objet source.  - `temperature[number]`: Température de l'article  - `type[string]`: NGSI Type d'entité  - `typeofLocation[string]`: Type d'emplacement de l'élément échantillonné  . Model: [https://schema.org/Text](https://schema.org/Text)- `volatileOrganicCompoundsTotal[number]`: Alcanes <C10, cétones <C6, aldéhydes <C10, acides carboxyliques <C5, aspirants<C7, alcènes <C8, aromatiques  - `windDirection[number]`: Direction de la girouette  . Model: [http://schema.org/Number](http://schema.org/Number)- `windSpeed[number]`: Intensité du vent  . Model: [http//schema.org/Number](http//schema.org/Number)<!-- /30-PropertiesList -->  
+<!-- 35-RequiredProperties -->  
 Propriétés requises  
-- `dateObserved`  - `id`  - `location`  - `type`    
+- `dateObserved`  - `id`  - `location`  - `type`  <!-- /35-RequiredProperties -->  
+<!-- 40-RequiredProperties -->  
 Tous les polluants ne sont pas inclus dans ce modèle de données. En cas de nouveaux polluants, pour étendre le modèle, veuillez vous référer à cette source http://dd.eionet.europa.eu/vocabulary/aq/pollutant/view?page=1#vocabularyConceptResults où la plupart d'entre eux sont répertoriés.  
+<!-- /40-RequiredProperties -->  
+<!-- 50-DataModelHeader -->  
 ## Description des propriétés du modèle de données  
 Classés par ordre alphabétique (cliquez pour plus de détails)  
+<!-- /50-DataModelHeader -->  
+<!-- 60-ModelYaml -->  
 <details><summary><strong>full yaml details</strong></summary>    
 ```yaml  
 AirQualityObserved:    
@@ -513,9 +526,14 @@ AirQualityObserved:
   x-version: 0.1.0    
 ```  
 </details>    
+<!-- /60-ModelYaml -->  
+<!-- 70-MiddleNotes -->  
+<!-- /70-MiddleNotes -->  
+<!-- 80-Examples -->  
 ## Exemples de charges utiles  
 #### AirQualityObserved Valeurs-clés de la NGSI-v2 Exemple  
 Voici un exemple de AirQualityObserved au format JSON-LD en tant que valeurs-clés. Ceci est compatible avec NGSI-v2 lorsque l'on utilise `options=keyValues` et renvoie les données contextuelles d'une entité individuelle.  
+<details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
   "id": "Madrid-AmbientObserved-28079004-2016-03-15T11:00:00",  
@@ -550,8 +568,10 @@ AirQualityObserved:
   "refPointOfInterest": "28079004-Pza.deEspanya"  
 }  
 ```  
+</details>  
 #### AirQualityObserved NGSI-v2 normalisé Exemple  
 Voici un exemple de AirQualityObserved au format JSON-LD tel que normalisé. Ceci est compatible avec la NGSI-v2 lorsqu'elle n'utilise pas d'options et renvoie les données contextuelles d'une entité individuelle.  
+<details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
   "id": "Madrid-AmbientObserved-28079004-2016-03-15T11:00:00",  
@@ -656,8 +676,10 @@ AirQualityObserved:
   }  
 }  
 ```  
-#### Valeurs-clés NGSI-LD AirQualityObserved Exemple  
+</details>  
+#### AirQualityObserved Valeurs-clés NGSI-LD Exemple  
 Voici un exemple de AirQualityObserved au format JSON-LD en tant que valeurs-clés. Ceci est compatible avec NGSI-LD en utilisant `options=keyValues` et renvoie les données contextuelles d'une entité individuelle.  
+<details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
     "id": "urn:ngsi-ld:AirQualityObserved:Madrid-AmbientObserved-28079004-2016-03-15T11:00:00",  
@@ -768,8 +790,10 @@ AirQualityObserved:
     ]  
 }  
 ```  
+</details>  
 #### AirQualityObserved NGSI-LD normalisé Exemple  
 Voici un exemple de AirQualityObserved au format JSON-LD tel que normalisé. Ce format est compatible avec NGSI-LD lorsqu'il n'utilise pas d'options et renvoie les données contextuelles d'une entité individuelle.  
+<details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
     "id": "urn:ngsi-ld:AirQualityObserved:Madrid-AmbientObserved-28079004-2016-03-15T11:00:00",  
@@ -807,8 +831,17 @@ AirQualityObserved:
     "windDirection": 186,  
     "windSpeed": 0.64,  
     "@context": [  
-        "https://uri.etsi.org/ngsi-ld/v1/ngsi-ld-core-context.jsonld"  
+        "https://uri.etsi.org/ngsi-ld/v1/ngsi-ld-core-context.jsonld",  
+        "https://raw.githubusercontent.com/smart-data-models/dataModel.Environment/master/context.jsonld"  
     ]  
 }  
 ```  
+</details><!-- /80-Examples -->  
+<!-- 90-FooterNotes -->  
+<!-- /90-FooterNotes -->  
+<!-- 95-Units -->  
 Voir [FAQ 10](https://smartdatamodels.org/index.php/faqs/) pour obtenir une réponse sur la façon de traiter les unités de magnitude.  
+<!-- /95-Units -->  
+<!-- 97-LastFooter -->  
+---  
+[Smart Data Models](https://smartdatamodels.org) +++ [Contribution Manual](https://bit.ly/contribution_manual) +++ [About](https://bit.ly/Introduction_SDM)<!-- /97-LastFooter -->  
