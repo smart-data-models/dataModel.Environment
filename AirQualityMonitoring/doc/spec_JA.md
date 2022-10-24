@@ -1,17 +1,31 @@
+<!-- 10-Header -->  
 [![Smart Data Models](https://smartdatamodels.org/wp-content/uploads/2022/01/SmartDataModels_logo.png "Logo")](https://smartdatamodels.org)  
 エンティティ大気質モニタリング  
-===============  
+===============<!-- /10-Header -->  
+<!-- 15-License -->  
 [オープンライセンス](https://github.com/smart-data-models//dataModel.Environment/blob/master/AirQualityMonitoring/LICENSE.md)  
 [ドキュメント自動生成](https://docs.google.com/presentation/d/e/2PACX-1vTs-Ng5dIAwkg91oTTUdt8ua7woBXhPnwavZ0FxgR8BsAI_Ek3C5q97Nd94HS8KhP-r_quD4H0fgyt3/pub?start=false&loop=false&delayms=3000#slide=id.gb715ace035_0_60)  
-グローバルな記述です。**大気質モニタリング（AQM）データモデル。  
+<!-- /15-License -->  
+<!-- 20-Description -->  
+グローバルな記述です。**大気質モニタリング（AQM）データモデル.**。  
 バージョン: 0.0.1  
+<!-- /20-Description -->  
+<!-- 30-PropertiesList -->  
 
 ## プロパティ一覧  
 
-- `airQualityIndex`: 観測された大気の質を表す総合大気質指標（AQI）。  - `airQualityLevel`: 大気の質のカテゴリー表示。地域の保健機関に従って定義された定性的なレベル。例えば、「GOOD」「MODERATE」「POOR」「UNHEALTHY」「SEVERE」「HAZARDOUS」等。  - `airTemperatureTSA`: 基本プロパティの期間処理を定義するオブジェクト。最大値、最小値、瞬時値、平均値を提供する。  - `alternateName`: この項目の別称  - `ambientNoiseTSA`: 基本プロパティの期間処理を定義するオブジェクト。最大値、最小値、瞬時値、平均値を提供する。  - `aqiMajorPollutant`: 大気質指標(AQI)の主要汚染物質。Enum:'arsenic, bap, benzene, co2, nh3, no, no2, o2, o3, so2, pb' （ヒ素、バップ、ベンゼン、CO2、NH3、NO、NO2、O2、O3、SO2、鉛  - `arsenicTSA`: 基本プロパティの期間処理を定義するオブジェクト。最大値、最小値、瞬時値、平均値を提供する。  - `atmosphericPressure`: 観測された大気（大気圧または気圧）。  - `atmosphericPressureTSA`: 基本プロパティの期間処理を定義するオブジェクト。最大値、最小値、瞬時値、平均値を提供する。  - `bapTSA`: 基本プロパティの期間処理を定義するオブジェクト。最大値、最小値、瞬時値、平均値を提供する。  - `benzeneTSA`: 基本プロパティの期間処理を定義するオブジェクト。最大値、最小値、瞬時値、平均値を提供する。  - `co2TSA`: 基本プロパティの期間処理を定義するオブジェクト。最大値、最小値、瞬時値、平均値を提供する。  - `coTSA`: 基本プロパティの期間処理を定義するオブジェクト。最大値、最小値、瞬時値、平均値を提供する。  - `dataProvider`: 調和されたデータエンティティの提供者を識別する一連の文字。  - `dateCreated`: エンティティの作成タイムスタンプ。これは通常、ストレージプラットフォームによって割り当てられる。  - `dateModified`: エンティティの最終更新のタイムスタンプ。これは通常、ストレージプラットフォームによって割り当てられる。  - `description`: このアイテムの説明  - `deviceInfo`: 観測に関連するデバイスの情報。  - `deviceStatus`: 物理デバイスの状態を示す。  - `id`: エンティティの一意な識別子  - `illuminance`: 測定された照度  - `name`: このアイテムの名称です。  - `nh3TSA`: 基本プロパティの期間処理を定義するオブジェクト。最大値、最小値、瞬時値、平均値を提供する。  - `nickelTSA`: 基本プロパティの期間処理を定義するオブジェクト。最大値、最小値、瞬時値、平均値を提供する。  - `no2TSA`: 基本プロパティの期間処理を定義するオブジェクト。最大値、最小値、瞬時値、平均値を提供する。  - `noTSA`: 基本プロパティの期間処理を定義するオブジェクト。最大値、最小値、瞬時値、平均値を提供する。  - `o2TSA`: 基本プロパティの期間処理を定義するオブジェクト。最大値、最小値、瞬時値、平均値を提供する。  - `o3TSA`: 基本プロパティの期間処理を定義するオブジェクト。最大値、最小値、瞬時値、平均値を提供する。  - `observationDateTime`: 最後に報告された観測時刻。  - `owner`: 所有者の一意のIDを参照するJSONエンコードされた文字列を含むリストです。  - `pbTSA`: 基本プロパティの期間処理を定義するオブジェクト。最大値、最小値、瞬時値、平均値を提供する。  - `pm10TSA`: 基本プロパティの期間処理を定義するオブジェクト。最大値、最小値、瞬時値、平均値を提供する。  - `pm25TSA`: 基本プロパティの期間処理を定義するオブジェクト。最大値、最小値、瞬時値、平均値を提供する。  - `precipitation`: 一定期間の観測された降水量／降雨量。  - `relativeHumidityTSA`: 基本プロパティの期間処理を定義するオブジェクト。最大値、最小値、瞬時値、平均値を提供する。  - `seeAlso`: 項目に関する追加リソースを指すURIのリスト。  - `so2TSA`: 基本プロパティの期間処理を定義するオブジェクト。最大値、最小値、瞬時値、平均値を提供する。  - `solarRadiation`: 瞬時日射量測定値（kW/m2）。  - `source`: エンティティデータの元のソースをURLで示す一連の文字。ソースプロバイダの完全修飾ドメイン名、またはソースオブジェクトのURLであることが推奨されます。  - `type`: NGSIタイプ。AirQualityMonitoringでなければならない。  - `uvTSA`: 基本プロパティの期間処理を定義するオブジェクト。最大値、最小値、瞬時値、平均値を提供する。  - `versionInfo`: この観測に対応するバージョン情報。    
+<sup><sub>[*] 属性にタイプがない場合、複数のタイプまたは異なるフォーマット/パターンを持つ可能性があるためです</sub></sup>。  
+- `airQualityIndex[number]`: 観測された大気の質を表す総合大気質指標（AQI）。  . Model: [https://schema.org/Number](https://schema.org/Number)- `airQualityLevel[string]`: 大気の質のカテゴリー表示。地域の保健機関に従って定義された定性的なレベル。例えば、「GOOD」「MODERATE」「POOR」「UNHEALTHY」「SEVERE」「HAZARDOUS」等。  . Model: [https://schema.org/Text](https://schema.org/Text)- `airTemperatureTSA[object]`: 基本プロパティの期間処理を定義するオブジェクト。最大値、最小値、瞬時値、平均値を提供する。  - `alternateName[string]`: この項目の別称  - `ambientNoiseTSA[object]`: 基本プロパティの期間処理を定義するオブジェクト。最大値、最小値、瞬時値、平均値を提供する。  - `aqiMajorPollutant[string]`: 大気質指標(AQI)の主要汚染物質。Enum:'arsenic, bap, benzene, co2, nh3, no, no2, o2, o3, so2, pb' （ヒ素、バップ、ベンゼン、CO2、NH3、NO、NO2、O2、O3、SO2、鉛  . Model: [https://schema.org/Text](https://schema.org/Text)- `arsenicTSA[object]`: 基本プロパティの期間処理を定義するオブジェクト。最大値、最小値、瞬時値、平均値を提供する。  - `atmosphericPressure[number]`: 観測された大気（大気圧または気圧）。  . Model: [https://schema.org/Number](https://schema.org/Number)- `atmosphericPressureTSA[object]`: 基本プロパティの期間処理を定義するオブジェクト。最大値、最小値、瞬時値、平均値を提供する。  - `bapTSA[object]`: 基本プロパティの期間処理を定義するオブジェクト。最大値、最小値、瞬時値、平均値を提供する。  - `benzeneTSA[object]`: 基本プロパティの期間処理を定義するオブジェクト。最大値、最小値、瞬時値、平均値を提供する。  - `co2TSA[object]`: 基本プロパティの期間処理を定義するオブジェクト。最大値、最小値、瞬時値、平均値を提供する。  - `coTSA[object]`: 基本プロパティの期間処理を定義するオブジェクト。最大値、最小値、瞬時値、平均値を提供する。  - `dataProvider[string]`: 調和されたデータエンティティの提供者を識別する一連の文字。  - `dateCreated[string]`: エンティティの作成タイムスタンプ。これは通常、ストレージプラットフォームによって割り当てられる。  - `dateModified[string]`: エンティティの最終更新のタイムスタンプ。これは通常、ストレージプラットフォームによって割り当てられる。  - `description[string]`: このアイテムの説明  - `deviceInfo[object]`: 観測に関連するデバイスの情報。  - `deviceStatus[string]`: 物理デバイスの状態を示す。  . Model: [https://schema.org/Text](https://schema.org/Text)- `id[*]`: エンティティの一意な識別子  - `illuminance[number]`: 測定された照度  - `name[string]`: このアイテムの名称です。  - `nh3TSA[object]`: 基本プロパティの期間処理を定義するオブジェクト。最大値、最小値、瞬時値、平均値を提供する。  - `nickelTSA[object]`: 基本プロパティの期間処理を定義するオブジェクト。最大値、最小値、瞬時値、平均値を提供する。  - `no2TSA[object]`: 基本プロパティの期間処理を定義するオブジェクト。最大値、最小値、瞬時値、平均値を提供する。  - `noTSA[object]`: 基本プロパティの期間処理を定義するオブジェクト。最大値、最小値、瞬時値、平均値を提供する。  - `o2TSA[object]`: 基本プロパティの期間処理を定義するオブジェクト。最大値、最小値、瞬時値、平均値を提供する。  - `o3TSA[object]`: 基本プロパティの期間処理を定義するオブジェクト。最大値、最小値、瞬時値、平均値を提供する。  - `observationDateTime[string]`: 最後に報告された観測時刻。  . Model: [https://schema.org/DateTime](https://schema.org/DateTime)- `owner[array]`: 所有者の一意のIDを参照するJSONエンコードされた文字列を含むリストです。  - `pbTSA[object]`: 基本プロパティの期間処理を定義するオブジェクト。最大値、最小値、瞬時値、平均値を提供する。  - `pm10TSA[object]`: 基本プロパティの期間処理を定義するオブジェクト。最大値、最小値、瞬時値、平均値を提供する。  - `pm25TSA[object]`: 基本プロパティの期間処理を定義するオブジェクト。最大値、最小値、瞬時値、平均値を提供する。  - `precipitation[number]`: 一定期間の観測された降水量／降雨量。  . Model: [https://schema.org/Number](https://schema.org/Number)- `relativeHumidityTSA[object]`: 基本プロパティの期間処理を定義するオブジェクト。最大値、最小値、瞬時値、平均値を提供する。  - `seeAlso[*]`: 項目に関する追加リソースを指すURIのリスト。  - `so2TSA[object]`: 基本プロパティの期間処理を定義するオブジェクト。最大値、最小値、瞬時値、平均値を提供する。  - `solarRadiation[number]`: 瞬時日射量測定値（kW/m2）。  . Model: [http://schema.org/Number](http://schema.org/Number)- `source[string]`: エンティティデータの元のソースをURLで示す一連の文字。ソースプロバイダの完全修飾ドメイン名、またはソースオブジェクトのURLであることが推奨されます。  - `type[string]`: NGSIタイプ。AirQualityMonitoringでなければならない。  - `uvTSA[object]`: 基本プロパティの期間処理を定義するオブジェクト。最大値、最小値、瞬時値、平均値を提供する。  - `versionInfo[object]`: この観測に対応するバージョン情報。  <!-- /30-PropertiesList -->  
+<!-- 35-RequiredProperties -->  
 必要なプロパティ  
-- `id`  - `type`  ## プロパティのデータモデル記述  
+- `id`  - `type`  <!-- /35-RequiredProperties -->  
+<!-- 40-RequiredProperties -->  
+<!-- /40-RequiredProperties -->  
+<!-- 50-DataModelHeader -->  
+## プロパティのデータモデル記述  
 アルファベット順に並びます（クリックで詳細へ）  
+<!-- /50-DataModelHeader -->  
+<!-- 60-ModelYaml -->  
 <details><summary><strong>full yaml details</strong></summary>    
 ```yaml  
 AirQualityMonitoring:    
@@ -382,9 +396,14 @@ AirQualityMonitoring:
   x-version: 0.0.1    
 ```  
 </details>    
+<!-- /60-ModelYaml -->  
+<!-- 70-MiddleNotes -->  
+<!-- /70-MiddleNotes -->  
+<!-- 80-Examples -->  
 ## ペイロードの例  
 #### AirQualityMonitoring NGSI-v2 key-value の例。  
 AirQualityMonitoringをJSON-LD形式でkey-valuesにした例です。これは、`options=keyValues`を使用した場合にNGSI-v2と互換性があり、個々のエンティティのコンテキストデータが返される。  
+<details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
   "id": "urn:ngsi-ld:AirQualityMonitoring:id:ARET:00795717",  
@@ -589,8 +608,10 @@ AirQualityMonitoring:
   }  
 }  
 ```  
+</details>  
 #### AirQualityMonitoring NGSI-v2 正規化例  
 AirQualityMonitoring を JSON-LD 形式で正規化した例を示す。これは、オプションを使用しない場合、NGSI-v2と互換性があり、個々のエンティティのコンテキストデータを返します。  
+<details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
   "id": "urn:ngsi-ld:AirQualityMonitoring:id:MUTW:63473748",  
@@ -912,8 +933,10 @@ AirQualityMonitoring:
   ]  
 }  
 ```  
+</details>  
 #### AirQualityMonitoring NGSI-LD key-value の例。  
 AirQualityMonitoringをJSON-LD形式でkey-valuesにした例です。これは、`options=keyValues`を使用した場合にNGSI-LDと互換性があり、個々のエンティティのコンテキストデータを返します。  
+<details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
     "id": "urn:ngsi-ld:AirQualityMonitoring:id:ARET:00795717",  
@@ -1121,8 +1144,10 @@ AirQualityMonitoring:
     ]  
 }  
 ```  
+</details>  
 #### AirQualityMonitoring NGSI-LD 正規化例  
 AirQualityMonitoring を JSON-LD 形式で正規化した例です。これはオプションを使用しない場合、NGSI-LDと互換性があり、個々のエンティティのコンテキストデータを返します。  
+<details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
     "id": "urn:ngsi-ld:AirQualityMonitoring:id:ARET:00795717",  
@@ -1454,7 +1479,17 @@ AirQualityMonitoring:
             "comments": "Version 1"  
         }  
     },  
-    "@context": []  
+    "@context": [  
+        "https://raw.githubusercontent.com/smart-data-models/dataModel.Environment/master/context.jsonld"  
+    ]  
 }  
 ```  
+</details><!-- /80-Examples -->  
+<!-- 90-FooterNotes -->  
+<!-- /90-FooterNotes -->  
+<!-- 95-Units -->  
 マグニチュード単位の扱いについては、[FAQ 10](https://smartdatamodels.org/index.php/faqs/)を参照してください。  
+<!-- /95-Units -->  
+<!-- 97-LastFooter -->  
+---  
+[Smart Data Models](https://smartdatamodels.org) +++ [Contribution Manual](https://bit.ly/contribution_manual) +++ [About](https://bit.ly/Introduction_SDM)<!-- /97-LastFooter -->  
