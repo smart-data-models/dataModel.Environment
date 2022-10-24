@@ -1,15 +1,31 @@
-エンティティIndoorEnvironmentObserved  
-===============================  
+<!-- 10-Header -->  
+[![Smart Data Models](https://smartdatamodels.org/wp-content/uploads/2022/01/SmartDataModels_logo.png "Logo")](https://smartdatamodels.org)  
+エンティティ屋内環境観測  
+============<!-- /10-Header -->  
+<!-- 15-License -->  
 [オープンライセンス](https://github.com/smart-data-models//dataModel.Environment/blob/master/IndoorEnvironmentObserved/LICENSE.md)  
-[document generated automatically](https://docs.google.com/presentation/d/e/2PACX-1vTs-Ng5dIAwkg91oTTUdt8ua7woBXhPnwavZ0FxgR8BsAI_Ek3C5q97Nd94HS8KhP-r_quD4H0fgyt3/pub?start=false&loop=false&delayms=3000#slide=id.gb715ace035_0_60)  
-グローバルな説明。**屋内環境の空気や気候の状態を観察することです。  
+[ドキュメント自動生成](https://docs.google.com/presentation/d/e/2PACX-1vTs-Ng5dIAwkg91oTTUdt8ua7woBXhPnwavZ0FxgR8BsAI_Ek3C5q97Nd94HS8KhP-r_quD4H0fgyt3/pub?start=false&loop=false&delayms=3000#slide=id.gb715ace035_0_60)  
+<!-- /15-License -->  
+<!-- 20-Description -->  
+グローバルな記述です。**室内環境における空気や気候の状態を観察すること。  
+バージョン: 0.0.1  
+<!-- /20-Description -->  
+<!-- 30-PropertiesList -->  
 
-## プロパティのリスト  
+## プロパティ一覧  
 
-- `address`: 郵送先住所  - `alternateName`: このアイテムの別称  - `areaServed`: サービスや提供されるアイテムが提供される地理的なエリア  - `atmosphericPressure`: 測定された大気圧  - `co2`: 測定された室内のC02濃度（公称値：mg/L  - `dataProvider`: 調和されたデータ・エンティティの提供者を識別する一連の文字。  - `dateCreated`: エンティティの作成タイムスタンプ。これは通常、ストレージプラットフォームによって割り当てられます。  - `dateModified`: エンティティが最後に変更された時のタイムスタンプ。これは通常、ストレージプラットフォームによって割り当てられます。  - `dateObserved`: ISO8601での観測日時  - `description`: このアイテムの説明  - `id`: エンティティのユニークな識別子  - `illuminance`: 実測照度  - `location`: アイテムへのGeojson参照。Point、LineString、Polygon、MultiPoint、MultiLineString、MultiPolygonのいずれかです。  - `name`: このアイテムの名前です。  - `owner`: オーナーのIDを参照するJSONエンコードされた文字列を含むリスト  - `peopleCount`: ご利用人数  - `refDevice`: この観測データを取得した機器を示す情報。  - `refPointOfInterest`: この観測に関連した興味のあるポイントへの参照です。  - `relativeHumidity`: 測定された湿度  - `seeAlso`: アイテムに関する追加リソースを示すuriのリスト  - `sensorHeight`: センサーの高さ（床からの距離）  - `sensorPlacement`: センサーの位置  - `source`: エンティティデータのオリジナルソースをURLで示す一連の文字。ソースプロバイダの完全修飾ドメイン名、またはソースオブジェクトのURLであることが推奨されます。  - `temperature`: 実測温度  - `type`: NGSI エンティティタイプ    
-必須項目  
-- `dateObserved`  - `id`  - `location`  - `type`  ## データモデルによるプロパティの記述  
-アルファベット順（クリックすると詳細が表示されます）  
+<sup><sub>[*] 属性にタイプがない場合、複数のタイプまたは異なるフォーマット/パターンを持つ可能性があるためです</sub></sup>。  
+- `address[object]`: 郵送先住所  . Model: [https://schema.org/address](https://schema.org/address)- `alternateName[string]`: この項目の別称  - `areaServed[string]`: サービスまたは提供品が提供される地理的な地域  . Model: [https://schema.org/Text](https://schema.org/Text)- `atmosphericPressure[number]`: 測定された大気圧  - `co2[number]`: 測定された室内C02濃度（公称値：mg/L）。  - `dataProvider[string]`: 調和されたデータエンティティの提供者を識別する一連の文字。  - `dateCreated[string]`: エンティティの作成タイムスタンプ。これは通常、ストレージプラットフォームによって割り当てられる。  - `dateModified[string]`: エンティティの最終更新のタイムスタンプ。これは通常、ストレージプラットフォームによって割り当てられる。  - `dateObserved[string]`: ISO8601に基づく観測日時  - `description[string]`: このアイテムの説明  - `id[*]`: エンティティの一意な識別子  - `illuminance[number]`: 測定された照度  - `location[*]`: アイテムへの Geojson リファレンス。Point, LineString, Polygon, MultiPoint, MultiLineString, MultiPolygonのいずれかを指定することができる。  - `name[string]`: このアイテムの名称です。  - `owner[array]`: 所有者の一意のIDを参照するJSONエンコードされた文字列を含むリストです。  - `peopleCount[number]`: 人数  - `refDevice[*]`: この観測を捕捉した装置への参照。  - `refPointOfInterest[*]`: この観測に関連する注目点への参照。  - `relativeHumidity[number]`: 測定湿度  - `seeAlso[*]`: 項目に関する追加リソースを指すURIのリスト。  - `sensorHeight[number]`: センサーの高さ(床からの距離)  - `sensorPlacement[string]`: センサーの位置  - `source[string]`: エンティティデータの元のソースをURLで示す一連の文字。ソースプロバイダの完全修飾ドメイン名、またはソースオブジェクトのURLであることが推奨されます。  - `temperature[number]`: 測定温度  - `type[string]`: NGSI エンティティタイプ  <!-- /30-PropertiesList -->  
+<!-- 35-RequiredProperties -->  
+必要なプロパティ  
+- `dateObserved`  - `id`  - `location`  - `type`  <!-- /35-RequiredProperties -->  
+<!-- 40-RequiredProperties -->  
+<!-- /40-RequiredProperties -->  
+<!-- 50-DataModelHeader -->  
+## プロパティのデータモデル記述  
+アルファベット順に並びます（クリックで詳細へ）  
+<!-- /50-DataModelHeader -->  
+<!-- 60-ModelYaml -->  
 <details><summary><strong>full yaml details</strong></summary>    
 ```yaml  
 IndoorEnvironmentObserved:    
@@ -377,9 +393,14 @@ IndoorEnvironmentObserved:
   x-version: 0.0.1    
 ```  
 </details>    
+<!-- /60-ModelYaml -->  
+<!-- 70-MiddleNotes -->  
+<!-- /70-MiddleNotes -->  
+<!-- 80-Examples -->  
 ## ペイロードの例  
-#### IndoorEnvironmentObserved NGSI-v2 key-values 例  
-IndoorEnvironmentObservedをkey-valuesとしてJSON-LD形式で出力した例です。これは`options=keyValues`を使用した場合のNGSI-v2との互換性があり、個々のエンティティのコンテキストデータを返します。  
+#### IndoorEnvironmentObserved NGSI-v2 key-value の例。  
+IndoorEnvironmentObservedをJSON-LD形式でkey-valuesとした例である。これは、`options=keyValues`を使用した場合にNGSI-v2と互換性があり、個々のエンティティのコンテキストデータを返します。  
+<details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
         "id": "urn:ngsi:MuseoDemo_Room_1",  
@@ -410,8 +431,10 @@ IndoorEnvironmentObserved:
         "SO2": 11  
 }  
 ```  
+</details>  
 #### IndoorEnvironmentObserved NGSI-v2 正規化例  
-ここでは、正規化されたJSON-LD形式のIndoorEnvironmentObservedの例を示します。これは、オプションを使用しない場合のNGSI-v2との互換性があり、個々のエンティティのコンテキストデータを返します。  
+以下は、IndoorEnvironmentObserved を JSON-LD 形式で正規化した例である。これは、オプションを使用しない場合、NGSI-v2と互換性があり、個々のエンティティのコンテキストデータを返します。  
+<details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
     "id": "urn:ngsi:MuseoDemo_Room_1",  
@@ -507,132 +530,14 @@ IndoorEnvironmentObserved:
     }  
 }  
 ```  
-#### IndoorEnvironmentObserved NGSI-LD のキーバリューの例  
-IndoorEnvironmentObservedをkey-valuesとしてJSON-LD形式で表現した例です。これは`options=keyValues`を使った場合のNGSI-LDとの互換性があり、個々のエンティティのコンテキストデータを返します。  
-```json  
-{  
-  "id": "urn:ngsi-ld:IndoorEnvironmentObserved:urn:ngsi:MuseoDemo_Room_1",  
-  "type": "IndoorEnvironmentObserved",  
-  "dateObserved": {  
-    "type": "Property",  
-    "value": "2016-03-15T11:00:00/2016-03-15T12:00:00"  
-  },  
-  "refPointOfInterest": {  
-    "type": "Relationship",  
-    "object": "urn:ngsi-ld:PointOfInterest:urn:ngsi:MuseoDemo"  
-  },  
-  "location": {  
-    "type": "GeoProperty",  
-    "value": {  
-      "type": "Point",  
-      "coordinates": [  
-        40,  
-        11  
-      ]  
-    }  
-  },  
-  "address": {  
-    "type": "Property",  
-    "value": {  
-      "addressCountry": "IT",  
-      "addressLocality": "Demo city",  
-      "streetAddress": "Demo address",  
-      "type": "PostalAddress"  
-    }  
-  },  
-  "peopleCount": {  
-    "type": "Property",  
-    "value": 10  
-  },  
-  "temperature": {  
-    "type": "Property",  
-    "value": 12.2  
-  },  
-  "relativeHumidity": {  
-    "type": "Property",  
-    "value": 0.54  
-  },  
-  "illuminance": {  
-    "type": "Property",  
-    "value": 1000  
-  },  
-  "CO": {  
-    "type": "Property",  
-    "value": 500,  
-    "unitCode": "GP"  
-  },  
-  "NO": {  
-    "type": "Property",  
-    "value": 45,  
-    "unitCode": "GQ"  
-  },  
-  "NOx": {  
-    "type": "Property",  
-    "value": 139,  
-    "unitCode": "GQ"  
-  },  
-  "NO2": {  
-    "type": "Property",  
-    "value": 69,  
-    "unitCode": "GQ"  
-  },  
-  "SO2": {  
-    "type": "Property",  
-    "value": 11,  
-    "unitCode": "GQ"  
-  },  
-  "@context": [  
-    "https://fiware.github.io/data-models/context.jsonld",  
-    "https://uri.etsi.org/ngsi-ld/v1/ngsi-ld-core-context-v1.3.jsonld"  
-  ]  
-}  
-```  
-#### IndoorEnvironmentObserved NGSI-LDの正規化例  
-ここでは、正規化されたJSON-LD形式のIndoorEnvironmentObservedの例を示します。これはオプションを使用しない場合のNGSI-LDとの互換性があり、個々のエンティティのコンテキストデータを返します。  
+</details>  
+#### IndoorEnvironmentObserved NGSI-LD key-value の例。  
+IndoorEnvironmentObservedをJSON-LD形式でkey-valuesとした例です。これは、`options=keyValues`を使用した場合にNGSI-LDと互換性があり、個々のエンティティのコンテキストデータを返します。  
+<details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
     "id": "urn:ngsi-ld:IndoorEnvironmentObserved:urn:ngsi:MuseoDemo_Room_1",  
     "type": "IndoorEnvironmentObserved",  
-    "dateObserved": {  
-        "type": "Property",  
-        "value": "2016-03-15T11:00:00/2016-03-15T12:00:00"  
-    },  
-    "refPointOfInterest": {  
-        "type": "Relationship",  
-        "object": "urn:ngsi-ld:PointOfInterest:urn:ngsi:MuseoDemo"  
-    },  
-    "location": {  
-        "type": "GeoProperty",  
-        "value": {  
-            "type": "Point",  
-            "coordinates": [40, 11]  
-        }  
-    },  
-    "address": {  
-        "type": "Property",  
-        "value": {  
-            "addressCountry": "IT",  
-            "addressLocality": "Demo city",  
-            "streetAddress": "Demo address",  
-            "type": "PostalAddress"  
-        }  
-    },  
-    "peopleCount": {  
-        "type": "Property",  
-        "value": 10  
-    },  
-    "temperature": {  
-        "type": "Property",  
-        "value": 12.2  
-    },  
-    "relativeHumidity": {  
-        "type": "Property",  
-        "value": 0.54  
-    },  
-    "illuminance": {  
-        "type": "Property",  
-        "value": 1000  
-    },  
     "CO": {  
         "type": "Property",  
         "value": 500,  
@@ -643,14 +548,14 @@ IndoorEnvironmentObserved:
         "value": 45,  
         "unitCode": "GQ"  
     },  
-    "NOx": {  
-        "type": "Property",  
-        "value": 139,  
-        "unitCode": "GQ"  
-    },  
     "NO2": {  
         "type": "Property",  
         "value": 69,  
+        "unitCode": "GQ"  
+    },  
+    "NOx": {  
+        "type": "Property",  
+        "value": 139,  
         "unitCode": "GQ"  
     },  
     "SO2": {  
@@ -658,10 +563,145 @@ IndoorEnvironmentObserved:
         "value": 11,  
         "unitCode": "GQ"  
     },  
+    "address": {  
+        "type": "Property",  
+        "value": {  
+            "addressCountry": "IT",  
+            "addressLocality": "Demo city",  
+            "streetAddress": "Demo address",  
+            "type": "PostalAddress"  
+        }  
+    },  
+    "dateObserved": {  
+        "type": "Property",  
+        "value": "2016-03-15T11:00:00/2016-03-15T12:00:00"  
+    },  
+    "illuminance": {  
+        "type": "Property",  
+        "value": 1000  
+    },  
+    "location": {  
+        "type": "GeoProperty",  
+        "value": {  
+            "type": "Point",  
+            "coordinates": [  
+                40,  
+                11  
+            ]  
+        }  
+    },  
+    "peopleCount": {  
+        "type": "Property",  
+        "value": 10  
+    },  
+    "refPointOfInterest": {  
+        "type": "Relationship",  
+        "object": "urn:ngsi-ld:PointOfInterest:urn:ngsi:MuseoDemo"  
+    },  
+    "relativeHumidity": {  
+        "type": "Property",  
+        "value": 0.54  
+    },  
+    "temperature": {  
+        "type": "Property",  
+        "value": 12.2  
+    },  
     "@context": [  
         "https://fiware.github.io/data-models/context.jsonld",  
-        "https://uri.etsi.org/ngsi-ld/v1/ngsi-ld-core-context-v1.3.jsonld"  
+        "https://uri.etsi.org/ngsi-ld/v1/ngsi-ld-core-context-v1.3.jsonld",  
+        "https://raw.githubusercontent.com/smart-data-models/dataModel.Environment/master/context.jsonld"  
     ]  
 }  
 ```  
-マグニチュード単位の扱いについては、[FAQ 10](https://smartdatamodels.org/index.php/faqs/)を参照してください。
+</details>  
+#### 屋内環境観測値 NGSI-LD 正規化例  
+IndoorEnvironmentObserved を JSON-LD 形式で正規化した例を示す。これはオプションを使用しない場合、NGSI-LDと互換性があり、個々のエンティティのコンテキストデータを返します。  
+<details><summary><strong>show/hide example</strong></summary>    
+```json  
+{  
+    "id": "urn:ngsi-ld:IndoorEnvironmentObserved:urn:ngsi:MuseoDemo_Room_1",  
+    "type": "IndoorEnvironmentObserved",  
+    "CO": {  
+        "type": "Property",  
+        "value": 500,  
+        "unitCode": "GP"  
+    },  
+    "NO": {  
+        "type": "Property",  
+        "value": 45,  
+        "unitCode": "GQ"  
+    },  
+    "NO2": {  
+        "type": "Property",  
+        "value": 69,  
+        "unitCode": "GQ"  
+    },  
+    "NOx": {  
+        "type": "Property",  
+        "value": 139,  
+        "unitCode": "GQ"  
+    },  
+    "SO2": {  
+        "type": "Property",  
+        "value": 11,  
+        "unitCode": "GQ"  
+    },  
+    "address": {  
+        "type": "Property",  
+        "value": {  
+            "addressCountry": "IT",  
+            "addressLocality": "Demo city",  
+            "streetAddress": "Demo address",  
+            "type": "PostalAddress"  
+        }  
+    },  
+    "dateObserved": {  
+        "type": "Property",  
+        "value": "2016-03-15T11:00:00/2016-03-15T12:00:00"  
+    },  
+    "illuminance": {  
+        "type": "Property",  
+        "value": 1000  
+    },  
+    "location": {  
+        "type": "GeoProperty",  
+        "value": {  
+            "type": "Point",  
+            "coordinates": [  
+                40,  
+                11  
+            ]  
+        }  
+    },  
+    "peopleCount": {  
+        "type": "Property",  
+        "value": 10  
+    },  
+    "refPointOfInterest": {  
+        "type": "Relationship",  
+        "object": "urn:ngsi-ld:PointOfInterest:urn:ngsi:MuseoDemo"  
+    },  
+    "relativeHumidity": {  
+        "type": "Property",  
+        "value": 0.54  
+    },  
+    "temperature": {  
+        "type": "Property",  
+        "value": 12.2  
+    },  
+    "@context": [  
+        "https://fiware.github.io/data-models/context.jsonld",  
+        "https://uri.etsi.org/ngsi-ld/v1/ngsi-ld-core-context-v1.3.jsonld",  
+        "https://raw.githubusercontent.com/smart-data-models/dataModel.Environment/master/context.jsonld"  
+    ]  
+}  
+```  
+</details><!-- /80-Examples -->  
+<!-- 90-FooterNotes -->  
+<!-- /90-FooterNotes -->  
+<!-- 95-Units -->  
+マグニチュード単位の扱いについては、[FAQ 10](https://smartdatamodels.org/index.php/faqs/)を参照してください。  
+<!-- /95-Units -->  
+<!-- 97-LastFooter -->  
+---  
+[Smart Data Models](https://smartdatamodels.org) +++ [Contribution Manual](https://bit.ly/contribution_manual) +++ [About](https://bit.ly/Introduction_SDM)<!-- /97-LastFooter -->  
