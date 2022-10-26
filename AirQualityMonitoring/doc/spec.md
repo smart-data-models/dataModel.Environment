@@ -1,17 +1,31 @@
+<!-- 10-Header -->  
 [![Smart Data Models](https://smartdatamodels.org/wp-content/uploads/2022/01/SmartDataModels_logo.png "Logo")](https://smartdatamodels.org)  
 Entity: AirQualityMonitoring  
-============================  
+============================<!-- /10-Header -->  
+<!-- 15-License -->  
 [Open License](https://github.com/smart-data-models//dataModel.Environment/blob/master/AirQualityMonitoring/LICENSE.md)  
 [document generated automatically](https://docs.google.com/presentation/d/e/2PACX-1vTs-Ng5dIAwkg91oTTUdt8ua7woBXhPnwavZ0FxgR8BsAI_Ek3C5q97Nd94HS8KhP-r_quD4H0fgyt3/pub?start=false&loop=false&delayms=3000#slide=id.gb715ace035_0_60)  
+<!-- /15-License -->  
+<!-- 20-Description -->  
 Global description: **Air Quality Monitoring (AQM) Data Model.**  
 version: 0.0.1  
+<!-- /20-Description -->  
+<!-- 30-PropertiesList -->  
 
 ## List of properties  
 
-- `airQualityIndex`: Overall Air Quality Index (AQI) for the observed air quality.  - `airQualityLevel`: Air Quality Category Indication. Qualitative level defined according to the local health agencies. For example, 'GOOD', 'MODERATE', 'POOR', 'UNHEALTHY', 'SEVERE', 'HAZARDOUS' etc.  - `airTemperatureTSA`: Object defining the temporal processing of a basic property during a period. It provides Maximum, minimum, instant value and average  - `alternateName`: An alternative name for this item  - `ambientNoiseTSA`: Object defining the temporal processing of a basic property during a period. It provides Maximum, minimum, instant value and average  - `aqiMajorPollutant`: Major pollutant in the Air Quality Index (AQI). Enum:'arsenic, bap, benzene, co2, nh3, no, no2, o2, o3, so2, pb'  - `arsenicTSA`: Object defining the temporal processing of a basic property during a period. It provides Maximum, minimum, instant value and average  - `atmosphericPressure`: Observed air (atmospheric or barometric) pressure.  - `atmosphericPressureTSA`: Object defining the temporal processing of a basic property during a period. It provides Maximum, minimum, instant value and average  - `bapTSA`: Object defining the temporal processing of a basic property during a period. It provides Maximum, minimum, instant value and average  - `benzeneTSA`: Object defining the temporal processing of a basic property during a period. It provides Maximum, minimum, instant value and average  - `co2TSA`: Object defining the temporal processing of a basic property during a period. It provides Maximum, minimum, instant value and average  - `coTSA`: Object defining the temporal processing of a basic property during a period. It provides Maximum, minimum, instant value and average  - `dataProvider`: A sequence of characters identifying the provider of the harmonised data entity.  - `dateCreated`: Entity creation timestamp. This will usually be allocated by the storage platform.  - `dateModified`: Timestamp of the last modification of the entity. This will usually be allocated by the storage platform.  - `description`: A description of this item  - `deviceInfo`: Information about the device associated with the observations.  - `deviceStatus`: Indicates the status of physical device or devices.  - `id`: Unique identifier of the entity  - `illuminance`: Measured illuminance  - `name`: The name of this item.  - `nh3TSA`: Object defining the temporal processing of a basic property during a period. It provides Maximum, minimum, instant value and average  - `nickelTSA`: Object defining the temporal processing of a basic property during a period. It provides Maximum, minimum, instant value and average  - `no2TSA`: Object defining the temporal processing of a basic property during a period. It provides Maximum, minimum, instant value and average  - `noTSA`: Object defining the temporal processing of a basic property during a period. It provides Maximum, minimum, instant value and average  - `o2TSA`: Object defining the temporal processing of a basic property during a period. It provides Maximum, minimum, instant value and average  - `o3TSA`: Object defining the temporal processing of a basic property during a period. It provides Maximum, minimum, instant value and average  - `observationDateTime`: Last reported time of observation.  - `owner`: A List containing a JSON encoded sequence of characters referencing the unique Ids of the owner(s)  - `pbTSA`: Object defining the temporal processing of a basic property during a period. It provides Maximum, minimum, instant value and average  - `pm10TSA`: Object defining the temporal processing of a basic property during a period. It provides Maximum, minimum, instant value and average  - `pm25TSA`: Object defining the temporal processing of a basic property during a period. It provides Maximum, minimum, instant value and average  - `precipitation`: Observed precipitation/rainfall level over a given duration.  - `relativeHumidityTSA`: Object defining the temporal processing of a basic property during a period. It provides Maximum, minimum, instant value and average  - `seeAlso`: list of uri pointing to additional resources about the item  - `so2TSA`: Object defining the temporal processing of a basic property during a period. It provides Maximum, minimum, instant value and average  - `solarRadiation`: Instantaneous solar radiation measured in kW/m2  - `source`: A sequence of characters giving the original source of the entity data as a URL. Recommended to be the fully qualified domain name of the source provider, or the URL to the source object.  - `type`: NGSI type. it has to be AirQualityMonitoring  - `uvTSA`: Object defining the temporal processing of a basic property during a period. It provides Maximum, minimum, instant value and average  - `versionInfo`: Version information corresponding to this observation.    
+<sup><sub>[*] If there is not a type in an attribute is because it could have several types or different formats/patterns</sub></sup>  
+- `airQualityIndex[number]`: Overall Air Quality Index (AQI) for the observed air quality.  . Model: [https://schema.org/Number](https://schema.org/Number)- `airQualityLevel[string]`: Air Quality Category Indication. Qualitative level defined according to the local health agencies. For example, 'GOOD', 'MODERATE', 'POOR', 'UNHEALTHY', 'SEVERE', 'HAZARDOUS' etc.  . Model: [https://schema.org/Text](https://schema.org/Text)- `airTemperatureTSA[object]`: Object defining the temporal processing of a basic property during a period. It provides Maximum, minimum, instant value and average  - `alternateName[string]`: An alternative name for this item  - `ambientNoiseTSA[object]`: Object defining the temporal processing of a basic property during a period. It provides Maximum, minimum, instant value and average  - `aqiMajorPollutant[string]`: Major pollutant in the Air Quality Index (AQI). Enum:'arsenic, bap, benzene, co2, nh3, no, no2, o2, o3, so2, pb'  . Model: [https://schema.org/Text](https://schema.org/Text)- `arsenicTSA[object]`: Object defining the temporal processing of a basic property during a period. It provides Maximum, minimum, instant value and average  - `atmosphericPressure[number]`: Observed air (atmospheric or barometric) pressure.  . Model: [https://schema.org/Number](https://schema.org/Number)- `atmosphericPressureTSA[object]`: Object defining the temporal processing of a basic property during a period. It provides Maximum, minimum, instant value and average  - `bapTSA[object]`: Object defining the temporal processing of a basic property during a period. It provides Maximum, minimum, instant value and average  - `benzeneTSA[object]`: Object defining the temporal processing of a basic property during a period. It provides Maximum, minimum, instant value and average  - `co2TSA[object]`: Object defining the temporal processing of a basic property during a period. It provides Maximum, minimum, instant value and average  - `coTSA[object]`: Object defining the temporal processing of a basic property during a period. It provides Maximum, minimum, instant value and average  - `dataProvider[string]`: A sequence of characters identifying the provider of the harmonised data entity.  - `dateCreated[string]`: Entity creation timestamp. This will usually be allocated by the storage platform.  - `dateModified[string]`: Timestamp of the last modification of the entity. This will usually be allocated by the storage platform.  - `description[string]`: A description of this item  - `deviceInfo[object]`: Information about the device associated with the observations.  - `deviceStatus[string]`: Indicates the status of physical device or devices.  . Model: [https://schema.org/Text](https://schema.org/Text)- `id[*]`: Unique identifier of the entity  - `illuminance[number]`: Measured illuminance  - `name[string]`: The name of this item.  - `nh3TSA[object]`: Object defining the temporal processing of a basic property during a period. It provides Maximum, minimum, instant value and average  - `nickelTSA[object]`: Object defining the temporal processing of a basic property during a period. It provides Maximum, minimum, instant value and average  - `no2TSA[object]`: Object defining the temporal processing of a basic property during a period. It provides Maximum, minimum, instant value and average  - `noTSA[object]`: Object defining the temporal processing of a basic property during a period. It provides Maximum, minimum, instant value and average  - `o2TSA[object]`: Object defining the temporal processing of a basic property during a period. It provides Maximum, minimum, instant value and average  - `o3TSA[object]`: Object defining the temporal processing of a basic property during a period. It provides Maximum, minimum, instant value and average  - `observationDateTime[string]`: Last reported time of observation.  . Model: [https://schema.org/DateTime](https://schema.org/DateTime)- `owner[array]`: A List containing a JSON encoded sequence of characters referencing the unique Ids of the owner(s)  - `pbTSA[object]`: Object defining the temporal processing of a basic property during a period. It provides Maximum, minimum, instant value and average  - `pm10TSA[object]`: Object defining the temporal processing of a basic property during a period. It provides Maximum, minimum, instant value and average  - `pm25TSA[object]`: Object defining the temporal processing of a basic property during a period. It provides Maximum, minimum, instant value and average  - `precipitation[number]`: Observed precipitation/rainfall level over a given duration.  . Model: [https://schema.org/Number](https://schema.org/Number)- `relativeHumidityTSA[object]`: Object defining the temporal processing of a basic property during a period. It provides Maximum, minimum, instant value and average  - `seeAlso[*]`: list of uri pointing to additional resources about the item  - `so2TSA[object]`: Object defining the temporal processing of a basic property during a period. It provides Maximum, minimum, instant value and average  - `solarRadiation[number]`: Instantaneous solar radiation measured in kW/m2  . Model: [http://schema.org/Number](http://schema.org/Number)- `source[string]`: A sequence of characters giving the original source of the entity data as a URL. Recommended to be the fully qualified domain name of the source provider, or the URL to the source object.  - `type[string]`: NGSI type. it has to be AirQualityMonitoring  - `uvTSA[object]`: Object defining the temporal processing of a basic property during a period. It provides Maximum, minimum, instant value and average  - `versionInfo[object]`: Version information corresponding to this observation.  <!-- /30-PropertiesList -->  
+<!-- 35-RequiredProperties -->  
 Required properties  
-- `id`  - `type`  ## Data Model description of properties  
+- `id`  - `type`  <!-- /35-RequiredProperties -->  
+<!-- 40-RequiredProperties -->  
+<!-- /40-RequiredProperties -->  
+<!-- 50-DataModelHeader -->  
+## Data Model description of properties  
 Sorted alphabetically (click for details)  
+<!-- /50-DataModelHeader -->  
+<!-- 60-ModelYaml -->  
 <details><summary><strong>full yaml details</strong></summary>    
 ```yaml  
 AirQualityMonitoring:    
@@ -382,9 +396,14 @@ AirQualityMonitoring:
   x-version: 0.0.1    
 ```  
 </details>    
+<!-- /60-ModelYaml -->  
+<!-- 70-MiddleNotes -->  
+<!-- /70-MiddleNotes -->  
+<!-- 80-Examples -->  
 ## Example payloads    
 #### AirQualityMonitoring NGSI-v2 key-values Example    
 Here is an example of a AirQualityMonitoring in JSON-LD format as key-values. This is compatible with NGSI-v2 when  using `options=keyValues` and returns the context data of an individual entity.  
+<details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
   "id": "urn:ngsi-ld:AirQualityMonitoring:id:ARET:00795717",  
@@ -589,8 +608,10 @@ AirQualityMonitoring:
   }  
 }  
 ```  
+</details>  
 #### AirQualityMonitoring NGSI-v2 normalized Example    
 Here is an example of a AirQualityMonitoring in JSON-LD format as normalized. This is compatible with NGSI-v2 when not using options and returns the context data of an individual entity.  
+<details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
   "id": "urn:ngsi-ld:AirQualityMonitoring:id:MUTW:63473748",  
@@ -912,8 +933,10 @@ AirQualityMonitoring:
   ]  
 }  
 ```  
+</details>  
 #### AirQualityMonitoring NGSI-LD key-values Example    
 Here is an example of a AirQualityMonitoring in JSON-LD format as key-values. This is compatible with NGSI-LD when  using `options=keyValues` and returns the context data of an individual entity.  
+<details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
     "id": "urn:ngsi-ld:AirQualityMonitoring:id:ARET:00795717",  
@@ -1121,8 +1144,10 @@ AirQualityMonitoring:
     ]  
 }  
 ```  
+</details>  
 #### AirQualityMonitoring NGSI-LD normalized Example    
 Here is an example of a AirQualityMonitoring in JSON-LD format as normalized. This is compatible with NGSI-LD when not using options and returns the context data of an individual entity.  
+<details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
     "id": "urn:ngsi-ld:AirQualityMonitoring:id:ARET:00795717",  
@@ -1454,7 +1479,17 @@ AirQualityMonitoring:
             "comments": "Version 1"  
         }  
     },  
-    "@context": []  
+    "@context": [  
+        "https://raw.githubusercontent.com/smart-data-models/dataModel.Environment/master/context.jsonld"  
+    ]  
 }  
 ```  
+</details><!-- /80-Examples -->  
+<!-- 90-FooterNotes -->  
+<!-- /90-FooterNotes -->  
+<!-- 95-Units -->  
 See [FAQ 10](https://smartdatamodels.org/index.php/faqs/) to get an answer on how to deal with magnitude units  
+<!-- /95-Units -->  
+<!-- 97-LastFooter -->  
+---  
+[Smart Data Models](https://smartdatamodels.org) +++ [Contribution Manual](https://bit.ly/contribution_manual) +++ [About](https://bit.ly/Introduction_SDM)<!-- /97-LastFooter -->  
