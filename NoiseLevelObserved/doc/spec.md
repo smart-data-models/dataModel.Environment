@@ -1,17 +1,31 @@
+<!-- 10-Header -->  
 [![Smart Data Models](https://smartdatamodels.org/wp-content/uploads/2022/01/SmartDataModels_logo.png "Logo")](https://smartdatamodels.org)  
 Entity: NoiseLevelObserved  
-==========================  
+==========================<!-- /10-Header -->  
+<!-- 15-License -->  
 [Open License](https://github.com/smart-data-models//dataModel.Environment/blob/master/NoiseLevelObserved/LICENSE.md)  
 [document generated automatically](https://docs.google.com/presentation/d/e/2PACX-1vTs-Ng5dIAwkg91oTTUdt8ua7woBXhPnwavZ0FxgR8BsAI_Ek3C5q97Nd94HS8KhP-r_quD4H0fgyt3/pub?start=false&loop=false&delayms=3000#slide=id.gb715ace035_0_60)  
+<!-- /15-License -->  
+<!-- 20-Description -->  
 Global description: **An observation of those acoustic parameters that estimate noise pressure levels at a certain place and time. **  
 version: 0.2.1  
+<!-- /20-Description -->  
+<!-- 30-PropertiesList -->  
 
 ## List of properties  
 
-- `LAS`: The frequency weighted sound level (A-weighting) for a slow sound, one second mor more up and down.  - `LAeq`: The frequency weighted Leq sound level (A-weighting).  - `LAeq_d`: Acoustic Level frequency weigthed (A-weghting) equivalent for  a day  - `LAmax`: Acoustic level frequency weigthed (A-weghting) maximum sound level  - `address`: The mailing address  - `alternateName`: An alternative name for this item  - `areaServed`: The geographic area where a service or offered item is provided  - `dataProvider`: A sequence of characters identifying the provider of the harmonised data entity.  - `dateCreated`: Entity creation timestamp. This will usually be allocated by the storage platform.  - `dateModified`: Timestamp of the last modification of the entity. This will usually be allocated by the storage platform.  - `dateObserved`: The date and time of this observation represented by an ISO8601 interval.  - `dateObservedFrom`: Observation period start date and time.  - `dateObservedTo`: Observation period end date and time. See dateObserved.  - `description`: A description of this item  - `distanceAverage`: Average distance between sensor and potential noise sources  - `heightAverage`: Type of potential obstacles between the sensor and the noise source  - `id`: Unique identifier of the entity  - `location`: Geojson reference to the item. It can be Point, LineString, Polygon, MultiPoint, MultiLineString or MultiPolygon  - `name`: The name of this item.  - `obstacles`: Type of potential obstacles between the sensor and the noise source.  - `owner`: A List containing a JSON encoded sequence of characters referencing the unique Ids of the owner(s)  - `refDevice`: A reference to the device which captured this observation.  - `refPointOfInterest`: A reference to a point of interest associated to this observation.  - `refWeatherObserved`: Reference to the associated weather conditions.  - `seeAlso`: list of uri pointing to additional resources about the item  - `sonometerClass`: Class of sonometer (0, 1, 2) according to ANSI used for taking this observation  - `source`: A sequence of characters giving the original source of the entity data as a URL. Recommended to be the fully qualified domain name of the source provider, or the URL to the source object.  - `type`: NGSI Entity type    
+<sup><sub>[*] If there is not a type in an attribute is because it could have several types or different formats/patterns</sub></sup>  
+- `LAS[number]`: The frequency weighted sound level (A-weighting) for a slow sound, one second mor more up and down.  - `LAeq[number]`: The frequency weighted Leq sound level (A-weighting).  - `LAeq_d[number]`: Acoustic Level frequency weigthed (A-weghting) equivalent for  a day  - `LAmax[number]`: Acoustic level frequency weigthed (A-weghting) maximum sound level  - `address[object]`: The mailing address  . Model: [https://schema.org/address](https://schema.org/address)- `alternateName[string]`: An alternative name for this item  - `areaServed[string]`: The geographic area where a service or offered item is provided  . Model: [https://schema.org/Text](https://schema.org/Text)- `dataProvider[string]`: A sequence of characters identifying the provider of the harmonised data entity.  - `dateCreated[string]`: Entity creation timestamp. This will usually be allocated by the storage platform.  - `dateModified[string]`: Timestamp of the last modification of the entity. This will usually be allocated by the storage platform.  - `dateObserved[string]`: The date and time of this observation represented by an ISO8601 interval.  - `dateObservedFrom[string]`: Observation period start date and time.  . Model: [https://schema.org/DateTime](https://schema.org/DateTime)- `dateObservedTo[string]`: Observation period end date and time. See dateObserved.  . Model: [https://schema.org/Text](https://schema.org/Text)- `description[string]`: A description of this item  - `distanceAverage[string]`: Average distance between sensor and potential noise sources  - `heightAverage[string]`: Type of potential obstacles between the sensor and the noise source  - `id[*]`: Unique identifier of the entity  - `location[*]`: Geojson reference to the item. It can be Point, LineString, Polygon, MultiPoint, MultiLineString or MultiPolygon  - `name[string]`: The name of this item.  - `obstacles[string]`: Type of potential obstacles between the sensor and the noise source.  - `owner[array]`: A List containing a JSON encoded sequence of characters referencing the unique Ids of the owner(s)  - `refDevice[*]`: A reference to the device which captured this observation.  - `refPointOfInterest[*]`: A reference to a point of interest associated to this observation.  - `refWeatherObserved[*]`: Reference to the associated weather conditions.  - `seeAlso[*]`: list of uri pointing to additional resources about the item  - `sonometerClass[string]`: Class of sonometer (0, 1, 2) according to ANSI used for taking this observation  . Model: [https://schema.org/Text](https://schema.org/Text)- `source[string]`: A sequence of characters giving the original source of the entity data as a URL. Recommended to be the fully qualified domain name of the source provider, or the URL to the source object.  - `type[string]`: NGSI Entity type  <!-- /30-PropertiesList -->  
+<!-- 35-RequiredProperties -->  
 Required properties  
-- `dateObservedFrom`  - `dateObservedTo`  - `id`  - `location`  - `type`  ## Data Model description of properties  
+- `dateObservedFrom`  - `dateObservedTo`  - `id`  - `location`  - `type`  <!-- /35-RequiredProperties -->  
+<!-- 40-RequiredProperties -->  
+<!-- /40-RequiredProperties -->  
+<!-- 50-DataModelHeader -->  
+## Data Model description of properties  
 Sorted alphabetically (click for details)  
+<!-- /50-DataModelHeader -->  
+<!-- 60-ModelYaml -->  
 <details><summary><strong>full yaml details</strong></summary>    
 ```yaml  
 NoiseLevelObserved:    
@@ -398,9 +412,14 @@ NoiseLevelObserved:
   x-version: 0.2.1    
 ```  
 </details>    
+<!-- /60-ModelYaml -->  
+<!-- 70-MiddleNotes -->  
+<!-- /70-MiddleNotes -->  
+<!-- 80-Examples -->  
 ## Example payloads    
 #### NoiseLevelObserved NGSI-v2 key-values Example    
 Here is an example of a NoiseLevelObserved in JSON-LD format as key-values. This is compatible with NGSI-v2 when  using `options=keyValues` and returns the context data of an individual entity.  
+<details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
   "id": "Vitoria-NoiseLevelObserved-2016-12-28T11:00:00_2016-12-28T12:00:00",  
@@ -417,8 +436,10 @@ NoiseLevelObserved:
   }  
 }  
 ```  
+</details>  
 #### NoiseLevelObserved NGSI-v2 normalized Example    
 Here is an example of a NoiseLevelObserved in JSON-LD format as normalized. This is compatible with NGSI-v2 when not using options and returns the context data of an individual entity.  
+<details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
   "id": "Vitoria-NoiseLevelObserved-2016-12-28T11:00:00_2016-12-28T12:00:00",  
@@ -459,38 +480,43 @@ NoiseLevelObserved:
   }  
 }  
 ```  
+</details>  
 #### NoiseLevelObserved NGSI-LD key-values Example    
 Here is an example of a NoiseLevelObserved in JSON-LD format as key-values. This is compatible with NGSI-LD when  using `options=keyValues` and returns the context data of an individual entity.  
+<details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
-  "id": "urn:ngsi-ld:NoiseLevelObserved:Vitoria-NoiseLevelObserved-2016-12-28T11:00:00_2016-12-28T12:00:00",  
-  "type": "NoiseLevelObserved",  
-  "LAS": 91.6,  
-  "LAeq": 67.8,  
-  "LAeq_d": 65.4,  
-  "LAmax": 94.5,  
-  "dateObservedFrom": {  
-    "@type": "DateTime",  
-    "@value": "2016-12-28T11:00:00.00Z"  
-  },  
-  "dateObservedTo": {  
-    "@type": "DateTime",  
-    "@value": "2016-12-28T12:00:00.00Z"  
-  },  
-  "location": {  
-    "coordinates": [  
-      -2.698,  
-      42.8491  
-    ],  
-    "type": "Point"  
-  },  
-  "@context": [  
-    "https://uri.etsi.org/ngsi-ld/v1/ngsi-ld-core-context.jsonld"  
-  ]  
+    "id": "urn:ngsi-ld:NoiseLevelObserved:Vitoria-NoiseLevelObserved-2016-12-28T11:00:00_2016-12-28T12:00:00",  
+    "type": "NoiseLevelObserved",  
+    "LAS": 91.6,  
+    "LAeq": 67.8,  
+    "LAeq_d": 65.4,  
+    "LAmax": 94.5,  
+    "dateObservedFrom": {  
+        "@type": "DateTime",  
+        "@value": "2016-12-28T11:00:00.00Z"  
+    },  
+    "dateObservedTo": {  
+        "@type": "DateTime",  
+        "@value": "2016-12-28T12:00:00.00Z"  
+    },  
+    "location": {  
+        "coordinates": [  
+            -2.698,  
+            42.8491  
+        ],  
+        "type": "Point"  
+    },  
+    "@context": [  
+        "https://uri.etsi.org/ngsi-ld/v1/ngsi-ld-core-context.jsonld",  
+        "https://raw.githubusercontent.com/smart-data-models/dataModel.Environment/master/context.jsonld"  
+    ]  
 }  
 ```  
+</details>  
 #### NoiseLevelObserved NGSI-LD normalized Example    
 Here is an example of a NoiseLevelObserved in JSON-LD format as normalized. This is compatible with NGSI-LD when not using options and returns the context data of an individual entity.  
+<details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
   "id": "urn:ngsi-ld:NoiseLevelObserved:Vitoria-NoiseLevelObserved-2016-12-28T11:00:00_2016-12-28T12:00:00",  
@@ -541,4 +567,12 @@ NoiseLevelObserved:
   ]  
 }  
 ```  
+</details><!-- /80-Examples -->  
+<!-- 90-FooterNotes -->  
+<!-- /90-FooterNotes -->  
+<!-- 95-Units -->  
 See [FAQ 10](https://smartdatamodels.org/index.php/faqs/) to get an answer on how to deal with magnitude units  
+<!-- /95-Units -->  
+<!-- 97-LastFooter -->  
+---  
+[Smart Data Models](https://smartdatamodels.org) +++ [Contribution Manual](https://bit.ly/contribution_manual) +++ [About](https://bit.ly/Introduction_SDM)<!-- /97-LastFooter -->  
