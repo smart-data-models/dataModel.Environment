@@ -1,0 +1,71 @@
+{
+  "id": "ngsi-ld:MosquitoDensity:001",
+  "type": [
+    "MosquitoDensity"
+  ],
+  "deviceId": {
+    "type": "Text",
+    "value": "VDFWitw@B"
+  },
+  "deviceSimNumber": {
+    "type": "Text",
+    "value": "861123052561188"
+  },
+  "location": {
+    "type": "geo:json",
+    "value": {
+      "type": "Point",
+      "coordinates": [
+        76.9578654,
+        8.487284
+      ]
+    }
+  },
+  "speciesName": {
+    "type": "Text",
+    "value": "Culex quinquefasciatus"
+  },
+  "speciesTotal": {
+    "type": "Number",
+    "value": 3
+  },
+  "femaleTotal": {
+    "type": "Number",
+    "value": 2
+  },
+  "maleTotal": {
+    "type": "Boolean",
+    "value": True
+  },
+  "observationDateTime": {
+    "type": "DateTime",
+    "value": "2022-09-18T23:59:59+05:30"
+  },
+  "airTemperature": {
+    "type": "StructuredValue",
+    "value": {
+      "instValue": 24.88
+    }
+  },
+  "precipitation": {
+    "type": "Boolean",
+    "value": False
+  },
+  "deviceInfo": {
+    "type": "StructuredValue",
+    "value": {
+      "rfID": "5634684",
+      "deviceBatteryStatus": "Connected",
+      "deviceName": "SL1",
+      "deviceID": "43",
+      "measurand": "6",
+      "deviceSimNumber": "6755375727",
+      "deviceModel": {
+        "brandName": "abc",
+        "manufacturerName": "xyz",
+        "modelName": "SL1",
+        "modelURL": "www.abcstreetlight.com"
+      }
+    }
+  }
+}
