@@ -21,7 +21,7 @@ Link alla [specifica](https://github.com/smart-data-models/datamodel.Environment
 
 [仕様へのリンク](https://github.com/smart-data-models/datamodel.Environment/blob/master/MosquitoDensity/doc/spec_JA.md)
 
-链接到规范https://github.com/smart-data-models/datamodel.Environment/blob/master/MosquitoDensity/doc/spec_ZH.md)
+[链接到规范](https://github.com/smart-data-models/datamodel.Environment/blob/master/MosquitoDensity/doc/spec_ZH.md)
 ### Examples
 
 Link to the [example](https://smart-data-models.github.io/datamodel.Environment/MosquitoDensity/examples/example.json) (keyvalues) for NGSI v2
