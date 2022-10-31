@@ -1,8 +1,8 @@
 {
   "id": "ngsi-ld:MosquitoDensity:001",
-  "type": [
+  "type":
     "MosquitoDensity"
-  ],
+  ,
   "deviceId": {
     "type": "Text",
     "value": "VDFWitw@B"
@@ -35,7 +35,7 @@
   },
   "maleTotal": {
     "type": "Boolean",
-    "value": True
+    "value": true
   },
   "observationDateTime": {
     "type": "DateTime",
@@ -49,7 +49,7 @@
   },
   "precipitation": {
     "type": "Boolean",
-    "value": False
+    "value": false
   },
   "deviceInfo": {
     "type": "StructuredValue",

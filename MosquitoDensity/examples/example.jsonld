@@ -1,8 +1,8 @@
 {
   "id": "ngsi-ld:MosquitoDensity:001",
-  "type": [
+  "type":
     "MosquitoDensity"
-  ],
+  ,
   "deviceId": "VDFWitw@B",
   "deviceSimNumber": "861123052561188",
   "location": {

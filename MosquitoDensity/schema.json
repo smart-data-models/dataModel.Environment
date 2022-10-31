@@ -1,7 +1,7 @@
 {
   "$schema": "http://json-schema.org/schema#",
   "modelTags": "IUDX",
-  "$id": "https://smart-data-models.github.io/dataModel.MosquitoDensity/MosquitoDensity/schema.json",
+  "$id": "https://smart-data-models.github.io/dataModel.Environment/MosquitoDensity/schema.json",
   "title": "Smart Data Models - Mosquito Density data Model",
   "description": "A Data Model for density of mosquitoes in cities.",
   "type": "object",
@@ -15,13 +15,10 @@
     {
       "properties": {
         "type": {
-          "type":"array",
-          "items": {
-            "type": "string",
-            "enum": [
-              "MosquitoDensity"
-            ]
-          },
+          "type": "string",
+          "enum": [
+            "MosquitoDensity"
+          ],
           "description": "Property. NGSI Entity type. It has to be MosquitoDensity"
         },
         "dataDescriptor": {
