@@ -20,6 +20,8 @@ The following entity types are available:
 
 - [IndoorEnvironmentObserved](https://github.com/smart-data-models/dataModel.Environment/blob/master/IndoorEnvironmentObserved/README.md). An observation of air and climate conditions for indoor environments.
 
+- [MosquitoDensity](https://github.com/smart-data-models/dataModel.Environment/blob/master/MosquitoDensity/README.md). A Data Model for density of mosquitoes in cities.
+
 - [NoiseLevelObserved](https://github.com/smart-data-models/dataModel.Environment/blob/master/NoiseLevelObserved/README.md). An observation of those acoustic parameters that estimate noise pressure levels at a certain place and time. 
 
 - [NoisePollution](https://github.com/smart-data-models/dataModel.Environment/blob/master/NoisePollution/README.md). Noise Pollution data model merges specific and punctual noise measurements (coming, e.g. from NoiseLevelObservation entities) into average parameters referred to city areas, providing a more city-related data about noise pollution status and evolution.
