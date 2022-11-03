@@ -400,7 +400,7 @@ MosquitoDensity:
 ```  
 </details>    
 #### MosquitoDensity NGSI-LD key-values 示例  
-这里有一个JSON-LD格式的MosquitoDensity作为key-values的例子。当使用`options=keyValues`时，这与NGSI-LD兼容，并返回单个实体的上下文数据。  
+这里是一个以JSON-LD格式作为关键值的MosquitoDensity的例子。当使用`options=keyValues`时，这与NGSI-LD兼容，并返回单个实体的上下文数据。  
 <details><summary><strong>show/hide example</strong></summary>    
 ```json  
 ```  
