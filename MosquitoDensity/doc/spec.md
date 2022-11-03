@@ -14,7 +14,8 @@
 
 ## List of properties  
 
-- `address`: The mailing address  - `airTemperature`: Observed value of air temperature. Value is an object containing attributes representing statistical aggregates derived from past data.  - `alternateName`: An alternative name for this item  - `areaServed`: The geographic area where a service or offered item is provided  - `dataDescriptor`: URI pointing to the data-descriptor entity  - `dataProvider`: A sequence of characters identifying the provider of the harmonised data entity.  - `dateCreated`: Entity creation timestamp. This will usually be allocated by the storage platform.  - `dateModified`: Timestamp of the last modification of the entity. This will usually be allocated by the storage platform.  - `description`: A description of this item  - `deviceInfo`: Information about the device associated with the observations.  - `id`: Unique identifier of the entity  - `location`: Geojson reference to the item. It can be Point, LineString, Polygon, MultiPoint, MultiLineString or MultiPolygon  - `mosquitoDensity`: The binomial (or) zoological nomenclature of the mosquito species and its count as identified by the device corresponding to this observation..  - `name`: The name of this item.  - `observationDateTime`: Last reported time of observation.  - `owner`: A List containing a JSON encoded sequence of characters referencing the unique Ids of the owner(s)  - `precipitation`: Observed precipitation/rainfall level over a given duration.  - `seeAlso`: list of uri pointing to additional resources about the item  - `source`: A sequence of characters giving the original source of the entity data as a URL. Recommended to be the fully qualified domain name of the source provider, or the URL to the source object.  - `type`: NGSI Entity type. It has to be MosquitoDensity  <!-- /30-PropertiesList -->  
+<sup><sub>[*] If there is not a type in an attribute is because it could have several types or different formats/patterns</sub></sup>  
+- `address[object]`: The mailing address  . Model: [https://schema.org/address](https://schema.org/address)- `airTemperature[object]`: Observed value of air temperature. Value is an object containing attributes representing statistical aggregates derived from past data.  - `alternateName[string]`: An alternative name for this item  - `areaServed[string]`: The geographic area where a service or offered item is provided  . Model: [https://schema.org/Text](https://schema.org/Text)- `dataDescriptor[string]`: URI pointing to the data-descriptor entity  - `dataProvider[string]`: A sequence of characters identifying the provider of the harmonised data entity.  - `dateCreated[string]`: Entity creation timestamp. This will usually be allocated by the storage platform.  - `dateModified[string]`: Timestamp of the last modification of the entity. This will usually be allocated by the storage platform.  - `description[string]`: A description of this item  - `deviceInfo[object]`: Information about the device associated with the observations.  . Model: [https://schema.org/Text](https://schema.org/Text)- `id[*]`: Unique identifier of the entity  - `location[*]`: Geojson reference to the item. It can be Point, LineString, Polygon, MultiPoint, MultiLineString or MultiPolygon  - `mosquitoDensity[object]`: The binomial (or) zoological nomenclature of the mosquito species and its count as identified by the device corresponding to this observation..  - `name[string]`: The name of this item.  - `observationDateTime[string]`: Last reported time of observation.  - `owner[array]`: A List containing a JSON encoded sequence of characters referencing the unique Ids of the owner(s)  - `precipitation[number]`: Observed precipitation/rainfall level over a given duration.  - `seeAlso[*]`: list of uri pointing to additional resources about the item  - `source[string]`: A sequence of characters giving the original source of the entity data as a URL. Recommended to be the fully qualified domain name of the source provider, or the URL to the source object.  - `type[string]`: NGSI Entity type. It has to be MosquitoDensity  <!-- /30-PropertiesList -->  
 <!-- 35-RequiredProperties -->  
 Required properties  
 - `id`  - `type`  <!-- /35-RequiredProperties -->  
@@ -391,6 +392,7 @@ MosquitoDensity:
 ## Example payloads    
 #### MosquitoDensity NGSI-v2 key-values Example    
 Here is an example of a MosquitoDensity in JSON-LD format as key-values. This is compatible with NGSI-v2 when  using `options=keyValues` and returns the context data of an individual entity.  
+<details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
   "id": "ngsi-ld:MosquitoDensity:001",  
@@ -429,8 +431,10 @@ MosquitoDensity:
   }  
 }  
 ```  
+</details>  
 #### MosquitoDensity NGSI-v2 normalized Example    
 Here is an example of a MosquitoDensity in JSON-LD format as normalized. This is compatible with NGSI-v2 when not using options and returns the context data of an individual entity.  
+<details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
   "id": "ngsi-ld:MosquitoDensity:001",  
@@ -504,8 +508,10 @@ MosquitoDensity:
   }  
 }  
 ```  
+</details>  
 #### MosquitoDensity NGSI-LD key-values Example    
 Here is an example of a MosquitoDensity in JSON-LD format as key-values. This is compatible with NGSI-LD when  using `options=keyValues` and returns the context data of an individual entity.  
+<details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
   "id": "ngsi-ld:MosquitoDensity:001",  
@@ -550,8 +556,10 @@ MosquitoDensity:
   ]  
 }  
 ```  
+</details>  
 #### MosquitoDensity NGSI-LD normalized Example    
 Here is an example of a MosquitoDensity in JSON-LD format as normalized. This is compatible with NGSI-LD when not using options and returns the context data of an individual entity.  
+<details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
   "id": "ngsi-ld:MosquitoDensity:001",  
@@ -630,9 +638,12 @@ MosquitoDensity:
   ]  
 }  
 ```  
-<!-- /80-Examples -->  
+</details><!-- /80-Examples -->  
 <!-- 90-FooterNotes -->  
 <!-- /90-FooterNotes -->  
 <!-- 95-Units -->  
 See [FAQ 10](https://smartdatamodels.org/index.php/faqs/) to get an answer on how to deal with magnitude units  
 <!-- /95-Units -->  
+<!-- 97-LastFooter -->  
+---  
+[Smart Data Models](https://smartdatamodels.org) +++ [Contribution Manual](https://bit.ly/contribution_manual) +++ [About](https://bit.ly/Introduction_SDM)<!-- /97-LastFooter -->  
