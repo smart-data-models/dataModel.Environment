@@ -14,7 +14,8 @@
 
 ## Liste des propriétés  
 
-- `address`: L'adresse postale  - `airTemperature`: Valeur observée de la température de l'air. La valeur est un objet contenant des attributs représentant des agrégats statistiques dérivés de données antérieures.  - `alternateName`: Un nom alternatif pour cet élément  - `areaServed`: La zone géographique où un service ou un article offert est fourni  - `dataDescriptor`: URI pointant vers l'entité data-descriptor  - `dataProvider`: Une séquence de caractères identifiant le fournisseur de l'entité de données harmonisées.  - `dateCreated`: Horodatage de la création de l'entité. Celui-ci sera généralement attribué par la plateforme de stockage.  - `dateModified`: Horodatage de la dernière modification de l'entité. Il sera généralement attribué par la plateforme de stockage.  - `description`: Une description de cet article  - `deviceInfo`: Informations sur le dispositif associé aux observations.  - `id`: Identifiant unique de l'entité  - `location`: Référence Geojson à l'élément. Il peut s'agir d'un point, d'une ligne, d'un polygone, d'un point multiple, d'une ligne multiple ou d'un polygone multiple.  - `mosquitoDensity`: La nomenclature binomiale (ou) zoologique de l'espèce de moustique et son décompte tel qu'identifié par le dispositif correspondant à cette observation...  - `name`: Le nom de cet élément.  - `observationDateTime`: Dernière heure d'observation signalée.  - `owner`: Une liste contenant une séquence de caractères codée en JSON référençant les identifiants uniques du ou des propriétaires.  - `precipitation`: Niveau de précipitations/pluie observé sur une durée donnée.  - `seeAlso`: liste d'uri pointant vers des ressources supplémentaires sur l'article  - `source`: Une séquence de caractères donnant la source originale des données de l'entité sous forme d'URL. Il est recommandé d'utiliser le nom de domaine entièrement qualifié du fournisseur source ou l'URL de l'objet source.  - `type`: Type d'entité NGSI. Il doit être MosquitoDensity  <!-- /30-PropertiesList -->  
+<sup><sub>[*] S'il n'y a pas de type dans un attribut, c'est parce qu'il pourrait avoir plusieurs types ou différents formats/modèles</sub></sup>.  
+- `address[object]`: L'adresse postale  . Model: [https://schema.org/address](https://schema.org/address)- `airTemperature[object]`: Valeur observée de la température de l'air. La valeur est un objet contenant des attributs représentant des agrégats statistiques dérivés de données antérieures.  - `alternateName[string]`: Un nom alternatif pour cet élément  - `areaServed[string]`: La zone géographique où un service ou un article offert est fourni  . Model: [https://schema.org/Text](https://schema.org/Text)- `dataDescriptor[string]`: URI pointant vers l'entité data-descriptor  - `dataProvider[string]`: Une séquence de caractères identifiant le fournisseur de l'entité de données harmonisées.  - `dateCreated[string]`: Horodatage de la création de l'entité. Celui-ci sera généralement attribué par la plateforme de stockage.  - `dateModified[string]`: Horodatage de la dernière modification de l'entité. Il sera généralement attribué par la plateforme de stockage.  - `description[string]`: Une description de cet article  - `deviceInfo[object]`: Informations sur le dispositif associé aux observations.  . Model: [https://schema.org/Text](https://schema.org/Text)- `id[*]`: Identifiant unique de l'entité  - `location[*]`: Référence Geojson à l'élément. Il peut s'agir d'un point, d'une ligne, d'un polygone, d'un point multiple, d'une ligne multiple ou d'un polygone multiple.  - `mosquitoDensity[object]`: La nomenclature binomiale (ou) zoologique de l'espèce de moustique et son décompte tel qu'identifié par le dispositif correspondant à cette observation...  - `name[string]`: Le nom de cet élément.  - `observationDateTime[string]`: Dernière heure d'observation signalée.  - `owner[array]`: Une liste contenant une séquence de caractères codée en JSON référençant les identifiants uniques du ou des propriétaires.  - `precipitation[number]`: Niveau de précipitations/pluie observé sur une durée donnée.  - `seeAlso[*]`: liste d'uri pointant vers des ressources supplémentaires sur l'article  - `source[string]`: Une séquence de caractères donnant la source originale des données de l'entité sous forme d'URL. Il est recommandé d'utiliser le nom de domaine entièrement qualifié du fournisseur source ou l'URL de l'objet source.  - `type[string]`: Type d'entité NGSI. Il doit être MosquitoDensity  <!-- /30-PropertiesList -->  
 <!-- 35-RequiredProperties -->  
 Propriétés requises  
 - `id`  - `type`  <!-- /35-RequiredProperties -->  
@@ -391,6 +392,7 @@ MosquitoDensity:
 ## Exemples de charges utiles  
 #### MosquitoDensity NGSI-v2 valeurs-clés Exemple  
 Voici un exemple de MosquitoDensity au format JSON-LD en tant que valeurs-clés. Ceci est compatible avec NGSI-v2 en utilisant `options=keyValues` et retourne les données contextuelles d'une entité individuelle.  
+<details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
   "id": "ngsi-ld:MosquitoDensity:001",  
@@ -429,8 +431,10 @@ MosquitoDensity:
   }  
 }  
 ```  
+</details>  
 #### MosquitoDensity NGSI-v2 normalisé Exemple  
 Voici un exemple de MosquitoDensity au format JSON-LD tel que normalisé. Ceci est compatible avec NGSI-v2 lorsqu'on n'utilise pas d'options et renvoie les données contextuelles d'une entité individuelle.  
+<details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
   "id": "ngsi-ld:MosquitoDensity:001",  
@@ -504,8 +508,10 @@ MosquitoDensity:
   }  
 }  
 ```  
+</details>  
 #### MosquitoDensity Valeurs-clés NGSI-LD Exemple  
 Voici un exemple de MosquitoDensity au format JSON-LD en tant que valeurs-clés. Ceci est compatible avec NGSI-LD quand on utilise `options=keyValues` et retourne les données contextuelles d'une entité individuelle.  
+<details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
   "id": "ngsi-ld:MosquitoDensity:001",  
@@ -550,8 +556,10 @@ MosquitoDensity:
   ]  
 }  
 ```  
+</details>  
 #### MosquitoDensity NGSI-LD normalisé Exemple  
 Voici un exemple de MosquitoDensity au format JSON-LD tel que normalisé. Ce format est compatible avec NGSI-LD lorsqu'il n'utilise pas d'options et renvoie les données contextuelles d'une entité individuelle.  
+<details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
   "id": "ngsi-ld:MosquitoDensity:001",  
@@ -630,9 +638,12 @@ MosquitoDensity:
   ]  
 }  
 ```  
-<!-- /80-Examples -->  
+</details><!-- /80-Examples -->  
 <!-- 90-FooterNotes -->  
 <!-- /90-FooterNotes -->  
 <!-- 95-Units -->  
 Voir [FAQ 10](https://smartdatamodels.org/index.php/faqs/) pour obtenir une réponse sur la façon de traiter les unités de magnitude.  
 <!-- /95-Units -->  
+<!-- 97-LastFooter -->  
+---  
+[Smart Data Models](https://smartdatamodels.org) +++ [Contribution Manual](https://bit.ly/contribution_manual) +++ [About](https://bit.ly/Introduction_SDM)<!-- /97-LastFooter -->  
