@@ -391,8 +391,6 @@ MosquitoDensity:
 ## Example payloads    
 #### MosquitoDensity NGSI-v2 key-values Example    
 Here is an example of a MosquitoDensity in JSON-LD format as key-values. This is compatible with NGSI-v2 when  using `options=keyValues` and returns the context data of an individual entity.  
-<details><summary><strong>show/hide example</strong></summary>    
-```json  
 ```json  
 {  
   "id": "ngsi-ld:MosquitoDensity:001",  
@@ -431,12 +429,8 @@ MosquitoDensity:
   }  
 }  
 ```  
-```  
-</details>    
 #### MosquitoDensity NGSI-v2 normalized Example    
 Here is an example of a MosquitoDensity in JSON-LD format as normalized. This is compatible with NGSI-v2 when not using options and returns the context data of an individual entity.  
-<details><summary><strong>show/hide example</strong></summary>    
-```json  
 ```json  
 {  
   "id": "ngsi-ld:MosquitoDensity:001",  
@@ -510,12 +504,8 @@ MosquitoDensity:
   }  
 }  
 ```  
-```  
-</details>    
 #### MosquitoDensity NGSI-LD key-values Example    
 Here is an example of a MosquitoDensity in JSON-LD format as key-values. This is compatible with NGSI-LD when  using `options=keyValues` and returns the context data of an individual entity.  
-<details><summary><strong>show/hide example</strong></summary>    
-```json  
 ```json  
 {  
   "id": "ngsi-ld:MosquitoDensity:001",  
@@ -560,12 +550,8 @@ MosquitoDensity:
   ]  
 }  
 ```  
-```  
-</details>    
 #### MosquitoDensity NGSI-LD normalized Example    
 Here is an example of a MosquitoDensity in JSON-LD format as normalized. This is compatible with NGSI-LD when not using options and returns the context data of an individual entity.  
-<details><summary><strong>show/hide example</strong></summary>    
-```json  
 ```json  
 {  
   "id": "ngsi-ld:MosquitoDensity:001",  
@@ -644,8 +630,6 @@ MosquitoDensity:
   ]  
 }  
 ```  
-```  
-</details>    
 <!-- /80-Examples -->  
 <!-- 90-FooterNotes -->  
 <!-- /90-FooterNotes -->  
