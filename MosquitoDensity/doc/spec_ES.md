@@ -3,19 +3,21 @@
 Entidad: MosquitoDensidad  
 =========================<!-- /10-Header -->  
 <!-- 15-License -->  
-[Licencia abierta](https://github.com/smart-data-models//datamodel.Environment/blob/master/MosquitoDensity/LICENSE.md)  
+[Licencia abierta](https://github.com/smart-data-models//dataModel.Environment/blob/master/MosquitoDensity/LICENSE.md)  
 [documento generado automáticamente](https://docs.google.com/presentation/d/e/2PACX-1vTs-Ng5dIAwkg91oTTUdt8ua7woBXhPnwavZ0FxgR8BsAI_Ek3C5q97Nd94HS8KhP-r_quD4H0fgyt3/pub?start=false&loop=false&delayms=3000#slide=id.gb715ace035_0_60)  
 <!-- /15-License -->  
 <!-- 20-Description -->  
+Descripción global: **Un modelo de datos para la densidad de mosquitos en las ciudades.**  
+versión: 0.0.1  
 <!-- /20-Description -->  
 <!-- 30-PropertiesList -->  
 
 ## Lista de propiedades  
 
-<!-- /30-PropertiesList -->  
+- `address`: La dirección postal  - `airTemperature`: Valor observado de la temperatura del aire. El valor es un objeto que contiene atributos que representan agregados estadísticos derivados de datos pasados.  - `alternateName`: Un nombre alternativo para este artículo  - `areaServed`: La zona geográfica en la que se presta un servicio o se ofrece un artículo  - `dataDescriptor`: URI que apunta a la entidad descriptora de datos  - `dataProvider`: Una secuencia de caracteres que identifica al proveedor de la entidad de datos armonizada.  - `dateCreated`: Marca de tiempo de creación de la entidad. Suele ser asignada por la plataforma de almacenamiento.  - `dateModified`: Marca de tiempo de la última modificación de la entidad. Normalmente será asignada por la plataforma de almacenamiento.  - `description`: Una descripción de este artículo  - `deviceInfo`: Información sobre el dispositivo asociado a las observaciones.  - `id`: Identificador único de la entidad  - `location`: Referencia Geojson al elemento. Puede ser Point, LineString, Polygon, MultiPoint, MultiLineString o MultiPolygon  - `mosquitoDensity`: La nomenclatura binomial (o) zoológica de la especie de mosquito y su recuento según el dispositivo correspondiente a esta observación.  - `name`: El nombre de este artículo.  - `observationDateTime`: Última hora de observación comunicada.  - `owner`: Una lista que contiene una secuencia de caracteres codificada en JSON que hace referencia a los identificadores únicos de los propietarios  - `precipitation`: Nivel de precipitación/lluvia observado en una duración determinada.  - `seeAlso`: lista de uri que apuntan a recursos adicionales sobre el artículo  - `source`: Una secuencia de caracteres que indica la fuente original de los datos de la entidad en forma de URL. Se recomienda que sea el nombre de dominio completo del proveedor de origen o la URL del objeto de origen.  - `type`: Tipo de entidad NGSI. Tiene que ser MosquitoDensity  <!-- /30-PropertiesList -->  
 <!-- 35-RequiredProperties -->  
 Propiedades requeridas  
-- No hay propiedades requeridas  <!-- /35-RequiredProperties -->  
+- `id`  - `type`  <!-- /35-RequiredProperties -->  
 <!-- 40-RequiredProperties -->  
 <!-- /40-RequiredProperties -->  
 <!-- 50-DataModelHeader -->  
@@ -391,24 +393,257 @@ MosquitoDensity:
 Aquí hay un ejemplo de MosquitoDensity en formato JSON-LD como valores-clave. Esto es compatible con NGSI-v2 cuando se utiliza `options=keyValues` y devuelve los datos de contexto de una entidad individual.  
 <details><summary><strong>show/hide example</strong></summary>    
 ```json  
+```json  
+{  
+  "id": "ngsi-ld:MosquitoDensity:001",  
+  "type": "MosquitoDensity",  
+  "deviceId": "VDFWitw@B",  
+  "deviceSimNumber": "861123052561188",  
+  "location": {  
+    "type": "Point",  
+    "coordinates": [  
+      76.9578654,  
+      8.487284  
+    ]  
+  },  
+  "speciesName": "Culex quinquefasciatus",  
+  "speciesTotal": 3,  
+  "femaleTotal": 2,  
+  "maleTotal": 1,  
+  "observationDateTime": "2022-09-18T23:59:59+05:30",  
+  "airTemperature": {  
+    "instValue": 24.88  
+  },  
+  "precipitation": 0,  
+  "deviceInfo": {  
+    "rfID": "5634684",  
+    "deviceBatteryStatus": "Connected",  
+    "deviceName": "SL1",  
+    "deviceID": "43",  
+    "measurand": "6",  
+    "deviceSimNumber": "6755375727",  
+    "deviceModel": {  
+      "brandName": "abc",  
+      "manufacturerName": "xyz",  
+      "modelName": "SL1",  
+      "modelURL": "www.abcstreetlight.com"  
+    }  
+  }  
+}  
+```  
 ```  
 </details>    
 #### MosquitoDensity NGSI-v2 normalizado Ejemplo  
 Aquí hay un ejemplo de MosquitoDensity en formato JSON-LD normalizado. Esto es compatible con NGSI-v2 cuando no se utilizan opciones y devuelve los datos de contexto de una entidad individual.  
 <details><summary><strong>show/hide example</strong></summary>    
 ```json  
+```json  
+{  
+  "id": "ngsi-ld:MosquitoDensity:001",  
+  "type":  
+    "MosquitoDensity"  
+  ,  
+  "deviceId": {  
+    "type": "Text",  
+    "value": "VDFWitw@B"  
+  },  
+  "deviceSimNumber": {  
+    "type": "Text",  
+    "value": "861123052561188"  
+  },  
+  "location": {  
+    "type": "geo:json",  
+    "value": {  
+      "type": "Point",  
+      "coordinates": [  
+        76.9578654,  
+        8.487284  
+      ]  
+    }  
+  },  
+  "speciesName": {  
+    "type": "Text",  
+    "value": "Culex quinquefasciatus"  
+  },  
+  "speciesTotal": {  
+    "type": "Number",  
+    "value": 3  
+  },  
+  "femaleTotal": {  
+    "type": "Number",  
+    "value": 2  
+  },  
+  "maleTotal": {  
+    "type": "Boolean",  
+    "value": true  
+  },  
+  "observationDateTime": {  
+    "type": "DateTime",  
+    "value": "2022-09-18T23:59:59+05:30"  
+  },  
+  "airTemperature": {  
+    "type": "StructuredValue",  
+    "value": {  
+      "instValue": 24.88  
+    }  
+  },  
+  "precipitation": {  
+    "type": "Boolean",  
+    "value": false  
+  },  
+  "deviceInfo": {  
+    "type": "StructuredValue",  
+    "value": {  
+      "rfID": "5634684",  
+      "deviceBatteryStatus": "Connected",  
+      "deviceName": "SL1",  
+      "deviceID": "43",  
+      "measurand": "6",  
+      "deviceSimNumber": "6755375727",  
+      "deviceModel": {  
+        "brandName": "abc",  
+        "manufacturerName": "xyz",  
+        "modelName": "SL1",  
+        "modelURL": "www.abcstreetlight.com"  
+      }  
+    }  
+  }  
+}  
+```  
 ```  
 </details>    
 #### MosquitoDensity NGSI-LD key-values Ejemplo  
 Aquí hay un ejemplo de MosquitoDensity en formato JSON-LD como valores-clave. Esto es compatible con NGSI-LD cuando se utiliza `options=keyValues` y devuelve los datos de contexto de una entidad individual.  
 <details><summary><strong>show/hide example</strong></summary>    
 ```json  
+```json  
+{  
+  "id": "ngsi-ld:MosquitoDensity:001",  
+  "type":  
+    "MosquitoDensity"  
+  ,  
+  "deviceId": "VDFWitw@B",  
+  "deviceSimNumber": "861123052561188",  
+  "location": {  
+    "type": "Point",  
+    "coordinates": [  
+      76.9578654,  
+      8.487284  
+    ]  
+  },  
+  "speciesName": "Culex quinquefasciatus",  
+  "speciesTotal": 3,  
+  "femaleTotal": 2,  
+  "maleTotal": 1,  
+  "observationDateTime": "2022-09-18T23:59:59+05:30",  
+  "airTemperature": {  
+    "instValue": 24.88  
+  },  
+  "precipitation": 0,  
+  "deviceInfo": {  
+    "rfID": "5634684",  
+    "deviceBatteryStatus": "Connected",  
+    "deviceName": "SL1",  
+    "deviceID": "43",  
+    "measurand": "6",  
+    "deviceSimNumber": "6755375727",  
+    "deviceModel": {  
+      "brandName": "abc",  
+      "manufacturerName": "xyz",  
+      "modelName": "SL1",  
+      "modelURL": "www.abcstreetlight.com"  
+    }  
+  },  
+  "@context": [  
+    "iudx:MosquitoDensity",  
+    "https://raw.githubusercontent.com/smart-data-models/dataModel.Environment/master/context.jsonld"  
+  ]  
+}  
+```  
 ```  
 </details>    
 #### MosquitoDensity NGSI-LD normalizado Ejemplo  
 Aquí hay un ejemplo de MosquitoDensity en formato JSON-LD normalizado. Esto es compatible con NGSI-LD cuando no se utilizan opciones y devuelve los datos de contexto de una entidad individual.  
 <details><summary><strong>show/hide example</strong></summary>    
 ```json  
+```json  
+{  
+  "id": "ngsi-ld:MosquitoDensity:001",  
+  "type": "MosquitoDensity",  
+  "deviceId": {  
+    "type": "Property",  
+    "value": "VDFWitw@B"  
+  },  
+  "deviceSimNumber": {  
+    "type": "Property",  
+    "value": "861123052561188"  
+  },  
+  "location": {  
+    "type": "Geoproperty",  
+    "value": {  
+      "type": "Point",  
+      "coordinates": [  
+        76.9578654,  
+        8.487284  
+      ]  
+    }  
+  },  
+  "speciesName": {  
+    "type": "Property",  
+    "value": "Culex quinquefasciatus"  
+  },  
+  "speciesTotal": {  
+    "type": "Property",  
+    "value": 3  
+  },  
+  "femaleTotal": {  
+    "type": "Property",  
+    "value": 2  
+  },  
+  "maleTotal": {  
+    "type": "Property",  
+    "value": true  
+  },  
+  "observationDateTime": {  
+    "type": "Property",  
+    "value": {  
+      "@type": "DateTime",  
+      "@value": "2022-09-18T23:59:59+05:30"  
+    }  
+  },  
+  "airTemperature": {  
+    "type": "Property",  
+    "value": {  
+      "instValue": 24.88  
+    }  
+  },  
+  "precipitation": {  
+    "type": "Property",  
+    "value": false  
+  },  
+  "deviceInfo": {  
+    "type": "Property",  
+    "value": {  
+      "rfID": "5634684",  
+      "deviceBatteryStatus": "Connected",  
+      "deviceName": "SL1",  
+      "deviceID": "43",  
+      "measurand": "6",  
+      "deviceSimNumber": "6755375727",  
+      "deviceModel": {  
+        "brandName": "abc",  
+        "manufacturerName": "xyz",  
+        "modelName": "SL1",  
+        "modelURL": "www.abcstreetlight.com"  
+      }  
+    }  
+  },  
+  "@context": [  
+    "iudx:MosquitoDensity",  
+    "https://raw.githubusercontent.com/smart-data-models/dataModel.Environment/master/context.jsonld"  
+  ]  
+}  
+```  
 ```  
 </details>    
 <!-- /80-Examples -->  
