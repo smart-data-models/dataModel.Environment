@@ -391,8 +391,6 @@ MosquitoDensity:
 ## Exemples de charges utiles  
 #### MosquitoDensity NGSI-v2 valeurs-clés Exemple  
 Voici un exemple de MosquitoDensity au format JSON-LD en tant que valeurs-clés. Ceci est compatible avec NGSI-v2 en utilisant `options=keyValues` et retourne les données contextuelles d'une entité individuelle.  
-<details><summary><strong>show/hide example</strong></summary>    
-```json  
 ```json  
 {  
   "id": "ngsi-ld:MosquitoDensity:001",  
@@ -431,12 +429,8 @@ MosquitoDensity:
   }  
 }  
 ```  
-```  
-</details>    
 #### MosquitoDensity NGSI-v2 normalisé Exemple  
 Voici un exemple de MosquitoDensity au format JSON-LD tel que normalisé. Ceci est compatible avec NGSI-v2 lorsqu'on n'utilise pas d'options et renvoie les données contextuelles d'une entité individuelle.  
-<details><summary><strong>show/hide example</strong></summary>    
-```json  
 ```json  
 {  
   "id": "ngsi-ld:MosquitoDensity:001",  
@@ -510,12 +504,8 @@ MosquitoDensity:
   }  
 }  
 ```  
-```  
-</details>    
 #### MosquitoDensity Valeurs-clés NGSI-LD Exemple  
 Voici un exemple de MosquitoDensity au format JSON-LD en tant que valeurs-clés. Ceci est compatible avec NGSI-LD quand on utilise `options=keyValues` et retourne les données contextuelles d'une entité individuelle.  
-<details><summary><strong>show/hide example</strong></summary>    
-```json  
 ```json  
 {  
   "id": "ngsi-ld:MosquitoDensity:001",  
@@ -560,12 +550,8 @@ MosquitoDensity:
   ]  
 }  
 ```  
-```  
-</details>    
 #### MosquitoDensity NGSI-LD normalisé Exemple  
 Voici un exemple de MosquitoDensity au format JSON-LD tel que normalisé. Ce format est compatible avec NGSI-LD lorsqu'il n'utilise pas d'options et renvoie les données contextuelles d'une entité individuelle.  
-<details><summary><strong>show/hide example</strong></summary>    
-```json  
 ```json  
 {  
   "id": "ngsi-ld:MosquitoDensity:001",  
@@ -644,8 +630,6 @@ MosquitoDensity:
   ]  
 }  
 ```  
-```  
-</details>    
 <!-- /80-Examples -->  
 <!-- 90-FooterNotes -->  
 <!-- /90-FooterNotes -->  
