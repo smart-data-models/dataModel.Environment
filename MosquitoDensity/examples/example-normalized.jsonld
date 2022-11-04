@@ -10,7 +10,7 @@
     "value": "861123052561188"
   },
   "location": {
-    "type": "Geoproperty",
+    "type": "GeoProperty",
     "value": {
       "type": "Point",
       "coordinates": [
