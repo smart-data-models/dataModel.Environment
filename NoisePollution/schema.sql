@@ -1,0 +1,3 @@
+/* (Beta) Export of data model NoisePollution of the subject dataModel.Environment for a postgreSQL database. Pending translation of enumerations and multityped attributes */
+CREATE TYPE NoisePollution_type AS ENUM ('NoisePollution');
+CREATE TABLE NoisePollution (LAeq2 text, LAmax2 text, alternateName text, buildingsType text, dataProvider text, dateCreated timestamp, dateModified timestamp, dateObservedFrom timestamp, dateObservedTo timestamp, description text, groundType text, id text, name text, noiseAnnoyanceIndex text, noiseOrigin text, owner json, seeAlso json, source text, type NoisePollution_type, wallsType text);
