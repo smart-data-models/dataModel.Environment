@@ -1,0 +1,3 @@
+/* (Beta) Export of data model FloodMonitoring of the subject dataModel.Environment for a postgreSQL database. Pending translation of enumerations and multityped attributes */
+CREATE TYPE FloodMonitoring_type AS ENUM ('FloodMonitoring');
+CREATE TABLE FloodMonitoring (address json, alertLevel text, alternateName text, areaServed text, currentLevel text, dangerLevel text, dataProvider text, dateCreated timestamp, dateModified timestamp, description text, floodLevelStatus text, id text, location json, measuredDistance text, name text, observationDateTime timestamp, owner json, referenceLevel text, seeAlso json, source text, stationID text, type FloodMonitoring_type);
