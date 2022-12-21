@@ -1,0 +1,3 @@
+/* (Beta) Export of data model PhreaticObserved of the subject dataModel.Environment for a postgreSQL database. Pending translation of enumerations and multityped attributes */
+CREATE TYPE PhreaticObserved_type AS ENUM ('PhreaticObserved');
+CREATE TABLE PhreaticObserved (address json, alternateName text, areaServed text, dataProvider text, dateCreated timestamp, dateModified timestamp, dateObserved timestamp, dateObservedFrom timestamp, dateObservedTo timestamp, depth text, description text, id text, investigationDepth text, isMobile text, location json, measurementType json, name text, owner json, pollutionRate text, pressure text, refDevice json, residueLevel text, seeAlso json, source text, type PhreaticObserved_type, waterTable text);
