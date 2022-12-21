@@ -1,0 +1,3 @@
+/* (Beta) Export of data model ElectroMagneticObserved of the subject dataModel.Environment for a postgreSQL database. Pending translation of enumerations and multityped attributes */
+CREATE TYPE ElectroMagneticObserved_type AS ENUM ('ElectroMagneticObserved');
+CREATE TABLE ElectroMagneticObserved (address json, alternateName text, areaServed text, dataProvider text, dateCreated timestamp, dateModified timestamp, dateObserved timestamp, dateObservedFrom timestamp, dateObservedTo timestamp, description text, eMF text, id text, location json, name text, owner json, refDevice text, refPointOfInterest text, reliability text, seeAlso json, source text, type ElectroMagneticObserved_type);
