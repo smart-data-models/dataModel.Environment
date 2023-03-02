@@ -1,8 +1,8 @@
 AirQualityForecast:
-  description: 'A forecast of air quality conditions valid during a period'
+  description: A forecast of air quality conditions valid during a period
   properties:
     address:
-      description: 'The mailing address'
+      description: The mailing address
       properties:
         addressCountry:
           description: 'Property. The country. For example, Spain. Model:''https://schema.org/addressCountry'''
@@ -13,6 +13,9 @@ AirQualityForecast:
         addressRegion:
           description: 'Property. The region in which the locality is, and which is in the country. Model:''https://schema.org/addressRegion'''
           type: string
+        district:
+          description: 'A district is a type of administrative division that, in some countries, is managed by the local government.'
+          type: string
         postOfficeBoxNumber:
           description: 'Property. The post office box number for PO box addresses. For example, 03578. Model:''https://schema.org/postOfficeBoxNumber'''
           type: string
@@ -22,80 +25,83 @@ AirQualityForecast:
         streetAddress:
           description: 'Property. The street address. Model:''https://schema.org/streetAddress'''
           type: string
+        streetNr:
+          description: Number identifying a specific property on a public street.
+          type: string
       type: object
       x-ngsi:
         model: https://schema.org/address
         type: Property
     airQualityIndex:
-      description: 'Air quality index is a number used to report the quality of the air on any given day.'
+      description: Air quality index is a number used to report the quality of the air on any given day.
       minimum: 0
-      type: integer
+      type: number
       x-ngsi:
         model: https://schema.org/Number
         type: Property
     airQualityLevel:
-      description: 'Overall qualitative level of health concern corresponding to the air quality observed'
+      description: Overall qualitative level of health concern corresponding to the air quality observed
       minLength: 2
       type: string
       x-ngsi:
         model: 'https://schema.org/Tex '
         type: Property
     alternateName:
-      description: 'An alternative name for this item'
+      description: An alternative name for this item
       type: string
       x-ngsi:
         type: Property
     areaServed:
-      description: 'The geographic area where a service or offered item is provided'
+      description: The geographic area where a service or offered item is provided
       type: string
       x-ngsi:
         model: https://schema.org/Text
         type: Property
     co2:
-      description: 'Carbon Dioxide forecasted'
+      description: Carbon Dioxide forecasted
       minimum: 0
       type: number
       x-ngsi:
         type: Property
     dataProvider:
-      description: 'A sequence of characters identifying the provider of the harmonised data entity.'
+      description: A sequence of characters identifying the provider of the harmonised data entity.
       type: string
       x-ngsi:
         type: Property
     dateCreated:
-      description: 'Entity creation timestamp. This will usually be allocated by the storage platform.'
+      description: Entity creation timestamp. This will usually be allocated by the storage platform.
       format: date-time
       type: string
       x-ngsi:
         type: Property
     dateModified:
-      description: 'Timestamp of the last modification of the entity. This will usually be allocated by the storage platform.'
+      description: Timestamp of the last modification of the entity. This will usually be allocated by the storage platform.
       format: date-time
       type: string
       x-ngsi:
         type: Property
     description:
-      description: 'A description of this item'
+      description: A description of this item
       type: string
       x-ngsi:
         type: Property
     id:
       anyOf: &airqualityforecast_-_properties_-_owner_-_items_-_anyof
-        - description: 'Property. Identifier format of any NGSI entity'
+        - description: Property. Identifier format of any NGSI entity
           maxLength: 256
           minLength: 1
           pattern: ^[\w\-\.\{\}\$\+\*\[\]`|~^@!,:\\]+$
           type: string
-        - description: 'Property. Identifier format of any NGSI entity'
+        - description: Property. Identifier format of any NGSI entity
           format: uri
           type: string
-      description: 'Unique identifier of the entity'
+      description: Unique identifier of the entity
       x-ngsi:
         type: Property
     location:
       description: 'Geojson reference to the item. It can be Point, LineString, Polygon, MultiPoint, MultiLineString or MultiPolygon'
       oneOf:
-        - description: 'Geoproperty. Geojson reference to the item. Point'
+        - description: GeoProperty. Geojson reference to the item. Point
           properties:
             bbox:
               items:
@@ -114,9 +120,9 @@ AirQualityForecast:
           required:
             - type
             - coordinates
-          title: 'GeoJSON Point'
+          title: GeoJSON Point
           type: object
-        - description: 'Geoproperty. Geojson reference to the item. LineString'
+        - description: GeoProperty. Geojson reference to the item. LineString
           properties:
             bbox:
               items:
@@ -138,9 +144,9 @@ AirQualityForecast:
           required:
             - type
             - coordinates
-          title: 'GeoJSON LineString'
+          title: GeoJSON LineString
           type: object
-        - description: 'Geoproperty. Geojson reference to the item. Polygon'
+        - description: GeoProperty. Geojson reference to the item. Polygon
           properties:
             bbox:
               items:
@@ -164,9 +170,9 @@ AirQualityForecast:
           required:
             - type
             - coordinates
-          title: 'GeoJSON Polygon'
+          title: GeoJSON Polygon
           type: object
-        - description: 'Geoproperty. Geojson reference to the item. MultiPoint'
+        - description: GeoProperty. Geojson reference to the item. MultiPoint
           properties:
             bbox:
               items:
@@ -187,9 +193,9 @@ AirQualityForecast:
           required:
             - type
             - coordinates
-          title: 'GeoJSON MultiPoint'
+          title: GeoJSON MultiPoint
           type: object
-        - description: 'Geoproperty. Geojson reference to the item. MultiLineString'
+        - description: GeoProperty. Geojson reference to the item. MultiLineString
           properties:
             bbox:
               items:
@@ -213,9 +219,9 @@ AirQualityForecast:
           required:
             - type
             - coordinates
-          title: 'GeoJSON MultiLineString'
+          title: GeoJSON MultiLineString
           type: object
-        - description: 'Geoproperty. Geojson reference to the item. MultiLineString'
+        - description: GeoProperty. Geojson reference to the item. MultiLineString
           properties:
             bbox:
               items:
@@ -241,63 +247,63 @@ AirQualityForecast:
           required:
             - type
             - coordinates
-          title: 'GeoJSON MultiPolygon'
+          title: GeoJSON MultiPolygon
           type: object
       x-ngsi:
-        type: Geoproperty
+        type: GeoProperty
     name:
-      description: 'The name of this item.'
+      description: The name of this item.
       type: string
       x-ngsi:
         type: Property
     no2:
-      description: 'Nitrogen dioxide forecasted'
+      description: Nitrogen dioxide forecasted
       minimum: 0
       type: number
       x-ngsi:
         type: Property
     nox:
-      description: 'Other Nitrogen oxides forecasted'
+      description: Other Nitrogen oxides forecasted
       minimum: 0
       type: number
       x-ngsi:
         type: Property
     o3:
-      description: 'Ozone forecasted'
+      description: Ozone forecasted
       minimum: 0
       type: number
       x-ngsi:
         type: Property
     owner:
-      description: 'A List containing a JSON encoded sequence of characters referencing the unique Ids of the owner(s)'
+      description: A List containing a JSON encoded sequence of characters referencing the unique Ids of the owner(s)
       items:
         anyOf: *airqualityforecast_-_properties_-_owner_-_items_-_anyof
-        description: 'Property. Unique identifier of the entity'
+        description: Property. Unique identifier of the entity
       type: array
       x-ngsi:
         type: Property
     pm10:
-      description: 'Particulate matter 10 micrometers or less in diameter'
+      description: Particulate matter 10 micrometers or less in diameter
       minimum: 0
       type: number
       x-ngsi:
         type: Property
     pm25:
-      description: 'Particulate matter 2.5 micrometers or less in diameter'
+      description: Particulate matter 2.5 micrometers or less in diameter
       minimum: 0
       type: number
       x-ngsi:
         type: Property
     precipitation:
-      description: 'Amount of water rain'
+      description: Amount of water rain
       minimum: 0
       type: number
       x-ngsi:
         model: https://schema.org/Number
         type: Property
-        units: 'Liters per square meter.'
+        units: Liters per square meter.
     relativeHumidity:
-      description: 'Humidity in the Air'
+      description: Humidity in the Air
       maximum: 1
       minimum: 0
       type: number
@@ -305,7 +311,7 @@ AirQualityForecast:
         model: https://schema.org/Number
         type: Property
     seeAlso:
-      description: 'list of uri pointing to additional resources about the item'
+      description: list of uri pointing to additional resources about the item
       oneOf:
         - items:
             format: uri
@@ -317,7 +323,7 @@ AirQualityForecast:
       x-ngsi:
         type: Property
     so2:
-      description: 'Sulfur dioxide detected'
+      description: Sulfur dioxide detected
       minimum: 0
       type: number
       x-ngsi:
@@ -328,7 +334,7 @@ AirQualityForecast:
       x-ngsi:
         type: Property
     temperature:
-      description: 'Temperature of the item'
+      description: Temperature of the item
       type: number
       x-ngsi:
         type: Property
@@ -340,13 +346,25 @@ AirQualityForecast:
       x-ngsi:
         type: Property
     validFrom:
-      description: 'The start of the validity period for this forecast as a ISO8601 format'
+      description: The start of the validity period for this forecast as a ISO8601 format
       format: date-time
       type: string
       x-ngsi:
         type: Property
+    validTo:
+      description: The end of the validity period for this forecast as a ISO8601 format
+      format: date-time
+      type: string
+      x-ngsi:
+        type: Property
+    validity:
+      description: Includes the validity period for this forecast as a ISO8601 time interval.
+      type: string
+      x-ngsi:
+        model: https://schema.org/Text
+        type: Property
     windSpeed:
-      description: 'Intensity of the wind'
+      description: Intensity of the wind
       minimum: 0
       type: number
       x-ngsi:
@@ -357,8 +375,8 @@ AirQualityForecast:
     - type
   type: object
   x-derived-from: ""
-  x-disclaimer: 'Redistribution and use in source and binary forms, with or without modification, are permitted  provided that the license conditions are met. Copyleft (c) 2021 Contributors to Smart Data Models Program'
+  x-disclaimer: 'Redistribution and use in source and binary forms, with or without modification, are permitted  provided that the license conditions are met. Copyleft (c) 2022 Contributors to Smart Data Models Program'
   x-license-url: https://github.com/smart-data-models/dataModel.Environment/blob/master/AirQualityForecast/LICENSE.md
   x-model-schema: https://smart-data-models.github.io/dataModel.Environment/AirQualityForecast/schema.json
   x-model-tags: GreenMov
-  x-version: 0.0.1
+  x-version: 0.0.2
