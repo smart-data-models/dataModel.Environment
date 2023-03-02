@@ -2,104 +2,104 @@ NoisePollution:
   description: 'Noise Pollution data model merges specific and punctual noise measurements (coming, e.g. from NoiseLevelObservation entities) into average parameters referred to city areas, providing a more city-related data about noise pollution status and evolution.'
   properties:
     LAeq2:
-      description: 'Average sound level over the last 2 hours'
+      description: Average sound level over the last 2 hours
       type: number
       x-ngsi:
         type: Property
     LAmax2:
-      description: 'Maximum sound level recorded for the last 2 hours'
+      description: Maximum sound level recorded for the last 2 hours
       type: number
       x-ngsi:
         type: Property
     alternateName:
-      description: 'An alternative name for this item'
+      description: An alternative name for this item
       type: string
       x-ngsi:
         type: Property
     buildingsType:
-      description: 'Type of predominant buildings within the measurement area at installation of the sensor'
+      description: Type of predominant buildings within the measurement area at installation of the sensor
       type: string
       x-ngsi:
         type: Property
     dataProvider:
-      description: 'A sequence of characters identifying the provider of the harmonised data entity.'
+      description: A sequence of characters identifying the provider of the harmonised data entity.
       type: string
       x-ngsi:
         type: Property
     dateCreated:
-      description: 'Entity creation timestamp. This will usually be allocated by the storage platform.'
+      description: Entity creation timestamp. This will usually be allocated by the storage platform.
       format: date-time
       type: string
       x-ngsi:
         type: Property
     dateModified:
-      description: 'Timestamp of the last modification of the entity. This will usually be allocated by the storage platform.'
+      description: Timestamp of the last modification of the entity. This will usually be allocated by the storage platform.
       format: date-time
       type: string
       x-ngsi:
         type: Property
     dateObservedFrom:
-      description: 'Observation period start date and time'
+      description: Observation period start date and time
       format: date-time
       type: string
       x-ngsi:
         type: Property
     dateObservedTo:
-      description: 'End date and time of the observation period'
+      description: End date and time of the observation period
       format: date-time
       type: string
       x-ngsi:
         type: Property
     description:
-      description: 'A description of this item'
+      description: A description of this item
       type: string
       x-ngsi:
         type: Property
     groundType:
-      description: 'Type of predominant ground in the measurement area at installation of the sensor'
+      description: Type of predominant ground in the measurement area at installation of the sensor
       type: string
       x-ngsi:
         type: Property
     id:
       anyOf: &noisepollution_-_properties_-_owner_-_items_-_anyof
-        - description: 'Property. Identifier format of any NGSI entity'
+        - description: Property. Identifier format of any NGSI entity
           maxLength: 256
           minLength: 1
           pattern: ^[\w\-\.\{\}\$\+\*\[\]`|~^@!,:\\]+$
           type: string
-        - description: 'Property. Identifier format of any NGSI entity'
+        - description: Property. Identifier format of any NGSI entity
           format: uri
           type: string
-      description: 'Unique identifier of the entity'
+      description: Unique identifier of the entity
       x-ngsi:
         type: Property
     name:
-      description: 'The name of this item.'
+      description: The name of this item.
       type: string
       x-ngsi:
         type: Property
     noiseAnnoyanceIndex:
-      description: 'Index (1 to 10) according to noise annoyance level'
+      description: Index (1 to 10) according to noise annoyance level
       maximum: 10
       minimum: 1
       type: number
       x-ngsi:
         type: Property
     noiseOrigin:
-      description: 'Main origin (source) of the recorded noise at installation of the sensor'
+      description: Main origin (source) of the recorded noise at installation of the sensor
       type: string
       x-ngsi:
         type: Property
     owner:
-      description: 'A List containing a JSON encoded sequence of characters referencing the unique Ids of the owner(s)'
+      description: A List containing a JSON encoded sequence of characters referencing the unique Ids of the owner(s)
       items:
         anyOf: *noisepollution_-_properties_-_owner_-_items_-_anyof
-        description: 'Property. Unique identifier of the entity'
+        description: Property. Unique identifier of the entity
       type: array
       x-ngsi:
         type: Property
     seeAlso:
-      description: 'list of uri pointing to additional resources about the item'
+      description: list of uri pointing to additional resources about the item
       oneOf:
         - items:
             format: uri
@@ -116,14 +116,14 @@ NoisePollution:
       x-ngsi:
         type: Property
     type:
-      description: 'NGSI type. it has to be NoisePollution'
+      description: NGSI type. it has to be NoisePollution
       enum:
         - NoisePollution
       type: string
       x-ngsi:
         type: Property
     wallsType:
-      description: 'Facade material types dominant in the measurement area at installation of the sensor'
+      description: Facade material types dominant in the measurement area at installation of the sensor
       type: string
       x-ngsi:
         type: Property
