@@ -2,7 +2,7 @@ WaterObserved:
   description: ' Water observation data model is intended to represent the parameters of flow, level and volume of water observed, as well as the swell information, over a fixed or variable area. This observation also includes the masses of floating objects on this area. The data collected is provided by Sensors, Cameras,Water stations positioned at specific or sensitive locations for rivers, streams, torrent, lakes, seas, etc.'
   properties:
     address:
-      description: 'The mailing address'
+      description: The mailing address
       properties:
         addressCountry:
           description: 'Property. The country. For example, Spain. Model:''https://schema.org/addressCountry'''
@@ -13,6 +13,9 @@ WaterObserved:
         addressRegion:
           description: 'Property. The region in which the locality is, and which is in the country. Model:''https://schema.org/addressRegion'''
           type: string
+        district:
+          description: 'A district is a type of administrative division that, in some countries, is managed by the local government.'
+          type: string
         postOfficeBoxNumber:
           description: 'Property. The post office box number for PO box addresses. For example, 03578. Model:''https://schema.org/postOfficeBoxNumber'''
           type: string
@@ -22,40 +25,43 @@ WaterObserved:
         streetAddress:
           description: 'Property. The street address. Model:''https://schema.org/streetAddress'''
           type: string
+        streetNr:
+          description: Number identifying a specific property on a public street.
+          type: string
       type: object
       x-ngsi:
         model: https://schema.org/address
         type: Property
     alternateName:
-      description: 'An alternative name for this item'
+      description: An alternative name for this item
       type: string
       x-ngsi:
         type: Property
     areaServed:
-      description: 'The geographic area where a service or offered item is provided'
+      description: The geographic area where a service or offered item is provided
       type: string
       x-ngsi:
         model: https://schema.org/Text
         type: Property
     dataProvider:
-      description: 'A sequence of characters identifying the provider of the harmonised data entity.'
+      description: A sequence of characters identifying the provider of the harmonised data entity.
       type: string
       x-ngsi:
         type: Property
     dateCreated:
-      description: 'Entity creation timestamp. This will usually be allocated by the storage platform.'
+      description: Entity creation timestamp. This will usually be allocated by the storage platform.
       format: date-time
       type: string
       x-ngsi:
         type: Property
     dateModified:
-      description: 'Timestamp of the last modification of the entity. This will usually be allocated by the storage platform.'
+      description: Timestamp of the last modification of the entity. This will usually be allocated by the storage platform.
       format: date-time
       type: string
       x-ngsi:
         type: Property
     dateObserved:
-      description: 'Date and time of this observation represented by an ISO8601 UTC format.'
+      description: Date and time of this observation represented by an ISO8601 UTC format.
       format: date-time
       type: string
       x-ngsi:
@@ -76,19 +82,19 @@ WaterObserved:
         model: https://schema.org/DateTime
         type: Property
     description:
-      description: 'A description of this item'
+      description: A description of this item
       type: string
       x-ngsi:
         type: Property
     flow:
-      description: 'Water Flow observed. The unit code (text) of measurement given using the UN/CEFACAT'
+      description: Water Flow observed. The unit code (text) of measurement given using the UN/CEFACAT
       minimum: 0
       type: number
       x-ngsi:
         model: https://schema.org/Number
         type: Property
     height:
-      description: 'Water height - Level reach on alert coasts.'
+      description: Water height - Level reach on alert coasts.
       minimum: 0
       type: number
       x-ngsi:
@@ -96,21 +102,21 @@ WaterObserved:
         type: Property
     id:
       anyOf: &waterobserved_-_properties_-_owner_-_items_-_anyof
-        - description: 'Property. Identifier format of any NGSI entity'
+        - description: Property. Identifier format of any NGSI entity
           maxLength: 256
           minLength: 1
           pattern: ^[\w\-\.\{\}\$\+\*\[\]`|~^@!,:\\]+$
           type: string
-        - description: 'Property. Identifier format of any NGSI entity'
+        - description: Property. Identifier format of any NGSI entity
           format: uri
           type: string
-      description: 'Unique identifier of the entity'
+      description: Unique identifier of the entity
       x-ngsi:
         type: Property
     location:
       description: 'Geojson reference to the item. It can be Point, LineString, Polygon, MultiPoint, MultiLineString or MultiPolygon'
       oneOf:
-        - description: 'Geoproperty. Geojson reference to the item. Point'
+        - description: GeoProperty. Geojson reference to the item. Point
           properties:
             bbox:
               items:
@@ -129,9 +135,9 @@ WaterObserved:
           required:
             - type
             - coordinates
-          title: 'GeoJSON Point'
+          title: GeoJSON Point
           type: object
-        - description: 'Geoproperty. Geojson reference to the item. LineString'
+        - description: GeoProperty. Geojson reference to the item. LineString
           properties:
             bbox:
               items:
@@ -153,9 +159,9 @@ WaterObserved:
           required:
             - type
             - coordinates
-          title: 'GeoJSON LineString'
+          title: GeoJSON LineString
           type: object
-        - description: 'Geoproperty. Geojson reference to the item. Polygon'
+        - description: GeoProperty. Geojson reference to the item. Polygon
           properties:
             bbox:
               items:
@@ -179,9 +185,9 @@ WaterObserved:
           required:
             - type
             - coordinates
-          title: 'GeoJSON Polygon'
+          title: GeoJSON Polygon
           type: object
-        - description: 'Geoproperty. Geojson reference to the item. MultiPoint'
+        - description: GeoProperty. Geojson reference to the item. MultiPoint
           properties:
             bbox:
               items:
@@ -202,9 +208,9 @@ WaterObserved:
           required:
             - type
             - coordinates
-          title: 'GeoJSON MultiPoint'
+          title: GeoJSON MultiPoint
           type: object
-        - description: 'Geoproperty. Geojson reference to the item. MultiLineString'
+        - description: GeoProperty. Geojson reference to the item. MultiLineString
           properties:
             bbox:
               items:
@@ -228,9 +234,9 @@ WaterObserved:
           required:
             - type
             - coordinates
-          title: 'GeoJSON MultiLineString'
+          title: GeoJSON MultiLineString
           type: object
-        - description: 'Geoproperty. Geojson reference to the item. MultiLineString'
+        - description: GeoProperty. Geojson reference to the item. MultiLineString
           properties:
             bbox:
               items:
@@ -256,10 +262,10 @@ WaterObserved:
           required:
             - type
             - coordinates
-          title: 'GeoJSON MultiPolygon'
+          title: GeoJSON MultiPolygon
           type: object
       x-ngsi:
-        type: Geoproperty
+        type: GeoProperty
     measuredArea:
       description: 'Reference of the surface measured. The unit code (text) of measurement given using the [UN/CEFACT Common Codes](http://wiki.goodrelations-vocabulary.org/Documentation/UN/CEFACT_Common_Codes) (max. 3 characters). For instance, <code>MTK</code> represents M².'
       minimum: 0
@@ -267,9 +273,9 @@ WaterObserved:
       x-ngsi:
         model: https://schema.org/Number
         type: Property
-        units: 'square meters'
+        units: square meters
     name:
-      description: 'The name of this item.'
+      description: The name of this item.
       type: string
       x-ngsi:
         type: Property
@@ -303,30 +309,30 @@ WaterObserved:
       x-ngsi:
         model: https://schema.org/Number
         type: Property
-        units: 'cubic meters'
+        units: cubic meters
     owner:
-      description: 'A List containing a JSON encoded sequence of characters referencing the unique Ids of the owner(s)'
+      description: A List containing a JSON encoded sequence of characters referencing the unique Ids of the owner(s)
       items:
         anyOf: *waterobserved_-_properties_-_owner_-_items_-_anyof
-        description: 'Property. Unique identifier of the entity'
+        description: Property. Unique identifier of the entity
       type: array
       x-ngsi:
         type: Property
     refDevice:
       anyOf:
-        - description: 'Property. Identifier format of any NGSI entity'
+        - description: Property. Identifier format of any NGSI entity
           maxLength: 256
           minLength: 1
           pattern: ^[\w\-\.\{\}\$\+\*\[\]`|~^@!,:\\]+$
           type: string
-        - description: 'Property. Identifier format of any NGSI entity'
+        - description: Property. Identifier format of any NGSI entity
           format: uri
           type: string
-      description: 'A reference to a point of interest associated to this observation.'
+      description: A reference to a point of interest associated to this observation.
       x-ngsi:
         type: Relationship
     seeAlso:
-      description: 'list of uri pointing to additional resources about the item'
+      description: list of uri pointing to additional resources about the item
       oneOf:
         - items:
             format: uri
@@ -343,7 +349,7 @@ WaterObserved:
       x-ngsi:
         type: Property
     swellDirection:
-      description: 'Swells Direction observed.'
+      description: Swells Direction observed.
       maximum: 360
       minimum: 0
       type: number
@@ -351,26 +357,42 @@ WaterObserved:
         model: https://schema.org/Number
         type: Property
     swellHeight:
-      description: 'Swell height observed.'
+      description: Swell height observed.
       minimum: 0
       type: number
       x-ngsi:
         model: https://schema.org/height
         type: Property
     swellPeriod:
-      description: 'Swells period observed.'
+      description: Swells period observed.
       minimum: 0
       type: number
       x-ngsi:
         model: https://schema.org/Number
         type: Property
     type:
-      description: 'NGSI Entity type. It has to be WaterObserved'
+      description: NGSI Entity type. It has to be WaterObserved
       enum:
         - WaterObserved
       type: string
       x-ngsi:
         type: Property
+    waterDischarge:
+      description: 'Discharge into the water from stormwater and wastewater treatment plants. The unit code (text) of measurement given using the [UN/CEFACT Common Codes](http://wiki.goodrelations-vocabulary.org/Documentation/UN/CEFACT_Common_Codes) (max. 3 characters). For instance, <code>MTQ</code> represents Cubic Metre.'
+      minimum: 0
+      type: number
+      x-ngsi:
+        model: https://schema.org/Number
+        type: Property
+        units: cubic metre
+    waterLevel:
+      description: 'Current water level corresponding to this observation. The unit code (text) of measurement given using the [UN/CEFACT Common Codes](http://wiki.goodrelations-vocabulary.org/Documentation/UN/CEFACT_Common_Codes) (max. 3 characters). For instance, <code>MTR</code> represents Metre.'
+      minimum: 0
+      type: number
+      x-ngsi:
+        model: https://schema.org/Number
+        type: Property
+        units: metre
     waveLength:
       description: 'Wave Length observed. '
       minimum: 0
@@ -385,8 +407,8 @@ WaterObserved:
     - dateObserved
   type: object
   x-derived-from: ""
-  x-disclaimer: 'Redistribution and use in source and binary forms, with or without modification, are permitted  provided that the license conditions are met. Copyleft (c) 2021 Contributors to Smart Data Models Program'
+  x-disclaimer: 'Redistribution and use in source and binary forms, with or without modification, are permitted  provided that the license conditions are met. Copyleft (c) 2022 Contributors to Smart Data Models Program'
   x-license-url: https://github.com/smart-data-models/dataModel.Environment/blob/master/WaterObserved/LICENSE.md
   x-model-schema: https://smart-data-models.github.io/data-models/Environment/WaterObserved/schema.js
   x-model-tags: ""
-  x-version: 0.0.2
+  x-version: 0.0.3
