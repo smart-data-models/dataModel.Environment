@@ -7,22 +7,22 @@ NoiseLevelObserved:
       x-ngsi:
         type: Property
     LAeq:
-      description: 'The frequency weighted Leq sound level (A-weighting).'
+      description: The frequency weighted Leq sound level (A-weighting).
       type: number
       x-ngsi:
         type: Property
     LAeq_d:
-      description: 'Acoustic Level frequency weigthed (A-weghting) equivalent for  a day'
+      description: Acoustic Level frequency weigthed (A-weghting) equivalent for  a day
       type: number
       x-ngsi:
         type: Property
     LAmax:
-      description: 'Acoustic level frequency weigthed (A-weghting) maximum sound level'
+      description: Acoustic level frequency weigthed (A-weghting) maximum sound level
       type: number
       x-ngsi:
         type: Property
     address:
-      description: 'The mailing address'
+      description: The mailing address
       properties:
         addressCountry:
           description: 'Property. The country. For example, Spain. Model:''https://schema.org/addressCountry'''
@@ -33,6 +33,9 @@ NoiseLevelObserved:
         addressRegion:
           description: 'Property. The region in which the locality is, and which is in the country. Model:''https://schema.org/addressRegion'''
           type: string
+        district:
+          description: 'A district is a type of administrative division that, in some countries, is managed by the local government.'
+          type: string
         postOfficeBoxNumber:
           description: 'Property. The post office box number for PO box addresses. For example, 03578. Model:''https://schema.org/postOfficeBoxNumber'''
           type: string
@@ -42,91 +45,94 @@ NoiseLevelObserved:
         streetAddress:
           description: 'Property. The street address. Model:''https://schema.org/streetAddress'''
           type: string
+        streetNr:
+          description: Number identifying a specific property on a public street.
+          type: string
       type: object
       x-ngsi:
         model: https://schema.org/address
         type: Property
     alternateName:
-      description: 'An alternative name for this item'
+      description: An alternative name for this item
       type: string
       x-ngsi:
         type: Property
     areaServed:
-      description: 'The geographic area where a service or offered item is provided'
+      description: The geographic area where a service or offered item is provided
       type: string
       x-ngsi:
         model: https://schema.org/Text
         type: Property
     dataProvider:
-      description: 'A sequence of characters identifying the provider of the harmonised data entity.'
+      description: A sequence of characters identifying the provider of the harmonised data entity.
       type: string
       x-ngsi:
         type: Property
     dateCreated:
-      description: 'Entity creation timestamp. This will usually be allocated by the storage platform.'
+      description: Entity creation timestamp. This will usually be allocated by the storage platform.
       format: date-time
       type: string
       x-ngsi:
         type: Property
     dateModified:
-      description: 'Timestamp of the last modification of the entity. This will usually be allocated by the storage platform.'
+      description: Timestamp of the last modification of the entity. This will usually be allocated by the storage platform.
       format: date-time
       type: string
       x-ngsi:
         type: Property
     dateObserved:
-      description: 'The date and time of this observation represented by an ISO8601 interval.'
+      description: The date and time of this observation represented by an ISO8601 interval.
       type: string
       x-ngsi:
         type: Property
     dateObservedFrom:
-      description: 'Observation period start date and time.'
+      description: Observation period start date and time.
       format: date-time
       type: string
       x-ngsi:
         model: https://schema.org/DateTime
         type: Property
     dateObservedTo:
-      description: 'Observation period end date and time. See dateObserved.'
+      description: Observation period end date and time. See dateObserved.
       format: date-time
       type: string
       x-ngsi:
         model: https://schema.org/Text
         type: Property
     description:
-      description: 'A description of this item'
+      description: A description of this item
       type: string
       x-ngsi:
         type: Property
     distanceAverage:
-      description: 'Average distance between sensor and potential noise sources'
+      description: Average distance between sensor and potential noise sources
       type: string
       x-ngsi:
         type: Property
         units: meters
     heightAverage:
-      description: 'Type of potential obstacles between the sensor and the noise source'
+      description: Type of potential obstacles between the sensor and the noise source
       type: string
       x-ngsi:
         type: Property
         units: meters
     id:
       anyOf: &noiselevelobserved_-_properties_-_owner_-_items_-_anyof
-        - description: 'Property. Identifier format of any NGSI entity'
+        - description: Property. Identifier format of any NGSI entity
           maxLength: 256
           minLength: 1
           pattern: ^[\w\-\.\{\}\$\+\*\[\]`|~^@!,:\\]+$
           type: string
-        - description: 'Property. Identifier format of any NGSI entity'
+        - description: Property. Identifier format of any NGSI entity
           format: uri
           type: string
-      description: 'Unique identifier of the entity'
+      description: Unique identifier of the entity
       x-ngsi:
         type: Property
     location:
       description: 'Geojson reference to the item. It can be Point, LineString, Polygon, MultiPoint, MultiLineString or MultiPolygon'
       oneOf:
-        - description: 'Geoproperty. Geojson reference to the item. Point'
+        - description: GeoProperty. Geojson reference to the item. Point
           properties:
             bbox:
               items:
@@ -145,9 +151,9 @@ NoiseLevelObserved:
           required:
             - type
             - coordinates
-          title: 'GeoJSON Point'
+          title: GeoJSON Point
           type: object
-        - description: 'Geoproperty. Geojson reference to the item. LineString'
+        - description: GeoProperty. Geojson reference to the item. LineString
           properties:
             bbox:
               items:
@@ -169,9 +175,9 @@ NoiseLevelObserved:
           required:
             - type
             - coordinates
-          title: 'GeoJSON LineString'
+          title: GeoJSON LineString
           type: object
-        - description: 'Geoproperty. Geojson reference to the item. Polygon'
+        - description: GeoProperty. Geojson reference to the item. Polygon
           properties:
             bbox:
               items:
@@ -195,9 +201,9 @@ NoiseLevelObserved:
           required:
             - type
             - coordinates
-          title: 'GeoJSON Polygon'
+          title: GeoJSON Polygon
           type: object
-        - description: 'Geoproperty. Geojson reference to the item. MultiPoint'
+        - description: GeoProperty. Geojson reference to the item. MultiPoint
           properties:
             bbox:
               items:
@@ -218,9 +224,9 @@ NoiseLevelObserved:
           required:
             - type
             - coordinates
-          title: 'GeoJSON MultiPoint'
+          title: GeoJSON MultiPoint
           type: object
-        - description: 'Geoproperty. Geojson reference to the item. MultiLineString'
+        - description: GeoProperty. Geojson reference to the item. MultiLineString
           properties:
             bbox:
               items:
@@ -244,9 +250,9 @@ NoiseLevelObserved:
           required:
             - type
             - coordinates
-          title: 'GeoJSON MultiLineString'
+          title: GeoJSON MultiLineString
           type: object
-        - description: 'Geoproperty. Geojson reference to the item. MultiLineString'
+        - description: GeoProperty. Geojson reference to the item. MultiLineString
           properties:
             bbox:
               items:
@@ -272,69 +278,69 @@ NoiseLevelObserved:
           required:
             - type
             - coordinates
-          title: 'GeoJSON MultiPolygon'
+          title: GeoJSON MultiPolygon
           type: object
       x-ngsi:
-        type: Geoproperty
+        type: GeoProperty
     name:
-      description: 'The name of this item.'
+      description: The name of this item.
       type: string
       x-ngsi:
         type: Property
     obstacles:
-      description: 'Type of potential obstacles between the sensor and the noise source.'
+      description: Type of potential obstacles between the sensor and the noise source.
       type: string
       x-ngsi:
         type: Property
     owner:
-      description: 'A List containing a JSON encoded sequence of characters referencing the unique Ids of the owner(s)'
+      description: A List containing a JSON encoded sequence of characters referencing the unique Ids of the owner(s)
       items:
         anyOf: *noiselevelobserved_-_properties_-_owner_-_items_-_anyof
-        description: 'Property. Unique identifier of the entity'
+        description: Property. Unique identifier of the entity
       type: array
       x-ngsi:
         type: Property
     refDevice:
       anyOf:
-        - description: 'Property. Identifier format of any NGSI entity'
+        - description: Property. Identifier format of any NGSI entity
           maxLength: 256
           minLength: 1
           pattern: ^[\w\-\.\{\}\$\+\*\[\]`|~^@!,:\\]+$
           type: string
-        - description: 'Property. Identifier format of any NGSI entity'
+        - description: Property. Identifier format of any NGSI entity
           format: uri
           type: string
-      description: 'A reference to the device which captured this observation.'
+      description: A reference to the device which captured this observation.
       x-ngsi:
         type: Relationship
     refPointOfInterest:
       anyOf:
-        - description: 'Property. Identifier format of any NGSI entity'
+        - description: Property. Identifier format of any NGSI entity
           maxLength: 256
           minLength: 1
           pattern: ^[\w\-\.\{\}\$\+\*\[\]`|~^@!,:\\]+$
           type: string
-        - description: 'Property. Identifier format of any NGSI entity'
+        - description: Property. Identifier format of any NGSI entity
           format: uri
           type: string
-      description: 'A reference to a point of interest associated to this observation.'
+      description: A reference to a point of interest associated to this observation.
       x-ngsi:
         type: Relationship
     refWeatherObserved:
       anyOf:
-        - description: 'Property. Identifier format of any NGSI entity'
+        - description: Property. Identifier format of any NGSI entity
           maxLength: 256
           minLength: 1
           pattern: ^[\w\-\.\{\}\$\+\*\[\]`|~^@!,:\\]+$
           type: string
-        - description: 'Property. Identifier format of any NGSI entity'
+        - description: Property. Identifier format of any NGSI entity
           format: uri
           type: string
-      description: 'Reference to the associated weather conditions.'
+      description: Reference to the associated weather conditions.
       x-ngsi:
         type: Relationship
     seeAlso:
-      description: 'list of uri pointing to additional resources about the item'
+      description: list of uri pointing to additional resources about the item
       oneOf:
         - items:
             format: uri
@@ -361,7 +367,7 @@ NoiseLevelObserved:
       x-ngsi:
         type: Property
     type:
-      description: 'NGSI Entity type'
+      description: NGSI Entity type
       enum:
         - NoiseLevelObserved
       type: string
@@ -375,7 +381,7 @@ NoiseLevelObserved:
     - location
   type: object
   x-derived-from: ""
-  x-disclaimer: 'Redistribution and use in source and binary forms, with or without modification, are permitted  provided that the license conditions are met. Copyleft (c) 2021 Contributors to Smart Data Models Program'
+  x-disclaimer: 'Redistribution and use in source and binary forms, with or without modification, are permitted  provided that the license conditions are met. Copyleft (c) 2022 Contributors to Smart Data Models Program'
   x-license-url: https://github.com/smart-data-models/dataModel.Environment/blob/master/NoiseLevelObserved/LICENSE.md
   x-model-schema: https://smart-data-models.github.io/dataModel.Environment/NoiseLevelObserved/schema.json
   x-model-tags: GreenMov
