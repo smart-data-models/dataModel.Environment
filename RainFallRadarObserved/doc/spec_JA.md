@@ -1,38 +1,38 @@
 <!-- 10-Header -->  
 [![Smart Data Models](https://smartdatamodels.org/wp-content/uploads/2022/01/SmartDataModels_logo.png "Logo")](https://smartdatamodels.org)  
-エンティティRainFallRadarObserved  
-===========================<!-- /10-Header -->  
+エンティティRainFallRadarObserved（レインフォールレーダーオブザーブド  
+=============================================<!-- /10-Header -->  
 <!-- 15-License -->  
 [オープンライセンス](https://github.com/smart-data-models//dataModel.Environment/blob/master/RainFallRadarObserved/LICENSE.md)  
-[ドキュメント自動生成](https://docs.google.com/presentation/d/e/2PACX-1vTs-Ng5dIAwkg91oTTUdt8ua7woBXhPnwavZ0FxgR8BsAI_Ek3C5q97Nd94HS8KhP-r_quD4H0fgyt3/pub?start=false&loop=false&delayms=3000#slide=id.gb715ace035_0_60)  
+[文書が自動的に生成されます](https://docs.google.com/presentation/d/e/2PACX-1vTs-Ng5dIAwkg91oTTUdt8ua7woBXhPnwavZ0FxgR8BsAI_Ek3C5q97Nd94HS8KhP-r_quD4H0fgyt3/pub?start=false&loop=false&delayms=3000#slide=id.gb715ace035_0_60)  
 <!-- /15-License -->  
 <!-- 20-Description -->  
-グローバルな記述です。**Geo プロパティ形式で表現された 4 つの Location の集合によって、あらかじめ定義された領域の水 滑りを測定するためのデータモデルである**。  
-バージョン: 0.0.1  
+グローバルな記述です：**このデータモデルは、Geo プロパティフォーマットで表現された 4 つの Location のセットによって、あらかじめ定義されたエリアの水 滑りを測定することを目的としています。  
+バージョン：0.0.1  
 <!-- /20-Description -->  
 <!-- 30-PropertiesList -->  
 
 ## プロパティ一覧  
 
-<sup><sub>[*] 属性にタイプがない場合、複数のタイプまたは異なるフォーマット/パターンを持つ可能性があるためです</sub></sup>。  
-- `address[object]`: 郵送先住所  . Model: [https://schema.org/address](https://schema.org/address)- `alternateName[string]`: この項目の別称  - `areaServed[string]`: サービスまたは提供品が提供される地理的な地域  . Model: [https://schema.org/Text](https://schema.org/Text)- `atmosphericPressure[number]`: ヘクトパスカルで観測される大気圧。  . Model: [https://schema.org/Number](https://schema.org/Number)- `cellsSize[number]`: レーダーを構成する各セルの大きさ。計測の単位コード（テキスト）は、[UN/CEFACT Common Codes](http://wiki.goodrelations-vocabulary.org/Documentation/UN/CEFACT_Common_Codes)を用いて与えられる。例えば、**MTR** は **Meters** を表す。  . Model: [https://schema.org/Number](https://schema.org/Number)- `dataProvider[string]`: 調和されたデータエンティティの提供者を識別する一連の文字。  - `dateCreated[string]`: エンティティの作成タイムスタンプ。これは通常、ストレージプラットフォームによって割り当てられる。  - `dateModified[string]`: エンティティの最終更新のタイムスタンプ。これは通常、ストレージプラットフォームによって割り当てられる。  - `dateObserved[string]`: ISO8601 UTCフォーマットでのこの観測の日付と時刻。これは特定の時間の瞬間かISO8601のインターバルで表すことができます。  . Model: [https://schema.org/DateTime](https://schema.org/DateTime)- `dateObservedFrom[string]`: 観測期間開始日時。dateObservedを参照。特定の時間の瞬間、またはISO8601のインターバルで表すことができる  . Model: [https://schema.org/DateTime](https://schema.org/DateTime)- `dateObservedTo[string]`: 観測期間終了日時。dateObservedを参照。特定の時間の瞬間、またはISO8601のインターバルで表すことができる  . Model: [https://schema.org/DateTime](https://schema.org/DateTime)- `description[string]`: このアイテムの説明  - `feelLikesTemperature[number]`: アイテムの温度評価  - `gustSpeed[number]`: 観測された平均風速を超える高速の風が突然発生し、数秒しか続かないこと。  - `id[*]`: エンティティの一意な識別子  - `illuminance[number]`: (https://en.wikipedia.org/wiki/Illuminance) ルクス（lx）またはルーメン／平方メートル（cd-sr-m-2）で観測された。  . Model: [https://schema.org/Number](https://schema.org/Number)- `location[*]`: アイテムへの Geojson リファレンス。Point, LineString, Polygon, MultiPoint, MultiLineString, MultiPolygonのいずれかを指定することができる。  - `mapScale[string]`: 地図の縮尺。cellSizeの長さと地図上の表現の関係  . Model: [https://schema.org/Text](https://schema.org/Text)- `measuredArea[number]`: 測定した表面の基準。単位コード（テキスト）は、[UN/CEFACT Common Codes](http://wiki.goodrelations-vocabulary.org/Documentation/UN/CEFACT_Common_Codes)を用いて与えられる。例えば、**MTK**はSquare Meters（平方メートル）を表す。  . Model: [https://schema.org/Number](https://schema.org/Number)- `name[string]`: このアイテムの名称です。  - `numberOfCol[number]`: rainFallradarContent` 属性の読み込みを許可するコルの数  . Model: [https://schema.org/Number](https://schema.org/Number)- `numberOfRow[number]`: rainFallradarContent` 属性の読み込みを許可する行数  . Model: [https://schema.org/Number](https://schema.org/Number)- `owner[array]`: 所有者の一意のIDを参照するJSONエンコードされた文字列を含むリストです。  - `rainFallRadarContent[string]`: 観測された情報を提供したパスとファイル名  . Model: [https://schema.org/Text](https://schema.org/Text)- `refDevice[*]`: この観測を捉えた[デバイス](https://github.com/smart-data-models/dataModel.Device/blob/master/Device/doc/spec.md)への言及  . Model: [https://schema.org/URL](https://schema.org/URL)- `refPointOfInterest[*]`: 観測とリンクしている[PointOfInterest](https://github.com/smart-data-models/dataModel.PointOfInterest/blob/master/PointOfInterest/doc/spec.md)への参照。  . Model: [https://schema.org/URL](https://schema.org/URL)- `relativeHumidity[number]`: 空気中の湿度。観測された瞬間的な相対湿度（空気中の水蒸気量）  - `seeAlso[*]`: 項目に関する追加リソースを指すURIのリスト。  - `source[string]`: エンティティデータの元のソースをURLで示す一連の文字。ソースプロバイダの完全修飾ドメイン名、またはソースオブジェクトのURLであることが推奨されます。  - `temperature[number]`: アイテムの温度  - `type[string]`: NGSI Entity タイプ。RainFallRadarObservedでなければならない。  - `visibility[*]`: 視認性のカテゴリー  . Model: [http://schema.org/Text](http://schema.org/Text)- `weatherType[string]`: 天気予報のテキスト説明  . Model: [http://schema.org/Text.](http://schema.org/Text.)- `windDirection[number]`: 風のベットの方向  . Model: [http://schema.org/Number](http://schema.org/Number)- `windSpeed[number]`: 風の強さ  . Model: [http//schema.org/Number](http//schema.org/Number)<!-- /30-PropertiesList -->  
+<sup><sub>[*] 属性に型がない場合は、複数の型や異なるフォーマット/パターンを持つ可能性があるためです</sub></sup>。  
+- `address[object]`: 郵送先住所  . Model: [https://schema.org/address](https://schema.org/address)- `alternateName[string]`: このアイテムの別称  - `areaServed[string]`: サービスまたは提供されるアイテムが提供される地理的な地域  . Model: [https://schema.org/Text](https://schema.org/Text)- `atmosphericPressure[number]`: 大気圧はヘクトパスカルで測定されます。  . Model: [https://schema.org/Number](https://schema.org/Number)- `cellsSize[number]`: レーダーを構成する各セルの大きさ。計測の単位コード（テキスト）は、[UN/CEFACT Common Codes](http://wiki.goodrelations-vocabulary.org/Documentation/UN/CEFACT_Common_Codes)を用いて与えられる。例えば、**MTR**は**Meters**を表す。  . Model: [https://schema.org/Number](https://schema.org/Number)- `dataProvider[string]`: 調和されたデータエンティティの提供者を識別する一連の文字。  - `dateCreated[string]`: エンティティの作成タイムスタンプ。これは通常、ストレージプラットフォームによって割り当てられる。  - `dateModified[string]`: エンティティの最終更新のタイムスタンプ。これは通常、ストレージプラットフォームによって割り当てられる。  - `dateObserved[string]`: この観測の日時をISO8601 UTCフォーマットで表します。特定の時刻の瞬間、またはISO8601のインターバルで表すことができる。  . Model: [https://schema.org/DateTime](https://schema.org/DateTime)- `dateObservedFrom[string]`: 観測期間開始日時。dateObservedを参照。特定の時刻の瞬間、またはISO8601のインターバルで表すことができる  . Model: [https://schema.org/DateTime](https://schema.org/DateTime)- `dateObservedTo[string]`: 観測期間終了日時。dateObservedを参照。特定の時刻の瞬間、またはISO8601のインターバルで表すことができる  . Model: [https://schema.org/DateTime](https://schema.org/DateTime)- `description[string]`: このアイテムの説明  - `feelLikesTemperature[number]`: アイテムの温度感  - `gustSpeed[number]`: 観測された平均風速を超える高速の風が数秒間だけ突発的に発生すること。  - `id[*]`: エンティティの一意な識別子  - `illuminance[number]`: (https://en.wikipedia.org/wiki/Illuminance）ルクス（lx）またはルーメン/平方メートル（cd-sr-m-2）で測定された。  . Model: [https://schema.org/Number](https://schema.org/Number)- `location[*]`: アイテムへの Geojson 参照。Point, LineString, Polygon, MultiPoint, MultiLineString, MultiPolygon のいずれかである。  - `mapScale[string]`: 地図の縮尺。cellSizeの長さと地図上の表現の関係  . Model: [https://schema.org/Text](https://schema.org/Text)- `measuredArea[number]`: 測定した面の基準。単位コード（テキスト）は、[UN/CEFACT Common Codes](http://wiki.goodrelations-vocabulary.org/Documentation/UN/CEFACT_Common_Codes)を用いて付与される。例えば、**MTK**はSquare Metersを表す。  . Model: [https://schema.org/Number](https://schema.org/Number)- `name[string]`: この項目の名称です。  - `numberOfCol[number]`: rainFallradarContent`属性の読み取りを許可するColの数  . Model: [https://schema.org/Number](https://schema.org/Number)- `numberOfRow[number]`: rainFallradarContent`属性の読み取りを許可する行数。  . Model: [https://schema.org/Number](https://schema.org/Number)- `owner[array]`: 所有者の固有IDを参照するJSONエンコードされた文字列を含むリストです。  - `rainFallRadarContent[string]`: 観測された情報を提供したパスとファイル名  . Model: [https://schema.org/Text](https://schema.org/Text)- `refDevice[*]`: この観察結果を捉えた【デバイス】(https://github.com/smart-data-models/dataModel.Device/blob/master/Device/doc/spec.md)の参考文献  . Model: [https://schema.org/URL](https://schema.org/URL)- `refPointOfInterest[*]`: 観測と連動した[PointOfInterest](https://github.com/smart-data-models/dataModel.PointOfInterest/blob/master/PointOfInterest/doc/spec.md)への参照。  . Model: [https://schema.org/URL](https://schema.org/URL)- `relativeHumidity[number]`: 空気中の湿度。観測された瞬時相対湿度（空気中の水蒸気量）  - `seeAlso[*]`: アイテムに関する追加リソースを指す URI のリスト。  - `source[string]`: エンティティデータの元のソースをURLとして与える一連の文字。ソースプロバイダの完全修飾ドメイン名、またはソースオブジェクトのURLであることが推奨されます。  - `temperature[number]`: アイテムの温度  - `type[string]`: NGSI Entityタイプ。RainFallRadarObservedでなければならない。  - `visibility[*]`: 視認性のカテゴリー  . Model: [http://schema.org/Text](http://schema.org/Text)- `weatherType[string]`: 天気に関するテキスト説明  . Model: [http://schema.org/Text.](http://schema.org/Text.)- `windDirection[number]`: 風のベットの方向  . Model: [http://schema.org/Number](http://schema.org/Number)- `windSpeed[number]`: 風の強さ  . Model: [http//schema.org/Number](http//schema.org/Number)<!-- /30-PropertiesList -->  
 <!-- 35-RequiredProperties -->  
-必要なプロパティ  
+必須プロパティ  
 - `dateObserved`  - `id`  - `location`  - `rainFallRadarContent`  - `type`  <!-- /35-RequiredProperties -->  
 <!-- 40-RequiredProperties -->  
 <!-- /40-RequiredProperties -->  
 <!-- 50-DataModelHeader -->  
 ## プロパティのデータモデル記述  
-アルファベット順に並びます（クリックで詳細へ）  
+アルファベット順（クリックで詳細表示）  
 <!-- /50-DataModelHeader -->  
 <!-- 60-ModelYaml -->  
 <details><summary><strong>full yaml details</strong></summary>    
 ```yaml  
 RainFallRadarObserved:    
-  description: 'The Data Model is intended to measure the water slides on a predefined area by a set of 4 Location represented by a Geo property format.'    
+  description: The Data Model is intended to measure the water slides on a predefined area by a set of 4 Location represented by a Geo property format.    
   properties:    
     address:    
-      description: 'The mailing address'    
+      description: The mailing address    
       properties:    
         addressCountry:    
           description: 'Property. The country. For example, Spain. Model:''https://schema.org/addressCountry'''    
@@ -43,6 +43,9 @@ RainFallRadarObserved:
         addressRegion:    
           description: 'Property. The region in which the locality is, and which is in the country. Model:''https://schema.org/addressRegion'''    
           type: string    
+        district:    
+          description: 'A district is a type of administrative division that, in some countries, is managed by the local government.'    
+          type: string    
         postOfficeBoxNumber:    
           description: 'Property. The post office box number for PO box addresses. For example, 03578. Model:''https://schema.org/postOfficeBoxNumber'''    
           type: string    
@@ -52,99 +55,102 @@ RainFallRadarObserved:
         streetAddress:    
           description: 'Property. The street address. Model:''https://schema.org/streetAddress'''    
           type: string    
+        streetNr:    
+          description: Number identifying a specific property on a public street.    
+          type: string    
       type: object    
       x-ngsi:    
         model: https://schema.org/address    
         type: Property    
     alternateName:    
-      description: 'An alternative name for this item'    
+      description: An alternative name for this item    
       type: string    
       x-ngsi:    
         type: Property    
     areaServed:    
-      description: 'The geographic area where a service or offered item is provided'    
+      description: The geographic area where a service or offered item is provided    
       type: string    
       x-ngsi:    
         model: https://schema.org/Text    
         type: Property    
     atmosphericPressure:    
-      description: 'The atmospheric pressure observed measured in Hecto Pascals'    
+      description: The atmospheric pressure observed measured in Hecto Pascals    
       minimum: 0    
       type: number    
       x-ngsi:    
         model: https://schema.org/Number    
         type: Property    
-        units: 'Hecto pascals'    
+        units: Hecto pascals    
     cellsSize:    
-      description: 'Size of each cell constituting the radar. The unit code (text) of measurement is given using the [UN/CEFACT Common Codes](http://wiki.goodrelations-vocabulary.org/Documentation/UN/CEFACT_Common_Codes). For instance, **MTR** represents **Meters**'    
+      description: 'Property. Size of each cell constituting the radar. The unit code (text) of measurement is given using the [UN/CEFACT Common Codes](http://wiki.goodrelations-vocabulary.org/Documentation/UN/CEFACT_Common_Codes). For instance, **MTR** represents **Meters**. Model:''https://schema.org/Number'''    
       type: number    
       x-ngsi:    
         model: https://schema.org/Number    
         type: Property    
     dataProvider:    
-      description: 'A sequence of characters identifying the provider of the harmonised data entity.'    
+      description: A sequence of characters identifying the provider of the harmonised data entity.    
       type: string    
       x-ngsi:    
         type: Property    
     dateCreated:    
-      description: 'Entity creation timestamp. This will usually be allocated by the storage platform.'    
+      description: Entity creation timestamp. This will usually be allocated by the storage platform.    
       format: date-time    
       type: string    
       x-ngsi:    
         type: Property    
     dateModified:    
-      description: 'Timestamp of the last modification of the entity. This will usually be allocated by the storage platform.'    
+      description: Timestamp of the last modification of the entity. This will usually be allocated by the storage platform.    
       format: date-time    
       type: string    
       x-ngsi:    
         type: Property    
     dateObserved:    
-      description: 'The date and time of this observation in ISO8601 UTC format. It can be represented by a specific time instant or by an ISO8601 interval'    
+      description: 'Property. The date and time of this observation in ISO8601 UTC format. It can be represented by a specific time instant or by an ISO8601 interval. Model:''https://schema.org/DateTime'''    
       format: date-time    
       type: string    
       x-ngsi:    
         model: https://schema.org/DateTime    
         type: Property    
     dateObservedFrom:    
-      description: 'Observation period start date and time. See dateObserved. It can be represented by a specific time instant or by an ISO8601 interval'    
+      description: 'Property. Observation period start date and time. See dateObserved. It can be represented by a specific time instant or by an ISO8601 interval. Model:''https://schema.org/DateTime'''    
       format: date-time    
       type: string    
       x-ngsi:    
         model: https://schema.org/DateTime    
         type: Property    
     dateObservedTo:    
-      description: 'Observation period end date and time. See dateObserved. It can be represented by a specific time instant or by an ISO8601 interval'    
+      description: 'Property. Observation period end date and time. See dateObserved. It can be represented by a specific time instant or by an ISO8601 interval. Model:''https://schema.org/DateTime'''    
       format: date-time    
       type: string    
       x-ngsi:    
         model: https://schema.org/DateTime    
         type: Property    
     description:    
-      description: 'A description of this item'    
+      description: A description of this item    
       type: string    
       x-ngsi:    
         type: Property    
     feelLikesTemperature:    
-      description: 'Temperature appreciation of the item'    
+      description: Temperature appreciation of the item    
       type: number    
       x-ngsi:    
         type: Property    
     gustSpeed:    
-      description: 'A sudden burst of high-speed wind over the observed average wind speed lasting only for a few seconds.'    
+      description: A sudden burst of high-speed wind over the observed average wind speed lasting only for a few seconds.    
       type: number    
       x-ngsi:    
         type: Property    
     id:    
       anyOf: &rainfallradarobserved_-_properties_-_owner_-_items_-_anyof    
-        - description: 'Property. Identifier format of any NGSI entity'    
+        - description: Property. Identifier format of any NGSI entity    
           maxLength: 256    
           minLength: 1    
           pattern: ^[\w\-\.\{\}\$\+\*\[\]`|~^@!,:\\]+$    
           type: string    
-        - description: 'Property. Identifier format of any NGSI entity'    
+        - description: Property. Identifier format of any NGSI entity    
           format: uri    
           type: string    
-      description: 'Unique identifier of the entity'    
+      description: Unique identifier of the entity    
       x-ngsi:    
         type: Property    
     illuminance:    
@@ -157,7 +163,7 @@ RainFallRadarObserved:
     location:    
       description: 'Geojson reference to the item. It can be Point, LineString, Polygon, MultiPoint, MultiLineString or MultiPolygon'    
       oneOf:    
-        - description: 'GeoProperty. Geojson reference to the item. Point'    
+        - description: GeoProperty. Geojson reference to the item. Point    
           properties:    
             bbox:    
               items:    
@@ -176,9 +182,9 @@ RainFallRadarObserved:
           required:    
             - type    
             - coordinates    
-          title: 'GeoJSON Point'    
+          title: GeoJSON Point    
           type: object    
-        - description: 'GeoProperty. Geojson reference to the item. LineString'    
+        - description: GeoProperty. Geojson reference to the item. LineString    
           properties:    
             bbox:    
               items:    
@@ -200,9 +206,9 @@ RainFallRadarObserved:
           required:    
             - type    
             - coordinates    
-          title: 'GeoJSON LineString'    
+          title: GeoJSON LineString    
           type: object    
-        - description: 'GeoProperty. Geojson reference to the item. Polygon'    
+        - description: GeoProperty. Geojson reference to the item. Polygon    
           properties:    
             bbox:    
               items:    
@@ -226,9 +232,9 @@ RainFallRadarObserved:
           required:    
             - type    
             - coordinates    
-          title: 'GeoJSON Polygon'    
+          title: GeoJSON Polygon    
           type: object    
-        - description: 'GeoProperty. Geojson reference to the item. MultiPoint'    
+        - description: GeoProperty. Geojson reference to the item. MultiPoint    
           properties:    
             bbox:    
               items:    
@@ -249,9 +255,9 @@ RainFallRadarObserved:
           required:    
             - type    
             - coordinates    
-          title: 'GeoJSON MultiPoint'    
+          title: GeoJSON MultiPoint    
           type: object    
-        - description: 'GeoProperty. Geojson reference to the item. MultiLineString'    
+        - description: GeoProperty. Geojson reference to the item. MultiLineString    
           properties:    
             bbox:    
               items:    
@@ -275,9 +281,9 @@ RainFallRadarObserved:
           required:    
             - type    
             - coordinates    
-          title: 'GeoJSON MultiLineString'    
+          title: GeoJSON MultiLineString    
           type: object    
-        - description: 'GeoProperty. Geojson reference to the item. MultiLineString'    
+        - description: GeoProperty. Geojson reference to the item. MultiLineString    
           properties:    
             bbox:    
               items:    
@@ -303,94 +309,94 @@ RainFallRadarObserved:
           required:    
             - type    
             - coordinates    
-          title: 'GeoJSON MultiPolygon'    
+          title: GeoJSON MultiPolygon    
           type: object    
       x-ngsi:    
         type: GeoProperty    
     mapScale:    
-      description: 'Map Scale. Relationship between the length of the cellSize and its representation on the map'    
+      description: 'Property. Map Scale. Relationship between the length of the cellSize and its representation on the map. Model:''https://schema.org/Text'''    
       type: string    
       x-ngsi:    
         model: https://schema.org/Text    
         type: Property    
     measuredArea:    
-      description: 'Reference of the surface measured. The unit code (text) is given using the [UN/CEFACT Common Codes](http://wiki.goodrelations-vocabulary.org/Documentation/UN/CEFACT_Common_Codes). For instance, **MTK** represents Square Meters'    
+      description: 'Property. Reference of the surface measured. The unit code (text) is given using the [UN/CEFACT Common Codes](http://wiki.goodrelations-vocabulary.org/Documentation/UN/CEFACT_Common_Codes). For instance, **MTK** represents Square Meters. Model:''https://schema.org/Number''. Units:''square meters'''    
       minimum: 0    
       type: number    
       x-ngsi:    
         model: https://schema.org/Number    
         type: Property    
-        units: 'square meters'    
+        units: square meters    
     name:    
-      description: 'The name of this item.'    
+      description: The name of this item.    
       type: string    
       x-ngsi:    
         type: Property    
     numberOfCol:    
-      description: 'Number of Cols allowing the reading of the `rainFallradarContent` attribute'    
+      description: 'Property. Number of Cols allowing the reading of the `rainFallradarContent` attribute. Model:''https://schema.org/Number'''    
       minimum: 0    
       type: number    
       x-ngsi:    
         model: https://schema.org/Number    
         type: Property    
     numberOfRow:    
-      description: 'Number of Rows allowing the reading of the `rainFallradarContent` attribute'    
+      description: 'Property. Number of Rows allowing the reading of the `rainFallradarContent` attribute. Model:''https://schema.org/Number'''    
       minimum: 0    
       type: number    
       x-ngsi:    
         model: https://schema.org/Number    
         type: Property    
     owner:    
-      description: 'A List containing a JSON encoded sequence of characters referencing the unique Ids of the owner(s)'    
+      description: A List containing a JSON encoded sequence of characters referencing the unique Ids of the owner(s)    
       items:    
         anyOf: *rainfallradarobserved_-_properties_-_owner_-_items_-_anyof    
-        description: 'Property. Unique identifier of the entity'    
+        description: Property. Unique identifier of the entity    
       type: array    
       x-ngsi:    
         type: Property    
     rainFallRadarContent:    
-      description: 'Path and filename which provided the information observed'    
+      description: 'Property. Path and filename which provided the information observed. Model:''https://schema.org/Text'''    
       type: string    
       x-ngsi:    
         model: https://schema.org/Text    
         type: Property    
     refDevice:    
       anyOf:    
-        - description: 'Property. Identifier format of any NGSI entity'    
+        - description: Property. Identifier format of any NGSI entity    
           maxLength: 256    
           minLength: 1    
           pattern: ^[\w\-\.\{\}\$\+\*\[\]`|~^@!,:\\]+$    
           type: string    
-        - description: 'Property. Identifier format of any NGSI entity'    
+        - description: Property. Identifier format of any NGSI entity    
           format: uri    
           type: string    
-      description: 'Reference to a [Device](https://github.com/smart-data-models/dataModel.Device/blob/master/Device/doc/spec.md) which captured this observation'    
+      description: 'Relationship. Reference to a [Device](https://github.com/smart-data-models/dataModel.Device/blob/master/Device/doc/spec.md) which captured this observation. Model:''https://schema.org/URL'''    
       x-ngsi:    
         model: https://schema.org/URL    
         type: Relationship    
     refPointOfInterest:    
       anyOf:    
-        - description: 'Property. Identifier format of any NGSI entity'    
+        - description: Property. Identifier format of any NGSI entity    
           maxLength: 256    
           minLength: 1    
           pattern: ^[\w\-\.\{\}\$\+\*\[\]`|~^@!,:\\]+$    
           type: string    
-        - description: 'Property. Identifier format of any NGSI entity'    
+        - description: Property. Identifier format of any NGSI entity    
           format: uri    
           type: string    
-      description: 'Reference to a [PointOfInterest](https://github.com/smart-data-models/dataModel.PointOfInterest/blob/master/PointOfInterest/doc/spec.md) linked with the observation'    
+      description: 'Relationship. Reference to a [PointOfInterest](https://github.com/smart-data-models/dataModel.PointOfInterest/blob/master/PointOfInterest/doc/spec.md) linked with the observation. Model:''https://schema.org/URL'''    
       x-ngsi:    
         model: https://schema.org/URL    
         type: Relationship    
     relativeHumidity:    
-      description: 'Humidity in the Air. Observed instantaneous relative humidity (water vapour in air)'    
+      description: Humidity in the Air. Observed instantaneous relative humidity (water vapour in air)    
       maximum: 1    
       minimum: 0    
       type: number    
       x-ngsi:    
         type: Property    
     seeAlso:    
-      description: 'list of uri pointing to additional resources about the item'    
+      description: list of uri pointing to additional resources about the item    
       oneOf:    
         - items:    
             format: uri    
@@ -407,12 +413,12 @@ RainFallRadarObserved:
       x-ngsi:    
         type: Property    
     temperature:    
-      description: 'Temperature of the item'    
+      description: Temperature of the item    
       type: number    
       x-ngsi:    
         type: Property    
     type:    
-      description: 'NGSI Entity type. It has to be RainFallRadarObserved'    
+      description: Property. NGSI Entity type. It has to be RainFallRadarObserved    
       enum:    
         - RainFallRadarObserved    
       type: string    
@@ -430,18 +436,18 @@ RainFallRadarObserved:
           type: string    
         - minimum: 0    
           type: number    
-      description: 'Categories of visibility'    
+      description: Categories of visibility    
       x-ngsi:    
         model: http://schema.org/Text    
         type: Property    
     weatherType:    
-      description: 'Text description of the weather'    
+      description: Text description of the weather    
       type: string    
       x-ngsi:    
         model: http://schema.org/Text.    
         type: Property    
     windDirection:    
-      description: 'Direction of the wind bet'    
+      description: Direction of the wind bet    
       maximum: 360    
       minimum: 0    
       type: number    
@@ -449,7 +455,7 @@ RainFallRadarObserved:
         model: http://schema.org/Number    
         type: Property    
     windSpeed:    
-      description: 'Intensity of the wind'    
+      description: Intensity of the wind    
       minimum: 0    
       type: number    
       x-ngsi:    
@@ -463,7 +469,7 @@ RainFallRadarObserved:
     - rainFallRadarContent    
   type: object    
   x-derived-from: ""    
-  x-disclaimer: 'Redistribution and use in source and binary forms, with or without modification, are permitted  provided that the license conditions are met. Copyleft (c) 2021 Contributors to Smart Data Models Program'    
+  x-disclaimer: 'Redistribution and use in source and binary forms, with or without modification, are permitted  provided that the license conditions are met. Copyleft (c) 2022 Contributors to Smart Data Models Program'    
   x-license-url: https://github.com/smart-data-models/dataModel.Environment/blob/master/RainFallRadarObserved/LICENSE.md    
   x-model-schema: https://smart-data-models.github.io/dataModel.Weather/RainFallRadarObserved/schema.json    
   x-model-tags: ""    
@@ -475,8 +481,8 @@ RainFallRadarObserved:
 <!-- /70-MiddleNotes -->  
 <!-- 80-Examples -->  
 ## ペイロードの例  
-#### RainFallRadarObserved NGSI-v2 key-value の例。  
-以下はRainFallRadarObservedをJSON-LD形式でkey-valuesにした例である。これは、`options=keyValues`を使用した場合にNGSI-v2と互換性があり、個々のエンティティのコンテキストデータが返される。  
+#### RainFallRadarObserved NGSI-v2 キーバリュー例  
+RainFallRadarObservedをJSON-LD形式でkey-valuesとした例である。これは、`options=keyValues`を使用した場合にNGSI-v2と互換性があり、個々のエンティティのコンテキストデータを返します。  
 <details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
@@ -515,7 +521,7 @@ RainFallRadarObserved:
 ```  
 </details>  
 #### RainFallRadarObserved NGSI-v2 正規化例  
-以下は、RainFallRadarObservedを正規化したJSON-LD形式の例である。これはオプションを使用しない場合、NGSI-v2と互換性があり、個々のエンティティのコンテキストデータを返します。  
+RainFallRadarObservedをJSON-LD形式で正規化した例を示します。これは、オプションを使用しない場合のNGSI-v2と互換性があり、個々のエンティティのコンテキストデータを返します。  
 <details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
@@ -611,7 +617,7 @@ RainFallRadarObserved:
 ```  
 </details>  
 #### RainFallRadarObserved NGSI-LD キー値例  
-RainFallRadarObservedをJSON-LD形式でkey-valuesにした例です。これは、`options=keyValues`を使用した場合にNGSI-LDと互換性があり、個々のエンティティのコンテキストデータを返します。  
+RainFallRadarObservedをJSON-LD形式でkey-valuesとした例を示します。これは、`options=keyValues`を使用した場合にNGSI-LDと互換性があり、個々のエンティティのコンテキストデータを返します。  
 <details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
@@ -729,7 +735,7 @@ RainFallRadarObserved:
 ```  
 </details>  
 #### RainFallRadarObserved NGSI-LD 正規化例  
-以下は、RainFallRadarObservedを正規化したJSON-LD形式の例である。これはオプションを使用しない場合、NGSI-LDと互換性があり、個々のエンティティのコンテキストデータを返します。  
+RainFallRadarObservedをJSON-LD形式で正規化した例を示します。これは、オプションを使用しない場合のNGSI-LDと互換性があり、個々のエンティティのコンテキストデータを返します。  
 <details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
