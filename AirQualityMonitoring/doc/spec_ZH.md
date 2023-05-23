@@ -1,21 +1,21 @@
 <!-- 10-Header -->  
 [![Smart Data Models](https://smartdatamodels.org/wp-content/uploads/2022/01/SmartDataModels_logo.png "Logo")](https://smartdatamodels.org)  
-实体。空气质量监测  
+实体：空气质量监测  
 =========<!-- /10-Header -->  
 <!-- 15-License -->  
 [开放许可](https://github.com/smart-data-models//dataModel.Environment/blob/master/AirQualityMonitoring/LICENSE.md)  
 [文件自动生成](https://docs.google.com/presentation/d/e/2PACX-1vTs-Ng5dIAwkg91oTTUdt8ua7woBXhPnwavZ0FxgR8BsAI_Ek3C5q97Nd94HS8KhP-r_quD4H0fgyt3/pub?start=false&loop=false&delayms=3000#slide=id.gb715ace035_0_60)  
 <!-- /15-License -->  
 <!-- 20-Description -->  
-全球描述。**空气质量监测（AQM）数据模型。  
-版本：0.0.1  
+全球描述：**空气质量监测（AQM）数据模型。  
+版本：0.0.3  
 <!-- /20-Description -->  
 <!-- 30-PropertiesList -->  
 
 ##属性列表  
 
 <sup><sub>[*] 如果一个属性中没有一个类型，是因为它可能有几种类型或不同的格式/模式</sub></sup>。  
-- `airQualityIndex[number]`: 观察到的空气质量总体指数（AQI）。  . Model: [https://schema.org/Number](https://schema.org/Number)- `airQualityLevel[string]`: 空气质量类别指示。根据当地卫生机构定义的定性水平。例如，"好"、"中等"、"差"、"不健康"、"严重"、"危险 "等。  . Model: [https://schema.org/Text](https://schema.org/Text)- `airTemperatureTSA[object]`: 定义一个基本属性在一个时期内的时间处理的对象。它提供了最大值、最小值、即时值和平均值。  - `alternateName[string]`: 这个项目的一个替代名称  - `ambientNoiseTSA[object]`: 定义一个基本属性在一个时期内的时间处理的对象。它提供了最大值、最小值、即时值和平均值。  - `aqiMajorPollutant[string]`: 空气质量指数（AQI）中的主要污染物。Enum:'砷，bap，苯，co2，nh3，no，no2，o2，o3，so2，pb'  . Model: [https://schema.org/Text](https://schema.org/Text)- `arsenicTSA[object]`: 定义一个基本属性在一个时期内的时间处理的对象。它提供了最大值、最小值、即时值和平均值。  - `atmosphericPressure[number]`: 观察到的空气（大气或气压）压力。  . Model: [https://schema.org/Number](https://schema.org/Number)- `atmosphericPressureTSA[object]`: 定义一个基本属性在一个时期内的时间处理的对象。它提供了最大值、最小值、瞬时值和平均值。  - `bapTSA[object]`: 定义一个基本属性在一个时期内的时间处理的对象。它提供了最大值、最小值、即时值和平均值。  - `benzeneTSA[object]`: 定义一个基本属性在一个时期内的时间处理的对象。它提供了最大值、最小值、即时值和平均值。  - `co2TSA[object]`: 定义一个基本属性在一个时期内的时间处理的对象。它提供了最大值、最小值、即时值和平均值。  - `coTSA[object]`: 定义一个基本属性在一个时期内的时间处理的对象。它提供了最大值、最小值、即时值和平均值。  - `dataProvider[string]`: 一串识别统一数据实体提供者的字符。  - `dateCreated[string]`: 实体创建时间戳。这通常会由存储平台分配。  - `dateModified[string]`: 实体最后一次修改的时间戳。这通常会由存储平台分配。  - `description[string]`: 对这个项目的描述  - `deviceInfo[object]`: 与观察结果有关的设备信息。  - `deviceStatus[string]`: 表示物理设备或设备的状态。  . Model: [https://schema.org/Text](https://schema.org/Text)- `id[*]`: 实体的唯一标识符  - `illuminance[number]`: 测量的光照度  - `name[string]`: 这个项目的名称。  - `nh3TSA[object]`: 定义一个基本属性在一个时期内的时间处理的对象。它提供了最大值、最小值、即时值和平均值。  - `nickelTSA[object]`: 定义一个基本属性在一个时期内的时间处理的对象。它提供了最大值、最小值、即时值和平均值。  - `no2TSA[object]`: 定义一个基本属性在一个时期内的时间处理的对象。它提供了最大值、最小值、即时值和平均值。  - `noTSA[object]`: 定义一个基本属性在一个时期内的时间处理的对象。它提供了最大值、最小值、即时值和平均值。  - `o2TSA[object]`: 定义一个基本属性在一个时期内的时间处理的对象。它提供了最大值、最小值、即时值和平均值。  - `o3TSA[object]`: 定义一个基本属性在一个时期内的时间处理的对象。它提供了最大值、最小值、即时值和平均值。  - `observationDateTime[string]`: 最后报告的观察时间。  . Model: [https://schema.org/DateTime](https://schema.org/DateTime)- `owner[array]`: 一个包含JSON编码的字符序列的列表，引用所有者的唯一Ids。  - `pbTSA[object]`: 定义一个基本属性在一个时期内的时间处理的对象。它提供了最大值、最小值、瞬时值和平均值。  - `pm10TSA[object]`: 定义一个基本属性在一个时期内的时间处理的对象。它提供了最大值、最小值、即时值和平均值。  - `pm25TSA[object]`: 定义一个基本属性在一个时期内的时间处理的对象。它提供了最大值、最小值、瞬时值和平均值。  - `precipitation[number]`: 在一定时间内观察到的降水/降雨量。  . Model: [https://schema.org/Number](https://schema.org/Number)- `relativeHumidityTSA[object]`: 定义一个基本属性在一个时期内的时间处理的对象。它提供了最大值、最小值、即时值和平均值。  - `seeAlso[*]`: 指向有关该项目的其他资源的URI列表  - `so2TSA[object]`: 定义一个基本属性在一个时期内的时间处理的对象。它提供了最大值、最小值、即时值和平均值。  - `solarRadiation[number]`: 以千瓦/平方米为单位的瞬时太阳辐射  . Model: [http://schema.org/Number](http://schema.org/Number)- `source[string]`: 提供实体数据原始来源的一连串字符，作为一个URL。建议为源提供者的完全合格域名，或源对象的URL。  - `type[string]`: NGSI类型。它必须是AirQualityMonitoring  - `uvTSA[object]`: 定义一个基本属性在一个时期内的时间处理的对象。它提供了最大值、最小值、瞬时值和平均值。  - `versionInfo[object]`: 与此观察相对应的版本信息。  <!-- /30-PropertiesList -->  
+- `airQualityIndex[number]`: 观察到的空气质量总体指数（AQI）。  . Model: [https://schema.org/Number](https://schema.org/Number)- `airQualityLevel[string]`: 空气质量类别指示。根据当地卫生机构定义的定性水平。例如，"好"、"中等"、"差"、"不健康"、"严重"、"危险 "等。  . Model: [https://schema.org/Text](https://schema.org/Text)- `airTemperatureTSA[object]`: 定义一个基本属性在一个时期内的时间处理的对象。它提供了最大值、最小值、即时值和平均值。  - `alternateName[string]`: 这个项目的一个替代名称  - `ambientNoiseTSA[object]`: 定义一个基本属性在一个时期内的时间处理的对象。它提供了最大值、最小值、即时值和平均值。  - `aqiMajorPollutant[string]`: 空气质量指数（AQI）中的主要污染物。Enum:'砷，bap，苯，co2，nh3，no，no2，o2，o3，so2，pb'  . Model: [https://schema.org/Text](https://schema.org/Text)- `arsenicTSA[object]`: 定义一个基本属性在一个时期内的时间处理的对象。它提供了最大值、最小值、即时值和平均值。  - `atmosphericPressure[number]`: 观察到的空气（大气或气压）压力。  . Model: [https://schema.org/Number](https://schema.org/Number)- `atmosphericPressureTSA[object]`: 定义一个基本属性在一个时期内的时间处理的对象。它提供了最大值、最小值、即时值和平均值。  - `bapTSA[object]`: 定义一个基本属性在一个时期内的时间处理的对象。它提供了最大值、最小值、即时值和平均值。  - `benzeneTSA[object]`: 定义一个基本属性在一个时期内的时间处理的对象。它提供了最大值、最小值、即时值和平均值。  - `co2TSA[object]`: 定义一个基本属性在一个时期内的时间处理的对象。它提供了最大值、最小值、即时值和平均值。  - `coTSA[object]`: 定义一个基本属性在一个时期内的时间处理的对象。它提供了最大值、最小值、即时值和平均值。  - `dataProvider[string]`: 一串识别统一数据实体提供者的字符。  - `dateCreated[string]`: 实体创建时间戳。这通常会由存储平台分配。  - `dateModified[string]`: 实体最后一次修改的时间戳。这通常会由存储平台分配。  - `description[string]`: 对这个项目的描述  - `deviceInfo[object]`: 与观察结果有关的设备信息。  - `deviceStatus[string]`: 表明物理设备或设备的状态。  . Model: [https://schema.org/Text](https://schema.org/Text)- `id[*]`: 实体的唯一标识符  - `illuminance[number]`: 测量的光照度  - `name[string]`: 这个项目的名称。  - `nh3TSA[object]`: 定义一个基本属性在一个时期内的时间处理的对象。它提供了最大值、最小值、即时值和平均值。  - `nickelTSA[object]`: 定义一个基本属性在一个时期内的时间处理的对象。它提供了最大值、最小值、即时值和平均值。  - `no2TSA[object]`: 定义一个基本属性在一个时期内的时间处理的对象。它提供了最大值、最小值、即时值和平均值。  - `noTSA[object]`: 定义一个基本属性在一个时期内的时间处理的对象。它提供了最大值、最小值、瞬时值和平均值。  - `o2TSA[object]`: 定义一个基本属性在一个时期内的时间处理的对象。它提供了最大值、最小值、即时值和平均值。  - `o3TSA[object]`: 定义一个基本属性在一个时期内的时间处理的对象。它提供了最大值、最小值、即时值和平均值。  - `observationDateTime[string]`: 最后报告的观察时间。  . Model: [https://schema.org/DateTime](https://schema.org/DateTime)- `owner[array]`: 一个包含JSON编码的字符序列的列表，引用所有者的唯一Ids。  - `pbTSA[object]`: 定义一个基本属性在一个时期内的时间处理的对象。它提供了最大值、最小值、即时值和平均值。  - `pm10TSA[object]`: 定义一个基本属性在一个时期内的时间处理的对象。它提供了最大值、最小值、即时值和平均值。  - `pm25TSA[object]`: 定义一个基本属性在一个时期内的时间处理的对象。它提供了最大值、最小值、瞬时值和平均值。  - `precipitation[number]`: 在一定时间内观察到的降水/降雨量。  . Model: [https://schema.org/Number](https://schema.org/Number)- `relativeHumidityTSA[object]`: 定义一个基本属性在一个时期内的时间处理的对象。它提供了最大值、最小值、瞬时值和平均值。  - `seeAlso[*]`: 指向有关该项目的其他资源的URI列表  - `so2TSA[object]`: 定义一个基本属性在一个时期内的时间处理的对象。它提供了最大值、最小值、即时值和平均值。  - `solarRadiation[number]`: 以千瓦/平方米为单位的瞬时太阳辐射  . Model: [http://schema.org/Number](http://schema.org/Number)- `source[string]`: 一系列的字符，以URL的形式给出实体数据的原始来源。建议为源提供者的完全合格域名，或源对象的URL。  - `type[string]`: NGSI类型。它必须是AirQualityMonitoring  - `uvTSA[object]`: 定义一个基本属性在一个时期内的时间处理的对象。它提供了最大值、最小值、即时值和平均值。  - `versionInfo[object]`: 与此观察相对应的版本信息。  <!-- /30-PropertiesList -->  
 <!-- 35-RequiredProperties -->  
 所需属性  
 - `id`  - `type`  <!-- /35-RequiredProperties -->  
@@ -29,10 +29,10 @@
 <details><summary><strong>full yaml details</strong></summary>    
 ```yaml  
 AirQualityMonitoring:    
-  description: 'Air Quality Monitoring (AQM) Data Model.'    
+  description: Air Quality Monitoring (AQM) Data Model.    
   properties:    
     airQualityIndex:    
-      description: 'Overall Air Quality Index (AQI) for the observed air quality.'    
+      description: Overall Air Quality Index (AQI) for the observed air quality.    
       type: number    
       x-ngsi:    
         model: https://schema.org/Number    
@@ -46,9 +46,9 @@ AirQualityMonitoring:
     airTemperatureTSA:    
       description: 'Object defining the temporal processing of a basic property during a period. It provides Maximum, minimum, instant value and average'    
       properties: &airqualitymonitoring_-_properties_-_ambientnoisetsa_-_properties    
-        instValue:    
+        averageValue:    
           type: number    
-        instvalue:    
+        instValue:    
           type: number    
         maxOverTime:    
           type: number    
@@ -58,7 +58,7 @@ AirQualityMonitoring:
       x-ngsi:    
         type: Property    
     alternateName:    
-      description: 'An alternative name for this item'    
+      description: An alternative name for this item    
       type: string    
       x-ngsi:    
         type: Property    
@@ -93,7 +93,7 @@ AirQualityMonitoring:
       x-ngsi:    
         type: Property    
     atmosphericPressure:    
-      description: 'Observed air (atmospheric or barometric) pressure.'    
+      description: Observed air (atmospheric or barometric) pressure.    
       type: number    
       x-ngsi:    
         model: https://schema.org/Number    
@@ -129,29 +129,29 @@ AirQualityMonitoring:
       x-ngsi:    
         type: Property    
     dataProvider:    
-      description: 'A sequence of characters identifying the provider of the harmonised data entity.'    
+      description: A sequence of characters identifying the provider of the harmonised data entity.    
       type: string    
       x-ngsi:    
         type: Property    
     dateCreated:    
-      description: 'Entity creation timestamp. This will usually be allocated by the storage platform.'    
+      description: Entity creation timestamp. This will usually be allocated by the storage platform.    
       format: date-time    
       type: string    
       x-ngsi:    
         type: Property    
     dateModified:    
-      description: 'Timestamp of the last modification of the entity. This will usually be allocated by the storage platform.'    
+      description: Timestamp of the last modification of the entity. This will usually be allocated by the storage platform.    
       format: date-time    
       type: string    
       x-ngsi:    
         type: Property    
     description:    
-      description: 'A description of this item'    
+      description: A description of this item    
       type: string    
       x-ngsi:    
         type: Property    
     deviceInfo:    
-      description: 'Information about the device associated with the observations.'    
+      description: Information about the device associated with the observations.    
       properties:    
         RFID:    
           description: 'Property. Model:''https://schema.org/Text''. Gives the ID of the RFID reader.'    
@@ -195,45 +195,45 @@ AirQualityMonitoring:
           type: string    
         refDevice:    
           anyOf:    
-            - description: 'Property. Identifier format of any NGSI entity'    
+            - description: Property. Identifier format of any NGSI entity    
               maxLength: 256    
               minLength: 1    
               pattern: ^[\w\-\.\{\}\$\+\*\[\]`|~^@!,:\\]+$    
               type: string    
-            - description: 'Property. Identifier format of any NGSI entity'    
+            - description: Property. Identifier format of any NGSI entity    
               format: uri    
               type: string    
-          description: 'Relationship. Unique identifier of the entity'    
+          description: Relationship. Unique identifier of the entity    
       type: object    
       x-ngsi:    
         type: Property    
     deviceStatus:    
-      description: 'Indicates the status of physical device or devices.'    
+      description: Indicates the status of physical device or devices.    
       type: string    
       x-ngsi:    
         model: https://schema.org/Text    
         type: Property    
     id:    
       anyOf: &airqualitymonitoring_-_properties_-_owner_-_items_-_anyof    
-        - description: 'Property. Identifier format of any NGSI entity'    
+        - description: Property. Identifier format of any NGSI entity    
           maxLength: 256    
           minLength: 1    
           pattern: ^[\w\-\.\{\}\$\+\*\[\]`|~^@!,:\\]+$    
           type: string    
-        - description: 'Property. Identifier format of any NGSI entity'    
+        - description: Property. Identifier format of any NGSI entity    
           format: uri    
           type: string    
-      description: 'Unique identifier of the entity'    
+      description: Unique identifier of the entity    
       x-ngsi:    
         type: Property    
     illuminance:    
-      description: 'Measured illuminance'    
+      description: Measured illuminance    
       minimum: 0    
       type: number    
       x-ngsi:    
         type: Property    
     name:    
-      description: 'The name of this item.'    
+      description: The name of this item.    
       type: string    
       x-ngsi:    
         type: Property    
@@ -274,17 +274,17 @@ AirQualityMonitoring:
       x-ngsi:    
         type: Property    
     observationDateTime:    
-      description: 'Last reported time of observation.'    
+      description: Last reported time of observation.    
       format: date-time    
       type: string    
       x-ngsi:    
         model: https://schema.org/DateTime    
         type: Property    
     owner:    
-      description: 'A List containing a JSON encoded sequence of characters referencing the unique Ids of the owner(s)'    
+      description: A List containing a JSON encoded sequence of characters referencing the unique Ids of the owner(s)    
       items:    
         anyOf: *airqualitymonitoring_-_properties_-_owner_-_items_-_anyof    
-        description: 'Property. Unique identifier of the entity'    
+        description: Property. Unique identifier of the entity    
       type: array    
       x-ngsi:    
         type: Property    
@@ -307,7 +307,7 @@ AirQualityMonitoring:
       x-ngsi:    
         type: Property    
     precipitation:    
-      description: 'Observed precipitation/rainfall level over a given duration.'    
+      description: Observed precipitation/rainfall level over a given duration.    
       type: number    
       x-ngsi:    
         model: https://schema.org/Number    
@@ -319,7 +319,7 @@ AirQualityMonitoring:
       x-ngsi:    
         type: Property    
     seeAlso:    
-      description: 'list of uri pointing to additional resources about the item'    
+      description: list of uri pointing to additional resources about the item    
       oneOf:    
         - items:    
             format: uri    
@@ -337,7 +337,7 @@ AirQualityMonitoring:
       x-ngsi:    
         type: Property    
     solarRadiation:    
-      description: 'Instantaneous solar radiation measured in kW/m2'    
+      description: Instantaneous solar radiation measured in kW/m2    
       type: number    
       x-ngsi:    
         model: http://schema.org/Number    
@@ -349,7 +349,7 @@ AirQualityMonitoring:
       x-ngsi:    
         type: Property    
     type:    
-      description: 'NGSI type. it has to be AirQualityMonitoring'    
+      description: NGSI type. it has to be AirQualityMonitoring    
       enum:    
         - AirQualityMonitoring    
       type: string    
@@ -362,7 +362,7 @@ AirQualityMonitoring:
       x-ngsi:    
         type: Property    
     versionInfo:    
-      description: 'Version information corresponding to this observation.'    
+      description: Version information corresponding to this observation.    
       properties:    
         comments:    
           description: 'Property. Model:''https://schema.org/Text''. User comments corresponding to this observation.'    
@@ -379,7 +379,7 @@ AirQualityMonitoring:
           description: 'Property. Model:''https://schema.org/Text''. Version name corresponding to this observation'    
           type: string    
         windType:    
-          description: 'Property. Wind type dominate during the last 24 hours.'    
+          description: Property. Wind type dominate during the last 24 hours.    
           type: string    
       type: object    
       x-ngsi:    
@@ -389,11 +389,11 @@ AirQualityMonitoring:
     - type    
   type: object    
   x-derived-from: ""    
-  x-disclaimer: 'Redistribution and use in source and binary forms, with or without modification, are permitted  provided that the license conditions are met. Copyleft (c) 2021 Contributors to Smart Data Models Program'    
+  x-disclaimer: 'Redistribution and use in source and binary forms, with or without modification, are permitted  provided that the license conditions are met. Copyleft (c) 2022 Contributors to Smart Data Models Program'    
   x-license-url: https://github.com/smart-data-models/dataModel.Environment/blob/master/AirQualityMonitoring/LICENSE.md    
   x-model-schema: https://smart-data-models.github.io/dataModel.Environment/AirQualityMonitoring/schema.json    
-  x-model-tags: ""    
-  x-version: 0.0.1    
+  x-model-tags: GreenMov    
+  x-version: 0.0.3    
 ```  
 </details>    
 <!-- /60-ModelYaml -->  
@@ -402,7 +402,7 @@ AirQualityMonitoring:
 <!-- 80-Examples -->  
 ## ＃＃＃＃有效载荷的例子  
 #### AirQualityMonitoring NGSI-v2 key-values 示例  
-下面是一个以JSON-LD格式作为关键值的AirQualityMonitoring的例子。当使用`options=keyValues`时，这与NGSI-v2兼容，并返回单个实体的上下文数据。  
+这里是一个以JSON-LD格式作为关键值的AirQualityMonitoring的例子。当使用`options=keyValues`时，这与NGSI-v2兼容，并返回单个实体的上下文数据。  
 <details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
@@ -964,7 +964,7 @@ AirQualityMonitoring:
         "maxOverTime": 59.2,  
         "minOverTime": 50.5  
     },  
-    "aqiMajorPollutant": "No2",  
+    "aqiMajorPollutant": "no2",  
     "areaServed": "Bangalore",  
     "arsenicTSA": {  
         "avgOverTime": 0.4,  
