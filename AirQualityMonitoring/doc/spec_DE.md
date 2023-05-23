@@ -8,14 +8,14 @@
 <!-- /15-License -->  
 <!-- 20-Description -->  
 Globale Beschreibung: **Datenmodell für die Überwachung der Luftqualität (AQM).**  
-Version: 0.0.1  
+Version: 0.0.3  
 <!-- /20-Description -->  
 <!-- 30-PropertiesList -->  
 
 ## Liste der Eigenschaften  
 
-<sup><sub>[*] Wenn es für ein Attribut keinen Typ gibt, liegt das daran, dass es mehrere Typen oder unterschiedliche Formate/Muster haben kann</sub></sup>.  
-- `airQualityIndex[number]`: Gesamtluftqualitätsindex (AQI) für die beobachtete Luftqualität.  . Model: [https://schema.org/Number](https://schema.org/Number)- `airQualityLevel[string]`: Angabe der Luftqualitätskategorie. Qualitative Stufe, die von den örtlichen Gesundheitsbehörden festgelegt wird. Zum Beispiel "GUT", "MÄSSIG", "SCHLECHT", "GESUNDHEITLICHER Zustand", "SCHWER", "GEFÄHRLICH" usw.  . Model: [https://schema.org/Text](https://schema.org/Text)- `airTemperatureTSA[object]`: Objekt, das die zeitliche Verarbeitung einer Grundeigenschaft während eines Zeitraums definiert. Es bietet Maximum, Minimum, Momentanwert und Durchschnitt  - `alternateName[string]`: Ein alternativer Name für diesen Artikel  - `ambientNoiseTSA[object]`: Objekt, das die zeitliche Verarbeitung einer Grundeigenschaft während eines Zeitraums definiert. Es bietet Maximum, Minimum, Momentanwert und Durchschnitt  - `aqiMajorPollutant[string]`: Hauptschadstoff im Luftqualitätsindex (AQI). Enum:'Arsen, bap, Benzol, co2, nh3, no, no2, o2, o3, so2, pb'  . Model: [https://schema.org/Text](https://schema.org/Text)- `arsenicTSA[object]`: Objekt, das die zeitliche Verarbeitung einer Grundeigenschaft während eines Zeitraums definiert. Es bietet Maximum, Minimum, Momentanwert und Durchschnitt  - `atmosphericPressure[number]`: Beobachteter (atmosphärischer oder barometrischer) Luftdruck.  . Model: [https://schema.org/Number](https://schema.org/Number)- `atmosphericPressureTSA[object]`: Objekt, das die zeitliche Verarbeitung einer Grundeigenschaft während eines Zeitraums definiert. Es bietet Maximum, Minimum, Momentanwert und Durchschnitt  - `bapTSA[object]`: Objekt, das die zeitliche Verarbeitung einer Grundeigenschaft während eines Zeitraums definiert. Es bietet Maximum, Minimum, Momentanwert und Durchschnitt  - `benzeneTSA[object]`: Objekt, das die zeitliche Verarbeitung einer Grundeigenschaft während eines Zeitraums definiert. Es bietet Maximum, Minimum, Momentanwert und Durchschnitt  - `co2TSA[object]`: Objekt, das die zeitliche Verarbeitung einer Grundeigenschaft während eines Zeitraums definiert. Es bietet Maximum, Minimum, Momentanwert und Durchschnitt  - `coTSA[object]`: Objekt, das die zeitliche Verarbeitung einer Grundeigenschaft während eines Zeitraums definiert. Es bietet Maximum, Minimum, Momentanwert und Durchschnitt  - `dataProvider[string]`: Eine Folge von Zeichen zur Identifizierung des Anbieters der harmonisierten Dateneinheit.  - `dateCreated[string]`: Zeitstempel der Entitätserstellung. Dieser wird in der Regel von der Speicherplattform zugewiesen.  - `dateModified[string]`: Zeitstempel der letzten Änderung der Entität. Dieser wird in der Regel von der Speicherplattform vergeben.  - `description[string]`: Eine Beschreibung dieses Artikels  - `deviceInfo[object]`: Informationen über das Gerät, das mit den Beobachtungen verbunden ist.  - `deviceStatus[string]`: Zeigt den Status des physischen Geräts oder der physischen Geräte an.  . Model: [https://schema.org/Text](https://schema.org/Text)- `id[*]`: Eindeutiger Bezeichner der Entität  - `illuminance[number]`: Gemessene Beleuchtungsstärke  - `name[string]`: Der Name dieses Artikels.  - `nh3TSA[object]`: Objekt, das die zeitliche Verarbeitung einer Grundeigenschaft während eines Zeitraums definiert. Es bietet Maximum, Minimum, Momentanwert und Durchschnitt  - `nickelTSA[object]`: Objekt, das die zeitliche Verarbeitung einer Grundeigenschaft während eines Zeitraums definiert. Es bietet Maximum, Minimum, Momentanwert und Durchschnitt  - `no2TSA[object]`: Objekt, das die zeitliche Verarbeitung einer Grundeigenschaft während eines Zeitraums definiert. Es bietet Maximum, Minimum, Momentanwert und Durchschnitt  - `noTSA[object]`: Objekt, das die zeitliche Verarbeitung einer Grundeigenschaft während eines Zeitraums definiert. Es bietet Maximum, Minimum, Momentanwert und Durchschnitt  - `o2TSA[object]`: Objekt, das die zeitliche Verarbeitung einer Grundeigenschaft während eines Zeitraums definiert. Es bietet Maximum, Minimum, Momentanwert und Durchschnitt  - `o3TSA[object]`: Objekt, das die zeitliche Verarbeitung einer Grundeigenschaft während eines Zeitraums definiert. Es bietet Maximum, Minimum, Momentanwert und Durchschnitt  - `observationDateTime[string]`: Letzter gemeldeter Zeitpunkt der Beobachtung.  . Model: [https://schema.org/DateTime](https://schema.org/DateTime)- `owner[array]`: Eine Liste mit einer JSON-kodierten Zeichenfolge, die auf die eindeutigen Kennungen der Eigentümer verweist  - `pbTSA[object]`: Objekt, das die zeitliche Verarbeitung einer Grundeigenschaft während eines Zeitraums definiert. Es bietet Maximum, Minimum, Momentanwert und Durchschnitt  - `pm10TSA[object]`: Objekt, das die zeitliche Verarbeitung einer Grundeigenschaft während eines Zeitraums definiert. Es bietet Maximum, Minimum, Momentanwert und Durchschnitt  - `pm25TSA[object]`: Objekt, das die zeitliche Verarbeitung einer Grundeigenschaft während eines Zeitraums definiert. Es bietet Maximum, Minimum, Momentanwert und Durchschnitt  - `precipitation[number]`: Beobachtete Niederschlagsmenge über eine bestimmte Dauer.  . Model: [https://schema.org/Number](https://schema.org/Number)- `relativeHumidityTSA[object]`: Objekt, das die zeitliche Verarbeitung einer Grundeigenschaft während eines Zeitraums definiert. Es bietet Maximum, Minimum, Momentanwert und Durchschnitt  - `seeAlso[*]`: Liste von URLs, die auf zusätzliche Ressourcen zu dem Artikel verweisen  - `so2TSA[object]`: Objekt, das die zeitliche Verarbeitung einer Grundeigenschaft während eines Zeitraums definiert. Es bietet Maximum, Minimum, Momentanwert und Durchschnitt  - `solarRadiation[number]`: Momentane Sonneneinstrahlung gemessen in kW/m2  . Model: [http://schema.org/Number](http://schema.org/Number)- `source[string]`: Eine Folge von Zeichen, die die ursprüngliche Quelle der Entitätsdaten als URL angibt. Es wird empfohlen, den voll qualifizierten Domänennamen des Quellanbieters oder die URL des Quellobjekts zu verwenden.  - `type[string]`: NGSI-Typ. es muss AirQualityMonitoring sein  - `uvTSA[object]`: Objekt, das die zeitliche Verarbeitung einer Grundeigenschaft während eines Zeitraums definiert. Es bietet Maximum, Minimum, Momentanwert und Durchschnitt  - `versionInfo[object]`: Versionsinformationen zu dieser Beobachtung.  <!-- /30-PropertiesList -->  
+<sup><sub>[*] Wenn es für ein Attribut keinen Typ gibt, kann es mehrere Typen oder verschiedene Formate/Muster haben</sub></sup>.  
+- `airQualityIndex[number]`: Gesamtluftqualitätsindex (AQI) für die beobachtete Luftqualität.  . Model: [https://schema.org/Number](https://schema.org/Number)- `airQualityLevel[string]`: Angabe der Luftqualitätskategorie. Qualitative Stufe, die von den örtlichen Gesundheitsbehörden festgelegt wird. Zum Beispiel "GUT", "MÄSSIG", "SCHLECHT", "GESUNDHEITLICH", "SCHWER", "GEFÄHRLICH" usw.  . Model: [https://schema.org/Text](https://schema.org/Text)- `airTemperatureTSA[object]`: Objekt, das die zeitliche Verarbeitung einer Grundeigenschaft während eines Zeitraums definiert. Es bietet Maximum, Minimum, Momentanwert und Durchschnitt  - `alternateName[string]`: Ein alternativer Name für diesen Artikel  - `ambientNoiseTSA[object]`: Objekt, das die zeitliche Verarbeitung einer Grundeigenschaft während eines Zeitraums definiert. Es bietet Maximum, Minimum, Momentanwert und Durchschnitt  - `aqiMajorPollutant[string]`: Hauptschadstoff im Luftqualitätsindex (AQI). Enum:'Arsen, bap, Benzol, co2, nh3, no, no2, o2, o3, so2, pb'  . Model: [https://schema.org/Text](https://schema.org/Text)- `arsenicTSA[object]`: Objekt, das die zeitliche Verarbeitung einer Grundeigenschaft während eines Zeitraums definiert. Es bietet Maximum, Minimum, Momentanwert und Durchschnitt  - `atmosphericPressure[number]`: Beobachteter (atmosphärischer oder barometrischer) Luftdruck.  . Model: [https://schema.org/Number](https://schema.org/Number)- `atmosphericPressureTSA[object]`: Objekt, das die zeitliche Verarbeitung einer Grundeigenschaft während eines Zeitraums definiert. Es bietet Maximum, Minimum, Momentanwert und Durchschnitt  - `bapTSA[object]`: Objekt, das die zeitliche Verarbeitung einer Grundeigenschaft während eines Zeitraums definiert. Es bietet Maximum, Minimum, Momentanwert und Durchschnitt  - `benzeneTSA[object]`: Objekt, das die zeitliche Verarbeitung einer Grundeigenschaft während eines Zeitraums definiert. Es bietet Maximum, Minimum, Momentanwert und Durchschnitt  - `co2TSA[object]`: Objekt, das die zeitliche Verarbeitung einer Grundeigenschaft während eines Zeitraums definiert. Es bietet Maximum, Minimum, Momentanwert und Durchschnitt  - `coTSA[object]`: Objekt, das die zeitliche Verarbeitung einer Grundeigenschaft während eines Zeitraums definiert. Es bietet Maximum, Minimum, Momentanwert und Durchschnitt  - `dataProvider[string]`: Eine Folge von Zeichen zur Identifizierung des Anbieters der harmonisierten Dateneinheit.  - `dateCreated[string]`: Zeitstempel der Entitätserstellung. Dieser wird in der Regel von der Speicherplattform zugewiesen.  - `dateModified[string]`: Zeitstempel der letzten Änderung der Entität. Dieser wird in der Regel von der Speicherplattform vergeben.  - `description[string]`: Eine Beschreibung dieses Artikels  - `deviceInfo[object]`: Informationen über das Gerät, das mit den Beobachtungen verbunden ist.  - `deviceStatus[string]`: Zeigt den Status des physischen Geräts oder der physischen Geräte an.  . Model: [https://schema.org/Text](https://schema.org/Text)- `id[*]`: Eindeutiger Bezeichner der Entität  - `illuminance[number]`: Gemessene Beleuchtungsstärke  - `name[string]`: Der Name dieses Artikels.  - `nh3TSA[object]`: Objekt, das die zeitliche Verarbeitung einer Grundeigenschaft während eines Zeitraums definiert. Es bietet Maximum, Minimum, Momentanwert und Durchschnitt  - `nickelTSA[object]`: Objekt, das die zeitliche Verarbeitung einer Grundeigenschaft während eines Zeitraums definiert. Es bietet Maximum, Minimum, Momentanwert und Durchschnitt  - `no2TSA[object]`: Objekt, das die zeitliche Verarbeitung einer Grundeigenschaft während eines Zeitraums definiert. Es bietet Maximum, Minimum, Momentanwert und Durchschnitt  - `noTSA[object]`: Objekt, das die zeitliche Verarbeitung einer Grundeigenschaft während eines Zeitraums definiert. Es bietet Maximum, Minimum, Momentanwert und Durchschnitt  - `o2TSA[object]`: Objekt, das die zeitliche Verarbeitung einer Grundeigenschaft während eines Zeitraums definiert. Es bietet Maximum, Minimum, Momentanwert und Durchschnitt  - `o3TSA[object]`: Objekt, das die zeitliche Verarbeitung einer Grundeigenschaft während eines Zeitraums definiert. Es bietet Maximum, Minimum, Momentanwert und Durchschnitt  - `observationDateTime[string]`: Letzter gemeldeter Zeitpunkt der Beobachtung.  . Model: [https://schema.org/DateTime](https://schema.org/DateTime)- `owner[array]`: Eine Liste mit einer JSON-kodierten Zeichenfolge, die auf die eindeutigen Kennungen der Eigentümer verweist  - `pbTSA[object]`: Objekt, das die zeitliche Verarbeitung einer Grundeigenschaft während eines Zeitraums definiert. Es bietet Maximum, Minimum, Momentanwert und Durchschnitt  - `pm10TSA[object]`: Objekt, das die zeitliche Verarbeitung einer Grundeigenschaft während eines Zeitraums definiert. Es bietet Maximum, Minimum, Momentanwert und Durchschnitt  - `pm25TSA[object]`: Objekt, das die zeitliche Verarbeitung einer Grundeigenschaft während eines Zeitraums definiert. Es bietet Maximum, Minimum, Momentanwert und Durchschnitt  - `precipitation[number]`: Beobachtete Niederschlagsmenge über eine bestimmte Dauer.  . Model: [https://schema.org/Number](https://schema.org/Number)- `relativeHumidityTSA[object]`: Objekt, das die zeitliche Verarbeitung einer Grundeigenschaft während eines Zeitraums definiert. Es bietet Maximum, Minimum, Momentanwert und Durchschnitt  - `seeAlso[*]`: Liste von URLs, die auf zusätzliche Ressourcen zu dem Artikel verweisen  - `so2TSA[object]`: Objekt, das die zeitliche Verarbeitung einer Grundeigenschaft während eines Zeitraums definiert. Es bietet Maximum, Minimum, Momentanwert und Durchschnitt  - `solarRadiation[number]`: Momentane Sonneneinstrahlung gemessen in kW/m2  . Model: [http://schema.org/Number](http://schema.org/Number)- `source[string]`: Eine Folge von Zeichen, die die ursprüngliche Quelle der Entitätsdaten als URL angibt. Es wird empfohlen, den voll qualifizierten Domänennamen des Quellanbieters oder die URL des Quellobjekts zu verwenden.  - `type[string]`: NGSI-Typ. es muss AirQualityMonitoring sein  - `uvTSA[object]`: Objekt, das die zeitliche Verarbeitung einer Grundeigenschaft während eines Zeitraums definiert. Es bietet Maximum, Minimum, Momentanwert und Durchschnitt  - `versionInfo[object]`: Versionsinformationen zu dieser Beobachtung.  <!-- /30-PropertiesList -->  
 <!-- 35-RequiredProperties -->  
 Erforderliche Eigenschaften  
 - `id`  - `type`  <!-- /35-RequiredProperties -->  
@@ -29,10 +29,10 @@
 <details><summary><strong>full yaml details</strong></summary>    
 ```yaml  
 AirQualityMonitoring:    
-  description: 'Air Quality Monitoring (AQM) Data Model.'    
+  description: Air Quality Monitoring (AQM) Data Model.    
   properties:    
     airQualityIndex:    
-      description: 'Overall Air Quality Index (AQI) for the observed air quality.'    
+      description: Overall Air Quality Index (AQI) for the observed air quality.    
       type: number    
       x-ngsi:    
         model: https://schema.org/Number    
@@ -46,9 +46,9 @@ AirQualityMonitoring:
     airTemperatureTSA:    
       description: 'Object defining the temporal processing of a basic property during a period. It provides Maximum, minimum, instant value and average'    
       properties: &airqualitymonitoring_-_properties_-_ambientnoisetsa_-_properties    
-        instValue:    
+        averageValue:    
           type: number    
-        instvalue:    
+        instValue:    
           type: number    
         maxOverTime:    
           type: number    
@@ -58,7 +58,7 @@ AirQualityMonitoring:
       x-ngsi:    
         type: Property    
     alternateName:    
-      description: 'An alternative name for this item'    
+      description: An alternative name for this item    
       type: string    
       x-ngsi:    
         type: Property    
@@ -93,7 +93,7 @@ AirQualityMonitoring:
       x-ngsi:    
         type: Property    
     atmosphericPressure:    
-      description: 'Observed air (atmospheric or barometric) pressure.'    
+      description: Observed air (atmospheric or barometric) pressure.    
       type: number    
       x-ngsi:    
         model: https://schema.org/Number    
@@ -129,29 +129,29 @@ AirQualityMonitoring:
       x-ngsi:    
         type: Property    
     dataProvider:    
-      description: 'A sequence of characters identifying the provider of the harmonised data entity.'    
+      description: A sequence of characters identifying the provider of the harmonised data entity.    
       type: string    
       x-ngsi:    
         type: Property    
     dateCreated:    
-      description: 'Entity creation timestamp. This will usually be allocated by the storage platform.'    
+      description: Entity creation timestamp. This will usually be allocated by the storage platform.    
       format: date-time    
       type: string    
       x-ngsi:    
         type: Property    
     dateModified:    
-      description: 'Timestamp of the last modification of the entity. This will usually be allocated by the storage platform.'    
+      description: Timestamp of the last modification of the entity. This will usually be allocated by the storage platform.    
       format: date-time    
       type: string    
       x-ngsi:    
         type: Property    
     description:    
-      description: 'A description of this item'    
+      description: A description of this item    
       type: string    
       x-ngsi:    
         type: Property    
     deviceInfo:    
-      description: 'Information about the device associated with the observations.'    
+      description: Information about the device associated with the observations.    
       properties:    
         RFID:    
           description: 'Property. Model:''https://schema.org/Text''. Gives the ID of the RFID reader.'    
@@ -195,45 +195,45 @@ AirQualityMonitoring:
           type: string    
         refDevice:    
           anyOf:    
-            - description: 'Property. Identifier format of any NGSI entity'    
+            - description: Property. Identifier format of any NGSI entity    
               maxLength: 256    
               minLength: 1    
               pattern: ^[\w\-\.\{\}\$\+\*\[\]`|~^@!,:\\]+$    
               type: string    
-            - description: 'Property. Identifier format of any NGSI entity'    
+            - description: Property. Identifier format of any NGSI entity    
               format: uri    
               type: string    
-          description: 'Relationship. Unique identifier of the entity'    
+          description: Relationship. Unique identifier of the entity    
       type: object    
       x-ngsi:    
         type: Property    
     deviceStatus:    
-      description: 'Indicates the status of physical device or devices.'    
+      description: Indicates the status of physical device or devices.    
       type: string    
       x-ngsi:    
         model: https://schema.org/Text    
         type: Property    
     id:    
       anyOf: &airqualitymonitoring_-_properties_-_owner_-_items_-_anyof    
-        - description: 'Property. Identifier format of any NGSI entity'    
+        - description: Property. Identifier format of any NGSI entity    
           maxLength: 256    
           minLength: 1    
           pattern: ^[\w\-\.\{\}\$\+\*\[\]`|~^@!,:\\]+$    
           type: string    
-        - description: 'Property. Identifier format of any NGSI entity'    
+        - description: Property. Identifier format of any NGSI entity    
           format: uri    
           type: string    
-      description: 'Unique identifier of the entity'    
+      description: Unique identifier of the entity    
       x-ngsi:    
         type: Property    
     illuminance:    
-      description: 'Measured illuminance'    
+      description: Measured illuminance    
       minimum: 0    
       type: number    
       x-ngsi:    
         type: Property    
     name:    
-      description: 'The name of this item.'    
+      description: The name of this item.    
       type: string    
       x-ngsi:    
         type: Property    
@@ -274,17 +274,17 @@ AirQualityMonitoring:
       x-ngsi:    
         type: Property    
     observationDateTime:    
-      description: 'Last reported time of observation.'    
+      description: Last reported time of observation.    
       format: date-time    
       type: string    
       x-ngsi:    
         model: https://schema.org/DateTime    
         type: Property    
     owner:    
-      description: 'A List containing a JSON encoded sequence of characters referencing the unique Ids of the owner(s)'    
+      description: A List containing a JSON encoded sequence of characters referencing the unique Ids of the owner(s)    
       items:    
         anyOf: *airqualitymonitoring_-_properties_-_owner_-_items_-_anyof    
-        description: 'Property. Unique identifier of the entity'    
+        description: Property. Unique identifier of the entity    
       type: array    
       x-ngsi:    
         type: Property    
@@ -307,7 +307,7 @@ AirQualityMonitoring:
       x-ngsi:    
         type: Property    
     precipitation:    
-      description: 'Observed precipitation/rainfall level over a given duration.'    
+      description: Observed precipitation/rainfall level over a given duration.    
       type: number    
       x-ngsi:    
         model: https://schema.org/Number    
@@ -319,7 +319,7 @@ AirQualityMonitoring:
       x-ngsi:    
         type: Property    
     seeAlso:    
-      description: 'list of uri pointing to additional resources about the item'    
+      description: list of uri pointing to additional resources about the item    
       oneOf:    
         - items:    
             format: uri    
@@ -337,7 +337,7 @@ AirQualityMonitoring:
       x-ngsi:    
         type: Property    
     solarRadiation:    
-      description: 'Instantaneous solar radiation measured in kW/m2'    
+      description: Instantaneous solar radiation measured in kW/m2    
       type: number    
       x-ngsi:    
         model: http://schema.org/Number    
@@ -349,7 +349,7 @@ AirQualityMonitoring:
       x-ngsi:    
         type: Property    
     type:    
-      description: 'NGSI type. it has to be AirQualityMonitoring'    
+      description: NGSI type. it has to be AirQualityMonitoring    
       enum:    
         - AirQualityMonitoring    
       type: string    
@@ -362,7 +362,7 @@ AirQualityMonitoring:
       x-ngsi:    
         type: Property    
     versionInfo:    
-      description: 'Version information corresponding to this observation.'    
+      description: Version information corresponding to this observation.    
       properties:    
         comments:    
           description: 'Property. Model:''https://schema.org/Text''. User comments corresponding to this observation.'    
@@ -379,7 +379,7 @@ AirQualityMonitoring:
           description: 'Property. Model:''https://schema.org/Text''. Version name corresponding to this observation'    
           type: string    
         windType:    
-          description: 'Property. Wind type dominate during the last 24 hours.'    
+          description: Property. Wind type dominate during the last 24 hours.    
           type: string    
       type: object    
       x-ngsi:    
@@ -389,11 +389,11 @@ AirQualityMonitoring:
     - type    
   type: object    
   x-derived-from: ""    
-  x-disclaimer: 'Redistribution and use in source and binary forms, with or without modification, are permitted  provided that the license conditions are met. Copyleft (c) 2021 Contributors to Smart Data Models Program'    
+  x-disclaimer: 'Redistribution and use in source and binary forms, with or without modification, are permitted  provided that the license conditions are met. Copyleft (c) 2022 Contributors to Smart Data Models Program'    
   x-license-url: https://github.com/smart-data-models/dataModel.Environment/blob/master/AirQualityMonitoring/LICENSE.md    
   x-model-schema: https://smart-data-models.github.io/dataModel.Environment/AirQualityMonitoring/schema.json    
-  x-model-tags: ""    
-  x-version: 0.0.1    
+  x-model-tags: GreenMov    
+  x-version: 0.0.3    
 ```  
 </details>    
 <!-- /60-ModelYaml -->  
@@ -935,7 +935,7 @@ AirQualityMonitoring:
 ```  
 </details>  
 #### AirQualityMonitoring NGSI-LD key-values Beispiel  
-Hier ist ein Beispiel für ein AirQualityMonitoring im JSON-LD Format als Key-Values. Dies ist mit NGSI-LD kompatibel, wenn `options=keyValues` verwendet wird und liefert die Kontextdaten einer einzelnen Entität.  
+Hier ist ein Beispiel für ein AirQualityMonitoring im JSON-LD Format als Key-Values. Dies ist kompatibel mit NGSI-LD bei Verwendung von `options=keyValues` und liefert die Kontextdaten einer einzelnen Entität.  
 <details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
@@ -964,7 +964,7 @@ AirQualityMonitoring:
         "maxOverTime": 59.2,  
         "minOverTime": 50.5  
     },  
-    "aqiMajorPollutant": "No2",  
+    "aqiMajorPollutant": "no2",  
     "areaServed": "Bangalore",  
     "arsenicTSA": {  
         "avgOverTime": 0.4,  
