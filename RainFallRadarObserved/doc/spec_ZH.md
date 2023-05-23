@@ -15,7 +15,7 @@
 ##属性列表  
 
 <sup><sub>[*] 如果一个属性中没有一个类型，是因为它可能有几种类型或不同的格式/模式</sub></sup>。  
-- `address[object]`: 邮寄地址  . Model: [https://schema.org/address](https://schema.org/address)- `alternateName[string]`: 这个项目的一个替代名称  - `areaServed[string]`: 提供服务或提供项目的地理区域  . Model: [https://schema.org/Text](https://schema.org/Text)- `atmosphericPressure[number]`: 观察到的大气压力以Hecto Pascals为单位。  . Model: [https://schema.org/Number](https://schema.org/Number)- `cellsSize[number]`: 构成雷达的每个单元的尺寸。测量的单位代码（文本）使用[UN/CEFACT通用代码]（http://wiki.goodrelations-vocabulary.org/Documentation/UN/CEFACT_Common_Codes）给出。例如，**MTR**代表**米**。  . Model: [https://schema.org/Number](https://schema.org/Number)- `dataProvider[string]`: 一串识别统一数据实体提供者的字符。  - `dateCreated[string]`: 实体创建时间戳。这通常会由存储平台分配。  - `dateModified[string]`: 实体最后一次修改的时间戳。这通常会由存储平台分配。  - `dateObserved[string]`: 该观测的日期和时间，采用ISO8601 UTC格式。它可以由一个特定的时间瞬间或由一个ISO8601间隔来表示  . Model: [https://schema.org/DateTime](https://schema.org/DateTime)- `dateObservedFrom[string]`: 观察期的开始日期和时间。见dateObserved。它可以由一个特定的时间瞬间或由一个ISO8601间隔来表示  . Model: [https://schema.org/DateTime](https://schema.org/DateTime)- `dateObservedTo[string]`: 观察期结束的日期和时间。见dateObserved。它可以由一个特定的时间瞬间或由一个ISO8601区间来表示  . Model: [https://schema.org/DateTime](https://schema.org/DateTime)- `description[string]`: 对这个项目的描述  - `feelLikesTemperature[number]`: 项目的温度欣赏  - `gustSpeed[number]`: 突然爆发的高速风，超过观察到的平均风速，只持续了几秒钟。  - `id[*]`: 实体的唯一标识符  - `illuminance[number]`: (https://en.wikipedia.org/wiki/Illuminance)观察，以勒克斯(lx)或每平方米流明(cd-sr-m-2)衡量。  . Model: [https://schema.org/Number](https://schema.org/Number)- `location[*]`: 对该项目的Geojson引用。它可以是点、线字符串、多边形、多点、多线字符串或多多边形。  - `mapScale[string]`: 地图比例尺。cellSize的长度与它在地图上的表示之间的关系  . Model: [https://schema.org/Text](https://schema.org/Text)- `measuredArea[number]`: 被测面的参考。单位代码（文本）使用[UN/CEFACT通用代码]（http://wiki.goodrelations-vocabulary.org/Documentation/UN/CEFACT_Common_Codes）给出。例如，**MTK**代表平方米。  . Model: [https://schema.org/Number](https://schema.org/Number)- `name[string]`: 这个项目的名称。  - `numberOfCol[number]`: 允许读取 "rainFallradarContent "属性的栏目数  . Model: [https://schema.org/Number](https://schema.org/Number)- `numberOfRow[number]`: 允许读取 "rainFallradarContent "属性的行数  . Model: [https://schema.org/Number](https://schema.org/Number)- `owner[array]`: 一个包含JSON编码的字符序列的列表，引用所有者的唯一Ids。  - `rainFallRadarContent[string]`: 提供观察到的信息的路径和文件名  . Model: [https://schema.org/Text](https://schema.org/Text)- `refDevice[*]`: 参考一个[设备](https://github.com/smart-data-models/dataModel.Device/blob/master/Device/doc/spec.md)，它捕获了这一观察结果  . Model: [https://schema.org/URL](https://schema.org/URL)- `refPointOfInterest[*]`: 对与观测有关的[兴趣点](https://github.com/smart-data-models/dataModel.PointOfInterest/blob/master/PointOfInterest/doc/spec.md)的引用。  . Model: [https://schema.org/URL](https://schema.org/URL)- `relativeHumidity[number]`: 空气中的湿度。观测到的瞬时相对湿度（空气中的水蒸气）。  - `seeAlso[*]`: 指向有关该项目的其他资源的URI列表  - `source[string]`: 一系列的字符，以URL的形式给出实体数据的原始来源。建议为源提供者的完全合格域名，或源对象的URL。  - `temperature[number]`: 项目的温度  - `type[string]`: NGSI实体类型。它必须是RainFallRadarObserved。  - `visibility[*]`: 能见度的类别  . Model: [http://schema.org/Text](http://schema.org/Text)- `weatherType[string]`: 天气的文字描述  . Model: [http://schema.org/Text.](http://schema.org/Text.)- `windDirection[number]`: 赌风的方向  . Model: [http://schema.org/Number](http://schema.org/Number)- `windSpeed[number]`: 风的强度  . Model: [http//schema.org/Number](http//schema.org/Number)<!-- /30-PropertiesList -->  
+- `address[object]`: 邮寄地址  . Model: [https://schema.org/address](https://schema.org/address)- `alternateName[string]`: 这个项目的一个替代名称  - `areaServed[string]`: 提供服务或提供项目的地理区域  . Model: [https://schema.org/Text](https://schema.org/Text)- `atmosphericPressure[number]`: 观察到的大气压力以Hecto Pascals为单位。  . Model: [https://schema.org/Number](https://schema.org/Number)- `cellsSize[number]`: 属性。构成雷达的每个单元的尺寸。测量的单位代码（文本）使用[UN/CEFACT通用代码]（http://wiki.goodrelations-vocabulary.org/Documentation/UN/CEFACT_Common_Codes）给出。例如，**MTR**代表**Meters**。模型:'https://schema.org/Number'  . Model: [https://schema.org/Number](https://schema.org/Number)- `dataProvider[string]`: 一串识别统一数据实体提供者的字符。  - `dateCreated[string]`: 实体创建时间戳。这通常会由存储平台分配。  - `dateModified[string]`: 实体最后一次修改的时间戳。这通常会由存储平台分配。  - `dateObserved[string]`: 属性。该观测的日期和时间，采用ISO8601 UTC格式。它可以由一个特定的时间瞬间或由一个ISO8601间隔来表示。模型:'https://schema.org/DateTime'  . Model: [https://schema.org/DateTime](https://schema.org/DateTime)- `dateObservedFrom[string]`: 财产。观察期的开始日期和时间。见dateObserved。它可以由一个特定的时间瞬间或由ISO8601间隔来表示。模型:'https://schema.org/DateTime'  . Model: [https://schema.org/DateTime](https://schema.org/DateTime)- `dateObservedTo[string]`: 财产。观察期结束日期和时间。见dateObserved。它可以由一个特定的时间瞬间或由ISO8601间隔来表示。模型:'https://schema.org/DateTime'  . Model: [https://schema.org/DateTime](https://schema.org/DateTime)- `description[string]`: 对这个项目的描述  - `feelLikesTemperature[number]`: 项目的温度欣赏  - `gustSpeed[number]`: 突然爆发的高速风，超过观察到的平均风速，只持续了几秒钟。  - `id[*]`: 实体的唯一标识符  - `illuminance[number]`: (https://en.wikipedia.org/wiki/Illuminance)观察，以勒克斯(lx)或每平方米流明(cd-sr-m-2)衡量。  . Model: [https://schema.org/Number](https://schema.org/Number)- `location[*]`: 对该项目的Geojson引用。它可以是点、线字符串、多边形、多点、多线字符串或多多边形。  - `mapScale[string]`: 财产。地图比例尺。cellSize的长度与它在地图上的表现之间的关系。模型:'https://schema.org/Text'  . Model: [https://schema.org/Text](https://schema.org/Text)- `measuredArea[number]`: 属性。被测面的参考。单位代码（文本）使用[UN/CEFACT通用代码]（http://wiki.goodrelations-vocabulary.org/Documentation/UN/CEFACT_Common_Codes）给出。例如，**MTK**代表平方米。模型:'https://schema.org/Number'。单位:'平方米  . Model: [https://schema.org/Number](https://schema.org/Number)- `name[string]`: 这个项目的名称。  - `numberOfCol[number]`: 属性。允许读取 "rainFallradarContent "属性的栏目数。模型:'https://schema.org/Number'  . Model: [https://schema.org/Number](https://schema.org/Number)- `numberOfRow[number]`: 属性。允许读取 "rainFallradarContent "属性的行数。模型:'https://schema.org/Number'  . Model: [https://schema.org/Number](https://schema.org/Number)- `owner[array]`: 一个包含JSON编码的字符序列的列表，引用所有者的唯一Ids。  - `rainFallRadarContent[string]`: 属性。提供观察到的信息的路径和文件名。模型:'https://schema.org/Text'  . Model: [https://schema.org/Text](https://schema.org/Text)- `refDevice[*]`: 关系。参考一个[设备](https://github.com/smart-data-models/dataModel.Device/blob/master/Device/doc/spec.md)，它捕获了这个观察结果。模型:'https://schema.org/URL'  . Model: [https://schema.org/URL](https://schema.org/URL)- `refPointOfInterest[*]`: 关系。对与观测有关的[兴趣点](https://github.com/smart-data-models/dataModel.PointOfInterest/blob/master/PointOfInterest/doc/spec.md)的参考。模型:'https://schema.org/URL'  . Model: [https://schema.org/URL](https://schema.org/URL)- `relativeHumidity[number]`: 空气中的湿度。观测到的瞬时相对湿度（空气中的水蒸气）。  - `seeAlso[*]`: 指向有关该项目的其他资源的URI列表  - `source[string]`: 一系列的字符，以URL的形式给出实体数据的原始来源。建议为源提供者的完全合格域名，或源对象的URL。  - `temperature[number]`: 项目的温度  - `type[string]`: 属性。NGSI实体类型。它必须是RainFallRadarObserved。  - `visibility[*]`: 能见度的类别  . Model: [http://schema.org/Text](http://schema.org/Text)- `weatherType[string]`: 天气的文字描述  . Model: [http://schema.org/Text.](http://schema.org/Text.)- `windDirection[number]`: 赌风的方向  . Model: [http://schema.org/Number](http://schema.org/Number)- `windSpeed[number]`: 风的强度  . Model: [http//schema.org/Number](http//schema.org/Number)<!-- /30-PropertiesList -->  
 <!-- 35-RequiredProperties -->  
 所需属性  
 - `dateObserved`  - `id`  - `location`  - `rainFallRadarContent`  - `type`  <!-- /35-RequiredProperties -->  
@@ -624,6 +624,67 @@ RainFallRadarObserved:
     "id": "urn:ngsi-ld:RainFallRadarObserved:RainFallRadarObserved:MNCA-RFRO-018",  
     "type": "RainFallRadarObserved",  
     "address": {  
+        "addressCountry": "FR",  
+        "addressLocality": "Nice",  
+        "streetAddress": "Airport Area Coverage + 4 km distance"  
+    },  
+    "alternateName": "AirPort global Observation",  
+    "areaServed": "Nice Aeroport",  
+    "cellsSize": 1,  
+    "dateObserved": "2020-03-17T08:30:00Z",  
+    "dateObservedFrom": "2020-03-17T08:30:00Z",  
+    "dateObservedTo": "2020-03-17T08:45:00Z",  
+    "description": "Rain fall Radar Observation",  
+    "location": {  
+        "type": "Polygon",  
+        "coordinates": [  
+            [  
+                [  
+                    43.66,  
+                    7.19  
+                ],  
+                [  
+                    44.66,  
+                    7.19  
+                ],  
+                [  
+                    44.66,  
+                    7.21  
+                ],  
+                [  
+                    43.66,  
+                    7.21  
+                ],  
+                [  
+                    43.66,  
+                    7.19  
+                ]  
+            ]  
+        ]  
+    },  
+    "mapScale": "1/10.000",  
+    "measuredArea": 250,  
+    "name": "MNCA-RFRO-018",  
+    "numberOfCol": 48,  
+    "numberOfRow": 25,  
+    "rainFallRadarContent": "https://particuliers/rainFallRadar/NCE-RFRO-018-2020-03-17T08:30:00",  
+    "refDevice": "urn:ngsi-ld:Device:NCE-RFRO-018",  
+    "@context": [  
+        "https://raw.githubusercontent.com/smart-data-models/data-models/master/context.jsonld",  
+        "https://uri.etsi.org/ngsi-ld/v1/ngsi-ld-core-context.jsonld",  
+        "https://raw.githubusercontent.com/smart-data-models/dataModel.Environment/master/context.jsonld"  
+    ]  
+}  
+```  
+</details>  
+#### RainFallRadarObserved NGSI-LD 归一化示例  
+下面是一个RainFallRadarObserved在JSON-LD格式中的规范化的例子。当不使用选项时，这与NGSI-LD兼容，并返回单个实体的上下文数据。  
+<details><summary><strong>show/hide example</strong></summary>    
+```json  
+{  
+    "id": "urn:ngsi-ld:RainFallRadarObserved:RainFallRadarObserved:MNCA-RFRO-018",  
+    "type": "RainFallRadarObserved",  
+    "address": {  
         "type": "Property",  
         "value": {  
             "addressCountry": "FR",  
@@ -726,67 +787,6 @@ RainFallRadarObserved:
         "type": "Relationship",  
         "object": "urn:ngsi-ld:Device:NCE-RFRO-018"  
     },  
-    "@context": [  
-        "https://raw.githubusercontent.com/smart-data-models/data-models/master/context.jsonld",  
-        "https://uri.etsi.org/ngsi-ld/v1/ngsi-ld-core-context.jsonld",  
-        "https://raw.githubusercontent.com/smart-data-models/dataModel.Environment/master/context.jsonld"  
-    ]  
-}  
-```  
-</details>  
-#### RainFallRadarObserved NGSI-LD 归一化示例  
-下面是一个RainFallRadarObserved在JSON-LD格式中的规范化的例子。当不使用选项时，这与NGSI-LD兼容，并返回单个实体的上下文数据。  
-<details><summary><strong>show/hide example</strong></summary>    
-```json  
-{  
-    "id": "urn:ngsi-ld:RainFallRadarObserved:RainFallRadarObserved:MNCA-RFRO-018",  
-    "type": "RainFallRadarObserved",  
-    "address": {  
-        "addressCountry": "FR",  
-        "addressLocality": "Nice",  
-        "streetAddress": "Airport Area Coverage + 4 km distance"  
-    },  
-    "alternateName": "AirPort global Observation",  
-    "areaServed": "Nice Aeroport",  
-    "cellsSize": 1,  
-    "dateObserved": "2020-03-17T08:30:00Z",  
-    "dateObservedFrom": "2020-03-17T08:30:00Z",  
-    "dateObservedTo": "2020-03-17T08:45:00Z",  
-    "description": "Rain fall Radar Observation",  
-    "location": {  
-        "type": "Polygon",  
-        "coordinates": [  
-            [  
-                [  
-                    43.66,  
-                    7.19  
-                ],  
-                [  
-                    44.66,  
-                    7.19  
-                ],  
-                [  
-                    44.66,  
-                    7.21  
-                ],  
-                [  
-                    43.66,  
-                    7.21  
-                ],  
-                [  
-                    43.66,  
-                    7.19  
-                ]  
-            ]  
-        ]  
-    },  
-    "mapScale": "1/10.000",  
-    "measuredArea": 250,  
-    "name": "MNCA-RFRO-018",  
-    "numberOfCol": 48,  
-    "numberOfRow": 25,  
-    "rainFallRadarContent": "https://particuliers/rainFallRadar/NCE-RFRO-018-2020-03-17T08:30:00",  
-    "refDevice": "urn:ngsi-ld:Device:NCE-RFRO-018",  
     "@context": [  
         "https://raw.githubusercontent.com/smart-data-models/data-models/master/context.jsonld",  
         "https://uri.etsi.org/ngsi-ld/v1/ngsi-ld-core-context.jsonld",  
