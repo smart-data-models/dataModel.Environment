@@ -15,7 +15,7 @@
 ## Liste des propriétés  
 
 <sup><sub>[*] S'il n'y a pas de type dans un attribut, c'est parce qu'il peut avoir plusieurs types ou différents formats/modèles</sub></sup>.  
-- `address[object]`: L'adresse postale  . Model: [https://schema.org/address](https://schema.org/address)- `alternateName[string]`: Un nom alternatif pour ce poste  - `areaServed[string]`: La zone géographique où un service ou un article est offert  . Model: [https://schema.org/Text](https://schema.org/Text)- `atmosphericPressure[number]`: La pression atmosphérique observée est mesurée en Hecto Pascals.  . Model: [https://schema.org/Number](https://schema.org/Number)- `cellsSize[number]`: Taille de chaque cellule constituant le radar. Le code d'unité (texte) de mesure est donné en utilisant les [codes communs du CEFACT-ONU] (http://wiki.goodrelations-vocabulary.org/Documentation/UN/CEFACT_Common_Codes). Par exemple, **MTR** représente **Mètres**  . Model: [https://schema.org/Number](https://schema.org/Number)- `dataProvider[string]`: Une séquence de caractères identifiant le fournisseur de l'entité de données harmonisées.  - `dateCreated[string]`: Date de création de l'entité. Celle-ci est généralement attribuée par la plate-forme de stockage.  - `dateModified[string]`: Date de la dernière modification de l'entité. Cette date est généralement attribuée par la plate-forme de stockage.  - `dateObserved[string]`: La date et l'heure de cette observation au format ISO8601 UTC. Elle peut être représentée par un instant précis ou par un intervalle ISO8601.  . Model: [https://schema.org/DateTime](https://schema.org/DateTime)- `dateObservedFrom[string]`: Date et heure de début de la période d'observation. Voir dateObserved. Elle peut être représentée par un instant précis ou par un intervalle ISO8601.  . Model: [https://schema.org/DateTime](https://schema.org/DateTime)- `dateObservedTo[string]`: Date et heure de fin de la période d'observation. Voir dateObserved. Elle peut être représentée par un instant précis ou par un intervalle ISO8601.  . Model: [https://schema.org/DateTime](https://schema.org/DateTime)- `description[string]`: Une description de l'article  - `feelLikesTemperature[number]`: Appréciation de la température de l'objet  - `gustSpeed[number]`: Une rafale soudaine de vent à grande vitesse dépassant la vitesse moyenne observée et ne durant que quelques secondes.  - `id[*]`: Identifiant unique de l'entité  - `illuminance[number]`: (https://en.wikipedia.org/wiki/Illuminance) observés mesurés en lux (lx) ou en lumens par mètre carré (cd-sr-m-2).  . Model: [https://schema.org/Number](https://schema.org/Number)- `location[*]`: Référence Geojson à l'élément. Il peut s'agir d'un point, d'une chaîne de ligne, d'un polygone, d'un point multiple, d'une chaîne de ligne multiple ou d'un polygone multiple.  - `mapScale[string]`: Échelle de la carte. Relation entre la longueur de la cellule (cellSize) et sa représentation sur la carte.  . Model: [https://schema.org/Text](https://schema.org/Text)- `measuredArea[number]`: Référence de la surface mesurée. Le code de l'unité (texte) est donné en utilisant les [codes communs du CEFACT-ONU] (http://wiki.goodrelations-vocabulary.org/Documentation/UN/CEFACT_Common_Codes). Par exemple, **MTK** représente les mètres carrés.  . Model: [https://schema.org/Number](https://schema.org/Number)- `name[string]`: Le nom de cet élément.  - `numberOfCol[number]`: Nombre de colonnes permettant la lecture de l'attribut `rainFallradarContent`.  . Model: [https://schema.org/Number](https://schema.org/Number)- `numberOfRow[number]`: Nombre de lignes permettant la lecture de l'attribut `rainFallradarContent`.  . Model: [https://schema.org/Number](https://schema.org/Number)- `owner[array]`: Une liste contenant une séquence de caractères encodés JSON référençant les identifiants uniques du ou des propriétaires.  - `rainFallRadarContent[string]`: Chemin d'accès et nom du fichier qui a fourni les informations observées  . Model: [https://schema.org/Text](https://schema.org/Text)- `refDevice[*]`: Référence à un [dispositif] (https://github.com/smart-data-models/dataModel.Device/blob/master/Device/doc/spec.md) qui a permis de faire cette observation  . Model: [https://schema.org/URL](https://schema.org/URL)- `refPointOfInterest[*]`: Référence à un [PointOfInterest] (https://github.com/smart-data-models/dataModel.PointOfInterest/blob/master/PointOfInterest/doc/spec.md) lié à l'observation  . Model: [https://schema.org/URL](https://schema.org/URL)- `relativeHumidity[number]`: Humidité de l'air. Humidité relative instantanée observée (vapeur d'eau dans l'air)  - `seeAlso[*]`: liste d'uri pointant vers des ressources supplémentaires concernant l'élément  - `source[string]`: Séquence de caractères indiquant la source originale des données de l'entité sous forme d'URL. Il est recommandé d'utiliser le nom de domaine complet du fournisseur de la source ou l'URL de l'objet source.  - `temperature[number]`: Température de l'article  - `type[string]`: Type d'entité NGSI. Il doit s'agir de RainFallRadarObserved  - `visibility[*]`: Catégories de visibilité  . Model: [http://schema.org/Text](http://schema.org/Text)- `weatherType[string]`: Description textuelle du temps  . Model: [http://schema.org/Text.](http://schema.org/Text.)- `windDirection[number]`: Direction du vent pari  . Model: [http://schema.org/Number](http://schema.org/Number)- `windSpeed[number]`: Intensité du vent  . Model: [http//schema.org/Number](http//schema.org/Number)<!-- /30-PropertiesList -->  
+- `address[object]`: L'adresse postale  . Model: [https://schema.org/address](https://schema.org/address)- `alternateName[string]`: Un nom alternatif pour ce poste  - `areaServed[string]`: La zone géographique où un service ou un article est offert  . Model: [https://schema.org/Text](https://schema.org/Text)- `atmosphericPressure[number]`: La pression atmosphérique observée est mesurée en Hecto Pascals.  . Model: [https://schema.org/Number](https://schema.org/Number)- `cellsSize[number]`: Propriété. Taille de chaque cellule constituant le radar. Le code d'unité (texte) de mesure est donné en utilisant les [codes communs du CEFACT-ONU] (http://wiki.goodrelations-vocabulary.org/Documentation/UN/CEFACT_Common_Codes). Par exemple, **MTR** représente **Mètres**. Modèle : "https://schema.org/Number  . Model: [https://schema.org/Number](https://schema.org/Number)- `dataProvider[string]`: Une séquence de caractères identifiant le fournisseur de l'entité de données harmonisées.  - `dateCreated[string]`: Date de création de l'entité. Celle-ci est généralement attribuée par la plate-forme de stockage.  - `dateModified[string]`: Date de la dernière modification de l'entité. Cette date est généralement attribuée par la plate-forme de stockage.  - `dateObserved[string]`: Propriété. La date et l'heure de cette observation au format ISO8601 UTC. Elle peut être représentée par un instant précis ou par un intervalle ISO8601. Modèle : "https://schema.org/DateTime  . Model: [https://schema.org/DateTime](https://schema.org/DateTime)- `dateObservedFrom[string]`: Propriété. Date et heure de début de la période d'observation. Voir dateObserved. Elle peut être représentée par un instant précis ou par un intervalle ISO8601. Modèle : "https://schema.org/DateTime  . Model: [https://schema.org/DateTime](https://schema.org/DateTime)- `dateObservedTo[string]`: Propriété. Date et heure de fin de la période d'observation. Voir dateObserved. Elle peut être représentée par un instant précis ou par un intervalle ISO8601. Modèle : "https://schema.org/DateTime  . Model: [https://schema.org/DateTime](https://schema.org/DateTime)- `description[string]`: Une description de l'article  - `feelLikesTemperature[number]`: Appréciation de la température de l'objet  - `gustSpeed[number]`: Une rafale soudaine de vent à grande vitesse dépassant la vitesse moyenne observée et ne durant que quelques secondes.  - `id[*]`: Identifiant unique de l'entité  - `illuminance[number]`: (https://en.wikipedia.org/wiki/Illuminance) observés mesurés en lux (lx) ou en lumens par mètre carré (cd-sr-m-2).  . Model: [https://schema.org/Number](https://schema.org/Number)- `location[*]`: Référence Geojson à l'élément. Il peut s'agir d'un point, d'une chaîne de ligne, d'un polygone, d'un point multiple, d'une chaîne de ligne multiple ou d'un polygone multiple.  - `mapScale[string]`: Propriété. Échelle de la carte. Relation entre la longueur de la cellule (cellSize) et sa représentation sur la carte. Modèle : "https://schema.org/Text  . Model: [https://schema.org/Text](https://schema.org/Text)- `measuredArea[number]`: Propriété. Référence de la surface mesurée. Le code de l'unité (texte) est donné en utilisant les [codes communs du CEFACT-ONU] (http://wiki.goodrelations-vocabulary.org/Documentation/UN/CEFACT_Common_Codes). Par exemple, **MTK** représente les mètres carrés. Modèle : "https://schema.org/Number". Unités : "mètres carrés  . Model: [https://schema.org/Number](https://schema.org/Number)- `name[string]`: Le nom de cet élément.  - `numberOfCol[number]`: Propriété. Nombre de colonnes permettant la lecture de l'attribut `rainFallradarContent`. Modèle : "https://schema.org/Number  . Model: [https://schema.org/Number](https://schema.org/Number)- `numberOfRow[number]`: Propriété. Nombre de lignes permettant la lecture de l'attribut `rainFallradarContent`. Modèle : "https://schema.org/Number  . Model: [https://schema.org/Number](https://schema.org/Number)- `owner[array]`: Une liste contenant une séquence de caractères encodés JSON référençant les identifiants uniques du ou des propriétaires.  - `rainFallRadarContent[string]`: Propriété. Chemin d'accès et nom du fichier qui a fourni l'information observée. Modèle : "https://schema.org/Text  . Model: [https://schema.org/Text](https://schema.org/Text)- `refDevice[*]`: Relation. Référence à un [Dispositif] (https://github.com/smart-data-models/dataModel.Device/blob/master/Device/doc/spec.md) qui a capturé cette observation. Modèle : "https://schema.org/URL  . Model: [https://schema.org/URL](https://schema.org/URL)- `refPointOfInterest[*]`: Relation. Référence à un [PointOfInterest] (https://github.com/smart-data-models/dataModel.PointOfInterest/blob/master/PointOfInterest/doc/spec.md) lié à l'observation. Modèle : "https://schema.org/URL  . Model: [https://schema.org/URL](https://schema.org/URL)- `relativeHumidity[number]`: Humidité de l'air. Humidité relative instantanée observée (vapeur d'eau dans l'air)  - `seeAlso[*]`: liste d'uri pointant vers des ressources supplémentaires concernant l'élément  - `source[string]`: Séquence de caractères indiquant la source originale des données de l'entité sous forme d'URL. Il est recommandé d'utiliser le nom de domaine complet du fournisseur de la source ou l'URL de l'objet source.  - `temperature[number]`: Température de l'article  - `type[string]`: Propriété. Type d'entité NGSI. Il doit s'agir de RainFallRadarObserved  - `visibility[*]`: Catégories de visibilité  . Model: [http://schema.org/Text](http://schema.org/Text)- `weatherType[string]`: Description textuelle du temps  . Model: [http://schema.org/Text.](http://schema.org/Text.)- `windDirection[number]`: Direction du vent pari  . Model: [http://schema.org/Number](http://schema.org/Number)- `windSpeed[number]`: Intensité du vent  . Model: [http//schema.org/Number](http//schema.org/Number)<!-- /30-PropertiesList -->  
 <!-- 35-RequiredProperties -->  
 Propriétés requises  
 - `dateObserved`  - `id`  - `location`  - `rainFallRadarContent`  - `type`  <!-- /35-RequiredProperties -->  
@@ -624,6 +624,67 @@ RainFallRadarObserved:
     "id": "urn:ngsi-ld:RainFallRadarObserved:RainFallRadarObserved:MNCA-RFRO-018",  
     "type": "RainFallRadarObserved",  
     "address": {  
+        "addressCountry": "FR",  
+        "addressLocality": "Nice",  
+        "streetAddress": "Airport Area Coverage + 4 km distance"  
+    },  
+    "alternateName": "AirPort global Observation",  
+    "areaServed": "Nice Aeroport",  
+    "cellsSize": 1,  
+    "dateObserved": "2020-03-17T08:30:00Z",  
+    "dateObservedFrom": "2020-03-17T08:30:00Z",  
+    "dateObservedTo": "2020-03-17T08:45:00Z",  
+    "description": "Rain fall Radar Observation",  
+    "location": {  
+        "type": "Polygon",  
+        "coordinates": [  
+            [  
+                [  
+                    43.66,  
+                    7.19  
+                ],  
+                [  
+                    44.66,  
+                    7.19  
+                ],  
+                [  
+                    44.66,  
+                    7.21  
+                ],  
+                [  
+                    43.66,  
+                    7.21  
+                ],  
+                [  
+                    43.66,  
+                    7.19  
+                ]  
+            ]  
+        ]  
+    },  
+    "mapScale": "1/10.000",  
+    "measuredArea": 250,  
+    "name": "MNCA-RFRO-018",  
+    "numberOfCol": 48,  
+    "numberOfRow": 25,  
+    "rainFallRadarContent": "https://particuliers/rainFallRadar/NCE-RFRO-018-2020-03-17T08:30:00",  
+    "refDevice": "urn:ngsi-ld:Device:NCE-RFRO-018",  
+    "@context": [  
+        "https://raw.githubusercontent.com/smart-data-models/data-models/master/context.jsonld",  
+        "https://uri.etsi.org/ngsi-ld/v1/ngsi-ld-core-context.jsonld",  
+        "https://raw.githubusercontent.com/smart-data-models/dataModel.Environment/master/context.jsonld"  
+    ]  
+}  
+```  
+</details>  
+#### RainFallRadarObserved NGSI-LD normalisé Exemple  
+Voici un exemple de RainFallRadarObserved au format JSON-LD tel que normalisé. Ce format est compatible avec NGSI-LD lorsqu'il n'utilise pas d'options et renvoie les données contextuelles d'une entité individuelle.  
+<details><summary><strong>show/hide example</strong></summary>    
+```json  
+{  
+    "id": "urn:ngsi-ld:RainFallRadarObserved:RainFallRadarObserved:MNCA-RFRO-018",  
+    "type": "RainFallRadarObserved",  
+    "address": {  
         "type": "Property",  
         "value": {  
             "addressCountry": "FR",  
@@ -726,67 +787,6 @@ RainFallRadarObserved:
         "type": "Relationship",  
         "object": "urn:ngsi-ld:Device:NCE-RFRO-018"  
     },  
-    "@context": [  
-        "https://raw.githubusercontent.com/smart-data-models/data-models/master/context.jsonld",  
-        "https://uri.etsi.org/ngsi-ld/v1/ngsi-ld-core-context.jsonld",  
-        "https://raw.githubusercontent.com/smart-data-models/dataModel.Environment/master/context.jsonld"  
-    ]  
-}  
-```  
-</details>  
-#### RainFallRadarObserved NGSI-LD normalisé Exemple  
-Voici un exemple de RainFallRadarObserved au format JSON-LD tel que normalisé. Ce format est compatible avec NGSI-LD lorsqu'il n'utilise pas d'options et renvoie les données contextuelles d'une entité individuelle.  
-<details><summary><strong>show/hide example</strong></summary>    
-```json  
-{  
-    "id": "urn:ngsi-ld:RainFallRadarObserved:RainFallRadarObserved:MNCA-RFRO-018",  
-    "type": "RainFallRadarObserved",  
-    "address": {  
-        "addressCountry": "FR",  
-        "addressLocality": "Nice",  
-        "streetAddress": "Airport Area Coverage + 4 km distance"  
-    },  
-    "alternateName": "AirPort global Observation",  
-    "areaServed": "Nice Aeroport",  
-    "cellsSize": 1,  
-    "dateObserved": "2020-03-17T08:30:00Z",  
-    "dateObservedFrom": "2020-03-17T08:30:00Z",  
-    "dateObservedTo": "2020-03-17T08:45:00Z",  
-    "description": "Rain fall Radar Observation",  
-    "location": {  
-        "type": "Polygon",  
-        "coordinates": [  
-            [  
-                [  
-                    43.66,  
-                    7.19  
-                ],  
-                [  
-                    44.66,  
-                    7.19  
-                ],  
-                [  
-                    44.66,  
-                    7.21  
-                ],  
-                [  
-                    43.66,  
-                    7.21  
-                ],  
-                [  
-                    43.66,  
-                    7.19  
-                ]  
-            ]  
-        ]  
-    },  
-    "mapScale": "1/10.000",  
-    "measuredArea": 250,  
-    "name": "MNCA-RFRO-018",  
-    "numberOfCol": 48,  
-    "numberOfRow": 25,  
-    "rainFallRadarContent": "https://particuliers/rainFallRadar/NCE-RFRO-018-2020-03-17T08:30:00",  
-    "refDevice": "urn:ngsi-ld:Device:NCE-RFRO-018",  
     "@context": [  
         "https://raw.githubusercontent.com/smart-data-models/data-models/master/context.jsonld",  
         "https://uri.etsi.org/ngsi-ld/v1/ngsi-ld-core-context.jsonld",  
