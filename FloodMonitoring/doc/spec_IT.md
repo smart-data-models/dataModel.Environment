@@ -15,7 +15,7 @@
 ## Elenco delle proprietà  
 
 <sup><sub>[*] Se non c'è un tipo in un attributo è perché potrebbe avere diversi tipi o diversi formati/modelli</sub></sup>.  
-- `address[object]`: L'indirizzo postale  . Model: [https://schema.org/address](https://schema.org/address)- `alertLevel[number]`: Valore di soglia del livello di allarme di riferimento impostato per la stazione di rilevamento corrispondente a questa osservazione. Un segnale di allarme viene generato se il livello corrente supera il valore di soglia del livello di allarme.  . Model: [https://schema.org/Number](https://schema.org/Number)- `alternateName[string]`: Un nome alternativo per questa voce  - `areaServed[string]`: L'area geografica in cui viene fornito il servizio o l'articolo offerto.  . Model: [https://schema.org/Text](https://schema.org/Text)- `currentLevel[number]`: Livello di allagamento attuale indicato dalla stazione di rilevamento corrispondente a questa osservazione, calcolato utilizzando il livello di riferimento e la distanza misurata (currentLevel = referenceLevel - measuredDistance).  . Model: [https://schema.org/Number](https://schema.org/Number)- `dangerLevel[number]`: Valore di soglia del livello di pericolo di riferimento impostato per la stazione di rilevamento corrispondente a questa osservazione. Lo stato del livello di piena è contrassegnato come pericoloso se il livello attuale supera il valore di soglia del livello di pericolo.  . Model: [https://schema.org/Number](https://schema.org/Number)- `dataProvider[string]`: Una sequenza di caratteri che identifica il fornitore dell'entità di dati armonizzata.  - `dateCreated[string]`: Timestamp di creazione dell'entità. Di solito viene assegnato dalla piattaforma di archiviazione.  - `dateModified[string]`: Timestamp dell'ultima modifica dell'entità. Di solito viene assegnato dalla piattaforma di archiviazione.  - `description[string]`: Descrizione dell'articolo  - `floodLevelStatus[string]`: Indicazione dello stato del livello di piena fornito dal dispositivo di rilevamento delle piene. Lo stato è contrassegnato da Pericolo se il livello attuale è superiore al valore di soglia del livello di pericolo.  . Model: [https://schema.org/Text](https://schema.org/Text)- `id[*]`: Identificatore univoco dell'entità  - `location[*]`: Riferimento Geojson all'elemento. Può essere un punto, una stringa di linea, un poligono, un multi-punto, una stringa di linea o un poligono multiplo.  - `measuredDistance[number]`: Descrive la distanza misurata dal sensore, dalla punta del sensore alla superficie superiore dell'acqua.  . Model: [https://schema.org/Number](https://schema.org/Number)- `name[string]`: Il nome di questo elemento.  - `observationDateTime[string]`: Ultimo momento di osservazione segnalato.  . Model: [https://schema.org/DateTime](https://schema.org/DateTime)- `owner[array]`: Un elenco contenente una sequenza di caratteri codificata JSON che fa riferimento agli ID univoci dei proprietari.  - `referenceLevel[number]`: Descrive la distanza verticale dal letto del fiume alla punta del sensore.  . Model: [https://schema.org/Number](https://schema.org/Number)- `seeAlso[*]`: elenco di uri che puntano a risorse aggiuntive sull'elemento  - `source[string]`: Una sequenza di caratteri che fornisce la fonte originale dei dati dell'entità come URL. Si consiglia di utilizzare il nome di dominio completamente qualificato del provider di origine o l'URL dell'oggetto di origine.  - `stationID[string]`: Un identificatore anonimo unico assegnato alla stazione corrispondente a questa osservazione.  . Model: [https://schema.org/Text](https://schema.org/Text)- `type[string]`: Deve essere FloodMonitoring. Tipo di entità NGSI.  <!-- /30-PropertiesList -->  
+- `address[object]`: L'indirizzo postale  . Model: [https://schema.org/address](https://schema.org/address)- `alertLevel[number]`: Valore di soglia del livello di allarme di riferimento impostato per la stazione di rilevamento corrispondente a questa osservazione. Un segnale di allarme viene generato se il livello corrente supera il valore di soglia del livello di allarme.  . Model: [https://schema.org/Number](https://schema.org/Number)- `alternateName[string]`: Un nome alternativo per questa voce  - `areaServed[string]`: L'area geografica in cui viene fornito il servizio o l'articolo offerto.  . Model: [https://schema.org/Text](https://schema.org/Text)- `currentLevel[number]`: Livello di allagamento attuale indicato dalla stazione di rilevamento corrispondente a questa osservazione, calcolato utilizzando il livello di riferimento e la distanza misurata (currentLevel = referenceLevel - measuredDistance).  . Model: [https://schema.org/Number](https://schema.org/Number)- `dangerLevel[number]`: Valore di soglia del livello di pericolo di riferimento impostato per la stazione di rilevamento corrispondente a questa osservazione. Lo stato del livello di piena è contrassegnato come pericoloso se il livello attuale supera il valore di soglia del livello di pericolo.  . Model: [https://schema.org/Number](https://schema.org/Number)- `dataProvider[string]`: Una sequenza di caratteri che identifica il fornitore dell'entità di dati armonizzata.  - `dateCreated[string]`: Timestamp di creazione dell'entità. Di solito viene assegnato dalla piattaforma di archiviazione.  - `dateModified[string]`: Timestamp dell'ultima modifica dell'entità. Di solito viene assegnato dalla piattaforma di archiviazione.  - `description[string]`: Descrizione dell'articolo  - `floodLevelStatus[string]`: Indicazione dello stato del livello di piena fornito dal dispositivo di rilevamento delle piene. Lo stato è contrassegnato da Pericolo se il livello attuale è superiore al valore di soglia del livello di pericolo.  . Model: [https://schema.org/Text](https://schema.org/Text)- `id[*]`: Identificatore univoco dell'entità  - `location[*]`: Riferimento geojson all'elemento. Può essere un punto, una stringa di linea, un poligono, un multi-punto, una stringa di linea o un poligono multiplo.  - `measuredDistance[number]`: Descrive la distanza misurata dal sensore, dalla punta del sensore alla superficie superiore dell'acqua.  . Model: [https://schema.org/Number](https://schema.org/Number)- `name[string]`: Il nome di questo elemento.  - `observationDateTime[string]`: Ultimo momento di osservazione segnalato.  . Model: [https://schema.org/DateTime](https://schema.org/DateTime)- `owner[array]`: Un elenco contenente una sequenza di caratteri codificata JSON che fa riferimento agli ID univoci dei proprietari.  - `referenceLevel[number]`: Descrive la distanza verticale dal letto del fiume alla punta del sensore.  . Model: [https://schema.org/Number](https://schema.org/Number)- `seeAlso[*]`: elenco di uri che puntano a risorse aggiuntive sull'elemento  - `source[string]`: Una sequenza di caratteri che indica la fonte originale dei dati dell'entità come URL. Si consiglia di utilizzare il nome di dominio completamente qualificato del provider di origine o l'URL dell'oggetto di origine.  - `stationID[string]`: Un identificatore anonimo unico assegnato alla stazione corrispondente a questa osservazione.  . Model: [https://schema.org/Text](https://schema.org/Text)- `type[string]`: Deve essere FloodMonitoring. Tipo di entità NGSI.  <!-- /30-PropertiesList -->  
 <!-- 35-RequiredProperties -->  
 Proprietà richieste  
 - `id`  - `type`  <!-- /35-RequiredProperties -->  
@@ -32,7 +32,7 @@ FloodMonitoring:
   description: 'Flood Sensor Data Model intended to represent the level of flooding w.r.t water flow/level at a certain water mass(river, lake,etc.)..'    
   properties:    
     address:    
-      description: 'The mailing address'    
+      description: The mailing address    
       properties:    
         addressCountry:    
           description: 'Property. The country. For example, Spain. Model:''https://schema.org/addressCountry'''    
@@ -43,6 +43,9 @@ FloodMonitoring:
         addressRegion:    
           description: 'Property. The region in which the locality is, and which is in the country. Model:''https://schema.org/addressRegion'''    
           type: string    
+        district:    
+          description: 'A district is a type of administrative division that, in some countries, is managed by the local government.'    
+          type: string    
         postOfficeBoxNumber:    
           description: 'Property. The post office box number for PO box addresses. For example, 03578. Model:''https://schema.org/postOfficeBoxNumber'''    
           type: string    
@@ -52,23 +55,26 @@ FloodMonitoring:
         streetAddress:    
           description: 'Property. The street address. Model:''https://schema.org/streetAddress'''    
           type: string    
+        streetNr:    
+          description: Number identifying a specific property on a public street.    
+          type: string    
       type: object    
       x-ngsi:    
         model: https://schema.org/address    
         type: Property    
     alertLevel:    
-      description: 'Reference alert level threshold value set for the sensing station corresponding to this observation. An Alert signal is generated if the current level crosses the alert level threshold value.'    
+      description: Reference alert level threshold value set for the sensing station corresponding to this observation. An Alert signal is generated if the current level crosses the alert level threshold value.    
       type: number    
       x-ngsi:    
         model: https://schema.org/Number    
         type: Property    
     alternateName:    
-      description: 'An alternative name for this item'    
+      description: An alternative name for this item    
       type: string    
       x-ngsi:    
         type: Property    
     areaServed:    
-      description: 'The geographic area where a service or offered item is provided'    
+      description: The geographic area where a service or offered item is provided    
       type: string    
       x-ngsi:    
         model: https://schema.org/Text    
@@ -80,56 +86,56 @@ FloodMonitoring:
         model: https://schema.org/Number    
         type: Property    
     dangerLevel:    
-      description: 'Reference danger level threshold value set for the sensing station corresponding to this observation. Flood level status is marked danger if the current level crosses the danger level threshold value.'    
+      description: Reference danger level threshold value set for the sensing station corresponding to this observation. Flood level status is marked danger if the current level crosses the danger level threshold value.    
       type: number    
       x-ngsi:    
         model: https://schema.org/Number    
         type: Property    
     dataProvider:    
-      description: 'A sequence of characters identifying the provider of the harmonised data entity.'    
+      description: A sequence of characters identifying the provider of the harmonised data entity.    
       type: string    
       x-ngsi:    
         type: Property    
     dateCreated:    
-      description: 'Entity creation timestamp. This will usually be allocated by the storage platform.'    
+      description: Entity creation timestamp. This will usually be allocated by the storage platform.    
       format: date-time    
       type: string    
       x-ngsi:    
         type: Property    
     dateModified:    
-      description: 'Timestamp of the last modification of the entity. This will usually be allocated by the storage platform.'    
+      description: Timestamp of the last modification of the entity. This will usually be allocated by the storage platform.    
       format: date-time    
       type: string    
       x-ngsi:    
         type: Property    
     description:    
-      description: 'A description of this item'    
+      description: A description of this item    
       type: string    
       x-ngsi:    
         type: Property    
     floodLevelStatus:    
-      description: 'Flood level status indication given by the flood sensing device. The status is marked Danger if the current level is higher than the danger level threshold value.'    
+      description: Flood level status indication given by the flood sensing device. The status is marked Danger if the current level is higher than the danger level threshold value.    
       type: string    
       x-ngsi:    
         model: https://schema.org/Text    
         type: Property    
     id:    
       anyOf: &floodmonitoring_-_properties_-_owner_-_items_-_anyof    
-        - description: 'Property. Identifier format of any NGSI entity'    
+        - description: Property. Identifier format of any NGSI entity    
           maxLength: 256    
           minLength: 1    
           pattern: ^[\w\-\.\{\}\$\+\*\[\]`|~^@!,:\\]+$    
           type: string    
-        - description: 'Property. Identifier format of any NGSI entity'    
+        - description: Property. Identifier format of any NGSI entity    
           format: uri    
           type: string    
-      description: 'Unique identifier of the entity'    
+      description: Unique identifier of the entity    
       x-ngsi:    
         type: Property    
     location:    
       description: 'Geojson reference to the item. It can be Point, LineString, Polygon, MultiPoint, MultiLineString or MultiPolygon'    
       oneOf:    
-        - description: 'GeoProperty. Geojson reference to the item. Point'    
+        - description: GeoProperty. Geojson reference to the item. Point    
           properties:    
             bbox:    
               items:    
@@ -148,9 +154,9 @@ FloodMonitoring:
           required:    
             - type    
             - coordinates    
-          title: 'GeoJSON Point'    
+          title: GeoJSON Point    
           type: object    
-        - description: 'GeoProperty. Geojson reference to the item. LineString'    
+        - description: GeoProperty. Geojson reference to the item. LineString    
           properties:    
             bbox:    
               items:    
@@ -172,9 +178,9 @@ FloodMonitoring:
           required:    
             - type    
             - coordinates    
-          title: 'GeoJSON LineString'    
+          title: GeoJSON LineString    
           type: object    
-        - description: 'GeoProperty. Geojson reference to the item. Polygon'    
+        - description: GeoProperty. Geojson reference to the item. Polygon    
           properties:    
             bbox:    
               items:    
@@ -198,9 +204,9 @@ FloodMonitoring:
           required:    
             - type    
             - coordinates    
-          title: 'GeoJSON Polygon'    
+          title: GeoJSON Polygon    
           type: object    
-        - description: 'GeoProperty. Geojson reference to the item. MultiPoint'    
+        - description: GeoProperty. Geojson reference to the item. MultiPoint    
           properties:    
             bbox:    
               items:    
@@ -221,9 +227,9 @@ FloodMonitoring:
           required:    
             - type    
             - coordinates    
-          title: 'GeoJSON MultiPoint'    
+          title: GeoJSON MultiPoint    
           type: object    
-        - description: 'GeoProperty. Geojson reference to the item. MultiLineString'    
+        - description: GeoProperty. Geojson reference to the item. MultiLineString    
           properties:    
             bbox:    
               items:    
@@ -247,9 +253,9 @@ FloodMonitoring:
           required:    
             - type    
             - coordinates    
-          title: 'GeoJSON MultiLineString'    
+          title: GeoJSON MultiLineString    
           type: object    
-        - description: 'GeoProperty. Geojson reference to the item. MultiLineString'    
+        - description: GeoProperty. Geojson reference to the item. MultiLineString    
           properties:    
             bbox:    
               items:    
@@ -275,7 +281,7 @@ FloodMonitoring:
           required:    
             - type    
             - coordinates    
-          title: 'GeoJSON MultiPolygon'    
+          title: GeoJSON MultiPolygon    
           type: object    
       x-ngsi:    
         type: GeoProperty    
@@ -286,33 +292,33 @@ FloodMonitoring:
         model: https://schema.org/Number    
         type: Property    
     name:    
-      description: 'The name of this item.'    
+      description: The name of this item.    
       type: string    
       x-ngsi:    
         type: Property    
     observationDateTime:    
-      description: 'Last reported time of observation.'    
+      description: Last reported time of observation.    
       format: date-time    
       type: string    
       x-ngsi:    
         model: https://schema.org/DateTime    
         type: Property    
     owner:    
-      description: 'A List containing a JSON encoded sequence of characters referencing the unique Ids of the owner(s)'    
+      description: A List containing a JSON encoded sequence of characters referencing the unique Ids of the owner(s)    
       items:    
         anyOf: *floodmonitoring_-_properties_-_owner_-_items_-_anyof    
-        description: 'Property. Unique identifier of the entity'    
+        description: Property. Unique identifier of the entity    
       type: array    
       x-ngsi:    
         type: Property    
     referenceLevel:    
-      description: 'Describes the vertical distance from river bed to sensor tip.'    
+      description: Describes the vertical distance from river bed to sensor tip.    
       type: number    
       x-ngsi:    
         model: https://schema.org/Number    
         type: Property    
     seeAlso:    
-      description: 'list of uri pointing to additional resources about the item'    
+      description: list of uri pointing to additional resources about the item    
       oneOf:    
         - items:    
             format: uri    
@@ -329,13 +335,13 @@ FloodMonitoring:
       x-ngsi:    
         type: Property    
     stationID:    
-      description: 'A unique anonymous identifier assigned to the station corresponding to this observation.'    
+      description: A unique anonymous identifier assigned to the station corresponding to this observation.    
       type: string    
       x-ngsi:    
         model: https://schema.org/Text    
         type: Property    
     type:    
-      description: 'It has to be FloodMonitoring. NGSI Entity type.'    
+      description: It has to be FloodMonitoring. NGSI Entity type.    
       enum:    
         - FloodMonitoring    
       type: string    
@@ -346,7 +352,7 @@ FloodMonitoring:
     - type    
   type: object    
   x-derived-from: ""    
-  x-disclaimer: 'Redistribution and use in source and binary forms, with or without modification, are permitted  provided that the license conditions are met. Copyleft (c) 2021 Contributors to Smart Data Models Program'    
+  x-disclaimer: 'Redistribution and use in source and binary forms, with or without modification, are permitted  provided that the license conditions are met. Copyleft (c) 2022 Contributors to Smart Data Models Program'    
   x-license-url: https://github.com/smart-data-models/dataModel.Environment/blob/master/FloodMonitoring/LICENSE.md    
   x-model-schema: https://smart-data-models.github.io/dataModel.Environment/FloodMonitoring/schema.json    
   x-model-tags: ""    
@@ -358,7 +364,7 @@ FloodMonitoring:
 <!-- /70-MiddleNotes -->  
 <!-- 80-Examples -->  
 ## Esempi di payload  
-#### Valori-chiave del FloodMonitoring NGSI-v2 Esempio  
+#### Valori chiave del FloodMonitoring NGSI-v2 Esempio  
 Ecco un esempio di FloodMonitoring in formato JSON-LD come valori-chiave. Questo è compatibile con NGSI-v2 quando si usa `options=keyValues` e restituisce i dati di contesto di una singola entità.  
 <details><summary><strong>show/hide example</strong></summary>    
 ```json  
@@ -423,6 +429,26 @@ FloodMonitoring:
 <details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
+    "alertLevel": 10.0,  
+    "currentLevel": 0.98,  
+    "dangerLevel": 25.0,  
+    "floodLevelStatus": "Normal",  
+    "measuredDistance": 3.22,  
+    "observationDateTime": "2020-09-16T13:30:00+05:30",  
+    "referenceLevel": 4.2,  
+    "stationID": "FWR013",  
+    "@context": [  
+        "https://uri.etsi.org/ngsi-ld/v1/ngsi-ld-core-context.jsonld",  
+        "https://raw.githubusercontent.com/smart-data-models/dataModel.Environment/master/context.jsonld"  
+    ]  
+}  
+```  
+</details>  
+#### Monitoraggio delle piene NGSI-LD normalizzato Esempio  
+Ecco un esempio di FloodMonitoring in formato JSON-LD normalizzato. Questo è compatibile con NGSI-LD quando non si utilizzano opzioni e restituisce i dati di contesto di una singola entità.  
+<details><summary><strong>show/hide example</strong></summary>    
+```json  
+{  
     "id": "urn:ngsi-ld:FloodMonitoring:Pune-NoiseLevelObserved",  
     "type": "FloodMonitoring",  
     "alertLevel": {  
@@ -463,26 +489,6 @@ FloodMonitoring:
         "type": "string",  
         "value": "FWR013"  
     },  
-    "@context": [  
-        "https://uri.etsi.org/ngsi-ld/v1/ngsi-ld-core-context.jsonld",  
-        "https://raw.githubusercontent.com/smart-data-models/dataModel.Environment/master/context.jsonld"  
-    ]  
-}  
-```  
-</details>  
-#### FloodMonitoring NGSI-LD normalizzato Esempio  
-Ecco un esempio di FloodMonitoring in formato JSON-LD normalizzato. Questo è compatibile con NGSI-LD quando non si utilizzano opzioni e restituisce i dati di contesto di una singola entità.  
-<details><summary><strong>show/hide example</strong></summary>    
-```json  
-{  
-    "alertLevel": 10.0,  
-    "currentLevel": 0.98,  
-    "dangerLevel": 25.0,  
-    "floodLevelStatus": "Normal",  
-    "measuredDistance": 3.22,  
-    "observationDateTime": "2020-09-16T13:30:00+05:30",  
-    "referenceLevel": 4.2,  
-    "stationID": "FWR013",  
     "@context": [  
         "https://uri.etsi.org/ngsi-ld/v1/ngsi-ld-core-context.jsonld",  
         "https://raw.githubusercontent.com/smart-data-models/dataModel.Environment/master/context.jsonld"  
