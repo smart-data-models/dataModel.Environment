@@ -1,29 +1,94 @@
 {
     "id": "urn:ngsi-ld:PhreaticObserved:PhreaticObserved:MNCA-001",
     "type": "PhreaticObserved",
-    "areaServed": "Nice Airport",
-    "dateObserved": "2020-07-07T15:05:59.408Z",
-    "depth": 20.45,
-    "description": "Measurement corresponding to the level and quality of groundwater closed from Airport River Saint Laurent du Var.",
-    "investigationDepth": 22.35,
-    "isMobile": false,
+    "areaServed": {
+        "type": "Property",
+        "value": "Nice Airport"
+    },
+    "dateObserved": {
+        "type": "Property",
+        "value": {
+            "type": "DateTime",
+            "value": "2020-07-07T15:05:59.408Z"
+        }
+    },
+    "depth": {
+        "type": "Property",
+        "value": 20.45,
+        "observedAt": "2020-03-17TT08:45:00Z",
+        "qualification": {
+            "type": "Property",
+            "value": "Incorrect"
+        },
+        "status ": {
+            "type": "Property",
+            "value": "Level 1"
+        }
+    },
+    "description": {
+        "type": "Property",
+        "value": "Measurement corresponding to the level and quality of groundwater closed from Airport River Saint Laurent du Var."
+    },
+    "investigationDepth": {
+        "type": "Property",
+        "value": 22.35
+    },
+    "isMobile": {
+        "type": "Property",
+        "value": false
+    },
     "location": {
-        "type": "Point",
-        "coordinates": [
-            43.66481,
-            7.196545
+        "type": "GeoProperty",
+        "value": {
+            "type": "Point",
+            "coordinates": [
+                43.66481,
+                7.196545
+            ]
+        }
+    },
+    "measurementType": {
+        "type": "Property",
+        "value": [
+            "depth",
+            "volume"
         ]
     },
-    "measurementType": [
-        "depth",
-        "volume"
-    ],
-    "name": "STLRT-MNCA-NP-015",
-    "pressure": 2.12,
-    "refDevice": [
-        "urn:ngsi-ld:Device:T1-NP-015"
-    ],
-    "waterTable": 12.75,
+    "name": {
+        "type": "Property",
+        "value": "STLRT-MNCA-NP-015"
+    },
+    "pressure": {
+        "type": "Property",
+        "value": 2.12,
+        "observedAt": "2020-03-17TT08:45:00Z",
+        "qualification": {
+            "value": "Correct"
+        },
+        "status ": {
+            "type": "Property",
+            "value": "Level 3"
+        }
+    },
+    "refDevice": {
+        "type": "Relationship",
+        "Object": [
+            "urn:ngsi-ld:Device:T1-NP-015"
+        ]
+    },
+    "waterTable": {
+        "type": "Property",
+        "value": 12.75,
+        "observedAt": "2020-03-17TT08:45:00Z",
+        "qualification": {
+            "type": "Property",
+            "value": "Correct"
+        },
+        "status ": {
+            "type": "Property",
+            "value": "Level 2"
+        }
+    },
     "@context": [
         "https://uri.etsi.org/ngsi-ld/v1/ngsi-ld-core-context.jsonld",
         "https://raw.githubusercontent.com/smart-data-models/dataModel.Environment/master/context.jsonld"

@@ -1,38 +1,106 @@
 {
     "id": "urn:ngsi-ld:AirQualityObserved:Madrid-AmbientObserved-28079004-2016-03-15T11:00:00",
     "type": "AirQualityObserved",
-    "CO": 500,
-    "CO_Level": "moderate",
-    "NO": 45,
-    "NO2": 69,
-    "NOx": 139,
-    "SO2": 11,
+    "CO": {
+        "type": "Property",
+        "value": 500,
+        "unitCode": "GP"
+    },
+    "CO_Level": {
+        "type": "Property",
+        "value": "moderate"
+    },
+    "NO": {
+        "type": "Property",
+        "value": 45,
+        "unitCode": "GQ"
+    },
+    "NO2": {
+        "type": "Property",
+        "value": 69,
+        "unitCode": "GQ"
+    },
+    "NOx": {
+        "type": "Property",
+        "value": 139,
+        "unitCode": "GQ"
+    },
+    "SO2": {
+        "type": "Property",
+        "value": 11,
+        "unitCode": "GQ"
+    },
     "address": {
-        "addressCountry": "ES",
-        "addressLocality": "Madrid",
-        "streetAddress": "Plaza de Espa\u00f1a",
-        "type": "PostalAddress"
+        "type": "Property",
+        "value": {
+            "addressCountry": "ES",
+            "addressLocality": "Madrid",
+            "streetAddress": "Plaza de Espa\u00f1a",
+            "type": "PostalAddress"
+        }
     },
-    "airQualityIndex": 65,
-    "airQualityLevel": "moderate",
-    "areaServed": "Brooklands",
-    "dateObserved": "2016-03-15T11:00:00/2016-03-15T12:00:00",
+    "airQualityIndex": {
+        "type": "Property",
+        "value": 65
+    },
+    "airQualityLevel": {
+        "type": "Property",
+        "value": "moderate"
+    },
+    "areaServed": {
+        "type": "Property",
+        "value": "Brooklands"
+    },
+    "dateObserved": {
+        "type": "Property",
+        "value": "2016-03-15T11:00:00/2016-03-15T12:00:00"
+    },
     "location": {
-        "coordinates": [
-            -3.712247222222222,
-            40.423852777777775
-        ],
-        "type": "Point"
+        "type": "GeoProperty",
+        "value": {
+            "type": "Point",
+            "coordinates": [
+                -3.712247222222222,
+                40.423852777777775
+            ]
+        }
     },
-    "precipitation": 0,
-    "refPointOfInterest": "urn:ngsi-ld:PointOfInterest:28079004-Pza.deEspanya",
-    "relativeHumidity": 0.54,
-    "reliability": 0.7,
-    "source": "http://datos.madrid.es",
-    "temperature": 12.2,
-    "typeOfLocation": "outdoor",
-    "windDirection": 186,
-    "windSpeed": 0.64,
+    "precipitation": {
+        "type": "Property",
+        "value": 0
+    },
+    "refPointOfInterest": {
+        "type": "Relationship",
+        "object": "urn:ngsi-ld:PointOfInterest:28079004-Pza.deEspanya"
+    },
+    "relativeHumidity": {
+        "type": "Property",
+        "value": 0.54
+    },
+    "reliability": {
+        "type": "Property",
+        "value": 0.7
+    },
+    "source": {
+        "type": "Property",
+        "value": "http://datos.madrid.es"
+    },
+    "temperature": {
+        "type": "Property",
+        "value": 12.2
+    },
+    "typeOfLocation": {
+        "type": "Property",
+        "value": "outdoor"
+    },
+    "windDirection": {
+        "type": "Property",
+        "value": 186
+    },
+    "windSpeed": {
+        "type": "Property",
+        "value": 0.64
+    },
     "@context": [
         "https://uri.etsi.org/ngsi-ld/v1/ngsi-ld-core-context.jsonld",
         "https://raw.githubusercontent.com/smart-data-models/dataModel.Environment/master/context.jsonld"
