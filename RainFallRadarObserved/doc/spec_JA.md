@@ -15,7 +15,7 @@
 ## プロパティ一覧  
 
 <sup><sub>[*] 属性に型がない場合は、複数の型や異なるフォーマット/パターンを持つ可能性があるためです</sub></sup>。  
-- `address[object]`: 郵送先住所  . Model: [https://schema.org/address](https://schema.org/address)- `alternateName[string]`: このアイテムの別称  - `areaServed[string]`: サービスまたは提供されるアイテムが提供される地理的な地域  . Model: [https://schema.org/Text](https://schema.org/Text)- `atmosphericPressure[number]`: 大気圧はヘクトパスカルで測定されます。  . Model: [https://schema.org/Number](https://schema.org/Number)- `cellsSize[number]`: レーダーを構成する各セルの大きさ。計測の単位コード（テキスト）は、[UN/CEFACT Common Codes](http://wiki.goodrelations-vocabulary.org/Documentation/UN/CEFACT_Common_Codes)を用いて与えられる。例えば、**MTR**は**Meters**を表す。  . Model: [https://schema.org/Number](https://schema.org/Number)- `dataProvider[string]`: 調和されたデータエンティティの提供者を識別する一連の文字。  - `dateCreated[string]`: エンティティの作成タイムスタンプ。これは通常、ストレージプラットフォームによって割り当てられる。  - `dateModified[string]`: エンティティの最終更新のタイムスタンプ。これは通常、ストレージプラットフォームによって割り当てられる。  - `dateObserved[string]`: この観測の日時をISO8601 UTCフォーマットで表します。特定の時刻の瞬間、またはISO8601のインターバルで表すことができる。  . Model: [https://schema.org/DateTime](https://schema.org/DateTime)- `dateObservedFrom[string]`: 観測期間開始日時。dateObservedを参照。特定の時刻の瞬間、またはISO8601のインターバルで表すことができる  . Model: [https://schema.org/DateTime](https://schema.org/DateTime)- `dateObservedTo[string]`: 観測期間終了日時。dateObservedを参照。特定の時刻の瞬間、またはISO8601のインターバルで表すことができる  . Model: [https://schema.org/DateTime](https://schema.org/DateTime)- `description[string]`: このアイテムの説明  - `feelLikesTemperature[number]`: アイテムの温度感  - `gustSpeed[number]`: 観測された平均風速を超える高速の風が数秒間だけ突発的に発生すること。  - `id[*]`: エンティティの一意な識別子  - `illuminance[number]`: (https://en.wikipedia.org/wiki/Illuminance）ルクス（lx）またはルーメン/平方メートル（cd-sr-m-2）で測定された。  . Model: [https://schema.org/Number](https://schema.org/Number)- `location[*]`: アイテムへの Geojson 参照。Point, LineString, Polygon, MultiPoint, MultiLineString, MultiPolygon のいずれかである。  - `mapScale[string]`: 地図の縮尺。cellSizeの長さと地図上の表現の関係  . Model: [https://schema.org/Text](https://schema.org/Text)- `measuredArea[number]`: 測定した面の基準。単位コード（テキスト）は、[UN/CEFACT Common Codes](http://wiki.goodrelations-vocabulary.org/Documentation/UN/CEFACT_Common_Codes)を用いて付与される。例えば、**MTK**はSquare Metersを表す。  . Model: [https://schema.org/Number](https://schema.org/Number)- `name[string]`: この項目の名称です。  - `numberOfCol[number]`: rainFallradarContent`属性の読み取りを許可するColの数  . Model: [https://schema.org/Number](https://schema.org/Number)- `numberOfRow[number]`: rainFallradarContent`属性の読み取りを許可する行数。  . Model: [https://schema.org/Number](https://schema.org/Number)- `owner[array]`: 所有者の固有IDを参照するJSONエンコードされた文字列を含むリストです。  - `rainFallRadarContent[string]`: 観測された情報を提供したパスとファイル名  . Model: [https://schema.org/Text](https://schema.org/Text)- `refDevice[*]`: この観察結果を捉えた【デバイス】(https://github.com/smart-data-models/dataModel.Device/blob/master/Device/doc/spec.md)の参考文献  . Model: [https://schema.org/URL](https://schema.org/URL)- `refPointOfInterest[*]`: 観測と連動した[PointOfInterest](https://github.com/smart-data-models/dataModel.PointOfInterest/blob/master/PointOfInterest/doc/spec.md)への参照。  . Model: [https://schema.org/URL](https://schema.org/URL)- `relativeHumidity[number]`: 空気中の湿度。観測された瞬時相対湿度（空気中の水蒸気量）  - `seeAlso[*]`: アイテムに関する追加リソースを指す URI のリスト。  - `source[string]`: エンティティデータの元のソースをURLとして与える一連の文字。ソースプロバイダの完全修飾ドメイン名、またはソースオブジェクトのURLであることが推奨されます。  - `temperature[number]`: アイテムの温度  - `type[string]`: NGSI Entityタイプ。RainFallRadarObservedでなければならない。  - `visibility[*]`: 視認性のカテゴリー  . Model: [http://schema.org/Text](http://schema.org/Text)- `weatherType[string]`: 天気に関するテキスト説明  . Model: [http://schema.org/Text.](http://schema.org/Text.)- `windDirection[number]`: 風のベットの方向  . Model: [http://schema.org/Number](http://schema.org/Number)- `windSpeed[number]`: 風の強さ  . Model: [http//schema.org/Number](http//schema.org/Number)<!-- /30-PropertiesList -->  
+- `address[object]`: 郵送先住所  . Model: [https://schema.org/address](https://schema.org/address)- `alternateName[string]`: このアイテムの別称  - `areaServed[string]`: サービスまたは提供されるアイテムが提供される地理的な地域  . Model: [https://schema.org/Text](https://schema.org/Text)- `atmosphericPressure[number]`: 大気圧はヘクトパスカルで測定されます。  . Model: [https://schema.org/Number](https://schema.org/Number)- `cellsSize[number]`: プロパティです。レーダーを構成する各セルの大きさ。計測の単位コード（テキスト）は、[UN/CEFACT Common Codes](http://wiki.goodrelations-vocabulary.org/Documentation/UN/CEFACT_Common_Codes)を用いて与えられる。例えば、**MTR**は**Meters**を表す。モデル：'https://schema.org/Number'  . Model: [https://schema.org/Number](https://schema.org/Number)- `dataProvider[string]`: 調和されたデータエンティティの提供者を識別する一連の文字。  - `dateCreated[string]`: エンティティの作成タイムスタンプ。これは通常、ストレージプラットフォームによって割り当てられる。  - `dateModified[string]`: エンティティの最終更新のタイムスタンプ。これは通常、ストレージプラットフォームによって割り当てられる。  - `dateObserved[string]`: プロパティ。ISO8601 UTCフォーマットでのこの観測の日付と時間。これは、特定の時間インスタンスまたはISO8601インターバルで表すことができます。モデル：'https://schema.org/DateTime'  . Model: [https://schema.org/DateTime](https://schema.org/DateTime)- `dateObservedFrom[string]`: 物件です。観測期間開始日時。dateObservedを参照。特定の時刻の瞬間、またはISO8601のインターバルで表すことができる。モデル:'https://schema.org/DateTime'  . Model: [https://schema.org/DateTime](https://schema.org/DateTime)- `dateObservedTo[string]`: プロパティです。観測期間終了日時。dateObservedを参照。特定の時刻の瞬間、またはISO8601のインターバルで表すことができる。モデル:'https://schema.org/DateTime'  . Model: [https://schema.org/DateTime](https://schema.org/DateTime)- `description[string]`: このアイテムの説明  - `feelLikesTemperature[number]`: アイテムの温度感  - `gustSpeed[number]`: 観測された平均風速を超える高速の風が数秒間だけ突発的に発生すること。  - `id[*]`: エンティティの一意な識別子  - `illuminance[number]`: (https://en.wikipedia.org/wiki/Illuminance）ルクス（lx）またはルーメン/平方メートル（cd-sr-m-2）で測定された。  . Model: [https://schema.org/Number](https://schema.org/Number)- `location[*]`: アイテムへの Geojson 参照。Point, LineString, Polygon, MultiPoint, MultiLineString, MultiPolygon のいずれかである。  - `mapScale[string]`: プロパティ。地図の縮尺。cellSizeの長さと地図上の表現との関係。モデル:'https://schema.org/Text'  . Model: [https://schema.org/Text](https://schema.org/Text)- `measuredArea[number]`: プロパティ。測定した面の基準。単位コード（テキスト）は、[UN/CEFACT Common Codes](http://wiki.goodrelations-vocabulary.org/Documentation/UN/CEFACT_Common_Codes)を用いて与えられる。例えば、**MTK**はSquare Metersを表す。モデル：'https://schema.org/Number'.単位：'平方メートル'  . Model: [https://schema.org/Number](https://schema.org/Number)- `name[string]`: この項目の名称です。  - `numberOfCol[number]`: プロパティです。rainFallradarContent`属性の読み取りを許可するColの数。モデル:'https://schema.org/Number'  . Model: [https://schema.org/Number](https://schema.org/Number)- `numberOfRow[number]`: プロパティです。rainFallradarContent`属性の読み取りを許可する行数。モデル:'https://schema.org/Number'  . Model: [https://schema.org/Number](https://schema.org/Number)- `owner[array]`: 所有者の固有IDを参照するJSONエンコードされた文字列を含むリストです。  - `rainFallRadarContent[string]`: プロパティ観測された情報を提供したパスとファイル名。モデル：'https://schema.org/Text'  . Model: [https://schema.org/Text](https://schema.org/Text)- `refDevice[*]`: 関係です。この観察を捉えた[デバイス](https://github.com/smart-data-models/dataModel.Device/blob/master/Device/doc/spec.md)への言及。モデル:'https://schema.org/URL'  . Model: [https://schema.org/URL](https://schema.org/URL)- `refPointOfInterest[*]`: 関係。観測とリンクしている[PointOfInterest](https://github.com/smart-data-models/dataModel.PointOfInterest/blob/master/PointOfInterest/doc/spec.md)への参照。モデル:'https://schema.org/URL'  . Model: [https://schema.org/URL](https://schema.org/URL)- `relativeHumidity[number]`: 空気中の湿度。観測された瞬時相対湿度（空気中の水蒸気量）  - `seeAlso[*]`: アイテムに関する追加リソースを指す URI のリスト。  - `source[string]`: エンティティデータの元のソースをURLとして与える一連の文字。ソースプロバイダの完全修飾ドメイン名、またはソースオブジェクトのURLであることが推奨されます。  - `temperature[number]`: アイテムの温度  - `type[string]`: プロパティです。NGSI Entityタイプ。RainFallRadarObservedでなければならない。  - `visibility[*]`: 視認性のカテゴリー  . Model: [http://schema.org/Text](http://schema.org/Text)- `weatherType[string]`: 天気に関するテキスト説明  . Model: [http://schema.org/Text.](http://schema.org/Text.)- `windDirection[number]`: 風のベットの方向  . Model: [http://schema.org/Number](http://schema.org/Number)- `windSpeed[number]`: 風の強さ  . Model: [http//schema.org/Number](http//schema.org/Number)<!-- /30-PropertiesList -->  
 <!-- 35-RequiredProperties -->  
 必須プロパティ  
 - `dateObserved`  - `id`  - `location`  - `rainFallRadarContent`  - `type`  <!-- /35-RequiredProperties -->  
@@ -624,6 +624,67 @@ RainFallRadarObserved:
     "id": "urn:ngsi-ld:RainFallRadarObserved:RainFallRadarObserved:MNCA-RFRO-018",  
     "type": "RainFallRadarObserved",  
     "address": {  
+        "addressCountry": "FR",  
+        "addressLocality": "Nice",  
+        "streetAddress": "Airport Area Coverage + 4 km distance"  
+    },  
+    "alternateName": "AirPort global Observation",  
+    "areaServed": "Nice Aeroport",  
+    "cellsSize": 1,  
+    "dateObserved": "2020-03-17T08:30:00Z",  
+    "dateObservedFrom": "2020-03-17T08:30:00Z",  
+    "dateObservedTo": "2020-03-17T08:45:00Z",  
+    "description": "Rain fall Radar Observation",  
+    "location": {  
+        "type": "Polygon",  
+        "coordinates": [  
+            [  
+                [  
+                    43.66,  
+                    7.19  
+                ],  
+                [  
+                    44.66,  
+                    7.19  
+                ],  
+                [  
+                    44.66,  
+                    7.21  
+                ],  
+                [  
+                    43.66,  
+                    7.21  
+                ],  
+                [  
+                    43.66,  
+                    7.19  
+                ]  
+            ]  
+        ]  
+    },  
+    "mapScale": "1/10.000",  
+    "measuredArea": 250,  
+    "name": "MNCA-RFRO-018",  
+    "numberOfCol": 48,  
+    "numberOfRow": 25,  
+    "rainFallRadarContent": "https://particuliers/rainFallRadar/NCE-RFRO-018-2020-03-17T08:30:00",  
+    "refDevice": "urn:ngsi-ld:Device:NCE-RFRO-018",  
+    "@context": [  
+        "https://raw.githubusercontent.com/smart-data-models/data-models/master/context.jsonld",  
+        "https://uri.etsi.org/ngsi-ld/v1/ngsi-ld-core-context.jsonld",  
+        "https://raw.githubusercontent.com/smart-data-models/dataModel.Environment/master/context.jsonld"  
+    ]  
+}  
+```  
+</details>  
+#### RainFallRadarObserved NGSI-LD 正規化例  
+RainFallRadarObservedをJSON-LD形式で正規化した例を示します。これは、オプションを使用しない場合のNGSI-LDと互換性があり、個々のエンティティのコンテキストデータを返します。  
+<details><summary><strong>show/hide example</strong></summary>    
+```json  
+{  
+    "id": "urn:ngsi-ld:RainFallRadarObserved:RainFallRadarObserved:MNCA-RFRO-018",  
+    "type": "RainFallRadarObserved",  
+    "address": {  
         "type": "Property",  
         "value": {  
             "addressCountry": "FR",  
@@ -726,67 +787,6 @@ RainFallRadarObserved:
         "type": "Relationship",  
         "object": "urn:ngsi-ld:Device:NCE-RFRO-018"  
     },  
-    "@context": [  
-        "https://raw.githubusercontent.com/smart-data-models/data-models/master/context.jsonld",  
-        "https://uri.etsi.org/ngsi-ld/v1/ngsi-ld-core-context.jsonld",  
-        "https://raw.githubusercontent.com/smart-data-models/dataModel.Environment/master/context.jsonld"  
-    ]  
-}  
-```  
-</details>  
-#### RainFallRadarObserved NGSI-LD 正規化例  
-RainFallRadarObservedをJSON-LD形式で正規化した例を示します。これは、オプションを使用しない場合のNGSI-LDと互換性があり、個々のエンティティのコンテキストデータを返します。  
-<details><summary><strong>show/hide example</strong></summary>    
-```json  
-{  
-    "id": "urn:ngsi-ld:RainFallRadarObserved:RainFallRadarObserved:MNCA-RFRO-018",  
-    "type": "RainFallRadarObserved",  
-    "address": {  
-        "addressCountry": "FR",  
-        "addressLocality": "Nice",  
-        "streetAddress": "Airport Area Coverage + 4 km distance"  
-    },  
-    "alternateName": "AirPort global Observation",  
-    "areaServed": "Nice Aeroport",  
-    "cellsSize": 1,  
-    "dateObserved": "2020-03-17T08:30:00Z",  
-    "dateObservedFrom": "2020-03-17T08:30:00Z",  
-    "dateObservedTo": "2020-03-17T08:45:00Z",  
-    "description": "Rain fall Radar Observation",  
-    "location": {  
-        "type": "Polygon",  
-        "coordinates": [  
-            [  
-                [  
-                    43.66,  
-                    7.19  
-                ],  
-                [  
-                    44.66,  
-                    7.19  
-                ],  
-                [  
-                    44.66,  
-                    7.21  
-                ],  
-                [  
-                    43.66,  
-                    7.21  
-                ],  
-                [  
-                    43.66,  
-                    7.19  
-                ]  
-            ]  
-        ]  
-    },  
-    "mapScale": "1/10.000",  
-    "measuredArea": 250,  
-    "name": "MNCA-RFRO-018",  
-    "numberOfCol": 48,  
-    "numberOfRow": 25,  
-    "rainFallRadarContent": "https://particuliers/rainFallRadar/NCE-RFRO-018-2020-03-17T08:30:00",  
-    "refDevice": "urn:ngsi-ld:Device:NCE-RFRO-018",  
     "@context": [  
         "https://raw.githubusercontent.com/smart-data-models/data-models/master/context.jsonld",  
         "https://uri.etsi.org/ngsi-ld/v1/ngsi-ld-core-context.jsonld",  
