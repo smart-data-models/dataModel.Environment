@@ -41,7 +41,7 @@
   "validity": "2022-07-01T17:00:00+01:00/2022-07-01T18:00:00+01:00",
   "windSpeed": 0.64,
   "@context": [
-    "https://uri.etsi.org/ngsi-ld/v1/ngsi-ld-core-context.jsonld",
+
     "https://raw.githubusercontent.com/smart-data-models/dataModel.Environment/master/context.jsonld"
   ]
 }

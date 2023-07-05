@@ -1,33 +1,91 @@
-<!-- 10-Header -->  
+<!-- 10-Header -->
+  
 [![Smart Data Models](https://smartdatamodels.org/wp-content/uploads/2022/01/SmartDataModels_logo.png "Logo")](https://smartdatamodels.org)  
-エンティティPhreaticObserved（水蒸気観測  
-============================<!-- /10-Header -->  
-<!-- 15-License -->  
-[オープンライセンス](https://github.com/smart-data-models//dataModel.Environment/blob/master/PhreaticObserved/LICENSE.md)  
-[文書が自動的に生成されます](https://docs.google.com/presentation/d/e/2PACX-1vTs-Ng5dIAwkg91oTTUdt8ua7woBXhPnwavZ0FxgR8BsAI_Ek3C5q97Nd94HS8KhP-r_quD4H0fgyt3/pub?start=false&loop=false&delayms=3000#slide=id.gb715ace035_0_60)  
-<!-- /15-License -->  
-<!-- 20-Description -->  
-グローバルな記述です：** データモデルは、固定または移動式の監視システムにより、ある時間（T）における地下水の水位と水質を測定、観察、管理することを目的としています。使用する装置によっては、電気伝導度、塩分、温度などの水質を測定することも可能である。この場合、測定された値はデータモデル `WaterObserved` と `WaterQualityObserved` で処理される。属性に関する追加情報：この属性には、秒単位の `TimeStamp` 、測定の `qualification` と制御 `status` が含まれます。  
-バージョン：0.0.2  
-<!-- /20-Description -->  
-<!-- 30-PropertiesList -->  
 
-## プロパティ一覧  
+エンティティPhreaticObserved（水蒸気観測  
+============================
+<!-- /10-Header -->
+  
+<!-- 15-License -->
+  
 
-<sup><sub>[*] 属性に型がない場合は、複数の型や異なるフォーマット/パターンを持つ可能性があるためです</sub></sup>。  
-- `address[object]`: 郵送先住所  . Model: [https://schema.org/address](https://schema.org/address)- `alternateName[string]`: このアイテムの別称  - `areaServed[string]`: サービスまたは提供されるアイテムが提供される地理的な地域  . Model: [https://schema.org/Text](https://schema.org/Text)- `dataProvider[string]`: 調和されたデータエンティティの提供者を識別する一連の文字。  - `dateCreated[string]`: エンティティの作成タイムスタンプ。これは通常、ストレージプラットフォームによって割り当てられる。  - `dateModified[string]`: エンティティの最終更新のタイムスタンプ。これは通常、ストレージプラットフォームによって割り当てられる。  - `dateObserved[string]`: ISO8601 UTCフォーマットによるこの観測の日付と時間  . Model: [https://schema.org/DateTime](https://schema.org/DateTime)- `dateObservedFrom[string]`: 観測期間 ：開始日時（ISO8601 UTC形式  . Model: [https://schema.org/DateTime](https://schema.org/DateTime)- `dateObservedTo[string]`: 観測期間 ：終了日時（ISO8601 UTC形式  . Model: [https://schema.org/DateTime](https://schema.org/DateTime)- `depth[number]`: 飲料水の深さ、その識別以来 `waterTable`.UN/CEFACT Common Codes](http://wiki.goodrelations-vocabulary.org/Documentation/UN/CEFACT_Common_Codes)を用いて与えられる計測の単位コード（テキスト）（最大3文字）。例えば、<code> MTR </code> は Meter を表す。  . Model: [https://schema.org/depth](https://schema.org/depth)- `description[string]`: このアイテムの説明  - `id[*]`: エンティティの一意な識別子  - `investigationDepth[number]`: 調査が行われた最大深度。UN/CEFACT Common Codes](http://wiki.goodrelations-vocabulary.org/Documentation/UN/CEFACT_Common_Codes)を用いて与えられる測定の単位コード（テキスト）（最大3文字）。例えば、<code>MTR</code>はMeterを表す。  . Model: [https://schema.org/DateTime](https://schema.org/DateTime)- `isMobile[boolean]`: 使用するデバイスは固定式（False）またはモバイル式（True）です。  . Model: [https://schema.org/Boolean](https://schema.org/Boolean)- `location[*]`: アイテムへの Geojson 参照。Point, LineString, Polygon, MultiPoint, MultiLineString, MultiPolygon のいずれかである。  - `measurementType[array]`: 観測期間：処理された測定の種類。Enum:'深さ、量、質、その他'  . Model: [https://schema.org/Text](https://schema.org/Text)- `name[string]`: この項目の名称です。  - `owner[array]`: 所有者の固有IDを参照するJSONエンコードされた文字列を含むリストです。  - `pollutionRate[number]`: 汚染の割合。UN/CEFACT Common Codes](http://wiki.goodrelations-vocabulary.org/Documentation/UN/CEFACT_Common_Codes)を用いて与えられる測定の単位コード（テキスト）（最大3文字）。例えば、P1 は Percentage を表す。  . Model: [https://schema.org/Number](https://schema.org/Number)- `pressure[number]`: 水圧。UN/CEFACT Common Codes](http://wiki.goodrelations-vocabulary.org/Documentation/UN/CEFACT_Common_Codes)を用いて与えられる計測の単位コード（テキスト）（最大3文字）。例えば、<code>BAR</code>はBarを表す。  . Model: [https://schema.org/DateTime](https://schema.org/DateTime)- `refDevice[array]`: データ提供機器への言及  . Model: [https://scehma.org/URL](https://scehma.org/URL)- `residueLevel[number]`: 残留レベル発見  . Model: [https://schema.org/Number.](https://schema.org/Number.)- `seeAlso[*]`: アイテムに関する追加リソースを指す URI のリスト。  - `source[string]`: エンティティデータの元のソースをURLとして与える一連の文字。ソースプロバイダの完全修飾ドメイン名、またはソースオブジェクトのURLであることが推奨されます。  - `type[string]`: NGSI Entity タイプ。PhreaticObservedでなければならない。  - `waterTable[number]`: 今回の調査で水が発見されたレベル。UN/CEFACT Common Codes](http://wiki.goodrelations-vocabulary.org/Documentation/UN/CEFACT_Common_Codes)を用いて与えられる計測の単位コード（テキスト）（最大3文字）。例えば、<code>MTR</code>はMeterを表す。  . Model: [https://schema.org/Number](https://schema.org/Number)<!-- /30-PropertiesList -->  
-<!-- 35-RequiredProperties -->  
-必須プロパティ  
-- `dateObserved`  - `id`  - `location`  - `measurementType`  - `type`  <!-- /35-RequiredProperties -->  
-<!-- 40-RequiredProperties -->  
-<!-- /40-RequiredProperties -->  
-<!-- 50-DataModelHeader -->  
-## プロパティのデータモデル記述  
-アルファベット順（クリックで詳細表示）  
-<!-- /50-DataModelHeader -->  
-<!-- 60-ModelYaml -->  
+[オープンライセンス](https://github.com/smart-data-models//dataModel.Environment/blob/master/PhreaticObserved/LICENSE.md)  
+
+[文書が自動的に生成されます](https://docs.google.com/presentation/d/e/2PACX-1vTs-Ng5dIAwkg91oTTUdt8ua7woBXhPnwavZ0FxgR8BsAI_Ek3C5q97Nd94HS8KhP-r_quD4H0fgyt3/pub?start=false&loop=false&delayms=3000#slide=id.gb715ace035_0_60)  
+<!-- /15-License -->
+  
+<!-- 20-Description -->
+  
+
+グローバルな記述です：** データモデルは、固定または移動式の監視システムにより、ある時間（T）における地下水の水位と水質を測定、観察、管理することを目的としています。使用する装置によっては、電気伝導度、塩分、温度などの水質を測定することも可能である。この場合、測定された値はデータモデル `WaterObserved` と `WaterQualityObserved` で処理される。属性に関する追加情報：この属性には、秒単位の `TimeStamp` 、測定の `qualification` と制御 `status` が含まれます。  
+
+バージョン：0.0.2  
+<!-- /20-Description -->
+  
+<!-- 30-PropertiesList -->
+  
+
+
+## プロパティ一覧  
+
+
+<sup><sub>[*] 属性に型がない場合は、複数の型や異なるフォーマット/パターンを持つ可能性があるためです</sub></sup>。  
+- `address[object]`: 郵送先住所  . Model: [https://schema.org/address](https://schema.org/address)
+- `alternateName[string]`: このアイテムの別称  
+- `areaServed[string]`: サービスまたは提供されるアイテムが提供される地理的な地域  . Model: [https://schema.org/Text](https://schema.org/Text)
+- `dataProvider[string]`: 調和されたデータエンティティの提供者を識別する一連の文字。  
+- `dateCreated[string]`: エンティティの作成タイムスタンプ。これは通常、ストレージプラットフォームによって割り当てられる。  
+- `dateModified[string]`: エンティティの最終更新のタイムスタンプ。これは通常、ストレージプラットフォームによって割り当てられる。  
+- `dateObserved[string]`: ISO8601 UTCフォーマットによるこの観測の日付と時間  . Model: [https://schema.org/DateTime](https://schema.org/DateTime)
+- `dateObservedFrom[string]`: 観測期間 ：開始日時（ISO8601 UTC形式  . Model: [https://schema.org/DateTime](https://schema.org/DateTime)
+- `dateObservedTo[string]`: 観測期間 ：終了日時（ISO8601 UTC形式  . Model: [https://schema.org/DateTime](https://schema.org/DateTime)
+- `depth[number]`: 飲料水の深さ、その識別以来 `waterTable`.UN/CEFACT Common Codes](http://wiki.goodrelations-vocabulary.org/Documentation/UN/CEFACT_Common_Codes)を用いて与えられる計測の単位コード（テキスト）（最大3文字）。例えば、<code> MTR </code> は Meter を表す。  . Model: [https://schema.org/depth](https://schema.org/depth)
+- `description[string]`: このアイテムの説明  
+- `id[*]`: エンティティの一意な識別子  
+- `investigationDepth[number]`: 調査が行われた最大深度。UN/CEFACT Common Codes](http://wiki.goodrelations-vocabulary.org/Documentation/UN/CEFACT_Common_Codes)を用いて与えられる測定の単位コード（テキスト）（最大3文字）。例えば、<code>MTR</code>はMeterを表す。  . Model: [https://schema.org/DateTime](https://schema.org/DateTime)
+- `isMobile[boolean]`: 使用するデバイスは固定式（False）またはモバイル式（True）です。  . Model: [https://schema.org/Boolean](https://schema.org/Boolean)
+- `location[*]`: アイテムへの Geojson 参照。Point, LineString, Polygon, MultiPoint, MultiLineString, MultiPolygon のいずれかである。  
+- `measurementType[array]`: 観測期間：処理された測定の種類。Enum:'深さ、量、質、その他'  . Model: [https://schema.org/Text](https://schema.org/Text)
+- `name[string]`: この項目の名称です。  
+- `owner[array]`: 所有者の固有IDを参照するJSONエンコードされた文字列を含むリストです。  
+- `pollutionRate[number]`: 汚染の割合。UN/CEFACT Common Codes](http://wiki.goodrelations-vocabulary.org/Documentation/UN/CEFACT_Common_Codes)を用いて与えられる測定の単位コード（テキスト）（最大3文字）。例えば、P1 は Percentage を表す。  . Model: [https://schema.org/Number](https://schema.org/Number)
+- `pressure[number]`: 水圧。UN/CEFACT Common Codes](http://wiki.goodrelations-vocabulary.org/Documentation/UN/CEFACT_Common_Codes)を用いて与えられる計測の単位コード（テキスト）（最大3文字）。例えば、<code>BAR</code>はBarを表す。  . Model: [https://schema.org/DateTime](https://schema.org/DateTime)
+- `refDevice[array]`: データ提供機器への言及  . Model: [https://scehma.org/URL](https://scehma.org/URL)
+- `residueLevel[number]`: 残留レベル発見  . Model: [https://schema.org/Number.](https://schema.org/Number.)
+- `seeAlso[*]`: アイテムに関する追加リソースを指す URI のリスト。  
+- `source[string]`: エンティティデータの元のソースをURLとして与える一連の文字。ソースプロバイダの完全修飾ドメイン名、またはソースオブジェクトのURLであることが推奨されます。  
+- `type[string]`: NGSI Entity タイプ。PhreaticObservedでなければならない。  
+- `waterTable[number]`: 今回の調査で水が発見されたレベル。UN/CEFACT Common Codes](http://wiki.goodrelations-vocabulary.org/Documentation/UN/CEFACT_Common_Codes)を用いて与えられる計測の単位コード（テキスト）（最大3文字）。例えば、<code>MTR</code>はMeterを表す。  . Model: [https://schema.org/Number](https://schema.org/Number)
+<!-- /30-PropertiesList -->
+  
+<!-- 35-RequiredProperties -->
+  
+
+必須プロパティ  
+- `dateObserved`  
+- `id`  
+- `location`  
+- `measurementType`  
+- `type`  
+<!-- /35-RequiredProperties -->
+  
+<!-- 40-RequiredProperties -->
+  
+<!-- /40-RequiredProperties -->
+  
+<!-- 50-DataModelHeader -->
+  
+
+## プロパティのデータモデル記述  
+
+アルファベット順（クリックで詳細表示）  
+<!-- /50-DataModelHeader -->
+  
+<!-- 60-ModelYaml -->
+  
 <details><summary><strong>full yaml details</strong></summary>    
-```yaml  
+
+```yaml  
 PhreaticObserved:    
   description: 'The Data Model is intended to measure, observe and control the level and quality of groundwater at a given time (T), by a fixed or mobile monitoring system. Depending on the device used, it is also possible to measure the quality of water such as its electrical conductivity, its salt content, its temperature, etc. In this case, the values measured are processed by the Data Model `WaterObserved` and `WaterQualityObserved`. Additional Information about Attributes: For attributes dedicated to water, a MetaData attribute can also be used. it contains the `TimeStamp` in seconds, the `qualification` and control `status` of the measurement.'    
   properties:    
@@ -404,16 +462,25 @@ PhreaticObserved:
   x-version: 0.0.2    
 ```  
 </details>    
-<!-- /60-ModelYaml -->  
-<!-- 70-MiddleNotes -->  
-<!-- /70-MiddleNotes -->  
-<!-- 80-Examples -->  
-## ペイロードの例  
-#### PhreaticObserved NGSI-v2 キー値例  
-ここでは、PhreaticObservedをJSON-LD形式でkey-valuesとした例を示します。これは、`options=keyValues`を使用した場合にNGSI-v2と互換性があり、個々のエンティティのコンテキストデータを返します。  
+<!-- /60-ModelYaml -->
+  
+<!-- 70-MiddleNotes -->
+  
+<!-- /70-MiddleNotes -->
+  
+<!-- 80-Examples -->
+  
+
+## ペイロードの例  
+
+#### PhreaticObserved NGSI-v2 キー値例  
+
+ここでは、PhreaticObservedをJSON-LD形式でkey-valuesとした例を示します。これは、`options=keyValues`を使用した場合にNGSI-v2と互換性があり、個々のエンティティのコンテキストデータを返します。  
 <details><summary><strong>show/hide example</strong></summary>    
-```json  
-{  
+
+```json  
+
+{  
   "id": "urn:ngsi-ld:PhreaticObserved:PhreaticObserved:MNCA-001",  
   "type": "PhreaticObserved",  
   "name": "STLRT-MNCA-NP-015",  
@@ -442,11 +509,15 @@ PhreaticObserved:
 }  
 ```  
 </details>  
-#### PhreaticObserved NGSI-v2 正規化例  
-以下は、正規化されたJSON-LD形式のPhreaticObservedの例である。これは、オプションを使用しない場合のNGSI-v2と互換性があり、個々のエンティティのコンテキストデータを返します。  
+
+#### PhreaticObserved NGSI-v2 正規化例  
+
+以下は、正規化されたJSON-LD形式のPhreaticObservedの例である。これは、オプションを使用しない場合のNGSI-v2と互換性があり、個々のエンティティのコンテキストデータを返します。  
 <details><summary><strong>show/hide example</strong></summary>    
-```json  
-{  
+
+```json  
+
+{  
 	"id": "urn:ngsi-ld:PhreaticObserved:PhreaticObserved:MNCA-001",  
 	"type": "PhreaticObserved",  
 	"name": {  
@@ -532,11 +603,15 @@ PhreaticObserved:
 }  
 ```  
 </details>  
-#### 水蒸気観測 NGSI-LD キー値例  
-PhreaticObservedをJSON-LD形式でkey-valuesとした例を示します。これは、`options=keyValues`を使用した場合にNGSI-LDと互換性があり、個々のエンティティのコンテキストデータを返します。  
+
+#### 水蒸気観測 NGSI-LD キー値例  
+
+PhreaticObservedをJSON-LD形式でkey-valuesとした例を示します。これは、`options=keyValues`を使用した場合にNGSI-LDと互換性があり、個々のエンティティのコンテキストデータを返します。  
 <details><summary><strong>show/hide example</strong></summary>    
-```json  
-{  
+
+```json  
+
+{  
     "id": "urn:ngsi-ld:PhreaticObserved:PhreaticObserved:MNCA-001",  
     "type": "PhreaticObserved",  
     "areaServed": "Nice Airport",  
@@ -563,17 +638,21 @@ PhreaticObserved:
     ],  
     "waterTable": 12.75,  
     "@context": [  
-        "https://uri.etsi.org/ngsi-ld/v1/ngsi-ld-core-context.jsonld",  
+      
         "https://raw.githubusercontent.com/smart-data-models/dataModel.Environment/master/context.jsonld"  
     ]  
 }  
 ```  
 </details>  
-#### PhreaticObserved NGSI-LD 正規化例  
-ここでは、正規化されたJSON-LD形式のPhreaticObservedの例を示す。これは、オプションを使用しない場合のNGSI-LDと互換性があり、個々のエンティティのコンテキストデータを返します。  
+
+#### PhreaticObserved NGSI-LD 正規化例  
+
+ここでは、正規化されたJSON-LD形式のPhreaticObservedの例を示す。これは、オプションを使用しない場合のNGSI-LDと互換性があり、個々のエンティティのコンテキストデータを返します。  
 <details><summary><strong>show/hide example</strong></summary>    
-```json  
-{  
+
+```json  
+
+{  
     "id": "urn:ngsi-ld:PhreaticObserved:PhreaticObserved:MNCA-001",  
     "type": "PhreaticObserved",  
     "areaServed": {  
@@ -665,17 +744,26 @@ PhreaticObserved:
         }  
     },  
     "@context": [  
-        "https://uri.etsi.org/ngsi-ld/v1/ngsi-ld-core-context.jsonld",  
+      
         "https://raw.githubusercontent.com/smart-data-models/dataModel.Environment/master/context.jsonld"  
     ]  
 }  
 ```  
-</details><!-- /80-Examples -->  
-<!-- 90-FooterNotes -->  
-<!-- /90-FooterNotes -->  
-<!-- 95-Units -->  
-マグニチュード単位の扱いについては、[FAQ 10](https://smartdatamodels.org/index.php/faqs/)を参照してください。  
-<!-- /95-Units -->  
-<!-- 97-LastFooter -->  
+</details><!-- /80-Examples -->
+  
+<!-- 90-FooterNotes -->
+  
+<!-- /90-FooterNotes -->
+  
+<!-- 95-Units -->
+  
+
+マグニチュード単位の扱いについては、[FAQ 10](https://smartdatamodels.org/index.php/faqs/)を参照してください。  
+<!-- /95-Units -->
+  
+<!-- 97-LastFooter -->
+  
 ---  
-[Smart Data Models](https://smartdatamodels.org) +++ [Contribution Manual](https://bit.ly/contribution_manual) +++ [About](https://bit.ly/Introduction_SDM)<!-- /97-LastFooter -->  
+
+[Smart Data Models](https://smartdatamodels.org) +++ [Contribution Manual](https://bit.ly/contribution_manual) +++ [About](https://bit.ly/Introduction_SDM)<!-- /97-LastFooter -->
+  

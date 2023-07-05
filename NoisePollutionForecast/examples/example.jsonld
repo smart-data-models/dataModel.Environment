@@ -43,7 +43,7 @@
     "validity": "P1D",
     "dateIssued": "2022-08-23T05:05:35Z",
     "@context": [
-        "https://smartdatamodels.org/dataModel.Environment/context.jsonld",
+
         "https://raw.githubusercontent.com/smart-data-models/dataModel.Environment/master/context.jsonld"
     ]
 }

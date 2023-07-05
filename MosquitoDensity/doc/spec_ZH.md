@@ -1,33 +1,82 @@
-<!-- 10-Header -->  
+<!-- 10-Header -->
+  
 [![Smart Data Models](https://smartdatamodels.org/wp-content/uploads/2022/01/SmartDataModels_logo.png "Logo")](https://smartdatamodels.org)  
-实体。蚊子密度  
-=======<!-- /10-Header -->  
-<!-- 15-License -->  
-[开放许可](https://github.com/smart-data-models//dataModel.Environment/blob/master/MosquitoDensity/LICENSE.md)  
-[文件自动生成](https://docs.google.com/presentation/d/e/2PACX-1vTs-Ng5dIAwkg91oTTUdt8ua7woBXhPnwavZ0FxgR8BsAI_Ek3C5q97Nd94HS8KhP-r_quD4H0fgyt3/pub?start=false&loop=false&delayms=3000#slide=id.gb715ace035_0_60)  
-<!-- /15-License -->  
-<!-- 20-Description -->  
-全球描述。**城市中蚊子密度的数据模型**。  
-版本：0.0.1  
-<!-- /20-Description -->  
-<!-- 30-PropertiesList -->  
 
-##属性列表  
+实体。蚊子密度  
+=======
+<!-- /10-Header -->
+  
+<!-- 15-License -->
+  
 
-<sup><sub>[*] 如果一个属性中没有一个类型，是因为它可能有几种类型或不同的格式/模式</sub></sup>。  
-- `address[object]`: 邮寄地址  . Model: [https://schema.org/address](https://schema.org/address)- `airTemperature[object]`: 空气温度的观测值。值是一个对象，包含代表从过去的数据中得出的统计总量的属性。  - `alternateName[string]`: 这个项目的一个替代名称  - `areaServed[string]`: 提供服务或提供项目的地理区域  . Model: [https://schema.org/Text](https://schema.org/Text)- `dataDescriptor[string]`: 指向数据描述器实体的URI  - `dataProvider[string]`: 一串识别统一数据实体提供者的字符。  - `dateCreated[string]`: 实体创建时间戳。这通常会由存储平台分配。  - `dateModified[string]`: 实体最后一次修改的时间戳。这通常会由存储平台分配。  - `description[string]`: 对这个项目的描述  - `deviceInfo[object]`: 与观察结果有关的设备信息。  . Model: [https://schema.org/Text](https://schema.org/Text)- `id[*]`: 实体的唯一标识符  - `location[*]`: 对该项目的Geojson引用。它可以是点、线字符串、多边形、多点、多线字符串或多多边形。  - `mosquitoDensity[object]`: 蚊子种类的二名法（或）动物学命名法，以及与此观察相对应的装置所识别的蚊子数量。  - `name[string]`: 这个项目的名称。  - `observationDateTime[string]`: 最后报告的观察时间。  - `owner[array]`: 一个包含JSON编码的字符序列的列表，引用所有者的唯一Ids。  - `precipitation[number]`: 在一定时间内观察到的降水/降雨量。  - `seeAlso[*]`: 指向有关该项目的其他资源的URI列表  - `source[string]`: 提供实体数据原始来源的一连串字符，作为一个URL。建议为源提供者的完全合格域名，或源对象的URL。  - `type[string]`: NGSI实体类型。它必须是MosquitoDensity  <!-- /30-PropertiesList -->  
-<!-- 35-RequiredProperties -->  
-所需属性  
-- `id`  - `type`  <!-- /35-RequiredProperties -->  
-<!-- 40-RequiredProperties -->  
-<!-- /40-RequiredProperties -->  
-<!-- 50-DataModelHeader -->  
-## 数据模型的属性描述  
-按字母顺序排列（点击查看详情）。  
-<!-- /50-DataModelHeader -->  
-<!-- 60-ModelYaml -->  
+[开放许可](https://github.com/smart-data-models//dataModel.Environment/blob/master/MosquitoDensity/LICENSE.md)  
+
+[文件自动生成](https://docs.google.com/presentation/d/e/2PACX-1vTs-Ng5dIAwkg91oTTUdt8ua7woBXhPnwavZ0FxgR8BsAI_Ek3C5q97Nd94HS8KhP-r_quD4H0fgyt3/pub?start=false&loop=false&delayms=3000#slide=id.gb715ace035_0_60)  
+<!-- /15-License -->
+  
+<!-- 20-Description -->
+  
+
+全球描述。**城市中蚊子密度的数据模型**。  
+
+版本：0.0.1  
+<!-- /20-Description -->
+  
+<!-- 30-PropertiesList -->
+  
+
+
+##属性列表  
+
+
+<sup><sub>[*] 如果一个属性中没有一个类型，是因为它可能有几种类型或不同的格式/模式</sub></sup>。  
+- `address[object]`: 邮寄地址  . Model: [https://schema.org/address](https://schema.org/address)
+- `airTemperature[object]`: 空气温度的观测值。值是一个对象，包含代表从过去的数据中得出的统计总量的属性。  
+- `alternateName[string]`: 这个项目的一个替代名称  
+- `areaServed[string]`: 提供服务或提供项目的地理区域  . Model: [https://schema.org/Text](https://schema.org/Text)
+- `dataDescriptor[string]`: 指向数据描述器实体的URI  
+- `dataProvider[string]`: 一串识别统一数据实体提供者的字符。  
+- `dateCreated[string]`: 实体创建时间戳。这通常会由存储平台分配。  
+- `dateModified[string]`: 实体最后一次修改的时间戳。这通常会由存储平台分配。  
+- `description[string]`: 对这个项目的描述  
+- `deviceInfo[object]`: 与观察结果有关的设备信息。  . Model: [https://schema.org/Text](https://schema.org/Text)
+- `id[*]`: 实体的唯一标识符  
+- `location[*]`: 对该项目的Geojson引用。它可以是点、线字符串、多边形、多点、多线字符串或多多边形。  
+- `mosquitoDensity[object]`: 蚊子种类的二名法（或）动物学命名法，以及与此观察相对应的装置所识别的蚊子数量。  
+- `name[string]`: 这个项目的名称。  
+- `observationDateTime[string]`: 最后报告的观察时间。  
+- `owner[array]`: 一个包含JSON编码的字符序列的列表，引用所有者的唯一Ids。  
+- `precipitation[number]`: 在一定时间内观察到的降水/降雨量。  
+- `seeAlso[*]`: 指向有关该项目的其他资源的URI列表  
+- `source[string]`: 提供实体数据原始来源的一连串字符，作为一个URL。建议为源提供者的完全合格域名，或源对象的URL。  
+- `type[string]`: NGSI实体类型。它必须是MosquitoDensity  
+<!-- /30-PropertiesList -->
+  
+<!-- 35-RequiredProperties -->
+  
+
+所需属性  
+- `id`  
+- `type`  
+<!-- /35-RequiredProperties -->
+  
+<!-- 40-RequiredProperties -->
+  
+<!-- /40-RequiredProperties -->
+  
+<!-- 50-DataModelHeader -->
+  
+
+## 数据模型的属性描述  
+
+按字母顺序排列（点击查看详情）。  
+<!-- /50-DataModelHeader -->
+  
+<!-- 60-ModelYaml -->
+  
 <details><summary><strong>full yaml details</strong></summary>    
-```yaml  
+
+```yaml  
 MosquitoDensity:    
   description: 'A Data Model for density of mosquitoes in cities.'    
   properties:    
@@ -385,16 +434,25 @@ MosquitoDensity:
   x-version: 0.0.1    
 ```  
 </details>    
-<!-- /60-ModelYaml -->  
-<!-- 70-MiddleNotes -->  
-<!-- /70-MiddleNotes -->  
-<!-- 80-Examples -->  
-## ＃＃＃＃有效载荷的例子  
-#### MosquitoDensity NGSI-v2 key-values 示例  
-这里是一个以JSON-LD格式作为关键值的MosquitoDensity的例子。当使用`options=keyValues`时，这与NGSI-v2兼容，并返回单个实体的上下文数据。  
+<!-- /60-ModelYaml -->
+  
+<!-- 70-MiddleNotes -->
+  
+<!-- /70-MiddleNotes -->
+  
+<!-- 80-Examples -->
+  
+
+## ＃＃＃＃有效载荷的例子  
+
+#### MosquitoDensity NGSI-v2 key-values 示例  
+
+这里是一个以JSON-LD格式作为关键值的MosquitoDensity的例子。当使用`options=keyValues`时，这与NGSI-v2兼容，并返回单个实体的上下文数据。  
 <details><summary><strong>show/hide example</strong></summary>    
-```json  
-{  
+
+```json  
+
+{  
   "id": "ngsi-ld:MosquitoDensity:001",  
   "type": "MosquitoDensity",  
   "deviceId": "VDFWitw@B",  
@@ -432,11 +490,15 @@ MosquitoDensity:
 }  
 ```  
 </details>  
-#### MosquitoDensity NGSI-v2归一化实例  
-下面是一个规范化的JSON-LD格式的MosquitoDensity的例子。当不使用选项时，这与NGSI-v2兼容，并返回单个实体的上下文数据。  
+
+#### MosquitoDensity NGSI-v2归一化实例  
+
+下面是一个规范化的JSON-LD格式的MosquitoDensity的例子。当不使用选项时，这与NGSI-v2兼容，并返回单个实体的上下文数据。  
 <details><summary><strong>show/hide example</strong></summary>    
-```json  
-{  
+
+```json  
+
+{  
   "id": "ngsi-ld:MosquitoDensity:001",  
   "type":  
     "MosquitoDensity"  
@@ -509,11 +571,15 @@ MosquitoDensity:
 }  
 ```  
 </details>  
-#### MosquitoDensity NGSI-LD key-values 示例  
-这里有一个JSON-LD格式的MosquitoDensity作为key-values的例子。当使用`options=keyValues`时，这与NGSI-LD兼容，并返回单个实体的上下文数据。  
+
+#### MosquitoDensity NGSI-LD key-values 示例  
+
+这里有一个JSON-LD格式的MosquitoDensity作为key-values的例子。当使用`options=keyValues`时，这与NGSI-LD兼容，并返回单个实体的上下文数据。  
 <details><summary><strong>show/hide example</strong></summary>    
-```json  
-{  
+
+```json  
+
+{  
   "id": "ngsi-ld:MosquitoDensity:001",  
   "type":  
     "MosquitoDensity"  
@@ -551,17 +617,21 @@ MosquitoDensity:
     }  
   },  
   "@context": [  
-    "iudx:MosquitoDensity",  
+ "  
     "https://raw.githubusercontent.com/smart-data-models/dataModel.Environment/master/context.jsonld"  
   ]  
 }  
 ```  
 </details>  
-#### MosquitoDensity NGSI-LD 归一化实例  
-下面是一个JSON-LD格式的MosquitoDensity规范化的例子。当不使用选项时，这与NGSI-LD兼容，并返回单个实体的上下文数据。  
+
+#### MosquitoDensity NGSI-LD 归一化实例  
+
+下面是一个JSON-LD格式的MosquitoDensity规范化的例子。当不使用选项时，这与NGSI-LD兼容，并返回单个实体的上下文数据。  
 <details><summary><strong>show/hide example</strong></summary>    
-```json  
-{  
+
+```json  
+
+{  
   "id": "ngsi-ld:MosquitoDensity:001",  
   "type": "MosquitoDensity",  
   "deviceId": {  
@@ -633,17 +703,26 @@ MosquitoDensity:
     }  
   },  
   "@context": [  
-    "iudx:MosquitoDensity",  
+ "  
     "https://raw.githubusercontent.com/smart-data-models/dataModel.Environment/master/context.jsonld"  
   ]  
 }  
 ```  
-</details><!-- /80-Examples -->  
-<!-- 90-FooterNotes -->  
-<!-- /90-FooterNotes -->  
-<!-- 95-Units -->  
-参见[常见问题10](https://smartdatamodels.org/index.php/faqs/)，以获得关于如何处理量级单位的答案。  
-<!-- /95-Units -->  
-<!-- 97-LastFooter -->  
+</details><!-- /80-Examples -->
+  
+<!-- 90-FooterNotes -->
+  
+<!-- /90-FooterNotes -->
+  
+<!-- 95-Units -->
+  
+
+参见[常见问题10](https://smartdatamodels.org/index.php/faqs/)，以获得关于如何处理量级单位的答案。  
+<!-- /95-Units -->
+  
+<!-- 97-LastFooter -->
+  
 ---  
-[Smart Data Models](https://smartdatamodels.org) +++ [Contribution Manual](https://bit.ly/contribution_manual) +++ [About](https://bit.ly/Introduction_SDM)<!-- /97-LastFooter -->  
+
+[Smart Data Models](https://smartdatamodels.org) +++ [Contribution Manual](https://bit.ly/contribution_manual) +++ [About](https://bit.ly/Introduction_SDM)<!-- /97-LastFooter -->
+  

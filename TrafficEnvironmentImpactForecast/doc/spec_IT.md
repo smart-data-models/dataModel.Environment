@@ -1,33 +1,82 @@
-<!-- 10-Header -->  
+<!-- 10-Header -->
+  
 [![Smart Data Models](https://smartdatamodels.org/wp-content/uploads/2022/01/SmartDataModels_logo.png "Logo")](https://smartdatamodels.org)  
-Entità: TrafficoImpattoAmbientalePrevisione  
-===========================================<!-- /10-Header -->  
-<!-- 15-License -->  
-[Licenza aperta](https://github.com/smart-data-models//dataModel.Environment/blob/master/TrafficEnvironmentImpactForecast/LICENSE.md)  
-[documento generato automaticamente](https://docs.google.com/presentation/d/e/2PACX-1vTs-Ng5dIAwkg91oTTUdt8ua7woBXhPnwavZ0FxgR8BsAI_Ek3C5q97Nd94HS8KhP-r_quD4H0fgyt3/pub?start=false&loop=false&delayms=3000#slide=id.gb715ace035_0_60)  
-<!-- /15-License -->  
-<!-- 20-Description -->  
-Descrizione globale: **Impatto ambientale del traffico basato sulle aspettative di traffico dei veicoli e sulle loro caratteristiche di emissione**  
-versione: 0.0.2  
-<!-- /20-Description -->  
-<!-- 30-PropertiesList -->  
 
-## Elenco delle proprietà  
+Entità: TrafficoImpattoAmbientalePrevisione  
+===========================================
+<!-- /10-Header -->
+  
+<!-- 15-License -->
+  
 
-<sup><sub>[*] Se non c'è un tipo in un attributo è perché potrebbe avere diversi tipi o diversi formati/modelli</sub></sup>.  
-- `address[object]`: L'indirizzo postale  . Model: [https://schema.org/address](https://schema.org/address)- `alternateName[string]`: Un nome alternativo per questa voce  - `areaServed[string]`: L'area geografica in cui viene fornito il servizio o l'articolo offerto.  . Model: [https://schema.org/Text](https://schema.org/Text)- `co2[number]`: La concentrazione di emissioni di C02 prevista  - `dataProvider[string]`: Una sequenza di caratteri che identifica il fornitore dell'entità di dati armonizzata.  - `dateCreated[string]`: Timestamp di creazione dell'entità. Di solito viene assegnato dalla piattaforma di archiviazione.  - `dateIssued[string]`: La data e l'ora in cui la previsione è stata emessa dal fornitore di servizi in formato ISO8601 UTC.  - `dateModified[string]`: Timestamp dell'ultima modifica dell'entità. Di solito viene assegnato dalla piattaforma di archiviazione.  - `description[string]`: Descrizione dell'articolo  - `id[*]`: Identificatore univoco dell'entità  - `location[*]`: Riferimento Geojson all'elemento. Può essere un punto, una stringa di linea, un poligono, un multi-punto, una stringa di linea o un poligono multiplo.  - `name[string]`: Il nome di questo elemento.  - `owner[array]`: Un elenco contenente una sequenza di caratteri codificata JSON che fa riferimento agli ID univoci dei proprietari.  - `seeAlso[*]`: elenco di uri che puntano a risorse aggiuntive sull'elemento  - `source[string]`: Una sequenza di caratteri che indica la fonte originale dei dati dell'entità come URL. Si consiglia di utilizzare il nome di dominio completamente qualificato del provider di origine o l'URL dell'oggetto di origine.  - `traffic[array]`: Array di oggetti contenenti i valori previsti per l'intensità, l'occupazione e la velocità dei diversi tipi di veicolo  - `type[string]`: Tipo NGSI. Deve essere TrafficEnvironmentImpactForecast.  - `validFrom[string]`: L'inizio del periodo di validità di questa previsione in formato ISO8601.  - `validTo[string]`: La fine del periodo di validità di questa previsione in formato ISO8601.  - `validity[string]`: Include il periodo di validità di questa previsione come intervallo di tempo ISO8601.  . Model: [https://schema.org/Text](https://schema.org/Text)<!-- /30-PropertiesList -->  
-<!-- 35-RequiredProperties -->  
-Proprietà richieste  
-- `id`  - `type`  <!-- /35-RequiredProperties -->  
-<!-- 40-RequiredProperties -->  
-<!-- /40-RequiredProperties -->  
-<!-- 50-DataModelHeader -->  
-## Modello di dati descrizione delle proprietà  
-Ordinati in ordine alfabetico (clicca per i dettagli)  
-<!-- /50-DataModelHeader -->  
-<!-- 60-ModelYaml -->  
+[Licenza aperta](https://github.com/smart-data-models//dataModel.Environment/blob/master/TrafficEnvironmentImpactForecast/LICENSE.md)  
+
+[documento generato automaticamente](https://docs.google.com/presentation/d/e/2PACX-1vTs-Ng5dIAwkg91oTTUdt8ua7woBXhPnwavZ0FxgR8BsAI_Ek3C5q97Nd94HS8KhP-r_quD4H0fgyt3/pub?start=false&loop=false&delayms=3000#slide=id.gb715ace035_0_60)  
+<!-- /15-License -->
+  
+<!-- 20-Description -->
+  
+
+Descrizione globale: **Impatto ambientale del traffico basato sulle aspettative di traffico dei veicoli e sulle loro caratteristiche di emissione**  
+
+versione: 0.0.2  
+<!-- /20-Description -->
+  
+<!-- 30-PropertiesList -->
+  
+
+
+## Elenco delle proprietà  
+
+
+<sup><sub>[*] Se non c'è un tipo in un attributo è perché potrebbe avere diversi tipi o diversi formati/modelli</sub></sup>.  
+- `address[object]`: L'indirizzo postale  . Model: [https://schema.org/address](https://schema.org/address)
+- `alternateName[string]`: Un nome alternativo per questa voce  
+- `areaServed[string]`: L'area geografica in cui viene fornito il servizio o l'articolo offerto.  . Model: [https://schema.org/Text](https://schema.org/Text)
+- `co2[number]`: La concentrazione di emissioni di C02 prevista  
+- `dataProvider[string]`: Una sequenza di caratteri che identifica il fornitore dell'entità di dati armonizzata.  
+- `dateCreated[string]`: Timestamp di creazione dell'entità. Di solito viene assegnato dalla piattaforma di archiviazione.  
+- `dateIssued[string]`: La data e l'ora in cui la previsione è stata emessa dal fornitore di servizi in formato ISO8601 UTC.  
+- `dateModified[string]`: Timestamp dell'ultima modifica dell'entità. Di solito viene assegnato dalla piattaforma di archiviazione.  
+- `description[string]`: Descrizione dell'articolo  
+- `id[*]`: Identificatore univoco dell'entità  
+- `location[*]`: Riferimento Geojson all'elemento. Può essere un punto, una stringa di linea, un poligono, un multi-punto, una stringa di linea o un poligono multiplo.  
+- `name[string]`: Il nome di questo elemento.  
+- `owner[array]`: Un elenco contenente una sequenza di caratteri codificata JSON che fa riferimento agli ID univoci dei proprietari.  
+- `seeAlso[*]`: elenco di uri che puntano a risorse aggiuntive sull'elemento  
+- `source[string]`: Una sequenza di caratteri che indica la fonte originale dei dati dell'entità come URL. Si consiglia di utilizzare il nome di dominio completamente qualificato del provider di origine o l'URL dell'oggetto di origine.  
+- `traffic[array]`: Array di oggetti contenenti i valori previsti per l'intensità, l'occupazione e la velocità dei diversi tipi di veicolo  
+- `type[string]`: Tipo NGSI. Deve essere TrafficEnvironmentImpactForecast.  
+- `validFrom[string]`: L'inizio del periodo di validità di questa previsione in formato ISO8601.  
+- `validTo[string]`: La fine del periodo di validità di questa previsione in formato ISO8601.  
+- `validity[string]`: Include il periodo di validità di questa previsione come intervallo di tempo ISO8601.  . Model: [https://schema.org/Text](https://schema.org/Text)
+<!-- /30-PropertiesList -->
+  
+<!-- 35-RequiredProperties -->
+  
+
+Proprietà richieste  
+- `id`  
+- `type`  
+<!-- /35-RequiredProperties -->
+  
+<!-- 40-RequiredProperties -->
+  
+<!-- /40-RequiredProperties -->
+  
+<!-- 50-DataModelHeader -->
+  
+
+## Modello di dati descrizione delle proprietà  
+
+Ordinati in ordine alfabetico (clicca per i dettagli)  
+<!-- /50-DataModelHeader -->
+  
+<!-- 60-ModelYaml -->
+  
 <details><summary><strong>full yaml details</strong></summary>    
-```yaml  
+
+```yaml  
 TrafficEnvironmentImpactForecast:    
   description: 'Environmental Impact of traffic based on the vehicles traffic expectations and their emission characteristics'    
   properties:    
@@ -358,16 +407,25 @@ TrafficEnvironmentImpactForecast:
   x-version: 0.0.2    
 ```  
 </details>    
-<!-- /60-ModelYaml -->  
-<!-- 70-MiddleNotes -->  
-<!-- /70-MiddleNotes -->  
-<!-- 80-Examples -->  
-## Esempi di payload  
-#### Valori chiave di TrafficEnvironmentImpactForecast NGSI-v2 Esempio  
-Ecco un esempio di TrafficEnvironmentImpactForecast in formato JSON-LD come valori-chiave. Questo è compatibile con NGSI-v2 quando si usa `options=keyValues` e restituisce i dati di contesto di una singola entità.  
+<!-- /60-ModelYaml -->
+  
+<!-- 70-MiddleNotes -->
+  
+<!-- /70-MiddleNotes -->
+  
+<!-- 80-Examples -->
+  
+
+## Esempi di payload  
+
+#### Valori chiave di TrafficEnvironmentImpactForecast NGSI-v2 Esempio  
+
+Ecco un esempio di TrafficEnvironmentImpactForecast in formato JSON-LD come valori-chiave. Questo è compatibile con NGSI-v2 quando si usa `options=keyValues` e restituisce i dati di contesto di una singola entità.  
 <details><summary><strong>show/hide example</strong></summary>    
-```json  
-{  
+
+```json  
+
+{  
   "id": "urn:ngsi-ld:TrafficEnvironmentImpact:id:BGGK:76812356",  
   "type": "TrafficEnvironmentImpact",  
   "dateCreated": "2022-08-17T05:21:50Z",  
@@ -423,11 +481,15 @@ TrafficEnvironmentImpactForecast:
 }  
 ```  
 </details>  
-#### TrafficEnvironmentImpactForecast NGSI-v2 normalizzato Esempio  
-Ecco un esempio di TrafficEnvironmentImpactForecast in formato JSON-LD normalizzato. Questo è compatibile con NGSI-v2 quando non si utilizzano opzioni e restituisce i dati di contesto di una singola entità.  
+
+#### TrafficEnvironmentImpactForecast NGSI-v2 normalizzato Esempio  
+
+Ecco un esempio di TrafficEnvironmentImpactForecast in formato JSON-LD normalizzato. Questo è compatibile con NGSI-v2 quando non si utilizzano opzioni e restituisce i dati di contesto di una singola entità.  
 <details><summary><strong>show/hide example</strong></summary>    
-```json  
-{  
+
+```json  
+
+{  
   "id": "urn:ngsi-ld:TrafficEnvironmentImpact:id:BGGK:76812356",  
   "type": "TrafficEnvironmentImpact",  
   "dateCreated": {  
@@ -537,11 +599,15 @@ TrafficEnvironmentImpactForecast:
 }  
 ```  
 </details>  
-#### TrafficoAmbienteImpattoPrevisione valori chiave NGSI-LD Esempio  
-Ecco un esempio di TrafficEnvironmentImpactForecast in formato JSON-LD come valori-chiave. Questo è compatibile con NGSI-LD quando si usa `options=keyValues` e restituisce i dati di contesto di una singola entità.  
+
+#### TrafficoAmbienteImpattoPrevisione valori chiave NGSI-LD Esempio  
+
+Ecco un esempio di TrafficEnvironmentImpactForecast in formato JSON-LD come valori-chiave. Questo è compatibile con NGSI-LD quando si usa `options=keyValues` e restituisce i dati di contesto di una singola entità.  
 <details><summary><strong>show/hide example</strong></summary>    
-```json  
-{  
+
+```json  
+
+{  
     "id": "urn:ngsi-ld:TrafficEnvironmentImpact:id:BGGK:76812356",  
     "type": "TrafficEnvironmentImpact",  
     "dateCreated": "2022-08-17T05:21:50Z",  
@@ -595,17 +661,21 @@ TrafficEnvironmentImpactForecast:
         }  
     ],  
     "@context": [  
-        "https://smartdatamodels.org/dataModel.Environment/context.jsonld",  
+          
         "https://raw.githubusercontent.com/smart-data-models/dataModel.Environment/master/context.jsonld"  
     ]  
 }  
 ```  
 </details>  
-#### Previsione dell'impatto del traffico sull'ambiente NGSI-LD normalizzato Esempio  
-Ecco un esempio di TrafficEnvironmentImpactForecast in formato JSON-LD normalizzato. Questo è compatibile con NGSI-LD quando non si utilizzano opzioni e restituisce i dati di contesto di una singola entità.  
+
+#### Previsione dell'impatto del traffico sull'ambiente NGSI-LD normalizzato Esempio  
+
+Ecco un esempio di TrafficEnvironmentImpactForecast in formato JSON-LD normalizzato. Questo è compatibile con NGSI-LD quando non si utilizzano opzioni e restituisce i dati di contesto di una singola entità.  
 <details><summary><strong>show/hide example</strong></summary>    
-```json  
-{  
+
+```json  
+
+{  
     "id": "urn:ngsi-ld:TrafficEnvironmentImpact:id:BGGK:76812356",  
     "type": "TrafficEnvironmentImpact",  
     "dateCreated": {  
@@ -713,17 +783,26 @@ TrafficEnvironmentImpactForecast:
         ]  
     },  
     "@context": [  
-        "https://smartdatamodels.org/dataModel.Environment/context.jsonld",  
+          
         "https://raw.githubusercontent.com/smart-data-models/dataModel.Environment/master/context.jsonld"  
     ]  
 }  
 ```  
-</details><!-- /80-Examples -->  
-<!-- 90-FooterNotes -->  
-<!-- /90-FooterNotes -->  
-<!-- 95-Units -->  
-Vedere [FAQ 10](https://smartdatamodels.org/index.php/faqs/) per ottenere una risposta su come gestire le unità di grandezza.  
-<!-- /95-Units -->  
-<!-- 97-LastFooter -->  
+</details><!-- /80-Examples -->
+  
+<!-- 90-FooterNotes -->
+  
+<!-- /90-FooterNotes -->
+  
+<!-- 95-Units -->
+  
+
+Vedere [FAQ 10](https://smartdatamodels.org/index.php/faqs/) per ottenere una risposta su come gestire le unità di grandezza.  
+<!-- /95-Units -->
+  
+<!-- 97-LastFooter -->
+  
 ---  
-[Smart Data Models](https://smartdatamodels.org) +++ [Contribution Manual](https://bit.ly/contribution_manual) +++ [About](https://bit.ly/Introduction_SDM)<!-- /97-LastFooter -->  
+
+[Smart Data Models](https://smartdatamodels.org) +++ [Contribution Manual](https://bit.ly/contribution_manual) +++ [About](https://bit.ly/Introduction_SDM)<!-- /97-LastFooter -->
+  

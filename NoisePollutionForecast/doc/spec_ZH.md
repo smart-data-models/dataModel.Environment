@@ -1,33 +1,88 @@
-<!-- 10-Header -->  
+<!-- 10-Header -->
+  
 [![Smart Data Models](https://smartdatamodels.org/wp-content/uploads/2022/01/SmartDataModels_logo.png "Logo")](https://smartdatamodels.org)  
-实体。噪声污染预测  
-=========<!-- /10-Header -->  
-<!-- 15-License -->  
-[开放许可](https://github.com/smart-data-models//dataModel.Environment/blob/master/NoisePollutionForecast/LICENSE.md)  
-[文件自动生成](https://docs.google.com/presentation/d/e/2PACX-1vTs-Ng5dIAwkg91oTTUdt8ua7woBXhPnwavZ0FxgR8BsAI_Ek3C5q97Nd94HS8KhP-r_quD4H0fgyt3/pub?start=false&loop=false&delayms=3000#slide=id.gb715ace035_0_60)  
-<!-- /15-License -->  
-<!-- 20-Description -->  
-全局描述。**噪声污染预测是根据一些输入元素和存在的噪声元素来存储对噪声污染的预期。  
-版本：0.0.3  
-<!-- /20-Description -->  
-<!-- 30-PropertiesList -->  
 
-##属性列表  
+实体。噪声污染预测  
+=========
+<!-- /10-Header -->
+  
+<!-- 15-License -->
+  
 
-<sup><sub>[*] 如果一个属性中没有一个类型，是因为它可能有几种类型或不同的格式/模式</sub></sup>。  
-- `LANight[number]`: 夜间（8小时）记录的平均声级  - `LAeq[number]`: 测量时间内记录的平均声级（等效）。  - `LAeq2[number]`: 过去2小时的平均声级  - `LAeq_d[number]`: 白天（8小时）的平均声级  - `LAmax[number]`: 测量时间内记录的最大声级  - `LAmax2[number]`: 过去2小时内记录的最大声级  - `address[object]`: 邮寄地址  . Model: [https://schema.org/address](https://schema.org/address)- `alternateName[string]`: 这个项目的一个替代名称  - `areaServed[string]`: 提供服务或提供项目的地理区域  . Model: [https://schema.org/Text](https://schema.org/Text)- `dataProvider[string]`: 一串识别统一数据实体提供者的字符。  - `dateCreated[string]`: 实体创建时间戳。这通常会由存储平台分配。  - `dateIssued[string]`: 服务提供商发布预测的日期和时间，格式为ISO8601 UTC。  - `dateModified[string]`: 实体最后一次修改的时间戳。这通常会由存储平台分配。  - `description[string]`: 对这个项目的描述  - `id[*]`: 实体的唯一标识符  - `location[*]`: 对该项目的Geojson引用。它可以是点、线字符串、多边形、多点、多线字符串或多多边形。  - `name[string]`: 这个项目的名称。  - `noiseAnnoyanceIndex[number]`: 根据噪音烦扰程度的指数（1至10）。  - `noiseOrigin[string]`: 传感器安装时记录的噪声的主要来源（源）。  - `owner[array]`: 一个包含JSON编码的字符序列的列表，引用所有者的唯一Ids。  - `seeAlso[*]`: 指向有关该项目的其他资源的URI列表  - `source[string]`: 提供实体数据原始来源的一连串字符，作为一个URL。建议为源提供者的完全合格域名，或源对象的URL。  - `type[string]`: NGSI类型。它必须是NoisePollutionForecast。  - `validFrom[string]`: 该预报的有效期的开始，为ISO8601格式  - `validTo[string]`: 作为ISO8601格式，该预报的有效期结束。  - `validity[string]`: 包括作为ISO8601时间区间的该预测的有效期。  . Model: [https://schema.org/Text](https://schema.org/Text)<!-- /30-PropertiesList -->  
-<!-- 35-RequiredProperties -->  
-所需属性  
-- `id`  - `type`  <!-- /35-RequiredProperties -->  
-<!-- 40-RequiredProperties -->  
-<!-- /40-RequiredProperties -->  
-<!-- 50-DataModelHeader -->  
-## 数据模型的属性描述  
-按字母顺序排列（点击查看详情）。  
-<!-- /50-DataModelHeader -->  
-<!-- 60-ModelYaml -->  
+[开放许可](https://github.com/smart-data-models//dataModel.Environment/blob/master/NoisePollutionForecast/LICENSE.md)  
+
+[文件自动生成](https://docs.google.com/presentation/d/e/2PACX-1vTs-Ng5dIAwkg91oTTUdt8ua7woBXhPnwavZ0FxgR8BsAI_Ek3C5q97Nd94HS8KhP-r_quD4H0fgyt3/pub?start=false&loop=false&delayms=3000#slide=id.gb715ace035_0_60)  
+<!-- /15-License -->
+  
+<!-- 20-Description -->
+  
+
+全局描述。**噪声污染预测是根据一些输入元素和存在的噪声元素来存储对噪声污染的预期。  
+
+版本：0.0.3  
+<!-- /20-Description -->
+  
+<!-- 30-PropertiesList -->
+  
+
+
+##属性列表  
+
+
+<sup><sub>[*] 如果一个属性中没有一个类型，是因为它可能有几种类型或不同的格式/模式</sub></sup>。  
+- `LANight[number]`: 夜间（8小时）记录的平均声级  
+- `LAeq[number]`: 测量时间内记录的平均声级（等效）。  
+- `LAeq2[number]`: 过去2小时的平均声级  
+- `LAeq_d[number]`: 白天（8小时）的平均声级  
+- `LAmax[number]`: 测量时间内记录的最大声级  
+- `LAmax2[number]`: 过去2小时内记录的最大声级  
+- `address[object]`: 邮寄地址  . Model: [https://schema.org/address](https://schema.org/address)
+- `alternateName[string]`: 这个项目的一个替代名称  
+- `areaServed[string]`: 提供服务或提供项目的地理区域  . Model: [https://schema.org/Text](https://schema.org/Text)
+- `dataProvider[string]`: 一串识别统一数据实体提供者的字符。  
+- `dateCreated[string]`: 实体创建时间戳。这通常会由存储平台分配。  
+- `dateIssued[string]`: 服务提供商发布预测的日期和时间，格式为ISO8601 UTC。  
+- `dateModified[string]`: 实体最后一次修改的时间戳。这通常会由存储平台分配。  
+- `description[string]`: 对这个项目的描述  
+- `id[*]`: 实体的唯一标识符  
+- `location[*]`: 对该项目的Geojson引用。它可以是点、线字符串、多边形、多点、多线字符串或多多边形。  
+- `name[string]`: 这个项目的名称。  
+- `noiseAnnoyanceIndex[number]`: 根据噪音烦扰程度的指数（1至10）。  
+- `noiseOrigin[string]`: 传感器安装时记录的噪声的主要来源（源）。  
+- `owner[array]`: 一个包含JSON编码的字符序列的列表，引用所有者的唯一Ids。  
+- `seeAlso[*]`: 指向有关该项目的其他资源的URI列表  
+- `source[string]`: 提供实体数据原始来源的一连串字符，作为一个URL。建议为源提供者的完全合格域名，或源对象的URL。  
+- `type[string]`: NGSI类型。它必须是NoisePollutionForecast。  
+- `validFrom[string]`: 该预报的有效期的开始，为ISO8601格式  
+- `validTo[string]`: 作为ISO8601格式，该预报的有效期结束。  
+- `validity[string]`: 包括作为ISO8601时间区间的该预测的有效期。  . Model: [https://schema.org/Text](https://schema.org/Text)
+<!-- /30-PropertiesList -->
+  
+<!-- 35-RequiredProperties -->
+  
+
+所需属性  
+- `id`  
+- `type`  
+<!-- /35-RequiredProperties -->
+  
+<!-- 40-RequiredProperties -->
+  
+<!-- /40-RequiredProperties -->
+  
+<!-- 50-DataModelHeader -->
+  
+
+## 数据模型的属性描述  
+
+按字母顺序排列（点击查看详情）。  
+<!-- /50-DataModelHeader -->
+  
+<!-- 60-ModelYaml -->
+  
 <details><summary><strong>full yaml details</strong></summary>    
-```yaml  
+
+```yaml  
 NoisePollutionForecast:    
   description: 'Noise Pollution forecast stores the expectation about noise pollution based on some input elements and the noise elements present.'    
   properties:    
@@ -370,16 +425,25 @@ NoisePollutionForecast:
   x-version: 0.0.3    
 ```  
 </details>    
-<!-- /60-ModelYaml -->  
-<!-- 70-MiddleNotes -->  
-<!-- /70-MiddleNotes -->  
-<!-- 80-Examples -->  
-## ＃＃＃＃有效载荷的例子  
-#### NoisePollutionForecast NGSI-v2 key-values 示例  
-下面是一个以JSON-LD格式作为关键值的NoisePollutionForecast的例子。当使用`options=keyValues`时，这与NGSI-v2兼容，并返回单个实体的上下文数据。  
+<!-- /60-ModelYaml -->
+  
+<!-- 70-MiddleNotes -->
+  
+<!-- /70-MiddleNotes -->
+  
+<!-- 80-Examples -->
+  
+
+## ＃＃＃＃有效载荷的例子  
+
+#### NoisePollutionForecast NGSI-v2 key-values 示例  
+
+下面是一个以JSON-LD格式作为关键值的NoisePollutionForecast的例子。当使用`options=keyValues`时，这与NGSI-v2兼容，并返回单个实体的上下文数据。  
 <details><summary><strong>show/hide example</strong></summary>    
-```json  
-{  
+
+```json  
+
+{  
   "id": "urn:ngsi-ld:NoisePollution:France-NoisePollutionForecast-12345_2022-07-01T18:00:00_2022-07-01T00:00:00",  
   "type": "NoisePollutionForecast",  
   "dateCreated": "2022-07-22T17:37:38Z",  
@@ -426,11 +490,15 @@ NoisePollutionForecast:
 }  
 ```  
 </details>  
-#### NoisePollutionForecast NGSI-v2 normalized 示例  
-下面是一个以JSON-LD格式规范化的NoisePollutionForecast的例子。当不使用选项时，这与NGSI-v2兼容，并返回单个实体的上下文数据。  
+
+#### NoisePollutionForecast NGSI-v2 normalized 示例  
+
+下面是一个以JSON-LD格式规范化的NoisePollutionForecast的例子。当不使用选项时，这与NGSI-v2兼容，并返回单个实体的上下文数据。  
 <details><summary><strong>show/hide example</strong></summary>    
-```json  
-{  
+
+```json  
+
+{  
   "id": "urn:ngsi-ld:NoisePollution:France-NoisePollutionForecast-12345_2022-07-01T18:00:00_2022-07-01T00:00:00",  
   "type": "NoisePollutionForecast",  
   "dateCreated": {  
@@ -549,11 +617,15 @@ NoisePollutionForecast:
 }  
 ```  
 </details>  
-#### NoisePollutionForecast NGSI-LD key-values 示例  
-这里是一个以JSON-LD格式作为关键值的NoisePollutionForecast的例子。当使用`options=keyValues`时，这与NGSI-LD兼容，并返回单个实体的上下文数据。  
+
+#### NoisePollutionForecast NGSI-LD key-values 示例  
+
+这里是一个以JSON-LD格式作为关键值的NoisePollutionForecast的例子。当使用`options=keyValues`时，这与NGSI-LD兼容，并返回单个实体的上下文数据。  
 <details><summary><strong>show/hide example</strong></summary>    
-```json  
-{  
+
+```json  
+
+{  
     "id": "urn:ngsi-ld:NoisePollution:France-NoisePollutionForecast-12345_2022-07-01T18:00:00_2022-07-01T00:00:00",  
     "type": "NoisePollutionForecast",  
     "dateCreated": "2022-07-22T17:37:38Z",  
@@ -598,17 +670,21 @@ NoisePollutionForecast:
     "validity": "P1D",  
     "dateIssued": "2022-08-23T05:05:35Z",  
     "@context": [  
-        "https://smartdatamodels.org/dataModel.Environment/context.jsonld",  
+          
         "https://raw.githubusercontent.com/smart-data-models/dataModel.Environment/master/context.jsonld"  
     ]  
 }  
 ```  
 </details>  
-#### NoisePollutionForecast NGSI-LD归一化示例  
-下面是一个以JSON-LD格式规范化的NoisePollutionForecast的例子。当不使用选项时，这与NGSI-LD兼容，并返回单个实体的上下文数据。  
+
+#### NoisePollutionForecast NGSI-LD归一化示例  
+
+下面是一个以JSON-LD格式规范化的NoisePollutionForecast的例子。当不使用选项时，这与NGSI-LD兼容，并返回单个实体的上下文数据。  
 <details><summary><strong>show/hide example</strong></summary>    
-```json  
-{  
+
+```json  
+
+{  
   "id": "urn:ngsi-ld:NoisePollution:France-NoisePollutionForecast-12345_2022-07-01T18:00:00_2022-07-01T00:00:00",  
   "type": "NoisePollutionForecast",  
   "dateCreated": {  
@@ -744,12 +820,21 @@ NoisePollutionForecast:
   ]  
 }  
 ```  
-</details><!-- /80-Examples -->  
-<!-- 90-FooterNotes -->  
-<!-- /90-FooterNotes -->  
-<!-- 95-Units -->  
-参见[常见问题10](https://smartdatamodels.org/index.php/faqs/)，以获得关于如何处理量级单位的答案。  
-<!-- /95-Units -->  
-<!-- 97-LastFooter -->  
+</details><!-- /80-Examples -->
+  
+<!-- 90-FooterNotes -->
+  
+<!-- /90-FooterNotes -->
+  
+<!-- 95-Units -->
+  
+
+参见[常见问题10](https://smartdatamodels.org/index.php/faqs/)，以获得关于如何处理量级单位的答案。  
+<!-- /95-Units -->
+  
+<!-- 97-LastFooter -->
+  
 ---  
-[Smart Data Models](https://smartdatamodels.org) +++ [Contribution Manual](https://bit.ly/contribution_manual) +++ [About](https://bit.ly/Introduction_SDM)<!-- /97-LastFooter -->  
+
+[Smart Data Models](https://smartdatamodels.org) +++ [Contribution Manual](https://bit.ly/contribution_manual) +++ [About](https://bit.ly/Introduction_SDM)<!-- /97-LastFooter -->
+  

@@ -1,34 +1,111 @@
-<!-- 10-Header -->  
+<!-- 10-Header -->
+  
 [![Smart Data Models](https://smartdatamodels.org/wp-content/uploads/2022/01/SmartDataModels_logo.png "Logo")](https://smartdatamodels.org)  
-实体：空气质量观测  
-=========<!-- /10-Header -->  
-<!-- 15-License -->  
-[开放许可](https://github.com/smart-data-models//dataModel.Environment/blob/master/AirQualityObserved/LICENSE.md)  
-[文件自动生成](https://docs.google.com/presentation/d/e/2PACX-1vTs-Ng5dIAwkg91oTTUdt8ua7woBXhPnwavZ0FxgR8BsAI_Ek3C5q97Nd94HS8KhP-r_quD4H0fgyt3/pub?start=false&loop=false&delayms=3000#slide=id.gb715ace035_0_60)  
-<!-- /15-License -->  
-<!-- 20-Description -->  
-全球描述：**对某一地点和时间的空气质量状况的观察**。  
-版本：0.1.1  
-<!-- /20-Description -->  
-<!-- 30-PropertiesList -->  
 
-##属性列表  
+实体：空气质量观测  
+=========
+<!-- /10-Header -->
+  
+<!-- 15-License -->
+  
 
-<sup><sub>[*] 如果一个属性中没有一个类型，是因为它可能有几种类型或不同的格式/模式</sub></sup>。  
-- `address[object]`: 邮寄地址  . Model: [https://schema.org/address](https://schema.org/address)- `airQualityIndex[number]`: 空气质量指数是一个用于报告任何一天的空气质量的数字。  . Model: [https://schema.org/Number](https://schema.org/Number)- `airQualityLevel[string]`: 与观察到的空气质量相对应的健康问题的总体质量水平  . Model: [https://schema.org/Tex ](https://schema.org/Tex )- `alternateName[string]`: 这个项目的一个替代名称  - `areaServed[string]`: 该空气质量测量属于的更高层次的区域  . Model: [https://schema.org/Text ](https://schema.org/Text )- `as[number]`: 检测到砷  . Model: [https://schema.org/Number](https://schema.org/Number)- `c6h6[number]`: 检测到苯  - `cd[number]`: 检测到镉  - `co[number]`: 检测到一氧化碳  - `co2[number]`: 检测到的二氧化碳  - `coLevel[string]`: 定性的一氧化碳存在  - `dataProvider[string]`: 一串识别统一数据实体提供者的字符。  - `dateCreated[string]`: 实体创建时间戳。这通常会由存储平台分配。  - `dateModified[string]`: 实体最后一次修改的时间戳。这通常会由存储平台分配。  - `dateObserved[string]`: 该观测的日期和时间，以ISO8601 UTC格式表示。  . Model: [https://schema.org/Text ](https://schema.org/Text )- `description[string]`: 对这个项目的描述  - `id[*]`: 实体的唯一标识符  - `location[*]`: 对该项目的Geojson引用。它可以是点、线字符串、多边形、多点、多线字符串或多多边形。  - `name[string]`: 这个项目的名称。  - `ni[number]`: 检测到的镍  - `no[number]`: 检测到一氧化氮  - `no2[number]`: 检测到的二氧化氮  - `nox[number]`: 检测到的其他氮氧化合物  - `o3[number]`: 检测到的臭氧  - `owner[array]`: 一个包含JSON编码的字符序列的列表，引用所有者的唯一Ids。  - `pb[number]`: 检测到的铅  - `pm1[number]`: 直径为1微米或更小的颗粒物。  - `pm10[number]`: 直径为10微米或更小的颗粒物  - `pm25[number]`: 直径2.5微米或以下的颗粒物  - `precipitation[number]`: 雨水的数量  . Model: [https://schema.org/Number](https://schema.org/Number)- `refDevice[*]`: 捕获该观察结果的设备的参考。  - `refPointOfInterest[*]`: 与该观测相关的兴趣点（通常是空气质量站）的参考。  - `refWeatherObserved[*]`: 与该实体描述的空气质量状况相关的天气观测。  - `relativeHumidity[number]`: 空气的相对湿度（0到1之间的数字，代表0%到100%的范围）。  - `reliability[number]`: 与观察到的空气质量相对应的可靠性（百分比，以百分之一表示）。  . Model: [https://schema.org/Number ](https://schema.org/Number )- `seeAlso[*]`: 指向有关该项目的其他资源的URI列表  - `sh2[number]`: 检测到硫化氢  - `so2[number]`: 检测到二氧化硫  - `source[string]`: 一系列的字符，以URL的形式给出实体数据的原始来源。建议为源提供者的完全合格域名，或源对象的URL。  - `temperature[number]`: 项目的温度  - `type[string]`: NGSI实体类型。它必须是AirQualityObserved。  - `typeofLocation[string]`: 被抽查项目的地点类型  . Model: [https://schema.org/Text](https://schema.org/Text)- `volatileOrganicCompoundsTotal[number]`: 烷烃<C10，酮类<C6，醛类<C10，羧酸类<C5，吸气类<C7，烯类<C8，芳烃类  - `windDirection[number]`: 风向标的方向  . Model: [http://schema.org/Number](http://schema.org/Number)- `windSpeed[number]`: 风的强度  . Model: [http//schema.org/Number](http//schema.org/Number)<!-- /30-PropertiesList -->  
-<!-- 35-RequiredProperties -->  
-所需属性  
-- `dateObserved`  - `id`  - `location`  - `type`  <!-- /35-RequiredProperties -->  
-<!-- 40-RequiredProperties -->  
-不是所有的污染物都包括在这个数据模型中。如果有新的污染物需要扩展模型，请参考这个来源http://dd.eionet.europa.eu/vocabulary/aq/pollutant/view?page=1#vocabularyConceptResults，其中列出了大部分的污染物。  
-<!-- /40-RequiredProperties -->  
-<!-- 50-DataModelHeader -->  
-## 数据模型的属性描述  
-按字母顺序排列（点击查看详情）。  
-<!-- /50-DataModelHeader -->  
-<!-- 60-ModelYaml -->  
+[开放许可](https://github.com/smart-data-models//dataModel.Environment/blob/master/AirQualityObserved/LICENSE.md)  
+
+[文件自动生成](https://docs.google.com/presentation/d/e/2PACX-1vTs-Ng5dIAwkg91oTTUdt8ua7woBXhPnwavZ0FxgR8BsAI_Ek3C5q97Nd94HS8KhP-r_quD4H0fgyt3/pub?start=false&loop=false&delayms=3000#slide=id.gb715ace035_0_60)  
+<!-- /15-License -->
+  
+<!-- 20-Description -->
+  
+
+全球描述：**对某一地点和时间的空气质量状况的观察**。  
+
+版本：0.1.1  
+<!-- /20-Description -->
+  
+<!-- 30-PropertiesList -->
+  
+
+
+##属性列表  
+
+
+<sup><sub>[*] 如果一个属性中没有一个类型，是因为它可能有几种类型或不同的格式/模式</sub></sup>。  
+- `address[object]`: 邮寄地址  . Model: [https://schema.org/address](https://schema.org/address)
+- `airQualityIndex[number]`: 空气质量指数是一个用于报告任何一天的空气质量的数字。  . Model: [https://schema.org/Number](https://schema.org/Number)
+- `airQualityLevel[string]`: 与观察到的空气质量相对应的健康问题的总体质量水平  . Model: [https://schema.org/Tex ](https://schema.org/Tex )
+- `alternateName[string]`: 这个项目的一个替代名称  
+- `areaServed[string]`: 该空气质量测量属于的更高层次的区域  . Model: [https://schema.org/Text ](https://schema.org/Text )
+- `as[number]`: 检测到砷  . Model: [https://schema.org/Number](https://schema.org/Number)
+- `c6h6[number]`: 检测到苯  
+- `cd[number]`: 检测到镉  
+- `co[number]`: 检测到一氧化碳  
+- `co2[number]`: 检测到的二氧化碳  
+- `coLevel[string]`: 定性的一氧化碳存在  
+- `dataProvider[string]`: 一串识别统一数据实体提供者的字符。  
+- `dateCreated[string]`: 实体创建时间戳。这通常会由存储平台分配。  
+- `dateModified[string]`: 实体最后一次修改的时间戳。这通常会由存储平台分配。  
+- `dateObserved[string]`: 该观测的日期和时间，以ISO8601 UTC格式表示。  . Model: [https://schema.org/Text ](https://schema.org/Text )
+- `description[string]`: 对这个项目的描述  
+- `id[*]`: 实体的唯一标识符  
+- `location[*]`: 对该项目的Geojson引用。它可以是点、线字符串、多边形、多点、多线字符串或多多边形。  
+- `name[string]`: 这个项目的名称。  
+- `ni[number]`: 检测到的镍  
+- `no[number]`: 检测到一氧化氮  
+- `no2[number]`: 检测到的二氧化氮  
+- `nox[number]`: 检测到的其他氮氧化合物  
+- `o3[number]`: 检测到的臭氧  
+- `owner[array]`: 一个包含JSON编码的字符序列的列表，引用所有者的唯一Ids。  
+- `pb[number]`: 检测到的铅  
+- `pm1[number]`: 直径为1微米或更小的颗粒物。  
+- `pm10[number]`: 直径为10微米或更小的颗粒物  
+- `pm25[number]`: 直径2.5微米或以下的颗粒物  
+- `precipitation[number]`: 雨水的数量  . Model: [https://schema.org/Number](https://schema.org/Number)
+- `refDevice[*]`: 捕获该观察结果的设备的参考。  
+- `refPointOfInterest[*]`: 与该观测相关的兴趣点（通常是空气质量站）的参考。  
+- `refWeatherObserved[*]`: 与该实体描述的空气质量状况相关的天气观测。  
+- `relativeHumidity[number]`: 空气的相对湿度（0到1之间的数字，代表0%到100%的范围）。  
+- `reliability[number]`: 与观察到的空气质量相对应的可靠性（百分比，以百分之一表示）。  . Model: [https://schema.org/Number ](https://schema.org/Number )
+- `seeAlso[*]`: 指向有关该项目的其他资源的URI列表  
+- `sh2[number]`: 检测到硫化氢  
+- `so2[number]`: 检测到二氧化硫  
+- `source[string]`: 一系列的字符，以URL的形式给出实体数据的原始来源。建议为源提供者的完全合格域名，或源对象的URL。  
+- `temperature[number]`: 项目的温度  
+- `type[string]`: NGSI实体类型。它必须是AirQualityObserved。  
+- `typeofLocation[string]`: 被抽查项目的地点类型  . Model: [https://schema.org/Text](https://schema.org/Text)
+- `volatileOrganicCompoundsTotal[number]`: 烷烃<C10，酮类<C6，醛类<C10，羧酸类<C5，吸气类<C7，烯类<C8，芳烃类  
+- `windDirection[number]`: 风向标的方向  . Model: [http://schema.org/Number](http://schema.org/Number)
+- `windSpeed[number]`: 风的强度  . Model: [http//schema.org/Number](http//schema.org/Number)
+<!-- /30-PropertiesList -->
+  
+<!-- 35-RequiredProperties -->
+  
+
+所需属性  
+- `dateObserved`  
+- `id`  
+- `location`  
+- `type`  
+<!-- /35-RequiredProperties -->
+  
+<!-- 40-RequiredProperties -->
+  
+
+不是所有的污染物都包括在这个数据模型中。如果有新的污染物需要扩展模型，请参考这个来源http://dd.eionet.europa.eu/vocabulary/aq/pollutant/view?page=1#vocabularyConceptResults，其中列出了大部分的污染物。  
+<!-- /40-RequiredProperties -->
+  
+<!-- 50-DataModelHeader -->
+  
+
+## 数据模型的属性描述  
+
+按字母顺序排列（点击查看详情）。  
+<!-- /50-DataModelHeader -->
+  
+<!-- 60-ModelYaml -->
+  
 <details><summary><strong>full yaml details</strong></summary>    
-```yaml  
+
+```yaml  
 AirQualityObserved:    
   description: An observation of air quality conditions at a certain place and time.    
   properties:    
@@ -531,16 +608,25 @@ AirQualityObserved:
   x-version: 0.1.1    
 ```  
 </details>    
-<!-- /60-ModelYaml -->  
-<!-- 70-MiddleNotes -->  
-<!-- /70-MiddleNotes -->  
-<!-- 80-Examples -->  
-## ＃＃＃＃有效载荷的例子  
-#### AirQualityObserved NGSI-v2 key-values 示例  
-下面是一个以JSON-LD格式作为key-values的AirQualityObserved的例子。当使用`options=keyValues`时，这与NGSI-v2兼容，并返回单个实体的上下文数据。  
+<!-- /60-ModelYaml -->
+  
+<!-- 70-MiddleNotes -->
+  
+<!-- /70-MiddleNotes -->
+  
+<!-- 80-Examples -->
+  
+
+## ＃＃＃＃有效载荷的例子  
+
+#### AirQualityObserved NGSI-v2 key-values 示例  
+
+下面是一个以JSON-LD格式作为key-values的AirQualityObserved的例子。当使用`options=keyValues`时，这与NGSI-v2兼容，并返回单个实体的上下文数据。  
 <details><summary><strong>show/hide example</strong></summary>    
-```json  
-{  
+
+```json  
+
+{  
   "id": "Madrid-AmbientObserved-28079004-2016-03-15T11:00:00",  
   "type": "AirQualityObserved",  
   "address": {  
@@ -574,11 +660,15 @@ AirQualityObserved:
 }  
 ```  
 </details>  
-#### AirQualityObserved NGSI-v2 normalized Example  
-下面是一个以JSON-LD格式规范化的AirQualityObserved的例子。当不使用选项时，这与NGSI-v2兼容，并返回单个实体的上下文数据。  
+
+#### AirQualityObserved NGSI-v2 normalized Example  
+
+下面是一个以JSON-LD格式规范化的AirQualityObserved的例子。当不使用选项时，这与NGSI-v2兼容，并返回单个实体的上下文数据。  
 <details><summary><strong>show/hide example</strong></summary>    
-```json  
-{  
+
+```json  
+
+{  
   "id": "Madrid-AmbientObserved-28079004-2016-03-15T11:00:00",  
   "type": "AirQualityObserved",  
   "dateObserved": {  
@@ -682,11 +772,15 @@ AirQualityObserved:
 }  
 ```  
 </details>  
-#### AirQualityObserved NGSI-LD key-values 示例  
-下面是一个以JSON-LD格式作为key-values的AirQualityObserved的例子。当使用`options=keyValues`时，这与NGSI-LD兼容，并返回单个实体的上下文数据。  
+
+#### AirQualityObserved NGSI-LD key-values 示例  
+
+下面是一个以JSON-LD格式作为key-values的AirQualityObserved的例子。当使用`options=keyValues`时，这与NGSI-LD兼容，并返回单个实体的上下文数据。  
 <details><summary><strong>show/hide example</strong></summary>    
-```json  
-{  
+
+```json  
+
+{  
     "id": "urn:ngsi-ld:AirQualityObserved:Madrid-AmbientObserved-28079004-2016-03-15T11:00:00",  
     "type": "AirQualityObserved",  
     "CO": 500,  
@@ -722,17 +816,21 @@ AirQualityObserved:
     "windDirection": 186,  
     "windSpeed": 0.64,  
     "@context": [  
-        "https://uri.etsi.org/ngsi-ld/v1/ngsi-ld-core-context.jsonld",  
+      
         "https://raw.githubusercontent.com/smart-data-models/dataModel.Environment/master/context.jsonld"  
     ]  
 }  
 ```  
 </details>  
-#### AirQualityObserved NGSI-LD normalized Example  
-下面是一个JSON-LD格式的AirQualityObserved规范化的例子。当不使用选项时，这与NGSI-LD兼容，并返回单个实体的上下文数据。  
+
+#### AirQualityObserved NGSI-LD normalized Example  
+
+下面是一个JSON-LD格式的AirQualityObserved规范化的例子。当不使用选项时，这与NGSI-LD兼容，并返回单个实体的上下文数据。  
 <details><summary><strong>show/hide example</strong></summary>    
-```json  
-{  
+
+```json  
+
+{  
     "id": "urn:ngsi-ld:AirQualityObserved:Madrid-AmbientObserved-28079004-2016-03-15T11:00:00",  
     "type": "AirQualityObserved",  
     "CO": {  
@@ -836,17 +934,26 @@ AirQualityObserved:
         "value": 0.64  
     },  
     "@context": [  
-        "https://uri.etsi.org/ngsi-ld/v1/ngsi-ld-core-context.jsonld",  
+      
         "https://raw.githubusercontent.com/smart-data-models/dataModel.Environment/master/context.jsonld"  
     ]  
 }  
 ```  
-</details><!-- /80-Examples -->  
-<!-- 90-FooterNotes -->  
-<!-- /90-FooterNotes -->  
-<!-- 95-Units -->  
-参见[常见问题10](https://smartdatamodels.org/index.php/faqs/)，以获得关于如何处理量级单位的答案。  
-<!-- /95-Units -->  
-<!-- 97-LastFooter -->  
+</details><!-- /80-Examples -->
+  
+<!-- 90-FooterNotes -->
+  
+<!-- /90-FooterNotes -->
+  
+<!-- 95-Units -->
+  
+
+参见[常见问题10](https://smartdatamodels.org/index.php/faqs/)，以获得关于如何处理量级单位的答案。  
+<!-- /95-Units -->
+  
+<!-- 97-LastFooter -->
+  
 ---  
-[Smart Data Models](https://smartdatamodels.org) +++ [Contribution Manual](https://bit.ly/contribution_manual) +++ [About](https://bit.ly/Introduction_SDM)<!-- /97-LastFooter -->  
+
+[Smart Data Models](https://smartdatamodels.org) +++ [Contribution Manual](https://bit.ly/contribution_manual) +++ [About](https://bit.ly/Introduction_SDM)<!-- /97-LastFooter -->
+  

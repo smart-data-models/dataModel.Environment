@@ -1,33 +1,80 @@
-<!-- 10-Header -->  
+<!-- 10-Header -->
+  
 [![Smart Data Models](https://smartdatamodels.org/wp-content/uploads/2022/01/SmartDataModels_logo.png "Logo")](https://smartdatamodels.org)  
-Entity: TrafficEnvironmentImpact  
-================================<!-- /10-Header -->  
-<!-- 15-License -->  
-[Open License](https://github.com/smart-data-models//dataModel.Environment/blob/master/TrafficEnvironmentImpact/LICENSE.md)  
-[document generated automatically](https://docs.google.com/presentation/d/e/2PACX-1vTs-Ng5dIAwkg91oTTUdt8ua7woBXhPnwavZ0FxgR8BsAI_Ek3C5q97Nd94HS8KhP-r_quD4H0fgyt3/pub?start=false&loop=false&delayms=3000#slide=id.gb715ace035_0_60)  
-<!-- /15-License -->  
-<!-- 20-Description -->  
-Global description: **Environmental Impact of traffic based on the vehicles traffic and their emission characteristics**  
-version: 0.0.2  
-<!-- /20-Description -->  
-<!-- 30-PropertiesList -->  
 
-## List of properties  
+Entity: TrafficEnvironmentImpact  
+================================
+<!-- /10-Header -->
+  
+<!-- 15-License -->
+  
 
-<sup><sub>[*] If there is not a type in an attribute is because it could have several types or different formats/patterns</sub></sup>  
-- `address[object]`: The mailing address  . Model: [https://schema.org/address](https://schema.org/address)- `alternateName[string]`: An alternative name for this item  - `areaServed[string]`: The geographic area where a service or offered item is provided  . Model: [https://schema.org/Text](https://schema.org/Text)- `co2[number]`: The measured C02 emission concentration  - `dataProvider[string]`: A sequence of characters identifying the provider of the harmonised data entity.  - `dateCreated[string]`: Entity creation timestamp. This will usually be allocated by the storage platform.  - `dateModified[string]`: Timestamp of the last modification of the entity. This will usually be allocated by the storage platform.  - `dateObservedFrom[string]`: Date of the start of measurement (timestamp) in ISO 8601  - `dateObservedTo[string]`: Date of the end of measurement (timestamp) in ISO 8601  - `description[string]`: A description of this item  - `id[*]`: Unique identifier of the entity  - `location[*]`: Geojson reference to the item. It can be Point, LineString, Polygon, MultiPoint, MultiLineString or MultiPolygon  - `name[string]`: The name of this item.  - `owner[array]`: A List containing a JSON encoded sequence of characters referencing the unique Ids of the owner(s)  - `seeAlso[*]`: list of uri pointing to additional resources about the item  - `source[string]`: A sequence of characters giving the original source of the entity data as a URL. Recommended to be the fully qualified domain name of the source provider, or the URL to the source object.  - `traffic[array]`: Array of objects containing the different types of vehicles and its relations with the object of the traffic flow observations  - `type[string]`: NGSI type. It has to be TrafficEnvironmentImpact  <!-- /30-PropertiesList -->  
-<!-- 35-RequiredProperties -->  
-Required properties  
-- `id`  - `type`  <!-- /35-RequiredProperties -->  
-<!-- 40-RequiredProperties -->  
-<!-- /40-RequiredProperties -->  
-<!-- 50-DataModelHeader -->  
-## Data Model description of properties  
-Sorted alphabetically (click for details)  
-<!-- /50-DataModelHeader -->  
-<!-- 60-ModelYaml -->  
+[Open License](https://github.com/smart-data-models//dataModel.Environment/blob/master/TrafficEnvironmentImpact/LICENSE.md)  
+
+[document generated automatically](https://docs.google.com/presentation/d/e/2PACX-1vTs-Ng5dIAwkg91oTTUdt8ua7woBXhPnwavZ0FxgR8BsAI_Ek3C5q97Nd94HS8KhP-r_quD4H0fgyt3/pub?start=false&loop=false&delayms=3000#slide=id.gb715ace035_0_60)  
+<!-- /15-License -->
+  
+<!-- 20-Description -->
+  
+
+Global description: **Environmental Impact of traffic based on the vehicles traffic and their emission characteristics**  
+
+version: 0.0.2  
+<!-- /20-Description -->
+  
+<!-- 30-PropertiesList -->
+  
+
+
+## List of properties  
+
+
+<sup><sub>[*] If there is not a type in an attribute is because it could have several types or different formats/patterns</sub></sup>  
+- `address[object]`: The mailing address  . Model: [https://schema.org/address](https://schema.org/address)
+- `alternateName[string]`: An alternative name for this item  
+- `areaServed[string]`: The geographic area where a service or offered item is provided  . Model: [https://schema.org/Text](https://schema.org/Text)
+- `co2[number]`: The measured C02 emission concentration  
+- `dataProvider[string]`: A sequence of characters identifying the provider of the harmonised data entity.  
+- `dateCreated[string]`: Entity creation timestamp. This will usually be allocated by the storage platform.  
+- `dateModified[string]`: Timestamp of the last modification of the entity. This will usually be allocated by the storage platform.  
+- `dateObservedFrom[string]`: Date of the start of measurement (timestamp) in ISO 8601  
+- `dateObservedTo[string]`: Date of the end of measurement (timestamp) in ISO 8601  
+- `description[string]`: A description of this item  
+- `id[*]`: Unique identifier of the entity  
+- `location[*]`: Geojson reference to the item. It can be Point, LineString, Polygon, MultiPoint, MultiLineString or MultiPolygon  
+- `name[string]`: The name of this item.  
+- `owner[array]`: A List containing a JSON encoded sequence of characters referencing the unique Ids of the owner(s)  
+- `seeAlso[*]`: list of uri pointing to additional resources about the item  
+- `source[string]`: A sequence of characters giving the original source of the entity data as a URL. Recommended to be the fully qualified domain name of the source provider, or the URL to the source object.  
+- `traffic[array]`: Array of objects containing the different types of vehicles and its relations with the object of the traffic flow observations  
+- `type[string]`: NGSI type. It has to be TrafficEnvironmentImpact  
+<!-- /30-PropertiesList -->
+  
+<!-- 35-RequiredProperties -->
+  
+
+Required properties  
+- `id`  
+- `type`  
+<!-- /35-RequiredProperties -->
+  
+<!-- 40-RequiredProperties -->
+  
+<!-- /40-RequiredProperties -->
+  
+<!-- 50-DataModelHeader -->
+  
+
+## Data Model description of properties  
+
+Sorted alphabetically (click for details)  
+<!-- /50-DataModelHeader -->
+  
+<!-- 60-ModelYaml -->
+  
 <details><summary><strong>full yaml details</strong></summary>    
-```yaml  
+
+```yaml  
 TrafficEnvironmentImpact:    
   description: 'Environmental Impact of traffic based on the vehicles traffic and their emission characteristics'    
   properties:    
@@ -344,16 +391,25 @@ TrafficEnvironmentImpact:
   x-version: 0.0.2    
 ```  
 </details>    
-<!-- /60-ModelYaml -->  
-<!-- 70-MiddleNotes -->  
-<!-- /70-MiddleNotes -->  
-<!-- 80-Examples -->  
-## Example payloads    
-#### TrafficEnvironmentImpact NGSI-v2 key-values Example    
-Here is an example of a TrafficEnvironmentImpact in JSON-LD format as key-values. This is compatible with NGSI-v2 when  using `options=keyValues` and returns the context data of an individual entity.  
+<!-- /60-ModelYaml -->
+  
+<!-- 70-MiddleNotes -->
+  
+<!-- /70-MiddleNotes -->
+  
+<!-- 80-Examples -->
+  
+
+## Example payloads    
+
+#### TrafficEnvironmentImpact NGSI-v2 key-values Example    
+
+Here is an example of a TrafficEnvironmentImpact in JSON-LD format as key-values. This is compatible with NGSI-v2 when  using `options=keyValues` and returns the context data of an individual entity.  
 <details><summary><strong>show/hide example</strong></summary>    
-```json  
-{  
+
+```json  
+
+{  
   "id": "urn:ngsi-ld:TrafficEnvironmentImpact:id:BGGK:76812356",  
   "type": "TrafficEnvironmentImpact",  
   "dateCreated": "2022-08-17T05:21:50Z",  
@@ -403,11 +459,15 @@ TrafficEnvironmentImpact:
 }  
 ```  
 </details>  
-#### TrafficEnvironmentImpact NGSI-v2 normalized Example    
-Here is an example of a TrafficEnvironmentImpact in JSON-LD format as normalized. This is compatible with NGSI-v2 when not using options and returns the context data of an individual entity.  
+
+#### TrafficEnvironmentImpact NGSI-v2 normalized Example    
+
+Here is an example of a TrafficEnvironmentImpact in JSON-LD format as normalized. This is compatible with NGSI-v2 when not using options and returns the context data of an individual entity.  
 <details><summary><strong>show/hide example</strong></summary>    
-```json  
-{  
+
+```json  
+
+{  
   "id": "urn:ngsi-ld:TrafficEnvironmentImpact:id:BGGK:76812356",  
   "type": "TrafficEnvironmentImpact",  
   "dateCreated": {  
@@ -505,11 +565,15 @@ TrafficEnvironmentImpact:
 }  
 ```  
 </details>  
-#### TrafficEnvironmentImpact NGSI-LD key-values Example    
-Here is an example of a TrafficEnvironmentImpact in JSON-LD format as key-values. This is compatible with NGSI-LD when  using `options=keyValues` and returns the context data of an individual entity.  
+
+#### TrafficEnvironmentImpact NGSI-LD key-values Example    
+
+Here is an example of a TrafficEnvironmentImpact in JSON-LD format as key-values. This is compatible with NGSI-LD when  using `options=keyValues` and returns the context data of an individual entity.  
 <details><summary><strong>show/hide example</strong></summary>    
-```json  
-{  
+
+```json  
+
+{  
     "id": "urn:ngsi-ld:TrafficEnvironmentImpact:id:BGGK:76812356",  
     "type": "TrafficEnvironmentImpact",  
     "dateCreated": "2022-08-17T05:21:50Z",  
@@ -557,17 +621,21 @@ TrafficEnvironmentImpact:
         }  
     ],  
     "@context": [  
-        "https://smartdatamodels.org/dataModel.Environment/context.jsonld",  
+          
         "https://raw.githubusercontent.com/smart-data-models/dataModel.Environment/master/context.jsonld"  
     ]  
 }  
 ```  
 </details>  
-#### TrafficEnvironmentImpact NGSI-LD normalized Example    
-Here is an example of a TrafficEnvironmentImpact in JSON-LD format as normalized. This is compatible with NGSI-LD when not using options and returns the context data of an individual entity.  
+
+#### TrafficEnvironmentImpact NGSI-LD normalized Example    
+
+Here is an example of a TrafficEnvironmentImpact in JSON-LD format as normalized. This is compatible with NGSI-LD when not using options and returns the context data of an individual entity.  
 <details><summary><strong>show/hide example</strong></summary>    
-```json  
-{  
+
+```json  
+
+{  
     "id": "urn:ngsi-ld:TrafficEnvironmentImpact:id:BGGK:76812356",  
     "type": "TrafficEnvironmentImpact",  
     "dateCreated": {  
@@ -663,17 +731,26 @@ TrafficEnvironmentImpact:
         ]  
     },  
     "@context": [  
-        "https://smartdatamodels.org/dataModel.Environment/context.jsonld",  
+          
         "https://raw.githubusercontent.com/smart-data-models/dataModel.Environment/master/context.jsonld"  
     ]  
 }  
 ```  
-</details><!-- /80-Examples -->  
-<!-- 90-FooterNotes -->  
-<!-- /90-FooterNotes -->  
-<!-- 95-Units -->  
-See [FAQ 10](https://smartdatamodels.org/index.php/faqs/) to get an answer on how to deal with magnitude units  
-<!-- /95-Units -->  
-<!-- 97-LastFooter -->  
+</details><!-- /80-Examples -->
+  
+<!-- 90-FooterNotes -->
+  
+<!-- /90-FooterNotes -->
+  
+<!-- 95-Units -->
+  
+
+See [FAQ 10](https://smartdatamodels.org/index.php/faqs/) to get an answer on how to deal with magnitude units  
+<!-- /95-Units -->
+  
+<!-- 97-LastFooter -->
+  
 ---  
-[Smart Data Models](https://smartdatamodels.org) +++ [Contribution Manual](https://bit.ly/contribution_manual) +++ [About](https://bit.ly/Introduction_SDM)<!-- /97-LastFooter -->  
+
+[Smart Data Models](https://smartdatamodels.org) +++ [Contribution Manual](https://bit.ly/contribution_manual) +++ [About](https://bit.ly/Introduction_SDM)<!-- /97-LastFooter -->
+  

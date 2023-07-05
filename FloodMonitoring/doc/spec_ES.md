@@ -1,33 +1,84 @@
-<!-- 10-Header -->  
+<!-- 10-Header -->
+  
 [![Smart Data Models](https://smartdatamodels.org/wp-content/uploads/2022/01/SmartDataModels_logo.png "Logo")](https://smartdatamodels.org)  
-Entidad: FloodMonitoring  
-========================<!-- /10-Header -->  
-<!-- 15-License -->  
-[Licencia abierta](https://github.com/smart-data-models//dataModel.Environment/blob/master/FloodMonitoring/LICENSE.md)  
-[documento generado automáticamente](https://docs.google.com/presentation/d/e/2PACX-1vTs-Ng5dIAwkg91oTTUdt8ua7woBXhPnwavZ0FxgR8BsAI_Ek3C5q97Nd94HS8KhP-r_quD4H0fgyt3/pub?start=false&loop=false&delayms=3000#slide=id.gb715ace035_0_60)  
-<!-- /15-License -->  
-<!-- 20-Description -->  
-Descripción global: **Modelo de datos de sensores de inundación destinado a representar el nivel de inundación en relación con el caudal/nivel de agua en una determinada masa de agua (río, lago, etc.).  
-versión: 0.0.1  
-<!-- /20-Description -->  
-<!-- 30-PropertiesList -->  
 
-## Lista de propiedades  
+Entidad: FloodMonitoring  
+========================
+<!-- /10-Header -->
+  
+<!-- 15-License -->
+  
 
-<sup><sub>[*] Si no hay un tipo en un atributo es porque puede tener varios tipos o diferentes formatos/patrones</sub></sup>.  
-- `address[object]`: La dirección postal  . Model: [https://schema.org/address](https://schema.org/address)- `alertLevel[number]`: Valor umbral de nivel de alerta de referencia fijado para la estación de detección correspondiente a esta observación. Se genera una señal de alerta si el nivel actual supera el valor umbral del nivel de alerta.  . Model: [https://schema.org/Number](https://schema.org/Number)- `alternateName[string]`: Un nombre alternativo para este artículo  - `areaServed[string]`: La zona geográfica en la que se presta un servicio o se ofrece un artículo  . Model: [https://schema.org/Text](https://schema.org/Text)- `currentLevel[number]`: Nivel de inundación actual indicado por la estación de detección correspondiente a esta observación, calculado utilizando referenceLevel y measuredDistance(currentLevel = referenceLevel - measuredDistance).  . Model: [https://schema.org/Number](https://schema.org/Number)- `dangerLevel[number]`: Valor umbral de nivel de peligro de referencia fijado para la estación de detección correspondiente a esta observación. El estado del nivel de inundación se marca como peligroso si el nivel actual supera el valor umbral del nivel de peligro.  . Model: [https://schema.org/Number](https://schema.org/Number)- `dataProvider[string]`: Secuencia de caracteres que identifica al proveedor de la entidad de datos armonizada.  - `dateCreated[string]`: Fecha de creación de la entidad. Normalmente será asignada por la plataforma de almacenamiento.  - `dateModified[string]`: Marca de tiempo de la última modificación de la entidad. Normalmente será asignada por la plataforma de almacenamiento.  - `description[string]`: Descripción de este artículo  - `floodLevelStatus[string]`: Indicación del estado del nivel de inundación dada por el dispositivo de detección de inundaciones. El estado se marca como Peligro si el nivel actual es superior al valor umbral de nivel de peligro.  . Model: [https://schema.org/Text](https://schema.org/Text)- `id[*]`: Identificador único de la entidad  - `location[*]`: Referencia Geojson al elemento. Puede ser Point, LineString, Polygon, MultiPoint, MultiLineString o MultiPolygon.  - `measuredDistance[number]`: Describe la distancia medida por el sensor, desde la punta del sensor hasta la superficie superior del agua.  . Model: [https://schema.org/Number](https://schema.org/Number)- `name[string]`: El nombre de este artículo.  - `observationDateTime[string]`: Última hora de observación comunicada.  . Model: [https://schema.org/DateTime](https://schema.org/DateTime)- `owner[array]`: Una lista que contiene una secuencia de caracteres codificada en JSON que hace referencia a los identificadores únicos de los propietarios.  - `referenceLevel[number]`: Describe la distancia vertical desde el lecho del río hasta la punta del sensor.  . Model: [https://schema.org/Number](https://schema.org/Number)- `seeAlso[*]`: lista de uri que apuntan a recursos adicionales sobre el artículo  - `source[string]`: Secuencia de caracteres que indica la fuente original de los datos de la entidad en forma de URL. Se recomienda que sea el nombre de dominio completo del proveedor de origen o la URL del objeto de origen.  - `stationID[string]`: Identificador único anónimo asignado a la estación correspondiente a esta observación.  . Model: [https://schema.org/Text](https://schema.org/Text)- `type[string]`: Tiene que ser FloodMonitoring. Tipo de entidad NGSI.  <!-- /30-PropertiesList -->  
-<!-- 35-RequiredProperties -->  
-Propiedades requeridas  
-- `id`  - `type`  <!-- /35-RequiredProperties -->  
-<!-- 40-RequiredProperties -->  
-<!-- /40-RequiredProperties -->  
-<!-- 50-DataModelHeader -->  
-## Descripción de las propiedades del modelo de datos  
-Ordenados alfabéticamente (pulse para más detalles)  
-<!-- /50-DataModelHeader -->  
-<!-- 60-ModelYaml -->  
+[Licencia abierta](https://github.com/smart-data-models//dataModel.Environment/blob/master/FloodMonitoring/LICENSE.md)  
+
+[documento generado automáticamente](https://docs.google.com/presentation/d/e/2PACX-1vTs-Ng5dIAwkg91oTTUdt8ua7woBXhPnwavZ0FxgR8BsAI_Ek3C5q97Nd94HS8KhP-r_quD4H0fgyt3/pub?start=false&loop=false&delayms=3000#slide=id.gb715ace035_0_60)  
+<!-- /15-License -->
+  
+<!-- 20-Description -->
+  
+
+Descripción global: **Modelo de datos de sensores de inundación destinado a representar el nivel de inundación en relación con el caudal/nivel de agua en una determinada masa de agua (río, lago, etc.).  
+
+versión: 0.0.1  
+<!-- /20-Description -->
+  
+<!-- 30-PropertiesList -->
+  
+
+
+## Lista de propiedades  
+
+
+<sup><sub>[*] Si no hay un tipo en un atributo es porque puede tener varios tipos o diferentes formatos/patrones</sub></sup>.  
+- `address[object]`: La dirección postal  . Model: [https://schema.org/address](https://schema.org/address)
+- `alertLevel[number]`: Valor umbral de nivel de alerta de referencia fijado para la estación de detección correspondiente a esta observación. Se genera una señal de alerta si el nivel actual supera el valor umbral del nivel de alerta.  . Model: [https://schema.org/Number](https://schema.org/Number)
+- `alternateName[string]`: Un nombre alternativo para este artículo  
+- `areaServed[string]`: La zona geográfica en la que se presta un servicio o se ofrece un artículo  . Model: [https://schema.org/Text](https://schema.org/Text)
+- `currentLevel[number]`: Nivel de inundación actual indicado por la estación de detección correspondiente a esta observación, calculado utilizando referenceLevel y measuredDistance(currentLevel = referenceLevel - measuredDistance).  . Model: [https://schema.org/Number](https://schema.org/Number)
+- `dangerLevel[number]`: Valor umbral de nivel de peligro de referencia fijado para la estación de detección correspondiente a esta observación. El estado del nivel de inundación se marca como peligroso si el nivel actual supera el valor umbral del nivel de peligro.  . Model: [https://schema.org/Number](https://schema.org/Number)
+- `dataProvider[string]`: Secuencia de caracteres que identifica al proveedor de la entidad de datos armonizada.  
+- `dateCreated[string]`: Fecha de creación de la entidad. Normalmente será asignada por la plataforma de almacenamiento.  
+- `dateModified[string]`: Marca de tiempo de la última modificación de la entidad. Normalmente será asignada por la plataforma de almacenamiento.  
+- `description[string]`: Descripción de este artículo  
+- `floodLevelStatus[string]`: Indicación del estado del nivel de inundación dada por el dispositivo de detección de inundaciones. El estado se marca como Peligro si el nivel actual es superior al valor umbral de nivel de peligro.  . Model: [https://schema.org/Text](https://schema.org/Text)
+- `id[*]`: Identificador único de la entidad  
+- `location[*]`: Referencia Geojson al elemento. Puede ser Point, LineString, Polygon, MultiPoint, MultiLineString o MultiPolygon.  
+- `measuredDistance[number]`: Describe la distancia medida por el sensor, desde la punta del sensor hasta la superficie superior del agua.  . Model: [https://schema.org/Number](https://schema.org/Number)
+- `name[string]`: El nombre de este artículo.  
+- `observationDateTime[string]`: Última hora de observación comunicada.  . Model: [https://schema.org/DateTime](https://schema.org/DateTime)
+- `owner[array]`: Una lista que contiene una secuencia de caracteres codificada en JSON que hace referencia a los identificadores únicos de los propietarios.  
+- `referenceLevel[number]`: Describe la distancia vertical desde el lecho del río hasta la punta del sensor.  . Model: [https://schema.org/Number](https://schema.org/Number)
+- `seeAlso[*]`: lista de uri que apuntan a recursos adicionales sobre el artículo  
+- `source[string]`: Secuencia de caracteres que indica la fuente original de los datos de la entidad en forma de URL. Se recomienda que sea el nombre de dominio completo del proveedor de origen o la URL del objeto de origen.  
+- `stationID[string]`: Identificador único anónimo asignado a la estación correspondiente a esta observación.  . Model: [https://schema.org/Text](https://schema.org/Text)
+- `type[string]`: Tiene que ser FloodMonitoring. Tipo de entidad NGSI.  
+<!-- /30-PropertiesList -->
+  
+<!-- 35-RequiredProperties -->
+  
+
+Propiedades requeridas  
+- `id`  
+- `type`  
+<!-- /35-RequiredProperties -->
+  
+<!-- 40-RequiredProperties -->
+  
+<!-- /40-RequiredProperties -->
+  
+<!-- 50-DataModelHeader -->
+  
+
+## Descripción de las propiedades del modelo de datos  
+
+Ordenados alfabéticamente (pulse para más detalles)  
+<!-- /50-DataModelHeader -->
+  
+<!-- 60-ModelYaml -->
+  
 <details><summary><strong>full yaml details</strong></summary>    
-```yaml  
+
+```yaml  
 FloodMonitoring:    
   description: 'Flood Sensor Data Model intended to represent the level of flooding w.r.t water flow/level at a certain water mass(river, lake,etc.)..'    
   properties:    
@@ -359,16 +410,25 @@ FloodMonitoring:
   x-version: 0.0.1    
 ```  
 </details>    
-<!-- /60-ModelYaml -->  
-<!-- 70-MiddleNotes -->  
-<!-- /70-MiddleNotes -->  
-<!-- 80-Examples -->  
-## Ejemplo de carga útil  
-#### FloodMonitoring NGSI-v2 key-values Ejemplo  
-He aquí un ejemplo de FloodMonitoring en formato JSON-LD como key-values. Esto es compatible con NGSI-v2 cuando se utiliza `options=keyValues` y devuelve los datos de contexto de una entidad individual.  
+<!-- /60-ModelYaml -->
+  
+<!-- 70-MiddleNotes -->
+  
+<!-- /70-MiddleNotes -->
+  
+<!-- 80-Examples -->
+  
+
+## Ejemplo de carga útil  
+
+#### FloodMonitoring NGSI-v2 key-values Ejemplo  
+
+He aquí un ejemplo de FloodMonitoring en formato JSON-LD como key-values. Esto es compatible con NGSI-v2 cuando se utiliza `options=keyValues` y devuelve los datos de contexto de una entidad individual.  
 <details><summary><strong>show/hide example</strong></summary>    
-```json  
-{  
+
+```json  
+
+{  
   "id": "urn:ngsi-ld:FloodMonitoring:Pune-NoiseLevelObserved",  
   "type": "FloodMonitoring",  
   "alertLevel": 10.00,  
@@ -382,11 +442,15 @@ FloodMonitoring:
 }  
 ```  
 </details>  
-#### FloodMonitoring NGSI-v2 normalizado Ejemplo  
-He aquí un ejemplo de FloodMonitoring en formato JSON-LD normalizado. Esto es compatible con NGSI-v2 cuando no se utilizan opciones y devuelve los datos de contexto de una entidad individual.  
+
+#### FloodMonitoring NGSI-v2 normalizado Ejemplo  
+
+He aquí un ejemplo de FloodMonitoring en formato JSON-LD normalizado. Esto es compatible con NGSI-v2 cuando no se utilizan opciones y devuelve los datos de contexto de una entidad individual.  
 <details><summary><strong>show/hide example</strong></summary>    
-```json  
-{  
+
+```json  
+
+{  
   "id": "urn:ngsi-ld:FloodMonitoring:Pune-NoiseLevelObserved",  
   "type": "FloodMonitoring",  
   "alertLevel": {  
@@ -424,11 +488,15 @@ FloodMonitoring:
 }  
 ```  
 </details>  
-#### FloodMonitoring NGSI-LD key-values Ejemplo  
-He aquí un ejemplo de FloodMonitoring en formato JSON-LD como key-values. Esto es compatible con NGSI-LD cuando se utiliza `options=keyValues` y devuelve los datos de contexto de una entidad individual.  
+
+#### FloodMonitoring NGSI-LD key-values Ejemplo  
+
+He aquí un ejemplo de FloodMonitoring en formato JSON-LD como key-values. Esto es compatible con NGSI-LD cuando se utiliza `options=keyValues` y devuelve los datos de contexto de una entidad individual.  
 <details><summary><strong>show/hide example</strong></summary>    
-```json  
-{  
+
+```json  
+
+{  
     "alertLevel": 10.0,  
     "currentLevel": 0.98,  
     "dangerLevel": 25.0,  
@@ -438,17 +506,21 @@ FloodMonitoring:
     "referenceLevel": 4.2,  
     "stationID": "FWR013",  
     "@context": [  
-        "https://uri.etsi.org/ngsi-ld/v1/ngsi-ld-core-context.jsonld",  
+      
         "https://raw.githubusercontent.com/smart-data-models/dataModel.Environment/master/context.jsonld"  
     ]  
 }  
 ```  
 </details>  
-#### FloodMonitoring NGSI-LD normalizado Ejemplo  
-He aquí un ejemplo de FloodMonitoring en formato JSON-LD normalizado. Esto es compatible con NGSI-LD cuando no se utilizan opciones y devuelve los datos de contexto de una entidad individual.  
+
+#### FloodMonitoring NGSI-LD normalizado Ejemplo  
+
+He aquí un ejemplo de FloodMonitoring en formato JSON-LD normalizado. Esto es compatible con NGSI-LD cuando no se utilizan opciones y devuelve los datos de contexto de una entidad individual.  
 <details><summary><strong>show/hide example</strong></summary>    
-```json  
-{  
+
+```json  
+
+{  
     "id": "urn:ngsi-ld:FloodMonitoring:Pune-NoiseLevelObserved",  
     "type": "FloodMonitoring",  
     "alertLevel": {  
@@ -490,17 +562,26 @@ FloodMonitoring:
         "value": "FWR013"  
     },  
     "@context": [  
-        "https://uri.etsi.org/ngsi-ld/v1/ngsi-ld-core-context.jsonld",  
+      
         "https://raw.githubusercontent.com/smart-data-models/dataModel.Environment/master/context.jsonld"  
     ]  
 }  
 ```  
-</details><!-- /80-Examples -->  
-<!-- 90-FooterNotes -->  
-<!-- /90-FooterNotes -->  
-<!-- 95-Units -->  
-Consulte [FAQ 10](https://smartdatamodels.org/index.php/faqs/) para obtener una respuesta sobre cómo tratar las unidades de magnitud.  
-<!-- /95-Units -->  
-<!-- 97-LastFooter -->  
+</details><!-- /80-Examples -->
+  
+<!-- 90-FooterNotes -->
+  
+<!-- /90-FooterNotes -->
+  
+<!-- 95-Units -->
+  
+
+Consulte [FAQ 10](https://smartdatamodels.org/index.php/faqs/) para obtener una respuesta sobre cómo tratar las unidades de magnitud.  
+<!-- /95-Units -->
+  
+<!-- 97-LastFooter -->
+  
 ---  
-[Smart Data Models](https://smartdatamodels.org) +++ [Contribution Manual](https://bit.ly/contribution_manual) +++ [About](https://bit.ly/Introduction_SDM)<!-- /97-LastFooter -->  
+
+[Smart Data Models](https://smartdatamodels.org) +++ [Contribution Manual](https://bit.ly/contribution_manual) +++ [About](https://bit.ly/Introduction_SDM)<!-- /97-LastFooter -->
+  

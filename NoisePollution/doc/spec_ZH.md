@@ -1,33 +1,82 @@
-<!-- 10-Header -->  
+<!-- 10-Header -->
+  
 [![Smart Data Models](https://smartdatamodels.org/wp-content/uploads/2022/01/SmartDataModels_logo.png "Logo")](https://smartdatamodels.org)  
-实体。噪声污染  
-=======<!-- /10-Header -->  
-<!-- 15-License -->  
-[开放许可](https://github.com/smart-data-models//dataModel.Environment/blob/master/NoisePollution/LICENSE.md)  
-[文件自动生成](https://docs.google.com/presentation/d/e/2PACX-1vTs-Ng5dIAwkg91oTTUdt8ua7woBXhPnwavZ0FxgR8BsAI_Ek3C5q97Nd94HS8KhP-r_quD4H0fgyt3/pub?start=false&loop=false&delayms=3000#slide=id.gb715ace035_0_60)  
-<!-- /15-License -->  
-<!-- 20-Description -->  
-全局描述。**噪声污染数据模型将具体和准时的噪声测量值（例如来自NoiseLevelObservation实体）合并为城市地区的平均参数，提供与城市有关的噪声污染状况和演变的更多数据**。  
-版本：0.0.2  
-<!-- /20-Description -->  
-<!-- 30-PropertiesList -->  
 
-##属性列表  
+实体。噪声污染  
+=======
+<!-- /10-Header -->
+  
+<!-- 15-License -->
+  
 
-<sup><sub>[*] 如果一个属性中没有一个类型，是因为它可能有几种类型或不同的格式/模式</sub></sup>。  
-- `LAeq2[number]`: 过去2小时的平均声级  - `LAmax2[number]`: 过去2小时内记录的最大声级  - `alternateName[string]`: 这个项目的一个替代名称  - `buildingsType[string]`: 安装传感器时测量区域内主要建筑物的类型  - `dataProvider[string]`: 一串识别统一数据实体提供者的字符。  - `dateCreated[string]`: 实体创建时间戳。这通常会由存储平台分配。  - `dateModified[string]`: 实体最后一次修改的时间戳。这通常会由存储平台分配。  - `dateObservedFrom[string]`: 观察期开始日期和时间  - `dateObservedTo[string]`: 观察期的结束日期和时间  - `description[string]`: 对这个项目的描述  - `groundType[string]`: 安装传感器时测量区域的主要地面类型  - `id[*]`: 实体的唯一标识符  - `name[string]`: 这个项目的名称。  - `noiseAnnoyanceIndex[number]`: 根据噪音烦扰程度的指数（1至10）。  - `noiseOrigin[string]`: 传感器安装时记录的噪声的主要来源（源）。  - `owner[array]`: 一个包含JSON编码的字符序列的列表，引用所有者的唯一Ids。  - `seeAlso[*]`: 指向有关该项目的其他资源的URI列表  - `source[string]`: 一系列的字符，以URL的形式给出实体数据的原始来源。建议为源提供者的完全合格域名，或源对象的URL。  - `type[string]`: NGSI类型。它必须是NoisePollution  - `wallsType[string]`: 安装传感器时测量区域内的主要外墙材料类型  <!-- /30-PropertiesList -->  
-<!-- 35-RequiredProperties -->  
-所需属性  
-- `id`  - `type`  <!-- /35-RequiredProperties -->  
-<!-- 40-RequiredProperties -->  
-<!-- /40-RequiredProperties -->  
-<!-- 50-DataModelHeader -->  
-## 数据模型的属性描述  
-按字母顺序排列（点击查看详情）。  
-<!-- /50-DataModelHeader -->  
-<!-- 60-ModelYaml -->  
+[开放许可](https://github.com/smart-data-models//dataModel.Environment/blob/master/NoisePollution/LICENSE.md)  
+
+[文件自动生成](https://docs.google.com/presentation/d/e/2PACX-1vTs-Ng5dIAwkg91oTTUdt8ua7woBXhPnwavZ0FxgR8BsAI_Ek3C5q97Nd94HS8KhP-r_quD4H0fgyt3/pub?start=false&loop=false&delayms=3000#slide=id.gb715ace035_0_60)  
+<!-- /15-License -->
+  
+<!-- 20-Description -->
+  
+
+全局描述。**噪声污染数据模型将具体和准时的噪声测量值（例如来自NoiseLevelObservation实体）合并为城市地区的平均参数，提供与城市有关的噪声污染状况和演变的更多数据**。  
+
+版本：0.0.2  
+<!-- /20-Description -->
+  
+<!-- 30-PropertiesList -->
+  
+
+
+##属性列表  
+
+
+<sup><sub>[*] 如果一个属性中没有一个类型，是因为它可能有几种类型或不同的格式/模式</sub></sup>。  
+- `LAeq2[number]`: 过去2小时的平均声级  
+- `LAmax2[number]`: 过去2小时内记录的最大声级  
+- `alternateName[string]`: 这个项目的一个替代名称  
+- `buildingsType[string]`: 安装传感器时测量区域内主要建筑物的类型  
+- `dataProvider[string]`: 一串识别统一数据实体提供者的字符。  
+- `dateCreated[string]`: 实体创建时间戳。这通常会由存储平台分配。  
+- `dateModified[string]`: 实体最后一次修改的时间戳。这通常会由存储平台分配。  
+- `dateObservedFrom[string]`: 观察期开始日期和时间  
+- `dateObservedTo[string]`: 观察期的结束日期和时间  
+- `description[string]`: 对这个项目的描述  
+- `groundType[string]`: 安装传感器时测量区域的主要地面类型  
+- `id[*]`: 实体的唯一标识符  
+- `name[string]`: 这个项目的名称。  
+- `noiseAnnoyanceIndex[number]`: 根据噪音烦扰程度的指数（1至10）。  
+- `noiseOrigin[string]`: 传感器安装时记录的噪声的主要来源（源）。  
+- `owner[array]`: 一个包含JSON编码的字符序列的列表，引用所有者的唯一Ids。  
+- `seeAlso[*]`: 指向有关该项目的其他资源的URI列表  
+- `source[string]`: 一系列的字符，以URL的形式给出实体数据的原始来源。建议为源提供者的完全合格域名，或源对象的URL。  
+- `type[string]`: NGSI类型。它必须是NoisePollution  
+- `wallsType[string]`: 安装传感器时测量区域内的主要外墙材料类型  
+<!-- /30-PropertiesList -->
+  
+<!-- 35-RequiredProperties -->
+  
+
+所需属性  
+- `id`  
+- `type`  
+<!-- /35-RequiredProperties -->
+  
+<!-- 40-RequiredProperties -->
+  
+<!-- /40-RequiredProperties -->
+  
+<!-- 50-DataModelHeader -->
+  
+
+## 数据模型的属性描述  
+
+按字母顺序排列（点击查看详情）。  
+<!-- /50-DataModelHeader -->
+  
+<!-- 60-ModelYaml -->
+  
 <details><summary><strong>full yaml details</strong></summary>    
-```yaml  
+
+```yaml  
 NoisePollution:    
   description: 'Noise Pollution data model merges specific and punctual noise measurements (coming, e.g. from NoiseLevelObservation entities) into average parameters referred to city areas, providing a more city-related data about noise pollution status and evolution.'    
   properties:    
@@ -169,16 +218,25 @@ NoisePollution:
   x-version: 0.0.2    
 ```  
 </details>    
-<!-- /60-ModelYaml -->  
-<!-- 70-MiddleNotes -->  
-<!-- /70-MiddleNotes -->  
-<!-- 80-Examples -->  
-## ＃＃＃＃有效载荷的例子  
-#### NoisePollution NGSI-v2 key-values 示例  
-这里有一个以JSON-LD格式作为key-values的NoisePollution的例子。当使用`options=keyValues`时，这与NGSI-v2兼容，并返回单个实体的上下文数据。  
+<!-- /60-ModelYaml -->
+  
+<!-- 70-MiddleNotes -->
+  
+<!-- /70-MiddleNotes -->
+  
+<!-- 80-Examples -->
+  
+
+## ＃＃＃＃有效载荷的例子  
+
+#### NoisePollution NGSI-v2 key-values 示例  
+
+这里有一个以JSON-LD格式作为key-values的NoisePollution的例子。当使用`options=keyValues`时，这与NGSI-v2兼容，并返回单个实体的上下文数据。  
 <details><summary><strong>show/hide example</strong></summary>    
-```json  
-{  
+
+```json  
+
+{  
   "id": "urn:ngsi-ld:NoisePollution:France-NoisePollution-12345_2022-07-01T18:00:00_2022-07-01T00:00:00",  
   "type": "NoisePollution",  
   "Laeq2": 85,  
@@ -215,11 +273,15 @@ NoisePollution:
 }  
 ```  
 </details>  
-#### NoisePollution NGSI-v2归一化实例  
-下面是一个以JSON-LD格式规范化的NoisePollution的例子。当不使用选项时，这与NGSI-v2兼容，并返回单个实体的上下文数据。  
+
+#### NoisePollution NGSI-v2归一化实例  
+
+下面是一个以JSON-LD格式规范化的NoisePollution的例子。当不使用选项时，这与NGSI-v2兼容，并返回单个实体的上下文数据。  
 <details><summary><strong>show/hide example</strong></summary>    
-```json  
-{  
+
+```json  
+
+{  
   "id": "urn:ngsi-ld:NoisePollution:France-NoisePollution-12345_2022-07-01T18:00:00_2022-07-01T00:00:00",  
   "type": "NoisePollution",  
   "address": {  
@@ -292,11 +354,15 @@ NoisePollution:
 }  
 ```  
 </details>  
-#### NoisePollution NGSI-LD关键值示例  
-这里有一个以JSON-LD格式作为key-values的NoisePollution的例子。当使用`options=keyValues`时，这与NGSI-LD兼容，并返回单个实体的上下文数据。  
+
+#### NoisePollution NGSI-LD关键值示例  
+
+这里有一个以JSON-LD格式作为key-values的NoisePollution的例子。当使用`options=keyValues`时，这与NGSI-LD兼容，并返回单个实体的上下文数据。  
 <details><summary><strong>show/hide example</strong></summary>    
-```json  
-{  
+
+```json  
+
+{  
   "id": "urn:ngsi-ld:NoisePollution:France-NoisePollution-12345_2022-07-01T18:00:00_2022-07-01T00:00:00",  
   "type": "NoisePollution",  
   "Laeq2": 85,  
@@ -325,17 +391,21 @@ NoisePollution:
   "noiseOrigin": "traffic",  
   "wallsType": "glass",  
   "@context": [  
-    "https://uri.etsi.org/ngsi-ld/v1/ngsi-ld-core-context.jsonld",  
+  
     "https://raw.githubusercontent.com/smart-data-models/dataModel.Environment/master/context.jsonld"  
   ]  
 }  
 ```  
 </details>  
-#### NoisePollution NGSI-LD归一化实例  
-下面是一个以JSON-LD格式规范化的NoisePollution的例子。当不使用选项时，这与NGSI-LD兼容，并返回单个实体的上下文数据。  
+
+#### NoisePollution NGSI-LD归一化实例  
+
+下面是一个以JSON-LD格式规范化的NoisePollution的例子。当不使用选项时，这与NGSI-LD兼容，并返回单个实体的上下文数据。  
 <details><summary><strong>show/hide example</strong></summary>    
-```json  
-{  
+
+```json  
+
+{  
   "id": "urn:ngsi-ld:NoisePollution:France-NoisePollution-12345_2022-07-01T18:00:00_2022-07-01T00:00:00",  
   "type": "NoisePollution",  
   "address": {  
@@ -412,17 +482,26 @@ NoisePollution:
     "value": 85  
   },  
   "@context": [  
-    "https://uri.etsi.org/ngsi-ld/v1/ngsi-ld-core-context.jsonld",  
+  
     "https://raw.githubusercontent.com/smart-data-models/dataModel.Environment/master/context.jsonld"  
   ]  
 }  
 ```  
-</details><!-- /80-Examples -->  
-<!-- 90-FooterNotes -->  
-<!-- /90-FooterNotes -->  
-<!-- 95-Units -->  
-参见[常见问题10](https://smartdatamodels.org/index.php/faqs/)，以获得关于如何处理量级单位的答案。  
-<!-- /95-Units -->  
-<!-- 97-LastFooter -->  
+</details><!-- /80-Examples -->
+  
+<!-- 90-FooterNotes -->
+  
+<!-- /90-FooterNotes -->
+  
+<!-- 95-Units -->
+  
+
+参见[常见问题10](https://smartdatamodels.org/index.php/faqs/)，以获得关于如何处理量级单位的答案。  
+<!-- /95-Units -->
+  
+<!-- 97-LastFooter -->
+  
 ---  
-[Smart Data Models](https://smartdatamodels.org) +++ [Contribution Manual](https://bit.ly/contribution_manual) +++ [About](https://bit.ly/Introduction_SDM)<!-- /97-LastFooter -->  
+
+[Smart Data Models](https://smartdatamodels.org) +++ [Contribution Manual](https://bit.ly/contribution_manual) +++ [About](https://bit.ly/Introduction_SDM)<!-- /97-LastFooter -->
+  

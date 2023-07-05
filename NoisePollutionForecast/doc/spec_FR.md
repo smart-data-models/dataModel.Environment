@@ -1,33 +1,88 @@
-<!-- 10-Header -->  
+<!-- 10-Header -->
+  
 [![Smart Data Models](https://smartdatamodels.org/wp-content/uploads/2022/01/SmartDataModels_logo.png "Logo")](https://smartdatamodels.org)  
-Entité : NoisePollutionForecast  
-===============================<!-- /10-Header -->  
-<!-- 15-License -->  
-[Licence ouverte] (https://github.com/smart-data-models//dataModel.Environment/blob/master/NoisePollutionForecast/LICENSE.md)  
-[document généré automatiquement] (https://docs.google.com/presentation/d/e/2PACX-1vTs-Ng5dIAwkg91oTTUdt8ua7woBXhPnwavZ0FxgR8BsAI_Ek3C5q97Nd94HS8KhP-r_quD4H0fgyt3/pub?start=false&loop=false&delayms=3000#slide=id.gb715ace035_0_60)  
-<!-- /15-License -->  
-<!-- 20-Description -->  
-Description globale : **La prévision de la pollution sonore stocke l'attente de la pollution sonore basée sur certains éléments d'entrée et les éléments de bruit présents.**  
-version : 0.0.3  
-<!-- /20-Description -->  
-<!-- 30-PropertiesList -->  
 
-## Liste des propriétés  
+Entité : NoisePollutionForecast  
+===============================
+<!-- /10-Header -->
+  
+<!-- 15-License -->
+  
 
-<sup><sub>[*] S'il n'y a pas de type dans un attribut, c'est parce qu'il pourrait avoir plusieurs types ou différents formats/modèles</sub></sup>.  
-- `LANight[number]`: Niveau sonore moyen enregistré pendant la nuit (8h)  - `LAeq[number]`: Niveau sonore moyen (équivalent) enregistré pendant le temps de mesure  - `LAeq2[number]`: Niveau sonore moyen sur les 2 dernières heures  - `LAeq_d[number]`: Niveau sonore moyen pendant la journée (8h)  - `LAmax[number]`: Niveau sonore maximal enregistré pendant la durée de la mesure  - `LAmax2[number]`: Niveau sonore maximal enregistré au cours des 2 dernières heures  - `address[object]`: L'adresse postale  . Model: [https://schema.org/address](https://schema.org/address)- `alternateName[string]`: Un nom alternatif pour cet élément  - `areaServed[string]`: La zone géographique où un service ou un article offert est fourni  . Model: [https://schema.org/Text](https://schema.org/Text)- `dataProvider[string]`: Une séquence de caractères identifiant le fournisseur de l'entité de données harmonisées.  - `dateCreated[string]`: Horodatage de la création de l'entité. Celui-ci sera généralement attribué par la plateforme de stockage.  - `dateIssued[string]`: La date et l'heure auxquelles la prévision a été émise par le prestataire de services, au format ISO8601 UTC.  - `dateModified[string]`: Horodatage de la dernière modification de l'entité. Il sera généralement attribué par la plateforme de stockage.  - `description[string]`: Une description de cet article  - `id[*]`: Identifiant unique de l'entité  - `location[*]`: Référence Geojson à l'élément. Il peut s'agir d'un point, d'une ligne, d'un polygone, d'un point multiple, d'une ligne multiple ou d'un polygone multiple.  - `name[string]`: Le nom de cet élément.  - `noiseAnnoyanceIndex[number]`: Indice (1 à 10) selon le niveau de gêne sonore  - `noiseOrigin[string]`: Origine principale (source) du bruit enregistré lors de l'installation du capteur  - `owner[array]`: Une liste contenant une séquence de caractères codée en JSON référençant les identifiants uniques du ou des propriétaires.  - `seeAlso[*]`: liste d'uri pointant vers des ressources supplémentaires sur l'article  - `source[string]`: Une séquence de caractères donnant la source originale des données de l'entité sous forme d'URL. Il est recommandé d'utiliser le nom de domaine entièrement qualifié du fournisseur source ou l'URL de l'objet source.  - `type[string]`: Type de NGSI. Il doit s'agir de NoisePollutionForecast.  - `validFrom[string]`: Le début de la période de validité de cette prévision au format ISO8601.  - `validTo[string]`: La fin de la période de validité de cette prévision au format ISO8601.  - `validity[string]`: Comprend la période de validité de cette prévision sous forme d'intervalle de temps ISO8601.  . Model: [https://schema.org/Text](https://schema.org/Text)<!-- /30-PropertiesList -->  
-<!-- 35-RequiredProperties -->  
-Propriétés requises  
-- `id`  - `type`  <!-- /35-RequiredProperties -->  
-<!-- 40-RequiredProperties -->  
-<!-- /40-RequiredProperties -->  
-<!-- 50-DataModelHeader -->  
-## Description des propriétés du modèle de données  
-Classés par ordre alphabétique (cliquez pour plus de détails)  
-<!-- /50-DataModelHeader -->  
-<!-- 60-ModelYaml -->  
+[Licence ouverte] (https://github.com/smart-data-models//dataModel.Environment/blob/master/NoisePollutionForecast/LICENSE.md)  
+
+[document généré automatiquement] (https://docs.google.com/presentation/d/e/2PACX-1vTs-Ng5dIAwkg91oTTUdt8ua7woBXhPnwavZ0FxgR8BsAI_Ek3C5q97Nd94HS8KhP-r_quD4H0fgyt3/pub?start=false&loop=false&delayms=3000#slide=id.gb715ace035_0_60)  
+<!-- /15-License -->
+  
+<!-- 20-Description -->
+  
+
+Description globale : **La prévision de la pollution sonore stocke l'attente de la pollution sonore basée sur certains éléments d'entrée et les éléments de bruit présents.**  
+
+version : 0.0.3  
+<!-- /20-Description -->
+  
+<!-- 30-PropertiesList -->
+  
+
+
+## Liste des propriétés  
+
+
+<sup><sub>[*] S'il n'y a pas de type dans un attribut, c'est parce qu'il pourrait avoir plusieurs types ou différents formats/modèles</sub></sup>.  
+- `LANight[number]`: Niveau sonore moyen enregistré pendant la nuit (8h)  
+- `LAeq[number]`: Niveau sonore moyen (équivalent) enregistré pendant le temps de mesure  
+- `LAeq2[number]`: Niveau sonore moyen sur les 2 dernières heures  
+- `LAeq_d[number]`: Niveau sonore moyen pendant la journée (8h)  
+- `LAmax[number]`: Niveau sonore maximal enregistré pendant la durée de la mesure  
+- `LAmax2[number]`: Niveau sonore maximal enregistré au cours des 2 dernières heures  
+- `address[object]`: L'adresse postale  . Model: [https://schema.org/address](https://schema.org/address)
+- `alternateName[string]`: Un nom alternatif pour cet élément  
+- `areaServed[string]`: La zone géographique où un service ou un article offert est fourni  . Model: [https://schema.org/Text](https://schema.org/Text)
+- `dataProvider[string]`: Une séquence de caractères identifiant le fournisseur de l'entité de données harmonisées.  
+- `dateCreated[string]`: Horodatage de la création de l'entité. Celui-ci sera généralement attribué par la plateforme de stockage.  
+- `dateIssued[string]`: La date et l'heure auxquelles la prévision a été émise par le prestataire de services, au format ISO8601 UTC.  
+- `dateModified[string]`: Horodatage de la dernière modification de l'entité. Il sera généralement attribué par la plateforme de stockage.  
+- `description[string]`: Une description de cet article  
+- `id[*]`: Identifiant unique de l'entité  
+- `location[*]`: Référence Geojson à l'élément. Il peut s'agir d'un point, d'une ligne, d'un polygone, d'un point multiple, d'une ligne multiple ou d'un polygone multiple.  
+- `name[string]`: Le nom de cet élément.  
+- `noiseAnnoyanceIndex[number]`: Indice (1 à 10) selon le niveau de gêne sonore  
+- `noiseOrigin[string]`: Origine principale (source) du bruit enregistré lors de l'installation du capteur  
+- `owner[array]`: Une liste contenant une séquence de caractères codée en JSON référençant les identifiants uniques du ou des propriétaires.  
+- `seeAlso[*]`: liste d'uri pointant vers des ressources supplémentaires sur l'article  
+- `source[string]`: Une séquence de caractères donnant la source originale des données de l'entité sous forme d'URL. Il est recommandé d'utiliser le nom de domaine entièrement qualifié du fournisseur source ou l'URL de l'objet source.  
+- `type[string]`: Type de NGSI. Il doit s'agir de NoisePollutionForecast.  
+- `validFrom[string]`: Le début de la période de validité de cette prévision au format ISO8601.  
+- `validTo[string]`: La fin de la période de validité de cette prévision au format ISO8601.  
+- `validity[string]`: Comprend la période de validité de cette prévision sous forme d'intervalle de temps ISO8601.  . Model: [https://schema.org/Text](https://schema.org/Text)
+<!-- /30-PropertiesList -->
+  
+<!-- 35-RequiredProperties -->
+  
+
+Propriétés requises  
+- `id`  
+- `type`  
+<!-- /35-RequiredProperties -->
+  
+<!-- 40-RequiredProperties -->
+  
+<!-- /40-RequiredProperties -->
+  
+<!-- 50-DataModelHeader -->
+  
+
+## Description des propriétés du modèle de données  
+
+Classés par ordre alphabétique (cliquez pour plus de détails)  
+<!-- /50-DataModelHeader -->
+  
+<!-- 60-ModelYaml -->
+  
 <details><summary><strong>full yaml details</strong></summary>    
-```yaml  
+
+```yaml  
 NoisePollutionForecast:    
   description: 'Noise Pollution forecast stores the expectation about noise pollution based on some input elements and the noise elements present.'    
   properties:    
@@ -370,16 +425,25 @@ NoisePollutionForecast:
   x-version: 0.0.3    
 ```  
 </details>    
-<!-- /60-ModelYaml -->  
-<!-- 70-MiddleNotes -->  
-<!-- /70-MiddleNotes -->  
-<!-- 80-Examples -->  
-## Exemples de charges utiles  
-#### NoisePollutionForecast Valeurs-clés NGSI-v2 Exemple  
-Voici un exemple de NoisePollutionForecast au format JSON-LD sous forme de valeurs-clés. Ceci est compatible avec NGSI-v2 en utilisant `options=keyValues` et renvoie les données contextuelles d'une entité individuelle.  
+<!-- /60-ModelYaml -->
+  
+<!-- 70-MiddleNotes -->
+  
+<!-- /70-MiddleNotes -->
+  
+<!-- 80-Examples -->
+  
+
+## Exemples de charges utiles  
+
+#### NoisePollutionForecast Valeurs-clés NGSI-v2 Exemple  
+
+Voici un exemple de NoisePollutionForecast au format JSON-LD sous forme de valeurs-clés. Ceci est compatible avec NGSI-v2 en utilisant `options=keyValues` et renvoie les données contextuelles d'une entité individuelle.  
 <details><summary><strong>show/hide example</strong></summary>    
-```json  
-{  
+
+```json  
+
+{  
   "id": "urn:ngsi-ld:NoisePollution:France-NoisePollutionForecast-12345_2022-07-01T18:00:00_2022-07-01T00:00:00",  
   "type": "NoisePollutionForecast",  
   "dateCreated": "2022-07-22T17:37:38Z",  
@@ -426,11 +490,15 @@ NoisePollutionForecast:
 }  
 ```  
 </details>  
-#### NoisePollutionForecast NGSI-v2 normalisé Exemple  
-Voici un exemple de NoisePollutionForecast au format JSON-LD tel que normalisé. Ce format est compatible avec NGSI-v2 lorsqu'il n'utilise pas d'options et renvoie les données contextuelles d'une entité individuelle.  
+
+#### NoisePollutionForecast NGSI-v2 normalisé Exemple  
+
+Voici un exemple de NoisePollutionForecast au format JSON-LD tel que normalisé. Ce format est compatible avec NGSI-v2 lorsqu'il n'utilise pas d'options et renvoie les données contextuelles d'une entité individuelle.  
 <details><summary><strong>show/hide example</strong></summary>    
-```json  
-{  
+
+```json  
+
+{  
   "id": "urn:ngsi-ld:NoisePollution:France-NoisePollutionForecast-12345_2022-07-01T18:00:00_2022-07-01T00:00:00",  
   "type": "NoisePollutionForecast",  
   "dateCreated": {  
@@ -549,11 +617,15 @@ NoisePollutionForecast:
 }  
 ```  
 </details>  
-#### NoisePollutionForecast Valeurs-clés NGSI-LD Exemple  
-Voici un exemple de NoisePollutionForecast au format JSON-LD sous forme de valeurs-clés. Ceci est compatible avec NGSI-LD quand on utilise `options=keyValues` et renvoie les données contextuelles d'une entité individuelle.  
+
+#### NoisePollutionForecast Valeurs-clés NGSI-LD Exemple  
+
+Voici un exemple de NoisePollutionForecast au format JSON-LD sous forme de valeurs-clés. Ceci est compatible avec NGSI-LD quand on utilise `options=keyValues` et renvoie les données contextuelles d'une entité individuelle.  
 <details><summary><strong>show/hide example</strong></summary>    
-```json  
-{  
+
+```json  
+
+{  
     "id": "urn:ngsi-ld:NoisePollution:France-NoisePollutionForecast-12345_2022-07-01T18:00:00_2022-07-01T00:00:00",  
     "type": "NoisePollutionForecast",  
     "dateCreated": "2022-07-22T17:37:38Z",  
@@ -598,17 +670,21 @@ NoisePollutionForecast:
     "validity": "P1D",  
     "dateIssued": "2022-08-23T05:05:35Z",  
     "@context": [  
-        "https://smartdatamodels.org/dataModel.Environment/context.jsonld",  
+          
         "https://raw.githubusercontent.com/smart-data-models/dataModel.Environment/master/context.jsonld"  
     ]  
 }  
 ```  
 </details>  
-#### Prévision de la pollution sonore NGSI-LD normalisée Exemple  
-Voici un exemple de NoisePollutionForecast au format JSON-LD tel que normalisé. Ce format est compatible avec NGSI-LD lorsqu'il n'utilise pas d'options et renvoie les données contextuelles d'une entité individuelle.  
+
+#### Prévision de la pollution sonore NGSI-LD normalisée Exemple  
+
+Voici un exemple de NoisePollutionForecast au format JSON-LD tel que normalisé. Ce format est compatible avec NGSI-LD lorsqu'il n'utilise pas d'options et renvoie les données contextuelles d'une entité individuelle.  
 <details><summary><strong>show/hide example</strong></summary>    
-```json  
-{  
+
+```json  
+
+{  
   "id": "urn:ngsi-ld:NoisePollution:France-NoisePollutionForecast-12345_2022-07-01T18:00:00_2022-07-01T00:00:00",  
   "type": "NoisePollutionForecast",  
   "dateCreated": {  
@@ -744,12 +820,21 @@ NoisePollutionForecast:
   ]  
 }  
 ```  
-</details><!-- /80-Examples -->  
-<!-- 90-FooterNotes -->  
-<!-- /90-FooterNotes -->  
-<!-- 95-Units -->  
-Voir [FAQ 10](https://smartdatamodels.org/index.php/faqs/) pour obtenir une réponse sur la façon de traiter les unités de magnitude.  
-<!-- /95-Units -->  
-<!-- 97-LastFooter -->  
+</details><!-- /80-Examples -->
+  
+<!-- 90-FooterNotes -->
+  
+<!-- /90-FooterNotes -->
+  
+<!-- 95-Units -->
+  
+
+Voir [FAQ 10](https://smartdatamodels.org/index.php/faqs/) pour obtenir une réponse sur la façon de traiter les unités de magnitude.  
+<!-- /95-Units -->
+  
+<!-- 97-LastFooter -->
+  
 ---  
-[Smart Data Models](https://smartdatamodels.org) +++ [Contribution Manual](https://bit.ly/contribution_manual) +++ [About](https://bit.ly/Introduction_SDM)<!-- /97-LastFooter -->  
+
+[Smart Data Models](https://smartdatamodels.org) +++ [Contribution Manual](https://bit.ly/contribution_manual) +++ [About](https://bit.ly/Introduction_SDM)<!-- /97-LastFooter -->
+  

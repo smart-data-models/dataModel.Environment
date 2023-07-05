@@ -1,33 +1,91 @@
-<!-- 10-Header -->  
+<!-- 10-Header -->
+  
 [![Smart Data Models](https://smartdatamodels.org/wp-content/uploads/2022/01/SmartDataModels_logo.png "Logo")](https://smartdatamodels.org)  
-Entidad: PhreaticObserved  
-=========================<!-- /10-Header -->  
-<!-- 15-License -->  
-[Licencia abierta](https://github.com/smart-data-models//dataModel.Environment/blob/master/PhreaticObserved/LICENSE.md)  
-[documento generado automáticamente](https://docs.google.com/presentation/d/e/2PACX-1vTs-Ng5dIAwkg91oTTUdt8ua7woBXhPnwavZ0FxgR8BsAI_Ek3C5q97Nd94HS8KhP-r_quD4H0fgyt3/pub?start=false&loop=false&delayms=3000#slide=id.gb715ace035_0_60)  
-<!-- /15-License -->  
-<!-- 20-Description -->  
-Descripción global: **El modelo de datos está destinado a medir, observar y controlar el nivel y la calidad de las aguas subterráneas en un momento dado (T), mediante un sistema de vigilancia fijo o móvil. En función del dispositivo utilizado, también es posible medir la calidad del agua, como su conductividad eléctrica, su contenido en sales, su temperatura, etc. En este caso, los valores medidos son procesados por el Modelo de Datos `WaterObserved` y `WaterQualityObserved`. Información adicional sobre atributos: Para los atributos dedicados al agua, también se puede utilizar un atributo MetaData que contiene el `TimeStamp` en segundos, la `qualification` y el `status` de control de la medición.**  
-versión: 0.0.2  
-<!-- /20-Description -->  
-<!-- 30-PropertiesList -->  
 
-## Lista de propiedades  
+Entidad: PhreaticObserved  
+=========================
+<!-- /10-Header -->
+  
+<!-- 15-License -->
+  
 
-<sup><sub>[*] Si no hay un tipo en un atributo es porque puede tener varios tipos o diferentes formatos/patrones</sub></sup>.  
-- `address[object]`: La dirección postal  . Model: [https://schema.org/address](https://schema.org/address)- `alternateName[string]`: Un nombre alternativo para este artículo  - `areaServed[string]`: La zona geográfica en la que se presta un servicio o se ofrece un artículo  . Model: [https://schema.org/Text](https://schema.org/Text)- `dataProvider[string]`: Secuencia de caracteres que identifica al proveedor de la entidad de datos armonizada.  - `dateCreated[string]`: Fecha de creación de la entidad. Normalmente será asignada por la plataforma de almacenamiento.  - `dateModified[string]`: Marca de tiempo de la última modificación de la entidad. Normalmente será asignada por la plataforma de almacenamiento.  - `dateObserved[string]`: La fecha y hora de esta observación en formato ISO8601 UTC  . Model: [https://schema.org/DateTime](https://schema.org/DateTime)- `dateObservedFrom[string]`: Período de observación : Fecha y hora de inicio en formato ISO8601 UTC  . Model: [https://schema.org/DateTime](https://schema.org/DateTime)- `dateObservedTo[string]`: Período de observación : Fecha y hora de finalización en formato ISO8601 UTC  . Model: [https://schema.org/DateTime](https://schema.org/DateTime)- `depth[number]`: Profundidad del agua potable, desde su identificación `waterTable`. El código de unidad (texto) de medida dado utilizando los [UN/CEFACT Common Codes](http://wiki.goodrelations-vocabulary.org/Documentation/UN/CEFACT_Common_Codes) (máx. 3 caracteres). Por ejemplo, <code> MTR </code> representa Metro.  . Model: [https://schema.org/depth](https://schema.org/depth)- `description[string]`: Descripción de este artículo  - `id[*]`: Identificador único de la entidad  - `investigationDepth[number]`: Profundidad máxima a la que se ha efectuado la investigación. El código de unidad (texto) de medida dado utilizando los [Códigos Comunes UN/CEFACT](http://wiki.goodrelations-vocabulary.org/Documentation/UN/CEFACT_Common_Codes) (máx. 3 caracteres). Por ejemplo, <code>MTR</code> representa Metro  . Model: [https://schema.org/DateTime](https://schema.org/DateTime)- `isMobile[boolean]`: El dispositivo utilizado es Fijo (Falso) o Móvil (Verdadero)  . Model: [https://schema.org/Boolean](https://schema.org/Boolean)- `location[*]`: Referencia Geojson al elemento. Puede ser Point, LineString, Polygon, MultiPoint, MultiLineString o MultiPolygon.  - `measurementType[array]`: Período de observación : Tipo de medición procesada. Enum:'profundidad, volumen, calidad, otros'  . Model: [https://schema.org/Text](https://schema.org/Text)- `name[string]`: El nombre de este artículo.  - `owner[array]`: Una lista que contiene una secuencia de caracteres codificada en JSON que hace referencia a los identificadores únicos de los propietarios.  - `pollutionRate[number]`: Índice de contaminación. El código de unidad (texto) de medida dado utilizando los [Códigos Comunes ONU/CEFACT](http://wiki.goodrelations-vocabulary.org/Documentation/UN/CEFACT_Common_Codes) (máx. 3 caracteres). Por ejemplo, P1 representa Porcentaje.  . Model: [https://schema.org/Number](https://schema.org/Number)- `pressure[number]`: Presión del agua. El código de unidad (texto) de medida dado utilizando los [UN/CEFACT Common Codes](http://wiki.goodrelations-vocabulary.org/Documentation/UN/CEFACT_Common_Codes) (máx. 3 caracteres). Por ejemplo, <code>BAR</code> representa Bar.  . Model: [https://schema.org/DateTime](https://schema.org/DateTime)- `refDevice[array]`: Referencia a los dispositivos que proporcionan datos  . Model: [https://scehma.org/URL](https://scehma.org/URL)- `residueLevel[number]`: Nivel de residuos encontrado  . Model: [https://schema.org/Number.](https://schema.org/Number.)- `seeAlso[*]`: lista de uri que apuntan a recursos adicionales sobre el artículo  - `source[string]`: Secuencia de caracteres que indica la fuente original de los datos de la entidad en forma de URL. Se recomienda que sea el nombre de dominio completo del proveedor de origen o la URL del objeto de origen.  - `type[string]`: Tipo de entidad NGSI. Tiene que ser PhreaticObserved  - `waterTable[number]`: Nivel en el que se encontró agua durante esta investigación. El código de unidad (texto) de medida indicado utilizando los [UN/CEFACT Common Codes](http://wiki.goodrelations-vocabulary.org/Documentation/UN/CEFACT_Common_Codes) (máx. 3 caracteres). Por ejemplo, <code>MTR</code> representa Metro.  . Model: [https://schema.org/Number](https://schema.org/Number)<!-- /30-PropertiesList -->  
-<!-- 35-RequiredProperties -->  
-Propiedades requeridas  
-- `dateObserved`  - `id`  - `location`  - `measurementType`  - `type`  <!-- /35-RequiredProperties -->  
-<!-- 40-RequiredProperties -->  
-<!-- /40-RequiredProperties -->  
-<!-- 50-DataModelHeader -->  
-## Descripción de las propiedades del modelo de datos  
-Ordenados alfabéticamente (pulse para más detalles)  
-<!-- /50-DataModelHeader -->  
-<!-- 60-ModelYaml -->  
+[Licencia abierta](https://github.com/smart-data-models//dataModel.Environment/blob/master/PhreaticObserved/LICENSE.md)  
+
+[documento generado automáticamente](https://docs.google.com/presentation/d/e/2PACX-1vTs-Ng5dIAwkg91oTTUdt8ua7woBXhPnwavZ0FxgR8BsAI_Ek3C5q97Nd94HS8KhP-r_quD4H0fgyt3/pub?start=false&loop=false&delayms=3000#slide=id.gb715ace035_0_60)  
+<!-- /15-License -->
+  
+<!-- 20-Description -->
+  
+
+Descripción global: **El modelo de datos está destinado a medir, observar y controlar el nivel y la calidad de las aguas subterráneas en un momento dado (T), mediante un sistema de vigilancia fijo o móvil. En función del dispositivo utilizado, también es posible medir la calidad del agua, como su conductividad eléctrica, su contenido en sales, su temperatura, etc. En este caso, los valores medidos son procesados por el Modelo de Datos `WaterObserved` y `WaterQualityObserved`. Información adicional sobre atributos: Para los atributos dedicados al agua, también se puede utilizar un atributo MetaData que contiene el `TimeStamp` en segundos, la `qualification` y el `status` de control de la medición.**  
+
+versión: 0.0.2  
+<!-- /20-Description -->
+  
+<!-- 30-PropertiesList -->
+  
+
+
+## Lista de propiedades  
+
+
+<sup><sub>[*] Si no hay un tipo en un atributo es porque puede tener varios tipos o diferentes formatos/patrones</sub></sup>.  
+- `address[object]`: La dirección postal  . Model: [https://schema.org/address](https://schema.org/address)
+- `alternateName[string]`: Un nombre alternativo para este artículo  
+- `areaServed[string]`: La zona geográfica en la que se presta un servicio o se ofrece un artículo  . Model: [https://schema.org/Text](https://schema.org/Text)
+- `dataProvider[string]`: Secuencia de caracteres que identifica al proveedor de la entidad de datos armonizada.  
+- `dateCreated[string]`: Fecha de creación de la entidad. Normalmente será asignada por la plataforma de almacenamiento.  
+- `dateModified[string]`: Marca de tiempo de la última modificación de la entidad. Normalmente será asignada por la plataforma de almacenamiento.  
+- `dateObserved[string]`: La fecha y hora de esta observación en formato ISO8601 UTC  . Model: [https://schema.org/DateTime](https://schema.org/DateTime)
+- `dateObservedFrom[string]`: Período de observación : Fecha y hora de inicio en formato ISO8601 UTC  . Model: [https://schema.org/DateTime](https://schema.org/DateTime)
+- `dateObservedTo[string]`: Período de observación : Fecha y hora de finalización en formato ISO8601 UTC  . Model: [https://schema.org/DateTime](https://schema.org/DateTime)
+- `depth[number]`: Profundidad del agua potable, desde su identificación `waterTable`. El código de unidad (texto) de medida dado utilizando los [UN/CEFACT Common Codes](http://wiki.goodrelations-vocabulary.org/Documentation/UN/CEFACT_Common_Codes) (máx. 3 caracteres). Por ejemplo, <code> MTR </code> representa Metro.  . Model: [https://schema.org/depth](https://schema.org/depth)
+- `description[string]`: Descripción de este artículo  
+- `id[*]`: Identificador único de la entidad  
+- `investigationDepth[number]`: Profundidad máxima a la que se ha efectuado la investigación. El código de unidad (texto) de medida dado utilizando los [Códigos Comunes UN/CEFACT](http://wiki.goodrelations-vocabulary.org/Documentation/UN/CEFACT_Common_Codes) (máx. 3 caracteres). Por ejemplo, <code>MTR</code> representa Metro  . Model: [https://schema.org/DateTime](https://schema.org/DateTime)
+- `isMobile[boolean]`: El dispositivo utilizado es Fijo (Falso) o Móvil (Verdadero)  . Model: [https://schema.org/Boolean](https://schema.org/Boolean)
+- `location[*]`: Referencia Geojson al elemento. Puede ser Point, LineString, Polygon, MultiPoint, MultiLineString o MultiPolygon.  
+- `measurementType[array]`: Período de observación : Tipo de medición procesada. Enum:'profundidad, volumen, calidad, otros'  . Model: [https://schema.org/Text](https://schema.org/Text)
+- `name[string]`: El nombre de este artículo.  
+- `owner[array]`: Una lista que contiene una secuencia de caracteres codificada en JSON que hace referencia a los identificadores únicos de los propietarios.  
+- `pollutionRate[number]`: Índice de contaminación. El código de unidad (texto) de medida dado utilizando los [Códigos Comunes ONU/CEFACT](http://wiki.goodrelations-vocabulary.org/Documentation/UN/CEFACT_Common_Codes) (máx. 3 caracteres). Por ejemplo, P1 representa Porcentaje.  . Model: [https://schema.org/Number](https://schema.org/Number)
+- `pressure[number]`: Presión del agua. El código de unidad (texto) de medida dado utilizando los [UN/CEFACT Common Codes](http://wiki.goodrelations-vocabulary.org/Documentation/UN/CEFACT_Common_Codes) (máx. 3 caracteres). Por ejemplo, <code>BAR</code> representa Bar.  . Model: [https://schema.org/DateTime](https://schema.org/DateTime)
+- `refDevice[array]`: Referencia a los dispositivos que proporcionan datos  . Model: [https://scehma.org/URL](https://scehma.org/URL)
+- `residueLevel[number]`: Nivel de residuos encontrado  . Model: [https://schema.org/Number.](https://schema.org/Number.)
+- `seeAlso[*]`: lista de uri que apuntan a recursos adicionales sobre el artículo  
+- `source[string]`: Secuencia de caracteres que indica la fuente original de los datos de la entidad en forma de URL. Se recomienda que sea el nombre de dominio completo del proveedor de origen o la URL del objeto de origen.  
+- `type[string]`: Tipo de entidad NGSI. Tiene que ser PhreaticObserved  
+- `waterTable[number]`: Nivel en el que se encontró agua durante esta investigación. El código de unidad (texto) de medida indicado utilizando los [UN/CEFACT Common Codes](http://wiki.goodrelations-vocabulary.org/Documentation/UN/CEFACT_Common_Codes) (máx. 3 caracteres). Por ejemplo, <code>MTR</code> representa Metro.  . Model: [https://schema.org/Number](https://schema.org/Number)
+<!-- /30-PropertiesList -->
+  
+<!-- 35-RequiredProperties -->
+  
+
+Propiedades requeridas  
+- `dateObserved`  
+- `id`  
+- `location`  
+- `measurementType`  
+- `type`  
+<!-- /35-RequiredProperties -->
+  
+<!-- 40-RequiredProperties -->
+  
+<!-- /40-RequiredProperties -->
+  
+<!-- 50-DataModelHeader -->
+  
+
+## Descripción de las propiedades del modelo de datos  
+
+Ordenados alfabéticamente (pulse para más detalles)  
+<!-- /50-DataModelHeader -->
+  
+<!-- 60-ModelYaml -->
+  
 <details><summary><strong>full yaml details</strong></summary>    
-```yaml  
+
+```yaml  
 PhreaticObserved:    
   description: 'The Data Model is intended to measure, observe and control the level and quality of groundwater at a given time (T), by a fixed or mobile monitoring system. Depending on the device used, it is also possible to measure the quality of water such as its electrical conductivity, its salt content, its temperature, etc. In this case, the values measured are processed by the Data Model `WaterObserved` and `WaterQualityObserved`. Additional Information about Attributes: For attributes dedicated to water, a MetaData attribute can also be used. it contains the `TimeStamp` in seconds, the `qualification` and control `status` of the measurement.'    
   properties:    
@@ -404,16 +462,25 @@ PhreaticObserved:
   x-version: 0.0.2    
 ```  
 </details>    
-<!-- /60-ModelYaml -->  
-<!-- 70-MiddleNotes -->  
-<!-- /70-MiddleNotes -->  
-<!-- 80-Examples -->  
-## Ejemplo de carga útil  
-#### PhreaticObserved NGSI-v2 key-values Ejemplo  
-Aquí hay un ejemplo de un PhreaticObserved en formato JSON-LD como key-values. Esto es compatible con NGSI-v2 cuando se utiliza `options=keyValues` y devuelve los datos de contexto de una entidad individual.  
+<!-- /60-ModelYaml -->
+  
+<!-- 70-MiddleNotes -->
+  
+<!-- /70-MiddleNotes -->
+  
+<!-- 80-Examples -->
+  
+
+## Ejemplo de carga útil  
+
+#### PhreaticObserved NGSI-v2 key-values Ejemplo  
+
+Aquí hay un ejemplo de un PhreaticObserved en formato JSON-LD como key-values. Esto es compatible con NGSI-v2 cuando se utiliza `options=keyValues` y devuelve los datos de contexto de una entidad individual.  
 <details><summary><strong>show/hide example</strong></summary>    
-```json  
-{  
+
+```json  
+
+{  
   "id": "urn:ngsi-ld:PhreaticObserved:PhreaticObserved:MNCA-001",  
   "type": "PhreaticObserved",  
   "name": "STLRT-MNCA-NP-015",  
@@ -442,11 +509,15 @@ PhreaticObserved:
 }  
 ```  
 </details>  
-#### PhreaticObserved NGSI-v2 normalized Ejemplo  
-Aquí hay un ejemplo de un PhreaticObserved en formato JSON-LD normalizado. Esto es compatible con NGSI-v2 cuando no se utilizan opciones y devuelve los datos de contexto de una entidad individual.  
+
+#### PhreaticObserved NGSI-v2 normalized Ejemplo  
+
+Aquí hay un ejemplo de un PhreaticObserved en formato JSON-LD normalizado. Esto es compatible con NGSI-v2 cuando no se utilizan opciones y devuelve los datos de contexto de una entidad individual.  
 <details><summary><strong>show/hide example</strong></summary>    
-```json  
-{  
+
+```json  
+
+{  
 	"id": "urn:ngsi-ld:PhreaticObserved:PhreaticObserved:MNCA-001",  
 	"type": "PhreaticObserved",  
 	"name": {  
@@ -532,11 +603,15 @@ PhreaticObserved:
 }  
 ```  
 </details>  
-#### PhreaticObserved NGSI-LD key-values Ejemplo  
-Aquí hay un ejemplo de un PhreaticObserved en formato JSON-LD como key-values. Esto es compatible con NGSI-LD cuando se utiliza `options=keyValues` y devuelve los datos de contexto de una entidad individual.  
+
+#### PhreaticObserved NGSI-LD key-values Ejemplo  
+
+Aquí hay un ejemplo de un PhreaticObserved en formato JSON-LD como key-values. Esto es compatible con NGSI-LD cuando se utiliza `options=keyValues` y devuelve los datos de contexto de una entidad individual.  
 <details><summary><strong>show/hide example</strong></summary>    
-```json  
-{  
+
+```json  
+
+{  
     "id": "urn:ngsi-ld:PhreaticObserved:PhreaticObserved:MNCA-001",  
     "type": "PhreaticObserved",  
     "areaServed": "Nice Airport",  
@@ -563,17 +638,21 @@ PhreaticObserved:
     ],  
     "waterTable": 12.75,  
     "@context": [  
-        "https://uri.etsi.org/ngsi-ld/v1/ngsi-ld-core-context.jsonld",  
+      
         "https://raw.githubusercontent.com/smart-data-models/dataModel.Environment/master/context.jsonld"  
     ]  
 }  
 ```  
 </details>  
-#### PhreaticObserved NGSI-LD normalized Ejemplo  
-Aquí hay un ejemplo de un PhreaticObserved en formato JSON-LD normalizado. Esto es compatible con NGSI-LD cuando no se utilizan opciones y devuelve los datos de contexto de una entidad individual.  
+
+#### PhreaticObserved NGSI-LD normalized Ejemplo  
+
+Aquí hay un ejemplo de un PhreaticObserved en formato JSON-LD normalizado. Esto es compatible con NGSI-LD cuando no se utilizan opciones y devuelve los datos de contexto de una entidad individual.  
 <details><summary><strong>show/hide example</strong></summary>    
-```json  
-{  
+
+```json  
+
+{  
     "id": "urn:ngsi-ld:PhreaticObserved:PhreaticObserved:MNCA-001",  
     "type": "PhreaticObserved",  
     "areaServed": {  
@@ -665,17 +744,26 @@ PhreaticObserved:
         }  
     },  
     "@context": [  
-        "https://uri.etsi.org/ngsi-ld/v1/ngsi-ld-core-context.jsonld",  
+      
         "https://raw.githubusercontent.com/smart-data-models/dataModel.Environment/master/context.jsonld"  
     ]  
 }  
 ```  
-</details><!-- /80-Examples -->  
-<!-- 90-FooterNotes -->  
-<!-- /90-FooterNotes -->  
-<!-- 95-Units -->  
-Consulte [FAQ 10](https://smartdatamodels.org/index.php/faqs/) para obtener una respuesta sobre cómo tratar las unidades de magnitud.  
-<!-- /95-Units -->  
-<!-- 97-LastFooter -->  
+</details><!-- /80-Examples -->
+  
+<!-- 90-FooterNotes -->
+  
+<!-- /90-FooterNotes -->
+  
+<!-- 95-Units -->
+  
+
+Consulte [FAQ 10](https://smartdatamodels.org/index.php/faqs/) para obtener una respuesta sobre cómo tratar las unidades de magnitud.  
+<!-- /95-Units -->
+  
+<!-- 97-LastFooter -->
+  
 ---  
-[Smart Data Models](https://smartdatamodels.org) +++ [Contribution Manual](https://bit.ly/contribution_manual) +++ [About](https://bit.ly/Introduction_SDM)<!-- /97-LastFooter -->  
+
+[Smart Data Models](https://smartdatamodels.org) +++ [Contribution Manual](https://bit.ly/contribution_manual) +++ [About](https://bit.ly/Introduction_SDM)<!-- /97-LastFooter -->
+  

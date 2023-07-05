@@ -1,33 +1,82 @@
-<!-- 10-Header -->  
+<!-- 10-Header -->
+  
 [![Smart Data Models](https://smartdatamodels.org/wp-content/uploads/2022/01/SmartDataModels_logo.png "Logo")](https://smartdatamodels.org)  
-エンティティNoisePollution  
-====================<!-- /10-Header -->  
-<!-- 15-License -->  
-[オープンライセンス](https://github.com/smart-data-models//dataModel.Environment/blob/master/NoisePollution/LICENSE.md)  
-[ドキュメント自動生成](https://docs.google.com/presentation/d/e/2PACX-1vTs-Ng5dIAwkg91oTTUdt8ua7woBXhPnwavZ0FxgR8BsAI_Ek3C5q97Nd94HS8KhP-r_quD4H0fgyt3/pub?start=false&loop=false&delayms=3000#slide=id.gb715ace035_0_60)  
-<!-- /15-License -->  
-<!-- 20-Description -->  
-グローバルな説明**騒音公害データモデルは、特定の時間ごとの騒音測定値（NoiseLevelObservation エンティティなど）を都市部の平均パラメータに統合し、騒音公害の状況や進展について都市に関連したデータを提供します。  
-バージョン: 0.0.2  
-<!-- /20-Description -->  
-<!-- 30-PropertiesList -->  
 
-## プロパティ一覧  
+エンティティNoisePollution  
+====================
+<!-- /10-Header -->
+  
+<!-- 15-License -->
+  
 
-<sup><sub>[*] 属性にタイプがない場合、複数のタイプまたは異なるフォーマット/パターンを持つ可能性があるためです</sub></sup>。  
-- `LAeq2[number]`: 過去2時間の平均音圧レベル  - `LAmax2[number]`: 過去2時間に記録された最大騒音レベル  - `alternateName[string]`: この項目の別称  - `buildingsType[string]`: センサー設置時の測定エリア内の主な建物の種類  - `dataProvider[string]`: 調和されたデータエンティティの提供者を識別する一連の文字。  - `dateCreated[string]`: エンティティの作成タイムスタンプ。これは通常、ストレージプラットフォームによって割り当てられる。  - `dateModified[string]`: エンティティの最終更新のタイムスタンプ。これは通常、ストレージプラットフォームによって割り当てられる。  - `dateObservedFrom[string]`: 観測期間開始日時  - `dateObservedTo[string]`: 観測期間終了日時  - `description[string]`: このアイテムの説明  - `groundType[string]`: センサー設置時の測定エリア内の優勢地盤の種類  - `id[*]`: エンティティの一意な識別子  - `name[string]`: このアイテムの名称です。  - `noiseAnnoyanceIndex[number]`: 騒音の大きさによる指数（1〜10）。  - `noiseOrigin[string]`: センサー設置時の記録されたノイズの主な発生源（ソース  - `owner[array]`: 所有者の一意のIDを参照するJSONエンコードされた文字列を含むリストです。  - `seeAlso[*]`: 項目に関する追加リソースを指すURIのリスト。  - `source[string]`: エンティティデータの元のソースをURLで示す一連の文字。ソースプロバイダの完全修飾ドメイン名、またはソースオブジェクトのURLであることが推奨されます。  - `type[string]`: NGSIタイプ。NoisePollutionである必要があります。  - `wallsType[string]`: センサー設置時に測定範囲内で主流となっているファサード素材の種類  <!-- /30-PropertiesList -->  
-<!-- 35-RequiredProperties -->  
-必要なプロパティ  
-- `id`  - `type`  <!-- /35-RequiredProperties -->  
-<!-- 40-RequiredProperties -->  
-<!-- /40-RequiredProperties -->  
-<!-- 50-DataModelHeader -->  
-## プロパティのデータモデル記述  
-アルファベット順に並びます（クリックで詳細へ）  
-<!-- /50-DataModelHeader -->  
-<!-- 60-ModelYaml -->  
+[オープンライセンス](https://github.com/smart-data-models//dataModel.Environment/blob/master/NoisePollution/LICENSE.md)  
+
+[ドキュメント自動生成](https://docs.google.com/presentation/d/e/2PACX-1vTs-Ng5dIAwkg91oTTUdt8ua7woBXhPnwavZ0FxgR8BsAI_Ek3C5q97Nd94HS8KhP-r_quD4H0fgyt3/pub?start=false&loop=false&delayms=3000#slide=id.gb715ace035_0_60)  
+<!-- /15-License -->
+  
+<!-- 20-Description -->
+  
+
+グローバルな説明**騒音公害データモデルは、特定の時間ごとの騒音測定値（NoiseLevelObservation エンティティなど）を都市部の平均パラメータに統合し、騒音公害の状況や進展について都市に関連したデータを提供します。  
+
+バージョン: 0.0.2  
+<!-- /20-Description -->
+  
+<!-- 30-PropertiesList -->
+  
+
+
+## プロパティ一覧  
+
+
+<sup><sub>[*] 属性にタイプがない場合、複数のタイプまたは異なるフォーマット/パターンを持つ可能性があるためです</sub></sup>。  
+- `LAeq2[number]`: 過去2時間の平均音圧レベル  
+- `LAmax2[number]`: 過去2時間に記録された最大騒音レベル  
+- `alternateName[string]`: この項目の別称  
+- `buildingsType[string]`: センサー設置時の測定エリア内の主な建物の種類  
+- `dataProvider[string]`: 調和されたデータエンティティの提供者を識別する一連の文字。  
+- `dateCreated[string]`: エンティティの作成タイムスタンプ。これは通常、ストレージプラットフォームによって割り当てられる。  
+- `dateModified[string]`: エンティティの最終更新のタイムスタンプ。これは通常、ストレージプラットフォームによって割り当てられる。  
+- `dateObservedFrom[string]`: 観測期間開始日時  
+- `dateObservedTo[string]`: 観測期間終了日時  
+- `description[string]`: このアイテムの説明  
+- `groundType[string]`: センサー設置時の測定エリア内の優勢地盤の種類  
+- `id[*]`: エンティティの一意な識別子  
+- `name[string]`: このアイテムの名称です。  
+- `noiseAnnoyanceIndex[number]`: 騒音の大きさによる指数（1〜10）。  
+- `noiseOrigin[string]`: センサー設置時の記録されたノイズの主な発生源（ソース  
+- `owner[array]`: 所有者の一意のIDを参照するJSONエンコードされた文字列を含むリストです。  
+- `seeAlso[*]`: 項目に関する追加リソースを指すURIのリスト。  
+- `source[string]`: エンティティデータの元のソースをURLで示す一連の文字。ソースプロバイダの完全修飾ドメイン名、またはソースオブジェクトのURLであることが推奨されます。  
+- `type[string]`: NGSIタイプ。NoisePollutionである必要があります。  
+- `wallsType[string]`: センサー設置時に測定範囲内で主流となっているファサード素材の種類  
+<!-- /30-PropertiesList -->
+  
+<!-- 35-RequiredProperties -->
+  
+
+必要なプロパティ  
+- `id`  
+- `type`  
+<!-- /35-RequiredProperties -->
+  
+<!-- 40-RequiredProperties -->
+  
+<!-- /40-RequiredProperties -->
+  
+<!-- 50-DataModelHeader -->
+  
+
+## プロパティのデータモデル記述  
+
+アルファベット順に並びます（クリックで詳細へ）  
+<!-- /50-DataModelHeader -->
+  
+<!-- 60-ModelYaml -->
+  
 <details><summary><strong>full yaml details</strong></summary>    
-```yaml  
+
+```yaml  
 NoisePollution:    
   description: 'Noise Pollution data model merges specific and punctual noise measurements (coming, e.g. from NoiseLevelObservation entities) into average parameters referred to city areas, providing a more city-related data about noise pollution status and evolution.'    
   properties:    
@@ -169,16 +218,25 @@ NoisePollution:
   x-version: 0.0.2    
 ```  
 </details>    
-<!-- /60-ModelYaml -->  
-<!-- 70-MiddleNotes -->  
-<!-- /70-MiddleNotes -->  
-<!-- 80-Examples -->  
-## ペイロードの例  
-#### NoisePollution NGSI-v2 key-value の例。  
-NoisePollutionをJSON-LD形式でkey-valuesにした例です。これは `options=keyValues` を使用した場合に NGSI-v2 と互換性があり、個々のエンティティのコンテキストデータが返される。  
+<!-- /60-ModelYaml -->
+  
+<!-- 70-MiddleNotes -->
+  
+<!-- /70-MiddleNotes -->
+  
+<!-- 80-Examples -->
+  
+
+## ペイロードの例  
+
+#### NoisePollution NGSI-v2 key-value の例。  
+
+NoisePollutionをJSON-LD形式でkey-valuesにした例です。これは `options=keyValues` を使用した場合に NGSI-v2 と互換性があり、個々のエンティティのコンテキストデータが返される。  
 <details><summary><strong>show/hide example</strong></summary>    
-```json  
-{  
+
+```json  
+
+{  
   "id": "urn:ngsi-ld:NoisePollution:France-NoisePollution-12345_2022-07-01T18:00:00_2022-07-01T00:00:00",  
   "type": "NoisePollution",  
   "Laeq2": 85,  
@@ -215,11 +273,15 @@ NoisePollution:
 }  
 ```  
 </details>  
-#### NoisePollution NGSI-v2 正規化例  
-NoisePollution を JSON-LD 形式で正規化した例を示します。これはオプションを使用しない場合、NGSI-v2と互換性があり、個々のエンティティのコンテキストデータを返します。  
+
+#### NoisePollution NGSI-v2 正規化例  
+
+NoisePollution を JSON-LD 形式で正規化した例を示します。これはオプションを使用しない場合、NGSI-v2と互換性があり、個々のエンティティのコンテキストデータを返します。  
 <details><summary><strong>show/hide example</strong></summary>    
-```json  
-{  
+
+```json  
+
+{  
   "id": "urn:ngsi-ld:NoisePollution:France-NoisePollution-12345_2022-07-01T18:00:00_2022-07-01T00:00:00",  
   "type": "NoisePollution",  
   "address": {  
@@ -292,11 +354,15 @@ NoisePollution:
 }  
 ```  
 </details>  
-#### NoisePollution NGSI-LD key-value の例  
-NoisePollutionをJSON-LD形式でkey-valuesにした例です。これは `options=keyValues` を使用した場合にNGSI-LDと互換性があり、個々のエンティティのコンテキストデータを返します。  
+
+#### NoisePollution NGSI-LD key-value の例  
+
+NoisePollutionをJSON-LD形式でkey-valuesにした例です。これは `options=keyValues` を使用した場合にNGSI-LDと互換性があり、個々のエンティティのコンテキストデータを返します。  
 <details><summary><strong>show/hide example</strong></summary>    
-```json  
-{  
+
+```json  
+
+{  
   "id": "urn:ngsi-ld:NoisePollution:France-NoisePollution-12345_2022-07-01T18:00:00_2022-07-01T00:00:00",  
   "type": "NoisePollution",  
   "Laeq2": 85,  
@@ -325,17 +391,21 @@ NoisePollution:
   "noiseOrigin": "traffic",  
   "wallsType": "glass",  
   "@context": [  
-    "https://uri.etsi.org/ngsi-ld/v1/ngsi-ld-core-context.jsonld",  
+  
     "https://raw.githubusercontent.com/smart-data-models/dataModel.Environment/master/context.jsonld"  
   ]  
 }  
 ```  
 </details>  
-#### NoisePollution NGSI-LD 正規化例  
-NoisePollution を JSON-LD 形式で正規化した例を示します。これはオプションを使用しない場合のNGSI-LDと互換性があり、個々のエンティティのコンテキストデータを返します。  
+
+#### NoisePollution NGSI-LD 正規化例  
+
+NoisePollution を JSON-LD 形式で正規化した例を示します。これはオプションを使用しない場合のNGSI-LDと互換性があり、個々のエンティティのコンテキストデータを返します。  
 <details><summary><strong>show/hide example</strong></summary>    
-```json  
-{  
+
+```json  
+
+{  
   "id": "urn:ngsi-ld:NoisePollution:France-NoisePollution-12345_2022-07-01T18:00:00_2022-07-01T00:00:00",  
   "type": "NoisePollution",  
   "address": {  
@@ -412,17 +482,26 @@ NoisePollution:
     "value": 85  
   },  
   "@context": [  
-    "https://uri.etsi.org/ngsi-ld/v1/ngsi-ld-core-context.jsonld",  
+  
     "https://raw.githubusercontent.com/smart-data-models/dataModel.Environment/master/context.jsonld"  
   ]  
 }  
 ```  
-</details><!-- /80-Examples -->  
-<!-- 90-FooterNotes -->  
-<!-- /90-FooterNotes -->  
-<!-- 95-Units -->  
-マグニチュード単位の扱いについては、[FAQ 10](https://smartdatamodels.org/index.php/faqs/)を参照してください。  
-<!-- /95-Units -->  
-<!-- 97-LastFooter -->  
+</details><!-- /80-Examples -->
+  
+<!-- 90-FooterNotes -->
+  
+<!-- /90-FooterNotes -->
+  
+<!-- 95-Units -->
+  
+
+マグニチュード単位の扱いについては、[FAQ 10](https://smartdatamodels.org/index.php/faqs/)を参照してください。  
+<!-- /95-Units -->
+  
+<!-- 97-LastFooter -->
+  
 ---  
-[Smart Data Models](https://smartdatamodels.org) +++ [Contribution Manual](https://bit.ly/contribution_manual) +++ [About](https://bit.ly/Introduction_SDM)<!-- /97-LastFooter -->  
+
+[Smart Data Models](https://smartdatamodels.org) +++ [Contribution Manual](https://bit.ly/contribution_manual) +++ [About](https://bit.ly/Introduction_SDM)<!-- /97-LastFooter -->
+  

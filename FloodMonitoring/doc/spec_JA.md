@@ -1,33 +1,84 @@
-<!-- 10-Header -->  
+<!-- 10-Header -->
+  
 [![Smart Data Models](https://smartdatamodels.org/wp-content/uploads/2022/01/SmartDataModels_logo.png "Logo")](https://smartdatamodels.org)  
-エンティティFloodMonitoring（フラッドモニタリング  
-================================<!-- /10-Header -->  
-<!-- 15-License -->  
-[オープンライセンス](https://github.com/smart-data-models//dataModel.Environment/blob/master/FloodMonitoring/LICENSE.md)  
-[文書が自動的に生成されます](https://docs.google.com/presentation/d/e/2PACX-1vTs-Ng5dIAwkg91oTTUdt8ua7woBXhPnwavZ0FxgR8BsAI_Ek3C5q97Nd94HS8KhP-r_quD4H0fgyt3/pub?start=false&loop=false&delayms=3000#slide=id.gb715ace035_0_60)  
-<!-- /15-License -->  
-<!-- 20-Description -->  
-グローバルな記述：**ある水塊（河川、湖沼など）の水流・水位による浸水レベルを表現するための洪水センサーのデータモデルです。  
-バージョン：0.0.1  
-<!-- /20-Description -->  
-<!-- 30-PropertiesList -->  
 
-## プロパティ一覧  
+エンティティFloodMonitoring（フラッドモニタリング  
+================================
+<!-- /10-Header -->
+  
+<!-- 15-License -->
+  
 
-<sup><sub>[*] 属性に型がない場合は、複数の型や異なるフォーマット/パターンを持つ可能性があるためです</sub></sup>。  
-- `address[object]`: 郵送先住所  . Model: [https://schema.org/address](https://schema.org/address)- `alertLevel[number]`: この観測に対応するセンシングステーションに設定された基準アラートレベル閾値。現在のレベルがアラートレベルしきい値を超えた場合、アラート信号が生成されます。  . Model: [https://schema.org/Number](https://schema.org/Number)- `alternateName[string]`: このアイテムの別称  - `areaServed[string]`: サービスまたは提供されるアイテムが提供される地理的な地域  . Model: [https://schema.org/Text](https://schema.org/Text)- `currentLevel[number]`: この観測に対応するセンシングステーションが示す現在の浸水レベル。referenceLevel と measuredDistance を用いて計算される（currentLevel = referenceLevel - measuredDistance）。  . Model: [https://schema.org/Number](https://schema.org/Number)- `dangerLevel[number]`: この観測に対応するセンシングステーションに設定された基準危険度閾値。現在のレベルが危険レベル閾値を超えた場合、洪水レベルの状態は危険と判定される。  . Model: [https://schema.org/Number](https://schema.org/Number)- `dataProvider[string]`: 調和されたデータエンティティの提供者を識別する一連の文字。  - `dateCreated[string]`: エンティティの作成タイムスタンプ。これは通常、ストレージプラットフォームによって割り当てられる。  - `dateModified[string]`: エンティティの最終更新のタイムスタンプ。これは通常、ストレージプラットフォームによって割り当てられる。  - `description[string]`: このアイテムの説明  - `floodLevelStatus[string]`: 洪水感知装置によって与えられる洪水レベルの状態表示。現在のレベルが危険レベルの閾値より高い場合、ステータスは危険と表示される。  . Model: [https://schema.org/Text](https://schema.org/Text)- `id[*]`: エンティティの一意な識別子  - `location[*]`: アイテムへの Geojson 参照。Point, LineString, Polygon, MultiPoint, MultiLineString, MultiPolygon のいずれかである。  - `measuredDistance[number]`: センサーが測定した、センサー先端から水面上までの距離を記述する。  . Model: [https://schema.org/Number](https://schema.org/Number)- `name[string]`: この項目の名称です。  - `observationDateTime[string]`: 最後に報告された観測時刻。  . Model: [https://schema.org/DateTime](https://schema.org/DateTime)- `owner[array]`: 所有者の固有IDを参照するJSONエンコードされた文字列を含むリストです。  - `referenceLevel[number]`: 川底からセンサーの先端までの垂直距離を記述する。  . Model: [https://schema.org/Number](https://schema.org/Number)- `seeAlso[*]`: アイテムに関する追加リソースを指す URI のリスト。  - `source[string]`: エンティティデータの元のソースをURLとして与える一連の文字。ソースプロバイダの完全修飾ドメイン名、またはソースオブジェクトのURLであることが推奨されます。  - `stationID[string]`: この観測に対応するステーションに割り当てられたユニークな匿名識別子である。  . Model: [https://schema.org/Text](https://schema.org/Text)- `type[string]`: FloodMonitoringでなければならない。NGSI Entityタイプです。  <!-- /30-PropertiesList -->  
-<!-- 35-RequiredProperties -->  
-必須プロパティ  
-- `id`  - `type`  <!-- /35-RequiredProperties -->  
-<!-- 40-RequiredProperties -->  
-<!-- /40-RequiredProperties -->  
-<!-- 50-DataModelHeader -->  
-## プロパティのデータモデル記述  
-アルファベット順（クリックで詳細表示）  
-<!-- /50-DataModelHeader -->  
-<!-- 60-ModelYaml -->  
+[オープンライセンス](https://github.com/smart-data-models//dataModel.Environment/blob/master/FloodMonitoring/LICENSE.md)  
+
+[文書が自動的に生成されます](https://docs.google.com/presentation/d/e/2PACX-1vTs-Ng5dIAwkg91oTTUdt8ua7woBXhPnwavZ0FxgR8BsAI_Ek3C5q97Nd94HS8KhP-r_quD4H0fgyt3/pub?start=false&loop=false&delayms=3000#slide=id.gb715ace035_0_60)  
+<!-- /15-License -->
+  
+<!-- 20-Description -->
+  
+
+グローバルな記述：**ある水塊（河川、湖沼など）の水流・水位による浸水レベルを表現するための洪水センサーのデータモデルです。  
+
+バージョン：0.0.1  
+<!-- /20-Description -->
+  
+<!-- 30-PropertiesList -->
+  
+
+
+## プロパティ一覧  
+
+
+<sup><sub>[*] 属性に型がない場合は、複数の型や異なるフォーマット/パターンを持つ可能性があるためです</sub></sup>。  
+- `address[object]`: 郵送先住所  . Model: [https://schema.org/address](https://schema.org/address)
+- `alertLevel[number]`: この観測に対応するセンシングステーションに設定された基準アラートレベル閾値。現在のレベルがアラートレベルしきい値を超えた場合、アラート信号が生成されます。  . Model: [https://schema.org/Number](https://schema.org/Number)
+- `alternateName[string]`: このアイテムの別称  
+- `areaServed[string]`: サービスまたは提供されるアイテムが提供される地理的な地域  . Model: [https://schema.org/Text](https://schema.org/Text)
+- `currentLevel[number]`: この観測に対応するセンシングステーションが示す現在の浸水レベル。referenceLevel と measuredDistance を用いて計算される（currentLevel = referenceLevel - measuredDistance）。  . Model: [https://schema.org/Number](https://schema.org/Number)
+- `dangerLevel[number]`: この観測に対応するセンシングステーションに設定された基準危険度閾値。現在のレベルが危険レベル閾値を超えた場合、洪水レベルの状態は危険と判定される。  . Model: [https://schema.org/Number](https://schema.org/Number)
+- `dataProvider[string]`: 調和されたデータエンティティの提供者を識別する一連の文字。  
+- `dateCreated[string]`: エンティティの作成タイムスタンプ。これは通常、ストレージプラットフォームによって割り当てられる。  
+- `dateModified[string]`: エンティティの最終更新のタイムスタンプ。これは通常、ストレージプラットフォームによって割り当てられる。  
+- `description[string]`: このアイテムの説明  
+- `floodLevelStatus[string]`: 洪水感知装置によって与えられる洪水レベルの状態表示。現在のレベルが危険レベルの閾値より高い場合、ステータスは危険と表示される。  . Model: [https://schema.org/Text](https://schema.org/Text)
+- `id[*]`: エンティティの一意な識別子  
+- `location[*]`: アイテムへの Geojson 参照。Point, LineString, Polygon, MultiPoint, MultiLineString, MultiPolygon のいずれかである。  
+- `measuredDistance[number]`: センサーが測定した、センサー先端から水面上までの距離を記述する。  . Model: [https://schema.org/Number](https://schema.org/Number)
+- `name[string]`: この項目の名称です。  
+- `observationDateTime[string]`: 最後に報告された観測時刻。  . Model: [https://schema.org/DateTime](https://schema.org/DateTime)
+- `owner[array]`: 所有者の固有IDを参照するJSONエンコードされた文字列を含むリストです。  
+- `referenceLevel[number]`: 川底からセンサーの先端までの垂直距離を記述する。  . Model: [https://schema.org/Number](https://schema.org/Number)
+- `seeAlso[*]`: アイテムに関する追加リソースを指す URI のリスト。  
+- `source[string]`: エンティティデータの元のソースをURLとして与える一連の文字。ソースプロバイダの完全修飾ドメイン名、またはソースオブジェクトのURLであることが推奨されます。  
+- `stationID[string]`: この観測に対応するステーションに割り当てられたユニークな匿名識別子である。  . Model: [https://schema.org/Text](https://schema.org/Text)
+- `type[string]`: FloodMonitoringでなければならない。NGSI Entityタイプです。  
+<!-- /30-PropertiesList -->
+  
+<!-- 35-RequiredProperties -->
+  
+
+必須プロパティ  
+- `id`  
+- `type`  
+<!-- /35-RequiredProperties -->
+  
+<!-- 40-RequiredProperties -->
+  
+<!-- /40-RequiredProperties -->
+  
+<!-- 50-DataModelHeader -->
+  
+
+## プロパティのデータモデル記述  
+
+アルファベット順（クリックで詳細表示）  
+<!-- /50-DataModelHeader -->
+  
+<!-- 60-ModelYaml -->
+  
 <details><summary><strong>full yaml details</strong></summary>    
-```yaml  
+
+```yaml  
 FloodMonitoring:    
   description: 'Flood Sensor Data Model intended to represent the level of flooding w.r.t water flow/level at a certain water mass(river, lake,etc.)..'    
   properties:    
@@ -359,16 +410,25 @@ FloodMonitoring:
   x-version: 0.0.1    
 ```  
 </details>    
-<!-- /60-ModelYaml -->  
-<!-- 70-MiddleNotes -->  
-<!-- /70-MiddleNotes -->  
-<!-- 80-Examples -->  
-## ペイロードの例  
-#### FloodMonitoring NGSI-v2 key-value 例．  
-FloodMonitoringをJSON-LD形式でkey-valuesとした例を示します。これは、`options=keyValues`を使用した場合にNGSI-v2と互換性があり、個々のエンティティのコンテキストデータを返します。  
+<!-- /60-ModelYaml -->
+  
+<!-- 70-MiddleNotes -->
+  
+<!-- /70-MiddleNotes -->
+  
+<!-- 80-Examples -->
+  
+
+## ペイロードの例  
+
+#### FloodMonitoring NGSI-v2 key-value 例．  
+
+FloodMonitoringをJSON-LD形式でkey-valuesとした例を示します。これは、`options=keyValues`を使用した場合にNGSI-v2と互換性があり、個々のエンティティのコンテキストデータを返します。  
 <details><summary><strong>show/hide example</strong></summary>    
-```json  
-{  
+
+```json  
+
+{  
   "id": "urn:ngsi-ld:FloodMonitoring:Pune-NoiseLevelObserved",  
   "type": "FloodMonitoring",  
   "alertLevel": 10.00,  
@@ -382,11 +442,15 @@ FloodMonitoring:
 }  
 ```  
 </details>  
-#### 洪水モニタリング NGSI-v2 正規化例  
-JSON-LD形式で正規化されたFloodMonitoringの例を示します。これは、オプションを使用しない場合のNGSI-v2と互換性があり、個々のエンティティのコンテキストデータを返します。  
+
+#### 洪水モニタリング NGSI-v2 正規化例  
+
+JSON-LD形式で正規化されたFloodMonitoringの例を示します。これは、オプションを使用しない場合のNGSI-v2と互換性があり、個々のエンティティのコンテキストデータを返します。  
 <details><summary><strong>show/hide example</strong></summary>    
-```json  
-{  
+
+```json  
+
+{  
   "id": "urn:ngsi-ld:FloodMonitoring:Pune-NoiseLevelObserved",  
   "type": "FloodMonitoring",  
   "alertLevel": {  
@@ -424,11 +488,15 @@ FloodMonitoring:
 }  
 ```  
 </details>  
-#### 洪水監視 NGSI-LD キー値例  
-FloodMonitoringをJSON-LD形式でkey-valuesとした例を示します。これは、`options=keyValues`を使用した場合にNGSI-LDと互換性があり、個々のエンティティのコンテキストデータを返します。  
+
+#### 洪水監視 NGSI-LD キー値例  
+
+FloodMonitoringをJSON-LD形式でkey-valuesとした例を示します。これは、`options=keyValues`を使用した場合にNGSI-LDと互換性があり、個々のエンティティのコンテキストデータを返します。  
 <details><summary><strong>show/hide example</strong></summary>    
-```json  
-{  
+
+```json  
+
+{  
     "alertLevel": 10.0,  
     "currentLevel": 0.98,  
     "dangerLevel": 25.0,  
@@ -438,17 +506,21 @@ FloodMonitoring:
     "referenceLevel": 4.2,  
     "stationID": "FWR013",  
     "@context": [  
-        "https://uri.etsi.org/ngsi-ld/v1/ngsi-ld-core-context.jsonld",  
+      
         "https://raw.githubusercontent.com/smart-data-models/dataModel.Environment/master/context.jsonld"  
     ]  
 }  
 ```  
 </details>  
-#### 洪水モニタリング NGSI-LD 正規化例  
-FloodMonitoringをJSON-LD形式で正規化した例を示します。これはオプションを使用しない場合のNGSI-LDと互換性があり、個々のエンティティのコンテキストデータを返します。  
+
+#### 洪水モニタリング NGSI-LD 正規化例  
+
+FloodMonitoringをJSON-LD形式で正規化した例を示します。これはオプションを使用しない場合のNGSI-LDと互換性があり、個々のエンティティのコンテキストデータを返します。  
 <details><summary><strong>show/hide example</strong></summary>    
-```json  
-{  
+
+```json  
+
+{  
     "id": "urn:ngsi-ld:FloodMonitoring:Pune-NoiseLevelObserved",  
     "type": "FloodMonitoring",  
     "alertLevel": {  
@@ -490,17 +562,26 @@ FloodMonitoring:
         "value": "FWR013"  
     },  
     "@context": [  
-        "https://uri.etsi.org/ngsi-ld/v1/ngsi-ld-core-context.jsonld",  
+      
         "https://raw.githubusercontent.com/smart-data-models/dataModel.Environment/master/context.jsonld"  
     ]  
 }  
 ```  
-</details><!-- /80-Examples -->  
-<!-- 90-FooterNotes -->  
-<!-- /90-FooterNotes -->  
-<!-- 95-Units -->  
-マグニチュード単位の扱いについては、[FAQ 10](https://smartdatamodels.org/index.php/faqs/)を参照してください。  
-<!-- /95-Units -->  
-<!-- 97-LastFooter -->  
+</details><!-- /80-Examples -->
+  
+<!-- 90-FooterNotes -->
+  
+<!-- /90-FooterNotes -->
+  
+<!-- 95-Units -->
+  
+
+マグニチュード単位の扱いについては、[FAQ 10](https://smartdatamodels.org/index.php/faqs/)を参照してください。  
+<!-- /95-Units -->
+  
+<!-- 97-LastFooter -->
+  
 ---  
-[Smart Data Models](https://smartdatamodels.org) +++ [Contribution Manual](https://bit.ly/contribution_manual) +++ [About](https://bit.ly/Introduction_SDM)<!-- /97-LastFooter -->  
+
+[Smart Data Models](https://smartdatamodels.org) +++ [Contribution Manual](https://bit.ly/contribution_manual) +++ [About](https://bit.ly/Introduction_SDM)<!-- /97-LastFooter -->
+  
