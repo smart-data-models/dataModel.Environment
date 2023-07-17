@@ -1,0 +1,55 @@
+{
+  "id": "DTI-036",
+  "type": "NightSkyQuality",
+  "ambientTemperature": {
+    "type": "Property",
+    "value": 10.17
+  },
+  "battery": {
+    "type": "Property",
+    "value": 3691
+  },
+  "clouds": {
+    "type": "Property",
+    "value": "Despejado"
+  },
+  "dateCreated": {
+    "type": "Property",
+    "value": {
+      "@type": "date-time",
+      "@value": "2023-03-15T14:00:00.000Z"
+    }
+  },
+  "dateModified": {
+    "type": "DateTime",
+    "value": {
+      "@type": "date-time",
+      "@value": "2023-03-15T14:10:00.000Z"
+    }
+  },
+  "location": {
+    "type": "GeoProperty",
+    "value": {
+      "type": "Point",
+      "coordinates": [
+        -103.9904,
+        39.7564
+      ]
+    }
+  },
+  "sigmaMagnitude": {
+    "type": "Property",
+    "value": 0.003
+  },
+  "skyMagnitude": {
+    "type": "Property",
+    "value": 19.4
+  },
+  "skyTemperature": {
+    "type": "Property",
+    "value": -6.23
+  },
+  "@context": [
+    "https://smart-data-models.github.io/dataModel.Environment/NightSkyQuality/schema.json"
+  ]
+}
