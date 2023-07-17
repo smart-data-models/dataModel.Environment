@@ -57,7 +57,7 @@
         },
         "skyTemperature": {
           "type": "number",
-          "description": "Property. Direct measurement of the sky temperature, as taken by the device. Units:'degrees Celsius (ºC)'"
+          "description": "Property. Direct measurement of the sky temperature, as taken by the device. Units:'degrees Celsius (C)'"
         }
       }
     }
