@@ -38,11 +38,11 @@ NightSkyQuality:
       x-ngsi:
         type: Property
     ambientTemperature:
-      description: 'Property. Temperature measurement. Units:''degrees Celsius (ºC)'''
+      description: 'Property. Temperature measurement. Units:''degrees Celsius (C)'''
       type: number
       x-ngsi:
         type: Property
-        units: degrees Celsius (ºC)
+        units: degrees Celsius (C)
     areaServed:
       description: The geographic area where a service or offered item is provided
       type: string
@@ -296,11 +296,11 @@ NightSkyQuality:
       x-ngsi:
         type: Property
     skyTemperature:
-      description: 'Property. Direct measurement of the sky temperature, as taken by the device. Units:''degrees Celsius (ºC)'''
+      description: 'Property. Direct measurement of the sky temperature, as taken by the device. Units:''degrees Celsius (C)'''
       type: number
       x-ngsi:
         type: Property
-        units: degrees Celsius (ºC)
+        units: degrees Celsius (C)
     source:
       description: 'A sequence of characters giving the original source of the entity data as a URL. Recommended to be the fully qualified domain name of the source provider, or the URL to the source object.'
       type: string
