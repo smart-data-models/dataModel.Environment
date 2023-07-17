@@ -22,6 +22,8 @@ The following entity types are available:
 
 - [MosquitoDensity](https://github.com/smart-data-models/dataModel.Environment/blob/master/MosquitoDensity/README.md). A Data Model for density of mosquitoes in cities.
 
+- [NightSkyQuality](https://github.com/smart-data-models/dataModel.Environment/blob/master/NightSkyQuality/README.md). Data regarding the observed sky quality and the status of the measuring device.
+
 - [NoiseLevelObserved](https://github.com/smart-data-models/dataModel.Environment/blob/master/NoiseLevelObserved/README.md). An observation of those acoustic parameters that estimate noise pressure levels at a certain place and time. 
 
 - [NoisePollution](https://github.com/smart-data-models/dataModel.Environment/blob/master/NoisePollution/README.md). Noise Pollution data model merges specific and punctual noise measurements (coming, e.g. from NoiseLevelObservation entities) into average parameters referred to city areas, providing a more city-related data about noise pollution status and evolution.
@@ -41,7 +43,7 @@ The following entity types are available:
 
 
 ### Contributors
-[Link](https://github.com/smart-data-models/dataModel.Environment/blob/master/CONTRIBUTORS.yaml) to the 9 current contributors of the data models of this Subject.
+[Link](https://github.com/smart-data-models/dataModel.Environment/blob/master/CONTRIBUTORS.yaml) to the 11 current contributors of the data models of this Subject.
 
 
 ### Contribution
