@@ -15,7 +15,7 @@
 ## Liste des propriétés  
 
 <sup><sub>[*] S'il n'y a pas de type dans un attribut, c'est parce qu'il peut avoir plusieurs types ou différents formats/modèles</sub></sup>.  
-- `address[object]`: L'adresse postale  . Model: [https://schema.org/address](https://schema.org/address)- `alternateName[string]`: Un nom alternatif pour ce poste  - `ambientTemperature[number]`: Propriété. Mesure de la température. Unités : "degrés Celsius (ºC)".  - `areaServed[string]`: La zone géographique où un service ou un article est offert  . Model: [https://schema.org/Text](https://schema.org/Text)- `battery[number]`: Propriété. Tension fournie par la batterie. Changements par rapport à l'unité : "millivolts (mV)".  - `batteryLevel[*]`: Propriété. Modèle : "https://schema.org/Number". Niveau de la batterie de l'appareil. Il doit être égal à 1.0 lorsque la batterie est pleine. 0,0 lorsque la batterie est vide. -1 lorsqu'il est transitoirement impossible de déterminer le niveau de la batterie.  . Model: [https://schema.org/Number](https://schema.org/Number)- `clouds[string]`: Propriété. Indicateur qualitatif de la couverture nuageuse.  - `dataProvider[string]`: Une séquence de caractères identifiant le fournisseur de l'entité de données harmonisées.  - `dateCreated[string]`: Date de création de l'entité. Celle-ci est généralement attribuée par la plate-forme de stockage.  - `dateModified[string]`: Date de la dernière modification de l'entité. Cette date est généralement attribuée par la plate-forme de stockage.  - `description[string]`: Une description de l'article  - `id[*]`: Identifiant unique de l'entité  - `location[*]`: Référence Geojson à l'élément. Il peut s'agir d'un point, d'une chaîne de ligne, d'un polygone, d'un point multiple, d'une chaîne de ligne multiple ou d'un polygone multiple.  - `name[string]`: Le nom de cet élément.  - `owner[array]`: Une liste contenant une séquence de caractères encodés JSON référençant les identifiants uniques du ou des propriétaires.  - `seeAlso[*]`: liste d'uri pointant vers des ressources supplémentaires concernant l'élément  - `sigmaMagnitude[number]`: Propriété. Paramètre sans unité, exprimant l'écart-type correspondant à la mesure de la magnitude du ciel.  - `skyMagnitude[number]`: Propriété. Paramètre sans unité : la mesure prise par le dispositif, correspondant à la magnitude apparente du ciel nocturne (c'est-à-dire sa luminosité).  - `skyTemperature[number]`: Propriété. Mesure directe de la température du ciel, telle qu'elle est prise par l'appareil. Unités : "degrés Celsius (ºC)".  - `source[string]`: Séquence de caractères indiquant la source originale des données de l'entité sous forme d'URL. Il est recommandé d'utiliser le nom de domaine complet du fournisseur de la source ou l'URL de l'objet source.  <!-- /30-PropertiesList -->  
+- `address[object]`: L'adresse postale  . Model: [https://schema.org/address](https://schema.org/address)- `alternateName[string]`: Un nom alternatif pour ce poste  - `ambientTemperature[number]`: Propriété. Mesure de la température. Unités : "degrés Celsius (C)".  - `areaServed[string]`: La zone géographique où un service ou un article est offert  . Model: [https://schema.org/Text](https://schema.org/Text)- `battery[number]`: Propriété. Tension fournie par la batterie. Changements par rapport à l'unité : "millivolts (mV)".  - `batteryLevel[*]`: Propriété. Modèle : "https://schema.org/Number". Niveau de la batterie de l'appareil. Il doit être égal à 1.0 lorsque la batterie est pleine. 0,0 lorsque la batterie est vide. -1 lorsqu'il est transitoirement impossible de déterminer le niveau de la batterie.  . Model: [https://schema.org/Number](https://schema.org/Number)- `clouds[string]`: Propriété. Indicateur qualitatif de la couverture nuageuse.  - `dataProvider[string]`: Une séquence de caractères identifiant le fournisseur de l'entité de données harmonisées.  - `dateCreated[string]`: Date de création de l'entité. Celle-ci est généralement attribuée par la plate-forme de stockage.  - `dateModified[string]`: Date de la dernière modification de l'entité. Cette date est généralement attribuée par la plate-forme de stockage.  - `description[string]`: Une description de l'article  - `id[*]`: Identifiant unique de l'entité  - `location[*]`: Référence Geojson à l'élément. Il peut s'agir d'un point, d'une chaîne de ligne, d'un polygone, d'un point multiple, d'une chaîne de ligne multiple ou d'un polygone multiple.  - `name[string]`: Le nom de cet élément.  - `owner[array]`: Une liste contenant une séquence de caractères encodés JSON référençant les identifiants uniques du ou des propriétaires.  - `seeAlso[*]`: liste d'uri pointant vers des ressources supplémentaires concernant l'élément  - `sigmaMagnitude[number]`: Propriété. Paramètre sans unité, exprimant l'écart-type correspondant à la mesure de la magnitude du ciel.  - `skyMagnitude[number]`: Propriété. Paramètre sans unité : la mesure prise par le dispositif, correspondant à la magnitude apparente du ciel nocturne (c'est-à-dire sa luminosité).  - `skyTemperature[number]`: Propriété. Mesure directe de la température du ciel, telle qu'elle est prise par l'appareil. Unités : "degrés Celsius (C)".  - `source[string]`: Séquence de caractères indiquant la source originale des données de l'entité sous forme d'URL. Il est recommandé d'utiliser le nom de domaine complet du fournisseur de la source ou l'URL de l'objet source.  <!-- /30-PropertiesList -->  
 <!-- 35-RequiredProperties -->  
 Propriétés requises  
 - `id`  - `location`  - `type`  <!-- /35-RequiredProperties -->  
@@ -68,11 +68,11 @@ NightSkyQuality:
       x-ngsi:    
         type: Property    
     ambientTemperature:    
-      description: 'Property. Temperature measurement. Units:''degrees Celsius (ºC)'''    
+      description: 'Property. Temperature measurement. Units:''degrees Celsius (C)'''    
       type: number    
       x-ngsi:    
         type: Property    
-        units: degrees Celsius (ºC)    
+        units: degrees Celsius (C)    
     areaServed:    
       description: The geographic area where a service or offered item is provided    
       type: string    
@@ -326,11 +326,11 @@ NightSkyQuality:
       x-ngsi:    
         type: Property    
     skyTemperature:    
-      description: 'Property. Direct measurement of the sky temperature, as taken by the device. Units:''degrees Celsius (ºC)'''    
+      description: 'Property. Direct measurement of the sky temperature, as taken by the device. Units:''degrees Celsius (C)'''    
       type: number    
       x-ngsi:    
         type: Property    
-        units: degrees Celsius (ºC)    
+        units: degrees Celsius (C)    
     source:    
       description: 'A sequence of characters giving the original source of the entity data as a URL. Recommended to be the fully qualified domain name of the source provider, or the URL to the source object.'    
       type: string    
