@@ -22,7 +22,7 @@
       "properties": {
         "ambientTemperature": {
           "type": "number",
-          "description": "Property. Temperature measurement. Units:'degrees Celsius (ºC)'"
+          "description": "Property. Temperature measurement. Units:'degrees Celsius (C)'"
         },
         "battery": {
           "type": "number",
