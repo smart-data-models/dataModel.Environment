@@ -1,6 +1,6 @@
 {
   "id": "DTI-036",
-  "type": "NightSkyQuality"
+  "type": "NightSkyQuality",
   "ambientTemperature": {
     "type": "Number",
     "value": 10.17
@@ -43,3 +43,4 @@
     "type": "number",
     "value": -6.23
   }
+}
