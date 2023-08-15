@@ -11,14 +11,8 @@
   "airQualityLevel": "moderate",
   "co2": 45,
   "dataProvider": "IMREDD_UCA_Nice",
-  "dateIssued": {
-    "@type": "DateTime",
-    "@value": "2022-07-01T10:40:01.00Z"
-  },
-  "dateRetrieved": {
-    "@type": "DateTime",
-    "@value": "2022-07-01T12:57:24.00Z"
-  },
+  "dateIssued": "2022-07-01T10:40:01.00Z",
+  "dateRetrieved": "2022-07-01T12:57:24.00Z",
   "location": {
     "coordinates": [
       7.2032497427380235,
