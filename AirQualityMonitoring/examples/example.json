@@ -64,14 +64,8 @@
     "minOverTime": 3.4
   },
   "dataProvider": "",
-  "dateCreated": {
-    "@type": "DateTime",
-    "@value": "2017-12-31T03:39:27Z"
-  },
-  "dateModified": {
-    "@type": "DateTime",
-    "@value": "2021-12-22T04:21:57Z"
-  },
+  "dateCreated": "2017-12-31T03:39:27Z",
+  "dateModified": "2021-12-22T04:21:57Z",
   "description": "Air quality monitoring",
   "deviceInfo": {
     "RFID": "AB463478",
@@ -136,10 +130,7 @@
     "maxOverTime": 236.4,
     "minOverTime": 167.7
   },
-  "observationDateTime": {
-    "@type": "DateTime",
-    "@value": "2020-09-16T11:00:00+05:30"
-  },
+  "observationDateTime": "2020-09-16T11:00:00+05:30",
   "owner": [
     "urn:ngsi-ld:AirQualityMonitoring:items:WCBR:34036943",
     "urn:ngsi-ld:AirQualityMonitoring:items:PLLV:16542546"
@@ -189,14 +180,8 @@
   },
   "versionInfo": {
     "comments": "Version 1",
-    "endDateTime": {
-      "@type": "DateTime",
-      "@value": "2020-09-16T11:00:00+05:30"
-    },
-    "startDateTime": {
-      "@type": "DateTime",
-      "@value": "2020-09-16T11:00:00+05:30"
-    },
+    "endDateTime": "2020-09-16T11:00:00+05:30",
+    "startDateTime": "2020-09-16T11:00:00+05:30",
     "versionName": "Version 1"
   }
 }
