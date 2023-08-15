@@ -40,11 +40,8 @@
     "object": "urn:ngsi-ld:Device:NCE-T2-P7-EM03"
   },
   "dateObserved": {
-    "type": "Property",
-    "value": {
-      "type": "DateTime",
-      "value": "2020-03-17T08:45:00Z"
-    }
+    "type": "DateTime",
+    "value": "2020-03-17T08:45:00Z"
   },
   "eMF": {
     "type": "Property",
