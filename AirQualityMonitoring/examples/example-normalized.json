@@ -312,10 +312,6 @@
       "versionName": "Version 1",
       "comments": "Version 1"
     }
-  },
-  "@context": [
-    "https://smartdatamodels.org/context.jsonld"
-  ]
+  }
 }
-
 
