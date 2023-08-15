@@ -2,15 +2,19 @@
   "id": "Madrid-AmbientObserved-28079004-2016-03-15T11:00:00",
   "type": "AirQualityObserved",
   "dateObserved": {
+    "type": "date-time",
     "value": "2016-03-15T11:00:00/2016-03-15T12:00:00"
   },
   "areaServed": {
+    "type": "string",
     "value": "Brooklands"
   },
   "airQualityLevel": {
+    "type": "string",
     "value": "moderate"
   },
-  "CO": {
+  "co": {
+    "type": "number",
     "value": 500,
     "metadata": {
       "unitCode": {
@@ -19,9 +23,11 @@
     }
   },
   "temperature": {
+    "type": "number",
     "value": 12.2
   },
-  "NO": {
+  "no": {
+    "type": "number",
     "value": 45,
     "metadata": {
       "unitCode": {
@@ -34,15 +40,19 @@
     "value": "28079004-Pza.deEspanya"
   },
   "windDirection": {
+    "type": "number",
     "value": 186
   },
   "source": {
+    "type": "string",
     "value": "http://datos.madrid.es"
   },
   "windSpeed": {
+    "type": "number",
     "value": 0.64
   },
-  "SO2": {
+  "so2": {
+    "type": "number",
     "value": 11,
     "metadata": {
       "unitCode": {
@@ -50,7 +60,8 @@
       }
     }
   },
-  "NOx": {
+  "nox": {
+    "type": "number",
     "value": 139,
     "metadata": {
       "unitCode": {
@@ -62,13 +73,18 @@
     "type": "geo:json",
     "value": {
       "type": "Point",
-      "coordinates": [-3.712247222222222, 40.423852777777775]
+      "coordinates": [
+        -3.712247222222222, 
+        40.423852777777775
+      ]
     }
   },
   "typeOfLocation": {
+    "type": "string",
     "value": "outdoor"
   },
   "airQualityIndex": {
+    "type": "number",
     "value": 65
   },
   "address": {
@@ -80,15 +96,19 @@
     }
   },
   "reliability": {
+    "type": "number",
     "value": 0.7
   },
   "relativeHumidity": {
+    "type": "number", 
     "value": 0.54
   },
   "precipitation": {
+    "type": "number",
     "value": 0
   },
-  "NO2": {
+  "no2": {
+    "type": "number",
     "value": 69,
     "metadata": {
       "unitCode": {
@@ -96,7 +116,8 @@
       }
     }
   },
-  "CO_Level": {
+  "coLevel": {
+    "type": "string",
     "value": "moderate"
   }
 }
