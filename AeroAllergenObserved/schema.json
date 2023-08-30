@@ -24,7 +24,7 @@
                 },
                 "dateObserved": {
                     "type": "string",
-                    "description": "Property. The date and time of this observation in ISO8601 UTCformat. It can be represented by a specific time instant or by an ISO8601 interval."
+                    "description": "Property. The date and time of this observation in ISO8601 UTCformat. It can be represented by a specific time instant or by an ISO8601 interval"
                 },
                 "allergenRisk": {
                     "type": "string",
@@ -35,7 +35,7 @@
                         "high",
                         "veryHigh"
                     ],
-                    "description": "Property. Overall allergen risk corresponding to the aero allergens observed."
+                    "description": "Property. Overall allergen risk corresponding to the aero allergens observed"
                 },
                 "refDevice": {
                     "anyOf": [
@@ -52,7 +52,7 @@
                             "description": "Property. Identifier format of any NGSI entity"
                         }
                     ],
-                    "description": "Relationship. A reference to the device(s) which captured this observation."
+                    "description": "Relationship. A reference to the device(s) which captured this observation"
                 }
             }
         }
