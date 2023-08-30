@@ -41,7 +41,7 @@
                             "description": "Property. Identifier format of any NGSI entity"
                         }
                     ],
-                    "description": "Relationship. A reference to the device(s) which captured this observation."
+                    "description": "Relationship. A reference to the device(s) which captured this observation"
                 },
                 "refPointOfInterest": {
                     "anyOf": [
@@ -58,7 +58,7 @@
                             "description": "Property. Identifier format of any NGSI entity"
                         }
                     ],
-                    "description": "Relationship. A reference to a point of interest associated to this observation."
+                    "description": "Relationship. A reference to a point of interest associated to this observation"
                 },
                 "sensorPlacement": {
                     "type": "string",
