@@ -40,7 +40,7 @@
                                 "description": "Property. Identifier format of any NGSI entity"
                             }
                         ],
-                        "description": "Relationship. A reference to associated Points of Interest (e.g. monitoring stations) that the associated observations are related to."
+                        "description": "Relationship. A reference to associated Points of Interest (e.g. monitoring stations) that the associated observations are related to"
                     }
                 },
                 "weatherObserved": {
@@ -81,7 +81,7 @@
                                 "description": "Property. Identifier format of any NGSI entity"
                             }
                         ],
-                        "description": "Relationship. A reference to associated AirQualityObserved entities."
+                        "description": "Relationship. A reference to associated AirQualityObserved entities"
                     }
                 },
                 "waterQualityObserved": {
