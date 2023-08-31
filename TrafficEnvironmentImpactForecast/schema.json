@@ -58,13 +58,13 @@
                             "intensityExpected": {
                                 "type": "number",
                                 "minimum": 0,
-                                "description": "Property. Total number of vehicles expected during this forecast period. Model:'https://schema.org/Number'."
+                                "description": "Property. Total number of vehicles expected during this forecast period. Model:'https://schema.org/Number'"
                             },
                             "occupancyExpected": {
                                 "type": "number",
                                 "minimum": 0,
                                 "maximum": 1,
-                                "description": "Property. Fraction of the observation time where a vehicle has been occupying the observed lane. Model:'https://schema.org/Number'."
+                                "description": "Property. Fraction of the observation time where a vehicle has been occupying the observed lane. Model:'https://schema.org/Number'"
                             },
                             "averageVehicleSpeedExpected": {
                                 "type": "number",
