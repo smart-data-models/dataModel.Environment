@@ -1,89 +1,71 @@
 AirQualityMonitoring:
-
   description: Air Quality Monitoring (AQM) Data Model.
-
   properties:
-
     address:
-
       description: The mailing address
-
       properties:
-
         addressCountry:
-          description: The country. For example, Spain
+          description: 'The country. For example, Spain'
           type: string
           x-ngsi:
             model: https://schema.org/addressCountry
             type: Property
-
         addressLocality:
-          description: The locality in which the street address is, and which is in the region
+          description: 'The locality in which the street address is, and which is in the region'
           type: string
           x-ngsi:
             model: https://schema.org/addressLocality
             type: Property
-
         addressRegion:
-          description: The region in which the locality is, and which is in the country
+          description: 'The region in which the locality is, and which is in the country'
           type: string
           x-ngsi:
             model: https://schema.org/addressRegion
             type: Property
-
         district:
-          description: A district is a type of administrative division that, in some countries, is managed by the local government
+          description: 'A district is a type of administrative division that, in some countries, is managed by the local government'
           type: string
           x-ngsi:
             type: Property
-
         postOfficeBoxNumber:
-          description: The post office box number for PO box addresses. For example, 03578
+          description: 'The post office box number for PO box addresses. For example, 03578'
           type: string
           x-ngsi:
             model: https://schema.org/postOfficeBoxNumber
             type: Property
-
         postalCode:
-          description: The postal code. For example, 24004
+          description: 'The postal code. For example, 24004'
           type: string
           x-ngsi:
             model: https://schema.org/https://schema.org/postalCode
             type: Property
-
         streetAddress:
           description: The street address
           type: string
           x-ngsi:
             model: https://schema.org/streetAddress
             type: Property
-
         streetNr:
           description: Number identifying a specific property on a public street
           type: string
           x-ngsi:
             type: Property
-
       type: object
-
       x-ngsi:
         model: https://schema.org/address
         type: Property
-
     airQualityIndex:
       description: Overall Air Quality Index (AQI) for the observed air quality
       type: number
       x-ngsi:
         model: https://schema.org/Number
         type: Property
-
     airQualityLevel:
-      description: Air Quality Category Indication. Qualitative level defined according to the local health agencies. For example, 'GOOD', 'MODERATE', 'POOR', 'UNHEALTHY', 'SEVERE', 'HAZARDOUS' etc
+      description: 'Air Quality Category Indication. Qualitative level defined according to the local health agencies. For example, ''GOOD'', ''MODERATE'', ''POOR'', ''UNHEALTHY'', ''SEVERE'', ''HAZARDOUS'' etc'
       type: string
       x-ngsi:
         model: https://schema.org/Text
         type: Property
-
     airTemperatureTSA:
       description: Air temperature time series aggregation
       properties:
@@ -110,13 +92,11 @@ AirQualityMonitoring:
       type: object
       x-ngsi:
         type: Property
-
     alternateName:
       description: An alternative name for this item
       type: string
       x-ngsi:
         type: Property
-
     ambientNoiseTSA:
       description: ambient Noise time series aggregation
       properties:
@@ -143,16 +123,15 @@ AirQualityMonitoring:
       type: object
       x-ngsi:
         type: Property
-
     aqiMajorPollutant:
-      description: Major pollutant in the Air Quality Index (AQI). Enum:'arsenic, bap, benzene, co2, nh3, no, no2, o2, o3, so2, pb'
+      description: 'Major pollutant in the Air Quality Index (AQI). Enum:''arsenic, bap, benzene, co2, nh3, no, no2, o2, o3, so2, pb'''
       enum:
         - arsenic
         - bap
         - benzene
         - co2
         - nh3
-        - 'no'
+        - no
         - no2
         - o2
         - o3
@@ -162,14 +141,12 @@ AirQualityMonitoring:
       x-ngsi:
         model: https://schema.org/Text
         type: Property
-
     areaServed:
       description: The geographic area where a service or offered item is provided
       type: string
       x-ngsi:
         model: https://schema.org/Text
         type: Property
-
     arsenicTSA:
       description: Arsenic time series aggregation
       properties:
@@ -196,14 +173,12 @@ AirQualityMonitoring:
       type: object
       x-ngsi:
         type: Property
-
     atmosphericPressure:
       description: Observed air (atmospheric or barometric) pressure
       type: number
       x-ngsi:
         model: https://schema.org/Number
         type: Property
-
     atmosphericPressureTSA:
       description: Atmospheric pressure time series aggregation
       properties:
@@ -230,7 +205,6 @@ AirQualityMonitoring:
       type: object
       x-ngsi:
         type: Property
-
     bapTSA:
       description: Benzo(a)Pyrene time series aggregation
       properties:
@@ -257,7 +231,6 @@ AirQualityMonitoring:
       type: object
       x-ngsi:
         type: Property
-
     benzeneTSA:
       description: Benzene time series aggregation
       properties:
@@ -284,7 +257,6 @@ AirQualityMonitoring:
       type: object
       x-ngsi:
         type: Property
-
     co2TSA:
       description: Carbon dioxide time series aggregation
       properties:
@@ -311,7 +283,6 @@ AirQualityMonitoring:
       type: object
       x-ngsi:
         type: Property
-
     coTSA:
       description: Carbon monoxide time series aggregation
       properties:
@@ -338,69 +309,57 @@ AirQualityMonitoring:
       type: object
       x-ngsi:
         type: Property
-
     dataProvider:
       description: A sequence of characters identifying the provider of the harmonised data entity
       type: string
       x-ngsi:
         type: Property
-
     dateCreated:
       description: Entity creation timestamp. This will usually be allocated by the storage platform
       format: date-time
       type: string
       x-ngsi:
         type: Property
-
     dateModified:
       description: Timestamp of the last modification of the entity. This will usually be allocated by the storage platform
       format: date-time
       type: string
       x-ngsi:
         type: Property
-
     description:
       description: A description of this item
       type: string
       x-ngsi:
         type: Property
-
     deviceInfo:
-
       description: Information about the device associated with the observations
-
       properties:
-
         RFID:
           description: Gives the ID of the RFID reader
           type: string
           x-ngsi:
             model: https://schema.org/Text
             type: Property
-
         deviceBatteryStatus:
-          description: Gives the Battery charging status of the reporting device(Connected, Disconnected)
+          description: 'Gives the Battery charging status of the reporting device(Connected, Disconnected)'
           type: string
           x-ngsi:
             model: https://schema.org/Text
             type: Property
-
         deviceID:
           description: Device ID of the physical sensor/ measurement station corresponding to this observation
           type: string
           x-ngsi:
             model: https://schema.org/Text
             type: Property
-
         deviceList:
           description: Information of device part number and sub devices corresponding to this observation
           type: string
           x-ngsi:
             model: https://schema.org/Text
             type: Property
-
         deviceModel:
-          description: Describes the information of the device, sensor or system in consideration
+          description: 'Describes the information of the device, sensor or system in consideration'
           properties:
             areaServed:
               description: 'Area served by the entity or a service. '
@@ -409,25 +368,25 @@ AirQualityMonitoring:
                 model: https://schema.org/Text
                 type: Property
             brandName:
-              description: Name of the brand associated with an entity, e.g., sensor, device etc
+              description: 'Name of the brand associated with an entity, e.g., sensor, device etc'
               type: string
               x-ngsi:
                 model: https://schema.org/Text
                 type: Property
             manufacturerName:
-              description: Name of the manufacturer associated with an entity, e.g., sensor, device etc
+              description: 'Name of the manufacturer associated with an entity, e.g., sensor, device etc'
               type: string
               x-ngsi:
                 model: https://schema.org/Text
                 type: Property
             modelName:
-              description: Name of a specific model associated with an entity, e.g., sensor, device etc
+              description: 'Name of a specific model associated with an entity, e.g., sensor, device etc'
               type: string
               x-ngsi:
                 model: https://schema.org/Text
                 type: Property
             modelURL:
-              description: URL providing further information of a specific model associated with an entity, e.g., sensor, device etc
+              description: 'URL providing further information of a specific model associated with an entity, e.g., sensor, device etc'
               type: string
               x-ngsi:
                 model: https://schema.org/Text
@@ -435,28 +394,24 @@ AirQualityMonitoring:
           type: object
           x-ngsi:
             type: Property
-
         deviceName:
           description: Device Name or Station name of the sensor device/station corresponding to this observation
           type: string
           x-ngsi:
             model: https://schema.org/Text
             type: Property
-
         deviceSimNumber:
           description: Gives the sim number of the device in the waste management vehicle
           type: string
           x-ngsi:
             model: https://schema.org/Text
             type: Property
-
         measurand:
           description: Property/properties sensed/observed/measured by the device
           type: string
           x-ngsi:
             model: https://schema.org/Text
             type: Property
-
         refDevice:
           anyOf:
             - description: Identifier format of any NGSI entity
@@ -474,19 +429,15 @@ AirQualityMonitoring:
           description: Unique identifier of the entity
           x-ngsi:
             type: Relationship
-
       type: object
-
       x-ngsi:
         type: Property
-
     deviceStatus:
       description: Indicates the status of physical device or devices
       type: string
       x-ngsi:
         model: https://schema.org/Text
         type: Property
-
     id:
       anyOf:
         - description: Identifier format of any NGSI entity
@@ -504,20 +455,15 @@ AirQualityMonitoring:
       description: Unique identifier of the entity
       x-ngsi:
         type: Property
-
     illuminance:
       description: Measured illuminance
       minimum: 0
       type: number
       x-ngsi:
         type: Property
-
     location:
-
-      description: Geojson reference to the item. It can be Point, LineString, Polygon, MultiPoint, MultiLineString or MultiPolygon
-
+      description: 'Geojson reference to the item. It can be Point, LineString, Polygon, MultiPoint, MultiLineString or MultiPolygon'
       oneOf:
-
         - bbox:
             items:
               type: number
@@ -532,7 +478,6 @@ AirQualityMonitoring:
             enum:
               - Point
             type: string
-
         - bbox:
             items:
               type: number
@@ -550,7 +495,6 @@ AirQualityMonitoring:
             enum:
               - LineString
             type: string
-
         - bbox:
             items:
               type: number
@@ -570,7 +514,6 @@ AirQualityMonitoring:
             enum:
               - Polygon
             type: string
-
         - bbox:
             items:
               type: number
@@ -587,7 +530,6 @@ AirQualityMonitoring:
             enum:
               - MultiPoint
             type: string
-
         - bbox:
             items:
               type: number
@@ -607,7 +549,6 @@ AirQualityMonitoring:
             enum:
               - MultiLineString
             type: string
-
         - bbox:
             items:
               type: number
@@ -628,16 +569,13 @@ AirQualityMonitoring:
             enum:
               - MultiPolygon
             type: string
-
       x-ngsi:
         type: GeoProperty
-
     name:
       description: The name of this item
       type: string
       x-ngsi:
         type: Property
-
     nh3TSA:
       description: Ammonia time series aggregation
       properties:
@@ -664,7 +602,6 @@ AirQualityMonitoring:
       type: object
       x-ngsi:
         type: Property
-
     nickelTSA:
       description: Nickel time series aggregation
       properties:
@@ -691,7 +628,6 @@ AirQualityMonitoring:
       type: object
       x-ngsi:
         type: Property
-
     no2TSA:
       description: Nitrogen dioxide time series aggregation
       properties:
@@ -718,7 +654,6 @@ AirQualityMonitoring:
       type: object
       x-ngsi:
         type: Property
-
     noTSA:
       description: Nitrogen monoxide time series aggregation
       properties:
@@ -745,7 +680,6 @@ AirQualityMonitoring:
       type: object
       x-ngsi:
         type: Property
-
     o2TSA:
       description: Oxygen time series aggregation
       properties:
@@ -772,7 +706,6 @@ AirQualityMonitoring:
       type: object
       x-ngsi:
         type: Property
-
     o3TSA:
       description: 'Ozone time series aggregation '
       properties:
@@ -799,7 +732,6 @@ AirQualityMonitoring:
       type: object
       x-ngsi:
         type: Property
-
     observationDateTime:
       description: Last reported time of observation
       format: date-time
@@ -807,7 +739,6 @@ AirQualityMonitoring:
       x-ngsi:
         model: https://schema.org/DateTime
         type: Property
-
     owner:
       description: A List containing a JSON encoded sequence of characters referencing the unique Ids of the owner(s)
       items:
@@ -830,7 +761,6 @@ AirQualityMonitoring:
       type: array
       x-ngsi:
         type: Property
-
     pbTSA:
       description: Lead time series aggregation
       properties:
@@ -857,7 +787,6 @@ AirQualityMonitoring:
       type: object
       x-ngsi:
         type: Property
-
     pm10TSA:
       description: Particulate matter in the air with a diameter of 10 micrometers or less time series aggregation
       properties:
@@ -884,7 +813,6 @@ AirQualityMonitoring:
       type: object
       x-ngsi:
         type: Property
-
     pm25TSA:
       description: Particulate matter in the air with a diameter of 25 micrometers or less time series aggregation
       properties:
@@ -911,14 +839,12 @@ AirQualityMonitoring:
       type: object
       x-ngsi:
         type: Property
-
     precipitation:
       description: Observed precipitation/rainfall level over a given duration
       type: number
       x-ngsi:
         model: https://schema.org/Number
         type: Property
-
     relativeHumidityTSA:
       description: Relative Humidity time series aggregation
       properties:
@@ -945,7 +871,6 @@ AirQualityMonitoring:
       type: object
       x-ngsi:
         type: Property
-
     seeAlso:
       description: list of uri pointing to additional resources about the item
       oneOf:
@@ -958,7 +883,6 @@ AirQualityMonitoring:
           type: string
       x-ngsi:
         type: Property
-
     so2TSA:
       description: Sulfur dioxide time series aggregation
       properties:
@@ -985,7 +909,6 @@ AirQualityMonitoring:
       type: object
       x-ngsi:
         type: Property
-
     solarRadiation:
       description: Instantaneous solar radiation measured in kW/m2
       type: number
@@ -993,13 +916,11 @@ AirQualityMonitoring:
         model: http://schema.org/Number
         type: Property
         units: kW/m2
-
     source:
-      description: A sequence of characters giving the original source of the entity data as a URL. Recommended to be the fully qualified domain name of the source provider, or the URL to the source object
+      description: 'A sequence of characters giving the original source of the entity data as a URL. Recommended to be the fully qualified domain name of the source provider, or the URL to the source object'
       type: string
       x-ngsi:
         type: Property
-
     type:
       description: NGSI type. it has to be AirQualityMonitoring
       enum:
@@ -1007,7 +928,6 @@ AirQualityMonitoring:
       type: string
       x-ngsi:
         type: Property
-
     uvTSA:
       description: Ultra violet radiation time series aggregation
       properties:
@@ -1034,7 +954,6 @@ AirQualityMonitoring:
       type: object
       x-ngsi:
         type: Property
-
     versionInfo:
       description: Version information corresponding to this observation
       properties:
@@ -1072,21 +991,13 @@ AirQualityMonitoring:
       type: object
       x-ngsi:
         type: Property
-
   required:
     - id
     - type
-
   type: object
-
-  x-derived-from: ''
-
-  x-disclaimer: Redistribution and use in source and binary forms, with or without modification, are permitted  provided that the license conditions are met. Copyleft (c) 2022 Contributors to Smart Data Models Program
-
+  x-derived-from: ""
+  x-disclaimer: 'Redistribution and use in source and binary forms, with or without modification, are permitted  provided that the license conditions are met. Copyleft (c) 2022 Contributors to Smart Data Models Program'
   x-license-url: https://github.com/smart-data-models/dataModel.Environment/blob/master/AirQualityMonitoring/LICENSE.md
-
   x-model-schema: https://smart-data-models.github.io/dataModel.Environment/AirQualityMonitoring/schema.json
-
   x-model-tags: GreenMov
-
   x-version: 0.0.3
