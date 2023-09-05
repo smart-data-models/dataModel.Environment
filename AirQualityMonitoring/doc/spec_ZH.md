@@ -7,23 +7,102 @@
 [文件自动生成](https://docs.google.com/presentation/d/e/2PACX-1vTs-Ng5dIAwkg91oTTUdt8ua7woBXhPnwavZ0FxgR8BsAI_Ek3C5q97Nd94HS8KhP-r_quD4H0fgyt3/pub?start=false&loop=false&delayms=3000#slide=id.gb715ace035_0_60)  
 <!-- /15-License -->  
 <!-- 20-Description -->  
-全球描述：**空气质量监测（AQM）数据模型。  
-版本：0.0.3  
+全局描述：**空气质量监测（AQM）数据模型。  
+版本： 0.0.3  
 <!-- /20-Description -->  
 <!-- 30-PropertiesList -->  
 
-##属性列表  
+## 属性列表  
 
-<sup><sub>[*] 如果一个属性中没有一个类型，是因为它可能有几种类型或不同的格式/模式</sub></sup>。  
-- `airQualityIndex[number]`: 观察到的空气质量总体指数（AQI）。  . Model: [https://schema.org/Number](https://schema.org/Number)- `airQualityLevel[string]`: 空气质量类别指示。根据当地卫生机构定义的定性水平。例如，"好"、"中等"、"差"、"不健康"、"严重"、"危险 "等。  . Model: [https://schema.org/Text](https://schema.org/Text)- `airTemperatureTSA[object]`: 定义一个基本属性在一个时期内的时间处理的对象。它提供了最大值、最小值、即时值和平均值。  - `alternateName[string]`: 这个项目的一个替代名称  - `ambientNoiseTSA[object]`: 定义一个基本属性在一个时期内的时间处理的对象。它提供了最大值、最小值、即时值和平均值。  - `aqiMajorPollutant[string]`: 空气质量指数（AQI）中的主要污染物。Enum:'砷，bap，苯，co2，nh3，no，no2，o2，o3，so2，pb'  . Model: [https://schema.org/Text](https://schema.org/Text)- `arsenicTSA[object]`: 定义一个基本属性在一个时期内的时间处理的对象。它提供了最大值、最小值、即时值和平均值。  - `atmosphericPressure[number]`: 观察到的空气（大气或气压）压力。  . Model: [https://schema.org/Number](https://schema.org/Number)- `atmosphericPressureTSA[object]`: 定义一个基本属性在一个时期内的时间处理的对象。它提供了最大值、最小值、即时值和平均值。  - `bapTSA[object]`: 定义一个基本属性在一个时期内的时间处理的对象。它提供了最大值、最小值、即时值和平均值。  - `benzeneTSA[object]`: 定义一个基本属性在一个时期内的时间处理的对象。它提供了最大值、最小值、即时值和平均值。  - `co2TSA[object]`: 定义一个基本属性在一个时期内的时间处理的对象。它提供了最大值、最小值、即时值和平均值。  - `coTSA[object]`: 定义一个基本属性在一个时期内的时间处理的对象。它提供了最大值、最小值、即时值和平均值。  - `dataProvider[string]`: 一串识别统一数据实体提供者的字符。  - `dateCreated[string]`: 实体创建时间戳。这通常会由存储平台分配。  - `dateModified[string]`: 实体最后一次修改的时间戳。这通常会由存储平台分配。  - `description[string]`: 对这个项目的描述  - `deviceInfo[object]`: 与观察结果有关的设备信息。  - `deviceStatus[string]`: 表明物理设备或设备的状态。  . Model: [https://schema.org/Text](https://schema.org/Text)- `id[*]`: 实体的唯一标识符  - `illuminance[number]`: 测量的光照度  - `name[string]`: 这个项目的名称。  - `nh3TSA[object]`: 定义一个基本属性在一个时期内的时间处理的对象。它提供了最大值、最小值、即时值和平均值。  - `nickelTSA[object]`: 定义一个基本属性在一个时期内的时间处理的对象。它提供了最大值、最小值、即时值和平均值。  - `no2TSA[object]`: 定义一个基本属性在一个时期内的时间处理的对象。它提供了最大值、最小值、即时值和平均值。  - `noTSA[object]`: 定义一个基本属性在一个时期内的时间处理的对象。它提供了最大值、最小值、瞬时值和平均值。  - `o2TSA[object]`: 定义一个基本属性在一个时期内的时间处理的对象。它提供了最大值、最小值、即时值和平均值。  - `o3TSA[object]`: 定义一个基本属性在一个时期内的时间处理的对象。它提供了最大值、最小值、即时值和平均值。  - `observationDateTime[string]`: 最后报告的观察时间。  . Model: [https://schema.org/DateTime](https://schema.org/DateTime)- `owner[array]`: 一个包含JSON编码的字符序列的列表，引用所有者的唯一Ids。  - `pbTSA[object]`: 定义一个基本属性在一个时期内的时间处理的对象。它提供了最大值、最小值、即时值和平均值。  - `pm10TSA[object]`: 定义一个基本属性在一个时期内的时间处理的对象。它提供了最大值、最小值、即时值和平均值。  - `pm25TSA[object]`: 定义一个基本属性在一个时期内的时间处理的对象。它提供了最大值、最小值、瞬时值和平均值。  - `precipitation[number]`: 在一定时间内观察到的降水/降雨量。  . Model: [https://schema.org/Number](https://schema.org/Number)- `relativeHumidityTSA[object]`: 定义一个基本属性在一个时期内的时间处理的对象。它提供了最大值、最小值、瞬时值和平均值。  - `seeAlso[*]`: 指向有关该项目的其他资源的URI列表  - `so2TSA[object]`: 定义一个基本属性在一个时期内的时间处理的对象。它提供了最大值、最小值、即时值和平均值。  - `solarRadiation[number]`: 以千瓦/平方米为单位的瞬时太阳辐射  . Model: [http://schema.org/Number](http://schema.org/Number)- `source[string]`: 一系列的字符，以URL的形式给出实体数据的原始来源。建议为源提供者的完全合格域名，或源对象的URL。  - `type[string]`: NGSI类型。它必须是AirQualityMonitoring  - `uvTSA[object]`: 定义一个基本属性在一个时期内的时间处理的对象。它提供了最大值、最小值、即时值和平均值。  - `versionInfo[object]`: 与此观察相对应的版本信息。  <!-- /30-PropertiesList -->  
+<sup><sub>[*] 如果属性中没有类型，是因为它可能有多个类型或不同的格式/模式</sub></sup>。  
+- `address[object]`: 邮寄地址  . Model: [https://schema.org/address](https://schema.org/address)	- `addressCountry[string]`: 国家。例如，西班牙  . Model: [https://schema.org/addressCountry](https://schema.org/addressCountry)  
+	- `addressLocality[string]`: 街道地址所在的地点，以及该地点所在的区域  . Model: [https://schema.org/addressLocality](https://schema.org/addressLocality)  
+	- `addressRegion[string]`: 地点所在的地区，以及该地区位于哪个国家  . Model: [https://schema.org/addressRegion](https://schema.org/addressRegion)  
+	- `district[string]`: 地区是一种行政区划，在一些国家由地方政府管理    
+	- `postOfficeBoxNumber[string]`: 用于邮政信箱地址的邮政信箱号码。例如：03578  . Model: [https://schema.org/postOfficeBoxNumber](https://schema.org/postOfficeBoxNumber)  
+	- `postalCode[string]`: 邮政编码。例如：24004  . Model: [https://schema.org/https://schema.org/postalCode](https://schema.org/https://schema.org/postalCode)  
+	- `streetAddress[string]`: 街道地址  . Model: [https://schema.org/streetAddress](https://schema.org/streetAddress)  
+- `airQualityIndex[number]`: 观测空气质量的总体空气质量指数 (AQI)  . Model: [https://schema.org/Number](https://schema.org/Number)- `airQualityLevel[string]`: 空气质量类别指示。根据当地卫生机构定义的定性级别。例如，"良好"、"中等"、"差"、"不健康"、"严重"、"有害 "等。  . Model: [https://schema.org/Text](https://schema.org/Text)- `airTemperatureTSA[object]`: 气温时间序列汇总  	- `averageValue[number]`: 随时间变化的时间处理平均值    
+	- `instValue[number]`: 时间处理的即时价值    
+	- `maxOverTime[number]`: 时间处理的最大值    
+- `alternateName[string]`: 该项目的替代名称  - `ambientNoiseTSA[object]`: 环境噪声时间序列汇总  	- `averageValue[number]`: 随时间变化的时间处理平均值    
+	- `instValue[number]`: 时间处理的即时价值    
+	- `maxOverTime[number]`: 时间处理的最大值    
+- `aqiMajorPollutant[string]`: 空气质量指数 (AQI) 中的主要污染物。枚举：'砷、BAP、苯、CO2、NH3、NO、NO2、O2、O3、SO2、PB'。  . Model: [https://schema.org/Text](https://schema.org/Text)- `areaServed[string]`: 提供服务或提供物品的地理区域  . Model: [https://schema.org/Text](https://schema.org/Text)- `arsenicTSA[object]`: 砷时间序列汇总  	- `averageValue[number]`: 随时间变化的时间处理平均值    
+	- `instValue[number]`: 时间处理的即时价值    
+	- `maxOverTime[number]`: 时间处理的最大值    
+- `atmosphericPressure[number]`: 观测到的空气（大气或气压）压力  . Model: [https://schema.org/Number](https://schema.org/Number)- `atmosphericPressureTSA[object]`: 大气压力时间序列汇总  	- `averageValue[number]`: 随时间变化的时间处理平均值    
+	- `instValue[number]`: 时间处理的即时价值    
+	- `maxOverTime[number]`: 时间处理的最大值    
+- `bapTSA[object]`: 苯并(a)芘时间序列聚合  	- `averageValue[number]`: 随时间变化的时间处理平均值    
+	- `instValue[number]`: 时间处理的即时价值    
+	- `maxOverTime[number]`: 时间处理的最大值    
+- `benzeneTSA[object]`: 苯时间序列汇总  	- `averageValue[number]`: 随时间变化的时间处理平均值    
+	- `instValue[number]`: 时间处理的即时价值    
+	- `maxOverTime[number]`: 时间处理的最大值    
+- `co2TSA[object]`: 二氧化碳时间序列汇总  	- `averageValue[number]`: 随时间变化的时间处理平均值    
+	- `instValue[number]`: 时间处理的即时价值    
+	- `maxOverTime[number]`: 时间处理的最大值    
+- `coTSA[object]`: 一氧化碳时间序列汇总  	- `averageValue[number]`: 随时间变化的时间处理平均值    
+	- `instValue[number]`: 时间处理的即时价值    
+	- `maxOverTime[number]`: 时间处理的最大值    
+- `dataProvider[string]`: 标识统一数据实体提供者的字符序列  - `dateCreated[date-time]`: 实体创建时间戳。通常由存储平台分配  - `dateModified[date-time]`: 实体最后一次修改的时间戳。通常由存储平台分配  - `description[string]`: 项目描述  - `deviceInfo[object]`: 与观测结果相关的设备信息  	- `RFID[string]`: 提供 RFID 阅读器的 ID  . Model: [https://schema.org/Text](https://schema.org/Text)  
+	- `deviceBatteryStatus[string]`: 显示报告设备的电池充电状态（连接、断开）  . Model: [https://schema.org/Text](https://schema.org/Text)  
+	- `deviceID[string]`: 与该观测值相对应的物理传感器/测量站的设备 ID  . Model: [https://schema.org/Text](https://schema.org/Text)  
+	- `deviceList[string]`: 设备部件号和与该观测值相对应的子设备信息  . Model: [https://schema.org/Text](https://schema.org/Text)  
+	- `deviceModel[object]`: 描述有关设备、传感器或系统的信息    
+	- `deviceName[string]`: 该观测点对应的传感设备/站的设备名称或站名  . Model: [https://schema.org/Text](https://schema.org/Text)  
+	- `deviceSimNumber[string]`: 提供废物管理车上设备的模拟号码  . Model: [https://schema.org/Text](https://schema.org/Text)  
+	- `measurand[string]`: 设备感知/观测/测量的属性  . Model: [https://schema.org/Text](https://schema.org/Text)  
+- `deviceStatus[string]`: 显示一个或多个物理设备的状态  . Model: [https://schema.org/Text](https://schema.org/Text)- `id[*]`: 实体的唯一标识符  - `illuminance[number]`: 测量照度  - `location[*]`: 项目的 Geojson 引用。它可以是点、线条字符串、多边形、多点、多线条字符串或多多边形  - `name[string]`: 该项目的名称  - `nh3TSA[object]`: 氨气时间序列汇总  	- `averageValue[number]`: 随时间变化的时间处理平均值    
+	- `instValue[number]`: 时间处理的即时价值    
+	- `maxOverTime[number]`: 时间处理的最大值    
+- `nickelTSA[object]`: 镍时间序列汇总  	- `averageValue[number]`: 随时间变化的时间处理平均值    
+	- `instValue[number]`: 时间处理的即时价值    
+	- `maxOverTime[number]`: 时间处理的最大值    
+- `no2TSA[object]`: 二氧化氮时间序列汇总  	- `averageValue[number]`: 随时间变化的时间处理平均值    
+	- `instValue[number]`: 时间处理的即时价值    
+	- `maxOverTime[number]`: 时间处理的最大值    
+- `noTSA[object]`: 一氧化氮时间序列汇总  	- `averageValue[number]`: 随时间变化的时间处理平均值    
+	- `instValue[number]`: 时间处理的即时价值    
+	- `maxOverTime[number]`: 时间处理的最大值    
+- `o2TSA[object]`: 氧气时间序列汇总  	- `averageValue[number]`: 随时间变化的时间处理平均值    
+	- `instValue[number]`: 时间处理的即时价值    
+	- `maxOverTime[number]`: 时间处理的最大值    
+- `o3TSA[object]`: 臭氧时间序列汇总  	- `averageValue[number]`: 随时间变化的时间处理平均值    
+	- `instValue[number]`: 时间处理的即时价值    
+	- `maxOverTime[number]`: 时间处理的最大值    
+- `observationDateTime[date-time]`: 最后报告的观察时间  . Model: [https://schema.org/DateTime](https://schema.org/DateTime)- `owner[array]`: 包含一个 JSON 编码字符序列的列表，其中引用了所有者的唯一 Ids  - `pbTSA[object]`: 前导时间序列汇总  	- `averageValue[number]`: 随时间变化的时间处理平均值    
+	- `instValue[number]`: 时间处理的即时价值    
+	- `maxOverTime[number]`: 时间处理的最大值    
+- `pm10TSA[object]`: 空气中直径为 10 微米或更小的颗粒物的时间序列聚集  	- `averageValue[number]`: 随时间变化的时间处理平均值    
+	- `instValue[number]`: 时间处理的即时价值    
+	- `maxOverTime[number]`: 时间处理的最大值    
+- `pm25TSA[object]`: 空气中直径小于或等于 25 微米的颗粒物的时间序列聚集  	- `averageValue[number]`: 随时间变化的时间处理平均值    
+	- `instValue[number]`: 时间处理的即时价值    
+	- `maxOverTime[number]`: 时间处理的最大值    
+- `precipitation[number]`: 一定时间内的观测降水量/降雨量水平  . Model: [https://schema.org/Number](https://schema.org/Number)- `relativeHumidityTSA[object]`: 相对湿度时间序列汇总  	- `averageValue[number]`: 随时间变化的时间处理平均值    
+	- `instValue[number]`: 时间处理的即时价值    
+	- `maxOverTime[number]`: 时间处理的最大值    
+- `seeAlso[*]`: 指向有关该项目的其他资源的 uri 列表  - `so2TSA[object]`: 二氧化硫时间序列汇总  	- `averageValue[number]`: 随时间变化的时间处理平均值    
+	- `instValue[number]`: 时间处理的即时价值    
+	- `maxOverTime[number]`: 时间处理的最大值    
+- `solarRadiation[number]`: 以千瓦/平方米为单位测量的瞬时太阳辐射  . Model: [http://schema.org/Number](http://schema.org/Number)- `source[string]`: 以 URL 形式给出实体数据原始来源的字符串。建议使用源提供者的完全合格域名或源对象的 URL  - `type[string]`: 必须是 AirQualityMonitoring（空气质量监测）类型。  - `uvTSA[object]`: 紫外线辐射时间序列汇总  	- `averageValue[number]`: 随时间变化的时间处理平均值    
+	- `instValue[number]`: 时间处理的即时价值    
+	- `maxOverTime[number]`: 时间处理的最大值    
+- `versionInfo[object]`: 与该观察结果相对应的版本信息  	- `comments[string]`: 与此意见相对应的用户评论  . Model: [https://schema.org/Text](https://schema.org/Text)  
+	- `endDateTime[date-time]`: 与该观测结果相对应的报告结束时间  . Model: [https://schema.org/DateTime](https://schema.org/DateTime)  
+	- `startDateTime[date-time]`: 与该观测结果相对应的报告开始时间  . Model: [https://schema.org/DateTime](https://schema.org/DateTime)  
+	- `versionName[string]`: 该观测值对应的版本名称  . Model: [https://schema.org/Text](https://schema.org/Text)  
+<!-- /30-PropertiesList -->  
 <!-- 35-RequiredProperties -->  
 所需属性  
 - `id`  - `type`  <!-- /35-RequiredProperties -->  
 <!-- 40-RequiredProperties -->  
 <!-- /40-RequiredProperties -->  
 <!-- 50-DataModelHeader -->  
-## 数据模型的属性描述  
-按字母顺序排列（点击查看详情）。  
+## 属性的数据模型描述  
+按字母顺序排列（点击查看详情）  
 <!-- /50-DataModelHeader -->  
 <!-- 60-ModelYaml -->  
 <details><summary><strong>full yaml details</strong></summary>    
@@ -31,29 +110,94 @@
 AirQualityMonitoring:    
   description: Air Quality Monitoring (AQM) Data Model.    
   properties:    
+    address:    
+      description: The mailing address    
+      properties:    
+        addressCountry:    
+          description: 'The country. For example, Spain'    
+          type: string    
+          x-ngsi:    
+            model: https://schema.org/addressCountry    
+            type: Property    
+        addressLocality:    
+          description: 'The locality in which the street address is, and which is in the region'    
+          type: string    
+          x-ngsi:    
+            model: https://schema.org/addressLocality    
+            type: Property    
+        addressRegion:    
+          description: 'The region in which the locality is, and which is in the country'    
+          type: string    
+          x-ngsi:    
+            model: https://schema.org/addressRegion    
+            type: Property    
+        district:    
+          description: 'A district is a type of administrative division that, in some countries, is managed by the local government'    
+          type: string    
+          x-ngsi:    
+            type: Property    
+        postOfficeBoxNumber:    
+          description: 'The post office box number for PO box addresses. For example, 03578'    
+          type: string    
+          x-ngsi:    
+            model: https://schema.org/postOfficeBoxNumber    
+            type: Property    
+        postalCode:    
+          description: 'The postal code. For example, 24004'    
+          type: string    
+          x-ngsi:    
+            model: https://schema.org/https://schema.org/postalCode    
+            type: Property    
+        streetAddress:    
+          description: The street address    
+          type: string    
+          x-ngsi:    
+            model: https://schema.org/streetAddress    
+            type: Property    
+        streetNr:    
+          description: Number identifying a specific property on a public street    
+          type: string    
+          x-ngsi:    
+            type: Property    
+      type: object    
+      x-ngsi:    
+        model: https://schema.org/address    
+        type: Property    
     airQualityIndex:    
-      description: Overall Air Quality Index (AQI) for the observed air quality.    
+      description: Overall Air Quality Index (AQI) for the observed air quality    
       type: number    
       x-ngsi:    
         model: https://schema.org/Number    
         type: Property    
     airQualityLevel:    
-      description: 'Air Quality Category Indication. Qualitative level defined according to the local health agencies. For example, ''GOOD'', ''MODERATE'', ''POOR'', ''UNHEALTHY'', ''SEVERE'', ''HAZARDOUS'' etc.'    
+      description: 'Air Quality Category Indication. Qualitative level defined according to the local health agencies. For example, ''GOOD'', ''MODERATE'', ''POOR'', ''UNHEALTHY'', ''SEVERE'', ''HAZARDOUS'' etc'    
       type: string    
       x-ngsi:    
         model: https://schema.org/Text    
         type: Property    
     airTemperatureTSA:    
-      description: 'Object defining the temporal processing of a basic property during a period. It provides Maximum, minimum, instant value and average'    
-      properties: &airqualitymonitoring_-_properties_-_ambientnoisetsa_-_properties    
+      description: Air temperature time series aggregation    
+      properties:    
         averageValue:    
+          description: Average value of temporal processing over time    
           type: number    
+          x-ngsi:    
+            type: Property    
         instValue:    
+          description: Instant value of temporal processing    
           type: number    
+          x-ngsi:    
+            type: Property    
         maxOverTime:    
+          description: Maximum value of temporal processing over time    
           type: number    
+          x-ngsi:    
+            type: Property    
         minOverTime:    
+          description: Minimum value of temporal processing over time    
           type: number    
+          x-ngsi:    
+            type: Property    
       type: object    
       x-ngsi:    
         type: Property    
@@ -63,8 +207,28 @@ AirQualityMonitoring:
       x-ngsi:    
         type: Property    
     ambientNoiseTSA:    
-      description: 'Object defining the temporal processing of a basic property during a period. It provides Maximum, minimum, instant value and average'    
-      properties: *airqualitymonitoring_-_properties_-_ambientnoisetsa_-_properties    
+      description: ambient Noise time series aggregation    
+      properties:    
+        averageValue:    
+          description: Average value of temporal processing over time    
+          type: number    
+          x-ngsi:    
+            type: Property    
+        instValue:    
+          description: Instant value of temporal processing    
+          type: number    
+          x-ngsi:    
+            type: Property    
+        maxOverTime:    
+          description: Maximum value of temporal processing over time    
+          type: number    
+          x-ngsi:    
+            type: Property    
+        minOverTime:    
+          description: Minimum value of temporal processing over time    
+          type: number    
+          x-ngsi:    
+            type: Property    
       type: object    
       x-ngsi:    
         type: Property    
@@ -86,61 +250,187 @@ AirQualityMonitoring:
       x-ngsi:    
         model: https://schema.org/Text    
         type: Property    
+    areaServed:    
+      description: The geographic area where a service or offered item is provided    
+      type: string    
+      x-ngsi:    
+        model: https://schema.org/Text    
+        type: Property    
     arsenicTSA:    
-      description: 'Object defining the temporal processing of a basic property during a period. It provides Maximum, minimum, instant value and average'    
-      properties: *airqualitymonitoring_-_properties_-_ambientnoisetsa_-_properties    
+      description: Arsenic time series aggregation    
+      properties:    
+        averageValue:    
+          description: Average value of temporal processing over time    
+          type: number    
+          x-ngsi:    
+            type: Property    
+        instValue:    
+          description: Instant value of temporal processing    
+          type: number    
+          x-ngsi:    
+            type: Property    
+        maxOverTime:    
+          description: Maximum value of temporal processing over time    
+          type: number    
+          x-ngsi:    
+            type: Property    
+        minOverTime:    
+          description: Minimum value of temporal processing over time    
+          type: number    
+          x-ngsi:    
+            type: Property    
       type: object    
       x-ngsi:    
         type: Property    
     atmosphericPressure:    
-      description: Observed air (atmospheric or barometric) pressure.    
+      description: Observed air (atmospheric or barometric) pressure    
       type: number    
       x-ngsi:    
         model: https://schema.org/Number    
         type: Property    
     atmosphericPressureTSA:    
-      description: 'Object defining the temporal processing of a basic property during a period. It provides Maximum, minimum, instant value and average'    
-      properties: *airqualitymonitoring_-_properties_-_ambientnoisetsa_-_properties    
+      description: Atmospheric pressure time series aggregation    
+      properties:    
+        averageValue:    
+          description: Average value of temporal processing over time    
+          type: number    
+          x-ngsi:    
+            type: Property    
+        instValue:    
+          description: Instant value of temporal processing    
+          type: number    
+          x-ngsi:    
+            type: Property    
+        maxOverTime:    
+          description: Maximum value of temporal processing over time    
+          type: number    
+          x-ngsi:    
+            type: Property    
+        minOverTime:    
+          description: Minimum value of temporal processing over time    
+          type: number    
+          x-ngsi:    
+            type: Property    
       type: object    
       x-ngsi:    
         type: Property    
     bapTSA:    
-      description: 'Object defining the temporal processing of a basic property during a period. It provides Maximum, minimum, instant value and average'    
-      properties: *airqualitymonitoring_-_properties_-_ambientnoisetsa_-_properties    
+      description: Benzo(a)Pyrene time series aggregation    
+      properties:    
+        averageValue:    
+          description: Average value of temporal processing over time    
+          type: number    
+          x-ngsi:    
+            type: Property    
+        instValue:    
+          description: Instant value of temporal processing    
+          type: number    
+          x-ngsi:    
+            type: Property    
+        maxOverTime:    
+          description: Maximum value of temporal processing over time    
+          type: number    
+          x-ngsi:    
+            type: Property    
+        minOverTime:    
+          description: Minimum value of temporal processing over time    
+          type: number    
+          x-ngsi:    
+            type: Property    
       type: object    
       x-ngsi:    
         type: Property    
     benzeneTSA:    
-      description: 'Object defining the temporal processing of a basic property during a period. It provides Maximum, minimum, instant value and average'    
-      properties: *airqualitymonitoring_-_properties_-_ambientnoisetsa_-_properties    
+      description: Benzene time series aggregation    
+      properties:    
+        averageValue:    
+          description: Average value of temporal processing over time    
+          type: number    
+          x-ngsi:    
+            type: Property    
+        instValue:    
+          description: Instant value of temporal processing    
+          type: number    
+          x-ngsi:    
+            type: Property    
+        maxOverTime:    
+          description: Maximum value of temporal processing over time    
+          type: number    
+          x-ngsi:    
+            type: Property    
+        minOverTime:    
+          description: Minimum value of temporal processing over time    
+          type: number    
+          x-ngsi:    
+            type: Property    
       type: object    
       x-ngsi:    
         type: Property    
     co2TSA:    
-      description: 'Object defining the temporal processing of a basic property during a period. It provides Maximum, minimum, instant value and average'    
-      properties: *airqualitymonitoring_-_properties_-_ambientnoisetsa_-_properties    
+      description: Carbon dioxide time series aggregation    
+      properties:    
+        averageValue:    
+          description: Average value of temporal processing over time    
+          type: number    
+          x-ngsi:    
+            type: Property    
+        instValue:    
+          description: Instant value of temporal processing    
+          type: number    
+          x-ngsi:    
+            type: Property    
+        maxOverTime:    
+          description: Maximum value of temporal processing over time    
+          type: number    
+          x-ngsi:    
+            type: Property    
+        minOverTime:    
+          description: Minimum value of temporal processing over time    
+          type: number    
+          x-ngsi:    
+            type: Property    
       type: object    
       x-ngsi:    
         type: Property    
     coTSA:    
-      description: 'Object defining the temporal processing of a basic property during a period. It provides Maximum, minimum, instant value and average'    
-      properties: *airqualitymonitoring_-_properties_-_ambientnoisetsa_-_properties    
+      description: Carbon monoxide time series aggregation    
+      properties:    
+        averageValue:    
+          description: Average value of temporal processing over time    
+          type: number    
+          x-ngsi:    
+            type: Property    
+        instValue:    
+          description: Instant value of temporal processing    
+          type: number    
+          x-ngsi:    
+            type: Property    
+        maxOverTime:    
+          description: Maximum value of temporal processing over time    
+          type: number    
+          x-ngsi:    
+            type: Property    
+        minOverTime:    
+          description: Minimum value of temporal processing over time    
+          type: number    
+          x-ngsi:    
+            type: Property    
       type: object    
       x-ngsi:    
         type: Property    
     dataProvider:    
-      description: A sequence of characters identifying the provider of the harmonised data entity.    
+      description: A sequence of characters identifying the provider of the harmonised data entity    
       type: string    
       x-ngsi:    
         type: Property    
     dateCreated:    
-      description: Entity creation timestamp. This will usually be allocated by the storage platform.    
+      description: Entity creation timestamp. This will usually be allocated by the storage platform    
       format: date-time    
       type: string    
       x-ngsi:    
         type: Property    
     dateModified:    
-      description: Timestamp of the last modification of the entity. This will usually be allocated by the storage platform.    
+      description: Timestamp of the last modification of the entity. This will usually be allocated by the storage platform    
       format: date-time    
       type: string    
       x-ngsi:    
@@ -151,78 +441,126 @@ AirQualityMonitoring:
       x-ngsi:    
         type: Property    
     deviceInfo:    
-      description: Information about the device associated with the observations.    
+      description: Information about the device associated with the observations    
       properties:    
         RFID:    
-          description: 'Property. Model:''https://schema.org/Text''. Gives the ID of the RFID reader.'    
+          description: Gives the ID of the RFID reader    
           type: string    
+          x-ngsi:    
+            model: https://schema.org/Text    
+            type: Property    
         deviceBatteryStatus:    
-          description: 'Property. Model:''https://schema.org/Text''. Gives the Battery charging status of the reporting device(Connected, Disconnected).'    
+          description: 'Gives the Battery charging status of the reporting device(Connected, Disconnected)'    
           type: string    
+          x-ngsi:    
+            model: https://schema.org/Text    
+            type: Property    
         deviceID:    
-          description: 'Property. Model:''https://schema.org/Text''. Device ID of the physical sensor/ measurement station corresponding to this observation.'    
+          description: Device ID of the physical sensor/ measurement station corresponding to this observation    
           type: string    
+          x-ngsi:    
+            model: https://schema.org/Text    
+            type: Property    
         deviceList:    
-          description: 'Property. Model:''https://schema.org/Text''. Information of device part number and sub devices corresponding to this observation.'    
+          description: Information of device part number and sub devices corresponding to this observation    
           type: string    
+          x-ngsi:    
+            model: https://schema.org/Text    
+            type: Property    
         deviceModel:    
-          description: 'Property. Describes the information of the device, sensor or system in consideration.'    
+          description: 'Describes the information of the device, sensor or system in consideration'    
           properties:    
             areaServed:    
-              description: 'Property. Model:''https://schema.org/Text''. Area served by the entity or a service. '    
+              description: 'Area served by the entity or a service. '    
               type: string    
+              x-ngsi:    
+                model: https://schema.org/Text    
+                type: Property    
             brandName:    
-              description: 'Property. Model:''https://schema.org/Text''. Name of the brand associated with an entity, e.g., sensor, device etc.'    
+              description: 'Name of the brand associated with an entity, e.g., sensor, device etc'    
               type: string    
+              x-ngsi:    
+                model: https://schema.org/Text    
+                type: Property    
             manufacturerName:    
-              description: 'Property. Model:''https://schema.org/Text''. Name of the manufacturer associated with an entity, e.g., sensor, device etc.'    
+              description: 'Name of the manufacturer associated with an entity, e.g., sensor, device etc'    
               type: string    
+              x-ngsi:    
+                model: https://schema.org/Text    
+                type: Property    
             modelName:    
-              description: 'Property. Model:''https://schema.org/Text''. Name of a specific model associated with an entity, e.g., sensor, device etc.'    
+              description: 'Name of a specific model associated with an entity, e.g., sensor, device etc'    
               type: string    
+              x-ngsi:    
+                model: https://schema.org/Text    
+                type: Property    
             modelURL:    
-              description: 'Property. Model:''https://schema.org/Text''. URL providing further information of a specific model associated with an entity, e.g., sensor, device etc.'    
+              description: 'URL providing further information of a specific model associated with an entity, e.g., sensor, device etc'    
               type: string    
+              x-ngsi:    
+                model: https://schema.org/Text    
+                type: Property    
           type: object    
+          x-ngsi:    
+            type: Property    
         deviceName:    
-          description: 'Property. Model:''https://schema.org/Text''. Device Name or Station name of the sensor device/station corresponding to this observation.'    
+          description: Device Name or Station name of the sensor device/station corresponding to this observation    
           type: string    
+          x-ngsi:    
+            model: https://schema.org/Text    
+            type: Property    
         deviceSimNumber:    
-          description: 'Property. Model:''https://schema.org/Text''. Gives the sim number of the device in the waste management vehicle.'    
+          description: Gives the sim number of the device in the waste management vehicle    
           type: string    
+          x-ngsi:    
+            model: https://schema.org/Text    
+            type: Property    
         measurand:    
-          description: 'Property. Model:''https://schema.org/Text''. Property/properties sensed/observed/measured by the device.'    
+          description: Property/properties sensed/observed/measured by the device    
           type: string    
+          x-ngsi:    
+            model: https://schema.org/Text    
+            type: Property    
         refDevice:    
           anyOf:    
-            - description: Property. Identifier format of any NGSI entity    
+            - description: Identifier format of any NGSI entity    
               maxLength: 256    
               minLength: 1    
               pattern: ^[\w\-\.\{\}\$\+\*\[\]`|~^@!,:\\]+$    
               type: string    
-            - description: Property. Identifier format of any NGSI entity    
+              x-ngsi:    
+                type: Property    
+            - description: Identifier format of any NGSI entity    
               format: uri    
               type: string    
-          description: Relationship. Unique identifier of the entity    
+              x-ngsi:    
+                type: Property    
+          description: Unique identifier of the entity    
+          x-ngsi:    
+            type: Relationship    
       type: object    
       x-ngsi:    
         type: Property    
     deviceStatus:    
-      description: Indicates the status of physical device or devices.    
+      description: Indicates the status of physical device or devices    
       type: string    
       x-ngsi:    
         model: https://schema.org/Text    
         type: Property    
     id:    
-      anyOf: &airqualitymonitoring_-_properties_-_owner_-_items_-_anyof    
-        - description: Property. Identifier format of any NGSI entity    
+      anyOf:    
+        - description: Identifier format of any NGSI entity    
           maxLength: 256    
           minLength: 1    
           pattern: ^[\w\-\.\{\}\$\+\*\[\]`|~^@!,:\\]+$    
           type: string    
-        - description: Property. Identifier format of any NGSI entity    
+          x-ngsi:    
+            type: Property    
+        - description: Identifier format of any NGSI entity    
           format: uri    
           type: string    
+          x-ngsi:    
+            type: Property    
       description: Unique identifier of the entity    
       x-ngsi:    
         type: Property    
@@ -232,49 +570,279 @@ AirQualityMonitoring:
       type: number    
       x-ngsi:    
         type: Property    
+    location:    
+      description: 'Geojson reference to the item. It can be Point, LineString, Polygon, MultiPoint, MultiLineString or MultiPolygon'    
+      oneOf:    
+        - bbox:    
+            items:    
+              type: number    
+            minItems: 4    
+            type: array    
+          coordinates:    
+            items:    
+              type: number    
+            minItems: 2    
+            type: array    
+          type:    
+            enum:    
+              - Point    
+            type: string    
+        - bbox:    
+            items:    
+              type: number    
+            minItems: 4    
+            type: array    
+          coordinates:    
+            items:    
+              items:    
+                type: number    
+              minItems: 2    
+              type: array    
+            minItems: 2    
+            type: array    
+          type:    
+            enum:    
+              - LineString    
+            type: string    
+        - bbox:    
+            items:    
+              type: number    
+            minItems: 4    
+            type: array    
+          coordinates:    
+            items:    
+              items:    
+                items:    
+                  type: number    
+                minItems: 2    
+                type: array    
+              minItems: 4    
+              type: array    
+            type: array    
+          type:    
+            enum:    
+              - Polygon    
+            type: string    
+        - bbox:    
+            items:    
+              type: number    
+            minItems: 4    
+            type: array    
+          coordinates:    
+            items:    
+              items:    
+                type: number    
+              minItems: 2    
+              type: array    
+            type: array    
+          type:    
+            enum:    
+              - MultiPoint    
+            type: string    
+        - bbox:    
+            items:    
+              type: number    
+            minItems: 4    
+            type: array    
+          coordinates:    
+            items:    
+              items:    
+                items:    
+                  type: number    
+                minItems: 2    
+                type: array    
+              minItems: 2    
+              type: array    
+            type: array    
+          type:    
+            enum:    
+              - MultiLineString    
+            type: string    
+        - bbox:    
+            items:    
+              type: number    
+            minItems: 4    
+            type: array    
+          coordinates:    
+            items:    
+              items:    
+                items:    
+                  items:    
+                  minItems: 2    
+                  type: array    
+                minItems: 4    
+                type: array    
+              type: array    
+            type: array    
+          type:    
+            enum:    
+              - MultiPolygon    
+            type: string    
+      x-ngsi:    
+        type: GeoProperty    
     name:    
-      description: The name of this item.    
+      description: The name of this item    
       type: string    
       x-ngsi:    
         type: Property    
     nh3TSA:    
-      description: 'Object defining the temporal processing of a basic property during a period. It provides Maximum, minimum, instant value and average'    
-      properties: *airqualitymonitoring_-_properties_-_ambientnoisetsa_-_properties    
+      description: Ammonia time series aggregation    
+      properties:    
+        averageValue:    
+          description: Average value of temporal processing over time    
+          type: number    
+          x-ngsi:    
+            type: Property    
+        instValue:    
+          description: Instant value of temporal processing    
+          type: number    
+          x-ngsi:    
+            type: Property    
+        maxOverTime:    
+          description: Maximum value of temporal processing over time    
+          type: number    
+          x-ngsi:    
+            type: Property    
+        minOverTime:    
+          description: Minimum value of temporal processing over time    
+          type: number    
+          x-ngsi:    
+            type: Property    
       type: object    
       x-ngsi:    
         type: Property    
     nickelTSA:    
-      description: 'Object defining the temporal processing of a basic property during a period. It provides Maximum, minimum, instant value and average'    
-      properties: *airqualitymonitoring_-_properties_-_ambientnoisetsa_-_properties    
+      description: Nickel time series aggregation    
+      properties:    
+        averageValue:    
+          description: Average value of temporal processing over time    
+          type: number    
+          x-ngsi:    
+            type: Property    
+        instValue:    
+          description: Instant value of temporal processing    
+          type: number    
+          x-ngsi:    
+            type: Property    
+        maxOverTime:    
+          description: Maximum value of temporal processing over time    
+          type: number    
+          x-ngsi:    
+            type: Property    
+        minOverTime:    
+          description: Minimum value of temporal processing over time    
+          type: number    
+          x-ngsi:    
+            type: Property    
       type: object    
       x-ngsi:    
         type: Property    
     no2TSA:    
-      description: 'Object defining the temporal processing of a basic property during a period. It provides Maximum, minimum, instant value and average'    
-      properties: *airqualitymonitoring_-_properties_-_ambientnoisetsa_-_properties    
+      description: Nitrogen dioxide time series aggregation    
+      properties:    
+        averageValue:    
+          description: Average value of temporal processing over time    
+          type: number    
+          x-ngsi:    
+            type: Property    
+        instValue:    
+          description: Instant value of temporal processing    
+          type: number    
+          x-ngsi:    
+            type: Property    
+        maxOverTime:    
+          description: Maximum value of temporal processing over time    
+          type: number    
+          x-ngsi:    
+            type: Property    
+        minOverTime:    
+          description: Minimum value of temporal processing over time    
+          type: number    
+          x-ngsi:    
+            type: Property    
       type: object    
       x-ngsi:    
         type: Property    
     noTSA:    
-      description: 'Object defining the temporal processing of a basic property during a period. It provides Maximum, minimum, instant value and average'    
-      properties: *airqualitymonitoring_-_properties_-_ambientnoisetsa_-_properties    
+      description: Nitrogen monoxide time series aggregation    
+      properties:    
+        averageValue:    
+          description: Average value of temporal processing over time    
+          type: number    
+          x-ngsi:    
+            type: Property    
+        instValue:    
+          description: Instant value of temporal processing    
+          type: number    
+          x-ngsi:    
+            type: Property    
+        maxOverTime:    
+          description: Maximum value of temporal processing over time    
+          type: number    
+          x-ngsi:    
+            type: Property    
+        minOverTime:    
+          description: Minimum value of temporal processing over time    
+          type: number    
+          x-ngsi:    
+            type: Property    
       type: object    
       x-ngsi:    
         type: Property    
     o2TSA:    
-      description: 'Object defining the temporal processing of a basic property during a period. It provides Maximum, minimum, instant value and average'    
-      properties: *airqualitymonitoring_-_properties_-_ambientnoisetsa_-_properties    
+      description: Oxygen time series aggregation    
+      properties:    
+        averageValue:    
+          description: Average value of temporal processing over time    
+          type: number    
+          x-ngsi:    
+            type: Property    
+        instValue:    
+          description: Instant value of temporal processing    
+          type: number    
+          x-ngsi:    
+            type: Property    
+        maxOverTime:    
+          description: Maximum value of temporal processing over time    
+          type: number    
+          x-ngsi:    
+            type: Property    
+        minOverTime:    
+          description: Minimum value of temporal processing over time    
+          type: number    
+          x-ngsi:    
+            type: Property    
       type: object    
       x-ngsi:    
         type: Property    
     o3TSA:    
-      description: 'Object defining the temporal processing of a basic property during a period. It provides Maximum, minimum, instant value and average'    
-      properties: *airqualitymonitoring_-_properties_-_ambientnoisetsa_-_properties    
+      description: 'Ozone time series aggregation '    
+      properties:    
+        averageValue:    
+          description: Average value of temporal processing over time    
+          type: number    
+          x-ngsi:    
+            type: Property    
+        instValue:    
+          description: Instant value of temporal processing    
+          type: number    
+          x-ngsi:    
+            type: Property    
+        maxOverTime:    
+          description: Maximum value of temporal processing over time    
+          type: number    
+          x-ngsi:    
+            type: Property    
+        minOverTime:    
+          description: Minimum value of temporal processing over time    
+          type: number    
+          x-ngsi:    
+            type: Property    
       type: object    
       x-ngsi:    
         type: Property    
     observationDateTime:    
-      description: Last reported time of observation.    
+      description: Last reported time of observation    
       format: date-time    
       type: string    
       x-ngsi:    
@@ -283,38 +851,132 @@ AirQualityMonitoring:
     owner:    
       description: A List containing a JSON encoded sequence of characters referencing the unique Ids of the owner(s)    
       items:    
-        anyOf: *airqualitymonitoring_-_properties_-_owner_-_items_-_anyof    
-        description: Property. Unique identifier of the entity    
+        anyOf:    
+          - description: Identifier format of any NGSI entity    
+            maxLength: 256    
+            minLength: 1    
+            pattern: ^[\w\-\.\{\}\$\+\*\[\]`|~^@!,:\\]+$    
+            type: string    
+            x-ngsi:    
+              type: Property    
+          - description: Identifier format of any NGSI entity    
+            format: uri    
+            type: string    
+            x-ngsi:    
+              type: Property    
+        description: Unique identifier of the entity    
+        x-ngsi:    
+          type: Property    
       type: array    
       x-ngsi:    
         type: Property    
     pbTSA:    
-      description: 'Object defining the temporal processing of a basic property during a period. It provides Maximum, minimum, instant value and average'    
-      properties: *airqualitymonitoring_-_properties_-_ambientnoisetsa_-_properties    
+      description: Lead time series aggregation    
+      properties:    
+        averageValue:    
+          description: Average value of temporal processing over time    
+          type: number    
+          x-ngsi:    
+            type: Property    
+        instValue:    
+          description: Instant value of temporal processing    
+          type: number    
+          x-ngsi:    
+            type: Property    
+        maxOverTime:    
+          description: Maximum value of temporal processing over time    
+          type: number    
+          x-ngsi:    
+            type: Property    
+        minOverTime:    
+          description: Minimum value of temporal processing over time    
+          type: number    
+          x-ngsi:    
+            type: Property    
       type: object    
       x-ngsi:    
         type: Property    
     pm10TSA:    
-      description: 'Object defining the temporal processing of a basic property during a period. It provides Maximum, minimum, instant value and average'    
-      properties: *airqualitymonitoring_-_properties_-_ambientnoisetsa_-_properties    
+      description: Particulate matter in the air with a diameter of 10 micrometers or less time series aggregation    
+      properties:    
+        averageValue:    
+          description: Average value of temporal processing over time    
+          type: number    
+          x-ngsi:    
+            type: Property    
+        instValue:    
+          description: Instant value of temporal processing    
+          type: number    
+          x-ngsi:    
+            type: Property    
+        maxOverTime:    
+          description: Maximum value of temporal processing over time    
+          type: number    
+          x-ngsi:    
+            type: Property    
+        minOverTime:    
+          description: Minimum value of temporal processing over time    
+          type: number    
+          x-ngsi:    
+            type: Property    
       type: object    
       x-ngsi:    
         type: Property    
     pm25TSA:    
-      description: 'Object defining the temporal processing of a basic property during a period. It provides Maximum, minimum, instant value and average'    
-      properties: *airqualitymonitoring_-_properties_-_ambientnoisetsa_-_properties    
+      description: Particulate matter in the air with a diameter of 25 micrometers or less time series aggregation    
+      properties:    
+        averageValue:    
+          description: Average value of temporal processing over time    
+          type: number    
+          x-ngsi:    
+            type: Property    
+        instValue:    
+          description: Instant value of temporal processing    
+          type: number    
+          x-ngsi:    
+            type: Property    
+        maxOverTime:    
+          description: Maximum value of temporal processing over time    
+          type: number    
+          x-ngsi:    
+            type: Property    
+        minOverTime:    
+          description: Minimum value of temporal processing over time    
+          type: number    
+          x-ngsi:    
+            type: Property    
       type: object    
       x-ngsi:    
         type: Property    
     precipitation:    
-      description: Observed precipitation/rainfall level over a given duration.    
+      description: Observed precipitation/rainfall level over a given duration    
       type: number    
       x-ngsi:    
         model: https://schema.org/Number    
         type: Property    
     relativeHumidityTSA:    
-      description: 'Object defining the temporal processing of a basic property during a period. It provides Maximum, minimum, instant value and average'    
-      properties: *airqualitymonitoring_-_properties_-_ambientnoisetsa_-_properties    
+      description: Relative Humidity time series aggregation    
+      properties:    
+        averageValue:    
+          description: Average value of temporal processing over time    
+          type: number    
+          x-ngsi:    
+            type: Property    
+        instValue:    
+          description: Instant value of temporal processing    
+          type: number    
+          x-ngsi:    
+            type: Property    
+        maxOverTime:    
+          description: Maximum value of temporal processing over time    
+          type: number    
+          x-ngsi:    
+            type: Property    
+        minOverTime:    
+          description: Minimum value of temporal processing over time    
+          type: number    
+          x-ngsi:    
+            type: Property    
       type: object    
       x-ngsi:    
         type: Property    
@@ -331,8 +993,28 @@ AirQualityMonitoring:
       x-ngsi:    
         type: Property    
     so2TSA:    
-      description: 'Object defining the temporal processing of a basic property during a period. It provides Maximum, minimum, instant value and average'    
-      properties: *airqualitymonitoring_-_properties_-_ambientnoisetsa_-_properties    
+      description: Sulfur dioxide time series aggregation    
+      properties:    
+        averageValue:    
+          description: Average value of temporal processing over time    
+          type: number    
+          x-ngsi:    
+            type: Property    
+        instValue:    
+          description: Instant value of temporal processing    
+          type: number    
+          x-ngsi:    
+            type: Property    
+        maxOverTime:    
+          description: Maximum value of temporal processing over time    
+          type: number    
+          x-ngsi:    
+            type: Property    
+        minOverTime:    
+          description: Minimum value of temporal processing over time    
+          type: number    
+          x-ngsi:    
+            type: Property    
       type: object    
       x-ngsi:    
         type: Property    
@@ -344,7 +1026,7 @@ AirQualityMonitoring:
         type: Property    
         units: kW/m2    
     source:    
-      description: 'A sequence of characters giving the original source of the entity data as a URL. Recommended to be the fully qualified domain name of the source provider, or the URL to the source object.'    
+      description: 'A sequence of characters giving the original source of the entity data as a URL. Recommended to be the fully qualified domain name of the source provider, or the URL to the source object'    
       type: string    
       x-ngsi:    
         type: Property    
@@ -356,31 +1038,65 @@ AirQualityMonitoring:
       x-ngsi:    
         type: Property    
     uvTSA:    
-      description: 'Object defining the temporal processing of a basic property during a period. It provides Maximum, minimum, instant value and average'    
-      properties: *airqualitymonitoring_-_properties_-_ambientnoisetsa_-_properties    
+      description: Ultra violet radiation time series aggregation    
+      properties:    
+        averageValue:    
+          description: Average value of temporal processing over time    
+          type: number    
+          x-ngsi:    
+            type: Property    
+        instValue:    
+          description: Instant value of temporal processing    
+          type: number    
+          x-ngsi:    
+            type: Property    
+        maxOverTime:    
+          description: Maximum value of temporal processing over time    
+          type: number    
+          x-ngsi:    
+            type: Property    
+        minOverTime:    
+          description: Minimum value of temporal processing over time    
+          type: number    
+          x-ngsi:    
+            type: Property    
       type: object    
       x-ngsi:    
         type: Property    
     versionInfo:    
-      description: Version information corresponding to this observation.    
+      description: Version information corresponding to this observation    
       properties:    
         comments:    
-          description: 'Property. Model:''https://schema.org/Text''. User comments corresponding to this observation.'    
+          description: User comments corresponding to this observation    
           type: string    
+          x-ngsi:    
+            model: https://schema.org/Text    
+            type: Property    
         endDateTime:    
-          description: 'Property. Model:''https://schema.org/DateTime''. Reported end time corresponding to this observation.'    
+          description: Reported end time corresponding to this observation    
           format: date-time    
           type: string    
+          x-ngsi:    
+            model: https://schema.org/DateTime    
+            type: Property    
         startDateTime:    
-          description: 'Property. Model:''https://schema.org/DateTime''. Reported start time corresponding to this observation.'    
+          description: Reported start time corresponding to this observation    
           format: date-time    
           type: string    
+          x-ngsi:    
+            model: https://schema.org/DateTime    
+            type: Property    
         versionName:    
-          description: 'Property. Model:''https://schema.org/Text''. Version name corresponding to this observation'    
+          description: Version name corresponding to this observation    
           type: string    
+          x-ngsi:    
+            model: https://schema.org/Text    
+            type: Property    
         windType:    
-          description: Property. Wind type dominate during the last 24 hours.    
+          description: Wind type dominate during the last 24 hours    
           type: string    
+          x-ngsi:    
+            type: Property    
       type: object    
       x-ngsi:    
         type: Property    
@@ -400,9 +1116,9 @@ AirQualityMonitoring:
 <!-- 70-MiddleNotes -->  
 <!-- /70-MiddleNotes -->  
 <!-- 80-Examples -->  
-## ＃＃＃＃有效载荷的例子  
-#### AirQualityMonitoring NGSI-v2 key-values 示例  
-这里是一个以JSON-LD格式作为关键值的AirQualityMonitoring的例子。当使用`options=keyValues`时，这与NGSI-v2兼容，并返回单个实体的上下文数据。  
+## 有效载荷示例  
+#### AirQualityMonitoring NGSI-v2 关键值示例  
+下面是一个以 JSON-LD 格式作为键值的 AirQualityMonitoring 示例。当使用 `options=keyValues` 时，它与 NGSI-v2 兼容，并返回单个实体的上下文数据。  
 <details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
@@ -471,14 +1187,8 @@ AirQualityMonitoring:
     "minOverTime": 3.4  
   },  
   "dataProvider": "",  
-  "dateCreated": {  
-    "@type": "DateTime",  
-    "@value": "2017-12-31T03:39:27Z"  
-  },  
-  "dateModified": {  
-    "@type": "DateTime",  
-    "@value": "2021-12-22T04:21:57Z"  
-  },  
+  "dateCreated": "2017-12-31T03:39:27Z",  
+  "dateModified": "2021-12-22T04:21:57Z",  
   "description": "Air quality monitoring",  
   "deviceInfo": {  
     "RFID": "AB463478",  
@@ -543,10 +1253,7 @@ AirQualityMonitoring:
     "maxOverTime": 236.4,  
     "minOverTime": 167.7  
   },  
-  "observationDateTime": {  
-    "@type": "DateTime",  
-    "@value": "2020-09-16T11:00:00+05:30"  
-  },  
+  "observationDateTime": "2020-09-16T11:00:00+05:30",  
   "owner": [  
     "urn:ngsi-ld:AirQualityMonitoring:items:WCBR:34036943",  
     "urn:ngsi-ld:AirQualityMonitoring:items:PLLV:16542546"  
@@ -596,21 +1303,15 @@ AirQualityMonitoring:
   },  
   "versionInfo": {  
     "comments": "Version 1",  
-    "endDateTime": {  
-      "@type": "DateTime",  
-      "@value": "2020-09-16T11:00:00+05:30"  
-    },  
-    "startDateTime": {  
-      "@type": "DateTime",  
-      "@value": "2020-09-16T11:00:00+05:30"  
-    },  
+    "endDateTime": "2020-09-16T11:00:00+05:30",  
+    "startDateTime": "2020-09-16T11:00:00+05:30",  
     "versionName": "Version 1"  
   }  
 }  
 ```  
 </details>  
-#### AirQualityMonitoring NGSI-v2 normalized Example  
-下面是一个以JSON-LD格式规范化的AirQualityMonitoring的例子。当不使用选项时，这与NGSI-v2兼容，并返回单个实体的上下文数据。  
+#### 空气质量监测 NGSI-v2 标准化示例  
+下面是一个规范化 JSON-LD 格式的 AirQualityMonitoring 示例。当不使用选项时，它与 NGSI-v2 兼容，并返回单个实体的上下文数据。  
 <details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
@@ -927,15 +1628,12 @@ AirQualityMonitoring:
       "versionName": "Version 1",  
       "comments": "Version 1"  
     }  
-  },  
-  "@context": [  
-    "https://smartdatamodels.org/context.jsonld"  
-  ]  
+  }  
 }  
 ```  
 </details>  
 #### AirQualityMonitoring NGSI-LD key-values 示例  
-这里是一个以JSON-LD格式作为关键值的AirQualityMonitoring的例子。当使用`options=keyValues`时，这与NGSI-LD兼容，并返回单个实体的上下文数据。  
+下面是一个以 JSON-LD 格式作为键值的 AirQualityMonitoring 示例。当使用 `options=keyValues` 时，它与 NGSI-LD 兼容，并返回单个实体的上下文数据。  
 <details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
@@ -1145,8 +1843,8 @@ AirQualityMonitoring:
 }  
 ```  
 </details>  
-#### AirQualityMonitoring NGSI-LD规范化示例  
-下面是一个以JSON-LD格式规范化的AirQualityMonitoring的例子。当不使用选项时，这与NGSI-LD兼容，并返回单个实体的上下文数据。  
+#### 空气质量监测 NGSI-LD 标准化示例  
+下面是一个规范化 JSON-LD 格式的 AirQualityMonitoring 示例。当不使用选项时，它与 NGSI-LD 兼容，并返回单个实体的上下文数据。  
 <details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
@@ -1488,7 +2186,7 @@ AirQualityMonitoring:
 <!-- 90-FooterNotes -->  
 <!-- /90-FooterNotes -->  
 <!-- 95-Units -->  
-参见[常见问题10](https://smartdatamodels.org/index.php/faqs/)，以获得关于如何处理量级单位的答案。  
+请参阅 [FAQ 10](https://smartdatamodels.org/index.php/faqs/)，获取如何处理幅度单位的答案。  
 <!-- /95-Units -->  
 <!-- 97-LastFooter -->  
 ---  
