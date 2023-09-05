@@ -1,184 +1,329 @@
-<!-- 10-Header -->
-  
+<!-- 10-Header -->  
 [![Smart Data Models](https://smartdatamodels.org/wp-content/uploads/2022/01/SmartDataModels_logo.png "Logo")](https://smartdatamodels.org)  
+エンティティ騒音公害  
+==========<!-- /10-Header -->  
+<!-- 15-License -->  
+[オープン・ライセンス](https://github.com/smart-data-models//dataModel.Environment/blob/master/NoisePollution/LICENSE.md)  
+[文書は自動的に生成される](https://docs.google.com/presentation/d/e/2PACX-1vTs-Ng5dIAwkg91oTTUdt8ua7woBXhPnwavZ0FxgR8BsAI_Ek3C5q97Nd94HS8KhP-r_quD4H0fgyt3/pub?start=false&loop=false&delayms=3000#slide=id.gb715ace035_0_60)  
+<!-- /15-License -->  
+<!-- 20-Description -->  
+グローバルな説明**騒音公害データモデルは、（NoiseLevelObservationエンティティなどから得られる）特定の定時的な騒音測定値を、市域を参照する平均的なパラメータに統合し、騒音公害の状況や推移に関する、より都市に関連したデータを提供する**。  
+バージョン: 0.0.2  
+<!-- /20-Description -->  
+<!-- 30-PropertiesList -->  
 
-エンティティNoisePollution  
-====================
-<!-- /10-Header -->
-  
-<!-- 15-License -->
-  
+## プロパティのリスト  
 
-[オープンライセンス](https://github.com/smart-data-models//dataModel.Environment/blob/master/NoisePollution/LICENSE.md)  
-
-[ドキュメント自動生成](https://docs.google.com/presentation/d/e/2PACX-1vTs-Ng5dIAwkg91oTTUdt8ua7woBXhPnwavZ0FxgR8BsAI_Ek3C5q97Nd94HS8KhP-r_quD4H0fgyt3/pub?start=false&loop=false&delayms=3000#slide=id.gb715ace035_0_60)  
-<!-- /15-License -->
-  
-<!-- 20-Description -->
-  
-
-グローバルな説明**騒音公害データモデルは、特定の時間ごとの騒音測定値（NoiseLevelObservation エンティティなど）を都市部の平均パラメータに統合し、騒音公害の状況や進展について都市に関連したデータを提供します。  
-
-バージョン: 0.0.2  
-<!-- /20-Description -->
-  
-<!-- 30-PropertiesList -->
-  
-
-
-## プロパティ一覧  
-
-
-<sup><sub>[*] 属性にタイプがない場合、複数のタイプまたは異なるフォーマット/パターンを持つ可能性があるためです</sub></sup>。  
-- `LAeq2[number]`: 過去2時間の平均音圧レベル  
-- `LAmax2[number]`: 過去2時間に記録された最大騒音レベル  
-- `alternateName[string]`: この項目の別称  
-- `buildingsType[string]`: センサー設置時の測定エリア内の主な建物の種類  
-- `dataProvider[string]`: 調和されたデータエンティティの提供者を識別する一連の文字。  
-- `dateCreated[string]`: エンティティの作成タイムスタンプ。これは通常、ストレージプラットフォームによって割り当てられる。  
-- `dateModified[string]`: エンティティの最終更新のタイムスタンプ。これは通常、ストレージプラットフォームによって割り当てられる。  
-- `dateObservedFrom[string]`: 観測期間開始日時  
-- `dateObservedTo[string]`: 観測期間終了日時  
-- `description[string]`: このアイテムの説明  
-- `groundType[string]`: センサー設置時の測定エリア内の優勢地盤の種類  
-- `id[*]`: エンティティの一意な識別子  
-- `name[string]`: このアイテムの名称です。  
-- `noiseAnnoyanceIndex[number]`: 騒音の大きさによる指数（1〜10）。  
-- `noiseOrigin[string]`: センサー設置時の記録されたノイズの主な発生源（ソース  
-- `owner[array]`: 所有者の一意のIDを参照するJSONエンコードされた文字列を含むリストです。  
-- `seeAlso[*]`: 項目に関する追加リソースを指すURIのリスト。  
-- `source[string]`: エンティティデータの元のソースをURLで示す一連の文字。ソースプロバイダの完全修飾ドメイン名、またはソースオブジェクトのURLであることが推奨されます。  
-- `type[string]`: NGSIタイプ。NoisePollutionである必要があります。  
-- `wallsType[string]`: センサー設置時に測定範囲内で主流となっているファサード素材の種類  
-<!-- /30-PropertiesList -->
-  
-<!-- 35-RequiredProperties -->
-  
-
-必要なプロパティ  
-- `id`  
-- `type`  
-<!-- /35-RequiredProperties -->
-  
-<!-- 40-RequiredProperties -->
-  
-<!-- /40-RequiredProperties -->
-  
-<!-- 50-DataModelHeader -->
-  
-
-## プロパティのデータモデル記述  
-
-アルファベット順に並びます（クリックで詳細へ）  
-<!-- /50-DataModelHeader -->
-  
-<!-- 60-ModelYaml -->
-  
+<sup><sub>[*] 属性に型がない場合は、複数の型があるか、異なるフォーマット/パターンがある可能性があるためです</sub></sup>。  
+- `LAeq2[number]`: 過去2時間の平均騒音レベル  - `LAmax2[number]`: 過去2時間に記録された最大騒音レベル  - `address[object]`: 郵送先住所  . Model: [https://schema.org/address](https://schema.org/address)	- `addressCountry[string]`: 国。例えば、スペイン  . Model: [https://schema.org/addressCountry](https://schema.org/addressCountry)  
+	- `addressLocality[string]`: 番地がある地域と、その地域に含まれる地域  . Model: [https://schema.org/addressLocality](https://schema.org/addressLocality)  
+	- `addressRegion[string]`: その地域がある地域、またその国がある地域  . Model: [https://schema.org/addressRegion](https://schema.org/addressRegion)  
+	- `district[string]`: 地区とは行政区画の一種で、国によっては地方自治体によって管理されている。    
+	- `postOfficeBoxNumber[string]`: 私書箱の住所のための私書箱番号。例：03578  . Model: [https://schema.org/postOfficeBoxNumber](https://schema.org/postOfficeBoxNumber)  
+	- `postalCode[string]`: 郵便番号。例：24004  . Model: [https://schema.org/https://schema.org/postalCode](https://schema.org/https://schema.org/postalCode)  
+	- `streetAddress[string]`: 番地  . Model: [https://schema.org/streetAddress](https://schema.org/streetAddress)  
+- `alternateName[string]`: この項目の別名  - `areaServed[string]`: サービスまたは提供品が提供される地理的地域  . Model: [https://schema.org/Text](https://schema.org/Text)- `buildingsType[string]`: センサー設置時の測定エリア内の主な建物の種類  - `dataProvider[string]`: ハーモナイズされたデータ・エンティティの提供者を識別する一連の文字。  - `dateCreated[date-time]`: エンティティの作成タイムスタンプ。これは通常、ストレージプラットフォームによって割り当てられます。  - `dateModified[date-time]`: エンティティの最終変更のタイムスタンプ。これは通常、ストレージプラットフォームによって割り当てられる。  - `dateObservedFrom[date-time]`: 観測期間開始日時  - `dateObservedTo[date-time]`: 観測期間終了日時  - `description[string]`: この商品の説明  - `groundType[string]`: センサー設置時の測定エリアにおける優勢地盤の種類  - `id[*]`: エンティティの一意識別子  - `location[*]`: アイテムへの Geojson 参照。Point、LineString、Polygon、MultiPoint、MultiLineString、MultiPolygon のいずれか。  - `name[string]`: このアイテムの名前  - `noiseAnnoyanceIndex[number]`: 騒音の迷惑度による指数（1～10  - `noiseOrigin[string]`: センサー設置時に記録されたノイズの主な発生源（ソース  - `owner[array]`: 所有者の固有IDを参照するJSONエンコードされた文字列を含むリスト。  - `seeAlso[*]`: アイテムに関する追加リソースを指すURIのリスト  - `source[string]`: エンティティ・データの元のソースを URL として示す一連の文字。ソース・プロバイダの完全修飾ドメイン名、またはソース・オブジェクトの URL を推奨する。  - `type[string]`: NGSIタイプ。NoisePollutionでなければならない。  - `wallsType[string]`: センサー設置時に測定エリアで主流だったファサード素材の種類  <!-- /30-PropertiesList -->  
+<!-- 35-RequiredProperties -->  
+必須プロパティ  
+- `id`  - `type`  <!-- /35-RequiredProperties -->  
+<!-- 40-RequiredProperties -->  
+<!-- /40-RequiredProperties -->  
+<!-- 50-DataModelHeader -->  
+## プロパティのデータモデル記述  
+アルファベット順（クリックで詳細表示）  
+<!-- /50-DataModelHeader -->  
+<!-- 60-ModelYaml -->  
 <details><summary><strong>full yaml details</strong></summary>    
-
-```yaml  
+```yaml  
 NoisePollution:    
   description: 'Noise Pollution data model merges specific and punctual noise measurements (coming, e.g. from NoiseLevelObservation entities) into average parameters referred to city areas, providing a more city-related data about noise pollution status and evolution.'    
   properties:    
     LAeq2:    
-      description: 'Average sound level over the last 2 hours'    
+      description: Average sound level over the last 2 hours    
       type: number    
       x-ngsi:    
         type: Property    
     LAmax2:    
-      description: 'Maximum sound level recorded for the last 2 hours'    
+      description: Maximum sound level recorded for the last 2 hours    
       type: number    
       x-ngsi:    
         type: Property    
+    address:    
+      description: The mailing address    
+      properties:    
+        addressCountry:    
+          description: 'The country. For example, Spain'    
+          type: string    
+          x-ngsi:    
+            model: https://schema.org/addressCountry    
+            type: Property    
+        addressLocality:    
+          description: 'The locality in which the street address is, and which is in the region'    
+          type: string    
+          x-ngsi:    
+            model: https://schema.org/addressLocality    
+            type: Property    
+        addressRegion:    
+          description: 'The region in which the locality is, and which is in the country'    
+          type: string    
+          x-ngsi:    
+            model: https://schema.org/addressRegion    
+            type: Property    
+        district:    
+          description: 'A district is a type of administrative division that, in some countries, is managed by the local government'    
+          type: string    
+          x-ngsi:    
+            type: Property    
+        postOfficeBoxNumber:    
+          description: 'The post office box number for PO box addresses. For example, 03578'    
+          type: string    
+          x-ngsi:    
+            model: https://schema.org/postOfficeBoxNumber    
+            type: Property    
+        postalCode:    
+          description: 'The postal code. For example, 24004'    
+          type: string    
+          x-ngsi:    
+            model: https://schema.org/https://schema.org/postalCode    
+            type: Property    
+        streetAddress:    
+          description: The street address    
+          type: string    
+          x-ngsi:    
+            model: https://schema.org/streetAddress    
+            type: Property    
+        streetNr:    
+          description: Number identifying a specific property on a public street    
+          type: string    
+          x-ngsi:    
+            type: Property    
+      type: object    
+      x-ngsi:    
+        model: https://schema.org/address    
+        type: Property    
     alternateName:    
-      description: 'An alternative name for this item'    
+      description: An alternative name for this item    
       type: string    
       x-ngsi:    
         type: Property    
+    areaServed:    
+      description: The geographic area where a service or offered item is provided    
+      type: string    
+      x-ngsi:    
+        model: https://schema.org/Text    
+        type: Property    
     buildingsType:    
-      description: 'Type of predominant buildings within the measurement area at installation of the sensor'    
+      description: Type of predominant buildings within the measurement area at installation of the sensor    
       type: string    
       x-ngsi:    
         type: Property    
     dataProvider:    
-      description: 'A sequence of characters identifying the provider of the harmonised data entity.'    
+      description: A sequence of characters identifying the provider of the harmonised data entity    
       type: string    
       x-ngsi:    
         type: Property    
     dateCreated:    
-      description: 'Entity creation timestamp. This will usually be allocated by the storage platform.'    
+      description: Entity creation timestamp. This will usually be allocated by the storage platform    
       format: date-time    
       type: string    
       x-ngsi:    
         type: Property    
     dateModified:    
-      description: 'Timestamp of the last modification of the entity. This will usually be allocated by the storage platform.'    
+      description: Timestamp of the last modification of the entity. This will usually be allocated by the storage platform    
       format: date-time    
       type: string    
       x-ngsi:    
         type: Property    
     dateObservedFrom:    
-      description: 'Observation period start date and time'    
+      description: Observation period start date and time    
       format: date-time    
       type: string    
       x-ngsi:    
         type: Property    
     dateObservedTo:    
-      description: 'End date and time of the observation period'    
+      description: End date and time of the observation period    
       format: date-time    
       type: string    
       x-ngsi:    
         type: Property    
     description:    
-      description: 'A description of this item'    
+      description: A description of this item    
       type: string    
       x-ngsi:    
         type: Property    
     groundType:    
-      description: 'Type of predominant ground in the measurement area at installation of the sensor'    
+      description: Type of predominant ground in the measurement area at installation of the sensor    
       type: string    
       x-ngsi:    
         type: Property    
     id:    
-      anyOf: &noisepollution_-_properties_-_owner_-_items_-_anyof    
-        - description: 'Property. Identifier format of any NGSI entity'    
+      anyOf:    
+        - description: Identifier format of any NGSI entity    
           maxLength: 256    
           minLength: 1    
           pattern: ^[\w\-\.\{\}\$\+\*\[\]`|~^@!,:\\]+$    
           type: string    
-        - description: 'Property. Identifier format of any NGSI entity'    
+          x-ngsi:    
+            type: Property    
+        - description: Identifier format of any NGSI entity    
           format: uri    
           type: string    
-      description: 'Unique identifier of the entity'    
+          x-ngsi:    
+            type: Property    
+      description: Unique identifier of the entity    
       x-ngsi:    
         type: Property    
+    location:    
+      description: 'Geojson reference to the item. It can be Point, LineString, Polygon, MultiPoint, MultiLineString or MultiPolygon'    
+      oneOf:    
+        - bbox:    
+            items:    
+              type: number    
+            minItems: 4    
+            type: array    
+          coordinates:    
+            items:    
+              type: number    
+            minItems: 2    
+            type: array    
+          type:    
+            enum:    
+              - Point    
+            type: string    
+        - bbox:    
+            items:    
+              type: number    
+            minItems: 4    
+            type: array    
+          coordinates:    
+            items:    
+              items:    
+                type: number    
+              minItems: 2    
+              type: array    
+            minItems: 2    
+            type: array    
+          type:    
+            enum:    
+              - LineString    
+            type: string    
+        - bbox:    
+            items:    
+              type: number    
+            minItems: 4    
+            type: array    
+          coordinates:    
+            items:    
+              items:    
+                items:    
+                  type: number    
+                minItems: 2    
+                type: array    
+              minItems: 4    
+              type: array    
+            type: array    
+          type:    
+            enum:    
+              - Polygon    
+            type: string    
+        - bbox:    
+            items:    
+              type: number    
+            minItems: 4    
+            type: array    
+          coordinates:    
+            items:    
+              items:    
+                type: number    
+              minItems: 2    
+              type: array    
+            type: array    
+          type:    
+            enum:    
+              - MultiPoint    
+            type: string    
+        - bbox:    
+            items:    
+              type: number    
+            minItems: 4    
+            type: array    
+          coordinates:    
+            items:    
+              items:    
+                items:    
+                  type: number    
+                minItems: 2    
+                type: array    
+              minItems: 2    
+              type: array    
+            type: array    
+          type:    
+            enum:    
+              - MultiLineString    
+            type: string    
+        - bbox:    
+            items:    
+              type: number    
+            minItems: 4    
+            type: array    
+          coordinates:    
+            items:    
+              items:    
+                items:    
+                  items:    
+                  minItems: 2    
+                  type: array    
+                minItems: 4    
+                type: array    
+              type: array    
+            type: array    
+          type:    
+            enum:    
+              - MultiPolygon    
+            type: string    
+      x-ngsi:    
+        type: GeoProperty    
     name:    
-      description: 'The name of this item.'    
+      description: The name of this item    
       type: string    
       x-ngsi:    
         type: Property    
     noiseAnnoyanceIndex:    
-      description: 'Index (1 to 10) according to noise annoyance level'    
+      description: Index (1 to 10) according to noise annoyance level    
       maximum: 10    
       minimum: 1    
       type: number    
       x-ngsi:    
         type: Property    
     noiseOrigin:    
-      description: 'Main origin (source) of the recorded noise at installation of the sensor'    
+      description: Main origin (source) of the recorded noise at installation of the sensor    
       type: string    
       x-ngsi:    
         type: Property    
     owner:    
-      description: 'A List containing a JSON encoded sequence of characters referencing the unique Ids of the owner(s)'    
+      description: A List containing a JSON encoded sequence of characters referencing the unique Ids of the owner(s)    
       items:    
-        anyOf: *noisepollution_-_properties_-_owner_-_items_-_anyof    
-        description: 'Property. Unique identifier of the entity'    
+        anyOf:    
+          - description: Identifier format of any NGSI entity    
+            maxLength: 256    
+            minLength: 1    
+            pattern: ^[\w\-\.\{\}\$\+\*\[\]`|~^@!,:\\]+$    
+            type: string    
+            x-ngsi:    
+              type: Property    
+          - description: Identifier format of any NGSI entity    
+            format: uri    
+            type: string    
+            x-ngsi:    
+              type: Property    
+        description: Unique identifier of the entity    
+        x-ngsi:    
+          type: Property    
       type: array    
       x-ngsi:    
         type: Property    
     seeAlso:    
-      description: 'list of uri pointing to additional resources about the item'    
+      description: list of uri pointing to additional resources about the item    
       oneOf:    
         - items:    
             format: uri    
@@ -190,19 +335,19 @@ NoisePollution:
       x-ngsi:    
         type: Property    
     source:    
-      description: 'A sequence of characters giving the original source of the entity data as a URL. Recommended to be the fully qualified domain name of the source provider, or the URL to the source object.'    
+      description: 'A sequence of characters giving the original source of the entity data as a URL. Recommended to be the fully qualified domain name of the source provider, or the URL to the source object'    
       type: string    
       x-ngsi:    
         type: Property    
     type:    
-      description: 'NGSI type. it has to be NoisePollution'    
+      description: NGSI type. it has to be NoisePollution    
       enum:    
         - NoisePollution    
       type: string    
       x-ngsi:    
         type: Property    
     wallsType:    
-      description: 'Facade material types dominant in the measurement area at installation of the sensor'    
+      description: Facade material types dominant in the measurement area at installation of the sensor    
       type: string    
       x-ngsi:    
         type: Property    
@@ -214,29 +359,20 @@ NoisePollution:
   x-disclaimer: 'Redistribution and use in source and binary forms, with or without modification, are permitted  provided that the license conditions are met. Copyleft (c) 2022 Contributors to Smart Data Models Program'    
   x-license-url: https://github.com/smart-data-models/dataModel.Environment/blob/master/NoisePollution/LICENSE.md    
   x-model-schema: https://smart-data-models.github.io/dataModel.Environment/NoisePollution/schema.json    
-  x-model-tags: ""    
+  x-model-tags: GreenMov    
   x-version: 0.0.2    
 ```  
 </details>    
-<!-- /60-ModelYaml -->
-  
-<!-- 70-MiddleNotes -->
-  
-<!-- /70-MiddleNotes -->
-  
-<!-- 80-Examples -->
-  
-
-## ペイロードの例  
-
-#### NoisePollution NGSI-v2 key-value の例。  
-
-NoisePollutionをJSON-LD形式でkey-valuesにした例です。これは `options=keyValues` を使用した場合に NGSI-v2 と互換性があり、個々のエンティティのコンテキストデータが返される。  
+<!-- /60-ModelYaml -->  
+<!-- 70-MiddleNotes -->  
+<!-- /70-MiddleNotes -->  
+<!-- 80-Examples -->  
+## ペイロードの例  
+#### NoisePollution NGSI-v2 キー値の例  
+以下は、JSON-LD形式のNoisePollutionのkey-valuesの例である。これはNGSI-v2と互換性があり、`options=keyValues`を使用すると個々のエンティティのコンテキストデータを返す。  
 <details><summary><strong>show/hide example</strong></summary>    
-
-```json  
-
-{  
+```json  
+{  
   "id": "urn:ngsi-ld:NoisePollution:France-NoisePollution-12345_2022-07-01T18:00:00_2022-07-01T00:00:00",  
   "type": "NoisePollution",  
   "Laeq2": 85,  
@@ -273,15 +409,11 @@ NoisePollutionをJSON-LD形式でkey-valuesにした例です。これは `optio
 }  
 ```  
 </details>  
-
-#### NoisePollution NGSI-v2 正規化例  
-
-NoisePollution を JSON-LD 形式で正規化した例を示します。これはオプションを使用しない場合、NGSI-v2と互換性があり、個々のエンティティのコンテキストデータを返します。  
+#### NoisePollution NGSI-v2 正規化例  
+以下は、正規化されたJSON-LD形式のNoisePollutionの例である。これは、オプションを使用しない場合、NGSI-v2と互換性があり、個々のエンティティのコンテキストデータを返します。  
 <details><summary><strong>show/hide example</strong></summary>    
-
-```json  
-
-{  
+```json  
+{  
   "id": "urn:ngsi-ld:NoisePollution:France-NoisePollution-12345_2022-07-01T18:00:00_2022-07-01T00:00:00",  
   "type": "NoisePollution",  
   "address": {  
@@ -354,15 +486,11 @@ NoisePollution を JSON-LD 形式で正規化した例を示します。これ�
 }  
 ```  
 </details>  
-
-#### NoisePollution NGSI-LD key-value の例  
-
-NoisePollutionをJSON-LD形式でkey-valuesにした例です。これは `options=keyValues` を使用した場合にNGSI-LDと互換性があり、個々のエンティティのコンテキストデータを返します。  
+#### NoisePollution NGSI-LD キー値の例  
+以下はNoisePollutionをJSON-LD形式でkey-valuesとした例である。これはNGSI-LDと互換性があり、`options=keyValues`を使うと個々のエンティティのコンテキストデータを返す。  
 <details><summary><strong>show/hide example</strong></summary>    
-
-```json  
-
-{  
+```json  
+{  
   "id": "urn:ngsi-ld:NoisePollution:France-NoisePollution-12345_2022-07-01T18:00:00_2022-07-01T00:00:00",  
   "type": "NoisePollution",  
   "Laeq2": 85,  
@@ -391,21 +519,16 @@ NoisePollutionをJSON-LD形式でkey-valuesにした例です。これは `optio
   "noiseOrigin": "traffic",  
   "wallsType": "glass",  
   "@context": [  
-  
     "https://raw.githubusercontent.com/smart-data-models/dataModel.Environment/master/context.jsonld"  
   ]  
 }  
 ```  
 </details>  
-
-#### NoisePollution NGSI-LD 正規化例  
-
-NoisePollution を JSON-LD 形式で正規化した例を示します。これはオプションを使用しない場合のNGSI-LDと互換性があり、個々のエンティティのコンテキストデータを返します。  
+#### NoisePollution NGSI-LD 正規化例  
+以下は、正規化されたJSON-LD形式のNoisePollutionの例である。これは、オプションを使用しない場合のNGSI-LDと互換性があり、個々のエンティティのコンテキストデータを返します。  
 <details><summary><strong>show/hide example</strong></summary>    
-
-```json  
-
-{  
+```json  
+{  
   "id": "urn:ngsi-ld:NoisePollution:France-NoisePollution-12345_2022-07-01T18:00:00_2022-07-01T00:00:00",  
   "type": "NoisePollution",  
   "address": {  
@@ -482,26 +605,16 @@ NoisePollution を JSON-LD 形式で正規化した例を示します。これ�
     "value": 85  
   },  
   "@context": [  
-  
     "https://raw.githubusercontent.com/smart-data-models/dataModel.Environment/master/context.jsonld"  
   ]  
 }  
 ```  
-</details><!-- /80-Examples -->
-  
-<!-- 90-FooterNotes -->
-  
-<!-- /90-FooterNotes -->
-  
-<!-- 95-Units -->
-  
-
-マグニチュード単位の扱いについては、[FAQ 10](https://smartdatamodels.org/index.php/faqs/)を参照してください。  
-<!-- /95-Units -->
-  
-<!-- 97-LastFooter -->
-  
+</details><!-- /80-Examples -->  
+<!-- 90-FooterNotes -->  
+<!-- /90-FooterNotes -->  
+<!-- 95-Units -->  
+マグニチュード単位の扱い方については、[FAQ 10](https://smartdatamodels.org/index.php/faqs/)を参照のこと。  
+<!-- /95-Units -->  
+<!-- 97-LastFooter -->  
 ---  
-
-[Smart Data Models](https://smartdatamodels.org) +++ [Contribution Manual](https://bit.ly/contribution_manual) +++ [About](https://bit.ly/Introduction_SDM)<!-- /97-LastFooter -->
-  
+[Smart Data Models](https://smartdatamodels.org) +++ [Contribution Manual](https://bit.ly/contribution_manual) +++ [About](https://bit.ly/Introduction_SDM)<!-- /97-LastFooter -->  
