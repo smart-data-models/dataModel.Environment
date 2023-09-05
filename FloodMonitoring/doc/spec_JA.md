@@ -1,84 +1,40 @@
-<!-- 10-Header -->
-  
+<!-- 10-Header -->  
 [![Smart Data Models](https://smartdatamodels.org/wp-content/uploads/2022/01/SmartDataModels_logo.png "Logo")](https://smartdatamodels.org)  
+エンティティ洪水モニタリング  
+==============<!-- /10-Header -->  
+<!-- 15-License -->  
+[オープン・ライセンス](https://github.com/smart-data-models//dataModel.Environment/blob/master/FloodMonitoring/LICENSE.md)  
+[文書は自動的に生成される](https://docs.google.com/presentation/d/e/2PACX-1vTs-Ng5dIAwkg91oTTUdt8ua7woBXhPnwavZ0FxgR8BsAI_Ek3C5q97Nd94HS8KhP-r_quD4H0fgyt3/pub?start=false&loop=false&delayms=3000#slide=id.gb715ace035_0_60)  
+<!-- /15-License -->  
+<!-- 20-Description -->  
+グローバルな説明**ある水塊（河川、湖沼など）の水流・水位による浸水レベルを表現することを目的とした洪水センサーのデータモデル。  
+バージョン: 0.0.1  
+<!-- /20-Description -->  
+<!-- 30-PropertiesList -->  
 
-エンティティFloodMonitoring（フラッドモニタリング  
-================================
-<!-- /10-Header -->
-  
-<!-- 15-License -->
-  
+## プロパティのリスト  
 
-[オープンライセンス](https://github.com/smart-data-models//dataModel.Environment/blob/master/FloodMonitoring/LICENSE.md)  
-
-[文書が自動的に生成されます](https://docs.google.com/presentation/d/e/2PACX-1vTs-Ng5dIAwkg91oTTUdt8ua7woBXhPnwavZ0FxgR8BsAI_Ek3C5q97Nd94HS8KhP-r_quD4H0fgyt3/pub?start=false&loop=false&delayms=3000#slide=id.gb715ace035_0_60)  
-<!-- /15-License -->
-  
-<!-- 20-Description -->
-  
-
-グローバルな記述：**ある水塊（河川、湖沼など）の水流・水位による浸水レベルを表現するための洪水センサーのデータモデルです。  
-
-バージョン：0.0.1  
-<!-- /20-Description -->
-  
-<!-- 30-PropertiesList -->
-  
-
-
-## プロパティ一覧  
-
-
-<sup><sub>[*] 属性に型がない場合は、複数の型や異なるフォーマット/パターンを持つ可能性があるためです</sub></sup>。  
-- `address[object]`: 郵送先住所  . Model: [https://schema.org/address](https://schema.org/address)
-- `alertLevel[number]`: この観測に対応するセンシングステーションに設定された基準アラートレベル閾値。現在のレベルがアラートレベルしきい値を超えた場合、アラート信号が生成されます。  . Model: [https://schema.org/Number](https://schema.org/Number)
-- `alternateName[string]`: このアイテムの別称  
-- `areaServed[string]`: サービスまたは提供されるアイテムが提供される地理的な地域  . Model: [https://schema.org/Text](https://schema.org/Text)
-- `currentLevel[number]`: この観測に対応するセンシングステーションが示す現在の浸水レベル。referenceLevel と measuredDistance を用いて計算される（currentLevel = referenceLevel - measuredDistance）。  . Model: [https://schema.org/Number](https://schema.org/Number)
-- `dangerLevel[number]`: この観測に対応するセンシングステーションに設定された基準危険度閾値。現在のレベルが危険レベル閾値を超えた場合、洪水レベルの状態は危険と判定される。  . Model: [https://schema.org/Number](https://schema.org/Number)
-- `dataProvider[string]`: 調和されたデータエンティティの提供者を識別する一連の文字。  
-- `dateCreated[string]`: エンティティの作成タイムスタンプ。これは通常、ストレージプラットフォームによって割り当てられる。  
-- `dateModified[string]`: エンティティの最終更新のタイムスタンプ。これは通常、ストレージプラットフォームによって割り当てられる。  
-- `description[string]`: このアイテムの説明  
-- `floodLevelStatus[string]`: 洪水感知装置によって与えられる洪水レベルの状態表示。現在のレベルが危険レベルの閾値より高い場合、ステータスは危険と表示される。  . Model: [https://schema.org/Text](https://schema.org/Text)
-- `id[*]`: エンティティの一意な識別子  
-- `location[*]`: アイテムへの Geojson 参照。Point, LineString, Polygon, MultiPoint, MultiLineString, MultiPolygon のいずれかである。  
-- `measuredDistance[number]`: センサーが測定した、センサー先端から水面上までの距離を記述する。  . Model: [https://schema.org/Number](https://schema.org/Number)
-- `name[string]`: この項目の名称です。  
-- `observationDateTime[string]`: 最後に報告された観測時刻。  . Model: [https://schema.org/DateTime](https://schema.org/DateTime)
-- `owner[array]`: 所有者の固有IDを参照するJSONエンコードされた文字列を含むリストです。  
-- `referenceLevel[number]`: 川底からセンサーの先端までの垂直距離を記述する。  . Model: [https://schema.org/Number](https://schema.org/Number)
-- `seeAlso[*]`: アイテムに関する追加リソースを指す URI のリスト。  
-- `source[string]`: エンティティデータの元のソースをURLとして与える一連の文字。ソースプロバイダの完全修飾ドメイン名、またはソースオブジェクトのURLであることが推奨されます。  
-- `stationID[string]`: この観測に対応するステーションに割り当てられたユニークな匿名識別子である。  . Model: [https://schema.org/Text](https://schema.org/Text)
-- `type[string]`: FloodMonitoringでなければならない。NGSI Entityタイプです。  
-<!-- /30-PropertiesList -->
-  
-<!-- 35-RequiredProperties -->
-  
-
-必須プロパティ  
-- `id`  
-- `type`  
-<!-- /35-RequiredProperties -->
-  
-<!-- 40-RequiredProperties -->
-  
-<!-- /40-RequiredProperties -->
-  
-<!-- 50-DataModelHeader -->
-  
-
-## プロパティのデータモデル記述  
-
-アルファベット順（クリックで詳細表示）  
-<!-- /50-DataModelHeader -->
-  
-<!-- 60-ModelYaml -->
-  
+<sup><sub>[*] 属性に型がない場合は、複数の型があるか、異なるフォーマット/パターンがある可能性があるためです</sub></sup>。  
+- `address[object]`: 郵送先住所  . Model: [https://schema.org/address](https://schema.org/address)	- `addressCountry[string]`: 国。例えば、スペイン  . Model: [https://schema.org/addressCountry](https://schema.org/addressCountry)  
+	- `addressLocality[string]`: 番地がある地域と、その地域に含まれる地域  . Model: [https://schema.org/addressLocality](https://schema.org/addressLocality)  
+	- `addressRegion[string]`: その地域がある地域、またその国がある地域  . Model: [https://schema.org/addressRegion](https://schema.org/addressRegion)  
+	- `district[string]`: 地区とは行政区画の一種で、国によっては地方自治体によって管理されている。    
+	- `postOfficeBoxNumber[string]`: 私書箱の住所のための私書箱番号。例：03578  . Model: [https://schema.org/postOfficeBoxNumber](https://schema.org/postOfficeBoxNumber)  
+	- `postalCode[string]`: 郵便番号。例：24004  . Model: [https://schema.org/https://schema.org/postalCode](https://schema.org/https://schema.org/postalCode)  
+	- `streetAddress[string]`: 番地  . Model: [https://schema.org/streetAddress](https://schema.org/streetAddress)  
+- `alertLevel[number]`: この観測に対応するセンシングステーションに設定された基準アラートレベルしきい値。現在のレベルがアラートレベルしきい値を超えた場合、アラート信号が生成される。  . Model: [https://schema.org/Number](https://schema.org/Number)- `alternateName[string]`: この項目の別名  - `areaServed[string]`: サービスまたは提供品が提供される地理的地域  . Model: [https://schema.org/Text](https://schema.org/Text)- `currentLevel[number]`: この観測に対応するセンシングステーションが示す現在の浸水レベル、referenceLevelとmeasureDistanceを用いて計算(currentLevel = referenceLevel - measuredDistance)  . Model: [https://schema.org/Number](https://schema.org/Number)- `dangerLevel[number]`: この観測に対応するセンシングステーションに設定された基準危険レベル閾値。現在の水位が危険水位しきい値を超えた場合、水位状態は危険と判定される。  . Model: [https://schema.org/Number](https://schema.org/Number)- `dataProvider[string]`: ハーモナイズされたデータ・エンティティの提供者を識別する一連の文字。  - `dateCreated[date-time]`: エンティティの作成タイムスタンプ。これは通常、ストレージプラットフォームによって割り当てられます。  - `dateModified[date-time]`: エンティティの最終変更のタイムスタンプ。これは通常、ストレージプラットフォームによって割り当てられる。  - `description[string]`: この商品の説明  - `floodLevelStatus[string]`: 洪水検知装置によって与えられる洪水レベルの状態表示。現在のレベルが危険レベルのしきい値より高い場合、ステータスは危険と表示されます。  . Model: [https://schema.org/Text](https://schema.org/Text)- `id[*]`: エンティティの一意識別子  - `location[*]`: アイテムへの Geojson 参照。Point、LineString、Polygon、MultiPoint、MultiLineString、MultiPolygon のいずれか。  - `measuredDistance[number]`: センサーの先端から水面上方までの距離を表す。  . Model: [https://schema.org/Number](https://schema.org/Number)- `name[string]`: このアイテムの名前  - `observationDateTime[date-time]`: 最終観測報告時刻  . Model: [https://schema.org/DateTime](https://schema.org/DateTime)- `owner[array]`: 所有者の固有IDを参照するJSONエンコードされた文字列を含むリスト。  - `referenceLevel[number]`: 川底からセンサー先端までの垂直距離を表す  . Model: [https://schema.org/Number](https://schema.org/Number)- `seeAlso[*]`: アイテムに関する追加リソースを指すURIのリスト  - `source[string]`: エンティティ・データの元のソースを URL として示す一連の文字。ソース・プロバイダの完全修飾ドメイン名、またはソース・オブジェクトの URL を推奨する。  - `stationID[string]`: この観測に対応するステーションに割り当てられた一意の匿名識別子。  . Model: [https://schema.org/Text](https://schema.org/Text)- `type[string]`: FloodMonitoringでなければならない。NGSIエンティティタイプ  <!-- /30-PropertiesList -->  
+<!-- 35-RequiredProperties -->  
+必須プロパティ  
+- `id`  - `type`  <!-- /35-RequiredProperties -->  
+<!-- 40-RequiredProperties -->  
+<!-- /40-RequiredProperties -->  
+<!-- 50-DataModelHeader -->  
+## プロパティのデータモデル記述  
+アルファベット順（クリックで詳細表示）  
+<!-- /50-DataModelHeader -->  
+<!-- 60-ModelYaml -->  
 <details><summary><strong>full yaml details</strong></summary>    
-
-```yaml  
+```yaml  
 FloodMonitoring:    
   description: 'Flood Sensor Data Model intended to represent the level of flooding w.r.t water flow/level at a certain water mass(river, lake,etc.)..'    
   properties:    
@@ -86,35 +42,57 @@ FloodMonitoring:
       description: The mailing address    
       properties:    
         addressCountry:    
-          description: 'Property. The country. For example, Spain. Model:''https://schema.org/addressCountry'''    
+          description: 'The country. For example, Spain'    
           type: string    
+          x-ngsi:    
+            model: https://schema.org/addressCountry    
+            type: Property    
         addressLocality:    
-          description: 'Property. The locality in which the street address is, and which is in the region. Model:''https://schema.org/addressLocality'''    
+          description: 'The locality in which the street address is, and which is in the region'    
           type: string    
+          x-ngsi:    
+            model: https://schema.org/addressLocality    
+            type: Property    
         addressRegion:    
-          description: 'Property. The region in which the locality is, and which is in the country. Model:''https://schema.org/addressRegion'''    
+          description: 'The region in which the locality is, and which is in the country'    
           type: string    
+          x-ngsi:    
+            model: https://schema.org/addressRegion    
+            type: Property    
         district:    
-          description: 'A district is a type of administrative division that, in some countries, is managed by the local government.'    
+          description: 'A district is a type of administrative division that, in some countries, is managed by the local government'    
           type: string    
+          x-ngsi:    
+            type: Property    
         postOfficeBoxNumber:    
-          description: 'Property. The post office box number for PO box addresses. For example, 03578. Model:''https://schema.org/postOfficeBoxNumber'''    
+          description: 'The post office box number for PO box addresses. For example, 03578'    
           type: string    
+          x-ngsi:    
+            model: https://schema.org/postOfficeBoxNumber    
+            type: Property    
         postalCode:    
-          description: 'Property. The postal code. For example, 24004. Model:''https://schema.org/https://schema.org/postalCode'''    
+          description: 'The postal code. For example, 24004'    
           type: string    
+          x-ngsi:    
+            model: https://schema.org/https://schema.org/postalCode    
+            type: Property    
         streetAddress:    
-          description: 'Property. The street address. Model:''https://schema.org/streetAddress'''    
+          description: The street address    
           type: string    
+          x-ngsi:    
+            model: https://schema.org/streetAddress    
+            type: Property    
         streetNr:    
-          description: Number identifying a specific property on a public street.    
+          description: Number identifying a specific property on a public street    
           type: string    
+          x-ngsi:    
+            type: Property    
       type: object    
       x-ngsi:    
         model: https://schema.org/address    
         type: Property    
     alertLevel:    
-      description: Reference alert level threshold value set for the sensing station corresponding to this observation. An Alert signal is generated if the current level crosses the alert level threshold value.    
+      description: Reference alert level threshold value set for the sensing station corresponding to this observation. An Alert signal is generated if the current level crosses the alert level threshold value    
       type: number    
       x-ngsi:    
         model: https://schema.org/Number    
@@ -131,30 +109,30 @@ FloodMonitoring:
         model: https://schema.org/Text    
         type: Property    
     currentLevel:    
-      description: 'Current flooding level indicated by the sensing station corresponding to this observation, computed using referenceLevel and measuredDistance(currentLevel = referenceLevel - measuredDistance).'    
+      description: 'Current flooding level indicated by the sensing station corresponding to this observation, computed using referenceLevel and measuredDistance(currentLevel = referenceLevel - measuredDistance)'    
       type: number    
       x-ngsi:    
         model: https://schema.org/Number    
         type: Property    
     dangerLevel:    
-      description: Reference danger level threshold value set for the sensing station corresponding to this observation. Flood level status is marked danger if the current level crosses the danger level threshold value.    
+      description: Reference danger level threshold value set for the sensing station corresponding to this observation. Flood level status is marked danger if the current level crosses the danger level threshold value    
       type: number    
       x-ngsi:    
         model: https://schema.org/Number    
         type: Property    
     dataProvider:    
-      description: A sequence of characters identifying the provider of the harmonised data entity.    
+      description: A sequence of characters identifying the provider of the harmonised data entity    
       type: string    
       x-ngsi:    
         type: Property    
     dateCreated:    
-      description: Entity creation timestamp. This will usually be allocated by the storage platform.    
+      description: Entity creation timestamp. This will usually be allocated by the storage platform    
       format: date-time    
       type: string    
       x-ngsi:    
         type: Property    
     dateModified:    
-      description: Timestamp of the last modification of the entity. This will usually be allocated by the storage platform.    
+      description: Timestamp of the last modification of the entity. This will usually be allocated by the storage platform    
       format: date-time    
       type: string    
       x-ngsi:    
@@ -165,28 +143,32 @@ FloodMonitoring:
       x-ngsi:    
         type: Property    
     floodLevelStatus:    
-      description: Flood level status indication given by the flood sensing device. The status is marked Danger if the current level is higher than the danger level threshold value.    
+      description: Flood level status indication given by the flood sensing device. The status is marked Danger if the current level is higher than the danger level threshold value    
       type: string    
       x-ngsi:    
         model: https://schema.org/Text    
         type: Property    
     id:    
-      anyOf: &floodmonitoring_-_properties_-_owner_-_items_-_anyof    
-        - description: Property. Identifier format of any NGSI entity    
+      anyOf:    
+        - description: Identifier format of any NGSI entity    
           maxLength: 256    
           minLength: 1    
           pattern: ^[\w\-\.\{\}\$\+\*\[\]`|~^@!,:\\]+$    
           type: string    
-        - description: Property. Identifier format of any NGSI entity    
+          x-ngsi:    
+            type: Property    
+        - description: Identifier format of any NGSI entity    
           format: uri    
           type: string    
+          x-ngsi:    
+            type: Property    
       description: Unique identifier of the entity    
       x-ngsi:    
         type: Property    
     location:    
       description: 'Geojson reference to the item. It can be Point, LineString, Polygon, MultiPoint, MultiLineString or MultiPolygon'    
       oneOf:    
-        - description: GeoProperty. Geojson reference to the item. Point    
+        - description: Geojson reference to the item. Point    
           properties:    
             bbox:    
               items:    
@@ -207,7 +189,9 @@ FloodMonitoring:
             - coordinates    
           title: GeoJSON Point    
           type: object    
-        - description: GeoProperty. Geojson reference to the item. LineString    
+          x-ngsi:    
+            type: GeoProperty    
+        - description: Geojson reference to the item. LineString    
           properties:    
             bbox:    
               items:    
@@ -231,7 +215,9 @@ FloodMonitoring:
             - coordinates    
           title: GeoJSON LineString    
           type: object    
-        - description: GeoProperty. Geojson reference to the item. Polygon    
+          x-ngsi:    
+            type: GeoProperty    
+        - description: Geojson reference to the item. Polygon    
           properties:    
             bbox:    
               items:    
@@ -257,7 +243,9 @@ FloodMonitoring:
             - coordinates    
           title: GeoJSON Polygon    
           type: object    
-        - description: GeoProperty. Geojson reference to the item. MultiPoint    
+          x-ngsi:    
+            type: GeoProperty    
+        - description: Geojson reference to the item. MultiPoint    
           properties:    
             bbox:    
               items:    
@@ -280,7 +268,9 @@ FloodMonitoring:
             - coordinates    
           title: GeoJSON MultiPoint    
           type: object    
-        - description: GeoProperty. Geojson reference to the item. MultiLineString    
+          x-ngsi:    
+            type: GeoProperty    
+        - description: Geojson reference to the item. MultiLineString    
           properties:    
             bbox:    
               items:    
@@ -306,7 +296,9 @@ FloodMonitoring:
             - coordinates    
           title: GeoJSON MultiLineString    
           type: object    
-        - description: GeoProperty. Geojson reference to the item. MultiLineString    
+          x-ngsi:    
+            type: GeoProperty    
+        - description: Geojson reference to the item. MultiLineString    
           properties:    
             bbox:    
               items:    
@@ -334,21 +326,23 @@ FloodMonitoring:
             - coordinates    
           title: GeoJSON MultiPolygon    
           type: object    
+          x-ngsi:    
+            type: GeoProperty    
       x-ngsi:    
         type: GeoProperty    
     measuredDistance:    
-      description: 'Describes the distance measured by the sensor, from the sensor tip to the upper surface of water.'    
+      description: 'Describes the distance measured by the sensor, from the sensor tip to the upper surface of water'    
       type: number    
       x-ngsi:    
         model: https://schema.org/Number    
         type: Property    
     name:    
-      description: The name of this item.    
+      description: The name of this item    
       type: string    
       x-ngsi:    
         type: Property    
     observationDateTime:    
-      description: Last reported time of observation.    
+      description: Last reported time of observation    
       format: date-time    
       type: string    
       x-ngsi:    
@@ -357,13 +351,27 @@ FloodMonitoring:
     owner:    
       description: A List containing a JSON encoded sequence of characters referencing the unique Ids of the owner(s)    
       items:    
-        anyOf: *floodmonitoring_-_properties_-_owner_-_items_-_anyof    
-        description: Property. Unique identifier of the entity    
+        anyOf:    
+          - description: Identifier format of any NGSI entity    
+            maxLength: 256    
+            minLength: 1    
+            pattern: ^[\w\-\.\{\}\$\+\*\[\]`|~^@!,:\\]+$    
+            type: string    
+            x-ngsi:    
+              type: Property    
+          - description: Identifier format of any NGSI entity    
+            format: uri    
+            type: string    
+            x-ngsi:    
+              type: Property    
+        description: Unique identifier of the entity    
+        x-ngsi:    
+          type: Property    
       type: array    
       x-ngsi:    
         type: Property    
     referenceLevel:    
-      description: Describes the vertical distance from river bed to sensor tip.    
+      description: Describes the vertical distance from river bed to sensor tip    
       type: number    
       x-ngsi:    
         model: https://schema.org/Number    
@@ -381,18 +389,18 @@ FloodMonitoring:
       x-ngsi:    
         type: Property    
     source:    
-      description: 'A sequence of characters giving the original source of the entity data as a URL. Recommended to be the fully qualified domain name of the source provider, or the URL to the source object.'    
+      description: 'A sequence of characters giving the original source of the entity data as a URL. Recommended to be the fully qualified domain name of the source provider, or the URL to the source object'    
       type: string    
       x-ngsi:    
         type: Property    
     stationID:    
-      description: A unique anonymous identifier assigned to the station corresponding to this observation.    
+      description: A unique anonymous identifier assigned to the station corresponding to this observation    
       type: string    
       x-ngsi:    
         model: https://schema.org/Text    
         type: Property    
     type:    
-      description: It has to be FloodMonitoring. NGSI Entity type.    
+      description: It has to be FloodMonitoring. NGSI Entity type    
       enum:    
         - FloodMonitoring    
       type: string    
@@ -410,25 +418,16 @@ FloodMonitoring:
   x-version: 0.0.1    
 ```  
 </details>    
-<!-- /60-ModelYaml -->
-  
-<!-- 70-MiddleNotes -->
-  
-<!-- /70-MiddleNotes -->
-  
-<!-- 80-Examples -->
-  
-
-## ペイロードの例  
-
-#### FloodMonitoring NGSI-v2 key-value 例．  
-
-FloodMonitoringをJSON-LD形式でkey-valuesとした例を示します。これは、`options=keyValues`を使用した場合にNGSI-v2と互換性があり、個々のエンティティのコンテキストデータを返します。  
+<!-- /60-ModelYaml -->  
+<!-- 70-MiddleNotes -->  
+<!-- /70-MiddleNotes -->  
+<!-- 80-Examples -->  
+## ペイロードの例  
+#### 洪水モニタリング NGSI-v2 キー値の例  
+以下は、JSON-LD形式のFloodMonitoringのkey-valuesの例である。これはNGSI-v2と互換性があり、`options=keyValues`を使用すると、個々のエンティティのコンテキストデータを返す。  
 <details><summary><strong>show/hide example</strong></summary>    
-
-```json  
-
-{  
+```json  
+{  
   "id": "urn:ngsi-ld:FloodMonitoring:Pune-NoiseLevelObserved",  
   "type": "FloodMonitoring",  
   "alertLevel": 10.00,  
@@ -442,15 +441,11 @@ FloodMonitoringをJSON-LD形式でkey-valuesとした例を示します。これ
 }  
 ```  
 </details>  
-
-#### 洪水モニタリング NGSI-v2 正規化例  
-
-JSON-LD形式で正規化されたFloodMonitoringの例を示します。これは、オプションを使用しない場合のNGSI-v2と互換性があり、個々のエンティティのコンテキストデータを返します。  
+#### 洪水モニタリング NGSI-v2 正規化例  
+以下は、正規化された JSON-LD 形式の FloodMonitoring の例である。これは、オプションを使用しない場合、NGSI-v2と互換性があり、個々のエンティティのコンテキストデータを返します。  
 <details><summary><strong>show/hide example</strong></summary>    
-
-```json  
-
-{  
+```json  
+{  
   "id": "urn:ngsi-ld:FloodMonitoring:Pune-NoiseLevelObserved",  
   "type": "FloodMonitoring",  
   "alertLevel": {  
@@ -488,15 +483,11 @@ JSON-LD形式で正規化されたFloodMonitoringの例を示します。これ�
 }  
 ```  
 </details>  
-
-#### 洪水監視 NGSI-LD キー値例  
-
-FloodMonitoringをJSON-LD形式でkey-valuesとした例を示します。これは、`options=keyValues`を使用した場合にNGSI-LDと互換性があり、個々のエンティティのコンテキストデータを返します。  
+#### 洪水モニタリング NGSI-LD キー値の例  
+以下は、JSON-LD形式のFloodMonitoringのkey-valuesの例である。これはNGSI-LDと互換性があり、`options=keyValues`を使用すると、個々のエンティティのコンテキストデータを返す。  
 <details><summary><strong>show/hide example</strong></summary>    
-
-```json  
-
-{  
+```json  
+{  
     "alertLevel": 10.0,  
     "currentLevel": 0.98,  
     "dangerLevel": 25.0,  
@@ -506,21 +497,16 @@ FloodMonitoringをJSON-LD形式でkey-valuesとした例を示します。これ
     "referenceLevel": 4.2,  
     "stationID": "FWR013",  
     "@context": [  
-      
         "https://raw.githubusercontent.com/smart-data-models/dataModel.Environment/master/context.jsonld"  
     ]  
 }  
 ```  
 </details>  
-
-#### 洪水モニタリング NGSI-LD 正規化例  
-
-FloodMonitoringをJSON-LD形式で正規化した例を示します。これはオプションを使用しない場合のNGSI-LDと互換性があり、個々のエンティティのコンテキストデータを返します。  
+#### 洪水モニタリング NGSI-LD 正規化例  
+以下は、正規化された JSON-LD 形式の FloodMonitoring の例である。これは、オプションを使用しない場合、NGSI-LDと互換性があり、個々のエンティティのコンテキストデータを返します。  
 <details><summary><strong>show/hide example</strong></summary>    
-
-```json  
-
-{  
+```json  
+{  
     "id": "urn:ngsi-ld:FloodMonitoring:Pune-NoiseLevelObserved",  
     "type": "FloodMonitoring",  
     "alertLevel": {  
@@ -562,26 +548,16 @@ FloodMonitoringをJSON-LD形式で正規化した例を示します。これは�
         "value": "FWR013"  
     },  
     "@context": [  
-      
         "https://raw.githubusercontent.com/smart-data-models/dataModel.Environment/master/context.jsonld"  
     ]  
 }  
 ```  
-</details><!-- /80-Examples -->
-  
-<!-- 90-FooterNotes -->
-  
-<!-- /90-FooterNotes -->
-  
-<!-- 95-Units -->
-  
-
-マグニチュード単位の扱いについては、[FAQ 10](https://smartdatamodels.org/index.php/faqs/)を参照してください。  
-<!-- /95-Units -->
-  
-<!-- 97-LastFooter -->
-  
+</details><!-- /80-Examples -->  
+<!-- 90-FooterNotes -->  
+<!-- /90-FooterNotes -->  
+<!-- 95-Units -->  
+マグニチュード単位の扱い方については、[FAQ 10](https://smartdatamodels.org/index.php/faqs/)を参照のこと。  
+<!-- /95-Units -->  
+<!-- 97-LastFooter -->  
 ---  
-
-[Smart Data Models](https://smartdatamodels.org) +++ [Contribution Manual](https://bit.ly/contribution_manual) +++ [About](https://bit.ly/Introduction_SDM)<!-- /97-LastFooter -->
-  
+[Smart Data Models](https://smartdatamodels.org) +++ [Contribution Manual](https://bit.ly/contribution_manual) +++ [About](https://bit.ly/Introduction_SDM)<!-- /97-LastFooter -->  
