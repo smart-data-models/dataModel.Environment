@@ -1,188 +1,170 @@
-<!-- 10-Header -->
-  
+<!-- 10-Header -->  
 [![Smart Data Models](https://smartdatamodels.org/wp-content/uploads/2022/01/SmartDataModels_logo.png "Logo")](https://smartdatamodels.org)  
+エンティティ大気質予報  
+===========<!-- /10-Header -->  
+<!-- 15-License -->  
+[オープン・ライセンス](https://github.com/smart-data-models//dataModel.Environment/blob/master/AirQualityForecast/LICENSE.md)  
+[文書は自動的に生成される](https://docs.google.com/presentation/d/e/2PACX-1vTs-Ng5dIAwkg91oTTUdt8ua7woBXhPnwavZ0FxgR8BsAI_Ek3C5q97Nd94HS8KhP-r_quD4H0fgyt3/pub?start=false&loop=false&delayms=3000#slide=id.gb715ace035_0_60)  
+<!-- /15-License -->  
+<!-- 20-Description -->  
+グローバルな記述：**ある期間に有効な大気の質の状態の予測**。  
+バージョン: 0.0.2  
+<!-- /20-Description -->  
+<!-- 30-PropertiesList -->  
 
-エンティティ空気質予報（AirQualityForecast  
-==============================
-<!-- /10-Header -->
-  
-<!-- 15-License -->
-  
+## プロパティのリスト  
 
-[オープンライセンス](https://github.com/smart-data-models//dataModel.Environment/blob/master/AirQualityForecast/LICENSE.md)  
-
-[ドキュメント自動生成](https://docs.google.com/presentation/d/e/2PACX-1vTs-Ng5dIAwkg91oTTUdt8ua7woBXhPnwavZ0FxgR8BsAI_Ek3C5q97Nd94HS8KhP-r_quD4H0fgyt3/pub?start=false&loop=false&delayms=3000#slide=id.gb715ace035_0_60)  
-<!-- /15-License -->
-  
-<!-- 20-Description -->
-  
-
-グローバルな記述です。**ある期間に有効な大気の状態の予報**。  
-
-バージョン: 0.0.1  
-<!-- /20-Description -->
-  
-<!-- 30-PropertiesList -->
-  
-
-
-## プロパティ一覧  
-
-
-<sup><sub>[*] 属性にタイプがない場合、複数のタイプまたは異なるフォーマット/パターンを持つ可能性があるためです</sub></sup>。  
-- `address[object]`: 郵送先住所  . Model: [https://schema.org/address](https://schema.org/address)
-- `airQualityIndex[integer]`: 大気質指標とは、ある日の大気の質を表す数値です。  . Model: [https://schema.org/Number](https://schema.org/Number)
-- `airQualityLevel[string]`: 観測された大気質に対応する健康への懸念の総合的な質的レベル  . Model: [https://schema.org/Tex ](https://schema.org/Tex )
-- `alternateName[string]`: この項目の別称  
-- `areaServed[string]`: サービスまたは提供品が提供される地理的な地域  . Model: [https://schema.org/Text](https://schema.org/Text)
-- `co2[number]`: 二酸化炭素の予測  
-- `dataProvider[string]`: 調和されたデータエンティティの提供者を識別する一連の文字。  
-- `dateCreated[string]`: エンティティの作成タイムスタンプ。これは通常、ストレージプラットフォームによって割り当てられる。  
-- `dateModified[string]`: エンティティの最終更新のタイムスタンプ。これは通常、ストレージプラットフォームによって割り当てられる。  
-- `description[string]`: このアイテムの説明  
-- `id[*]`: エンティティの一意な識別子  
-- `location[*]`: アイテムへの Geojson リファレンス。Point, LineString, Polygon, MultiPoint, MultiLineString, MultiPolygonのいずれかを指定することができる。  
-- `name[string]`: このアイテムの名称です。  
-- `no2[number]`: 二酸化窒素の予測値  
-- `nox[number]`: その他の窒素酸化物予測  
-- `o3[number]`: オゾン予想  
-- `owner[array]`: 所有者の一意のIDを参照するJSONエンコードされた文字列を含むリストです。  
-- `pm10[number]`: 粒子状物質 直径10μm以下  
-- `pm25[number]`: 粒子状物質 直径2.5μm以下  
-- `precipitation[number]`: 水量雨量  . Model: [https://schema.org/Number](https://schema.org/Number)
-- `relativeHumidity[number]`: 空気中の湿度  . Model: [https://schema.org/Number](https://schema.org/Number)
-- `seeAlso[*]`: 項目に関する追加リソースを指すURIのリスト。  
-- `so2[number]`: 二酸化硫黄を検出  
-- `source[string]`: エンティティデータの元のソースをURLで示す一連の文字。ソースプロバイダの完全修飾ドメイン名、またはソースオブジェクトのURLであることが推奨されます。  
-- `temperature[number]`: アイテムの温度  
-- `type[string]`: NGSI Entity type: AirQualityForecastでなければならない。  
-- `validFrom[string]`: ISO8601形式で表したこの予報の有効期間の開始日  
-- `windSpeed[number]`: 風の強さ  . Model: [http//schema.org/Number](http//schema.org/Number)
-<!-- /30-PropertiesList -->
-  
-<!-- 35-RequiredProperties -->
-  
-
-必要なプロパティ  
-- `id`  
-- `type`  
-<!-- /35-RequiredProperties -->
-  
-<!-- 40-RequiredProperties -->
-  
-<!-- /40-RequiredProperties -->
-  
-<!-- 50-DataModelHeader -->
-  
-
-## プロパティのデータモデル記述  
-
-アルファベット順に並びます（クリックで詳細へ）  
-<!-- /50-DataModelHeader -->
-  
-<!-- 60-ModelYaml -->
-  
+<sup><sub>[*] 属性に型がない場合は、複数の型があるか、異なるフォーマット/パターンがある可能性があるためです</sub></sup>。  
+- `address[object]`: 郵送先住所  . Model: [https://schema.org/address](https://schema.org/address)	- `addressCountry[string]`: 国。例えば、スペイン  . Model: [https://schema.org/addressCountry](https://schema.org/addressCountry)  
+	- `addressLocality[string]`: 番地がある地域と、その地域に含まれる地域  . Model: [https://schema.org/addressLocality](https://schema.org/addressLocality)  
+	- `addressRegion[string]`: その地域がある地域、またその国がある地域  . Model: [https://schema.org/addressRegion](https://schema.org/addressRegion)  
+	- `district[string]`: 地区とは行政区画の一種で、国によっては地方自治体によって管理されている。    
+	- `postOfficeBoxNumber[string]`: 私書箱の住所のための私書箱番号。例：03578  . Model: [https://schema.org/postOfficeBoxNumber](https://schema.org/postOfficeBoxNumber)  
+	- `postalCode[string]`: 郵便番号。例：24004  . Model: [https://schema.org/https://schema.org/postalCode](https://schema.org/https://schema.org/postalCode)  
+	- `streetAddress[string]`: 番地  . Model: [https://schema.org/streetAddress](https://schema.org/streetAddress)  
+- `airQualityIndex[number]`: 大気の質指数とは、その日の大気の質を表す数値。  . Model: [https://schema.org/Number](https://schema.org/Number)- `airQualityLevel[string]`: 観察された大気の質に対応する健康への懸念の全体的な質的レベル  . Model: [https://schema.org/Text](https://schema.org/Text)- `alternateName[string]`: この項目の別名  - `areaServed[string]`: サービスまたは提供品が提供される地理的地域  . Model: [https://schema.org/Text](https://schema.org/Text)- `co2[number]`: 二酸化炭素予測  - `dataProvider[string]`: ハーモナイズされたデータ・エンティティの提供者を識別する一連の文字。  - `dateCreated[date-time]`: エンティティの作成タイムスタンプ。これは通常、ストレージプラットフォームによって割り当てられます。  - `dateModified[date-time]`: エンティティの最終変更のタイムスタンプ。これは通常、ストレージプラットフォームによって割り当てられる。  - `description[string]`: この商品の説明  - `id[*]`: エンティティの一意識別子  - `location[*]`: アイテムへの Geojson 参照。Point、LineString、Polygon、MultiPoint、MultiLineString、MultiPolygon のいずれか。  - `name[string]`: このアイテムの名前  - `no2[number]`: 二酸化窒素予測  - `nox[number]`: その他の窒素酸化物  - `o3[number]`: オゾン予想  - `owner[array]`: 所有者の固有IDを参照するJSONエンコードされた文字列を含むリスト。  - `pm10[number]`: 直径10マイクロメートル以下の粒子状物質  - `pm25[number]`: 直径2.5マイクロメートル以下の粒子状物質  - `precipitation[number]`: 雨量  . Model: [https://schema.org/Number](https://schema.org/Number)- `relativeHumidity[number]`: 空気中の湿度  . Model: [https://schema.org/Number](https://schema.org/Number)- `seeAlso[*]`: アイテムに関する追加リソースを指すURIのリスト  - `so2[number]`: 二酸化硫黄検出  - `source[string]`: エンティティ・データの元のソースを URL として示す一連の文字。ソース・プロバイダの完全修飾ドメイン名、またはソース・オブジェクトの URL を推奨する。  - `temperature[number]`: 商品の温度  - `type[string]`: NGSIエンティティタイプ：AirQualityForecastでなければならない。  - `validFrom[date-time]`: この予報の有効期間の開始日をISO8601形式で表す。  - `validTo[date-time]`: ISO8601形式でのこの予報の有効期間の終了日  - `validity[string]`: この予測の有効期間をISO8601の時間間隔として含む。  . Model: [https://schema.org/Text](https://schema.org/Text)- `windSpeed[number]`: 風の強さ  . Model: [http//schema.org/Number](http//schema.org/Number)<!-- /30-PropertiesList -->  
+<!-- 35-RequiredProperties -->  
+必須プロパティ  
+- `id`  - `type`  <!-- /35-RequiredProperties -->  
+<!-- 40-RequiredProperties -->  
+<!-- /40-RequiredProperties -->  
+<!-- 50-DataModelHeader -->  
+## プロパティのデータモデル記述  
+アルファベット順（クリックで詳細表示）  
+<!-- /50-DataModelHeader -->  
+<!-- 60-ModelYaml -->  
 <details><summary><strong>full yaml details</strong></summary>    
-
-```yaml  
+```yaml  
 AirQualityForecast:    
-  description: 'A forecast of air quality conditions valid during a period'    
+  description: A forecast of air quality conditions valid during a period    
   properties:    
     address:    
-      description: 'The mailing address'    
+      description: The mailing address    
       properties:    
         addressCountry:    
-          description: 'Property. The country. For example, Spain. Model:''https://schema.org/addressCountry'''    
+          description: 'The country. For example, Spain'    
           type: string    
+          x-ngsi:    
+            model: https://schema.org/addressCountry    
+            type: Property    
         addressLocality:    
-          description: 'Property. The locality in which the street address is, and which is in the region. Model:''https://schema.org/addressLocality'''    
+          description: 'The locality in which the street address is, and which is in the region'    
           type: string    
+          x-ngsi:    
+            model: https://schema.org/addressLocality    
+            type: Property    
         addressRegion:    
-          description: 'Property. The region in which the locality is, and which is in the country. Model:''https://schema.org/addressRegion'''    
+          description: 'The region in which the locality is, and which is in the country'    
           type: string    
+          x-ngsi:    
+            model: https://schema.org/addressRegion    
+            type: Property    
+        district:    
+          description: 'A district is a type of administrative division that, in some countries, is managed by the local government'    
+          type: string    
+          x-ngsi:    
+            type: Property    
         postOfficeBoxNumber:    
-          description: 'Property. The post office box number for PO box addresses. For example, 03578. Model:''https://schema.org/postOfficeBoxNumber'''    
+          description: 'The post office box number for PO box addresses. For example, 03578'    
           type: string    
+          x-ngsi:    
+            model: https://schema.org/postOfficeBoxNumber    
+            type: Property    
         postalCode:    
-          description: 'Property. The postal code. For example, 24004. Model:''https://schema.org/https://schema.org/postalCode'''    
+          description: 'The postal code. For example, 24004'    
           type: string    
+          x-ngsi:    
+            model: https://schema.org/https://schema.org/postalCode    
+            type: Property    
         streetAddress:    
-          description: 'Property. The street address. Model:''https://schema.org/streetAddress'''    
+          description: The street address    
           type: string    
+          x-ngsi:    
+            model: https://schema.org/streetAddress    
+            type: Property    
+        streetNr:    
+          description: Number identifying a specific property on a public street    
+          type: string    
+          x-ngsi:    
+            type: Property    
       type: object    
       x-ngsi:    
         model: https://schema.org/address    
         type: Property    
     airQualityIndex:    
-      description: 'Air quality index is a number used to report the quality of the air on any given day.'    
+      description: Air quality index is a number used to report the quality of the air on any given day    
       minimum: 0    
-      type: integer    
+      type: number    
       x-ngsi:    
         model: https://schema.org/Number    
         type: Property    
     airQualityLevel:    
-      description: 'Overall qualitative level of health concern corresponding to the air quality observed'    
+      description: Overall qualitative level of health concern corresponding to the air quality observed    
       minLength: 2    
       type: string    
       x-ngsi:    
-        model: 'https://schema.org/Tex '    
+        model: https://schema.org/Text    
         type: Property    
     alternateName:    
-      description: 'An alternative name for this item'    
+      description: An alternative name for this item    
       type: string    
       x-ngsi:    
         type: Property    
     areaServed:    
-      description: 'The geographic area where a service or offered item is provided'    
+      description: The geographic area where a service or offered item is provided    
       type: string    
       x-ngsi:    
         model: https://schema.org/Text    
         type: Property    
     co2:    
-      description: 'Carbon Dioxide forecasted'    
+      description: Carbon Dioxide forecasted    
       minimum: 0    
       type: number    
       x-ngsi:    
         type: Property    
     dataProvider:    
-      description: 'A sequence of characters identifying the provider of the harmonised data entity.'    
+      description: A sequence of characters identifying the provider of the harmonised data entity    
       type: string    
       x-ngsi:    
         type: Property    
     dateCreated:    
-      description: 'Entity creation timestamp. This will usually be allocated by the storage platform.'    
+      description: Entity creation timestamp. This will usually be allocated by the storage platform    
       format: date-time    
       type: string    
       x-ngsi:    
         type: Property    
     dateModified:    
-      description: 'Timestamp of the last modification of the entity. This will usually be allocated by the storage platform.'    
+      description: Timestamp of the last modification of the entity. This will usually be allocated by the storage platform    
       format: date-time    
       type: string    
       x-ngsi:    
         type: Property    
     description:    
-      description: 'A description of this item'    
+      description: A description of this item    
       type: string    
       x-ngsi:    
         type: Property    
     id:    
-      anyOf: &airqualityforecast_-_properties_-_owner_-_items_-_anyof    
-        - description: 'Property. Identifier format of any NGSI entity'    
+      anyOf:    
+        - description: Identifier format of any NGSI entity    
           maxLength: 256    
           minLength: 1    
           pattern: ^[\w\-\.\{\}\$\+\*\[\]`|~^@!,:\\]+$    
           type: string    
-        - description: 'Property. Identifier format of any NGSI entity'    
+          x-ngsi:    
+            type: Property    
+        - description: Identifier format of any NGSI entity    
           format: uri    
           type: string    
-      description: 'Unique identifier of the entity'    
+          x-ngsi:    
+            type: Property    
+      description: Unique identifier of the entity    
       x-ngsi:    
         type: Property    
     location:    
       description: 'Geojson reference to the item. It can be Point, LineString, Polygon, MultiPoint, MultiLineString or MultiPolygon'    
       oneOf:    
-        - description: 'GeoProperty. Geojson reference to the item. Point'    
+        - description: Geojson reference to the item. Point    
           properties:    
             bbox:    
               items:    
@@ -201,9 +183,11 @@ AirQualityForecast:
           required:    
             - type    
             - coordinates    
-          title: 'GeoJSON Point'    
+          title: GeoJSON Point    
           type: object    
-        - description: 'GeoProperty. Geojson reference to the item. LineString'    
+          x-ngsi:    
+            type: GeoProperty    
+        - description: Geojson reference to the item. LineString    
           properties:    
             bbox:    
               items:    
@@ -225,9 +209,11 @@ AirQualityForecast:
           required:    
             - type    
             - coordinates    
-          title: 'GeoJSON LineString'    
+          title: GeoJSON LineString    
           type: object    
-        - description: 'GeoProperty. Geojson reference to the item. Polygon'    
+          x-ngsi:    
+            type: GeoProperty    
+        - description: Geojson reference to the item. Polygon    
           properties:    
             bbox:    
               items:    
@@ -251,9 +237,11 @@ AirQualityForecast:
           required:    
             - type    
             - coordinates    
-          title: 'GeoJSON Polygon'    
+          title: GeoJSON Polygon    
           type: object    
-        - description: 'GeoProperty. Geojson reference to the item. MultiPoint'    
+          x-ngsi:    
+            type: GeoProperty    
+        - description: Geojson reference to the item. MultiPoint    
           properties:    
             bbox:    
               items:    
@@ -274,9 +262,11 @@ AirQualityForecast:
           required:    
             - type    
             - coordinates    
-          title: 'GeoJSON MultiPoint'    
+          title: GeoJSON MultiPoint    
           type: object    
-        - description: 'GeoProperty. Geojson reference to the item. MultiLineString'    
+          x-ngsi:    
+            type: GeoProperty    
+        - description: Geojson reference to the item. MultiLineString    
           properties:    
             bbox:    
               items:    
@@ -300,9 +290,11 @@ AirQualityForecast:
           required:    
             - type    
             - coordinates    
-          title: 'GeoJSON MultiLineString'    
+          title: GeoJSON MultiLineString    
           type: object    
-        - description: 'GeoProperty. Geojson reference to the item. MultiLineString'    
+          x-ngsi:    
+            type: GeoProperty    
+        - description: Geojson reference to the item. MultiLineString    
           properties:    
             bbox:    
               items:    
@@ -328,63 +320,79 @@ AirQualityForecast:
           required:    
             - type    
             - coordinates    
-          title: 'GeoJSON MultiPolygon'    
+          title: GeoJSON MultiPolygon    
           type: object    
+          x-ngsi:    
+            type: GeoProperty    
       x-ngsi:    
         type: GeoProperty    
     name:    
-      description: 'The name of this item.'    
+      description: The name of this item    
       type: string    
       x-ngsi:    
         type: Property    
     no2:    
-      description: 'Nitrogen dioxide forecasted'    
+      description: Nitrogen dioxide forecasted    
       minimum: 0    
       type: number    
       x-ngsi:    
         type: Property    
     nox:    
-      description: 'Other Nitrogen oxides forecasted'    
+      description: Other Nitrogen oxides forecasted    
       minimum: 0    
       type: number    
       x-ngsi:    
         type: Property    
     o3:    
-      description: 'Ozone forecasted'    
+      description: Ozone forecasted    
       minimum: 0    
       type: number    
       x-ngsi:    
         type: Property    
     owner:    
-      description: 'A List containing a JSON encoded sequence of characters referencing the unique Ids of the owner(s)'    
+      description: A List containing a JSON encoded sequence of characters referencing the unique Ids of the owner(s)    
       items:    
-        anyOf: *airqualityforecast_-_properties_-_owner_-_items_-_anyof    
-        description: 'Property. Unique identifier of the entity'    
+        anyOf:    
+          - description: Identifier format of any NGSI entity    
+            maxLength: 256    
+            minLength: 1    
+            pattern: ^[\w\-\.\{\}\$\+\*\[\]`|~^@!,:\\]+$    
+            type: string    
+            x-ngsi:    
+              type: Property    
+          - description: Identifier format of any NGSI entity    
+            format: uri    
+            type: string    
+            x-ngsi:    
+              type: Property    
+        description: Unique identifier of the entity    
+        x-ngsi:    
+          type: Property    
       type: array    
       x-ngsi:    
         type: Property    
     pm10:    
-      description: 'Particulate matter 10 micrometers or less in diameter'    
+      description: Particulate matter 10 micrometers or less in diameter    
       minimum: 0    
       type: number    
       x-ngsi:    
         type: Property    
     pm25:    
-      description: 'Particulate matter 2.5 micrometers or less in diameter'    
+      description: Particulate matter 2.5 micrometers or less in diameter    
       minimum: 0    
       type: number    
       x-ngsi:    
         type: Property    
     precipitation:    
-      description: 'Amount of water rain'    
+      description: Amount of water rain    
       minimum: 0    
       type: number    
       x-ngsi:    
         model: https://schema.org/Number    
         type: Property    
-        units: 'Liters per square meter.'    
+        units: Liters per square meter    
     relativeHumidity:    
-      description: 'Humidity in the Air'    
+      description: Humidity in the Air    
       maximum: 1    
       minimum: 0    
       type: number    
@@ -392,7 +400,7 @@ AirQualityForecast:
         model: https://schema.org/Number    
         type: Property    
     seeAlso:    
-      description: 'list of uri pointing to additional resources about the item'    
+      description: list of uri pointing to additional resources about the item    
       oneOf:    
         - items:    
             format: uri    
@@ -404,18 +412,18 @@ AirQualityForecast:
       x-ngsi:    
         type: Property    
     so2:    
-      description: 'Sulfur dioxide detected'    
+      description: Sulfur dioxide detected    
       minimum: 0    
       type: number    
       x-ngsi:    
         type: Property    
     source:    
-      description: 'A sequence of characters giving the original source of the entity data as a URL. Recommended to be the fully qualified domain name of the source provider, or the URL to the source object.'    
+      description: 'A sequence of characters giving the original source of the entity data as a URL. Recommended to be the fully qualified domain name of the source provider, or the URL to the source object'    
       type: string    
       x-ngsi:    
         type: Property    
     temperature:    
-      description: 'Temperature of the item'    
+      description: Temperature of the item    
       type: number    
       x-ngsi:    
         type: Property    
@@ -427,13 +435,25 @@ AirQualityForecast:
       x-ngsi:    
         type: Property    
     validFrom:    
-      description: 'The start of the validity period for this forecast as a ISO8601 format'    
+      description: The start of the validity period for this forecast as a ISO8601 format    
       format: date-time    
       type: string    
       x-ngsi:    
         type: Property    
+    validTo:    
+      description: The end of the validity period for this forecast as a ISO8601 format    
+      format: date-time    
+      type: string    
+      x-ngsi:    
+        type: Property    
+    validity:    
+      description: Includes the validity period for this forecast as a ISO8601 time interval    
+      type: string    
+      x-ngsi:    
+        model: https://schema.org/Text    
+        type: Property    
     windSpeed:    
-      description: 'Intensity of the wind'    
+      description: Intensity of the wind    
       minimum: 0    
       type: number    
       x-ngsi:    
@@ -444,32 +464,23 @@ AirQualityForecast:
     - type    
   type: object    
   x-derived-from: ""    
-  x-disclaimer: 'Redistribution and use in source and binary forms, with or without modification, are permitted  provided that the license conditions are met. Copyleft (c) 2021 Contributors to Smart Data Models Program'    
+  x-disclaimer: 'Redistribution and use in source and binary forms, with or without modification, are permitted  provided that the license conditions are met. Copyleft (c) 2022 Contributors to Smart Data Models Program'    
   x-license-url: https://github.com/smart-data-models/dataModel.Environment/blob/master/AirQualityForecast/LICENSE.md    
   x-model-schema: https://smart-data-models.github.io/dataModel.Environment/AirQualityForecast/schema.json    
   x-model-tags: GreenMov    
-  x-version: 0.0.1    
+  x-version: 0.0.2    
 ```  
 </details>    
-<!-- /60-ModelYaml -->
-  
-<!-- 70-MiddleNotes -->
-  
-<!-- /70-MiddleNotes -->
-  
-<!-- 80-Examples -->
-  
-
-## ペイロードの例  
-
-#### AirQualityForecast NGSI-v2キーバリューの例  
-
-AirQualityForecastをJSON-LD形式でkey-valuesとした例である。これは、`options=keyValues`を使用した場合にNGSI-v2と互換性があり、個々のエンティティのコンテキストデータを返します。  
+<!-- /60-ModelYaml -->  
+<!-- 70-MiddleNotes -->  
+<!-- /70-MiddleNotes -->  
+<!-- 80-Examples -->  
+## ペイロードの例  
+#### 大気質予測 NGSI-v2 キー値の例  
+以下は、JSON-LD形式のAirQualityForecastのkey-valuesの例である。これはNGSI-v2と互換性があり、`options=keyValues`を使用すると、個々のエンティティのコンテキストデータを返す。  
 <details><summary><strong>show/hide example</strong></summary>    
-
-```json  
-
-{  
+```json  
+{  
   "id": "urn:ngsi-ld:AirQualityForecast:France-AirQualityForecast-12345_2022-07-01T18:00:00_2022-07-01T00:00:00",  
   "type": "AirQualityForecast",  
   "address": {  
@@ -482,14 +493,8 @@ AirQualityForecastをJSON-LD形式でkey-valuesとした例である。これは
   "airQualityLevel": "moderate",  
   "co2": 45,  
   "dataProvider": "IMREDD_UCA_Nice",  
-  "dateIssued": {  
-    "@type": "DateTime",  
-    "@value": "2022-07-01T10:40:01.00Z"  
-  },  
-  "dateRetrieved": {  
-    "@type": "DateTime",  
-    "@value": "2022-07-01T12:57:24.00Z"  
-  },  
+  "dateIssued": "2022-07-01T10:40:01.00Z",  
+  "dateRetrieved": "2022-07-01T12:57:24.00Z",  
   "location": {  
     "coordinates": [  
       7.2032497427380235,  
@@ -514,15 +519,11 @@ AirQualityForecastをJSON-LD形式でkey-valuesとした例である。これは
 }  
 ```  
 </details>  
-
-#### AirQualityForecast NGSI-v2 正規化例  
-
-以下は、AirQualityForecastをJSON-LD形式で正規化した例である。これは、オプションを使用しない場合、NGSI-v2と互換性があり、個々のエンティティのコンテキストデータを返します。  
+#### 大気質予測 NGSI-v2 正規化例  
+以下は、正規化されたJSON-LD形式のAirQualityForecastの例である。これは、オプションを使用しない場合、NGSI-v2と互換性があり、個々のエンティティのコンテキスト・データを返します。  
 <details><summary><strong>show/hide example</strong></summary>    
-
-```json  
-
-{  
+```json  
+{  
   "id": "urn:ngsi-ld:AirQualityForecast:France-AirQualityForecast-12345_2022-07-01T18:00:00_2022-07-01T00:00:00",  
   "type": "AirQualityForecast",  
   "address": {  
@@ -633,15 +634,11 @@ AirQualityForecastをJSON-LD形式でkey-valuesとした例である。これは
 }  
 ```  
 </details>  
-
-#### AirQualityForecast NGSI-LD key-value の例  
-
-AirQualityForecastをJSON-LD形式でkey-valuesとした例です。これは、`options=keyValues`を使用した場合にNGSI-LDと互換性があり、個々のエンティティのコンテキストデータを返します。  
+#### 大気質予測 NGSI-LD キー値の例  
+JSON-LD形式のAirQualityForecastのkey-valuesの例である。これは NGSI-LD と互換性があり、`options=keyValues` を使うと個々のエンティティのコンテキストデータを返す。  
 <details><summary><strong>show/hide example</strong></summary>    
-
-```json  
-
-{  
+```json  
+{  
   "id": "urn:ngsi-ld:AirQualityForecast:France-AirQualityForecast-12345_2022-07-01T18:00:00_2022-07-01T00:00:00",  
   "type": "AirQualityForecast",  
   "address": {  
@@ -654,14 +651,8 @@ AirQualityForecastをJSON-LD形式でkey-valuesとした例です。これは、
   "airQualityLevel": "moderate",  
   "co2": 45,  
   "dataProvider": "IMREDD_UCA_Nice",  
-  "dateIssued": {  
-    "@type": "DateTime",  
-    "@value": "2022-07-01T10:40:01.00Z"  
-  },  
-  "dateRetrieved": {  
-    "@type": "DateTime",  
-    "@value": "2022-07-01T12:57:24.00Z"  
-  },  
+  "dateIssued": "2022-07-01T10:40:01.00Z",  
+  "dateRetrieved": "2022-07-01T12:57:24.00Z",  
   "location": {  
     "coordinates": [  
       7.2032497427380235,  
@@ -684,21 +675,16 @@ AirQualityForecastをJSON-LD形式でkey-valuesとした例です。これは、
   "validity": "2022-07-01T17:00:00+01:00/2022-07-01T18:00:00+01:00",  
   "windSpeed": 0.64,  
   "@context": [  
-  
     "https://raw.githubusercontent.com/smart-data-models/dataModel.Environment/master/context.jsonld"  
   ]  
 }  
 ```  
 </details>  
-
-#### AirQualityForecast NGSI-LD 正規化例  
-
-AirQualityForecastをJSON-LD形式で正規化した例です。これはオプションを使用しない場合、NGSI-LDと互換性があり、個々のエンティティのコンテキストデータを返します。  
+#### 大気質予測 NGSI-LD 正規化例  
+以下は、正規化されたJSON-LD形式のAirQualityForecastの例である。これは、オプションを使用しない場合はNGSI-LDと互換性があり、個々のエンティティのコンテキストデータを返します。  
 <details><summary><strong>show/hide example</strong></summary>    
-
-```json  
-
-{  
+```json  
+{  
   "id": "urn:ngsi-ld:AirQualityForecast:France-AirQualityForecast-12345_2022-07-01T18:00:00_2022-07-01T00:00:00",  
   "type": "AirQualityForecast",  
   "address": {  
@@ -820,26 +806,16 @@ AirQualityForecastをJSON-LD形式で正規化した例です。これはオプ�
     "value": "outdoor"  
   },  
   "@context": [  
-  
     "https://raw.githubusercontent.com/smart-data-models/dataModel.Environment/master/context.jsonld"  
   ]  
 }  
 ```  
-</details><!-- /80-Examples -->
-  
-<!-- 90-FooterNotes -->
-  
-<!-- /90-FooterNotes -->
-  
-<!-- 95-Units -->
-  
-
-マグニチュード単位の扱いについては、[FAQ 10](https://smartdatamodels.org/index.php/faqs/)を参照してください。  
-<!-- /95-Units -->
-  
-<!-- 97-LastFooter -->
-  
+</details><!-- /80-Examples -->  
+<!-- 90-FooterNotes -->  
+<!-- /90-FooterNotes -->  
+<!-- 95-Units -->  
+マグニチュード単位の扱い方については、[FAQ 10](https://smartdatamodels.org/index.php/faqs/)を参照のこと。  
+<!-- /95-Units -->  
+<!-- 97-LastFooter -->  
 ---  
-
-[Smart Data Models](https://smartdatamodels.org) +++ [Contribution Manual](https://bit.ly/contribution_manual) +++ [About](https://bit.ly/Introduction_SDM)<!-- /97-LastFooter -->
-  
+[Smart Data Models](https://smartdatamodels.org) +++ [Contribution Manual](https://bit.ly/contribution_manual) +++ [About](https://bit.ly/Introduction_SDM)<!-- /97-LastFooter -->  
