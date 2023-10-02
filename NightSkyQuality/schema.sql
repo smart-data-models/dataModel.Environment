@@ -1,3 +1,3 @@
-/* (Beta) Export of data model NightSkyQuality of the subject dataModel.Environment for a postgreSQL database. Pending translation of enumerations and multityped attributes */
+/* (Beta) Export of data model NightSkyQuality of the subject dataModel.Environment for a PostgreSQL database. Pending translation of enumerations and multityped attributes */
 
-CREATE TABLE NightSkyQuality (address json, alternateName text, ambientTemperature text, areaServed text, battery text, batteryLevel json, clouds text, dataProvider text, dateCreated timestamp, dateModified timestamp, description text, id text, location json, name text, owner json, seeAlso json, sigmaMagnitude text, skyMagnitude text, skyTemperature text, source text);
+CREATE TABLE NightSkyQuality (address JSON, alternateName TEXT, ambientTemperature NUMERIC, areaServed TEXT, battery NUMERIC, clouds TEXT, dataProvider TEXT, dateCreated TIMESTAMP, dateModified TIMESTAMP, description TEXT, name TEXT, owner JSON, sigmaMagnitude NUMERIC, skyMagnitude NUMERIC, skyTemperature NUMERIC, source TEXT);
