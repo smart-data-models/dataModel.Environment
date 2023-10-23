@@ -24,7 +24,7 @@
     "maxOverTime": 59.2,
     "minOverTime": 50.5
   },
-  "aqiMajorPollutant": "No2",
+  "aqiMajorPollutant": "no2",
   "areaServed": "Bangalore",
   "arsenicTSA": {
     "avgOverTime": 0.4,
