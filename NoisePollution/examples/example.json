@@ -13,14 +13,8 @@
   },
   "buildingsType": "residential",
   "dataProvider": "IMREDD_UCA_Nice",
-  "dateObservedFrom": {
-    "@type": "DateTime",
-    "@value": "2022-07-01T10:40:01.00Z"
-  },
-  "dateObservedTo": {
-    "@type": "DateTime",
-    "@value": "2022-07-01T12:40:01.00Z"
-  },
+  "dateObservedFrom": "2022-07-01T10:40:01.00Z",
+  "dateObservedTo": "2022-07-01T12:40:01.00Z",
   "exposureType": "short term exposure",
   "groundType": "concrete",
   "location": {
