@@ -1,2 +1,2 @@
-"alertLevel_", "currentLevel_", "dangerLevel_", "floodLevelStatus_", "measuredDistance_", "observationDateTime_", "referenceLevel_", "stationID_", "@context__0_", "@context__1_"
-"10.0", "0.98", "25.0", "Normal", "3.22", "2020-09-16T13:30:00+05:30", "4.2", "FWR013", "https://uri.etsi.org/ngsi-ld/v1/ngsi-ld-core-context.jsonld", "https://raw.githubusercontent.com/smart-data-models/dataModel.Environment/master/context.jsonld"
+"alertLevel_", "currentLevel_", "dangerLevel_", "floodLevelStatus_", "measuredDistance_", "observationDateTime_", "referenceLevel_", "stationID_", "@context__0_"
+"10.0", "0.98", "25.0", "Normal", "3.22", "2020-09-16T13:30:00+05:30", "4.2", "FWR013", "https://raw.githubusercontent.com/smart-data-models/dataModel.Environment/master/context.jsonld"
