@@ -1,8 +1,6 @@
 {
   "id": "ngsi-ld:MosquitoDensity:001",
-  "type":
-    "MosquitoDensity"
-  ,
+  "type": "MosquitoDensity",
   "deviceId": "VDFWitw@B",
   "deviceSimNumber": "861123052561188",
   "location": {
@@ -36,7 +34,6 @@
     }
   },
   "@context": [
- "
     "https://raw.githubusercontent.com/smart-data-models/dataModel.Environment/master/context.jsonld"
   ]
 }
