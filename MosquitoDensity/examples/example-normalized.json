@@ -1,8 +1,6 @@
 {
   "id": "ngsi-ld:MosquitoDensity:001",
-  "type":
-    "MosquitoDensity"
-  ,
+  "type": "MosquitoDensity",
   "deviceId": {
     "type": "Text",
     "value": "VDFWitw@B"
