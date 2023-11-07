@@ -37,7 +37,7 @@
   },
   "refDevice": {
     "type": "Relationship",
-    "object": "urn:ngsi-ld:Device:NCE-T2-P7-EM03"
+    "value": "urn:ngsi-ld:Device:NCE-T2-P7-EM03"
   },
   "dateObserved": {
     "type": "DateTime",
@@ -45,16 +45,7 @@
   },
   "eMF": {
     "type": "Property",
-    "value": 950.12,
-    "observedAt": "2020-03-17TT08:45:00Z",
-    "measurementType": {
-      "type": "Property",
-      "value": "Instant"
-    },
-    "measurementInterval": {
-      "type": "Property",
-      "value": 1
-    }
+    "value": 950.12
   },
   "reliability": {
     "type": "Property",
