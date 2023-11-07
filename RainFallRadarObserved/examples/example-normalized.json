@@ -16,7 +16,7 @@
 	"location": {
 		"type": "GeoProperty",
 		"value": {
-			"type": "polygon",
+			"type": "Polygon",
 			"coordinates": [[
 				[43.66, 7.19],
 				[44.66, 7.19],
@@ -40,28 +40,19 @@
 	},
 	"refDevice": {
 		"type": "Relationship",
-		"object": "urn:ngsi-ld:Device:NCE-RFRO-018"
+		"value": "urn:ngsi-ld:Device:NCE-RFRO-018"
 	},
 	"dateObserved": {
-		"type": "Property",
-		"value": {
-			"type": "DateTime",
-			"value": "2020-03-17T08:30:00Z"
-		}
+		"type": "DateTime",
+		"value": "2020-03-17T08:30:00Z"
 	},
 	"dateObservedFrom": {
-		"type": "Property",
-		"value": {
-			"type": "DateTime",
-			"value": "2020-03-17T08:30:00Z"
-		}
+		"type": "DateTime",
+		"value": "2020-03-17T08:30:00Z"
 	},
 	"dateObservedTo": {
-		"type": "Property",
-		"value": {
-			"type": "DateTime",
-			"value": "2020-03-17T08:45:00Z"
-		}
+		"type": "DateTime",
+		"value": "2020-03-17T08:45:00Z"
 	},
 	"rainFallRadarContent": {
 		"type": "Property",
