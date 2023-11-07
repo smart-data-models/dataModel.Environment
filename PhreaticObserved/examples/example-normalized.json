@@ -21,15 +21,12 @@
 		"value": "Nice Airport"
 	},
 	"dateObserved": {
-		"type": "Property",
-		"value": {
-			"type": "DateTime",
-			"value": "2020-07-07T15:05:59.408Z"
-		}
+		"type": "DateTime",
+		"value": "2020-07-07T15:05:59.408Z"
 	},
 	"refDevice": {
 		"type": "Relationship",
-		"Object": ["urn:ngsi-ld:Device:T1-NP-015"]
+		"value": ["urn:ngsi-ld:Device:T1-NP-015"]
 	},
 	"isMobile": {
 		"type": "Property",
@@ -45,40 +42,14 @@
 	},
 	"waterTable": {
 		"type": "Property",
-		"value": 12.75,
-		"observedAt": "2020-03-17TT08:45:00Z",
-		"qualification": {
-			"type": "Property",
-			"value": "Correct"
-		},
-		"status ": {
-			"type": "Property",
-			"value": "Level 2"
-		}
+		"value": 12.75
 	},
 	"depth": {
 		"type": "Property",
-		"value": 20.45,
-		"observedAt": "2020-03-17TT08:45:00Z",
-		"qualification": {
-			"type": "Property",
-			"value": "Incorrect"
-		},
-		"status ": {
-			"type": "Property",
-			"value": "Level 1"
-		}
+		"value": 20.45
 	},
 	"pressure": {
 		"type": "Property",
-		"value": 2.12,
-		"observedAt": "2020-03-17TT08:45:00Z",
-		"qualification": {
-			"value": "Correct"
-		},
-		"status ": {
-			"type": "Property",
-			"value": "Level 3"
-		}
+		"value": 2.12
 	}
 }
