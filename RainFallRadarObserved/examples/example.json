@@ -6,13 +6,30 @@
   "description": "Rain fall Radar Observation",
   "location": {
     "type": "Polygon",
-    "coordinates": [[
-      [43.66,7.19],
-      [44.66,7.19],
-      [44.66,7.21],
-      [43.66,7.21],
-      [43.66,7.19]
-    ]]
+    "coordinates": [
+      [
+        [
+          43.66,
+          7.19
+        ],
+        [
+          44.66,
+          7.19
+        ],
+        [
+          44.66,
+          7.21
+        ],
+        [
+          43.66,
+          7.21
+        ],
+        [
+          43.66,
+          7.19
+        ]
+      ]
+    ]
   },
   "address": {
     "addressCountry": "FR",
