@@ -1,29 +1,28 @@
 {
-        "id": "urn:ngsi:MuseoDemo_Room_1",
-        "type": "IndoorEnvironmentObserved",
-        "dateObserved": "2020-06-08T17:54:00",
-        "refPointOfInterest": "urn:ngsi:MuseoDemo",
-        "address": {
-            "addressCountry": "IT",
-            "addressLocality": "Demo city",
-            "streetAddress": "Demo address"
-        },
-        "location": {
-            "type": "Point",
-            "coordinates": [
-                40,
-                11
-            ]
-        },
-        "peopleCount": 10,
-        "temperature": 12.2,
-        "relativeHumidity": 0.54,
-        "atmosphericPressure": 1013.52,
-        "illuminance": 1000,
-        "CO": 500,
-        "NO": 45,
-        "NO2": 69,
-        "NOx": 139,
-        "SO2": 11
+  "id": "urn:ngsi:MuseoDemo_Room_1",
+  "type": "IndoorEnvironmentObserved",
+  "dateObserved": "2020-06-08T17:54:00",
+  "refPointOfInterest": "urn:ngsi:MuseoDemo",
+  "address": {
+    "addressCountry": "IT",
+    "addressLocality": "Demo city",
+    "streetAddress": "Demo address"
+  },
+  "location": {
+    "type": "Point",
+    "coordinates": [
+      40,
+      11
+    ]
+  },
+  "peopleCount": 10,
+  "temperature": 12.2,
+  "relativeHumidity": 0.54,
+  "atmosphericPressure": 1013.52,
+  "illuminance": 1000,
+  "CO": 500,
+  "NO": 45,
+  "NO2": 69,
+  "NOx": 139,
+  "SO2": 11
 }
-
