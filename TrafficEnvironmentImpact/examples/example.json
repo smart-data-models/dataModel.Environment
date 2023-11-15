@@ -26,7 +26,7 @@
     ]
   },
   "address": {
-    "streetAddress": "Rue Frédéric Mistral",
+    "streetAddress": "Rue Fr\u00e9d\u00e9ric Mistral",
     "addressLocality": "Valbonne",
     "addressRegion": "Sophia Antipolis",
     "addressCountry": "France",
@@ -42,7 +42,7 @@
     },
     {
       "vehicleClass": "B",
-      "refTrafficFlowObserved":"urn:ngsi-ld:TrafficObserved:items:BAAE:94166236"
+      "refTrafficFlowObserved": "urn:ngsi-ld:TrafficObserved:items:BAAE:94166236"
     }
   ]
 }
