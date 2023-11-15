@@ -10,14 +10,17 @@
   "allergenRisk": "moderate",
   "address": {
     "addressCountry": "MX",
-    "addressLocality": "Ciudad de México",
-    "streetAddress": "Colegio Franco-Inglés"
+    "addressLocality": "Ciudad de M\u00e9xico",
+    "streetAddress": "Colegio Franco-Ingl\u00e9s"
   },
   "dateModified": "2018-02-16T17:24:39.00Z",
   "dateObserved": "2018-02-11T00:00:00.00Z",
   "location": {
     "type": "Point",
-    "coordinates": [-99.276977, 19.381877]
+    "coordinates": [
+      -99.276977,
+      19.381877
+    ]
   },
   "source": "http://rema.atmosfera.unam.mx/rema/"
 }
