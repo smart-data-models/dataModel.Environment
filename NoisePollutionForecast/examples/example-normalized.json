@@ -2,11 +2,11 @@
   "id": "urn:ngsi-ld:NoisePollution:France-NoisePollutionForecast-12345_2022-07-01T18:00:00_2022-07-01T00:00:00",
   "type": "NoisePollutionForecast",
   "dateCreated": {
-    "type": "date-time",
+    "type": "DateTime",
     "value": "2022-07-22T17:37:38Z"
   },
   "dateModified": {
-    "type": "date-time",
+    "type": "DateTime",
     "value": "2022-10-22T02:05:56Z"
   },
   "source": {
@@ -30,14 +30,14 @@
     "value": "service online Nice"
   },
   "owner": {
-    "type": "array",
+    "type": "StructuredValue",
     "value": [
       "urn:ngsi-ld:NoisePollutionForecast:items:IIZN:71750066",
       "urn:ngsi-ld:NoisePollutionForecast:items:HKJD:09603525"
     ]
   },
   "seeAlso": {
-    "type": "array",
+    "type": "StructuredValue",
     "value": [
       "urn:ngsi-ld:NoisePollutionForecast:items:UYHN:79392420",
       "urn:ngsi-ld:NoisePollutionForecast:items:VCCQ:21243558"
@@ -99,11 +99,11 @@
     "value": 74.7
   },
   "validFrom": {
-    "type": "date-time",
+    "type": "DateTime",
     "value": "2022-08-23T05:35:35Z"
   },
   "validTo": {
-    "type":  "date-time",
+    "type": "DateTime",
     "value": "2022-08-24T05:35:35Z"
   },
   "validity": {
@@ -111,7 +111,7 @@
     "value": "P1D"
   },
   "dateIssued": {
-    "type": "date-time",
+    "type": "DateTime",
     "value": "2022-08-23T05:05:35Z"
   }
 }
