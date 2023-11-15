@@ -2,12 +2,12 @@
   "id": "urn:ngsi-ld:ElectroMagneticObserved:ElectroMagneticObserved:MNCA-EM-018",
   "type": "ElectroMagneticObserved",
   "name": "MNCA-EM-018",
-  "alternateName": "AirPort  global Observation",
+  "alternateName": "AirPort \u0096 global Observation",
   "description": "EMF observation",
   "location": {
     "type": "Point",
     "coordinates": [
-      43.664810,
+      43.66481,
       7.196545
     ]
   },
