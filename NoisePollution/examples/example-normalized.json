@@ -21,18 +21,16 @@
     }
   },
   "dataProvider": {
-    "type": "Property",
+    "type": "Text",
     "value": "IMREDD_UCA_Nice"
   },
   "dateObservedFrom": {
-    "type":  "DateTime",
-      "value": "2022-07-01T10:40:01.00Z"
-
+    "type": "DateTime",
+    "value": "2022-07-01T10:40:01.00Z"
   },
   "dateObservedTo": {
     "type": "DateTime",
-      "value": "2022-07-01T12:40:01.00Z"
-
+    "value": "2022-07-01T12:40:01.00Z"
   },
   "NoiseAnnoyanceIndex": {
     "type": "Number",
@@ -47,7 +45,7 @@
     "value": "traffic"
   },
   "exposureType": {
-    "type": "Property",
+    "type": "Text",
     "value": "short term exposure"
   },
   "buildingsType": {
