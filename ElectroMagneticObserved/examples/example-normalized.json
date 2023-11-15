@@ -2,29 +2,29 @@
   "id": "urn:ngsi-ld:ElectroMagneticObserved:ElectroMagneticObserved:MNCA-EM-018",
   "type": "ElectroMagneticObserved",
   "name": {
-    "type": "Property",
+    "type": "Text",
     "value": "MNCA-EM-018"
   },
   "alternateName": {
-    "type": "Property",
+    "type": "Text",
     "value": "AirPort SPA global Observation"
   },
   "description": {
-    "type": "Property",
+    "type": "Text",
     "value": "EMF observation"
   },
   "location": {
-    "type": "GeoProperty",
+    "type": "geo:json",
     "value": {
       "type": "Point",
       "coordinates": [
-        43.664810,
+        43.66481,
         7.196545
       ]
     }
   },
   "address": {
-    "type": "Property",
+    "type": "StructuredValue",
     "value": {
       "addressCountry": "FR",
       "addressLocality": "Nice",
@@ -32,11 +32,11 @@
     }
   },
   "areaServed": {
-    "type": "Property",
+    "type": "Text",
     "value": "Nice Aeroport"
   },
   "refDevice": {
-    "type": "Relationship",
+    "type": "Text",
     "value": "urn:ngsi-ld:Device:NCE-T2-P7-EM03"
   },
   "dateObserved": {
@@ -44,11 +44,11 @@
     "value": "2020-03-17T08:45:00Z"
   },
   "eMF": {
-    "type": "Property",
+    "type": "Number",
     "value": 950.12
   },
   "reliability": {
-    "type": "Property",
+    "type": "Number",
     "value": 0.993
   }
 }
