@@ -1,94 +1,106 @@
 {
-    "id": "urn:ngsi:MuseoDemo_Room_1",
-    "type": "IndoorEnvironmentObserved",
-    "dateObserved": {
-        "value": "2020-06-08T17:54:00"
-    },
-    "refPointOfInterest": {
-        "type": "Relationship",
-        "value": "urn:ngsi:MuseoDemo"
-    },
-    "location": {
-        "type": "geo:json",
-        "value": {
-            "type": "Point",
-            "coordinates": [40, 11]
-        }
-    },
-    "address": {
-        "type": "PostalAddress",
-        "value": {
-            "addressCountry": "IT",
-            "addressLocality": "Demo city",
-            "streetAddress": "Demo address"
-        }
-    },
-    "peopleCount": {
-        "value": 10
-    },
-    "temperature": {
-        "value": 12.2,
-        "metadata": {
-            "unitCode": {
-                "value": "CEL"
-            }
-        }
-    },
-    "relativeHumidity": {
-        "value": 0.54,
-        "metadata": {
-            "unitCode": {
-                "value": "P1"
-            }
-        }
-    },
-    "illuminance": {
-        "value": 1000,
-        "metadata": {
-            "unitCode": {
-                "value": "LX"
-            }
-        }
-    },
-    "CO": {
-        "value": 500,
-        "metadata": {
-            "unitCode": {
-                "value": "GP"
-            }
-        }
-    },
-    "NO": {
-        "value": 45,
-        "metadata": {
-            "unitCode": {
-                "value": "GQ"
-            }
-        }
-    },
-    "NOx": {
-        "value": 139,
-        "metadata": {
-            "unitCode": {
-                "value": "GQ"
-            }
-        }
-    },
-    "NO2": {
-        "value": 69,
-        "metadata": {
-            "unitCode": {
-                "value": "GQ"
-            }
-        }
-    },
-    "SO2": {
-        "value": 11,
-        "metadata": {
-            "unitCode": {
-                "value": "GQ"
-            }
-        }
+  "id": "urn:ngsi:MuseoDemo_Room_1",
+  "type": "IndoorEnvironmentObserved",
+  "dateObserved": {
+    "type": "DateTime",
+    "value": "2020-06-08T17:54:00"
+  },
+  "refPointOfInterest": {
+    "type": "Text",
+    "value": "urn:ngsi:MuseoDemo"
+  },
+  "location": {
+    "type": "geo:json",
+    "value": {
+      "type": "Point",
+      "coordinates": [
+        40,
+        11
+      ]
     }
+  },
+  "address": {
+    "type": "StructuredValue",
+    "value": {
+      "addressCountry": "IT",
+      "addressLocality": "Demo city",
+      "streetAddress": "Demo address"
+    }
+  },
+  "peopleCount": {
+    "type": "Number",
+    "value": 10
+  },
+  "temperature": {
+    "type": "Number",
+    "value": 12.2,
+    "metadata": {
+      "unitCode": {
+        "value": "CEL"
+      }
+    }
+  },
+  "relativeHumidity": {
+    "type": "Number",
+    "value": 0.54,
+    "metadata": {
+      "unitCode": {
+        "value": "P1"
+      }
+    }
+  },
+  "illuminance": {
+    "type": "Number",
+    "value": 1000,
+    "metadata": {
+      "unitCode": {
+        "value": "LX"
+      }
+    }
+  },
+  "CO": {
+    "type": "Number",
+    "value": 500,
+    "metadata": {
+      "unitCode": {
+        "value": "GP"
+      }
+    }
+  },
+  "NO": {
+    "type": "Number",
+    "value": 45,
+    "metadata": {
+      "unitCode": {
+        "value": "GQ"
+      }
+    }
+  },
+  "NOx": {
+    "type": "Number",
+    "value": 139,
+    "metadata": {
+      "unitCode": {
+        "value": "GQ"
+      }
+    }
+  },
+  "NO2": {
+    "type": "Number",
+    "value": 69,
+    "metadata": {
+      "unitCode": {
+        "value": "GQ"
+      }
+    }
+  },
+  "SO2": {
+    "type": "Number",
+    "value": 11,
+    "metadata": {
+      "unitCode": {
+        "value": "GQ"
+      }
+    }
+  }
 }
-
