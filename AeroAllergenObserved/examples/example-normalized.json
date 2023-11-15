@@ -6,35 +6,45 @@
     "value": "2018-02-11T00:00:00.00Z"
   },
   "alnus": {
+    "type": "Number",
     "value": 40
   },
   "alnus_Allergenicity": {
+    "type": "Text",
     "value": "3"
   },
   "allergenRisk": {
+    "type": "Text",
     "value": "moderate"
   },
   "casuarina": {
-    "value": 1
+    "type": "Boolean",
+    "value": true
   },
   "casuarina_Level": {
+    "type": "Text",
     "value": "low"
   },
   "casuarina_Allergenicity": {
+    "type": "Text",
     "value": "3"
   },
   "source": {
+    "type": "Text",
     "value": "http://rema.atmosfera.unam.mx/rema/"
   },
   "location": {
     "type": "geo:json",
     "value": {
       "type": "Point",
-      "coordinates": [-99.276977, 19.381877]
+      "coordinates": [
+        -99.276977,
+        19.381877
+      ]
     }
   },
   "address": {
-    "type": "PostalAddress",
+    "type": "StructuredValue",
     "value": {
       "addressCountry": "MX",
       "addressLocality": "Ciudad de M\u00e9xico",
@@ -46,6 +56,7 @@
     "value": "2018-02-16T17:24:39.00Z"
   },
   "alnus_Level": {
+    "type": "Text",
     "value": "moderate"
   }
 }
