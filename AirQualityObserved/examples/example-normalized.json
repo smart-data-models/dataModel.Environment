@@ -2,19 +2,19 @@
   "id": "Madrid-AmbientObserved-28079004-2016-03-15T11:00:00",
   "type": "AirQualityObserved",
   "dateObserved": {
-    "type": "date-time",
+    "type": "DateTime",
     "value": "2016-03-15T11:00:00/2016-03-15T12:00:00"
   },
   "areaServed": {
-    "type": "string",
+    "type": "Text",
     "value": "Brooklands"
   },
   "airQualityLevel": {
-    "type": "string",
+    "type": "Text",
     "value": "moderate"
   },
   "co": {
-    "type": "number",
+    "type": "Number",
     "value": 500,
     "metadata": {
       "unitCode": {
@@ -23,11 +23,11 @@
     }
   },
   "temperature": {
-    "type": "number",
+    "type": "Number",
     "value": 12.2
   },
   "no": {
-    "type": "number",
+    "type": "Number",
     "value": 45,
     "metadata": {
       "unitCode": {
@@ -36,23 +36,23 @@
     }
   },
   "refPointOfInterest": {
-    "type": "Relationship",
+    "type": "Text",
     "value": "28079004-Pza.deEspanya"
   },
   "windDirection": {
-    "type": "number",
-    "value": 186
+    "type": "Number",
+    "value": 176
   },
   "source": {
-    "type": "string",
+    "type": "Text",
     "value": "http://datos.madrid.es"
   },
   "windSpeed": {
-    "type": "number",
+    "type": "Number",
     "value": 0.64
   },
   "so2": {
-    "type": "number",
+    "type": "Number",
     "value": 11,
     "metadata": {
       "unitCode": {
@@ -61,7 +61,7 @@
     }
   },
   "nox": {
-    "type": "number",
+    "type": "Number",
     "value": 139,
     "metadata": {
       "unitCode": {
@@ -74,21 +74,21 @@
     "value": {
       "type": "Point",
       "coordinates": [
-        -3.712247222222222, 
+        -3.712247222222222,
         40.423852777777775
       ]
     }
   },
   "typeOfLocation": {
-    "type": "string",
+    "type": "Text",
     "value": "outdoor"
   },
   "airQualityIndex": {
-    "type": "number",
+    "type": "Number",
     "value": 65
   },
   "address": {
-    "type": "PostalAddress",
+    "type": "StructuredValue",
     "value": {
       "addressCountry": "ES",
       "addressLocality": "Madrid",
@@ -96,19 +96,19 @@
     }
   },
   "reliability": {
-    "type": "number",
+    "type": "Number",
     "value": 0.7
   },
   "relativeHumidity": {
-    "type": "number", 
+    "type": "Number",
     "value": 0.54
   },
   "precipitation": {
-    "type": "number",
-    "value": 0
+    "type": "Boolean",
+    "value": false
   },
   "no2": {
-    "type": "number",
+    "type": "Number",
     "value": 69,
     "metadata": {
       "unitCode": {
@@ -117,7 +117,7 @@
     }
   },
   "coLevel": {
-    "type": "string",
+    "type": "Text",
     "value": "moderate"
   }
 }
