@@ -10,7 +10,7 @@
     "value": 3691
   },
   "clouds": {
-    "type": "string",
+    "type": "Text",
     "value": "Despejado"
   },
   "dateCreated": {
@@ -32,15 +32,15 @@
     }
   },
   "sigmaMagnitude": {
-    "type": "number",
+    "type": "Number",
     "value": 0.003
   },
   "skyMagnitude": {
-    "type": "number",
+    "type": "Number",
     "value": 19.4
   },
   "skyTemperature": {
-    "type": "number",
+    "type": "Number",
     "value": -6.23
   }
 }
