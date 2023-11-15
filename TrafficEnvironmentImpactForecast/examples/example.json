@@ -28,7 +28,7 @@
     ]
   },
   "address": {
-    "streetAddress": "Rue Frédéric Mistral",
+    "streetAddress": "Rue Fr\u00e9d\u00e9ric Mistral",
     "addressLocality": "Valbonne",
     "addressRegion": "Sophia Antipolis",
     "addressCountry": "France",
