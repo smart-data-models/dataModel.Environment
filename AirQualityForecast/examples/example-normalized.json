@@ -2,7 +2,7 @@
   "id": "urn:ngsi-ld:AirQualityForecast:France-AirQualityForecast-12345_2022-07-01T18:00:00_2022-07-01T00:00:00",
   "type": "AirQualityForecast",
   "address": {
-    "type": "PostalAddress",
+    "type": "StructuredValue",
     "value": {
       "addressCountry": "France",
       "postalCode": "06200",
@@ -40,7 +40,7 @@
     "value": "2022-07-01T18:00:00.00Z"
   },
   "validity": {
-    "type": "Text",
+    "type": "DateTime",
     "value": "2022-07-01T17:00:00+01:00/2022-07-01T18:00:00+01:00"
   },
   "airQualityIndex": {
@@ -53,38 +53,31 @@
   },
   "co2": {
     "type": "Number",
-    "value": 45,
-    "unitCode": "GQ"
+    "value": 45
   },
   "no2": {
     "type": "Number",
-    "value": 69,
-    "unitCode": "GQ"
+    "value": 69
   },
   "o3": {
     "type": "Number",
-    "value": 100,
-    "unitCode": "GQ"
+    "value": 100
   },
   "nox": {
     "type": "Number",
-    "value": 139,
-    "unitCode": "GQ"
+    "value": 139
   },
   "so2": {
     "type": "Number",
-    "value": 11,
-    "unitCode": "GQ"
+    "value": 11
   },
   "pm10": {
     "type": "Number",
-    "value": 19,
-    "unitCode": "GQ"
+    "value": 19
   },
   "pm25": {
     "type": "Number",
-    "value": 21,
-    "unitCode": "GQ"
+    "value": 21
   },
   "temperature": {
     "type": "Number",
@@ -99,8 +92,8 @@
     "value": 0.64
   },
   "precipitation": {
-    "type": "Number",
-    "value": 0
+    "type": "Boolean",
+    "value": false
   },
   "typeOfLocation": {
     "type": "Text",
