@@ -2,7 +2,7 @@
   "id": "urn:ngsi-ld:AirQualityMonitoring:id:MUTW:63473748",
   "type": "AirQualityMonitoring",
   "dateCreated": {
-    "type": "Datetime",
+    "type": "DateTime",
     "value": "2017-12-31T03:39:27Z"
   },
   "dateModified": {
@@ -30,14 +30,14 @@
     "value": ""
   },
   "owner": {
-    "type": "Array",
+    "type": "StructuredValue",
     "value": [
       "urn:ngsi-ld:AirQualityMonitoring:items:PDSP:96970072",
       "urn:ngsi-ld:AirQualityMonitoring:items:FTKL:60685543"
     ]
   },
   "seeAlso": {
-    "type": "Array",
+    "type": "StructuredValue",
     "value": [
       "urn:ngsi-ld:AirQualityMonitoring:items:SUXG:34385451",
       "urn:ngsi-ld:AirQualityMonitoring:items:AEAM:62422977"
@@ -301,7 +301,7 @@
     "value": 3.65
   },
   "precipitation": {
-    "type": "StructuredValue",
+    "type": "Number",
     "value": 846.0
   },
   "versionInfo": {
@@ -314,4 +314,3 @@
     }
   }
 }
-
