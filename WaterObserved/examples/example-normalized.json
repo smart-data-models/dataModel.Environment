@@ -18,7 +18,7 @@
     "value": {
       "type": "Point",
       "coordinates": [
-        43.664810,
+        43.66481,
         7.196545
       ]
     }
@@ -28,7 +28,7 @@
     "value": "Nice Airport"
   },
   "refDevice": {
-    "type": "Relationship",
+    "type": "Text",
     "value": "Device:T2-NP-018"
   },
   "dateObserved": {
