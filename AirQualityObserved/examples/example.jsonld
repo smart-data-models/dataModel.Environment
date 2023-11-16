@@ -8,21 +8,21 @@
   "nox": 139,
   "so2": 11,
   "address": {
-      "addressCountry": "ES",
-      "addressLocality": "Madrid",
-      "streetAddress": "Plaza de Espa\u00f1a",
-      "type": "PostalAddress"
+    "addressCountry": "ES",
+    "addressLocality": "Madrid",
+    "streetAddress": "Plaza de Espa\u00f1a",
+    "type": "PostalAddress"
   },
   "airQualityIndex": 65,
   "airQualityLevel": "moderate",
   "areaServed": "Brooklands",
   "dateObserved": "2016-03-15T11:00:00/2016-03-15T12:00:00",
   "location": {
-      "coordinates": [
-          -3.712247222222222,
-          40.423852777777775
-      ],
-      "type": "Point"
+    "coordinates": [
+      -3.712247222222222,
+      40.423852777777775
+    ],
+    "type": "Point"
   },
   "precipitation": 0,
   "refPointOfInterest": "urn:ngsi-ld:PointOfInterest:28079004-Pza.deEspanya",
@@ -31,9 +31,9 @@
   "source": "http://datos.madrid.es",
   "temperature": 12.2,
   "typeOfLocation": "outdoor",
-  "windDirection": 186,
+  "windDirection": 180,
   "windSpeed": 0.64,
   "@context": [
-      "https://raw.githubusercontent.com/smart-data-models/dataModel.Environment/master/context.jsonld"
+    "https://raw.githubusercontent.com/smart-data-models/dataModel.Environment/master/context.jsonld"
   ]
 }
