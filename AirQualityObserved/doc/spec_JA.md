@@ -22,6 +22,7 @@
 	- `postOfficeBoxNumber[string]`: 私書箱の住所のための私書箱番号。例：03578  . Model: [https://schema.org/postOfficeBoxNumber](https://schema.org/postOfficeBoxNumber)  
 	- `postalCode[string]`: 郵便番号。例：24004  . Model: [https://schema.org/https://schema.org/postalCode](https://schema.org/https://schema.org/postalCode)  
 	- `streetAddress[string]`: 番地  . Model: [https://schema.org/streetAddress](https://schema.org/streetAddress)  
+	- `streetNr[string]`: 公道上の特定の物件を特定する番号    
 - `airQualityIndex[number]`: 大気の質指数とは、その日の大気の質を表す数値。  . Model: [https://schema.org/Number](https://schema.org/Number)- `airQualityLevel[string]`: 観察された大気の質に対応する健康への懸念の全体的な質的レベル  . Model: [https://schema.org/Text](https://schema.org/Text)- `alternateName[string]`: この項目の別名  - `areaServed[string]`: この大気質測定が属する上位レベル地域  . Model: [https://schema.org/Text ](https://schema.org/Text )- `as[number]`: ヒ素検出  . Model: [https://schema.org/Number](https://schema.org/Number)- `c6h6[number]`: ベンゼン検出  - `cd[number]`: カドミウム検出  - `co[number]`: 一酸化炭素検出  - `co2[number]`: 二酸化炭素検出  - `coLevel[string]`: 質的な一酸化炭素の存在  - `dataProvider[string]`: ハーモナイズされたデータ・エンティティの提供者を識別する一連の文字。  - `dateCreated[date-time]`: エンティティの作成タイムスタンプ。これは通常、ストレージプラットフォームによって割り当てられます。  - `dateModified[date-time]`: エンティティの最終変更のタイムスタンプ。これは通常、ストレージプラットフォームによって割り当てられる。  - `dateObserved[string]`: ISO8601 UTCフォーマットによる観測日時  . Model: [https://schema.org/Text ](https://schema.org/Text )- `description[string]`: この商品の説明  - `id[*]`: エンティティの一意識別子  - `location[*]`: アイテムへの Geojson 参照。Point、LineString、Polygon、MultiPoint、MultiLineString、MultiPolygon のいずれか。  - `name[string]`: このアイテムの名前  - `ni[number]`: ニッケル検出  - `no[number]`: 一酸化窒素検出  - `no2[number]`: 二酸化窒素検出  - `nox[number]`: 検出されたその他の窒素酸化物  - `o3[number]`: オゾン検出  - `owner[array]`: 所有者の固有IDを参照するJSONエンコードされた文字列を含むリスト。  - `pb[number]`: 鉛検出  - `pm1[number]`: 直径1マイクロメートル以下の粒子状物質  - `pm10[number]`: 直径10マイクロメートル以下の粒子状物質  - `pm25[number]`: 直径2.5マイクロメートル以下の粒子状物質  - `precipitation[number]`: 雨量  . Model: [https://schema.org/Number](https://schema.org/Number)- `refDevice[*]`: この観測を捕らえた機器へのリファレンス。  - `refPointOfInterest[*]`: この観測に関連する注目点（通常は大気質ステーション）への参照。  - `refWeatherObserved[*]`: このエンティティによって記述された大気質状況に関連して観測された天候  - `relativeHumidity[number]`: 空気の相対湿度（0％～100％の範囲を表す0～1の数値）  - `reliability[number]`: 観測された大気の質に対応する信頼性（パーセンテージ、単位：ppm  . Model: [https://schema.org/Number ](https://schema.org/Number )- `seeAlso[*]`: アイテムに関する追加リソースを指すURIのリスト  - `sh2[number]`: 硫化水素検出  - `so2[number]`: 二酸化硫黄検出  - `source[string]`: エンティティ・データの元のソースを URL として示す一連の文字。ソース・プロバイダの完全修飾ドメイン名、またはソース・オブジェクトの URL を推奨する。  - `temperature[number]`: 商品の温度  - `type[string]`: NGSI エンティティタイプ。AirQualityObserved でなければならない。  - `typeofLocation[string]`: サンプルの場所の種類  . Model: [https://schema.org/Text](https://schema.org/Text)- `volatileOrganicCompoundsTotal[number]`: アルカン＜C10、ケトン＜C6、アルデヒド＜C10、カルボン酸＜C5、アスピリット＜C7、アルケン＜C8、芳香族  - `windDirection[number]`: 風見鶏の向き  . Model: [http://schema.org/Number](http://schema.org/Number)- `windSpeed[number]`: 風の強さ  . Model: [http//schema.org/Number](http//schema.org/Number)<!-- /30-PropertiesList -->  
 <!-- 35-RequiredProperties -->  
 必須プロパティ  
@@ -595,11 +596,11 @@ AirQualityObserved:
     - location    
   type: object    
   x-derived-from: ""    
-  x-disclaimer: 'Redistribution and use in source and binary forms, with or without modification, are permitted  provided that the license conditions are met. Copyleft (c) 2022 Contributors to Smart Data Models Program'    
+  x-disclaimer: 'Redistribution and use in source and binary forms, with or without modification, are permitted  provided that the license conditions are met. Copyleft (c) 2023 Contributors to Smart Data Models Program'    
   x-license-url: https://github.com/smart-data-models/dataModel.Environment/blob/master/AirQualityObserved/LICENSE.md    
   x-model-schema: https://smart-data-models.github.io/dataModel.Environment/AirQualityObserved/schema.json    
   x-model-tags: ""    
-  x-version: 0.1.1    
+  x-version: 0.1.2    
 ```  
 </details>    
 <!-- /60-ModelYaml -->  
@@ -617,13 +618,16 @@ AirQualityObserved:
   "address": {  
     "addressCountry": "ES",  
     "addressLocality": "Madrid",  
-    "streetAddress": "Plaza de España"  
+    "streetAddress": "Plaza de Espa\u00f1a"  
   },  
   "dateObserved": "2016-03-15T11:00:00/2016-03-15T12:00:00",  
   "areaServed": "Brooklands",  
   "location": {  
     "type": "Point",  
-    "coordinates": [-3.712247222222222, 40.423852777777775]  
+    "coordinates": [  
+      -3.712247222222222,  
+      40.423852777777775  
+    ]  
   },  
   "source": "http://datos.madrid.es",  
   "typeOfLocation": "outdoor",  
@@ -653,19 +657,19 @@ AirQualityObserved:
   "id": "Madrid-AmbientObserved-28079004-2016-03-15T11:00:00",  
   "type": "AirQualityObserved",  
   "dateObserved": {  
-    "type": "date-time",  
+    "type": "DateTime",  
     "value": "2016-03-15T11:00:00/2016-03-15T12:00:00"  
   },  
   "areaServed": {  
-    "type": "string",  
+    "type": "Text",  
     "value": "Brooklands"  
   },  
   "airQualityLevel": {  
-    "type": "string",  
+    "type": "Text",  
     "value": "moderate"  
   },  
   "co": {  
-    "type": "number",  
+    "type": "Number",  
     "value": 500,  
     "metadata": {  
       "unitCode": {  
@@ -674,11 +678,11 @@ AirQualityObserved:
     }  
   },  
   "temperature": {  
-    "type": "number",  
+    "type": "Number",  
     "value": 12.2  
   },  
   "no": {  
-    "type": "number",  
+    "type": "Number",  
     "value": 45,  
     "metadata": {  
       "unitCode": {  
@@ -687,23 +691,23 @@ AirQualityObserved:
     }  
   },  
   "refPointOfInterest": {  
-    "type": "Relationship",  
+    "type": "Text",  
     "value": "28079004-Pza.deEspanya"  
   },  
   "windDirection": {  
-    "type": "number",  
-    "value": 186  
+    "type": "Number",  
+    "value": 176  
   },  
   "source": {  
-    "type": "string",  
+    "type": "Text",  
     "value": "http://datos.madrid.es"  
   },  
   "windSpeed": {  
-    "type": "number",  
+    "type": "Number",  
     "value": 0.64  
   },  
   "so2": {  
-    "type": "number",  
+    "type": "Number",  
     "value": 11,  
     "metadata": {  
       "unitCode": {  
@@ -712,7 +716,7 @@ AirQualityObserved:
     }  
   },  
   "nox": {  
-    "type": "number",  
+    "type": "Number",  
     "value": 139,  
     "metadata": {  
       "unitCode": {  
@@ -725,21 +729,21 @@ AirQualityObserved:
     "value": {  
       "type": "Point",  
       "coordinates": [  
-        -3.712247222222222,   
+        -3.712247222222222,  
         40.423852777777775  
       ]  
     }  
   },  
   "typeOfLocation": {  
-    "type": "string",  
+    "type": "Text",  
     "value": "outdoor"  
   },  
   "airQualityIndex": {  
-    "type": "number",  
+    "type": "Number",  
     "value": 65  
   },  
   "address": {  
-    "type": "PostalAddress",  
+    "type": "StructuredValue",  
     "value": {  
       "addressCountry": "ES",  
       "addressLocality": "Madrid",  
@@ -747,19 +751,19 @@ AirQualityObserved:
     }  
   },  
   "reliability": {  
-    "type": "number",  
+    "type": "Number",  
     "value": 0.7  
   },  
   "relativeHumidity": {  
-    "type": "number",   
+    "type": "Number",  
     "value": 0.54  
   },  
   "precipitation": {  
-    "type": "number",  
-    "value": 0  
+    "type": "Boolean",  
+    "value": false  
   },  
   "no2": {  
-    "type": "number",  
+    "type": "Number",  
     "value": 69,  
     "metadata": {  
       "unitCode": {  
@@ -768,14 +772,14 @@ AirQualityObserved:
     }  
   },  
   "coLevel": {  
-    "type": "string",  
+    "type": "Text",  
     "value": "moderate"  
   }  
 }  
 ```  
 </details>  
 #### NGSI-LD キー値の例  
-AirQualityObservedをJSON-LD形式でkey-valuesとした例である。これはNGSI-LDと互換性があり、`options=keyValues`を使用すると、個々のエンティティのコンテキストデータを返す。  
+JSON-LD形式のAirQualityObservedのkey-valuesの例である。これはNGSI-LDと互換性があり、`options=keyValues`を使用すると、個々のエンティティのコンテキストデータを返す。  
 <details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
@@ -788,21 +792,21 @@ AirQualityObserved:
   "nox": 139,  
   "so2": 11,  
   "address": {  
-      "addressCountry": "ES",  
-      "addressLocality": "Madrid",  
-      "streetAddress": "Plaza de Espa\u00f1a",  
-      "type": "PostalAddress"  
+    "addressCountry": "ES",  
+    "addressLocality": "Madrid",  
+    "streetAddress": "Plaza de Espa\u00f1a",  
+    "type": "PostalAddress"  
   },  
   "airQualityIndex": 65,  
   "airQualityLevel": "moderate",  
   "areaServed": "Brooklands",  
   "dateObserved": "2016-03-15T11:00:00/2016-03-15T12:00:00",  
   "location": {  
-      "coordinates": [  
-          -3.712247222222222,  
-          40.423852777777775  
-      ],  
-      "type": "Point"  
+    "coordinates": [  
+      -3.712247222222222,  
+      40.423852777777775  
+    ],  
+    "type": "Point"  
   },  
   "precipitation": 0,  
   "refPointOfInterest": "urn:ngsi-ld:PointOfInterest:28079004-Pza.deEspanya",  
@@ -811,10 +815,10 @@ AirQualityObserved:
   "source": "http://datos.madrid.es",  
   "temperature": 12.2,  
   "typeOfLocation": "outdoor",  
-  "windDirection": 186,  
+  "windDirection": 180,  
   "windSpeed": 0.64,  
   "@context": [  
-      "https://raw.githubusercontent.com/smart-data-models/dataModel.Environment/master/context.jsonld"  
+    "https://raw.githubusercontent.com/smart-data-models/dataModel.Environment/master/context.jsonld"  
   ]  
 }  
 ```  
