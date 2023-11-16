@@ -22,6 +22,7 @@
 	- `postOfficeBoxNumber[string]`: The post office box number for PO box addresses. For example, 03578  . Model: [https://schema.org/postOfficeBoxNumber](https://schema.org/postOfficeBoxNumber)  
 	- `postalCode[string]`: The postal code. For example, 24004  . Model: [https://schema.org/https://schema.org/postalCode](https://schema.org/https://schema.org/postalCode)  
 	- `streetAddress[string]`: The street address  . Model: [https://schema.org/streetAddress](https://schema.org/streetAddress)  
+	- `streetNr[string]`: Number identifying a specific property on a public street    
 - `airQualityIndex[number]`: Air quality index is a number used to report the quality of the air on any given day  . Model: [https://schema.org/Number](https://schema.org/Number)- `airQualityLevel[string]`: Overall qualitative level of health concern corresponding to the air quality observed  . Model: [https://schema.org/Text](https://schema.org/Text)- `alternateName[string]`: An alternative name for this item  - `areaServed[string]`: Higher level area to which this air quality measurement belongs to  . Model: [https://schema.org/Text ](https://schema.org/Text )- `as[number]`: Arsenic detected  . Model: [https://schema.org/Number](https://schema.org/Number)- `c6h6[number]`: Benzene detected  - `cd[number]`: Cadmium detected  - `co[number]`: Carbon Monoxide detected  - `co2[number]`: Carbon Dioxide detected  - `coLevel[string]`: Qualitative Carbon Monoxide presence  - `dataProvider[string]`: A sequence of characters identifying the provider of the harmonised data entity  - `dateCreated[date-time]`: Entity creation timestamp. This will usually be allocated by the storage platform  - `dateModified[date-time]`: Timestamp of the last modification of the entity. This will usually be allocated by the storage platform  - `dateObserved[string]`: The date and time of this observation in ISO8601 UTCformat  . Model: [https://schema.org/Text ](https://schema.org/Text )- `description[string]`: A description of this item  - `id[*]`: Unique identifier of the entity  - `location[*]`: Geojson reference to the item. It can be Point, LineString, Polygon, MultiPoint, MultiLineString or MultiPolygon  - `name[string]`: The name of this item  - `ni[number]`: Nickel detected  - `no[number]`: Nitrogen monoxide detected  - `no2[number]`: Nitrogen dioxide detected  - `nox[number]`: Other Nitrogen oxides detected  - `o3[number]`: Ozone detected  - `owner[array]`: A List containing a JSON encoded sequence of characters referencing the unique Ids of the owner(s)  - `pb[number]`: Lead detected  - `pm1[number]`: Particulate matter 1 micrometers or less in diameter  - `pm10[number]`: Particulate matter 10 micrometers or less in diameter  - `pm25[number]`: Particulate matter 2.5 micrometers or less in diameter  - `precipitation[number]`: Amount of water rain  . Model: [https://schema.org/Number](https://schema.org/Number)- `refDevice[*]`: A reference to the device(s) which captured this observation  - `refPointOfInterest[*]`: A reference to a point of interest (usually an air quality station) associated to this observation  - `refWeatherObserved[*]`:  Weather observed associated to the air quality conditions described by this entity  - `relativeHumidity[number]`: Relative Humidity of the air (a number between 0 and 1 representing the range of 0% to 100%)  - `reliability[number]`: Reliability (percentage, expressed in parts per one) corresponding to the air quality observed  . Model: [https://schema.org/Number ](https://schema.org/Number )- `seeAlso[*]`: list of uri pointing to additional resources about the item  - `sh2[number]`: Hydrogen sulfide detected  - `so2[number]`: Sulfur dioxide detected  - `source[string]`: A sequence of characters giving the original source of the entity data as a URL. Recommended to be the fully qualified domain name of the source provider, or the URL to the source object  - `temperature[number]`: Temperature of the item  - `type[string]`: NGSI Entity type. It has to be AirQualityObserved  - `typeofLocation[string]`: Type of location of the sampled item  . Model: [https://schema.org/Text](https://schema.org/Text)- `volatileOrganicCompoundsTotal[number]`: Alkanes <C10, ketones <C6, aldehydes <C10, carboxylic acids <C5, aspirits<C7, Alkenes <C8, Aromatics  - `windDirection[number]`: Direction of the weather vane  . Model: [http://schema.org/Number](http://schema.org/Number)- `windSpeed[number]`: Intensity of the wind  . Model: [http//schema.org/Number](http//schema.org/Number)<!-- /30-PropertiesList -->  
 <!-- 35-RequiredProperties -->  
 Required properties  
@@ -595,11 +596,11 @@ AirQualityObserved:
     - location    
   type: object    
   x-derived-from: ""    
-  x-disclaimer: 'Redistribution and use in source and binary forms, with or without modification, are permitted  provided that the license conditions are met. Copyleft (c) 2022 Contributors to Smart Data Models Program'    
+  x-disclaimer: 'Redistribution and use in source and binary forms, with or without modification, are permitted  provided that the license conditions are met. Copyleft (c) 2023 Contributors to Smart Data Models Program'    
   x-license-url: https://github.com/smart-data-models/dataModel.Environment/blob/master/AirQualityObserved/LICENSE.md    
   x-model-schema: https://smart-data-models.github.io/dataModel.Environment/AirQualityObserved/schema.json    
   x-model-tags: ""    
-  x-version: 0.1.1    
+  x-version: 0.1.2    
 ```  
 </details>    
 <!-- /60-ModelYaml -->  
@@ -617,13 +618,16 @@ AirQualityObserved:
   "address": {  
     "addressCountry": "ES",  
     "addressLocality": "Madrid",  
-    "streetAddress": "Plaza de España"  
+    "streetAddress": "Plaza de Espa\u00f1a"  
   },  
   "dateObserved": "2016-03-15T11:00:00/2016-03-15T12:00:00",  
   "areaServed": "Brooklands",  
   "location": {  
     "type": "Point",  
-    "coordinates": [-3.712247222222222, 40.423852777777775]  
+    "coordinates": [  
+      -3.712247222222222,  
+      40.423852777777775  
+    ]  
   },  
   "source": "http://datos.madrid.es",  
   "typeOfLocation": "outdoor",  
@@ -653,19 +657,19 @@ AirQualityObserved:
   "id": "Madrid-AmbientObserved-28079004-2016-03-15T11:00:00",  
   "type": "AirQualityObserved",  
   "dateObserved": {  
-    "type": "date-time",  
+    "type": "DateTime",  
     "value": "2016-03-15T11:00:00/2016-03-15T12:00:00"  
   },  
   "areaServed": {  
-    "type": "string",  
+    "type": "Text",  
     "value": "Brooklands"  
   },  
   "airQualityLevel": {  
-    "type": "string",  
+    "type": "Text",  
     "value": "moderate"  
   },  
   "co": {  
-    "type": "number",  
+    "type": "Number",  
     "value": 500,  
     "metadata": {  
       "unitCode": {  
@@ -674,11 +678,11 @@ AirQualityObserved:
     }  
   },  
   "temperature": {  
-    "type": "number",  
+    "type": "Number",  
     "value": 12.2  
   },  
   "no": {  
-    "type": "number",  
+    "type": "Number",  
     "value": 45,  
     "metadata": {  
       "unitCode": {  
@@ -687,23 +691,23 @@ AirQualityObserved:
     }  
   },  
   "refPointOfInterest": {  
-    "type": "Relationship",  
+    "type": "Text",  
     "value": "28079004-Pza.deEspanya"  
   },  
   "windDirection": {  
-    "type": "number",  
-    "value": 186  
+    "type": "Number",  
+    "value": 176  
   },  
   "source": {  
-    "type": "string",  
+    "type": "Text",  
     "value": "http://datos.madrid.es"  
   },  
   "windSpeed": {  
-    "type": "number",  
+    "type": "Number",  
     "value": 0.64  
   },  
   "so2": {  
-    "type": "number",  
+    "type": "Number",  
     "value": 11,  
     "metadata": {  
       "unitCode": {  
@@ -712,7 +716,7 @@ AirQualityObserved:
     }  
   },  
   "nox": {  
-    "type": "number",  
+    "type": "Number",  
     "value": 139,  
     "metadata": {  
       "unitCode": {  
@@ -725,21 +729,21 @@ AirQualityObserved:
     "value": {  
       "type": "Point",  
       "coordinates": [  
-        -3.712247222222222,   
+        -3.712247222222222,  
         40.423852777777775  
       ]  
     }  
   },  
   "typeOfLocation": {  
-    "type": "string",  
+    "type": "Text",  
     "value": "outdoor"  
   },  
   "airQualityIndex": {  
-    "type": "number",  
+    "type": "Number",  
     "value": 65  
   },  
   "address": {  
-    "type": "PostalAddress",  
+    "type": "StructuredValue",  
     "value": {  
       "addressCountry": "ES",  
       "addressLocality": "Madrid",  
@@ -747,19 +751,19 @@ AirQualityObserved:
     }  
   },  
   "reliability": {  
-    "type": "number",  
+    "type": "Number",  
     "value": 0.7  
   },  
   "relativeHumidity": {  
-    "type": "number",   
+    "type": "Number",  
     "value": 0.54  
   },  
   "precipitation": {  
-    "type": "number",  
-    "value": 0  
+    "type": "Boolean",  
+    "value": false  
   },  
   "no2": {  
-    "type": "number",  
+    "type": "Number",  
     "value": 69,  
     "metadata": {  
       "unitCode": {  
@@ -768,7 +772,7 @@ AirQualityObserved:
     }  
   },  
   "coLevel": {  
-    "type": "string",  
+    "type": "Text",  
     "value": "moderate"  
   }  
 }  
@@ -788,21 +792,21 @@ AirQualityObserved:
   "nox": 139,  
   "so2": 11,  
   "address": {  
-      "addressCountry": "ES",  
-      "addressLocality": "Madrid",  
-      "streetAddress": "Plaza de Espa\u00f1a",  
-      "type": "PostalAddress"  
+    "addressCountry": "ES",  
+    "addressLocality": "Madrid",  
+    "streetAddress": "Plaza de Espa\u00f1a",  
+    "type": "PostalAddress"  
   },  
   "airQualityIndex": 65,  
   "airQualityLevel": "moderate",  
   "areaServed": "Brooklands",  
   "dateObserved": "2016-03-15T11:00:00/2016-03-15T12:00:00",  
   "location": {  
-      "coordinates": [  
-          -3.712247222222222,  
-          40.423852777777775  
-      ],  
-      "type": "Point"  
+    "coordinates": [  
+      -3.712247222222222,  
+      40.423852777777775  
+    ],  
+    "type": "Point"  
   },  
   "precipitation": 0,  
   "refPointOfInterest": "urn:ngsi-ld:PointOfInterest:28079004-Pza.deEspanya",  
@@ -811,10 +815,10 @@ AirQualityObserved:
   "source": "http://datos.madrid.es",  
   "temperature": 12.2,  
   "typeOfLocation": "outdoor",  
-  "windDirection": 186,  
+  "windDirection": 180,  
   "windSpeed": 0.64,  
   "@context": [  
-      "https://raw.githubusercontent.com/smart-data-models/dataModel.Environment/master/context.jsonld"  
+    "https://raw.githubusercontent.com/smart-data-models/dataModel.Environment/master/context.jsonld"  
   ]  
 }  
 ```  
