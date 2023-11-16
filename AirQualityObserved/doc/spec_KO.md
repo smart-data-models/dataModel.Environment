@@ -23,7 +23,7 @@
 	- `postalCode[string]`: 우편 번호입니다. 예: 24004  . Model: [https://schema.org/https://schema.org/postalCode](https://schema.org/https://schema.org/postalCode)  
 	- `streetAddress[string]`: 거리 주소  . Model: [https://schema.org/streetAddress](https://schema.org/streetAddress)  
 	- `streetNr[string]`: 공공 도로의 특정 건물을 식별하는 번호    
-- `airQualityIndex[number]`: 공기질 지수는 특정 날짜의 공기질을 보고하는 데 사용되는 수치입니다.  . Model: [https://schema.org/Number](https://schema.org/Number)- `airQualityLevel[string]`: 관찰된 공기질에 해당하는 전반적인 질적 건강 우려 수준  . Model: [https://schema.org/Text](https://schema.org/Text)- `alternateName[string]`: 이 항목의 대체 이름  - `areaServed[string]`: 이 공기질 측정이 속한 상위 수준 지역  . Model: [https://schema.org/Text ](https://schema.org/Text )- `as[number]`: 비소 검출  . Model: [https://schema.org/Number](https://schema.org/Number)- `c6h6[number]`: 벤젠 검출  - `cd[number]`: 카드뮴 검출  - `co[number]`: 일산화탄소 감지  - `co2[number]`: 이산화탄소 감지  - `coLevel[string]`: 정량적 일산화탄소 존재 여부  - `dataProvider[string]`: 조화된 데이터 엔티티의 공급자를 식별하는 일련의 문자  - `dateCreated[date-time]`: 엔티티 생성 타임스탬프. 이는 일반적으로 스토리지 플랫폼에서 할당합니다.  - `dateModified[date-time]`: 엔티티의 마지막 수정 타임스탬프입니다. 이는 일반적으로 스토리지 플랫폼에서 할당합니다.  - `dateObserved[string]`: ISO8601 UTC 형식의 이 관측 날짜 및 시간  . Model: [https://schema.org/Text ](https://schema.org/Text )- `description[string]`: 이 항목에 대한 설명  - `id[*]`: 엔티티의 고유 식별자  - `location[*]`: 항목에 대한 지오숀 참조입니다. 포인트, 라인 문자열, 다각형, 멀티포인트, 멀티라인 문자열 또는 멀티폴리곤일 수 있습니다.  - `name[string]`: 이 항목의 이름  - `ni[number]`: 니켈 검출  - `no[number]`: 일산화질소 감지  - `no2[number]`: 이산화질소 감지  - `nox[number]`: 기타 질소 산화물 검출  - `o3[number]`: 오존 감지  - `owner[array]`: 소유자의 고유 ID를 참조하는 JSON 인코딩된 문자 시퀀스가 포함된 목록입니다.  - `pb[number]`: 납 검출  - `pm1[number]`: 직경 1마이크로미터 이하의 미세먼지  - `pm10[number]`: 직경 10마이크로미터 이하의 미세먼지  - `pm25[number]`: 지름 2.5마이크로미터 이하의 미세먼지  - `precipitation[number]`: 강수량  . Model: [https://schema.org/Number](https://schema.org/Number)- `refDevice[*]`: 이 관찰을 캡처한 디바이스에 대한 참조입니다.  - `refPointOfInterest[*]`: 이 관측치와 관련된 관심 지점(일반적으로 대기 질 관측소)에 대한 참조입니다.  - `refWeatherObserved[*]`:  이 엔티티가 설명하는 대기 질 조건과 관련된 관측된 날씨  - `relativeHumidity[number]`: 공기의 상대 습도(0%~100% 범위를 나타내는 0~1 사이의 숫자)  - `reliability[number]`: 관찰된 공기 품질에 해당하는 신뢰도(백분율, 1퍼센트 단위로 표시)  . Model: [https://schema.org/Number ](https://schema.org/Number )- `seeAlso[*]`: 항목에 대한 추가 리소스를 가리키는 URL 목록  - `sh2[number]`: 황화수소 검출  - `so2[number]`: 이산화황 검출  - `source[string]`: 엔티티 데이터의 원본 소스를 URL로 제공하는 문자 시퀀스입니다. 소스 공급자의 정규화된 도메인 이름 또는 소스 개체에 대한 URL을 사용하는 것이 좋습니다.  - `temperature[number]`: 품목의 온도  - `type[string]`: NGSI 엔티티 유형. AirQualityObserved여야 합니다.  - `typeofLocation[string]`: 샘플링된 항목의 위치 유형  . Model: [https://schema.org/Text](https://schema.org/Text)- `volatileOrganicCompoundsTotal[number]`: 알칸 <C10, 케톤 <C6, 알데히드 <C10, 카르복실산 <C5, 아스피릿 <C7, 알켄 <C8, 아로마틱스  - `windDirection[number]`: 풍향계의 방향  . Model: [http://schema.org/Number](http://schema.org/Number)- `windSpeed[number]`: 바람의 강도  . Model: [http//schema.org/Number](http//schema.org/Number)<!-- /30-PropertiesList -->  
+- `airQualityIndex[number]`: 공기질 지수는 특정 날짜의 공기질을 보고하는 데 사용되는 수치입니다.  . Model: [https://schema.org/Number](https://schema.org/Number)- `airQualityLevel[string]`: 관찰된 공기질에 해당하는 전반적인 질적 건강 우려 수준  . Model: [https://schema.org/Text](https://schema.org/Text)- `alternateName[string]`: 이 항목의 대체 이름  - `areaServed[string]`: 이 공기질 측정이 속한 상위 수준 지역  . Model: [https://schema.org/Text ](https://schema.org/Text )- `as[number]`: 비소 검출  . Model: [https://schema.org/Number](https://schema.org/Number)- `c6h6[number]`: 벤젠 검출  - `cd[number]`: 카드뮴 검출  - `co[number]`: 일산화탄소 감지  - `co2[number]`: 이산화탄소 감지  - `coLevel[string]`: 정량적 일산화탄소 존재 여부  - `dataProvider[string]`: 조화된 데이터 엔티티의 공급자를 식별하는 일련의 문자  - `dateCreated[date-time]`: 엔티티 생성 타임스탬프. 이는 일반적으로 스토리지 플랫폼에서 할당합니다.  - `dateModified[date-time]`: 엔티티의 마지막 수정 타임스탬프입니다. 이는 일반적으로 스토리지 플랫폼에서 할당합니다.  - `dateObserved[string]`: ISO8601 UTC 형식의 이 관측 날짜 및 시간  . Model: [https://schema.org/Text ](https://schema.org/Text )- `description[string]`: 이 항목에 대한 설명  - `id[*]`: 엔티티의 고유 식별자  - `location[*]`: 항목에 대한 지오숀 참조입니다. 포인트, 라인 문자열, 다각형, 멀티포인트, 멀티라인 문자열 또는 멀티폴리곤일 수 있습니다.  - `name[string]`: 이 항목의 이름  - `ni[number]`: 니켈 검출  - `no[number]`: 일산화질소 감지  - `no2[number]`: 이산화질소 감지  - `nox[number]`: 기타 질소 산화물 검출  - `o3[number]`: 오존 감지  - `owner[array]`: 소유자의 고유 ID를 참조하는 JSON 인코딩된 문자 시퀀스가 포함된 목록입니다.  - `pb[number]`: 납 검출  - `pm1[number]`: 직경 1마이크로미터 이하의 미세먼지  - `pm10[number]`: 직경 10마이크로미터 이하의 미세먼지  - `pm25[number]`: 지름 2.5마이크로미터 이하의 미세먼지  - `precipitation[number]`: 강수량  . Model: [https://schema.org/Number](https://schema.org/Number)- `refDevice[*]`: 이 관찰을 캡처한 디바이스에 대한 참조입니다.  - `refPointOfInterest[*]`: 이 관측치와 관련된 관심 지점(일반적으로 대기 질 관측소)에 대한 참조입니다.  - `refWeatherObserved[*]`:  이 엔티티가 설명하는 대기 질 조건과 관련된 관측된 날씨  - `relativeHumidity[number]`: 공기의 상대 습도(0~100% 범위를 나타내는 0~1 사이의 숫자)  - `reliability[number]`: 관찰된 공기 품질에 해당하는 신뢰도(백분율, 1퍼센트 단위로 표시)  . Model: [https://schema.org/Number ](https://schema.org/Number )- `seeAlso[*]`: 항목에 대한 추가 리소스를 가리키는 URL 목록  - `sh2[number]`: 황화수소 검출  - `so2[number]`: 이산화황 검출  - `source[string]`: 엔티티 데이터의 원본 소스를 URL로 제공하는 문자 시퀀스입니다. 소스 공급자의 정규화된 도메인 이름 또는 소스 개체에 대한 URL을 사용하는 것이 좋습니다.  - `temperature[number]`: 품목의 온도  - `type[string]`: NGSI 엔티티 유형. AirQualityObserved여야 합니다.  - `typeofLocation[string]`: 샘플링된 항목의 위치 유형  . Model: [https://schema.org/Text](https://schema.org/Text)- `volatileOrganicCompoundsTotal[number]`: 알칸 <C10, 케톤 <C6, 알데히드 <C10, 카르복실산 <C5, 아스피릿 <C7, 알켄 <C8, 아로마틱스  - `windDirection[number]`: 풍향계의 방향  . Model: [http://schema.org/Number](http://schema.org/Number)- `windSpeed[number]`: 바람의 강도  . Model: [http//schema.org/Number](http//schema.org/Number)<!-- /30-PropertiesList -->  
 <!-- 35-RequiredProperties -->  
 필수 속성  
 - `dateObserved`  - `id`  - `location`  - `type`  <!-- /35-RequiredProperties -->  
@@ -596,11 +596,11 @@ AirQualityObserved:
     - location    
   type: object    
   x-derived-from: ""    
-  x-disclaimer: 'Redistribution and use in source and binary forms, with or without modification, are permitted  provided that the license conditions are met. Copyleft (c) 2022 Contributors to Smart Data Models Program'    
+  x-disclaimer: 'Redistribution and use in source and binary forms, with or without modification, are permitted  provided that the license conditions are met. Copyleft (c) 2023 Contributors to Smart Data Models Program'    
   x-license-url: https://github.com/smart-data-models/dataModel.Environment/blob/master/AirQualityObserved/LICENSE.md    
   x-model-schema: https://smart-data-models.github.io/dataModel.Environment/AirQualityObserved/schema.json    
   x-model-tags: ""    
-  x-version: 0.1.1    
+  x-version: 0.1.2    
 ```  
 </details>    
 <!-- /60-ModelYaml -->  
@@ -618,13 +618,16 @@ AirQualityObserved:
   "address": {  
     "addressCountry": "ES",  
     "addressLocality": "Madrid",  
-    "streetAddress": "Plaza de España"  
+    "streetAddress": "Plaza de Espa\u00f1a"  
   },  
   "dateObserved": "2016-03-15T11:00:00/2016-03-15T12:00:00",  
   "areaServed": "Brooklands",  
   "location": {  
     "type": "Point",  
-    "coordinates": [-3.712247222222222, 40.423852777777775]  
+    "coordinates": [  
+      -3.712247222222222,  
+      40.423852777777775  
+    ]  
   },  
   "source": "http://datos.madrid.es",  
   "typeOfLocation": "outdoor",  
@@ -654,19 +657,19 @@ AirQualityObserved:
   "id": "Madrid-AmbientObserved-28079004-2016-03-15T11:00:00",  
   "type": "AirQualityObserved",  
   "dateObserved": {  
-    "type": "date-time",  
+    "type": "DateTime",  
     "value": "2016-03-15T11:00:00/2016-03-15T12:00:00"  
   },  
   "areaServed": {  
-    "type": "string",  
+    "type": "Text",  
     "value": "Brooklands"  
   },  
   "airQualityLevel": {  
-    "type": "string",  
+    "type": "Text",  
     "value": "moderate"  
   },  
   "co": {  
-    "type": "number",  
+    "type": "Number",  
     "value": 500,  
     "metadata": {  
       "unitCode": {  
@@ -675,11 +678,11 @@ AirQualityObserved:
     }  
   },  
   "temperature": {  
-    "type": "number",  
+    "type": "Number",  
     "value": 12.2  
   },  
   "no": {  
-    "type": "number",  
+    "type": "Number",  
     "value": 45,  
     "metadata": {  
       "unitCode": {  
@@ -688,23 +691,23 @@ AirQualityObserved:
     }  
   },  
   "refPointOfInterest": {  
-    "type": "Relationship",  
+    "type": "Text",  
     "value": "28079004-Pza.deEspanya"  
   },  
   "windDirection": {  
-    "type": "number",  
-    "value": 186  
+    "type": "Number",  
+    "value": 176  
   },  
   "source": {  
-    "type": "string",  
+    "type": "Text",  
     "value": "http://datos.madrid.es"  
   },  
   "windSpeed": {  
-    "type": "number",  
+    "type": "Number",  
     "value": 0.64  
   },  
   "so2": {  
-    "type": "number",  
+    "type": "Number",  
     "value": 11,  
     "metadata": {  
       "unitCode": {  
@@ -713,7 +716,7 @@ AirQualityObserved:
     }  
   },  
   "nox": {  
-    "type": "number",  
+    "type": "Number",  
     "value": 139,  
     "metadata": {  
       "unitCode": {  
@@ -726,21 +729,21 @@ AirQualityObserved:
     "value": {  
       "type": "Point",  
       "coordinates": [  
-        -3.712247222222222,   
+        -3.712247222222222,  
         40.423852777777775  
       ]  
     }  
   },  
   "typeOfLocation": {  
-    "type": "string",  
+    "type": "Text",  
     "value": "outdoor"  
   },  
   "airQualityIndex": {  
-    "type": "number",  
+    "type": "Number",  
     "value": 65  
   },  
   "address": {  
-    "type": "PostalAddress",  
+    "type": "StructuredValue",  
     "value": {  
       "addressCountry": "ES",  
       "addressLocality": "Madrid",  
@@ -748,19 +751,19 @@ AirQualityObserved:
     }  
   },  
   "reliability": {  
-    "type": "number",  
+    "type": "Number",  
     "value": 0.7  
   },  
   "relativeHumidity": {  
-    "type": "number",   
+    "type": "Number",  
     "value": 0.54  
   },  
   "precipitation": {  
-    "type": "number",  
-    "value": 0  
+    "type": "Boolean",  
+    "value": false  
   },  
   "no2": {  
-    "type": "number",  
+    "type": "Number",  
     "value": 69,  
     "metadata": {  
       "unitCode": {  
@@ -769,7 +772,7 @@ AirQualityObserved:
     }  
   },  
   "coLevel": {  
-    "type": "string",  
+    "type": "Text",  
     "value": "moderate"  
   }  
 }  
@@ -789,21 +792,21 @@ AirQualityObserved:
   "nox": 139,  
   "so2": 11,  
   "address": {  
-      "addressCountry": "ES",  
-      "addressLocality": "Madrid",  
-      "streetAddress": "Plaza de Espa\u00f1a",  
-      "type": "PostalAddress"  
+    "addressCountry": "ES",  
+    "addressLocality": "Madrid",  
+    "streetAddress": "Plaza de Espa\u00f1a",  
+    "type": "PostalAddress"  
   },  
   "airQualityIndex": 65,  
   "airQualityLevel": "moderate",  
   "areaServed": "Brooklands",  
   "dateObserved": "2016-03-15T11:00:00/2016-03-15T12:00:00",  
   "location": {  
-      "coordinates": [  
-          -3.712247222222222,  
-          40.423852777777775  
-      ],  
-      "type": "Point"  
+    "coordinates": [  
+      -3.712247222222222,  
+      40.423852777777775  
+    ],  
+    "type": "Point"  
   },  
   "precipitation": 0,  
   "refPointOfInterest": "urn:ngsi-ld:PointOfInterest:28079004-Pza.deEspanya",  
@@ -812,10 +815,10 @@ AirQualityObserved:
   "source": "http://datos.madrid.es",  
   "temperature": 12.2,  
   "typeOfLocation": "outdoor",  
-  "windDirection": 186,  
+  "windDirection": 180,  
   "windSpeed": 0.64,  
   "@context": [  
-      "https://raw.githubusercontent.com/smart-data-models/dataModel.Environment/master/context.jsonld"  
+    "https://raw.githubusercontent.com/smart-data-models/dataModel.Environment/master/context.jsonld"  
   ]  
 }  
 ```  
@@ -936,7 +939,7 @@ AirQualityObserved:
 <!-- 90-FooterNotes -->  
 <!-- /90-FooterNotes -->  
 <!-- 95-Units -->  
-[FAQ 10](https://smartdatamodels.org/index.php/faqs/)을 참조하여 규모 단위를 다루는 방법에 대한 답변을 확인하세요.  
+10](https://smartdatamodels.org/index.php/faqs/)에서 규모 단위를 다루는 방법에 대한 답변을 확인하세요.  
 <!-- /95-Units -->  
 <!-- 97-LastFooter -->  
 ---  
