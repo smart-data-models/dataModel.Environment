@@ -27,7 +27,6 @@
   "noiseOrigin": "traffic",
   "wallsType": "glass",
   "@context": [
-
     "https://raw.githubusercontent.com/smart-data-models/dataModel.Environment/master/context.jsonld"
   ]
 }
