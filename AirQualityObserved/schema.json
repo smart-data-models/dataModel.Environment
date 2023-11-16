@@ -1,6 +1,6 @@
 {
   "$schema": "http://json-schema.org/schema#",
-  "$schemaVersion": "0.1.1",
+  "$schemaVersion": "0.1.2",
   "modelTags": "",
   "$id": "https://smart-data-models.github.io/dataModel.Environment/AirQualityObserved/schema.json",
   "title": "Smart Data Models - Air quality observed schema",
@@ -11,10 +11,13 @@
       "$ref": "https://smart-data-models.github.io/data-models/common-schema.json#/definitions/GSMA-Commons"
     },
     {
-      "$ref": "https://smart-data-models.github.io/data-models/common-schema.json#/definitions/Location-Commons"
-    },
-    {
       "properties": {
+        "location": {
+            "$ref": "https://smart-data-models.github.io/data-models/common-schema.json#/definitions/Location-Commons/properties/location"
+        },
+        "address": {
+            "$ref": "https://smart-data-models.github.io/data-models/common-schema.json#/definitions/Location-Commons/properties/address"
+        },
         "type": {
           "type": "string",
           "enum": [
