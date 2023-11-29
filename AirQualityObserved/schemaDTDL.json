@@ -115,7 +115,7 @@
             "writable": true,
             "displayName": "dateObserved",
             "@type": "Property",
-            "schema": "string",
+            "schema": "dateTime",
             "comment": "The date and time of this observation in ISO8601 UTCformat"
         },
         {
@@ -145,7 +145,7 @@
             "displayName": "ni",
             "@type": "Property",
             "schema": "long",
-            "comment": "Nickel detected"
+            "comment": "Nickel detected "
         },
         {
             "name": "no",
@@ -177,7 +177,7 @@
             "displayName": "o3",
             "@type": "Property",
             "schema": "long",
-            "comment": "Ozone detected"
+            "comment": "Ozone detected "
         },
         {
             "name": "pb",
@@ -185,7 +185,7 @@
             "displayName": "pb",
             "@type": "Property",
             "schema": "long",
-            "comment": "Lead detected"
+            "comment": "Lead detected   "
         },
         {
             "name": "pm1",
