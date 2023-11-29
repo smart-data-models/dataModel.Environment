@@ -8,7 +8,7 @@
 <!-- /15-License -->  
 <!-- 20-Description -->  
 グローバルな記述：**ある場所と時間における大気の状態を観測すること。  
-バージョン: 0.1.1  
+バージョン: 0.1.2  
 <!-- /20-Description -->  
 <!-- 30-PropertiesList -->  
 
@@ -23,7 +23,7 @@
 	- `postalCode[string]`: 郵便番号。例：24004  . Model: [https://schema.org/https://schema.org/postalCode](https://schema.org/https://schema.org/postalCode)  
 	- `streetAddress[string]`: 番地  . Model: [https://schema.org/streetAddress](https://schema.org/streetAddress)  
 	- `streetNr[string]`: 公道上の特定の物件を特定する番号    
-- `airQualityIndex[number]`: 大気の質指数とは、その日の大気の質を表す数値。  . Model: [https://schema.org/Number](https://schema.org/Number)- `airQualityLevel[string]`: 観察された大気の質に対応する健康への懸念の全体的な質的レベル  . Model: [https://schema.org/Text](https://schema.org/Text)- `alternateName[string]`: この項目の別名  - `areaServed[string]`: この大気質測定が属する上位レベル地域  . Model: [https://schema.org/Text ](https://schema.org/Text )- `as[number]`: ヒ素検出  . Model: [https://schema.org/Number](https://schema.org/Number)- `c6h6[number]`: ベンゼン検出  - `cd[number]`: カドミウム検出  - `co[number]`: 一酸化炭素検出  - `co2[number]`: 二酸化炭素検出  - `coLevel[string]`: 質的な一酸化炭素の存在  - `dataProvider[string]`: ハーモナイズされたデータ・エンティティの提供者を識別する一連の文字。  - `dateCreated[date-time]`: エンティティの作成タイムスタンプ。これは通常、ストレージプラットフォームによって割り当てられます。  - `dateModified[date-time]`: エンティティの最終変更のタイムスタンプ。これは通常、ストレージプラットフォームによって割り当てられる。  - `dateObserved[string]`: ISO8601 UTCフォーマットによる観測日時  . Model: [https://schema.org/Text ](https://schema.org/Text )- `description[string]`: この商品の説明  - `id[*]`: エンティティの一意識別子  - `location[*]`: アイテムへの Geojson 参照。Point、LineString、Polygon、MultiPoint、MultiLineString、MultiPolygon のいずれか。  - `name[string]`: このアイテムの名前  - `ni[number]`: ニッケル検出  - `no[number]`: 一酸化窒素検出  - `no2[number]`: 二酸化窒素検出  - `nox[number]`: 検出されたその他の窒素酸化物  - `o3[number]`: オゾン検出  - `owner[array]`: 所有者の固有IDを参照するJSONエンコードされた文字列を含むリスト。  - `pb[number]`: 鉛検出  - `pm1[number]`: 直径1マイクロメートル以下の粒子状物質  - `pm10[number]`: 直径10マイクロメートル以下の粒子状物質  - `pm25[number]`: 直径2.5マイクロメートル以下の粒子状物質  - `precipitation[number]`: 雨量  . Model: [https://schema.org/Number](https://schema.org/Number)- `refDevice[*]`: この観測を捕らえた機器へのリファレンス。  - `refPointOfInterest[*]`: この観測に関連する注目点（通常は大気質ステーション）への参照。  - `refWeatherObserved[*]`: このエンティティによって記述された大気質状況に関連して観測された天候  - `relativeHumidity[number]`: 空気の相対湿度（0％～100％の範囲を表す0～1の数値）  - `reliability[number]`: 観測された大気の質に対応する信頼性（パーセンテージ、単位：ppm  . Model: [https://schema.org/Number ](https://schema.org/Number )- `seeAlso[*]`: アイテムに関する追加リソースを指すURIのリスト  - `sh2[number]`: 硫化水素検出  - `so2[number]`: 二酸化硫黄検出  - `source[string]`: エンティティ・データの元のソースを URL として示す一連の文字。ソース・プロバイダの完全修飾ドメイン名、またはソース・オブジェクトの URL を推奨する。  - `temperature[number]`: 商品の温度  - `type[string]`: NGSI エンティティタイプ。AirQualityObserved でなければならない。  - `typeofLocation[string]`: サンプルの場所の種類  . Model: [https://schema.org/Text](https://schema.org/Text)- `volatileOrganicCompoundsTotal[number]`: アルカン＜C10、ケトン＜C6、アルデヒド＜C10、カルボン酸＜C5、アスピリット＜C7、アルケン＜C8、芳香族  - `windDirection[number]`: 風見鶏の向き  . Model: [http://schema.org/Number](http://schema.org/Number)- `windSpeed[number]`: 風の強さ  . Model: [http//schema.org/Number](http//schema.org/Number)<!-- /30-PropertiesList -->  
+- `airQualityIndex[number]`: 大気の質指数とは、その日の大気の質を表す数値。  . Model: [https://schema.org/Number](https://schema.org/Number)- `airQualityLevel[string]`: 観察された大気の質に対応する健康への懸念の全体的な質的レベル  . Model: [https://schema.org/Text](https://schema.org/Text)- `alternateName[string]`: この項目の別名  - `areaServed[string]`: この大気質測定が属する上位レベル地域  . Model: [https://schema.org/Text ](https://schema.org/Text )- `as[number]`: ヒ素検出  . Model: [https://schema.org/Number](https://schema.org/Number)- `c6h6[number]`: ベンゼン検出  - `cd[number]`: カドミウム検出  - `co[number]`: 一酸化炭素検出  - `co2[number]`: 二酸化炭素検出  - `coLevel[string]`: 質的な一酸化炭素の存在  - `dataProvider[string]`: ハーモナイズされたデータ・エンティティの提供者を識別する一連の文字。  - `dateCreated[date-time]`: エンティティの作成タイムスタンプ。これは通常、ストレージプラットフォームによって割り当てられます。  - `dateModified[date-time]`: エンティティの最終変更のタイムスタンプ。これは通常、ストレージプラットフォームによって割り当てられる。  - `dateObserved[date-time]`: ISO8601 UTCフォーマットによる観測日時  . Model: [https://schema.org/Text ](https://schema.org/Text )- `description[string]`: この商品の説明  - `id[*]`: エンティティの一意識別子  - `location[*]`: アイテムへの Geojson 参照。Point、LineString、Polygon、MultiPoint、MultiLineString、MultiPolygon のいずれか。  - `name[string]`: このアイテムの名前  - `ni[number]`: ニッケル検出  - `no[number]`: 一酸化窒素検出  - `no2[number]`: 二酸化窒素検出  - `nox[number]`: 検出されたその他の窒素酸化物  - `o3[number]`: オゾン検出  - `owner[array]`: 所有者の固有IDを参照するJSONエンコードされた文字列を含むリスト。  - `pb[number]`: 鉛検出  - `pm1[number]`: 直径1マイクロメートル以下の粒子状物質  - `pm10[number]`: 直径10マイクロメートル以下の粒子状物質  - `pm25[number]`: 直径2.5マイクロメートル以下の粒子状物質  - `precipitation[number]`: 雨量  . Model: [https://schema.org/Number](https://schema.org/Number)- `refDevice[*]`: この観測を捕らえた機器へのリファレンス。  - `refPointOfInterest[*]`: この観測に関連する注目点（通常は大気質ステーション）への参照。  - `refWeatherObserved[*]`: このエンティティによって記述された大気質状況に関連して観測された天候  - `relativeHumidity[number]`: 空気の相対湿度（0％～100％の範囲を表す0～1の数値）  - `reliability[number]`: 観測された大気の質に対応する信頼性（パーセンテージ、単位：ppm  . Model: [https://schema.org/Number ](https://schema.org/Number )- `seeAlso[*]`: アイテムに関する追加リソースを指すURIのリスト  - `sh2[number]`: 硫化水素検出  - `so2[number]`: 二酸化硫黄検出  - `source[string]`: エンティティ・データの元のソースを URL として示す一連の文字。ソース・プロバイダの完全修飾ドメイン名、またはソース・オブジェクトの URL を推奨する。  - `temperature[number]`: 商品の温度  - `type[string]`: NGSI エンティティタイプ。AirQualityObserved でなければならない。  - `typeofLocation[string]`: サンプルの場所の種類  . Model: [https://schema.org/Text](https://schema.org/Text)- `volatileOrganicCompoundsTotal[number]`: アルカン＜C10、ケトン＜C6、アルデヒド＜C10、カルボン酸＜C5、アスピリット＜C7、アルケン＜C8、芳香族  - `windDirection[number]`: 風見鶏の向き  . Model: [http://schema.org/Number](http://schema.org/Number)- `windSpeed[number]`: 風の強さ  . Model: [http//schema.org/Number](http//schema.org/Number)<!-- /30-PropertiesList -->  
 <!-- 35-RequiredProperties -->  
 必須プロパティ  
 - `dateObserved`  - `id`  - `location`  - `type`  <!-- /35-RequiredProperties -->  
@@ -173,6 +173,7 @@ AirQualityObserved:
         type: Property    
     dateObserved:    
       description: The date and time of this observation in ISO8601 UTCformat    
+      format: date-time    
       type: string    
       x-ngsi:    
         model: 'https://schema.org/Text '    
@@ -370,7 +371,7 @@ AirQualityObserved:
       x-ngsi:    
         type: Property    
     ni:    
-      description: Nickel detected    
+      description: 'Nickel detected '    
       minimum: 0    
       type: number    
       x-ngsi:    
@@ -394,7 +395,7 @@ AirQualityObserved:
       x-ngsi:    
         type: Property    
     o3:    
-      description: Ozone detected    
+      description: 'Ozone detected '    
       minimum: 0    
       type: number    
       x-ngsi:    
@@ -422,7 +423,7 @@ AirQualityObserved:
       x-ngsi:    
         type: Property    
     pb:    
-      description: Lead detected    
+      description: 'Lead detected   '    
       minimum: 0    
       type: number    
       x-ngsi:    
@@ -600,7 +601,7 @@ AirQualityObserved:
   x-license-url: https://github.com/smart-data-models/dataModel.Environment/blob/master/AirQualityObserved/LICENSE.md    
   x-model-schema: https://smart-data-models.github.io/dataModel.Environment/AirQualityObserved/schema.json    
   x-model-tags: ""    
-  x-version: 0.1.2    
+  x-version: 0.1.3    
 ```  
 </details>    
 <!-- /60-ModelYaml -->  
@@ -620,7 +621,7 @@ AirQualityObserved:
     "addressLocality": "Madrid",  
     "streetAddress": "Plaza de Espa\u00f1a"  
   },  
-  "dateObserved": "2016-03-15T11:00:00/2016-03-15T12:00:00",  
+  "dateObserved": "2016-03-15T11:00:00",  
   "areaServed": "Brooklands",  
   "location": {  
     "type": "Point",  
@@ -658,7 +659,7 @@ AirQualityObserved:
   "type": "AirQualityObserved",  
   "dateObserved": {  
     "type": "DateTime",  
-    "value": "2016-03-15T11:00:00/2016-03-15T12:00:00"  
+    "value": "2016-03-15T11:00:00"  
   },  
   "areaServed": {  
     "type": "Text",  
@@ -779,7 +780,7 @@ AirQualityObserved:
 ```  
 </details>  
 #### NGSI-LD キー値の例  
-JSON-LD形式のAirQualityObservedのkey-valuesの例である。これはNGSI-LDと互換性があり、`options=keyValues`を使用すると、個々のエンティティのコンテキストデータを返す。  
+AirQualityObservedをJSON-LD形式でkey-valuesとした例である。これはNGSI-LDと互換性があり、`options=keyValues`を使用すると、個々のエンティティのコンテキストデータを返す。  
 <details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
@@ -800,7 +801,7 @@ AirQualityObserved:
   "airQualityIndex": 65,  
   "airQualityLevel": "moderate",  
   "areaServed": "Brooklands",  
-  "dateObserved": "2016-03-15T11:00:00/2016-03-15T12:00:00",  
+  "dateObserved": "2016-03-15T11:00:00",  
   "location": {  
     "coordinates": [  
       -3.712247222222222,  
@@ -882,7 +883,7 @@ AirQualityObserved:
   },  
   "dateObserved": {  
       "type": "Property",  
-      "value": "2016-03-15T11:00:00/2016-03-15T12:00:00"  
+      "value": "2016-03-15T11:00:00"  
   },  
   "location": {  
       "type": "GeoProperty",  
