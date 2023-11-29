@@ -134,6 +134,7 @@ AirQualityObserved:
         type: Property
     dateObserved:
       description: The date and time of this observation in ISO8601 UTCformat
+      format: date-time
       type: string
       x-ngsi:
         model: 'https://schema.org/Text '
@@ -331,7 +332,7 @@ AirQualityObserved:
       x-ngsi:
         type: Property
     ni:
-      description: Nickel detected
+      description: 'Nickel detected '
       minimum: 0
       type: number
       x-ngsi:
@@ -355,7 +356,7 @@ AirQualityObserved:
       x-ngsi:
         type: Property
     o3:
-      description: Ozone detected
+      description: 'Ozone detected '
       minimum: 0
       type: number
       x-ngsi:
@@ -383,7 +384,7 @@ AirQualityObserved:
       x-ngsi:
         type: Property
     pb:
-      description: Lead detected
+      description: 'Lead detected   '
       minimum: 0
       type: number
       x-ngsi:
