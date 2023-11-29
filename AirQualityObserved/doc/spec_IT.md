@@ -8,7 +8,7 @@
 <!-- /15-License -->  
 <!-- 20-Description -->  
 Descrizione globale: **Un'osservazione delle condizioni di qualità dell'aria in un determinato luogo e momento.**  
-versione: 0.1.1  
+versione: 0.1.2  
 <!-- /20-Description -->  
 <!-- 30-PropertiesList -->  
 
@@ -16,14 +16,14 @@
 
 <sup><sub>[*] Se non c'è un tipo in un attributo è perché potrebbe avere diversi tipi o diversi formati/modelli</sub></sup>.  
 - `address[object]`: L'indirizzo postale  . Model: [https://schema.org/address](https://schema.org/address)	- `addressCountry[string]`: Il paese. Ad esempio, la Spagna  . Model: [https://schema.org/addressCountry](https://schema.org/addressCountry)  
-	- `addressLocality[string]`: La località in cui si trova l'indirizzo stradale e che si trova nella regione  . Model: [https://schema.org/addressLocality](https://schema.org/addressLocality)  
-	- `addressRegion[string]`: La regione in cui si trova la località e che si trova in campagna  . Model: [https://schema.org/addressRegion](https://schema.org/addressRegion)  
-	- `district[string]`: Un distretto è un tipo di divisione amministrativa che, in alcuni Paesi, è gestita dal governo locale.    
+	- `addressLocality[string]`: La località in cui si trova l'indirizzo civico e che si trova nella regione  . Model: [https://schema.org/addressLocality](https://schema.org/addressLocality)  
+	- `addressRegion[string]`: La regione in cui si trova la località, e che si trova nel paese  . Model: [https://schema.org/addressRegion](https://schema.org/addressRegion)  
+	- `district[string]`: Un distretto è un tipo di divisione amministrativa che, in alcuni paesi, è gestita dal governo locale.    
 	- `postOfficeBoxNumber[string]`: Il numero di casella postale per gli indirizzi di casella postale. Ad esempio, 03578  . Model: [https://schema.org/postOfficeBoxNumber](https://schema.org/postOfficeBoxNumber)  
 	- `postalCode[string]`: Il codice postale. Ad esempio, 24004  . Model: [https://schema.org/https://schema.org/postalCode](https://schema.org/https://schema.org/postalCode)  
 	- `streetAddress[string]`: L'indirizzo stradale  . Model: [https://schema.org/streetAddress](https://schema.org/streetAddress)  
 	- `streetNr[string]`: Numero che identifica una proprietà specifica su una strada pubblica    
-- `airQualityIndex[number]`: L'indice di qualità dell'aria è un numero utilizzato per indicare la qualità dell'aria in un determinato giorno.  . Model: [https://schema.org/Number](https://schema.org/Number)- `airQualityLevel[string]`: Livello qualitativo complessivo di preoccupazione per la salute corrispondente alla qualità dell'aria osservata  . Model: [https://schema.org/Text](https://schema.org/Text)- `alternateName[string]`: Un nome alternativo per questa voce  - `areaServed[string]`: Area di livello superiore a cui appartiene questa misurazione della qualità dell'aria  . Model: [https://schema.org/Text ](https://schema.org/Text )- `as[number]`: Arsenico rilevato  . Model: [https://schema.org/Number](https://schema.org/Number)- `c6h6[number]`: Benzene rilevato  - `cd[number]`: Cadmio rilevato  - `co[number]`: Rilevato monossido di carbonio  - `co2[number]`: Anidride carbonica rilevata  - `coLevel[string]`: Presenza qualitativa di monossido di carbonio  - `dataProvider[string]`: una sequenza di caratteri che identifica il fornitore dell'entità di dati armonizzata  - `dateCreated[date-time]`: Timestamp di creazione dell'entità. Di solito viene assegnato dalla piattaforma di archiviazione  - `dateModified[date-time]`: Timestamp dell'ultima modifica dell'entità. Di solito viene assegnato dalla piattaforma di archiviazione  - `dateObserved[string]`: La data e l'ora di questa osservazione in formato ISO8601 UTC  . Model: [https://schema.org/Text ](https://schema.org/Text )- `description[string]`: Descrizione dell'articolo  - `id[*]`: Identificatore univoco dell'entità  - `location[*]`: Riferimento geojson all'elemento. Può essere un punto, una stringa di linea, un poligono, un multi-punto, una stringa di linea o un poligono multiplo.  - `name[string]`: Il nome di questo elemento  - `ni[number]`: Rilevato il nichel  - `no[number]`: Rilevato monossido di azoto  - `no2[number]`: Rilevato biossido di azoto  - `nox[number]`: Altri ossidi di azoto rilevati  - `o3[number]`: Ozono rilevato  - `owner[array]`: Un elenco contenente una sequenza di caratteri codificata JSON che fa riferimento agli ID univoci dei proprietari.  - `pb[number]`: Piombo rilevato  - `pm1[number]`: Particolato di diametro pari o inferiore a 1 micrometro  - `pm10[number]`: Particolato di diametro pari o inferiore a 10 micrometri  - `pm25[number]`: Particolato di diametro non superiore a 2,5 micrometri  - `precipitation[number]`: Quantità di acqua piovana  . Model: [https://schema.org/Number](https://schema.org/Number)- `refDevice[*]`: Un riferimento al dispositivo (o ai dispositivi) che ha catturato l'osservazione.  - `refPointOfInterest[*]`: Un riferimento a un punto di interesse (di solito una stazione di qualità dell'aria) associato a questa osservazione.  - `refWeatherObserved[*]`:  Tempo atmosferico osservato associato alle condizioni di qualità dell'aria descritte da questa entità  - `relativeHumidity[number]`: Umidità relativa dell'aria (un numero compreso tra 0 e 1 che rappresenta l'intervallo tra 0% e 100%)  - `reliability[number]`: Affidabilità (percentuale, espressa in parti per uno) corrispondente alla qualità dell'aria osservata  . Model: [https://schema.org/Number ](https://schema.org/Number )- `seeAlso[*]`: elenco di uri che puntano a risorse aggiuntive sull'elemento  - `sh2[number]`: Rilevato idrogeno solforato  - `so2[number]`: Rilevato biossido di zolfo  - `source[string]`: Una sequenza di caratteri che indica la fonte originale dei dati dell'entità come URL. Si consiglia di utilizzare il nome di dominio completamente qualificato del provider di origine o l'URL dell'oggetto di origine.  - `temperature[number]`: Temperatura dell'articolo  - `type[string]`: Tipo di entità NGSI. Deve essere AirQualityObserved  - `typeofLocation[string]`: Tipo di ubicazione dell'articolo campionato  . Model: [https://schema.org/Text](https://schema.org/Text)- `volatileOrganicCompoundsTotal[number]`: Alcani <C10, chetoni <C6, aldeidi <C10, acidi carbossilici <C5, aspirati<C7, alcheni <C8, aromatici  - `windDirection[number]`: Direzione della banderuola  . Model: [http://schema.org/Number](http://schema.org/Number)- `windSpeed[number]`: Intensità del vento  . Model: [http//schema.org/Number](http//schema.org/Number)<!-- /30-PropertiesList -->  
+- `airQualityIndex[number]`: L'indice di qualità dell'aria è un numero utilizzato per indicare la qualità dell'aria in un determinato giorno.  . Model: [https://schema.org/Number](https://schema.org/Number)- `airQualityLevel[string]`: Livello qualitativo complessivo di preoccupazione per la salute corrispondente alla qualità dell'aria osservata  . Model: [https://schema.org/Text](https://schema.org/Text)- `alternateName[string]`: Un nome alternativo per questa voce  - `areaServed[string]`: Area di livello superiore a cui appartiene questa misurazione della qualità dell'aria  . Model: [https://schema.org/Text ](https://schema.org/Text )- `as[number]`: Arsenico rilevato  . Model: [https://schema.org/Number](https://schema.org/Number)- `c6h6[number]`: Benzene rilevato  - `cd[number]`: Cadmio rilevato  - `co[number]`: Rilevato monossido di carbonio  - `co2[number]`: Anidride carbonica rilevata  - `coLevel[string]`: Presenza qualitativa di monossido di carbonio  - `dataProvider[string]`: una sequenza di caratteri che identifica il fornitore dell'entità di dati armonizzata  - `dateCreated[date-time]`: Timestamp di creazione dell'entità. Di solito viene assegnato dalla piattaforma di archiviazione  - `dateModified[date-time]`: Timestamp dell'ultima modifica dell'entità. Di solito viene assegnato dalla piattaforma di archiviazione  - `dateObserved[date-time]`: La data e l'ora di questa osservazione in formato ISO8601 UTC  . Model: [https://schema.org/Text ](https://schema.org/Text )- `description[string]`: Descrizione dell'articolo  - `id[*]`: Identificatore univoco dell'entità  - `location[*]`: Riferimento geojson all'elemento. Può essere un punto, una stringa di linea, un poligono, un multi-punto, una stringa di linea o un poligono multiplo.  - `name[string]`: Il nome di questo elemento  - `ni[number]`: Rilevato il nichel  - `no[number]`: Rilevato monossido di azoto  - `no2[number]`: Rilevato biossido di azoto  - `nox[number]`: Altri ossidi di azoto rilevati  - `o3[number]`: Ozono rilevato  - `owner[array]`: Un elenco contenente una sequenza di caratteri codificata JSON che fa riferimento agli ID univoci dei proprietari.  - `pb[number]`: Piombo rilevato  - `pm1[number]`: Particolato di diametro pari o inferiore a 1 micrometro  - `pm10[number]`: Particolato di diametro pari o inferiore a 10 micrometri  - `pm25[number]`: Particolato di diametro pari o inferiore a 2,5 micrometri  - `precipitation[number]`: Quantità di acqua piovana  . Model: [https://schema.org/Number](https://schema.org/Number)- `refDevice[*]`: Un riferimento al dispositivo (o ai dispositivi) che ha catturato l'osservazione.  - `refPointOfInterest[*]`: Un riferimento a un punto di interesse (di solito una stazione di qualità dell'aria) associato a questa osservazione.  - `refWeatherObserved[*]`:  Tempo atmosferico osservato associato alle condizioni di qualità dell'aria descritte da questa entità  - `relativeHumidity[number]`: Umidità relativa dell'aria (un numero compreso tra 0 e 1 che rappresenta l'intervallo tra 0% e 100%)  - `reliability[number]`: Affidabilità (percentuale, espressa in parti per uno) corrispondente alla qualità dell'aria osservata  . Model: [https://schema.org/Number ](https://schema.org/Number )- `seeAlso[*]`: elenco di uri che puntano a risorse aggiuntive sull'elemento  - `sh2[number]`: Rilevato idrogeno solforato  - `so2[number]`: Rilevato biossido di zolfo  - `source[string]`: Una sequenza di caratteri che indica la fonte originale dei dati dell'entità come URL. Si consiglia di utilizzare il nome di dominio completamente qualificato del provider di origine o l'URL dell'oggetto di origine.  - `temperature[number]`: Temperatura dell'articolo  - `type[string]`: Tipo di entità NGSI. Deve essere AirQualityObserved  - `typeofLocation[string]`: Tipo di ubicazione dell'articolo campionato  . Model: [https://schema.org/Text](https://schema.org/Text)- `volatileOrganicCompoundsTotal[number]`: Alcani <C10, chetoni <C6, aldeidi <C10, acidi carbossilici <C5, aspirati<C7, alcheni <C8, aromatici  - `windDirection[number]`: Direzione della banderuola  . Model: [http://schema.org/Number](http://schema.org/Number)- `windSpeed[number]`: Intensità del vento  . Model: [http//schema.org/Number](http//schema.org/Number)<!-- /30-PropertiesList -->  
 <!-- 35-RequiredProperties -->  
 Proprietà richieste  
 - `dateObserved`  - `id`  - `location`  - `type`  <!-- /35-RequiredProperties -->  
@@ -173,6 +173,7 @@ AirQualityObserved:
         type: Property    
     dateObserved:    
       description: The date and time of this observation in ISO8601 UTCformat    
+      format: date-time    
       type: string    
       x-ngsi:    
         model: 'https://schema.org/Text '    
@@ -370,7 +371,7 @@ AirQualityObserved:
       x-ngsi:    
         type: Property    
     ni:    
-      description: Nickel detected    
+      description: 'Nickel detected '    
       minimum: 0    
       type: number    
       x-ngsi:    
@@ -394,7 +395,7 @@ AirQualityObserved:
       x-ngsi:    
         type: Property    
     o3:    
-      description: Ozone detected    
+      description: 'Ozone detected '    
       minimum: 0    
       type: number    
       x-ngsi:    
@@ -422,7 +423,7 @@ AirQualityObserved:
       x-ngsi:    
         type: Property    
     pb:    
-      description: Lead detected    
+      description: 'Lead detected   '    
       minimum: 0    
       type: number    
       x-ngsi:    
@@ -600,7 +601,7 @@ AirQualityObserved:
   x-license-url: https://github.com/smart-data-models/dataModel.Environment/blob/master/AirQualityObserved/LICENSE.md    
   x-model-schema: https://smart-data-models.github.io/dataModel.Environment/AirQualityObserved/schema.json    
   x-model-tags: ""    
-  x-version: 0.1.2    
+  x-version: 0.1.3    
 ```  
 </details>    
 <!-- /60-ModelYaml -->  
@@ -620,7 +621,7 @@ AirQualityObserved:
     "addressLocality": "Madrid",  
     "streetAddress": "Plaza de Espa\u00f1a"  
   },  
-  "dateObserved": "2016-03-15T11:00:00/2016-03-15T12:00:00",  
+  "dateObserved": "2016-03-15T11:00:00",  
   "areaServed": "Brooklands",  
   "location": {  
     "type": "Point",  
@@ -658,7 +659,7 @@ AirQualityObserved:
   "type": "AirQualityObserved",  
   "dateObserved": {  
     "type": "DateTime",  
-    "value": "2016-03-15T11:00:00/2016-03-15T12:00:00"  
+    "value": "2016-03-15T11:00:00"  
   },  
   "areaServed": {  
     "type": "Text",  
@@ -800,7 +801,7 @@ AirQualityObserved:
   "airQualityIndex": 65,  
   "airQualityLevel": "moderate",  
   "areaServed": "Brooklands",  
-  "dateObserved": "2016-03-15T11:00:00/2016-03-15T12:00:00",  
+  "dateObserved": "2016-03-15T11:00:00",  
   "location": {  
     "coordinates": [  
       -3.712247222222222,  
@@ -882,7 +883,7 @@ AirQualityObserved:
   },  
   "dateObserved": {  
       "type": "Property",  
-      "value": "2016-03-15T11:00:00/2016-03-15T12:00:00"  
+      "value": "2016-03-15T11:00:00"  
   },  
   "location": {  
       "type": "GeoProperty",  
