@@ -27,6 +27,7 @@
         },
         "dateObserved": {
           "type": "string",
+          "format": "date-time",
           "description": "Property. The date and time of this observation in ISO8601 UTCformat. Model:'https://schema.org/Text' "
         },
         "areaServed": {
@@ -79,7 +80,7 @@
         "ni": {
           "type": "number",
           "minimum": 0,
-          "description": "Property. Nickel detected"
+          "description": "Property. Nickel detected "
         },
         "no": {
           "type": "number",
@@ -99,7 +100,7 @@
         "o3": {
           "type": "number",
           "minimum": 0,
-          "description": "Property. Ozone detected"
+          "description": "Property. Ozone detected "
         },
         "pm10": {
           "type": "number",
@@ -114,7 +115,7 @@
         "pb": {
           "type": "number",
           "minimum": 0,
-          "description": "Property. Lead detected"
+          "description": "Property. Lead detected   "
         },
         "precipitation": {
           "type": "number",

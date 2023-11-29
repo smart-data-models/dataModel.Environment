@@ -6,7 +6,7 @@
     "addressLocality": "Madrid",
     "streetAddress": "Plaza de Espa\u00f1a"
   },
-  "dateObserved": "2016-03-15T11:00:00/2016-03-15T12:00:00",
+  "dateObserved": "2016-03-15T11:00:00",
   "areaServed": "Brooklands",
   "location": {
     "type": "Point",
