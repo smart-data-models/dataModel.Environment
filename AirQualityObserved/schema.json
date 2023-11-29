@@ -1,6 +1,6 @@
 {
   "$schema": "http://json-schema.org/schema#",
-  "$schemaVersion": "0.1.2",
+  "$schemaVersion": "0.1.3",
   "modelTags": "",
   "$id": "https://smart-data-models.github.io/dataModel.Environment/AirQualityObserved/schema.json",
   "title": "Smart Data Models - Air quality observed schema",
