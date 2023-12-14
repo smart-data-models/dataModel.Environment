@@ -2,7 +2,7 @@
     "@id": "dtmi:com:ngsi-ld:AirQualityMonitoring;0",
     "@type": "Interface",
     "@context": "dtmi:dtdl:context;2",
-    "comment": " Smart Data Models - Air quality Monitoring adapted to DTDL from smartdatamodels.org. Source: https://raw.githubusercontent.com/smart-data-models/dataModel.Environment/master/AirQualityMonitoring/schema.json",
+    "comment": "Smart Data Models - Air quality Monitoring adapted to DTDL from smartdatamodels.org. Source: https://raw.githubusercontent.com/smart-data-models/dataModel.Environment/master/AirQualityMonitoring/schema.json",
     "description": "Air Quality Monitoring (AQM) Data Model.",
     "displayName": "AirQualityMonitoring",
     "contents": [
@@ -12,7 +12,7 @@
             "displayName": "airQualityIndex",
             "@type": "Property",
             "schema": "long",
-            "comment": "Overall Air Quality Index (AQI) for the observed air quality."
+            "comment": "Overall Air Quality Index (AQI) for the observed air quality"
         },
         {
             "name": "airQualityLevel",
@@ -20,7 +20,7 @@
             "displayName": "airQualityLevel",
             "@type": "Property",
             "schema": "string",
-            "comment": "Air Quality Category Indication. Qualitative level defined according to the local health agencies. For example, 'GOOD', 'MODERATE', 'POOR', 'UNHEALTHY', 'SEVERE', 'HAZARDOUS' etc."
+            "comment": "Air Quality Category Indication. Qualitative level defined according to the local health agencies. For example, 'GOOD', 'MODERATE', 'POOR', 'UNHEALTHY', 'SEVERE', 'HAZARDOUS' etc"
         },
         {
             "name": "alternateName",
@@ -31,12 +31,20 @@
             "comment": "An alternative name for this item"
         },
         {
+            "name": "areaServed",
+            "writable": true,
+            "displayName": "areaServed",
+            "@type": "Property",
+            "schema": "string",
+            "comment": "The geographic area where a service or offered item is provided"
+        },
+        {
             "name": "atmosphericPressure",
             "writable": true,
             "displayName": "atmosphericPressure",
             "@type": "Property",
             "schema": "long",
-            "comment": "Observed air (atmospheric or barometric) pressure."
+            "comment": "Observed air (atmospheric or barometric) pressure"
         },
         {
             "name": "dataProvider",
@@ -44,7 +52,7 @@
             "displayName": "dataProvider",
             "@type": "Property",
             "schema": "string",
-            "comment": "A sequence of characters identifying the provider of the harmonised data entity."
+            "comment": "A sequence of characters identifying the provider of the harmonised data entity"
         },
         {
             "name": "dateCreated",
@@ -52,7 +60,7 @@
             "displayName": "dateCreated",
             "@type": "Property",
             "schema": "dateTime",
-            "comment": "Entity creation timestamp. This will usually be allocated by the storage platform."
+            "comment": "Entity creation timestamp. This will usually be allocated by the storage platform"
         },
         {
             "name": "dateModified",
@@ -60,7 +68,7 @@
             "displayName": "dateModified",
             "@type": "Property",
             "schema": "dateTime",
-            "comment": "Timestamp of the last modification of the entity. This will usually be allocated by the storage platform."
+            "comment": "Timestamp of the last modification of the entity. This will usually be allocated by the storage platform"
         },
         {
             "name": "description",
@@ -76,7 +84,7 @@
             "displayName": "deviceStatus",
             "@type": "Property",
             "schema": "string",
-            "comment": "Indicates the status of physical device or devices."
+            "comment": "Indicates the status of physical device or devices"
         },
         {
             "name": "illuminance",
@@ -87,12 +95,17 @@
             "comment": "Measured illuminance"
         },
         {
+            "name": "location",
+            "writable": true,
+            "displayName": "location"
+        },
+        {
             "name": "name",
             "writable": true,
             "displayName": "name",
             "@type": "Property",
             "schema": "string",
-            "comment": "The name of this item."
+            "comment": "The name of this item"
         },
         {
             "name": "observationDateTime",
@@ -100,7 +113,7 @@
             "displayName": "observationDateTime",
             "@type": "Property",
             "schema": "dateTime",
-            "comment": "Last reported time of observation."
+            "comment": "Last reported time of observation"
         },
         {
             "name": "precipitation",
@@ -108,7 +121,7 @@
             "displayName": "precipitation",
             "@type": "Property",
             "schema": "long",
-            "comment": "Observed precipitation/rainfall level over a given duration."
+            "comment": "Observed precipitation/rainfall level over a given duration"
         },
         {
             "name": "seeAlso",
@@ -129,7 +142,7 @@
             "displayName": "source",
             "@type": "Property",
             "schema": "string",
-            "comment": "A sequence of characters giving the original source of the entity data as a URL. Recommended to be the fully qualified domain name of the source provider, or the URL to the source object."
+            "comment": "A sequence of characters giving the original source of the entity data as a URL. Recommended to be the fully qualified domain name of the source provider, or the URL to the source object"
         },
         {
             "@type": "Telemetry",
@@ -143,16 +156,56 @@
         },
         {
             "@type": "object",
+            "name": "address",
+            "comment": "The mailing address",
+            "displayName": "address",
+            "fields": [
+                {
+                    "name": "addressCountry",
+                    "schema": "string"
+                },
+                {
+                    "name": "addressLocality",
+                    "schema": "string"
+                },
+                {
+                    "name": "addressRegion",
+                    "schema": "string"
+                },
+                {
+                    "name": "district",
+                    "schema": "string"
+                },
+                {
+                    "name": "postOfficeBoxNumber",
+                    "schema": "string"
+                },
+                {
+                    "name": "postalCode",
+                    "schema": "string"
+                },
+                {
+                    "name": "streetAddress",
+                    "schema": "string"
+                },
+                {
+                    "name": "streetNr",
+                    "schema": "string"
+                }
+            ]
+        },
+        {
+            "@type": "object",
             "name": "airTemperatureTSA",
-            "comment": "Object defining the temporal processing of a basic property during a period. It provides Maximum, minimum, instant value and average",
+            "comment": "Air temperature time series aggregation",
             "displayName": "airTemperatureTSA",
             "fields": [
                 {
-                    "name": "instValue",
+                    "name": "averageValue",
                     "schema": "long"
                 },
                 {
-                    "name": "instvalue",
+                    "name": "instValue",
                     "schema": "long"
                 },
                 {
@@ -168,15 +221,15 @@
         {
             "@type": "object",
             "name": "ambientNoiseTSA",
-            "comment": "Object defining the temporal processing of a basic property during a period. It provides Maximum, minimum, instant value and average",
+            "comment": "ambient Noise time series aggregation",
             "displayName": "ambientNoiseTSA",
             "fields": [
                 {
-                    "name": "instValue",
+                    "name": "averageValue",
                     "schema": "long"
                 },
                 {
-                    "name": "instvalue",
+                    "name": "instValue",
                     "schema": "long"
                 },
                 {
@@ -192,15 +245,15 @@
         {
             "@type": "object",
             "name": "arsenicTSA",
-            "comment": "Object defining the temporal processing of a basic property during a period. It provides Maximum, minimum, instant value and average",
+            "comment": "Arsenic time series aggregation",
             "displayName": "arsenicTSA",
             "fields": [
                 {
-                    "name": "instValue",
+                    "name": "averageValue",
                     "schema": "long"
                 },
                 {
-                    "name": "instvalue",
+                    "name": "instValue",
                     "schema": "long"
                 },
                 {
@@ -216,15 +269,15 @@
         {
             "@type": "object",
             "name": "atmosphericPressureTSA",
-            "comment": "Object defining the temporal processing of a basic property during a period. It provides Maximum, minimum, instant value and average",
+            "comment": "Atmospheric pressure time series aggregation",
             "displayName": "atmosphericPressureTSA",
             "fields": [
                 {
-                    "name": "instValue",
+                    "name": "averageValue",
                     "schema": "long"
                 },
                 {
-                    "name": "instvalue",
+                    "name": "instValue",
                     "schema": "long"
                 },
                 {
@@ -240,15 +293,15 @@
         {
             "@type": "object",
             "name": "bapTSA",
-            "comment": "Object defining the temporal processing of a basic property during a period. It provides Maximum, minimum, instant value and average",
+            "comment": "Benzo(a)Pyrene time series aggregation",
             "displayName": "bapTSA",
             "fields": [
                 {
-                    "name": "instValue",
+                    "name": "averageValue",
                     "schema": "long"
                 },
                 {
-                    "name": "instvalue",
+                    "name": "instValue",
                     "schema": "long"
                 },
                 {
@@ -264,15 +317,15 @@
         {
             "@type": "object",
             "name": "benzeneTSA",
-            "comment": "Object defining the temporal processing of a basic property during a period. It provides Maximum, minimum, instant value and average",
+            "comment": "Benzene time series aggregation",
             "displayName": "benzeneTSA",
             "fields": [
                 {
-                    "name": "instValue",
+                    "name": "averageValue",
                     "schema": "long"
                 },
                 {
-                    "name": "instvalue",
+                    "name": "instValue",
                     "schema": "long"
                 },
                 {
@@ -288,15 +341,15 @@
         {
             "@type": "object",
             "name": "co2TSA",
-            "comment": "Object defining the temporal processing of a basic property during a period. It provides Maximum, minimum, instant value and average",
+            "comment": "Carbon dioxide time series aggregation",
             "displayName": "co2TSA",
             "fields": [
                 {
-                    "name": "instValue",
+                    "name": "averageValue",
                     "schema": "long"
                 },
                 {
-                    "name": "instvalue",
+                    "name": "instValue",
                     "schema": "long"
                 },
                 {
@@ -312,15 +365,15 @@
         {
             "@type": "object",
             "name": "coTSA",
-            "comment": "Object defining the temporal processing of a basic property during a period. It provides Maximum, minimum, instant value and average",
+            "comment": "Carbon monoxide time series aggregation",
             "displayName": "coTSA",
             "fields": [
                 {
-                    "name": "instValue",
+                    "name": "averageValue",
                     "schema": "long"
                 },
                 {
-                    "name": "instvalue",
+                    "name": "instValue",
                     "schema": "long"
                 },
                 {
@@ -336,7 +389,7 @@
         {
             "@type": "object",
             "name": "deviceInfo",
-            "comment": "Information about the device associated with the observations.",
+            "comment": "Information about the device associated with the observations",
             "displayName": "deviceInfo",
             "fields": [
                 {
@@ -380,15 +433,15 @@
         {
             "@type": "object",
             "name": "nh3TSA",
-            "comment": "Object defining the temporal processing of a basic property during a period. It provides Maximum, minimum, instant value and average",
+            "comment": "Ammonia time series aggregation",
             "displayName": "nh3TSA",
             "fields": [
                 {
-                    "name": "instValue",
+                    "name": "averageValue",
                     "schema": "long"
                 },
                 {
-                    "name": "instvalue",
+                    "name": "instValue",
                     "schema": "long"
                 },
                 {
@@ -404,15 +457,15 @@
         {
             "@type": "object",
             "name": "nickelTSA",
-            "comment": "Object defining the temporal processing of a basic property during a period. It provides Maximum, minimum, instant value and average",
+            "comment": "Nickel time series aggregation",
             "displayName": "nickelTSA",
             "fields": [
                 {
-                    "name": "instValue",
+                    "name": "averageValue",
                     "schema": "long"
                 },
                 {
-                    "name": "instvalue",
+                    "name": "instValue",
                     "schema": "long"
                 },
                 {
@@ -428,15 +481,15 @@
         {
             "@type": "object",
             "name": "no2TSA",
-            "comment": "Object defining the temporal processing of a basic property during a period. It provides Maximum, minimum, instant value and average",
+            "comment": "Nitrogen dioxide time series aggregation",
             "displayName": "no2TSA",
             "fields": [
                 {
-                    "name": "instValue",
+                    "name": "averageValue",
                     "schema": "long"
                 },
                 {
-                    "name": "instvalue",
+                    "name": "instValue",
                     "schema": "long"
                 },
                 {
@@ -452,15 +505,15 @@
         {
             "@type": "object",
             "name": "noTSA",
-            "comment": "Object defining the temporal processing of a basic property during a period. It provides Maximum, minimum, instant value and average",
+            "comment": "Nitrogen monoxide time series aggregation",
             "displayName": "noTSA",
             "fields": [
                 {
-                    "name": "instValue",
+                    "name": "averageValue",
                     "schema": "long"
                 },
                 {
-                    "name": "instvalue",
+                    "name": "instValue",
                     "schema": "long"
                 },
                 {
@@ -476,15 +529,15 @@
         {
             "@type": "object",
             "name": "o2TSA",
-            "comment": "Object defining the temporal processing of a basic property during a period. It provides Maximum, minimum, instant value and average",
+            "comment": "Oxygen time series aggregation",
             "displayName": "o2TSA",
             "fields": [
                 {
-                    "name": "instValue",
+                    "name": "averageValue",
                     "schema": "long"
                 },
                 {
-                    "name": "instvalue",
+                    "name": "instValue",
                     "schema": "long"
                 },
                 {
@@ -500,15 +553,15 @@
         {
             "@type": "object",
             "name": "o3TSA",
-            "comment": "Object defining the temporal processing of a basic property during a period. It provides Maximum, minimum, instant value and average",
+            "comment": "Ozone time series aggregation ",
             "displayName": "o3TSA",
             "fields": [
                 {
-                    "name": "instValue",
+                    "name": "averageValue",
                     "schema": "long"
                 },
                 {
-                    "name": "instvalue",
+                    "name": "instValue",
                     "schema": "long"
                 },
                 {
@@ -524,15 +577,15 @@
         {
             "@type": "object",
             "name": "pbTSA",
-            "comment": "Object defining the temporal processing of a basic property during a period. It provides Maximum, minimum, instant value and average",
+            "comment": "Lead time series aggregation",
             "displayName": "pbTSA",
             "fields": [
                 {
-                    "name": "instValue",
+                    "name": "averageValue",
                     "schema": "long"
                 },
                 {
-                    "name": "instvalue",
+                    "name": "instValue",
                     "schema": "long"
                 },
                 {
@@ -548,15 +601,15 @@
         {
             "@type": "object",
             "name": "pm10TSA",
-            "comment": "Object defining the temporal processing of a basic property during a period. It provides Maximum, minimum, instant value and average",
+            "comment": "Particulate matter in the air with a diameter of 10 micrometers or less time series aggregation",
             "displayName": "pm10TSA",
             "fields": [
                 {
-                    "name": "instValue",
+                    "name": "averageValue",
                     "schema": "long"
                 },
                 {
-                    "name": "instvalue",
+                    "name": "instValue",
                     "schema": "long"
                 },
                 {
@@ -572,15 +625,15 @@
         {
             "@type": "object",
             "name": "pm25TSA",
-            "comment": "Object defining the temporal processing of a basic property during a period. It provides Maximum, minimum, instant value and average",
+            "comment": "Particulate matter in the air with a diameter of 25 micrometers or less time series aggregation",
             "displayName": "pm25TSA",
             "fields": [
                 {
-                    "name": "instValue",
+                    "name": "averageValue",
                     "schema": "long"
                 },
                 {
-                    "name": "instvalue",
+                    "name": "instValue",
                     "schema": "long"
                 },
                 {
@@ -596,15 +649,15 @@
         {
             "@type": "object",
             "name": "relativeHumidityTSA",
-            "comment": "Object defining the temporal processing of a basic property during a period. It provides Maximum, minimum, instant value and average",
+            "comment": "Relative Humidity time series aggregation",
             "displayName": "relativeHumidityTSA",
             "fields": [
                 {
-                    "name": "instValue",
+                    "name": "averageValue",
                     "schema": "long"
                 },
                 {
-                    "name": "instvalue",
+                    "name": "instValue",
                     "schema": "long"
                 },
                 {
@@ -620,15 +673,15 @@
         {
             "@type": "object",
             "name": "so2TSA",
-            "comment": "Object defining the temporal processing of a basic property during a period. It provides Maximum, minimum, instant value and average",
+            "comment": "Sulfur dioxide time series aggregation",
             "displayName": "so2TSA",
             "fields": [
                 {
-                    "name": "instValue",
+                    "name": "averageValue",
                     "schema": "long"
                 },
                 {
-                    "name": "instvalue",
+                    "name": "instValue",
                     "schema": "long"
                 },
                 {
@@ -644,15 +697,15 @@
         {
             "@type": "object",
             "name": "uvTSA",
-            "comment": "Object defining the temporal processing of a basic property during a period. It provides Maximum, minimum, instant value and average",
+            "comment": "Ultra violet radiation time series aggregation",
             "displayName": "uvTSA",
             "fields": [
                 {
-                    "name": "instValue",
+                    "name": "averageValue",
                     "schema": "long"
                 },
                 {
-                    "name": "instvalue",
+                    "name": "instValue",
                     "schema": "long"
                 },
                 {
@@ -668,7 +721,7 @@
         {
             "@type": "object",
             "name": "versionInfo",
-            "comment": "Version information corresponding to this observation.",
+            "comment": "Version information corresponding to this observation",
             "displayName": "versionInfo",
             "fields": [
                 {
