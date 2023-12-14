@@ -1,0 +1,187 @@
+{
+    "@id": "dtmi:com:ngsi-ld:NightSkyQuality;0",
+    "@type": "Interface",
+    "@context": "dtmi:dtdl:context;2",
+    "comment": "Smart Data models - NightSkyQuality schema adapted to DTDL from smartdatamodels.org. Source: https://raw.githubusercontent.com/smart-data-models/dataModel.Environment/master/NightSkyQuality/schema.json",
+    "description": "Data regarding the observed sky quality and the status of the measuring device.",
+    "displayName": "NightSkyQuality",
+    "contents": [
+        {
+            "name": "alternateName",
+            "writable": true,
+            "displayName": "alternateName",
+            "@type": "Property",
+            "schema": "string",
+            "comment": "An alternative name for this item"
+        },
+        {
+            "name": "ambientTemperature",
+            "writable": true,
+            "displayName": "ambientTemperature",
+            "@type": "Property",
+            "schema": "long",
+            "comment": "Temperature measurement"
+        },
+        {
+            "name": "areaServed",
+            "writable": true,
+            "displayName": "areaServed",
+            "@type": "Property",
+            "schema": "string",
+            "comment": "The geographic area where a service or offered item is provided"
+        },
+        {
+            "name": "battery",
+            "writable": true,
+            "displayName": "battery",
+            "@type": "Property",
+            "schema": "long",
+            "comment": "Voltage provided by the battery"
+        },
+        {
+            "name": "batteryLevel",
+            "writable": true,
+            "displayName": "batteryLevel"
+        },
+        {
+            "name": "clouds",
+            "writable": true,
+            "displayName": "clouds",
+            "@type": "Property",
+            "schema": "string",
+            "comment": "Qualitative indicator of the amount of cloud cover"
+        },
+        {
+            "name": "dataProvider",
+            "writable": true,
+            "displayName": "dataProvider",
+            "@type": "Property",
+            "schema": "string",
+            "comment": "A sequence of characters identifying the provider of the harmonised data entity"
+        },
+        {
+            "name": "dateCreated",
+            "writable": true,
+            "displayName": "dateCreated",
+            "@type": "Property",
+            "schema": "dateTime",
+            "comment": "Entity creation timestamp. This will usually be allocated by the storage platform"
+        },
+        {
+            "name": "dateModified",
+            "writable": true,
+            "displayName": "dateModified",
+            "@type": "Property",
+            "schema": "dateTime",
+            "comment": "Timestamp of the last modification of the entity. This will usually be allocated by the storage platform"
+        },
+        {
+            "name": "description",
+            "writable": true,
+            "displayName": "description",
+            "@type": "Property",
+            "schema": "string",
+            "comment": "A description of this item"
+        },
+        {
+            "name": "location",
+            "writable": true,
+            "displayName": "location"
+        },
+        {
+            "name": "name",
+            "writable": true,
+            "displayName": "name",
+            "@type": "Property",
+            "schema": "string",
+            "comment": "The name of this item"
+        },
+        {
+            "name": "seeAlso",
+            "writable": true,
+            "displayName": "seeAlso"
+        },
+        {
+            "name": "sigmaMagnitude",
+            "writable": true,
+            "displayName": "sigmaMagnitude",
+            "@type": "Property",
+            "schema": "long",
+            "comment": "Unitless parameter, expressing the Standard Deviation corresponding to the measurement of sky magnitude"
+        },
+        {
+            "name": "skyMagnitude",
+            "writable": true,
+            "displayName": "skyMagnitude",
+            "@type": "Property",
+            "schema": "long",
+            "comment": "Unitless parameter: the measurement taken by the device, corresponding to the apparent magnitude of the night sky (that is, its brightness)"
+        },
+        {
+            "name": "skyTemperature",
+            "writable": true,
+            "displayName": "skyTemperature",
+            "@type": "Property",
+            "schema": "long",
+            "comment": "Direct measurement of the sky temperature, as taken by the device"
+        },
+        {
+            "name": "source",
+            "writable": true,
+            "displayName": "source",
+            "@type": "Property",
+            "schema": "string",
+            "comment": "A sequence of characters giving the original source of the entity data as a URL. Recommended to be the fully qualified domain name of the source provider, or the URL to the source object"
+        },
+        {
+            "@type": "Telemetry",
+            "name": "owner",
+            "schema": {
+                "@type": "Array",
+                "elementSchema": "string"
+            },
+            "comment": "A List containing a JSON encoded sequence of characters referencing the unique Ids of the owner(s)",
+            "displayName": "owner"
+        },
+        {
+            "@type": "object",
+            "name": "address",
+            "comment": "The mailing address",
+            "displayName": "address",
+            "fields": [
+                {
+                    "name": "addressCountry",
+                    "schema": "string"
+                },
+                {
+                    "name": "addressLocality",
+                    "schema": "string"
+                },
+                {
+                    "name": "addressRegion",
+                    "schema": "string"
+                },
+                {
+                    "name": "district",
+                    "schema": "string"
+                },
+                {
+                    "name": "postOfficeBoxNumber",
+                    "schema": "string"
+                },
+                {
+                    "name": "postalCode",
+                    "schema": "string"
+                },
+                {
+                    "name": "streetAddress",
+                    "schema": "string"
+                },
+                {
+                    "name": "streetNr",
+                    "schema": "string"
+                }
+            ]
+        }
+    ]
+}
