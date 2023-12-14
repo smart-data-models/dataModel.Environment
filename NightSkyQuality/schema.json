@@ -1,6 +1,6 @@
 {
     "$schema": "http://json-schema.org/schema",
-    "$schemaVersion": "0.0.1",
+    "$schemaVersion": "0.0.2",
     "$id": "https://smart-data-models.github.io/dataModel.NightSkyQuality/NightSkyQuality/schema.json",
     "title": "Smart Data models - NightSkyQuality schema",
     "modelTags": "",
@@ -20,6 +20,13 @@
         },
         {
             "properties": {
+                "type": {
+                    "type": "string",
+                    "enum": [
+                        "NightSkyQuality"
+                    ],
+                    "description": "Property. NGSI Entity type. It has to be MosquitoDensity"
+                },
                 "ambientTemperature": {
                     "type": "number",
                     "description": "Property. Temperature measurement. Units:'degrees Celsius (C)'"
