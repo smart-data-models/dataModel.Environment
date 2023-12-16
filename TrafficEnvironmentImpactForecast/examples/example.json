@@ -1,6 +1,6 @@
 {
   "id": "urn:ngsi-ld:TrafficEnvironmentImpact:id:BGGK:76812356",
-  "type": "TrafficEnvironmentImpact",
+  "type": "TrafficEnvironmentImpactForecast",
   "dateCreated": "2022-08-17T05:21:50Z",
   "dateModified": "2022-08-30T08:09:40Z",
   "dateIssued": "2022-08-30T08:09:40Z",
