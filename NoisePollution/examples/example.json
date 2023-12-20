@@ -3,7 +3,6 @@
   "type": "NoisePollution",
   "Laeq2": 85,
   "Lamax2": 75,
-  "Lanight": 45,
   "NoiseAnnoyanceIndex": 3,
   "address": {
     "addressCountry": "France",
