@@ -7,17 +7,17 @@
     "displayName": "NoisePollution",
     "contents": [
         {
-            "name": "LAeq2",
+            "name": "Laeq2",
             "writable": true,
-            "displayName": "LAeq2",
+            "displayName": "Laeq2",
             "@type": "Property",
             "schema": "long",
             "comment": "Average sound level over the last 2 hours"
         },
         {
-            "name": "LAmax2",
+            "name": "Lamax2",
             "writable": true,
-            "displayName": "LAmax2",
+            "displayName": "Lamax2",
             "@type": "Property",
             "schema": "long",
             "comment": "Maximum sound level recorded for the last 2 hours"
@@ -29,6 +29,14 @@
             "@type": "Property",
             "schema": "string",
             "comment": "An alternative name for this item"
+        },
+        {
+            "name": "areaServed",
+            "writable": true,
+            "displayName": "areaServed",
+            "@type": "Property",
+            "schema": "string",
+            "comment": "The geographic area where a service or offered item is provided"
         },
         {
             "name": "buildingsType",
@@ -44,7 +52,7 @@
             "displayName": "dataProvider",
             "@type": "Property",
             "schema": "string",
-            "comment": "A sequence of characters identifying the provider of the harmonised data entity."
+            "comment": "A sequence of characters identifying the provider of the harmonised data entity"
         },
         {
             "name": "dateCreated",
@@ -52,7 +60,7 @@
             "displayName": "dateCreated",
             "@type": "Property",
             "schema": "dateTime",
-            "comment": "Entity creation timestamp. This will usually be allocated by the storage platform."
+            "comment": "Entity creation timestamp. This will usually be allocated by the storage platform"
         },
         {
             "name": "dateModified",
@@ -60,7 +68,7 @@
             "displayName": "dateModified",
             "@type": "Property",
             "schema": "dateTime",
-            "comment": "Timestamp of the last modification of the entity. This will usually be allocated by the storage platform."
+            "comment": "Timestamp of the last modification of the entity. This will usually be allocated by the storage platform"
         },
         {
             "name": "dateObservedFrom",
@@ -95,12 +103,17 @@
             "comment": "Type of predominant ground in the measurement area at installation of the sensor"
         },
         {
+            "name": "location",
+            "writable": true,
+            "displayName": "location"
+        },
+        {
             "name": "name",
             "writable": true,
             "displayName": "name",
             "@type": "Property",
             "schema": "string",
-            "comment": "The name of this item."
+            "comment": "The name of this item"
         },
         {
             "name": "noiseAnnoyanceIndex",
@@ -129,7 +142,7 @@
             "displayName": "source",
             "@type": "Property",
             "schema": "string",
-            "comment": "A sequence of characters giving the original source of the entity data as a URL. Recommended to be the fully qualified domain name of the source provider, or the URL to the source object."
+            "comment": "A sequence of characters giving the original source of the entity data as a URL. Recommended to be the fully qualified domain name of the source provider, or the URL to the source object"
         },
         {
             "name": "wallsType",
@@ -148,6 +161,46 @@
             },
             "comment": "A List containing a JSON encoded sequence of characters referencing the unique Ids of the owner(s)",
             "displayName": "owner"
+        },
+        {
+            "@type": "object",
+            "name": "address",
+            "comment": "The mailing address",
+            "displayName": "address",
+            "fields": [
+                {
+                    "name": "addressCountry",
+                    "schema": "string"
+                },
+                {
+                    "name": "addressLocality",
+                    "schema": "string"
+                },
+                {
+                    "name": "addressRegion",
+                    "schema": "string"
+                },
+                {
+                    "name": "district",
+                    "schema": "string"
+                },
+                {
+                    "name": "postOfficeBoxNumber",
+                    "schema": "string"
+                },
+                {
+                    "name": "postalCode",
+                    "schema": "string"
+                },
+                {
+                    "name": "streetAddress",
+                    "schema": "string"
+                },
+                {
+                    "name": "streetNr",
+                    "schema": "string"
+                }
+            ]
         }
     ]
 }
