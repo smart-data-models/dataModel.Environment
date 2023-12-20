@@ -19,10 +19,5 @@
   "temperature": 12.2,
   "relativeHumidity": 0.54,
   "atmosphericPressure": 1013.52,
-  "illuminance": 1000,
-  "CO": 500,
-  "NO": 45,
-  "NO2": 69,
-  "NOx": 139,
-  "SO2": 11
+  "illuminance": 1000
 }
