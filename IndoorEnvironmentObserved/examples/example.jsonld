@@ -1,11 +1,6 @@
 {
   "id": "urn:ngsi-ld:IndoorEnvironmentObserved:urn:ngsi:MuseoDemo_Room_1",
   "type": "IndoorEnvironmentObserved",
-  "CO": 500,
-  "NO": 45,
-  "NO2": 69,
-  "NOx": 139,
-  "SO2": 11,
   "address": {
     "addressCountry": "IT",
     "addressLocality": "Demo city",
