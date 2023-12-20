@@ -16,7 +16,6 @@
     ],
     "type": "Point"
   },
-  "modifiedAt": "2018-02-16T17:24:39.00Z",
   "source": "http://rema.atmosfera.unam.mx/rema/",
   "@context": [
     "https://raw.githubusercontent.com/smart-data-models/dataModel.Environment/master/context.jsonld"
