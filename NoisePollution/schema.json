@@ -1,6 +1,6 @@
 {
   "$schema": "http://json-schema.org/schema#",
-  "$schemaVersion": "0.0.2",
+  "$schemaVersion": "0.0.4",
   "modelTags": "GreenMov",
   "$id": "https://smart-data-models.github.io/dataModel.Environment/NoisePollution/schema.json",
   "title": "Smart Data Models - Noise Pollution",
@@ -11,7 +11,7 @@
       "$ref": "https://smart-data-models.github.io/data-models/common-schema.json#/definitions/GSMA-Commons"
     },
     {
-      "$ref": "https://smart-data-models.github.io/data-models/common-schema.json#/definitions/Location-Commons/properties"
+      "$ref": "https://smart-data-models.github.io/data-models/common-schema.json#/definitions/Location-Commons"
     },
     {
       "properties": {
@@ -44,11 +44,11 @@
           "type": "string",
           "description": "Property. Facade material types dominant in the measurement area at installation of the sensor"
         },
-        "LAmax2": {
+        "Lamax2": {
           "type": "number",
           "description": "Property. Maximum sound level recorded for the last 2 hours"
         },
-        "LAeq2": {
+        "Laeq2": {
           "type": "number",
           "description": "Property. Average sound level over the last 2 hours"
         },
