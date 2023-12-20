@@ -42,10 +42,6 @@
     "type": "Property",
     "value": 3
   },
-  "Lanight": {
-    "type": "Property",
-    "value": 45
-  },
   "noiseOrigin": {
     "type": "Property",
     "value": "traffic"
