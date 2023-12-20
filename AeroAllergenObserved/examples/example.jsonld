@@ -8,12 +8,6 @@
     "type": "PostalAddress"
   },
   "allergenRisk": "moderate",
-  "alnus": 40,
-  "alnus_Allergenicity": "3",
-  "alnus_Level": "moderate",
-  "casuarina": 1,
-  "casuarina_Allergenicity": "3",
-  "casuarina_Level": "low",
   "dateObserved": "2018-02-11T00:00:00.00Z",
   "location": {
     "coordinates": [
