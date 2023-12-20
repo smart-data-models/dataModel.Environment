@@ -1,31 +1,6 @@
 {
     "id": "urn:ngsi-ld:IndoorEnvironmentObserved:urn:ngsi:MuseoDemo_Room_1",
     "type": "IndoorEnvironmentObserved",
-    "CO": {
-        "type": "Property",
-        "value": 500,
-        "unitCode": "GP"
-    },
-    "NO": {
-        "type": "Property",
-        "value": 45,
-        "unitCode": "GQ"
-    },
-    "NO2": {
-        "type": "Property",
-        "value": 69,
-        "unitCode": "GQ"
-    },
-    "NOx": {
-        "type": "Property",
-        "value": 139,
-        "unitCode": "GQ"
-    },
-    "SO2": {
-        "type": "Property",
-        "value": 11,
-        "unitCode": "GQ"
-    },
     "address": {
         "type": "Property",
         "value": {
