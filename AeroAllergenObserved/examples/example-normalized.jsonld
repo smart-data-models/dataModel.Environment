@@ -14,30 +14,6 @@
         "type": "Property",
         "value": "moderate"
     },
-    "alnus": {
-        "type": "Property",
-        "value": 40
-    },
-    "alnus_Allergenicity": {
-        "type": "Property",
-        "value": "3"
-    },
-    "alnus_Level": {
-        "type": "Property",
-        "value": "moderate"
-    },
-    "casuarina": {
-        "type": "Property",
-        "value": 1
-    },
-    "casuarina_Allergenicity": {
-        "type": "Property",
-        "value": "3"
-    },
-    "casuarina_Level": {
-        "type": "Property",
-        "value": "low"
-    },
     "dateObserved": {
         "type": "Property",
         "value": {
@@ -55,7 +31,6 @@
             ]
         }
     },
-    "modifiedAt": "2018-02-16T17:24:39.00Z",
     "source": {
         "type": "Property",
         "value": "http://rema.atmosfera.unam.mx/rema/"
