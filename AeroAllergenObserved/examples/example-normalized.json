@@ -5,29 +5,9 @@
     "type": "DateTime",
     "value": "2018-02-11T00:00:00.00Z"
   },
-  "alnus": {
-    "type": "Number",
-    "value": 40
-  },
-  "alnus_Allergenicity": {
-    "type": "Text",
-    "value": "3"
-  },
   "allergenRisk": {
     "type": "Text",
     "value": "moderate"
-  },
-  "casuarina": {
-    "type": "Boolean",
-    "value": true
-  },
-  "casuarina_Level": {
-    "type": "Text",
-    "value": "low"
-  },
-  "casuarina_Allergenicity": {
-    "type": "Text",
-    "value": "3"
   },
   "source": {
     "type": "Text",
@@ -54,9 +34,5 @@
   "dateModified": {
     "type": "DateTime",
     "value": "2018-02-16T17:24:39.00Z"
-  },
-  "alnus_Level": {
-    "type": "Text",
-    "value": "moderate"
   }
 }
