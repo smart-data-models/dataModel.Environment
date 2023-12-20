@@ -20,8 +20,5 @@
   "refDevice": "urn:ngsi-ld:Device:NCE-T2-P7-EM03",
   "dateObserved": "2020-03-17T08:45:00Z",
   "eMF": 950.12,
-  "observedAt": "2020-03-17TT08:45:00Z",
-  "measurementType": "Instant",
-  "measurementInterval": 1,
   "reliability": 0.993
 }
