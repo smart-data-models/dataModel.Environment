@@ -1,12 +1,12 @@
 NoisePollution:
   description: 'Noise Pollution data model merges specific and punctual noise measurements (coming, e.g. from NoiseLevelObservation entities) into average parameters referred to city areas, providing a more city-related data about noise pollution status and evolution.'
   properties:
-    LAeq2:
+    Laeq2:
       description: Average sound level over the last 2 hours
       type: number
       x-ngsi:
         type: Property
-    LAmax2:
+    Lamax2:
       description: Maximum sound level recorded for the last 2 hours
       type: number
       x-ngsi:
@@ -139,79 +139,37 @@ NoisePollution:
     location:
       description: 'Geojson reference to the item. It can be Point, LineString, Polygon, MultiPoint, MultiLineString or MultiPolygon'
       oneOf:
-        - bbox:
-            items:
-              type: number
-            minItems: 4
-            type: array
-          coordinates:
-            items:
-              type: number
-            minItems: 2
-            type: array
-          type:
-            enum:
-              - Point
-            type: string
-        - bbox:
-            items:
-              type: number
-            minItems: 4
-            type: array
-          coordinates:
-            items:
+        - description: Geojson reference to the item. Point
+          properties:
+            bbox:
               items:
                 type: number
-              minItems: 2
-              type: array
-            minItems: 2
-            type: array
-          type:
-            enum:
-              - LineString
-            type: string
-        - bbox:
-            items:
-              type: number
-            minItems: 4
-            type: array
-          coordinates:
-            items:
-              items:
-                items:
-                  type: number
-                minItems: 2
-                type: array
               minItems: 4
               type: array
-            type: array
-          type:
-            enum:
-              - Polygon
-            type: string
-        - bbox:
-            items:
-              type: number
-            minItems: 4
-            type: array
-          coordinates:
-            items:
+            coordinates:
               items:
                 type: number
               minItems: 2
               type: array
-            type: array
-          type:
-            enum:
-              - MultiPoint
-            type: string
-        - bbox:
-            items:
-              type: number
-            minItems: 4
-            type: array
-          coordinates:
-            items:
+            type:
+              enum:
+                - Point
+              type: string
+          required:
+            - type
+            - coordinates
+          title: GeoJSON Point
+          type: object
+          x-ngsi:
+            type: GeoProperty
+        - description: Geojson reference to the item. LineString
+          properties:
+            bbox:
+              items:
+                type: number
+              minItems: 4
+              type: array
+            coordinates:
               items:
                 items:
                   type: number
@@ -219,31 +177,128 @@ NoisePollution:
                 type: array
               minItems: 2
               type: array
-            type: array
-          type:
-            enum:
-              - MultiLineString
-            type: string
-        - bbox:
-            items:
-              type: number
-            minItems: 4
-            type: array
-          coordinates:
-            items:
+            type:
+              enum:
+                - LineString
+              type: string
+          required:
+            - type
+            - coordinates
+          title: GeoJSON LineString
+          type: object
+          x-ngsi:
+            type: GeoProperty
+        - description: Geojson reference to the item. Polygon
+          properties:
+            bbox:
+              items:
+                type: number
+              minItems: 4
+              type: array
+            coordinates:
               items:
                 items:
                   items:
+                    type: number
                   minItems: 2
                   type: array
                 minItems: 4
                 type: array
               type: array
-            type: array
-          type:
-            enum:
-              - MultiPolygon
-            type: string
+            type:
+              enum:
+                - Polygon
+              type: string
+          required:
+            - type
+            - coordinates
+          title: GeoJSON Polygon
+          type: object
+          x-ngsi:
+            type: GeoProperty
+        - description: Geojson reference to the item. MultiPoint
+          properties:
+            bbox:
+              items:
+                type: number
+              minItems: 4
+              type: array
+            coordinates:
+              items:
+                items:
+                  type: number
+                minItems: 2
+                type: array
+              type: array
+            type:
+              enum:
+                - MultiPoint
+              type: string
+          required:
+            - type
+            - coordinates
+          title: GeoJSON MultiPoint
+          type: object
+          x-ngsi:
+            type: GeoProperty
+        - description: Geojson reference to the item. MultiLineString
+          properties:
+            bbox:
+              items:
+                type: number
+              minItems: 4
+              type: array
+            coordinates:
+              items:
+                items:
+                  items:
+                    type: number
+                  minItems: 2
+                  type: array
+                minItems: 2
+                type: array
+              type: array
+            type:
+              enum:
+                - MultiLineString
+              type: string
+          required:
+            - type
+            - coordinates
+          title: GeoJSON MultiLineString
+          type: object
+          x-ngsi:
+            type: GeoProperty
+        - description: Geojson reference to the item. MultiLineString
+          properties:
+            bbox:
+              items:
+                type: number
+              minItems: 4
+              type: array
+            coordinates:
+              items:
+                items:
+                  items:
+                    items:
+                      type: number
+                    minItems: 2
+                    type: array
+                  minItems: 4
+                  type: array
+                type: array
+              type: array
+            type:
+              enum:
+                - MultiPolygon
+              type: string
+          required:
+            - type
+            - coordinates
+          title: GeoJSON MultiPolygon
+          type: object
+          x-ngsi:
+            type: GeoProperty
       x-ngsi:
         type: GeoProperty
     name:
@@ -319,8 +374,8 @@ NoisePollution:
     - type
   type: object
   x-derived-from: ""
-  x-disclaimer: 'Redistribution and use in source and binary forms, with or without modification, are permitted  provided that the license conditions are met. Copyleft (c) 2022 Contributors to Smart Data Models Program'
+  x-disclaimer: 'Redistribution and use in source and binary forms, with or without modification, are permitted  provided that the license conditions are met. Copyleft (c) 2023 Contributors to Smart Data Models Program'
   x-license-url: https://github.com/smart-data-models/dataModel.Environment/blob/master/NoisePollution/LICENSE.md
   x-model-schema: https://smart-data-models.github.io/dataModel.Environment/NoisePollution/schema.json
   x-model-tags: GreenMov
-  x-version: 0.0.2
+  x-version: 0.0.4
