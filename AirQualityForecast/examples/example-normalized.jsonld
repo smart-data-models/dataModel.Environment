@@ -24,20 +24,6 @@
     "type": "Property",
     "value": "IMREDD_UCA_Nice"
   },
-  "dateIssued": {
-    "type": "Property",
-    "value": {
-      "@type": "DateTime",
-      "@value": "2022-07-01T10:40:01.00Z"
-    }
-  },
-  "dateRetrieved": {
-    "type": "Property",
-    "value": {
-      "@type": "DateTime",
-      "@value": "2022-07-01T12:57:24.00Z"
-    }
-  },
   "validFrom": {
     "type": "Property",
     "value": {
@@ -114,10 +100,6 @@
   "precipitation": {
     "type": "Property",
     "value": 0
-  },
-  "typeOfLocation": {
-    "type": "Property",
-    "value": "outdoor"
   },
   "@context": [
 
