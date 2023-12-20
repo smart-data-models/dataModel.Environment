@@ -18,10 +18,7 @@
       7.196545
     ]
   },
-  "measurementInterval": 1,
-  "measurementType": "Instant",
   "name": "MNCA-EM-018",
-  "observedAt": "2020-03-17TT08:45:00Z",
   "refDevice": "urn:ngsi-ld:Device:NCE-T2-P7-EM03",
   "reliability": 0.993,
   "@context": [
