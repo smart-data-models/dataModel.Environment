@@ -36,10 +36,6 @@
     "type": "Number",
     "value": 3
   },
-  "Lanight": {
-    "type": "Number",
-    "value": 45
-  },
   "noiseOrigin": {
     "type": "Text",
     "value": "traffic"
