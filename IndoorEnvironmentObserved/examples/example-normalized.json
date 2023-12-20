@@ -57,50 +57,5 @@
         "value": "LX"
       }
     }
-  },
-  "CO": {
-    "type": "Number",
-    "value": 500,
-    "metadata": {
-      "unitCode": {
-        "value": "GP"
-      }
-    }
-  },
-  "NO": {
-    "type": "Number",
-    "value": 45,
-    "metadata": {
-      "unitCode": {
-        "value": "GQ"
-      }
-    }
-  },
-  "NOx": {
-    "type": "Number",
-    "value": 139,
-    "metadata": {
-      "unitCode": {
-        "value": "GQ"
-      }
-    }
-  },
-  "NO2": {
-    "type": "Number",
-    "value": 69,
-    "metadata": {
-      "unitCode": {
-        "value": "GQ"
-      }
-    }
-  },
-  "SO2": {
-    "type": "Number",
-    "value": 11,
-    "metadata": {
-      "unitCode": {
-        "value": "GQ"
-      }
-    }
   }
 }
