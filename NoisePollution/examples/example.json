@@ -3,7 +3,7 @@
   "type": "NoisePollution",
   "Laeq2": 85,
   "Lamax2": 75,
-  "NoiseAnnoyanceIndex": 3,
+  "noiseAnnoyanceIndex": 3,
   "address": {
     "addressCountry": "France",
     "addressLocality": "Nice",
