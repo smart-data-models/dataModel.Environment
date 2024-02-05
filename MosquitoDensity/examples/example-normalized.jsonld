@@ -1,14 +1,6 @@
 {
   "id": "ngsi-ld:MosquitoDensity:001",
   "type": "MosquitoDensity",
-  "deviceId": {
-    "type": "Property",
-    "value": "VDFWitw@B"
-  },
-  "deviceSimNumber": {
-    "type": "Property",
-    "value": "861123052561188"
-  },
   "location": {
     "type": "GeoProperty",
     "value": {
@@ -61,12 +53,7 @@
       "deviceID": "43",
       "measurand": "6",
       "deviceSimNumber": "6755375727",
-      "deviceModel": {
-        "brandName": "abc",
-        "manufacturerName": "xyz",
-        "modelName": "SL1",
-        "modelURL": "www.abcstreetlight.com"
-      }
+      "deviceId": "VDFWitw@B"
     }
   },
   "@context": [
