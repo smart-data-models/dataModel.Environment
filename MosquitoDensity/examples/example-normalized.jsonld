@@ -1,7 +1,7 @@
 {
   "id": "https://smart-data-models.github.io/IUDX/MosquitoDensity/schema.json",
   "type": "MosquitoDensity",
-  "deviceID": {
+  "deviceId": {
     "type": "Property",
     "value": "VDFWitw@B"
   },
