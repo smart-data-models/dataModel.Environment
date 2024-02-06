@@ -55,7 +55,19 @@ MosquitoDensity:
         model: https://schema.org/address
         type: Property
     airTemperature:
+      averageValue:
+        description: Property. Average value of temporal processing over time
+        type: number
       description: Observed value of air temperature. Value is an object containing attributes representing statistical aggregates derived from past data
+      instValue:
+        description: Property. Instant value of temporal processing
+        type: number
+      maxOverTime:
+        description: Property. Maximum value of temporal processing over time
+        type: number
+      minOverTime:
+        description: Property. Minimum value of temporal processing over time
+        type: number
       type: object
       x-ngsi:
         type: Property
@@ -98,17 +110,17 @@ MosquitoDensity:
       type: string
       x-ngsi:
         type: Property
+    deviceId:
+      description: Device ID of the physical sensor/ measurement station corresponding to this observation
+      type: string
+      x-ngsi:
+        model: https://schema.org/Text
+        type: Property
     deviceInfo:
       description: Information about the device associated with the observations
       properties:
         deviceBatteryStatus:
           description: 'Gives the Battery charging status of the reporting device(Connected, Disconnected)'
-          type: string
-          x-ngsi:
-            model: https://schema.org/Text
-            type: Property
-        deviceId:
-          description: Device ID of the physical sensor/ measurement station corresponding to this observation
           type: string
           x-ngsi:
             model: https://schema.org/Text
@@ -150,12 +162,6 @@ MosquitoDensity:
           x-ngsi:
             model: https://schema.org/Text
             type: Property
-        deviceSimNumber:
-          description: Gives the sim number of the device in the waste management vehicle
-          type: string
-          x-ngsi:
-            model: https://schema.org/Text
-            type: Property
         measurand:
           description: Property/properties sensed/observed/measured by the device
           type: string
@@ -169,6 +175,12 @@ MosquitoDensity:
             model: https://schema.org/Text
             type: Property
       type: object
+      x-ngsi:
+        model: https://schema.org/Text
+        type: Property
+    deviceSimNumber:
+      description: Gives the sim number of the device in the waste management vehicle
+      type: string
       x-ngsi:
         model: https://schema.org/Text
         type: Property
@@ -471,4 +483,4 @@ MosquitoDensity:
   x-license-url: https://github.com/smart-data-models/dataModel.Environment/blob/master/MosquitoDensity/LICENSE.md
   x-model-schema: https://smart-data-models.github.io/dataModel.Environment/MosquitoDensity/schema.json
   x-model-tags: IUDX
-  x-version: 0.0.2
+  x-version: 0.0.3
