@@ -1,6 +1,14 @@
 {
-  "id": "ngsi-ld:MosquitoDensity:001",
+  "id": "https://smart-data-models.github.io/IUDX/MosquitoDensity/schema.json",
   "type": "MosquitoDensity",
+  "deviceID": {
+    "type": "Property",
+    "value": "VDFWitw@B"
+  },
+  "deviceSimNumber": {
+    "type": "Property",
+    "value": "861123052561188"
+  },
   "location": {
     "type": "GeoProperty",
     "value": {
@@ -25,12 +33,12 @@
   },
   "maleTotal": {
     "type": "Property",
-    "value": true
+    "value": 1
   },
   "observationDateTime": {
     "type": "Property",
     "value": {
-      "@type": "DateTime",
+      "@type": "Date-Time",
       "@value": "2022-09-18T23:59:59+05:30"
     }
   },
@@ -42,7 +50,7 @@
   },
   "precipitation": {
     "type": "Property",
-    "value": false
+    "value": 0
   },
   "deviceInfo": {
     "type": "Property",
@@ -50,10 +58,13 @@
       "rfID": "5634684",
       "deviceBatteryStatus": "Connected",
       "deviceName": "SL1",
-      "deviceID": "43",
       "measurand": "6",
-      "deviceSimNumber": "6755375727",
-      "deviceId": "VDFWitw@B"
+      "deviceModel": {
+        "brandName": "abc",
+        "manufacturerName": "xyz",
+        "modelName": "SL1",
+        "modelURL": "www.abcstreetlight.com"
+      }
     }
   },
   "@context": [

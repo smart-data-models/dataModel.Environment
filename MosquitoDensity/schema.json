@@ -1,7 +1,7 @@
 {
   "$schema": "http://json-schema.org/schema#",
   "modelTags": "IUDX",
-  "$schemaVersion": "0.0.2",
+  "$schemaVersion": "0.0.3",
   "$id": "https://smart-data-models.github.io/dataModel.Environment/MosquitoDensity/schema.json",
   "title": "Smart Data Models - Mosquito Density data Model",
   "description": "A Data Model for density of mosquitoes in cities.",
@@ -27,7 +27,7 @@
           "format": "uri",
           "description": "Relationship. URI pointing to the data-descriptor entity"
         },
-         "maleTotal": {
+        "maleTotal": {
           "type": "number",
           "description": "Property. The total count of males of a particular species, as identified by the device."
         },
@@ -39,9 +39,17 @@
           "type": "string",
           "description": "Property. The binomial/ zoological nomenclature of the species identified by the device."
         },
-         "femaleTotal": {
+        "femaleTotal": {
           "type": "number",
           "description": "Property. The total count of females of a particular species, as identified by the device."
+        },
+        "deviceId": {
+          "type": "string",
+          "description": "Property. Model:'https://schema.org/Text'. Device ID of the physical sensor/ measurement station corresponding to this observation"
+        },
+        "deviceSimNumber": {
+          "type": "string",
+          "description": "Property. Model:'https://schema.org/Text'. Gives the sim number of the device in the waste management vehicle"
         },
         "deviceInfo": {
           "type": "object",
@@ -59,17 +67,9 @@
               "type": "string",
               "description": "Property. Model:'https://schema.org/Text'. Device Name or Station name of the sensor device/station corresponding to this observation"
             },
-            "deviceId": {
-              "type": "string",
-              "description": "Property. Model:'https://schema.org/Text'. Device ID of the physical sensor/ measurement station corresponding to this observation"
-            },
             "measurand": {
               "type": "string",
               "description": "Property. Model:'https://schema.org/Text'. Property/properties sensed/observed/measured by the device"
-            },
-            "deviceSimNumber": {
-              "type": "string",
-              "description": "Property. Model:'https://schema.org/Text'. Gives the sim number of the device in the waste management vehicle"
             },
             "deviceModel": {
               "type": "object",
@@ -95,15 +95,15 @@
             }
           }
         },
-         "observationDateTime": {
+        "observationDateTime": {
           "type": "string",
           "format": "date-time",
           "description": "Property. Last reported time of observation"
         },
-
         "airTemperature": {
           "type": "object",
-          "description": "Property. Observed value of air temperature. Value is an object containing attributes representing statistical aggregates derived from past data"
+          "description": "Property. Observed value of air temperature. Value is an object containing attributes representing statistical aggregates derived from past data",
+          "$ref": "https://smart-data-models.github.io/dataModel.Environment/Environment-schema.json#/definitions/TimeSeriesAggregation/properties"
         },
         "precipitation": {
           "type": "number",

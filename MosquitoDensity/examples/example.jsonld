@@ -1,6 +1,8 @@
 {
-  "id": "ngsi-ld:MosquitoDensity:001",
+  "id": "https://smart-data-models.github.io/IUDX/MosquitoDensity/schema.json",
   "type": "MosquitoDensity",
+  "deviceID": "VDFWitw@B",
+  "deviceSimNumber": "861123052561188",
   "location": {
     "type": "Point",
     "coordinates": [
@@ -21,10 +23,13 @@
     "rfID": "5634684",
     "deviceBatteryStatus": "Connected",
     "deviceName": "SL1",
-    "deviceID": "43",
     "measurand": "6",
-    "deviceSimNumber": "6755375727",
-    "deviceId": "VDFWitw@B"
+    "deviceModel": {
+      "brandName": "abc",
+      "manufacturerName": "xyz",
+      "modelName": "SL1",
+      "modelURL": "www.abcstreetlight.com"
+    }
   },
   "@context": [
     "https://raw.githubusercontent.com/smart-data-models/dataModel.Environment/master/context.jsonld"
