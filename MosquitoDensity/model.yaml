@@ -172,6 +172,11 @@ MosquitoDensity:
       x-ngsi:
         model: https://schema.org/Text
         type: Property
+    femaleTotal:
+      description: 'The total count of females of a particular species, as identified by the device.'
+      type: number
+      x-ngsi:
+        type: Property
     id:
       anyOf:
         - description: Identifier format of any NGSI entity
@@ -354,6 +359,11 @@ MosquitoDensity:
             type: GeoProperty
       x-ngsi:
         type: GeoProperty
+    maleTotal:
+      description: 'The total count of males of a particular species, as identified by the device.'
+      type: number
+      x-ngsi:
+        type: Property
     mosquitoDensity:
       description: The binomial (or) zoological nomenclature of the mosquito species and its count as identified by the device corresponding to this observation
       properties:
@@ -435,6 +445,16 @@ MosquitoDensity:
       type: string
       x-ngsi:
         type: Property
+    speciesName:
+      description: The binomial/ zoological nomenclature of the species identified by the device.
+      type: string
+      x-ngsi:
+        type: Property
+    speciesTotal:
+      description: 'The total count of a particular species, as detected by the device.'
+      type: number
+      x-ngsi:
+        type: Property
     type:
       description: NGSI Entity type. It has to be MosquitoDensity
       enum:
@@ -447,8 +467,8 @@ MosquitoDensity:
     - type
   type: object
   x-derived-from: ""
-  x-disclaimer: 'Redistribution and use in source and binary forms, with or without modification, are permitted  provided that the license conditions are met. Copyleft (c) 2022 Contributors to Smart Data Models Program'
+  x-disclaimer: 'Redistribution and use in source and binary forms, with or without modification, are permitted  provided that the license conditions are met. Copyleft (c) 2023 Contributors to Smart Data Models Program'
   x-license-url: https://github.com/smart-data-models/dataModel.Environment/blob/master/MosquitoDensity/LICENSE.md
   x-model-schema: https://smart-data-models.github.io/dataModel.Environment/MosquitoDensity/schema.json
   x-model-tags: IUDX
-  x-version: 0.0.1
+  x-version: 0.0.2
