@@ -119,6 +119,10 @@
                     "type": "number",
                     "minimum": 0,
                     "description": "Property. Model:'https://schema.org/Number'. Discharge into the water from stormwater and wastewater treatment plants. Units:'cubic metre'. The unit code (text) of measurement given using the [UN/CEFACT Common Codes](http://wiki.goodrelations-vocabulary.org/Documentation/UN/CEFACT_Common_Codes) (max. 3 characters). For instance, <code>MTQ</code> represents Cubic Metre"
+                },
+                "validationSchema": {
+                  "type": "string",
+                  "description": "Property. URL to the corresponding validation schema of the data model. Default value: https://github.com/smart-data-models/dataModel.Environment/edit/master/WaterObserved/schema.json"
                 }
             }
         }
