@@ -55,7 +55,7 @@
         "batteryLevel": "https://smartdatamodels.org/dataModel.Environment/batteryLevel",
         "bbox": {
             "@container": "@list",
-            "@id": "geojson:bbox"
+            "@id": "https://purl.org/geojson/vocab#bbox"
         },
         "benzeneTSA": "https://smartdatamodels.org/dataModel.Environment/benzeneTSA",
         "brandName": "https://smartdatamodels.org/dataModel.Environment/brandName",
@@ -72,7 +72,7 @@
         "comments": "https://smartdatamodels.org/dataModel.Environment/comments",
         "coordinates": {
             "@container": "@list",
-            "@id": "geojson:coordinates"
+            "@id": "https://purl.org/geojson/vocab#coordinates"
         },
         "currentLevel": "https://smartdatamodels.org/dataModel.Environment/currentLevel",
         "dangerLevel": "https://smartdatamodels.org/dataModel.Environment/dangerLevel",
@@ -114,7 +114,7 @@
         "intensityExpected": "https://smartdatamodels.org/dataModel.Environment/intensityExpected",
         "investigationDepth": "https://smartdatamodels.org/dataModel.Environment/investigationDepth",
         "isMobile": "https://smartdatamodels.org/dataModel.Environment/isMobile",
-        "location": "ngsi-ld:location",
+        "location": "https://uri.etsi.org/ngsi-ld/location",
         "maleSpeciesCount": "https://smartdatamodels.org/dataModel.Environment/maleSpeciesCount",
         "maleTotal": "https://smartdatamodels.org/dataModel.Environment/maleTotal",
         "manufacturerName": "https://smartdatamodels.org/dataModel.Environment/manufacturerName",
