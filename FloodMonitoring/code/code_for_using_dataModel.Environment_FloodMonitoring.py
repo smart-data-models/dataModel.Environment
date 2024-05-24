@@ -24,31 +24,36 @@
 #         curl -X GET http://localhost:1026/ngsi-ld/v1/entities?local=true&limit=1000
 #         
 #         # now the python code you can use to insert some value in the context broker according to the data model
+#         # Version Warning! 
+#         # This code is designed to work with the version 0.8 of pysmartdatamodels or later
+#         # to work with earlier version you need to replace the import instruction for
+#         # from pysmartdatamodels import pysmartdatamodels as sdm
 #         
-from pysmartdatamodels import pysmartdatamodels as sdm
+#         
+import pysmartdatamodels as sdm
 import subprocess
 serverUrl = "http://localhost:1026" # supposed that your broker is installed in localhost. Edit to match your configuration
 dataModel = "FloodMonitoring"
 subject = "dataModel.Environment"
-alertLevel = {'type': 'Property', 'value': 11.0, 'unitCode': 'MTR'}
+alertLevel = 10.0
 attribute = "alertLevel"
 value = alertLevel
 # The next line creates the query for inserting this attribute in a NGSI-LD context broker if the attribute does not exist it creates it
 print(sdm.update_broker(dataModel, subject, attribute, value, serverUrl=serverUrl, updateThenCreate=True))
 
-currentLevel = {'type': 'Property', 'value': 1.98, 'unitCode': 'MTR'}
+currentLevel = 0.98
 attribute = "currentLevel"
 value = currentLevel
 # The next line creates the query for inserting this attribute in a NGSI-LD context broker if the attribute does not exist it creates it
 print(sdm.update_broker(dataModel, subject, attribute, value, serverUrl=serverUrl, updateThenCreate=True))
 
-dangerLevel = {'type': 'Property', 'value': 26.0, 'unitCode': 'MTR'}
+dangerLevel = 25.0
 attribute = "dangerLevel"
 value = dangerLevel
 # The next line creates the query for inserting this attribute in a NGSI-LD context broker if the attribute does not exist it creates it
 print(sdm.update_broker(dataModel, subject, attribute, value, serverUrl=serverUrl, updateThenCreate=True))
 
-floodLevelStatus = "{'type': 'string', 'value': 'Normal'}"
+floodLevelStatus = "Normal"
 attribute = "floodLevelStatus"
 value = floodLevelStatus
 # The next line creates the query for inserting this attribute in a NGSI-LD context broker if the attribute does not exist it creates it
