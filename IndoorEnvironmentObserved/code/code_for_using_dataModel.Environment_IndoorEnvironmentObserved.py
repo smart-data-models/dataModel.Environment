@@ -24,31 +24,36 @@
 #         curl -X GET http://localhost:1026/ngsi-ld/v1/entities?local=true&limit=1000
 #         
 #         # now the python code you can use to insert some value in the context broker according to the data model
+#         # Version Warning! 
+#         # This code is designed to work with the version 0.8 of pysmartdatamodels or later
+#         # to work with earlier version you need to replace the import instruction for
+#         # from pysmartdatamodels import pysmartdatamodels as sdm
 #         
-from pysmartdatamodels import pysmartdatamodels as sdm
+#         
+import pysmartdatamodels as sdm
 import subprocess
 serverUrl = "http://localhost:1026" # supposed that your broker is installed in localhost. Edit to match your configuration
 dataModel = "IndoorEnvironmentObserved"
 subject = "dataModel.Environment"
-dateObserved = "{'type': 'Property', 'value': '2016-03-15T11:00:00/2016-03-15T12:00:00'}"
+dateObserved = "2016-03-15T11:00:00/2016-03-15T12:00:00"
 attribute = "dateObserved"
 value = dateObserved
 # The next line creates the query for inserting this attribute in a NGSI-LD context broker if the attribute does not exist it creates it
 print(sdm.update_broker(dataModel, subject, attribute, value, serverUrl=serverUrl, updateThenCreate=True))
 
-illuminance = {'type': 'Property', 'value': 1000}
+illuminance = 1000
 attribute = "illuminance"
 value = illuminance
 # The next line creates the query for inserting this attribute in a NGSI-LD context broker if the attribute does not exist it creates it
 print(sdm.update_broker(dataModel, subject, attribute, value, serverUrl=serverUrl, updateThenCreate=True))
 
-peopleCount = {'type': 'Property', 'value': 10}
+peopleCount = 10
 attribute = "peopleCount"
 value = peopleCount
 # The next line creates the query for inserting this attribute in a NGSI-LD context broker if the attribute does not exist it creates it
 print(sdm.update_broker(dataModel, subject, attribute, value, serverUrl=serverUrl, updateThenCreate=True))
 
-refPointOfInterest = "{'type': 'Relationship', 'object': 'urn:ngsi-ld:PointOfInterest:urn:ngsi:MuseoDemo'}"
+refPointOfInterest = "urn:ngsi-ld:PointOfInterest:urn:ngsi:MuseoDemo"
 attribute = "refPointOfInterest"
 value = refPointOfInterest
 # The next line creates the query for inserting this attribute in a NGSI-LD context broker if the attribute does not exist it creates it
