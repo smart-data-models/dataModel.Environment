@@ -24,31 +24,36 @@
 #         curl -X GET http://localhost:1026/ngsi-ld/v1/entities?local=true&limit=1000
 #         
 #         # now the python code you can use to insert some value in the context broker according to the data model
+#         # Version Warning! 
+#         # This code is designed to work with the version 0.8 of pysmartdatamodels or later
+#         # to work with earlier version you need to replace the import instruction for
+#         # from pysmartdatamodels import pysmartdatamodels as sdm
 #         
-from pysmartdatamodels import pysmartdatamodels as sdm
+#         
+import pysmartdatamodels as sdm
 import subprocess
 serverUrl = "http://localhost:1026" # supposed that your broker is installed in localhost. Edit to match your configuration
 dataModel = "WaterObserved"
 subject = "dataModel.Environment"
-dateObserved = "{'type': 'Relationship', 'object': '2020-03-17T08:45:00.209Z'}"
+dateObserved = "2020-03-17T08:45:00.209Z"
 attribute = "dateObserved"
 value = dateObserved
 # The next line creates the query for inserting this attribute in a NGSI-LD context broker if the attribute does not exist it creates it
 print(sdm.update_broker(dataModel, subject, attribute, value, serverUrl=serverUrl, updateThenCreate=True))
 
-flow = {'type': 'Number', 'value': 12}
+flow = 12
 attribute = "flow"
 value = flow
 # The next line creates the query for inserting this attribute in a NGSI-LD context broker if the attribute does not exist it creates it
 print(sdm.update_broker(dataModel, subject, attribute, value, serverUrl=serverUrl, updateThenCreate=True))
 
-height = {'type': 'Number', 'value': 3.52}
+height = 3.52
 attribute = "height"
 value = height
 # The next line creates the query for inserting this attribute in a NGSI-LD context broker if the attribute does not exist it creates it
 print(sdm.update_broker(dataModel, subject, attribute, value, serverUrl=serverUrl, updateThenCreate=True))
 
-measuredArea = {'type': 'Number', 'value': 250}
+measuredArea = 250
 attribute = "measuredArea"
 value = measuredArea
 # The next line creates the query for inserting this attribute in a NGSI-LD context broker if the attribute does not exist it creates it
