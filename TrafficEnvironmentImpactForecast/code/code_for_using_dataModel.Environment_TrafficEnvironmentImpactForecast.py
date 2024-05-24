@@ -24,31 +24,36 @@
 #         curl -X GET http://localhost:1026/ngsi-ld/v1/entities?local=true&limit=1000
 #         
 #         # now the python code you can use to insert some value in the context broker according to the data model
+#         # Version Warning! 
+#         # This code is designed to work with the version 0.8 of pysmartdatamodels or later
+#         # to work with earlier version you need to replace the import instruction for
+#         # from pysmartdatamodels import pysmartdatamodels as sdm
 #         
-from pysmartdatamodels import pysmartdatamodels as sdm
+#         
+import pysmartdatamodels as sdm
 import subprocess
 serverUrl = "http://localhost:1026" # supposed that your broker is installed in localhost. Edit to match your configuration
 dataModel = "TrafficEnvironmentImpactForecast"
 subject = "dataModel.Environment"
-dateIssued = "{'type': 'Property', 'value': '2022-08-30T08:09:40Z'}"
+dateIssued = "2022-08-30T08:09:40Z"
 attribute = "dateIssued"
 value = dateIssued
 # The next line creates the query for inserting this attribute in a NGSI-LD context broker if the attribute does not exist it creates it
 print(sdm.update_broker(dataModel, subject, attribute, value, serverUrl=serverUrl, updateThenCreate=True))
 
-validFrom = "{'type': 'Property', 'value': '2022-08-30T08:19:40Z'}"
+validFrom = "2022-08-30T08:19:40Z"
 attribute = "validFrom"
 value = validFrom
 # The next line creates the query for inserting this attribute in a NGSI-LD context broker if the attribute does not exist it creates it
 print(sdm.update_broker(dataModel, subject, attribute, value, serverUrl=serverUrl, updateThenCreate=True))
 
-validTo = "{'type': 'Property', 'value': '2022-08-31T08:19:40Z'}"
+validTo = "2022-08-31T08:19:40Z"
 attribute = "validTo"
 value = validTo
 # The next line creates the query for inserting this attribute in a NGSI-LD context broker if the attribute does not exist it creates it
 print(sdm.update_broker(dataModel, subject, attribute, value, serverUrl=serverUrl, updateThenCreate=True))
 
-validity = "{'type': 'Property', 'value': 'P1D'}"
+validity = "P1D"
 attribute = "validity"
 value = validity
 # The next line creates the query for inserting this attribute in a NGSI-LD context broker if the attribute does not exist it creates it
