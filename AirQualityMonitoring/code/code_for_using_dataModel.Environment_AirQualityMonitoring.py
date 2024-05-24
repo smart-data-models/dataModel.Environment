@@ -24,31 +24,36 @@
 #         curl -X GET http://localhost:1026/ngsi-ld/v1/entities?local=true&limit=1000
 #         
 #         # now the python code you can use to insert some value in the context broker according to the data model
+#         # Version Warning! 
+#         # This code is designed to work with the version 0.8 of pysmartdatamodels or later
+#         # to work with earlier version you need to replace the import instruction for
+#         # from pysmartdatamodels import pysmartdatamodels as sdm
 #         
-from pysmartdatamodels import pysmartdatamodels as sdm
+#         
+import pysmartdatamodels as sdm
 import subprocess
 serverUrl = "http://localhost:1026" # supposed that your broker is installed in localhost. Edit to match your configuration
 dataModel = "AirQualityMonitoring"
 subject = "dataModel.Environment"
-airQualityIndex = {'type': 'Property', 'value': 90}
+airQualityIndex = 90
 attribute = "airQualityIndex"
 value = airQualityIndex
 # The next line creates the query for inserting this attribute in a NGSI-LD context broker if the attribute does not exist it creates it
 print(sdm.update_broker(dataModel, subject, attribute, value, serverUrl=serverUrl, updateThenCreate=True))
 
-airQualityLevel = "{'type': 'Property', 'value': 'SATISFACTORY'}"
+airQualityLevel = "SATISFACTORY"
 attribute = "airQualityLevel"
 value = airQualityLevel
 # The next line creates the query for inserting this attribute in a NGSI-LD context broker if the attribute does not exist it creates it
 print(sdm.update_broker(dataModel, subject, attribute, value, serverUrl=serverUrl, updateThenCreate=True))
 
-airTemperatureTSA = {'type': 'Property', 'value': {'avgOverTime': 23.1, 'minOverTime': 12.7, 'maxOverTime': 32.8, 'instValue': 30.8}}
+airTemperatureTSA = {'avgOverTime': 23.1, 'instValue': 30.8, 'maxOverTime': 32.8, 'minOverTime': 12.7}
 attribute = "airTemperatureTSA"
 value = airTemperatureTSA
 # The next line creates the query for inserting this attribute in a NGSI-LD context broker if the attribute does not exist it creates it
 print(sdm.update_broker(dataModel, subject, attribute, value, serverUrl=serverUrl, updateThenCreate=True))
 
-ambientNoiseTSA = {'type': 'Property', 'value': {'avgOverTime': 57.9, 'minOverTime': 50.5, 'maxOverTime': 59.2, 'instValue': 57.6}}
+ambientNoiseTSA = {'avgOverTime': 57.9, 'instValue': 57.6, 'maxOverTime': 59.2, 'minOverTime': 50.5}
 attribute = "ambientNoiseTSA"
 value = ambientNoiseTSA
 # The next line creates the query for inserting this attribute in a NGSI-LD context broker if the attribute does not exist it creates it
