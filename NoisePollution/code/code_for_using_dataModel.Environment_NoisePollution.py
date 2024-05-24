@@ -24,33 +24,38 @@
 #         curl -X GET http://localhost:1026/ngsi-ld/v1/entities?local=true&limit=1000
 #         
 #         # now the python code you can use to insert some value in the context broker according to the data model
+#         # Version Warning! 
+#         # This code is designed to work with the version 0.8 of pysmartdatamodels or later
+#         # to work with earlier version you need to replace the import instruction for
+#         # from pysmartdatamodels import pysmartdatamodels as sdm
 #         
-from pysmartdatamodels import pysmartdatamodels as sdm
+#         
+import pysmartdatamodels as sdm
 import subprocess
 serverUrl = "http://localhost:1026" # supposed that your broker is installed in localhost. Edit to match your configuration
 dataModel = "NoisePollution"
 subject = "dataModel.Environment"
-dateObservedFrom = "{'type': 'Property', 'value': {'@type': 'DateTime', '@value': '2022-07-01T10:40:01.00Z'}}"
-attribute = "dateObservedFrom"
-value = dateObservedFrom
+Laeq2 = 85
+attribute = "Laeq2"
+value = Laeq2
 # The next line creates the query for inserting this attribute in a NGSI-LD context broker if the attribute does not exist it creates it
 print(sdm.update_broker(dataModel, subject, attribute, value, serverUrl=serverUrl, updateThenCreate=True))
 
-dateObservedTo = "{'type': 'Property', 'value': {'@type': 'DateTime', '@value': '2022-07-01T12:40:01.00Z'}}"
-attribute = "dateObservedTo"
-value = dateObservedTo
+Lamax2 = 75
+attribute = "Lamax2"
+value = Lamax2
 # The next line creates the query for inserting this attribute in a NGSI-LD context broker if the attribute does not exist it creates it
 print(sdm.update_broker(dataModel, subject, attribute, value, serverUrl=serverUrl, updateThenCreate=True))
 
-noiseAnnoyanceIndex = {'type': 'Property', 'value': 3}
+noiseAnnoyanceIndex = 3
 attribute = "noiseAnnoyanceIndex"
 value = noiseAnnoyanceIndex
 # The next line creates the query for inserting this attribute in a NGSI-LD context broker if the attribute does not exist it creates it
 print(sdm.update_broker(dataModel, subject, attribute, value, serverUrl=serverUrl, updateThenCreate=True))
 
-noiseOrigin = "{'type': 'Property', 'value': 'traffic'}"
-attribute = "noiseOrigin"
-value = noiseOrigin
+buildingsType = "residential"
+attribute = "buildingsType"
+value = buildingsType
 # The next line creates the query for inserting this attribute in a NGSI-LD context broker if the attribute does not exist it creates it
 print(sdm.update_broker(dataModel, subject, attribute, value, serverUrl=serverUrl, updateThenCreate=True))
 
