@@ -153,7 +153,7 @@ AirQualityObserved:
       description: Qualitative Carbon Monoxide presence    
       type: string    
       x-ngsi:    
-        type: Property    
+        type: Property	pm4:          description:           type: number          x-ngsi:            type: Property    tpc:          description:           type: number          x-ngsi:            type: Property    tsp:          description:           type: number          x-ngsi:            type: Property    pressure:          description:           type: number          x-ngsi:            type: Property      charge:          description:           type: number          x-ngsi:            type: Property
     dataProvider:    
       description: A sequence of characters identifying the provider of the harmonised data entity    
       type: string    

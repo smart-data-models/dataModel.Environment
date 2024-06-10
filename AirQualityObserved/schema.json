@@ -220,7 +220,32 @@
         "pm1": {
           "type": "number",
           "description": "Property. Particulate matter 1 micrometers or less in diameter"
-        }
+        },
+        "pm4": {
+          "type": "number",
+          "minimum": 0,
+          "description": "Property. Particulate matter 4 micrometers or less in diameter"
+        },
+        "tpc":{
+          "type": "Integer",
+          "minimum": 0,
+          "description": "Property. Total Particulate Counter (Total concentration of particles suspended in the air.)"
+          },
+        "tsp":{
+          "type": "Integer",
+          "minimum": 0,
+          "description": "Property. Total Suspended Particles (Concentration of all airborne particles regardless of their size or composition.)"
+          },
+        "pressure": {
+              "type": "number",
+              "minimum": 0,
+              "description": "Property. Atmospheric pressure (hPa) observed."
+          },
+        "charge": {
+              "type": "number",
+              "minimum": 0,
+              "description": "Property. Input charging voltage of the monitoring device."
+          }
       }
     }
   ],
