@@ -8,16 +8,16 @@
 <!-- /15-License -->  
 <!-- 20-Description -->  
 Descrizione globale: **Il modello di dati sull'inquinamento acustico fonde misurazioni specifiche e puntuali del rumore (provenienti, ad esempio, da entità NoiseLevelObservation) in parametri medi riferiti ad aree cittadine, fornendo dati più legati alla città sullo stato e sull'evoluzione dell'inquinamento acustico.**  
-versione: 0.0.2  
+versione: 0.0.4  
 <!-- /20-Description -->  
 <!-- 30-PropertiesList -->  
 
 ## Elenco delle proprietà  
 
 <sup><sub>[*] Se non c'è un tipo in un attributo è perché potrebbe avere diversi tipi o diversi formati/modelli</sub></sup>.  
-- `LAeq2[number]`: Livello sonoro medio nelle ultime 2 ore  - `LAmax2[number]`: Livello sonoro massimo registrato nelle ultime 2 ore  - `address[object]`: L'indirizzo postale  . Model: [https://schema.org/address](https://schema.org/address)	- `addressCountry[string]`: Il paese. Ad esempio, la Spagna  . Model: [https://schema.org/addressCountry](https://schema.org/addressCountry)  
+- `Laeq2[number]`: Livello sonoro medio nelle ultime 2 ore  - `Lamax2[number]`: Livello sonoro massimo registrato nelle ultime 2 ore  - `address[object]`: L'indirizzo postale  . Model: [https://schema.org/address](https://schema.org/address)	- `addressCountry[string]`: Il paese. Ad esempio, la Spagna  . Model: [https://schema.org/addressCountry](https://schema.org/addressCountry)  
 	- `addressLocality[string]`: La località in cui si trova l'indirizzo civico e che si trova nella regione  . Model: [https://schema.org/addressLocality](https://schema.org/addressLocality)  
-	- `addressRegion[string]`: La regione in cui si trova la località, e che si trova in campagna  . Model: [https://schema.org/addressRegion](https://schema.org/addressRegion)  
+	- `addressRegion[string]`: La regione in cui si trova la località, e che si trova nel paese  . Model: [https://schema.org/addressRegion](https://schema.org/addressRegion)  
 	- `district[string]`: Un distretto è un tipo di divisione amministrativa che, in alcuni paesi, è gestita dal governo locale.    
 	- `postOfficeBoxNumber[string]`: Il numero di casella postale per gli indirizzi di casella postale. Ad esempio, 03578  . Model: [https://schema.org/postOfficeBoxNumber](https://schema.org/postOfficeBoxNumber)  
 	- `postalCode[string]`: Il codice postale. Ad esempio, 24004  . Model: [https://schema.org/https://schema.org/postalCode](https://schema.org/https://schema.org/postalCode)  
@@ -27,8 +27,8 @@
 <!-- 35-RequiredProperties -->  
 Proprietà richieste  
 - `id`  - `type`  <!-- /35-RequiredProperties -->  
-<!-- 40-RequiredProperties -->  
-<!-- /40-RequiredProperties -->  
+<!-- 40-NotesYaml -->  
+<!-- /40-NotesYaml -->  
 <!-- 50-DataModelHeader -->  
 ## Modello di dati descrizione delle proprietà  
 Ordinati in ordine alfabetico (clicca per i dettagli)  
@@ -433,8 +433,7 @@ NoisePollution:
   "type": "NoisePollution",  
   "Laeq2": 85,  
   "Lamax2": 75,  
-  "Lanight": 45,  
-  "NoiseAnnoyanceIndex": 3,  
+  "noiseAnnoyanceIndex": 3,  
   "address": {  
     "addressCountry": "France",  
     "addressLocality": "Nice",  
@@ -497,13 +496,9 @@ NoisePollution:
     "type": "DateTime",  
     "value": "2022-07-01T12:40:01.00Z"  
   },  
-  "NoiseAnnoyanceIndex": {  
+  "noiseAnnoyanceIndex": {  
     "type": "Number",  
     "value": 3  
-  },  
-  "Lanight": {  
-    "type": "Number",  
-    "value": 45  
   },  
   "noiseOrigin": {  
     "type": "Text",  
@@ -545,8 +540,7 @@ NoisePollution:
   "type": "NoisePollution",  
   "Laeq2": 85,  
   "Lamax2": 75,  
-  "Lanight": 45,  
-  "NoiseAnnoyanceIndex": 3,  
+  "noiseAnnoyanceIndex": 3,  
   "address": {  
     "addressCountry": "France",  
     "addressLocality": "Nice",  
@@ -618,13 +612,9 @@ NoisePollution:
       "@value": "2022-07-01T12:40:01.00Z"  
     }  
   },  
-  "NoiseAnnoyanceIndex": {  
+  "noiseAnnoyanceIndex": {  
     "type": "Property",  
     "value": 3  
-  },  
-  "Lanight": {  
-    "type": "Property",  
-    "value": 45  
   },  
   "noiseOrigin": {  
     "type": "Property",  
