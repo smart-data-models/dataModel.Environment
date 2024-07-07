@@ -101,6 +101,26 @@
       "type": "Property",
       "value": 0.64
   },
+  "pm4": {
+      "type": "Property",
+      "value": 37
+    }, 
+  "tpc": {
+      "type": "Property",
+      "value": 108
+    },
+  "tsp": {
+      "type": "Property",
+      "value": 73.3
+    }, 
+  "pressure": {
+      "type": "Property",
+      "value": 1.1
+    },
+  "charge": {
+      "type": "Property",
+      "value": 5
+    },
   "@context": [
       "https://raw.githubusercontent.com/smart-data-models/dataModel.Environment/master/context.jsonld"
   ]
