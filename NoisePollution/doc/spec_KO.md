@@ -1,21 +1,21 @@
 <!-- 10-Header -->  
 [![Smart Data Models](https://smartdatamodels.org/wp-content/uploads/2022/01/SmartDataModels_logo.png "Logo")](https://smartdatamodels.org)  
-엔티티: NoisePollution  
-===================<!-- /10-Header -->  
+엔티티: 엔티티: 소음 공해  
+===============<!-- /10-Header -->  
 <!-- 15-License -->  
 [오픈 라이선스](https://github.com/smart-data-models//dataModel.Environment/blob/master/NoisePollution/LICENSE.md)  
 [문서 자동 생성](https://docs.google.com/presentation/d/e/2PACX-1vTs-Ng5dIAwkg91oTTUdt8ua7woBXhPnwavZ0FxgR8BsAI_Ek3C5q97Nd94HS8KhP-r_quD4H0fgyt3/pub?start=false&loop=false&delayms=3000#slide=id.gb715ace035_0_60)  
 <!-- /15-License -->  
 <!-- 20-Description -->  
-전역 설명: **소음 공해 데이터 모델은 구체적이고 정시적인 소음 측정값(예: 노이즈 레벨 관찰 엔티티에서 제공)을 도시 지역을 참조하는 평균 파라미터에 병합하여 소음 공해 상태 및 진화에 대한 보다 도시 관련 데이터를 제공합니다.**  
-버전: 0.0.2  
+글로벌 설명: **소음 공해 데이터 모델은 구체적이고 정시적인 소음 측정값(예: 노이즈 레벨 관찰 엔티티에서 제공)을 도시 지역에 대한 평균 매개변수로 병합하여 소음 공해 상태 및 진화에 대한 보다 도시 관련 데이터를 제공합니다.**  
+버전: 0.0.4  
 <!-- /20-Description -->  
 <!-- 30-PropertiesList -->  
 
 ## 속성 목록  
 
 <sup><sub>[*] 속성에 유형이 없는 것은 여러 유형 또는 다른 형식/패턴을 가질 수 있기 때문입니다</sub></sup>.  
-- `LAeq2[number]`: 지난 2시간 동안의 평균 소음 수준  - `LAmax2[number]`: 지난 2시간 동안 녹음된 최대 소음 수준  - `address[object]`: 우편 주소  . Model: [https://schema.org/address](https://schema.org/address)	- `addressCountry[string]`: 국가. 예: 스페인  . Model: [https://schema.org/addressCountry](https://schema.org/addressCountry)  
+- `Laeq2[number]`: 지난 2시간 동안의 평균 소음 수준  - `Lamax2[number]`: 지난 2시간 동안 녹음된 최대 소음 수준  - `address[object]`: 우편 주소  . Model: [https://schema.org/address](https://schema.org/address)	- `addressCountry[string]`: 국가. 예를 들어, 스페인  . Model: [https://schema.org/addressCountry](https://schema.org/addressCountry)  
 	- `addressLocality[string]`: 도로명 주소가 있는 지역 및 해당 지역 내 지역  . Model: [https://schema.org/addressLocality](https://schema.org/addressLocality)  
 	- `addressRegion[string]`: 해당 지역이 위치한 지역과 해당 국가의 지역  . Model: [https://schema.org/addressRegion](https://schema.org/addressRegion)  
 	- `district[string]`: 지구는 일부 국가에서는 지방 정부에서 관리하는 행정 구역의 일종입니다.    
@@ -23,12 +23,12 @@
 	- `postalCode[string]`: 우편 번호입니다. 예: 24004  . Model: [https://schema.org/https://schema.org/postalCode](https://schema.org/https://schema.org/postalCode)  
 	- `streetAddress[string]`: 거리 주소  . Model: [https://schema.org/streetAddress](https://schema.org/streetAddress)  
 	- `streetNr[string]`: 공공 도로의 특정 건물을 식별하는 번호    
-- `alternateName[string]`: 이 항목의 대체 이름  - `areaServed[string]`: 서비스 또는 제공 품목이 제공되는 지리적 영역  . Model: [https://schema.org/Text](https://schema.org/Text)- `buildingsType[string]`: 센서 설치 시 측정 영역 내 주요 건물 유형  - `dataProvider[string]`: 조화된 데이터 엔티티의 공급자를 식별하는 일련의 문자열입니다.  - `dateCreated[date-time]`: 엔티티 생성 타임스탬프. 이는 일반적으로 스토리지 플랫폼에서 할당합니다.  - `dateModified[date-time]`: 엔티티의 마지막 수정 타임스탬프입니다. 이는 일반적으로 스토리지 플랫폼에서 할당합니다.  - `dateObservedFrom[date-time]`: 관찰 기간 시작 날짜 및 시간  - `dateObservedTo[date-time]`: 관찰 기간의 종료 날짜 및 시간  - `description[string]`: 이 항목에 대한 설명  - `groundType[string]`: 센서 설치 시 측정 영역의 우세한 지반 유형  - `id[*]`: 엔티티의 고유 식별자  - `location[*]`: 항목에 대한 지오숀 참조입니다. 포인트, 라인 문자열, 다각형, 멀티포인트, 멀티라인 문자열 또는 멀티폴리곤일 수 있습니다.  - `name[string]`: 이 항목의 이름  - `noiseAnnoyanceIndex[number]`: 소음 성가심 정도에 따른 지수(1~10)  - `noiseOrigin[string]`: 센서 설치 시 기록된 노이즈의 주요 발생지(소스)  - `owner[array]`: 소유자의 고유 ID를 참조하는 JSON 인코딩된 문자 시퀀스가 포함된 목록입니다.  - `seeAlso[*]`: 항목에 대한 추가 리소스를 가리키는 URL 목록  - `source[string]`: 엔티티 데이터의 원본 소스를 URL로 제공하는 일련의 문자입니다. 소스 공급자의 정규화된 도메인 이름 또는 소스 개체에 대한 URL을 사용하는 것이 좋습니다.  - `type[string]`: NGSI 유형. 노이즈 폴루션이어야 합니다.  - `wallsType[string]`: 센서 설치 시 측정 영역에서 주로 사용되는 외장재 유형  <!-- /30-PropertiesList -->  
+- `alternateName[string]`: 이 항목의 대체 이름  - `areaServed[string]`: 서비스 또는 제공 품목이 제공되는 지리적 영역  . Model: [https://schema.org/Text](https://schema.org/Text)- `buildingsType[string]`: 센서 설치 시 측정 지역 내 주요 건물 유형  - `dataProvider[string]`: 조화된 데이터 엔티티의 공급자를 식별하는 일련의 문자  - `dateCreated[date-time]`: 엔티티 생성 타임스탬프. 이는 일반적으로 스토리지 플랫폼에서 할당합니다.  - `dateModified[date-time]`: 엔티티의 마지막 수정 타임스탬프입니다. 이는 일반적으로 스토리지 플랫폼에서 할당합니다.  - `dateObservedFrom[date-time]`: 관찰 기간 시작 날짜 및 시간  - `dateObservedTo[date-time]`: 관찰 기간의 종료 날짜 및 시간  - `description[string]`: 이 항목에 대한 설명  - `groundType[string]`: 센서 설치 시 측정 영역의 우세한 지반 유형  - `id[*]`: 엔티티의 고유 식별자  - `location[*]`: 항목에 대한 지오숀 참조입니다. 포인트, 라인스트링, 다각형, 멀티포인트, 멀티라인스트링 또는 멀티폴리곤일 수 있습니다.  - `name[string]`: 이 항목의 이름  - `noiseAnnoyanceIndex[number]`: 소음 성가심 정도에 따른 지수(1~10)  - `noiseOrigin[string]`: 센서 설치 시 기록된 노이즈의 주요 발생지(소스)  - `owner[array]`: 소유자의 고유 ID를 참조하는 JSON 인코딩된 문자 시퀀스가 포함된 목록입니다.  - `seeAlso[*]`: 항목에 대한 추가 리소스를 가리키는 URL 목록  - `source[string]`: 엔티티 데이터의 원본 소스를 URL로 제공하는 문자 시퀀스입니다. 소스 공급자의 정규화된 도메인 이름 또는 소스 개체에 대한 URL을 사용하는 것이 좋습니다.  - `type[string]`: NGSI 유형. 노이즈 오염이어야 합니다.  - `wallsType[string]`: 센서 설치 시 측정 영역에서 주로 사용되는 외장재 유형  <!-- /30-PropertiesList -->  
 <!-- 35-RequiredProperties -->  
 필수 속성  
 - `id`  - `type`  <!-- /35-RequiredProperties -->  
-<!-- 40-RequiredProperties -->  
-<!-- /40-RequiredProperties -->  
+<!-- 40-NotesYaml -->  
+<!-- /40-NotesYaml -->  
 <!-- 50-DataModelHeader -->  
 ## 속성에 대한 데이터 모델 설명  
 알파벳순으로 정렬(자세한 내용을 보려면 클릭)  
@@ -424,8 +424,8 @@ NoisePollution:
 <!-- /70-MiddleNotes -->  
 <!-- 80-Examples -->  
 ## 페이로드 예시  
-#### NoisePollution NGSI-v2 키 값 예시  
-다음은 노이즈 오염을 키 값으로 사용하는 JSON-LD 형식의 예시입니다. 이는 `옵션=키값`을 사용할 때 NGSI-v2와 호환되며 개별 엔티티의 컨텍스트 데이터를 반환합니다.  
+#### 노이즈 폴루션 NGSI-v2 키 값 예시  
+다음은 키 값으로 JSON-LD 형식의 노이즈 오염 예시입니다. 이는 `옵션=키값`을 사용할 때 NGSI-v2와 호환되며 개별 엔티티의 컨텍스트 데이터를 반환합니다.  
 <details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
@@ -433,8 +433,7 @@ NoisePollution:
   "type": "NoisePollution",  
   "Laeq2": 85,  
   "Lamax2": 75,  
-  "Lanight": 45,  
-  "NoiseAnnoyanceIndex": 3,  
+  "noiseAnnoyanceIndex": 3,  
   "address": {  
     "addressCountry": "France",  
     "addressLocality": "Nice",  
@@ -460,7 +459,7 @@ NoisePollution:
 ```  
 </details>  
 #### 노이즈 폴루션 NGSI-v2 정규화 예제  
-다음은 정규화된 JSON-LD 형식의 노이즈 공해 예시입니다. 이는 옵션을 사용하지 않을 때 NGSI-v2와 호환되며 개별 엔티티의 컨텍스트 데이터를 반환합니다.  
+다음은 정규화된 JSON-LD 형식의 노이즈 오염 예시입니다. 이는 옵션을 사용하지 않을 때 NGSI-v2와 호환되며 개별 엔티티의 컨텍스트 데이터를 반환합니다.  
 <details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
@@ -497,13 +496,9 @@ NoisePollution:
     "type": "DateTime",  
     "value": "2022-07-01T12:40:01.00Z"  
   },  
-  "NoiseAnnoyanceIndex": {  
+  "noiseAnnoyanceIndex": {  
     "type": "Number",  
     "value": 3  
-  },  
-  "Lanight": {  
-    "type": "Number",  
-    "value": 45  
   },  
   "noiseOrigin": {  
     "type": "Text",  
@@ -536,8 +531,8 @@ NoisePollution:
 }  
 ```  
 </details>  
-#### NoisePollution NGSI-LD 키 값 예시  
-다음은 노이즈 오염을 키 값으로 사용하는 JSON-LD 형식의 예시입니다. 이는 `옵션=키값`을 사용할 때 NGSI-LD와 호환되며 개별 엔티티의 컨텍스트 데이터를 반환합니다.  
+#### 노이즈 폴루션 NGSI-LD 키 값 예시  
+다음은 키 값으로 JSON-LD 형식의 노이즈 오염 예시입니다. 이는 `옵션=키값`을 사용할 때 NGSI-LD와 호환되며 개별 엔티티의 컨텍스트 데이터를 반환합니다.  
 <details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
@@ -545,8 +540,7 @@ NoisePollution:
   "type": "NoisePollution",  
   "Laeq2": 85,  
   "Lamax2": 75,  
-  "Lanight": 45,  
-  "NoiseAnnoyanceIndex": 3,  
+  "noiseAnnoyanceIndex": 3,  
   "address": {  
     "addressCountry": "France",  
     "addressLocality": "Nice",  
@@ -575,7 +569,7 @@ NoisePollution:
 ```  
 </details>  
 #### 노이즈 폴루션 NGSI-LD 정규화 예제  
-다음은 정규화된 JSON-LD 형식의 노이즈 공해 예시입니다. 이는 옵션을 사용하지 않을 때 NGSI-LD와 호환되며 개별 엔티티의 컨텍스트 데이터를 반환합니다.  
+다음은 정규화된 JSON-LD 형식의 노이즈 오염 예시입니다. 이는 옵션을 사용하지 않을 때 NGSI-LD와 호환되며 개별 엔티티의 컨텍스트 데이터를 반환합니다.  
 <details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
@@ -618,13 +612,9 @@ NoisePollution:
       "@value": "2022-07-01T12:40:01.00Z"  
     }  
   },  
-  "NoiseAnnoyanceIndex": {  
+  "noiseAnnoyanceIndex": {  
     "type": "Property",  
     "value": 3  
-  },  
-  "Lanight": {  
-    "type": "Property",  
-    "value": 45  
   },  
   "noiseOrigin": {  
     "type": "Property",  
@@ -663,7 +653,7 @@ NoisePollution:
 <!-- 90-FooterNotes -->  
 <!-- /90-FooterNotes -->  
 <!-- 95-Units -->  
-크기 단위를 다루는 방법에 대한 답변은 [FAQ 10](https://smartdatamodels.org/index.php/faqs/)을 참조하세요.  
+규모 단위를 다루는 방법에 대한 답변은 [FAQ 10](https://smartdatamodels.org/index.php/faqs/)을 참조하세요.  
 <!-- /95-Units -->  
 <!-- 97-LastFooter -->  
 ---  

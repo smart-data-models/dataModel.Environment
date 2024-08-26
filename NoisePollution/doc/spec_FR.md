@@ -8,14 +8,14 @@
 <!-- /15-License -->  
 <!-- 20-Description -->  
 Description globale : **Le modèle de données sur la pollution sonore fusionne des mesures de bruit spécifiques et ponctuelles (provenant par exemple des entités NoiseLevelObservation) avec des paramètres moyens relatifs aux zones urbaines, fournissant ainsi des données plus proches de la ville sur l'état et l'évolution de la pollution sonore.  
-version : 0.0.2  
+version : 0.0.4  
 <!-- /20-Description -->  
 <!-- 30-PropertiesList -->  
 
 ## Liste des propriétés  
 
 <sup><sub>[*] S'il n'y a pas de type dans un attribut, c'est parce qu'il peut avoir plusieurs types ou différents formats/modèles</sub></sup>.  
-- `LAeq2[number]`: Niveau sonore moyen au cours des deux dernières heures  - `LAmax2[number]`: Niveau sonore maximal enregistré au cours des deux dernières heures  - `address[object]`: L'adresse postale  . Model: [https://schema.org/address](https://schema.org/address)	- `addressCountry[string]`: Le pays. Par exemple, l'Espagne  . Model: [https://schema.org/addressCountry](https://schema.org/addressCountry)  
+- `Laeq2[number]`: Niveau sonore moyen au cours des deux dernières heures  - `Lamax2[number]`: Niveau sonore maximal enregistré au cours des deux dernières heures  - `address[object]`: L'adresse postale  . Model: [https://schema.org/address](https://schema.org/address)	- `addressCountry[string]`: Le pays. Par exemple, l'Espagne  . Model: [https://schema.org/addressCountry](https://schema.org/addressCountry)  
 	- `addressLocality[string]`: La localité dans laquelle se trouve l'adresse postale et qui se trouve dans la région  . Model: [https://schema.org/addressLocality](https://schema.org/addressLocality)  
 	- `addressRegion[string]`: La région dans laquelle se trouve la localité et qui se trouve dans le pays  . Model: [https://schema.org/addressRegion](https://schema.org/addressRegion)  
 	- `district[string]`: Un district est un type de division administrative qui, dans certains pays, est géré par le gouvernement local.    
@@ -27,8 +27,8 @@
 <!-- 35-RequiredProperties -->  
 Propriétés requises  
 - `id`  - `type`  <!-- /35-RequiredProperties -->  
-<!-- 40-RequiredProperties -->  
-<!-- /40-RequiredProperties -->  
+<!-- 40-NotesYaml -->  
+<!-- /40-NotesYaml -->  
 <!-- 50-DataModelHeader -->  
 ## Modèle de données description des propriétés  
 Classés par ordre alphabétique (cliquez pour plus de détails)  
@@ -433,8 +433,7 @@ NoisePollution:
   "type": "NoisePollution",  
   "Laeq2": 85,  
   "Lamax2": 75,  
-  "Lanight": 45,  
-  "NoiseAnnoyanceIndex": 3,  
+  "noiseAnnoyanceIndex": 3,  
   "address": {  
     "addressCountry": "France",  
     "addressLocality": "Nice",  
@@ -497,13 +496,9 @@ NoisePollution:
     "type": "DateTime",  
     "value": "2022-07-01T12:40:01.00Z"  
   },  
-  "NoiseAnnoyanceIndex": {  
+  "noiseAnnoyanceIndex": {  
     "type": "Number",  
     "value": 3  
-  },  
-  "Lanight": {  
-    "type": "Number",  
-    "value": 45  
   },  
   "noiseOrigin": {  
     "type": "Text",  
@@ -545,8 +540,7 @@ NoisePollution:
   "type": "NoisePollution",  
   "Laeq2": 85,  
   "Lamax2": 75,  
-  "Lanight": 45,  
-  "NoiseAnnoyanceIndex": 3,  
+  "noiseAnnoyanceIndex": 3,  
   "address": {  
     "addressCountry": "France",  
     "addressLocality": "Nice",  
@@ -618,13 +612,9 @@ NoisePollution:
       "@value": "2022-07-01T12:40:01.00Z"  
     }  
   },  
-  "NoiseAnnoyanceIndex": {  
+  "noiseAnnoyanceIndex": {  
     "type": "Property",  
     "value": 3  
-  },  
-  "Lanight": {  
-    "type": "Property",  
-    "value": 45  
   },  
   "noiseOrigin": {  
     "type": "Property",  

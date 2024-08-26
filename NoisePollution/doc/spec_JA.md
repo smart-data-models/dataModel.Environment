@@ -8,14 +8,14 @@
 <!-- /15-License -->  
 <!-- 20-Description -->  
 グローバルな説明**騒音公害データモデルは、（NoiseLevelObservationエンティティなどから得られる）特定の定時的な騒音測定値を、市域を参照する平均的なパラメータに統合し、騒音公害の状況や推移に関する、より都市に関連したデータを提供する**。  
-バージョン: 0.0.2  
+バージョン: 0.0.4  
 <!-- /20-Description -->  
 <!-- 30-PropertiesList -->  
 
 ## プロパティのリスト  
 
 <sup><sub>[*] 属性に型がない場合は、複数の型があるか、異なるフォーマット/パターンがある可能性があるためです</sub></sup>。  
-- `LAeq2[number]`: 過去2時間の平均騒音レベル  - `LAmax2[number]`: 過去2時間に記録された最大騒音レベル  - `address[object]`: 郵送先住所  . Model: [https://schema.org/address](https://schema.org/address)	- `addressCountry[string]`: 国。例えば、スペイン  . Model: [https://schema.org/addressCountry](https://schema.org/addressCountry)  
+- `Laeq2[number]`: 過去2時間の平均騒音レベル  - `Lamax2[number]`: 過去2時間に記録された最大騒音レベル  - `address[object]`: 郵送先住所  . Model: [https://schema.org/address](https://schema.org/address)	- `addressCountry[string]`: 国。例えば、スペイン  . Model: [https://schema.org/addressCountry](https://schema.org/addressCountry)  
 	- `addressLocality[string]`: 番地がある地域と、その地域に含まれる地域  . Model: [https://schema.org/addressLocality](https://schema.org/addressLocality)  
 	- `addressRegion[string]`: その地域がある地域、またその国がある地域  . Model: [https://schema.org/addressRegion](https://schema.org/addressRegion)  
 	- `district[string]`: 地区とは行政区画の一種で、国によっては地方自治体によって管理されている。    
@@ -27,8 +27,8 @@
 <!-- 35-RequiredProperties -->  
 必須プロパティ  
 - `id`  - `type`  <!-- /35-RequiredProperties -->  
-<!-- 40-RequiredProperties -->  
-<!-- /40-RequiredProperties -->  
+<!-- 40-NotesYaml -->  
+<!-- /40-NotesYaml -->  
 <!-- 50-DataModelHeader -->  
 ## プロパティのデータモデル記述  
 アルファベット順（クリックで詳細表示）  
@@ -433,8 +433,7 @@ NoisePollution:
   "type": "NoisePollution",  
   "Laeq2": 85,  
   "Lamax2": 75,  
-  "Lanight": 45,  
-  "NoiseAnnoyanceIndex": 3,  
+  "noiseAnnoyanceIndex": 3,  
   "address": {  
     "addressCountry": "France",  
     "addressLocality": "Nice",  
@@ -497,13 +496,9 @@ NoisePollution:
     "type": "DateTime",  
     "value": "2022-07-01T12:40:01.00Z"  
   },  
-  "NoiseAnnoyanceIndex": {  
+  "noiseAnnoyanceIndex": {  
     "type": "Number",  
     "value": 3  
-  },  
-  "Lanight": {  
-    "type": "Number",  
-    "value": 45  
   },  
   "noiseOrigin": {  
     "type": "Text",  
@@ -545,8 +540,7 @@ NoisePollution:
   "type": "NoisePollution",  
   "Laeq2": 85,  
   "Lamax2": 75,  
-  "Lanight": 45,  
-  "NoiseAnnoyanceIndex": 3,  
+  "noiseAnnoyanceIndex": 3,  
   "address": {  
     "addressCountry": "France",  
     "addressLocality": "Nice",  
@@ -618,13 +612,9 @@ NoisePollution:
       "@value": "2022-07-01T12:40:01.00Z"  
     }  
   },  
-  "NoiseAnnoyanceIndex": {  
+  "noiseAnnoyanceIndex": {  
     "type": "Property",  
     "value": 3  
-  },  
-  "Lanight": {  
-    "type": "Property",  
-    "value": 45  
   },  
   "noiseOrigin": {  
     "type": "Property",  

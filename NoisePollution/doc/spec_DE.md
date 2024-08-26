@@ -8,14 +8,14 @@
 <!-- /15-License -->  
 <!-- 20-Description -->  
 Globale Beschreibung: **Das Datenmodell für die Lärmbelastung fasst spezifische und punktuelle Lärmmessungen (z. B. von NoiseLevelObservation-Entitäten) zu Durchschnittsparametern zusammen, die sich auf Stadtgebiete beziehen, und liefert so mehr stadtbezogene Daten über den Stand und die Entwicklung der Lärmbelastung**.  
-Version: 0.0.2  
+Version: 0.0.4  
 <!-- /20-Description -->  
 <!-- 30-PropertiesList -->  
 
 ## Liste der Eigenschaften  
 
 <sup><sub>[*] Wenn es für ein Attribut keinen Typ gibt, kann es mehrere Typen oder verschiedene Formate/Muster haben</sub></sup>.  
-- `LAeq2[number]`: Durchschnittlicher Schallpegel der letzten 2 Stunden  - `LAmax2[number]`: Maximal aufgezeichneter Schallpegel der letzten 2 Stunden  - `address[object]`: Die Postanschrift  . Model: [https://schema.org/address](https://schema.org/address)	- `addressCountry[string]`: Das Land. Zum Beispiel, Spanien  . Model: [https://schema.org/addressCountry](https://schema.org/addressCountry)  
+- `Laeq2[number]`: Durchschnittlicher Schallpegel der letzten 2 Stunden  - `Lamax2[number]`: Maximal aufgezeichneter Schallpegel der letzten 2 Stunden  - `address[object]`: Die Postanschrift  . Model: [https://schema.org/address](https://schema.org/address)	- `addressCountry[string]`: Das Land. Zum Beispiel, Spanien  . Model: [https://schema.org/addressCountry](https://schema.org/addressCountry)  
 	- `addressLocality[string]`: Die Ortschaft, in der sich die Adresse befindet, und die in der Region liegt  . Model: [https://schema.org/addressLocality](https://schema.org/addressLocality)  
 	- `addressRegion[string]`: Die Region, in der sich der Ort befindet, und die auf dem Land liegt  . Model: [https://schema.org/addressRegion](https://schema.org/addressRegion)  
 	- `district[string]`: Ein Bezirk ist eine Art von Verwaltungseinheit, die in einigen Ländern von der lokalen Regierung verwaltet wird.    
@@ -27,8 +27,8 @@
 <!-- 35-RequiredProperties -->  
 Erforderliche Eigenschaften  
 - `id`  - `type`  <!-- /35-RequiredProperties -->  
-<!-- 40-RequiredProperties -->  
-<!-- /40-RequiredProperties -->  
+<!-- 40-NotesYaml -->  
+<!-- /40-NotesYaml -->  
 <!-- 50-DataModelHeader -->  
 ## Datenmodell Beschreibung der Eigenschaften  
 Alphabetisch sortiert (für Details anklicken)  
@@ -433,8 +433,7 @@ NoisePollution:
   "type": "NoisePollution",  
   "Laeq2": 85,  
   "Lamax2": 75,  
-  "Lanight": 45,  
-  "NoiseAnnoyanceIndex": 3,  
+  "noiseAnnoyanceIndex": 3,  
   "address": {  
     "addressCountry": "France",  
     "addressLocality": "Nice",  
@@ -497,13 +496,9 @@ NoisePollution:
     "type": "DateTime",  
     "value": "2022-07-01T12:40:01.00Z"  
   },  
-  "NoiseAnnoyanceIndex": {  
+  "noiseAnnoyanceIndex": {  
     "type": "Number",  
     "value": 3  
-  },  
-  "Lanight": {  
-    "type": "Number",  
-    "value": 45  
   },  
   "noiseOrigin": {  
     "type": "Text",  
@@ -545,8 +540,7 @@ NoisePollution:
   "type": "NoisePollution",  
   "Laeq2": 85,  
   "Lamax2": 75,  
-  "Lanight": 45,  
-  "NoiseAnnoyanceIndex": 3,  
+  "noiseAnnoyanceIndex": 3,  
   "address": {  
     "addressCountry": "France",  
     "addressLocality": "Nice",  
@@ -618,13 +612,9 @@ NoisePollution:
       "@value": "2022-07-01T12:40:01.00Z"  
     }  
   },  
-  "NoiseAnnoyanceIndex": {  
+  "noiseAnnoyanceIndex": {  
     "type": "Property",  
     "value": 3  
-  },  
-  "Lanight": {  
-    "type": "Property",  
-    "value": 45  
   },  
   "noiseOrigin": {  
     "type": "Property",  
