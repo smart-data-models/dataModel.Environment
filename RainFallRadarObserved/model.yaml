@@ -54,87 +54,6 @@ RainFallRadarObserved:
       x-ngsi:
         model: https://schema.org/address
         type: Property
-    allOf:
-      - feelLikesTemperature:
-          description: Temperature appreciation of the item
-          type: number
-          x-ngsi:
-            type: Property
-        relativeHumidity:
-          description: Humidity in the Air. Observed instantaneous relative humidity (water vapour in air)
-          maximum: 1
-          minimum: 0
-          type: number
-          x-ngsi:
-            type: Property
-        temperature:
-          description: Temperature of the item
-          type: number
-          x-ngsi:
-            type: Property
-      - atmosphericPressure:
-          description: The atmospheric pressure observed measured in Hecto Pascals
-          minimum: 0
-          type: number
-          x-ngsi:
-            model: https://schema.org/Number
-            type: Property
-            units: Hecto pascals
-        gustSpeed:
-          description: A sudden burst of high-speed wind over the observed average wind speed lasting only for a few seconds
-          type: number
-          x-ngsi:
-            type: Property
-        illuminance:
-          description: '(https://en.wikipedia.org/wiki/Illuminance) observed measured in lux (lx) or lumens per square metre (cd·sr·m−2)'
-          minimum: 0
-          type: number
-          x-ngsi:
-            model: https://schema.org/Number
-            type: Property
-        refPointOfInterest:
-          description: Point of interest related to the item
-          type: string
-          x-ngsi:
-            model: http://schema.org/URL
-            type: Relationship
-        visibility:
-          anyOf:
-            - enum:
-                - veryPoor
-                - poor
-                - moderate
-                - good
-                - veryGood
-                - excellent
-              type: string
-            - minimum: 0
-              type: number
-          description: Categories of visibility
-          x-ngsi:
-            model: http://schema.org/Text
-            type: Property
-        weatherType:
-          description: Text description of the weather
-          type: string
-          x-ngsi:
-            model: http://schema.org/Text
-            type: Property
-        windDirection:
-          description: Direction of the wind bet
-          maximum: 360
-          minimum: 0
-          type: number
-          x-ngsi:
-            model: http://schema.org/Number
-            type: Property
-        windSpeed:
-          description: Intensity of the wind
-          minimum: 0
-          type: number
-          x-ngsi:
-            model: http//schema.org/Number
-            type: Property
     alternateName:
       description: An alternative name for this item
       type: string
@@ -146,6 +65,14 @@ RainFallRadarObserved:
       x-ngsi:
         model: https://schema.org/Text
         type: Property
+    atmosphericPressure:
+      description: The atmospheric pressure observed measured in Hecto Pascals
+      minimum: 0
+      type: number
+      x-ngsi:
+        model: https://schema.org/Number
+        type: Property
+        units: Hecto pascals
     cellsSize:
       description: 'Size of each cell constituting the radar. The unit code (text) of measurement is given using the [UN/CEFACT Common Codes](http://wiki.goodrelations-vocabulary.org/Documentation/UN/CEFACT_Common_Codes). For instance, **MTR** represents **Meters**'
       type: number
@@ -195,6 +122,16 @@ RainFallRadarObserved:
       type: string
       x-ngsi:
         type: Property
+    feelsLikeTemperature:
+      description: Temperature appreciation of the item
+      type: number
+      x-ngsi:
+        type: Property
+    gustSpeed:
+      description: A sudden burst of high-speed wind over the observed average wind speed lasting only for a few seconds
+      type: number
+      x-ngsi:
+        type: Property
     id:
       anyOf:
         - description: Identifier format of any NGSI entity
@@ -212,6 +149,14 @@ RainFallRadarObserved:
       description: Unique identifier of the entity
       x-ngsi:
         type: Property
+    illuminance:
+      description: '(https://en.wikipedia.org/wiki/Illuminance) observed measured in lux (lx) or lumens per square metre (cd·sr·m−2)'
+      minimum: 0
+      type: number
+      x-ngsi:
+        model: https://schema.org/Number
+        type: Property
+        units: Lux
     location:
       description: 'Geojson reference to the item. It can be Point, LineString, Polygon, MultiPoint, MultiLineString or MultiPolygon'
       oneOf:
@@ -474,6 +419,13 @@ RainFallRadarObserved:
       x-ngsi:
         model: https://schema.org/URL
         type: Relationship
+    relativeHumidity:
+      description: Humidity in the Air. Observed instantaneous relative humidity (water vapour in air)
+      maximum: 1
+      minimum: 0
+      type: number
+      x-ngsi:
+        type: Property
     seeAlso:
       description: list of uri pointing to additional resources about the item
       oneOf:
@@ -491,12 +443,54 @@ RainFallRadarObserved:
       type: string
       x-ngsi:
         type: Property
+    temperature:
+      description: Temperature of the item
+      type: number
+      x-ngsi:
+        type: Property
     type:
       description: NGSI Entity type. It has to be RainFallRadarObserved
       enum:
         - RainFallRadarObserved
       type: string
       x-ngsi:
+        type: Property
+    visibility:
+      anyOf:
+        - enum:
+            - veryPoor
+            - poor
+            - moderate
+            - good
+            - veryGood
+            - excellent
+          type: string
+        - minimum: 0
+          type: number
+      description: Categories of visibility
+      x-ngsi:
+        model: http://schema.org/Text
+        type: Property
+    weatherType:
+      description: Text description of the weather
+      type: string
+      x-ngsi:
+        model: http://schema.org/Text
+        type: Property
+    windDirection:
+      description: Direction of the wind bet
+      maximum: 360
+      minimum: 0
+      type: number
+      x-ngsi:
+        model: http://schema.org/Number
+        type: Property
+    windSpeed:
+      description: Intensity of the wind
+      minimum: 0
+      type: number
+      x-ngsi:
+        model: http//schema.org/Number
         type: Property
   required:
     - id
@@ -506,8 +500,8 @@ RainFallRadarObserved:
     - rainFallRadarContent
   type: object
   x-derived-from: ""
-  x-disclaimer: 'Redistribution and use in source and binary forms, with or without modification, are permitted  provided that the license conditions are met. Copyleft (c) 2022 Contributors to Smart Data Models Program'
+  x-disclaimer: 'Redistribution and use in source and binary forms, with or without modification, are permitted  provided that the license conditions are met. Copyleft (c) 2024 Contributors to Smart Data Models Program'
   x-license-url: https://github.com/smart-data-models/dataModel.Environment/blob/master/RainFallRadarObserved/LICENSE.md
   x-model-schema: https://smart-data-models.github.io/dataModel.Weather/RainFallRadarObserved/schema.json
   x-model-tags: ""
-  x-version: 0.0.1
+  x-version: 0.1.0
