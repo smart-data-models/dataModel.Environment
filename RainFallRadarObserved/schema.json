@@ -110,6 +110,5 @@
     "location",
     "dateObserved",
     "rainFallRadarContent"
-  ],
-  "$schemaVersion": "0.0.1"
+  ]
 }
