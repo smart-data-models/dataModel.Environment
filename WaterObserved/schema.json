@@ -1,10 +1,10 @@
 {
-  "$schema": "http://json-schema.org/schema#",
-  "modelTags": "",
-  "$id": "https://smart-data-models.github.io/dataModel.Environment/WaterObserved/schema.json",
-  "$schemaVersion": "0.0.4",
-  "title": "Water Observed schema",
-  "description": " Water observation data model is intended to represent the parameters of flow, level and volume of water observed, as well as the swell information, over a fixed or variable area. This observation also includes the masses of floating objects on this area. The data collected is provided by Sensors, Cameras,Water stations positioned at specific or sensitive locations for rivers, streams, torrent, lakes, seas, etc.",
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$schemaVersion": "0.3.4",
+  "modelTags": "IUDX",
+  "$id": "https://smart-data-models.github.io/dataModel.Weather/WeatherObserved/schema.json",
+  "title": "Weather Observed schema - Smart Data Models",
+  "description": "An observation of weather conditions at a certain place and time. This data model has been developed in cooperation with mobile operators and the GSMA.",
   "type": "object",
   "allOf": [
     {
@@ -14,13 +14,59 @@
       "$ref": "https://smart-data-models.github.io/data-models/common-schema.json#/definitions/Location-Commons"
     },
     {
+      "$ref": "https://smart-data-models.github.io/dataModel.Weather/weather-schema.json#/definitions/Weather-Commons"
+    },
+    {
       "properties": {
         "type": {
           "type": "string",
           "enum": [
-            "WaterObserved"
+            "WeatherObserved"
           ],
-          "description": "Property. NGSI Entity type. It has to be WaterObserved"
+          "description": "Property. NGSI Entity type. It has to be WeatherObserved"
+        },
+        "dateObserved": {
+          "$ref": "https://smart-data-models.github.io/data-models/common-schema.json#/definitions/dateObserved"
+        },
+        "precipitation": {
+          "type": "number",
+          "minimum": 0,
+          "description": "Property. Model:'https://schema.org/Number'. Amount of water rain registered. Units:'Liters per square meter'. "
+        },
+        "solarRadiation": {
+          "type": "number",
+          "minimum": 0,
+          "description": "Property. Model:'https://schema.org/Number'. The solar radiation observed measured in Watts per square. Units:'w/m2'"
+        },
+        "directIrradiation": {
+          "type": "number",
+          "minimum": 0,
+          "description": "Property. Model:'https://schema.org/Number'. Direct irradiance is the part of the solar irradiance that directly reaches a surface. Units:'w/m2'"
+        },
+        "diffuseIrradiation": {
+          "type": "number",
+          "minimum": 0,
+          "description": "Property. Model:'https://schema.org/Number'. Diffuse irradiance is the part of the solar irradiance that is scattered by the atmosphere. Units:'w/m2'"
+        },
+        "pressureTendency": {
+          "oneOf": [
+            {
+              "type": "string",
+              "enum": [
+                "falling",
+                "raising",
+                "steady"
+              ]
+            },
+            {
+              "type": "number"
+            }
+          ],
+          "description": "Property. Enum:'falling, raising, steady'. Is the pressure rising or falling? It can be expressed in quantitative terms or qualitative terms"
+        },
+        "dewPoint": {
+          "type": "number",
+          "description": "Property. Model:'https://schema.org/Number'. Units:'Celsius degrees'. The dew point encoded as a number. Observed temperature to which air must be cooled to become saturated with water vapor"
         },
         "refDevice": {
           "anyOf": [
@@ -37,88 +83,55 @@
               "description": "Property. Identifier format of any NGSI entity"
             }
           ],
-          "description": "Relationship. A reference to a point of interest associated to this observation"
+          "description": "Relationship. Model:'https://schema.org/URL'. A reference to the device(s) which captured this observation"
         },
-        "dateObserved": {
+        "streamGauge": {
+          "type": "number",
+          "minimum": 0,
+          "description": "Property. Model:'https://schema.org/Number'. The water level surface elevation observed by Hydrometric measurement sensors, namely a [Stream Gauge](https://en.wikipedia.org/wiki/Stream_gauge) expressed in centimeters. Units:'centimeters'"
+        },
+        "snowHeight": {
+          "type": "number",
+          "minimum": 0,
+          "description": "Property. Model:'https://schema.org/Number'. The snow height observed by generic snow depth measurement sensors, expressed in centimeters. Units:'centimeters'"
+        },
+        "uVIndexMax": {
+          "type": "number",
+          "minimum": 0,
+          "description": "Property. Model:'https://schema.org/Number'. The maximum UV index for the period, based on the World Health Organization's UV Index measure. [http://www.who.int/uv/intersunprogramme/activities/uv_index/en/](http://www.who.int/uv/intersunprogramme/activities/uv_index/en/) the values between 1 and 11 are the valid range for the index. The value 0 is for describing that no signal is detected so no value is stored"
+        },
+        "aqiMajorPollutant": {
           "type": "string",
-          "format": "date-time",
-          "description": "Property. Model:'https://schema.org/DateTime'. Date and time of this observation represented by an ISO8601 UTC format"
+          "description": "Property. Model:'https://schema.org/Text'. Major pollutant in the Air Quality Index (AQI)"
         },
-        "dateObservedFrom": {
+        "aqiMajorPollutantForecast": {
           "type": "string",
-          "format": "date-time",
-          "description": "Property. Model:'https://schema.org/DateTime'. Observation period : Start date and time in an ISO8601 UTC format"
+          "description": "Property. Model:'https://schema.org/Text'. Forecasted major air pollutant in the Air Quality Index (AQI) over a certain duration in future"
         },
-        "dateObservedTo": {
-          "type": "string",
-          "format": "date-time",
-          "description": "Property. Model:'https://schema.org/DateTime'. Observation period : End date and time in an ISO8601 UTC format"
-        },
-        "flow": {
+        "airTemperatureForecast": {
           "type": "number",
-          "minimum": 0,
-          "description": "Property. Model:'https://schema.org/Number'. Water Flow observed. The unit code (text) of measurement given using the UN/CEFACAT"
+          "description": "Property. Model:'https://schema.org/Number'. Forecasted value of air temperature over a certain duration in future"
         },
-        "height": {
+        "precipitationForecast": {
           "type": "number",
-          "minimum": 0,
-          "description": "Property. Model:'https://schema.org/height'. Water height - Level reach on alert coasts"
+          "description": "Property. Model:'https://schema.org/Number'. Forecasted rainfall over a certain duration in future"
         },
-        "swellHeight": {
+        "airQualityIndex": {
           "type": "number",
-          "minimum": 0,
-          "description": "Property. Model:'https://schema.org/height'. Swell height observed"
+          "description": "Property. Model:'https://schema.org/Number'. Air quality index is a number used to report the quality of the air on any given day"
         },
-        "swellPeriod": {
+        "relativeHumidityForecast": {
           "type": "number",
-          "minimum": 0,
-          "description": "Property. Model:'https://schema.org/Number'. Swells period observed"
+          "description": "Property. Model:'https://schema.org/Number'. Forecasted relative humidity (water vapour in air) over a certain duration in future"
         },
-        "swellDirection": {
+        "airQualityIndexForecast": {
           "type": "number",
-          "minimum": 0,
-          "maximum": 360,
-          "description": "Property. Model:'https://schema.org/Number'. Swells Direction observed"
+          "description": "Property. Model:'https://schema.org/Number'. Forecasted overall Air Quality Index (AQI) over a certain duration in future"
         },
-        "waveLength": {
-          "type": "number",
-          "minimum": 0,
-          "description": "Property. Model:'https://schema.org/Number'. Wave Length observed. "
-        },
-        "measuredArea": {
-          "type": "number",
-          "minimum": 0,
-          "description": "Property. Model:'https://schema.org/Number'. Reference of the surface measured. Units:'square meters'. The unit code (text) of measurement given using the [UN/CEFACT Common Codes](http://wiki.goodrelations-vocabulary.org/Documentation/UN/CEFACT_Common_Codes) (max. 3 characters). For instance, <code>MTK</code> represents M\u00b2"
-        },
-        "objectArea": {
-          "type": "number",
-          "minimum": 0,
-          "description": "Property. Model:'https://schema.org/Number'. Percentage occupied by floating object in the area. The unit code (text) of measurement given using the [UN/CEFACT Common Codes](http://wiki.goodrelations-vocabulary.org/Documentation/UN/CEFACT_Common_Codes) (max. 3 characters). For instance, <code>P1</code> represents Percentage"
-        },
-        "objectHeightAverage": {
-          "type": "number",
-          "minimum": 0,
-          "description": "Property. Model:'https://schema.org/Number'. Average height raised. Units:'meters'. The unit code (text) of measurement given using the [UN/CEFACT Common Codes](http://wiki.goodrelations-vocabulary.org/Documentation/UN/CEFACT_Common_Codes) (max. 3 characters). For instance, <code>MTR</code> represents Meter"
-        },
-        "objectHeightMax": {
-          "type": "number",
-          "minimum": 0,
-          "description": "Property. Model:'https://schema.org/Number'. Maximum height raised. Units:'meters'. The unit code (text) of measurement given using the [UN/CEFACT Common Codes](http://wiki.goodrelations-vocabulary.org/Documentation/UN/CEFACT_Common_Codes) (max. 3 characters). For instance, <code>MTR</code> represents Meter"
-        },
-        "objectVolume": {
-          "type": "number",
-          "minimum": 0,
-          "description": "Property. Model:'https://schema.org/Number'. Estimated volume raised. The unit code (text) of measurement given using the [UN/CEFACT Common Codes](http://wiki.goodrelations-vocabulary.org/Documentation/UN/CEFACT_Common_Codes) (max. 3 characters). For instance, <code>MTQ</code> represents Cubic Meters. Units:'cubic meters'"
-        },
-        "waterLevel": {
-          "type": "number",
-          "minimum": 0,
-          "description": "Property. Model:'https://schema.org/Number'. Current water level corresponding to this observation. Units:'metre'. The unit code (text) of measurement given using the [UN/CEFACT Common Codes](http://wiki.goodrelations-vocabulary.org/Documentation/UN/CEFACT_Common_Codes) (max. 3 characters). For instance, <code>MTR</code> represents Metre"
-        },
-        "waterDischarge": {
-          "type": "number",
-          "minimum": 0,
-          "description": "Property. Model:'https://schema.org/Number'. Discharge into the water from stormwater and wastewater treatment plants. Units:'cubic metre'. The unit code (text) of measurement given using the [UN/CEFACT Common Codes](http://wiki.goodrelations-vocabulary.org/Documentation/UN/CEFACT_Common_Codes) (max. 3 characters). For instance, <code>MTQ</code> represents Cubic Metre"
+        "airTemperatureTSA": {
+          "type": "object",
+          "description": "Property. Air temperature time series aggregation",
+          "$ref": "https://smart-data-models.github.io/dataModel.Environment/Environment-schema.json#/definitions/TimeSeriesAggregation"
         }
       }
     }
@@ -126,7 +139,7 @@
   "required": [
     "id",
     "type",
-    "location",
-    "dateObserved"
+    "dateObserved",
+    "location"
   ]
 }
