@@ -1,72 +1,155 @@
 {
-  "$schema": "https://json-schema.org/draft/2020-12/schema",
-  "$schemaVersion": "0.3.4",
-  "modelTags": "IUDX",
-  "$id": "https://smart-data-models.github.io/dataModel.Weather/WeatherObserved/schema.json",
-  "title": "Weather Observed schema - Smart Data Models",
-  "description": "An observation of weather conditions at a certain place and time. This data model has been developed in cooperation with mobile operators and the GSMA.",
+  "$schema": "http://json-schema.org/schema#",
+  "$schemaVersion": "0.1.3",
+  "modelTags": "",
+  "$id": "https://smart-data-models.github.io/dataModel.Environment/AirQualityObserved/schema.json",
+  "title": "Smart Data Models - Air quality observed schema",
+  "description": "An observation of air quality conditions at a certain place and time.",
   "type": "object",
   "allOf": [
     {
       "$ref": "https://smart-data-models.github.io/data-models/common-schema.json#/definitions/GSMA-Commons"
     },
     {
-      "$ref": "https://smart-data-models.github.io/data-models/common-schema.json#/definitions/Location-Commons"
-    },
-    {
-      "$ref": "https://smart-data-models.github.io/dataModel.Weather/weather-schema.json#/definitions/Weather-Commons"
-    },
-    {
       "properties": {
+        "location": {
+            "$ref": "https://smart-data-models.github.io/data-models/common-schema.json#/definitions/Location-Commons/properties/location"
+        },
+        "address": {
+            "$ref": "https://smart-data-models.github.io/data-models/common-schema.json#/definitions/Location-Commons/properties/address"
+        },
         "type": {
           "type": "string",
           "enum": [
-            "WeatherObserved"
+            "AirQualityObserved"
           ],
-          "description": "Property. NGSI Entity type. It has to be WeatherObserved"
+          "description": "Property. NGSI Entity type. It has to be AirQualityObserved"
         },
         "dateObserved": {
-          "$ref": "https://smart-data-models.github.io/data-models/common-schema.json#/definitions/dateObserved"
+          "type": "string",
+          "format": "date-time",
+          "description": "Property. The date and time of this observation in ISO8601 UTCformat. Model:'https://schema.org/Text' "
+        },
+        "areaServed": {
+          "type": "string",
+          "description": "Property. Higher level area to which this air quality measurement belongs to. Model:'https://schema.org/Text' "
+        },
+        "airQualityIndex": {
+          "type": "integer",
+          "minimum": 0,
+          "description": "Property. Model:'https://schema.org/Number'. Air quality index is a number used to report the quality of the air on any given day"
+        },
+        "airQualityLevel": {
+          "$ref": "https://raw.githubusercontent.com/smart-data-models/dataModel.Environment/master/Environment-schema.json#/definitions/airQualityLevel"
+        },
+        "reliability": {
+          "type": "number",
+          "minimum": 0,
+          "maximum": 1.0,
+          "description": "Property. Reliability (percentage, expressed in parts per one) corresponding to the air quality observed. Model:'https://schema.org/Number' "
+        },
+        "as": {
+          "type": "number",
+          "minimum": 0,
+          "description": "Property. Model:'https://schema.org/Number'. Arsenic detected"
+        },
+        "c6h6": {
+          "type": "number",
+          "minimum": 0,
+          "description": "Property. Benzene detected"
+        },
+        "cd": {
+          "type": "number",
+          "minimum": 0,
+          "description": "Property. Cadmium detected"
+        },
+        "co": {
+          "type": "number",
+          "minimum": 0,
+          "description": "Property. Carbon Monoxide detected"
+        },
+        "coLevel": {
+          "type": "string",
+          "description": "Property. Qualitative Carbon Monoxide presence"
+        },
+        "co2": {
+          "type": "number",
+          "minimum": 0,
+          "description": "Property. Carbon Dioxide detected"
+        },
+        "ni": {
+          "type": "number",
+          "minimum": 0,
+          "description": "Property. Nickel detected "
+        },
+        "no": {
+          "type": "number",
+          "minimum": 0,
+          "description": "Property. Nitrogen monoxide detected"
+        },
+        "no2": {
+          "type": "number",
+          "minimum": 0,
+          "description": "Property. Nitrogen dioxide detected"
+        },
+        "nox": {
+          "type": "number",
+          "minimum": 0,
+          "description": "Property. Other Nitrogen oxides detected"
+        },
+        "o3": {
+          "type": "number",
+          "minimum": 0,
+          "description": "Property. Ozone detected "
+        },
+        "pm10": {
+          "type": "number",
+          "minimum": 0,
+          "description": "Property. Particulate matter 10 micrometers or less in diameter"
+        },
+        "pm25": {
+          "type": "number",
+          "minimum": 0,
+          "description": "Property. Particulate matter 2.5 micrometers or less in diameter"
+        },
+        "pb": {
+          "type": "number",
+          "minimum": 0,
+          "description": "Property. Lead detected   "
         },
         "precipitation": {
           "type": "number",
           "minimum": 0,
-          "description": "Property. Model:'https://schema.org/Number'. Amount of water rain registered. Units:'Liters per square meter'. "
+          "description": "Property. Model:'https://schema.org/Number'. Amount of water rain. Units:'Liters per square meter'"
         },
-        "solarRadiation": {
+        "relativeHumidity": {
+          "type": "number",
+          "description": "Property. Relative Humidity of the air (a number between 0 and 1 representing the range of 0% to 100%)",
+          "minimum": 0,
+          "maximum": 1
+        },
+        "sh2": {
           "type": "number",
           "minimum": 0,
-          "description": "Property. Model:'https://schema.org/Number'. The solar radiation observed measured in Watts per square. Units:'w/m2'"
+          "description": "Property. Hydrogen sulfide detected"
         },
-        "directIrradiation": {
+        "so2": {
           "type": "number",
           "minimum": 0,
-          "description": "Property. Model:'https://schema.org/Number'. Direct irradiance is the part of the solar irradiance that directly reaches a surface. Units:'w/m2'"
+          "description": "Property. Sulfur dioxide detected"
         },
-        "diffuseIrradiation": {
-          "type": "number",
-          "minimum": 0,
-          "description": "Property. Model:'https://schema.org/Number'. Diffuse irradiance is the part of the solar irradiance that is scattered by the atmosphere. Units:'w/m2'"
-        },
-        "pressureTendency": {
-          "oneOf": [
-            {
-              "type": "string",
-              "enum": [
-                "falling",
-                "raising",
-                "steady"
-              ]
-            },
-            {
-              "type": "number"
-            }
+        "typeofLocation": {
+          "type": "string",
+          "enum": [
+            "indoor",
+            "outdoor"
           ],
-          "description": "Property. Enum:'falling, raising, steady'. Is the pressure rising or falling? It can be expressed in quantitative terms or qualitative terms"
+          "description": "Property. Model:'https://schema.org/Text'. Type of location of the sampled item"
         },
-        "dewPoint": {
+        "volatileOrganicCompoundsTotal": {
           "type": "number",
-          "description": "Property. Model:'https://schema.org/Number'. Units:'Celsius degrees'. The dew point encoded as a number. Observed temperature to which air must be cooled to become saturated with water vapor"
+          "minimum": 0,
+          "description": "Property. Alkanes <C10, ketones <C6, aldehydes <C10, carboxylic acids <C5, aspirits<C7, Alkenes <C8, Aromatics"
         },
         "refDevice": {
           "anyOf": [
@@ -83,55 +166,60 @@
               "description": "Property. Identifier format of any NGSI entity"
             }
           ],
-          "description": "Relationship. Model:'https://schema.org/URL'. A reference to the device(s) which captured this observation"
+          "description": "Relationship. A reference to the device(s) which captured this observation"
         },
-        "streamGauge": {
+        "refPointOfInterest": {
+          "anyOf": [
+            {
+              "type": "string",
+              "minLength": 1,
+              "maxLength": 256,
+              "pattern": "^[\\w\\-\\.\\{\\}\\$\\+\\*\\[\\]`|~^@!,:\\\\]+$",
+              "description": "Property. Identifier format of any NGSI entity"
+            },
+            {
+              "type": "string",
+              "format": "uri",
+              "description": "Property. Identifier format of any NGSI entity"
+            }
+          ],
+          "description": "Relationship. A reference to a point of interest (usually an air quality station) associated to this observation"
+        },
+        "refWeatherObserved": {
+          "anyOf": [
+            {
+              "type": "string",
+              "minLength": 1,
+              "maxLength": 256,
+              "pattern": "^[\\w\\-\\.\\{\\}\\$\\+\\*\\[\\]`|~^@!,:\\\\]+$",
+              "description": "Property. Identifier format of any NGSI entity"
+            },
+            {
+              "type": "string",
+              "format": "uri",
+              "description": "Property. Identifier format of any NGSI entity"
+            }
+          ],
+          "description": "Relationship.  Weather observed associated to the air quality conditions described by this entity"
+        },
+        "temperature": {
           "type": "number",
-          "minimum": 0,
-          "description": "Property. Model:'https://schema.org/Number'. The water level surface elevation observed by Hydrometric measurement sensors, namely a [Stream Gauge](https://en.wikipedia.org/wiki/Stream_gauge) expressed in centimeters. Units:'centimeters'"
+          "description": "Property. Temperature of the item"
         },
-        "snowHeight": {
+        "windDirection": {
           "type": "number",
-          "minimum": 0,
-          "description": "Property. Model:'https://schema.org/Number'. The snow height observed by generic snow depth measurement sensors, expressed in centimeters. Units:'centimeters'"
+          "description": "Property. Model:'http://schema.org/Number'. Direction of the weather vane",
+          "minimum": -180,
+          "maximum": 180
         },
-        "uVIndexMax": {
+        "windSpeed": {
           "type": "number",
-          "minimum": 0,
-          "description": "Property. Model:'https://schema.org/Number'. The maximum UV index for the period, based on the World Health Organization's UV Index measure. [http://www.who.int/uv/intersunprogramme/activities/uv_index/en/](http://www.who.int/uv/intersunprogramme/activities/uv_index/en/) the values between 1 and 11 are the valid range for the index. The value 0 is for describing that no signal is detected so no value is stored"
+          "description": "Property. Model:'http//schema.org/Number'. Intensity of the wind",
+          "minimum": 0
         },
-        "aqiMajorPollutant": {
-          "type": "string",
-          "description": "Property. Model:'https://schema.org/Text'. Major pollutant in the Air Quality Index (AQI)"
-        },
-        "aqiMajorPollutantForecast": {
-          "type": "string",
-          "description": "Property. Model:'https://schema.org/Text'. Forecasted major air pollutant in the Air Quality Index (AQI) over a certain duration in future"
-        },
-        "airTemperatureForecast": {
+        "pm1": {
           "type": "number",
-          "description": "Property. Model:'https://schema.org/Number'. Forecasted value of air temperature over a certain duration in future"
-        },
-        "precipitationForecast": {
-          "type": "number",
-          "description": "Property. Model:'https://schema.org/Number'. Forecasted rainfall over a certain duration in future"
-        },
-        "airQualityIndex": {
-          "type": "number",
-          "description": "Property. Model:'https://schema.org/Number'. Air quality index is a number used to report the quality of the air on any given day"
-        },
-        "relativeHumidityForecast": {
-          "type": "number",
-          "description": "Property. Model:'https://schema.org/Number'. Forecasted relative humidity (water vapour in air) over a certain duration in future"
-        },
-        "airQualityIndexForecast": {
-          "type": "number",
-          "description": "Property. Model:'https://schema.org/Number'. Forecasted overall Air Quality Index (AQI) over a certain duration in future"
-        },
-        "airTemperatureTSA": {
-          "type": "object",
-          "description": "Property. Air temperature time series aggregation",
-          "$ref": "https://smart-data-models.github.io/dataModel.Environment/Environment-schema.json#/definitions/TimeSeriesAggregation"
+          "description": "Property. Particulate matter 1 micrometers or less in diameter"
         }
       }
     }
