@@ -119,5 +119,25 @@
   "coLevel": {
     "type": "Text",
     "value": "moderate"
-  }
+  },
+  "pm4": {
+      "type": "Number",
+      "value": 37
+    },
+    "tpc": {
+      "type": "Number",
+      "value": 108
+    },
+    "tsp": {
+      "type": "Number",
+      "value": 73.3
+    },
+    "pressure": {
+      "type": "Number",
+      "value": 1.1
+    },
+    "charge": {
+      "type": "Number",
+      "value": 5
+    }
 }
