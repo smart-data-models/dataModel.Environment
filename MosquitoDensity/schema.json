@@ -1,145 +1,141 @@
 {
-  "$schema": "https://json-schema.org/draft/2020-12/schema",
-  "$schemaVersion": "0.3.4",
+  "$schema": "http://json-schema.org/schema#",
   "modelTags": "IUDX",
-  "$id": "https://smart-data-models.github.io/dataModel.Weather/WeatherObserved/schema.json",
-  "title": "Weather Observed schema - Smart Data Models",
-  "description": "An observation of weather conditions at a certain place and time. This data model has been developed in cooperation with mobile operators and the GSMA.",
+  "$schemaVersion": "0.0.3",
+  "$id": "https://smart-data-models.github.io/dataModel.Environment/MosquitoDensity/schema.json",
+  "title": "Smart Data Models - Mosquito Density data Model",
+  "description": "A Data Model for density of mosquitoes in cities.",
   "type": "object",
   "allOf": [
-    {
-      "$ref": "https://smart-data-models.github.io/data-models/common-schema.json#/definitions/GSMA-Commons"
-    },
     {
       "$ref": "https://smart-data-models.github.io/data-models/common-schema.json#/definitions/Location-Commons"
     },
     {
-      "$ref": "https://smart-data-models.github.io/dataModel.Weather/weather-schema.json#/definitions/Weather-Commons"
+      "$ref": "https://smart-data-models.github.io/data-models/common-schema.json#/definitions/GSMA-Commons"
     },
     {
       "properties": {
         "type": {
           "type": "string",
           "enum": [
-            "WeatherObserved"
+            "MosquitoDensity"
           ],
-          "description": "Property. NGSI Entity type. It has to be WeatherObserved"
+          "description": "Property. NGSI Entity type. It has to be MosquitoDensity"
         },
-        "dateObserved": {
-          "$ref": "https://smart-data-models.github.io/data-models/common-schema.json#/definitions/dateObserved"
+        "dataDescriptor": {
+          "type": "string",
+          "format": "uri",
+          "description": "Relationship. URI pointing to the data-descriptor entity"
+        },
+        "maleTotal": {
+          "type": "number",
+          "description": "Property. The total count of males of a particular species, as identified by the device."
+        },
+        "speciesTotal": {
+          "type": "number",
+          "description": "Property. The total count of a particular species, as detected by the device."
+        },
+        "speciesName": {
+          "type": "string",
+          "description": "Property. The binomial/ zoological nomenclature of the species identified by the device."
+        },
+        "femaleTotal": {
+          "type": "number",
+          "description": "Property. The total count of females of a particular species, as identified by the device."
+        },
+        "deviceId": {
+          "type": "string",
+          "description": "Property. Model:'https://schema.org/Text'. Device ID of the physical sensor/ measurement station corresponding to this observation"
+        },
+        "deviceSimNumber": {
+          "type": "string",
+          "description": "Property. Model:'https://schema.org/Text'. Gives the sim number of the device in the waste management vehicle"
+        },
+        "deviceInfo": {
+          "type": "object",
+          "description": "Property. Model:'https://schema.org/Text. Information about the device associated with the observations",
+          "properties": {
+            "rfID": {
+              "type": "string",
+              "description": "Property. Model:'https://schema.org/Text'. Gives the ID of the RFID reader"
+            },
+            "deviceBatteryStatus": {
+              "type": "string",
+              "description": "Property. Model:'https://schema.org/Text'. Gives the Battery charging status of the reporting device(Connected, Disconnected)"
+            },
+            "deviceName": {
+              "type": "string",
+              "description": "Property. Model:'https://schema.org/Text'. Device Name or Station name of the sensor device/station corresponding to this observation"
+            },
+            "measurand": {
+              "type": "string",
+              "description": "Property. Model:'https://schema.org/Text'. Property/properties sensed/observed/measured by the device"
+            },
+            "deviceModel": {
+              "type": "object",
+              "description": "Property. Model:'https://schema.org/Text'. Describes the information of the device, sensor or system in consideration",
+              "properties": {
+                "brandName": {
+                  "type": "string",
+                  "description": "Property. Model:'https://schema.org/Text'. Name of the brand associated with an entity, e.g., sensor, device etc"
+                },
+                "manufacturerName": {
+                  "type": "string",
+                  "description": "Property. Model:'https://schema.org/Text'. Name of the manufacturer associated with an entity, e.g., sensor, device etc"
+                },
+                "modelName": {
+                  "type": "string",
+                  "description": "Property. Model:'https://schema.org/Text'. Name of a specific model associated with an entity, e.g., sensor, device etc"
+                },
+                "modelURL": {
+                  "type": "string",
+                  "description": "Property. Model:'https://schema.org/Text'. URL providing further information of a specific model associated with an entity, e.g., sensor, device etc"
+                }
+              }
+            }
+          }
+        },
+        "observationDateTime": {
+          "type": "string",
+          "format": "date-time",
+          "description": "Property. Last reported time of observation"
+        },
+        "airTemperature": {
+          "type": "object",
+          "description": "Property. Observed value of air temperature. Value is an object containing attributes representing statistical aggregates derived from past data",
+          "$ref": "https://smart-data-models.github.io/dataModel.Environment/Environment-schema.json#/definitions/TimeSeriesAggregation/properties"
         },
         "precipitation": {
           "type": "number",
-          "minimum": 0,
-          "description": "Property. Model:'https://schema.org/Number'. Amount of water rain registered. Units:'Liters per square meter'. "
+          "description": "Property. Observed precipitation/rainfall level over a given duration"
         },
-        "solarRadiation": {
-          "type": "number",
-          "minimum": 0,
-          "description": "Property. Model:'https://schema.org/Number'. The solar radiation observed measured in Watts per square. Units:'w/m2'"
-        },
-        "directIrradiation": {
-          "type": "number",
-          "minimum": 0,
-          "description": "Property. Model:'https://schema.org/Number'. Direct irradiance is the part of the solar irradiance that directly reaches a surface. Units:'w/m2'"
-        },
-        "diffuseIrradiation": {
-          "type": "number",
-          "minimum": 0,
-          "description": "Property. Model:'https://schema.org/Number'. Diffuse irradiance is the part of the solar irradiance that is scattered by the atmosphere. Units:'w/m2'"
-        },
-        "pressureTendency": {
-          "oneOf": [
-            {
-              "type": "string",
-              "enum": [
-                "falling",
-                "raising",
-                "steady"
-              ]
-            },
-            {
-              "type": "number"
-            }
-          ],
-          "description": "Property. Enum:'falling, raising, steady'. Is the pressure rising or falling? It can be expressed in quantitative terms or qualitative terms"
-        },
-        "dewPoint": {
-          "type": "number",
-          "description": "Property. Model:'https://schema.org/Number'. Units:'Celsius degrees'. The dew point encoded as a number. Observed temperature to which air must be cooled to become saturated with water vapor"
-        },
-        "refDevice": {
-          "anyOf": [
-            {
-              "type": "string",
-              "minLength": 1,
-              "maxLength": 256,
-              "pattern": "^[\\w\\-\\.\\{\\}\\$\\+\\*\\[\\]`|~^@!,:\\\\]+$",
-              "description": "Property. Identifier format of any NGSI entity"
-            },
-            {
-              "type": "string",
-              "format": "uri",
-              "description": "Property. Identifier format of any NGSI entity"
-            }
-          ],
-          "description": "Relationship. Model:'https://schema.org/URL'. A reference to the device(s) which captured this observation"
-        },
-        "streamGauge": {
-          "type": "number",
-          "minimum": 0,
-          "description": "Property. Model:'https://schema.org/Number'. The water level surface elevation observed by Hydrometric measurement sensors, namely a [Stream Gauge](https://en.wikipedia.org/wiki/Stream_gauge) expressed in centimeters. Units:'centimeters'"
-        },
-        "snowHeight": {
-          "type": "number",
-          "minimum": 0,
-          "description": "Property. Model:'https://schema.org/Number'. The snow height observed by generic snow depth measurement sensors, expressed in centimeters. Units:'centimeters'"
-        },
-        "uVIndexMax": {
-          "type": "number",
-          "minimum": 0,
-          "description": "Property. Model:'https://schema.org/Number'. The maximum UV index for the period, based on the World Health Organization's UV Index measure. [http://www.who.int/uv/intersunprogramme/activities/uv_index/en/](http://www.who.int/uv/intersunprogramme/activities/uv_index/en/) the values between 1 and 11 are the valid range for the index. The value 0 is for describing that no signal is detected so no value is stored"
-        },
-        "aqiMajorPollutant": {
-          "type": "string",
-          "description": "Property. Model:'https://schema.org/Text'. Major pollutant in the Air Quality Index (AQI)"
-        },
-        "aqiMajorPollutantForecast": {
-          "type": "string",
-          "description": "Property. Model:'https://schema.org/Text'. Forecasted major air pollutant in the Air Quality Index (AQI) over a certain duration in future"
-        },
-        "airTemperatureForecast": {
-          "type": "number",
-          "description": "Property. Model:'https://schema.org/Number'. Forecasted value of air temperature over a certain duration in future"
-        },
-        "precipitationForecast": {
-          "type": "number",
-          "description": "Property. Model:'https://schema.org/Number'. Forecasted rainfall over a certain duration in future"
-        },
-        "airQualityIndex": {
-          "type": "number",
-          "description": "Property. Model:'https://schema.org/Number'. Air quality index is a number used to report the quality of the air on any given day"
-        },
-        "relativeHumidityForecast": {
-          "type": "number",
-          "description": "Property. Model:'https://schema.org/Number'. Forecasted relative humidity (water vapour in air) over a certain duration in future"
-        },
-        "airQualityIndexForecast": {
-          "type": "number",
-          "description": "Property. Model:'https://schema.org/Number'. Forecasted overall Air Quality Index (AQI) over a certain duration in future"
-        },
-        "airTemperatureTSA": {
+        "mosquitoDensity": {
           "type": "object",
-          "description": "Property. Air temperature time series aggregation",
-          "$ref": "https://smart-data-models.github.io/dataModel.Environment/Environment-schema.json#/definitions/TimeSeriesAggregation"
+          "description": "Property. The binomial (or) zoological nomenclature of the mosquito species and its count as identified by the device corresponding to this observation",
+          "properties": {
+            "maleSpeciesCount": {
+              "type": "number",
+              "description": "Property. The total count of the male mosquitoes of the species identified by the device"
+            },
+            "totalSpeciesCount": {
+              "type": "number",
+              "description": "Property. The total count of a particular species detected by the device"
+            },
+            "mosquitoSpecies": {
+              "type": "string",
+              "description": "Property. The binomial/ zoological nomenclature of the mosquito species as identified by the device"
+            },
+            "femaleSpeciesCount": {
+              "type": "number",
+              "description": "Property. The total count of the female mosquitoes of the species identified by the device"
+            }
+          }
         }
       }
     }
   ],
   "required": [
     "id",
-    "type",
-    "dateObserved",
-    "location"
+    "type"
   ]
 }
