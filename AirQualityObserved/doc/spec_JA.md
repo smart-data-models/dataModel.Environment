@@ -8,7 +8,7 @@
 <!-- /15-License -->  
 <!-- 20-Description -->  
 グローバルな記述：**ある場所と時間における大気の状態を観測すること。  
-バージョン: 0.1.2  
+バージョン: 0.1.4  
 <!-- /20-Description -->  
 <!-- 30-PropertiesList -->  
 
@@ -23,13 +23,13 @@
 	- `postalCode[string]`: 郵便番号。例：24004  . Model: [https://schema.org/https://schema.org/postalCode](https://schema.org/https://schema.org/postalCode)  
 	- `streetAddress[string]`: 番地  . Model: [https://schema.org/streetAddress](https://schema.org/streetAddress)  
 	- `streetNr[string]`: 公道上の特定の物件を特定する番号    
-- `airQualityIndex[number]`: 大気の質指数とは、その日の大気の質を表す数値。  . Model: [https://schema.org/Number](https://schema.org/Number)- `airQualityLevel[string]`: 観察された大気の質に対応する健康への懸念の全体的な質的レベル  . Model: [https://schema.org/Text](https://schema.org/Text)- `alternateName[string]`: この項目の別名  - `areaServed[string]`: この大気質測定が属する上位レベル地域  . Model: [https://schema.org/Text ](https://schema.org/Text )- `as[number]`: ヒ素検出  . Model: [https://schema.org/Number](https://schema.org/Number)- `c6h6[number]`: ベンゼン検出  - `cd[number]`: カドミウム検出  - `co[number]`: 一酸化炭素検出  - `co2[number]`: 二酸化炭素検出  - `coLevel[string]`: 質的な一酸化炭素の存在  - `dataProvider[string]`: ハーモナイズされたデータ・エンティティの提供者を識別する一連の文字。  - `dateCreated[date-time]`: エンティティの作成タイムスタンプ。これは通常、ストレージプラットフォームによって割り当てられます。  - `dateModified[date-time]`: エンティティの最終変更のタイムスタンプ。これは通常、ストレージプラットフォームによって割り当てられる。  - `dateObserved[date-time]`: ISO8601 UTCフォーマットによる観測日時  . Model: [https://schema.org/Text ](https://schema.org/Text )- `description[string]`: この商品の説明  - `id[*]`: エンティティの一意識別子  - `location[*]`: アイテムへの Geojson 参照。Point、LineString、Polygon、MultiPoint、MultiLineString、MultiPolygon のいずれか。  - `name[string]`: このアイテムの名前  - `ni[number]`: ニッケル検出  - `no[number]`: 一酸化窒素検出  - `no2[number]`: 二酸化窒素検出  - `nox[number]`: 検出されたその他の窒素酸化物  - `o3[number]`: オゾン検出  - `owner[array]`: 所有者の固有IDを参照するJSONエンコードされた文字列を含むリスト。  - `pb[number]`: 鉛検出  - `pm1[number]`: 直径1マイクロメートル以下の粒子状物質  - `pm10[number]`: 直径10マイクロメートル以下の粒子状物質  - `pm25[number]`: 直径2.5マイクロメートル以下の粒子状物質  - `precipitation[number]`: 雨量  . Model: [https://schema.org/Number](https://schema.org/Number)- `refDevice[*]`: この観測を捕らえた機器へのリファレンス。  - `refPointOfInterest[*]`: この観測に関連する注目点（通常は大気質ステーション）への参照。  - `refWeatherObserved[*]`: このエンティティによって記述された大気質状況に関連して観測された天候  - `relativeHumidity[number]`: 空気の相対湿度（0％～100％の範囲を表す0～1の数値）  - `reliability[number]`: 観測された大気の質に対応する信頼性（パーセンテージ、単位：ppm  . Model: [https://schema.org/Number ](https://schema.org/Number )- `seeAlso[*]`: アイテムに関する追加リソースを指すURIのリスト  - `sh2[number]`: 硫化水素検出  - `so2[number]`: 二酸化硫黄検出  - `source[string]`: エンティティ・データの元のソースを URL として示す一連の文字。ソース・プロバイダの完全修飾ドメイン名、またはソース・オブジェクトの URL を推奨する。  - `temperature[number]`: 商品の温度  - `type[string]`: NGSI エンティティタイプ。AirQualityObserved でなければならない。  - `typeofLocation[string]`: サンプルの場所の種類  . Model: [https://schema.org/Text](https://schema.org/Text)- `volatileOrganicCompoundsTotal[number]`: アルカン＜C10、ケトン＜C6、アルデヒド＜C10、カルボン酸＜C5、アスピリット＜C7、アルケン＜C8、芳香族  - `windDirection[number]`: 風見鶏の向き  . Model: [http://schema.org/Number](http://schema.org/Number)- `windSpeed[number]`: 風の強さ  . Model: [http//schema.org/Number](http//schema.org/Number)<!-- /30-PropertiesList -->  
+- `airQualityIndex[number]`: 大気の質指数とは、その日の大気の質を表す数値。  . Model: [https://schema.org/Number](https://schema.org/Number)- `airQualityLevel[string]`: 観察された大気の質に対応する健康への懸念の全体的な質的レベル  . Model: [https://schema.org/Text](https://schema.org/Text)- `alternateName[string]`: この項目の別名  - `areaServed[string]`: この大気質測定が属する上位レベル地域  . Model: [https://schema.org/Text ](https://schema.org/Text )- `as[number]`: ヒ素検出  . Model: [https://schema.org/Number](https://schema.org/Number)- `c6h6[number]`: ベンゼン検出  - `cd[number]`: カドミウム検出  - `charge[number]`: 本機の入力充電電圧。  - `co[number]`: 一酸化炭素検出  - `co2[number]`: 二酸化炭素検出  - `coLevel[string]`: 質的な一酸化炭素の存在  - `dataProvider[string]`: ハーモナイズされたデータ・エンティティの提供者を識別する一連の文字。  - `dateCreated[date-time]`: エンティティの作成タイムスタンプ。これは通常、ストレージプラットフォームによって割り当てられます。  - `dateModified[date-time]`: エンティティの最終変更のタイムスタンプ。これは通常、ストレージプラットフォームによって割り当てられる。  - `dateObserved[date-time]`: ISO8601 UTCフォーマットによる観測日時  . Model: [https://schema.org/Text ](https://schema.org/Text )- `description[string]`: この商品の説明  - `id[*]`: エンティティの一意識別子  - `location[*]`: アイテムへの Geojson 参照。Point、LineString、Polygon、MultiPoint、MultiLineString、MultiPolygon のいずれか。  - `name[string]`: このアイテムの名前  - `ni[number]`: ニッケル検出  - `no[number]`: 一酸化窒素検出  - `no2[number]`: 二酸化窒素検出  - `nox[number]`: 検出されたその他の窒素酸化物  - `o3[number]`: オゾン検出  - `owner[array]`: 所有者の固有IDを参照するJSONエンコードされた文字列を含むリスト。  - `pb[number]`: 鉛検出  - `pm1[number]`: 直径1マイクロメートル以下の粒子状物質  - `pm10[number]`: 直径10マイクロメートル以下の粒子状物質  - `pm25[number]`: 直径2.5マイクロメートル以下の粒子状物質  - `pm4[number]`: 直径4マイクロメートル以下の粒子状物質  - `precipitation[number]`: 雨量  . Model: [https://schema.org/Number](https://schema.org/Number)- `pressure[number]`: 観測された大気圧（hPa）。  - `refDevice[*]`: この観測を捕らえた機器へのリファレンス。  - `refPointOfInterest[*]`: この観測に関連する注目点（通常は大気質ステーション）への参照。  - `refWeatherObserved[*]`: このエンティティによって記述された大気質状況に関連して観測された天候  - `relativeHumidity[number]`: 空気の相対湿度（0％～100％の範囲を表す0～1の数値）  - `reliability[number]`: 観測された大気の質に対応する信頼性（パーセンテージ、単位：ppm  . Model: [https://schema.org/Number ](https://schema.org/Number )- `seeAlso[*]`: アイテムに関する追加リソースを指すURIのリスト  - `sh2[number]`: 硫化水素検出  - `so2[number]`: 二酸化硫黄検出  - `source[string]`: エンティティ・データの元のソースを URL として示す一連の文字。ソース・プロバイダの完全修飾ドメイン名、またはソース・オブジェクトの URL を推奨する。  - `temperature[number]`: 商品の温度  - `tpc[number]`: 総粒子カウンター（空気中に浮遊する粒子の総濃度。）  - `tsp[number]`: 総懸濁粒子（大きさや組成に関係なく、すべての空気中の粒子の濃度。）  - `type[string]`: NGSI エンティティタイプ。AirQualityObserved でなければならない。  - `typeofLocation[string]`: サンプルの場所の種類  . Model: [https://schema.org/Text](https://schema.org/Text)- `volatileOrganicCompoundsTotal[number]`: アルカン＜C10、ケトン＜C6、アルデヒド＜C10、カルボン酸＜C5、アスピリット＜C7、アルケン＜C8、芳香族  - `windDirection[number]`: 風見鶏の向き  . Model: [http://schema.org/Number](http://schema.org/Number)- `windSpeed[number]`: 風の強さ  . Model: [http//schema.org/Number](http//schema.org/Number)<!-- /30-PropertiesList -->  
 <!-- 35-RequiredProperties -->  
 必須プロパティ  
 - `dateObserved`  - `id`  - `location`  - `type`  <!-- /35-RequiredProperties -->  
-<!-- 40-RequiredProperties -->  
+<!-- 40-NotesYaml -->  
 すべての汚染物質がこのデータモデルに含まれているわけではない。モデルを拡張するために新たな汚染物質が追加された場合は、http://dd.eionet.europa.eu/vocabulary/aq/pollutant/view?page=1#vocabularyConceptResults を参照してください。  
-<!-- /40-RequiredProperties -->  
+<!-- /40-NotesYaml -->  
 <!-- 50-DataModelHeader -->  
 ## プロパティのデータモデル記述  
 アルファベット順（クリックで詳細表示）  
@@ -137,6 +137,12 @@ AirQualityObserved:
       type: number    
       x-ngsi:    
         type: Property    
+    charge:    
+      description: Input charging voltage of the monitoring device.    
+      minimum: 0    
+      type: number    
+      x-ngsi:    
+        type: Property    
     co:    
       description: Carbon Monoxide detected    
       minimum: 0    
@@ -199,7 +205,7 @@ AirQualityObserved:
             type: Property    
       description: Unique identifier of the entity    
       x-ngsi:    
-        type: Property    
+        type: Relationship    
     location:    
       description: 'Geojson reference to the item. It can be Point, LineString, Polygon, MultiPoint, MultiLineString or MultiPolygon'    
       oneOf:    
@@ -418,7 +424,7 @@ AirQualityObserved:
               type: Property    
         description: Unique identifier of the entity    
         x-ngsi:    
-          type: Property    
+          type: Relationship    
       type: array    
       x-ngsi:    
         type: Property    
@@ -445,6 +451,12 @@ AirQualityObserved:
       type: number    
       x-ngsi:    
         type: Property    
+    pm4:    
+      description: Particulate matter 4 micrometers or less in diameter    
+      minimum: 0    
+      type: number    
+      x-ngsi:    
+        type: Property    
     precipitation:    
       description: Amount of water rain    
       minimum: 0    
@@ -453,6 +465,12 @@ AirQualityObserved:
         model: https://schema.org/Number    
         type: Property    
         units: Liters per square meter    
+    pressure:    
+      description: Atmospheric pressure (hPa) observed.    
+      minimum: 0    
+      type: number    
+      x-ngsi:    
+        type: Property    
     refDevice:    
       anyOf:    
         - description: Identifier format of any NGSI entity    
@@ -553,6 +571,18 @@ AirQualityObserved:
       type: number    
       x-ngsi:    
         type: Property    
+    tpc:    
+      description: Total Particulate Counter (Total concentration of particles suspended in the air.)    
+      minimum: 0    
+      type: number    
+      x-ngsi:    
+        type: Property    
+    tsp:    
+      description: Total Suspended Particles (Concentration of all airborne particles regardless of their size or composition.)    
+      minimum: 0    
+      type: number    
+      x-ngsi:    
+        type: Property    
     type:    
       description: NGSI Entity type. It has to be AirQualityObserved    
       enum:    
@@ -597,11 +627,11 @@ AirQualityObserved:
     - location    
   type: object    
   x-derived-from: ""    
-  x-disclaimer: 'Redistribution and use in source and binary forms, with or without modification, are permitted  provided that the license conditions are met. Copyleft (c) 2023 Contributors to Smart Data Models Program'    
+  x-disclaimer: 'Redistribution and use in source and binary forms, with or without modification, are permitted  provided that the license conditions are met. Copyleft (c) 2024 Contributors to Smart Data Models Program'    
   x-license-url: https://github.com/smart-data-models/dataModel.Environment/blob/master/AirQualityObserved/LICENSE.md    
   x-model-schema: https://smart-data-models.github.io/dataModel.Environment/AirQualityObserved/schema.json    
   x-model-tags: ""    
-  x-version: 0.1.3    
+  x-version: 0.1.4    
 ```  
 </details>    
 <!-- /60-ModelYaml -->  
@@ -646,6 +676,11 @@ AirQualityObserved:
   "nox": 139,  
   "so2": 11,  
   "coLevel": "moderate",  
+  "pm4": 37,  
+  "tpc": 108,  
+  "tsp": 73.3,  
+  "pressure": 1.1,  
+  "charge": 5,  
   "refPointOfInterest": "28079004-Pza.deEspanya"  
 }  
 ```  
@@ -775,7 +810,27 @@ AirQualityObserved:
   "coLevel": {  
     "type": "Text",  
     "value": "moderate"  
-  }  
+  },  
+  "pm4": {  
+      "type": "Number",  
+      "value": 37  
+    },  
+    "tpc": {  
+      "type": "Number",  
+      "value": 108  
+    },  
+    "tsp": {  
+      "type": "Number",  
+      "value": 73.3  
+    },  
+    "pressure": {  
+      "type": "Number",  
+      "value": 1.1  
+    },  
+    "charge": {  
+      "type": "Number",  
+      "value": 5  
+    }  
 }  
 ```  
 </details>  
@@ -931,6 +986,26 @@ AirQualityObserved:
       "type": "Property",  
       "value": 0.64  
   },  
+  "pm4": {  
+      "type": "Property",  
+      "value": 37  
+    },   
+  "tpc": {  
+      "type": "Property",  
+      "value": 108  
+    },  
+  "tsp": {  
+      "type": "Property",  
+      "value": 73.3  
+    },   
+  "pressure": {  
+      "type": "Property",  
+      "value": 1.1  
+    },  
+  "charge": {  
+      "type": "Property",  
+      "value": 5  
+    },  
   "@context": [  
       "https://raw.githubusercontent.com/smart-data-models/dataModel.Environment/master/context.jsonld"  
   ]  
