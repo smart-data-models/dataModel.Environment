@@ -8,7 +8,7 @@
 <!-- /15-License -->  
 <!-- 20-Description -->  
 Descripción global: **Una observación de las condiciones de calidad del aire en un lugar y momento determinados.**  
-versión: 0.1.2  
+versión: 0.1.4  
 <!-- /20-Description -->  
 <!-- 30-PropertiesList -->  
 
@@ -23,13 +23,13 @@
 	- `postalCode[string]`: El código postal. Por ejemplo, 24004  . Model: [https://schema.org/https://schema.org/postalCode](https://schema.org/https://schema.org/postalCode)  
 	- `streetAddress[string]`: La dirección  . Model: [https://schema.org/streetAddress](https://schema.org/streetAddress)  
 	- `streetNr[string]`: Número que identifica una propiedad específica en una vía pública    
-- `airQualityIndex[number]`: El índice de calidad del aire es un número utilizado para indicar la calidad del aire en un día determinado.  . Model: [https://schema.org/Number](https://schema.org/Number)- `airQualityLevel[string]`: Nivel cualitativo global de preocupación por la salud correspondiente a la calidad del aire observada  . Model: [https://schema.org/Text](https://schema.org/Text)- `alternateName[string]`: Un nombre alternativo para este artículo  - `areaServed[string]`: Área de nivel superior a la que pertenece esta medición de la calidad del aire  . Model: [https://schema.org/Text ](https://schema.org/Text )- `as[number]`: Arsénico detectado  . Model: [https://schema.org/Number](https://schema.org/Number)- `c6h6[number]`: Benceno detectado  - `cd[number]`: Cadmio detectado  - `co[number]`: Monóxido de carbono detectado  - `co2[number]`: Dióxido de carbono detectado  - `coLevel[string]`: Presencia cualitativa de monóxido de carbono  - `dataProvider[string]`: Una secuencia de caracteres que identifica al proveedor de la entidad de datos armonizada  - `dateCreated[date-time]`: Fecha de creación de la entidad. Normalmente será asignada por la plataforma de almacenamiento  - `dateModified[date-time]`: Marca de tiempo de la última modificación de la entidad. Suele ser asignada por la plataforma de almacenamiento  - `dateObserved[date-time]`: Fecha y hora de esta observación en formato ISO8601 UTC  . Model: [https://schema.org/Text ](https://schema.org/Text )- `description[string]`: Descripción de este artículo  - `id[*]`: Identificador único de la entidad  - `location[*]`: Referencia Geojson al elemento. Puede ser Point, LineString, Polygon, MultiPoint, MultiLineString o MultiPolygon.  - `name[string]`: El nombre de este artículo  - `ni[number]`: Níquel detectado  - `no[number]`: Monóxido de nitrógeno detectado  - `no2[number]`: Dióxido de nitrógeno detectado  - `nox[number]`: Otros óxidos de nitrógeno detectados  - `o3[number]`: Ozono detectado  - `owner[array]`: Una lista que contiene una secuencia de caracteres codificada en JSON que hace referencia a los identificadores únicos de los propietarios.  - `pb[number]`: Plomo detectado  - `pm1[number]`: Partículas de 1 micrómetro o menos de diámetro  - `pm10[number]`: Partículas de 10 micrómetros o menos de diámetro  - `pm25[number]`: Partículas de 2,5 micrómetros o menos de diámetro  - `precipitation[number]`: Cantidad de agua de lluvia  . Model: [https://schema.org/Number](https://schema.org/Number)- `refDevice[*]`: Una referencia al dispositivo o dispositivos que captaron esta observación  - `refPointOfInterest[*]`: Una referencia a un punto de interés (normalmente una estación de calidad del aire) asociado a esta observación  - `refWeatherObserved[*]`:  Tiempo observado asociado a las condiciones de calidad del aire descritas por esta entidad  - `relativeHumidity[number]`: Humedad relativa del aire (un número entre 0 y 1 que representa el intervalo de 0% a 100%)  - `reliability[number]`: Fiabilidad (porcentaje, expresado en partes por uno) correspondiente a la calidad del aire observada  . Model: [https://schema.org/Number ](https://schema.org/Number )- `seeAlso[*]`: lista de uri que apuntan a recursos adicionales sobre el artículo  - `sh2[number]`: Sulfuro de hidrógeno detectado  - `so2[number]`: Dióxido de azufre detectado  - `source[string]`: Secuencia de caracteres que indica la fuente original de los datos de la entidad en forma de URL. Se recomienda que sea el nombre de dominio completo del proveedor de origen o la URL del objeto de origen.  - `temperature[number]`: Temperatura del artículo  - `type[string]`: Tipo de entidad NGSI. Tiene que ser AirQualityObserved  - `typeofLocation[string]`: Tipo de ubicación del artículo de la muestra  . Model: [https://schema.org/Text](https://schema.org/Text)- `volatileOrganicCompoundsTotal[number]`: Alcanos <C10, cetonas <C6, aldehídos <C10, ácidos carboxílicos <C5, aspiritos<C7, alquenos <C8, aromáticos  - `windDirection[number]`: Dirección de la veleta  . Model: [http://schema.org/Number](http://schema.org/Number)- `windSpeed[number]`: Intensidad del viento  . Model: [http//schema.org/Number](http//schema.org/Number)<!-- /30-PropertiesList -->  
+- `airQualityIndex[number]`: El índice de calidad del aire es un número utilizado para indicar la calidad del aire en un día determinado.  . Model: [https://schema.org/Number](https://schema.org/Number)- `airQualityLevel[string]`: Nivel cualitativo global de preocupación por la salud correspondiente a la calidad del aire observada  . Model: [https://schema.org/Text](https://schema.org/Text)- `alternateName[string]`: Un nombre alternativo para este artículo  - `areaServed[string]`: Área de nivel superior a la que pertenece esta medición de la calidad del aire  . Model: [https://schema.org/Text ](https://schema.org/Text )- `as[number]`: Arsénico detectado  . Model: [https://schema.org/Number](https://schema.org/Number)- `c6h6[number]`: Benceno detectado  - `cd[number]`: Cadmio detectado  - `charge[number]`: Tensión de carga de entrada del dispositivo de monitorización.  - `co[number]`: Monóxido de carbono detectado  - `co2[number]`: Dióxido de carbono detectado  - `coLevel[string]`: Presencia cualitativa de monóxido de carbono  - `dataProvider[string]`: Una secuencia de caracteres que identifica al proveedor de la entidad de datos armonizada  - `dateCreated[date-time]`: Fecha de creación de la entidad. Normalmente será asignada por la plataforma de almacenamiento  - `dateModified[date-time]`: Marca de tiempo de la última modificación de la entidad. Suele ser asignada por la plataforma de almacenamiento  - `dateObserved[date-time]`: Fecha y hora de esta observación en formato ISO8601 UTC  . Model: [https://schema.org/Text ](https://schema.org/Text )- `description[string]`: Descripción de este artículo  - `id[*]`: Identificador único de la entidad  - `location[*]`: Referencia Geojson al elemento. Puede ser Point, LineString, Polygon, MultiPoint, MultiLineString o MultiPolygon.  - `name[string]`: El nombre de este artículo  - `ni[number]`: Níquel detectado  - `no[number]`: Monóxido de nitrógeno detectado  - `no2[number]`: Dióxido de nitrógeno detectado  - `nox[number]`: Otros óxidos de nitrógeno detectados  - `o3[number]`: Ozono detectado  - `owner[array]`: Una lista que contiene una secuencia de caracteres codificada en JSON que hace referencia a los identificadores únicos de los propietarios.  - `pb[number]`: Plomo detectado  - `pm1[number]`: Partículas de 1 micrómetro o menos de diámetro  - `pm10[number]`: Partículas de 10 micrómetros o menos de diámetro  - `pm25[number]`: Partículas de 2,5 micrómetros o menos de diámetro  - `pm4[number]`: Partículas de 4 micrómetros o menos de diámetro  - `precipitation[number]`: Cantidad de agua de lluvia  . Model: [https://schema.org/Number](https://schema.org/Number)- `pressure[number]`: Presión atmosférica (hPa) observada.  - `refDevice[*]`: Una referencia al dispositivo o dispositivos que captaron esta observación  - `refPointOfInterest[*]`: Una referencia a un punto de interés (normalmente una estación de calidad del aire) asociado a esta observación  - `refWeatherObserved[*]`:  Tiempo observado asociado a las condiciones de calidad del aire descritas por esta entidad  - `relativeHumidity[number]`: Humedad relativa del aire (un número entre 0 y 1 que representa el intervalo de 0% a 100%)  - `reliability[number]`: Fiabilidad (porcentaje, expresado en partes por uno) correspondiente a la calidad del aire observada  . Model: [https://schema.org/Number ](https://schema.org/Number )- `seeAlso[*]`: lista de uri que apuntan a recursos adicionales sobre el artículo  - `sh2[number]`: Sulfuro de hidrógeno detectado  - `so2[number]`: Dióxido de azufre detectado  - `source[string]`: Secuencia de caracteres que indica la fuente original de los datos de la entidad en forma de URL. Se recomienda que sea el nombre de dominio completo del proveedor de origen o la URL del objeto de origen.  - `temperature[number]`: Temperatura del artículo  - `tpc[number]`: Contador total de partículas (concentración total de partículas suspendidas en el aire.)  - `tsp[number]`: Total de partículas en suspensión (Concentración de todas las partículas suspendidas en el aire, independientemente de su tamaño o composición).  - `type[string]`: Tipo de entidad NGSI. Tiene que ser AirQualityObserved  - `typeofLocation[string]`: Tipo de ubicación del artículo de la muestra  . Model: [https://schema.org/Text](https://schema.org/Text)- `volatileOrganicCompoundsTotal[number]`: Alcanos <C10, cetonas <C6, aldehídos <C10, ácidos carboxílicos <C5, aspiritos<C7, alquenos <C8, aromáticos  - `windDirection[number]`: Dirección de la veleta  . Model: [http://schema.org/Number](http://schema.org/Number)- `windSpeed[number]`: Intensidad del viento  . Model: [http//schema.org/Number](http//schema.org/Number)<!-- /30-PropertiesList -->  
 <!-- 35-RequiredProperties -->  
 Propiedades requeridas  
 - `dateObserved`  - `id`  - `location`  - `type`  <!-- /35-RequiredProperties -->  
-<!-- 40-RequiredProperties -->  
+<!-- 40-NotesYaml -->  
 No todos los contaminantes están incluidos en este modelo de datos. Si desea ampliar el modelo con nuevos contaminantes, consulte la fuente http://dd.eionet.europa.eu/vocabulary/aq/pollutant/view?page=1#vocabularyConceptResults, donde figuran la mayoría de ellos.  
-<!-- /40-RequiredProperties -->  
+<!-- /40-NotesYaml -->  
 <!-- 50-DataModelHeader -->  
 ## Descripción de las propiedades del modelo de datos  
 Ordenados alfabéticamente (pulse para más detalles)  
@@ -137,6 +137,12 @@ AirQualityObserved:
       type: number    
       x-ngsi:    
         type: Property    
+    charge:    
+      description: Input charging voltage of the monitoring device.    
+      minimum: 0    
+      type: number    
+      x-ngsi:    
+        type: Property    
     co:    
       description: Carbon Monoxide detected    
       minimum: 0    
@@ -199,7 +205,7 @@ AirQualityObserved:
             type: Property    
       description: Unique identifier of the entity    
       x-ngsi:    
-        type: Property    
+        type: Relationship    
     location:    
       description: 'Geojson reference to the item. It can be Point, LineString, Polygon, MultiPoint, MultiLineString or MultiPolygon'    
       oneOf:    
@@ -418,7 +424,7 @@ AirQualityObserved:
               type: Property    
         description: Unique identifier of the entity    
         x-ngsi:    
-          type: Property    
+          type: Relationship    
       type: array    
       x-ngsi:    
         type: Property    
@@ -445,6 +451,12 @@ AirQualityObserved:
       type: number    
       x-ngsi:    
         type: Property    
+    pm4:    
+      description: Particulate matter 4 micrometers or less in diameter    
+      minimum: 0    
+      type: number    
+      x-ngsi:    
+        type: Property    
     precipitation:    
       description: Amount of water rain    
       minimum: 0    
@@ -453,6 +465,12 @@ AirQualityObserved:
         model: https://schema.org/Number    
         type: Property    
         units: Liters per square meter    
+    pressure:    
+      description: Atmospheric pressure (hPa) observed.    
+      minimum: 0    
+      type: number    
+      x-ngsi:    
+        type: Property    
     refDevice:    
       anyOf:    
         - description: Identifier format of any NGSI entity    
@@ -553,6 +571,18 @@ AirQualityObserved:
       type: number    
       x-ngsi:    
         type: Property    
+    tpc:    
+      description: Total Particulate Counter (Total concentration of particles suspended in the air.)    
+      minimum: 0    
+      type: number    
+      x-ngsi:    
+        type: Property    
+    tsp:    
+      description: Total Suspended Particles (Concentration of all airborne particles regardless of their size or composition.)    
+      minimum: 0    
+      type: number    
+      x-ngsi:    
+        type: Property    
     type:    
       description: NGSI Entity type. It has to be AirQualityObserved    
       enum:    
@@ -597,11 +627,11 @@ AirQualityObserved:
     - location    
   type: object    
   x-derived-from: ""    
-  x-disclaimer: 'Redistribution and use in source and binary forms, with or without modification, are permitted  provided that the license conditions are met. Copyleft (c) 2023 Contributors to Smart Data Models Program'    
+  x-disclaimer: 'Redistribution and use in source and binary forms, with or without modification, are permitted  provided that the license conditions are met. Copyleft (c) 2024 Contributors to Smart Data Models Program'    
   x-license-url: https://github.com/smart-data-models/dataModel.Environment/blob/master/AirQualityObserved/LICENSE.md    
   x-model-schema: https://smart-data-models.github.io/dataModel.Environment/AirQualityObserved/schema.json    
   x-model-tags: ""    
-  x-version: 0.1.3    
+  x-version: 0.1.4    
 ```  
 </details>    
 <!-- /60-ModelYaml -->  
@@ -646,6 +676,11 @@ AirQualityObserved:
   "nox": 139,  
   "so2": 11,  
   "coLevel": "moderate",  
+  "pm4": 37,  
+  "tpc": 108,  
+  "tsp": 73.3,  
+  "pressure": 1.1,  
+  "charge": 5,  
   "refPointOfInterest": "28079004-Pza.deEspanya"  
 }  
 ```  
@@ -775,7 +810,27 @@ AirQualityObserved:
   "coLevel": {  
     "type": "Text",  
     "value": "moderate"  
-  }  
+  },  
+  "pm4": {  
+      "type": "Number",  
+      "value": 37  
+    },  
+    "tpc": {  
+      "type": "Number",  
+      "value": 108  
+    },  
+    "tsp": {  
+      "type": "Number",  
+      "value": 73.3  
+    },  
+    "pressure": {  
+      "type": "Number",  
+      "value": 1.1  
+    },  
+    "charge": {  
+      "type": "Number",  
+      "value": 5  
+    }  
 }  
 ```  
 </details>  
@@ -931,6 +986,26 @@ AirQualityObserved:
       "type": "Property",  
       "value": 0.64  
   },  
+  "pm4": {  
+      "type": "Property",  
+      "value": 37  
+    },   
+  "tpc": {  
+      "type": "Property",  
+      "value": 108  
+    },  
+  "tsp": {  
+      "type": "Property",  
+      "value": 73.3  
+    },   
+  "pressure": {  
+      "type": "Property",  
+      "value": 1.1  
+    },  
+  "charge": {  
+      "type": "Property",  
+      "value": 5  
+    },  
   "@context": [  
       "https://raw.githubusercontent.com/smart-data-models/dataModel.Environment/master/context.jsonld"  
   ]  
