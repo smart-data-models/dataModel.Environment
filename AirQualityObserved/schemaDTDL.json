@@ -63,6 +63,14 @@
             "comment": "Cadmium detected"
         },
         {
+            "name": "charge",
+            "writable": true,
+            "displayName": "charge",
+            "@type": "Property",
+            "schema": "long",
+            "comment": "Input charging voltage of the monitoring device."
+        },
+        {
             "name": "co",
             "writable": true,
             "displayName": "co",
@@ -212,12 +220,28 @@
             "comment": "Particulate matter 2.5 micrometers or less in diameter"
         },
         {
+            "name": "pm4",
+            "writable": true,
+            "displayName": "pm4",
+            "@type": "Property",
+            "schema": "long",
+            "comment": "Particulate matter 4 micrometers or less in diameter"
+        },
+        {
             "name": "precipitation",
             "writable": true,
             "displayName": "precipitation",
             "@type": "Property",
             "schema": "long",
             "comment": "Amount of water rain"
+        },
+        {
+            "name": "pressure",
+            "writable": true,
+            "displayName": "pressure",
+            "@type": "Property",
+            "schema": "long",
+            "comment": "Atmospheric pressure (hPa) observed."
         },
         {
             "name": "refDevice",
@@ -286,6 +310,22 @@
             "@type": "Property",
             "schema": "long",
             "comment": "Temperature of the item"
+        },
+        {
+            "name": "tpc",
+            "writable": true,
+            "displayName": "tpc",
+            "@type": "Property",
+            "schema": "long",
+            "comment": "Total Particulate Counter (Total concentration of particles suspended in the air.)"
+        },
+        {
+            "name": "tsp",
+            "writable": true,
+            "displayName": "tsp",
+            "@type": "Property",
+            "schema": "long",
+            "comment": "Total Suspended Particles (Concentration of all airborne particles regardless of their size or composition.)"
         },
         {
             "name": "volatileOrganicCompoundsTotal",
