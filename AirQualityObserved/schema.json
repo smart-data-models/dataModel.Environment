@@ -227,12 +227,12 @@
           "description": "Property. Particulate matter 4 micrometers or less in diameter"
         },
         "tpc":{
-          "type": "Integer",
+          "type": "integer",
           "minimum": 0,
           "description": "Property. Total Particulate Counter (Total concentration of particles suspended in the air.)"
           },
         "tsp":{
-          "type": "Integer",
+          "type": "integer",
           "minimum": 0,
           "description": "Property. Total Suspended Particles (Concentration of all airborne particles regardless of their size or composition.)"
           },
