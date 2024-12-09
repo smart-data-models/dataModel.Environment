@@ -50,6 +50,6 @@
     "value": -6.23
   },
   "@context": [
-    "https://smart-data-models.github.io/dataModel.Environment/NightSkyQuality/schema.json"
+    "https://smart-data-models.github.io/dataModel.Environment/context.jsonld"
   ]
 }
