@@ -1,0 +1,3 @@
+/* (Beta) Export of data model CarbonFootprint of the subject dataModel.Environment for a PostgreSQL database. Pending translation of enumerations and multityped attributes */
+
+CREATE TABLE CarbonFootprint (CO2eq NUMERIC, address JSON, alternateName TEXT, areaServed TEXT, dataProvider TEXT, dateCreated TIMESTAMP, dateModified TIMESTAMP, description TEXT, emissionDate TIMESTAMP, emissionSource TEXT, id TEXT PRIMARY KEY, location JSON, name TEXT, owner JSON, relatedSource TEXT, seeAlso JSON, source TEXT, tags JSON, type TEXT);
