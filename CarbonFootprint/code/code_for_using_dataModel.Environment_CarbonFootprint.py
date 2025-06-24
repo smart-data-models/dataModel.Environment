@@ -30,25 +30,25 @@ import subprocess
 serverUrl = "http://localhost:1026" # supposed that your broker is installed in localhost. Edit to match your configuration
 dataModel = "CarbonFootprint"
 subject = "dataModel.Environment"
-emissionSource = "Transport"
+emissionSource = "{'type': 'Property', 'value': 'Transport'}"
 attribute = "emissionSource"
 value = emissionSource
 # The next line creates the query for inserting this attribute in a NGSI-LD context broker if the attribute does not exist it creates it
 print(sdm.update_broker(dataModel, subject, attribute, value, serverUrl=serverUrl, updateThenCreate=True))
 
-CO2eq = 25.5
+CO2eq = {'type': 'Property', 'value': 25.5}
 attribute = "CO2eq"
 value = CO2eq
 # The next line creates the query for inserting this attribute in a NGSI-LD context broker if the attribute does not exist it creates it
 print(sdm.update_broker(dataModel, subject, attribute, value, serverUrl=serverUrl, updateThenCreate=True))
 
-emissionDate = "2025-05-12T10:00:00Z"
+emissionDate = "{'type': 'Property', 'value': {'@type': 'date-time', '@value': '2025-05-12T10:00:00Z'}}"
 attribute = "emissionDate"
 value = emissionDate
 # The next line creates the query for inserting this attribute in a NGSI-LD context broker if the attribute does not exist it creates it
 print(sdm.update_broker(dataModel, subject, attribute, value, serverUrl=serverUrl, updateThenCreate=True))
 
-relatedSource = "urn:ngsi-ld:Source:001"
+relatedSource = "{'type': 'Relationship', 'object': 'urn:ngsi-ld:Source:001'}"
 attribute = "relatedSource"
 value = relatedSource
 # The next line creates the query for inserting this attribute in a NGSI-LD context broker if the attribute does not exist it creates it
