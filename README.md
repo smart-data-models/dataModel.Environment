@@ -12,6 +12,8 @@ The following entity types are available:
 
 - [AirQualityMonitoring](https://github.com/smart-data-models/dataModel.Environment/blob/master/AirQualityMonitoring/README.md). Air Quality Monitoring (AQM) Data Model.
 
+- [CarbonFootprint](https://github.com/smart-data-models/dataModel.Environment/blob/master/CarbonFootprint/README.md). Data model to represent the carbon footprint in CO2 equivalents.
+
 - [ElectroMagneticObserved](https://github.com/smart-data-models/dataModel.Environment/blob/master/ElectroMagneticObserved/README.md). The Data Model is intended to measure excessive electric and magnetic fields (EMFs), or radiation in a work or public environment according to the level of exposure to electromagnetic fields on the air. The frequency of the hertzian waves is conventionally lower than 300 GHz, propagating in space without artificial guide. They are between 9 kHz and 300 GHz.
 
 - [EnvironmentObserved](https://github.com/smart-data-models/dataModel.Environment/blob/master/EnvironmentObserved/README.md). This entity contains a harmonised description of the environmental conditions observed at a particular location and time. This entity is primarily associated with the vertical segment of the environment and agriculture but may also be used in smart home, smart cities, industry and related IoT applications.
