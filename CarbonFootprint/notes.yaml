@@ -1,0 +1,9 @@
+notesPrevious:
+  - "This data model is part of the Environmental Data models collection."
+  - "It aims to standardize the representation of carbon footprints in CO2 equivalent."
+  - "Before using this model, ensure that you have reviewed the JSON schema and example usage."
+
+notesEnd:
+  - "For any contributions or suggestions, feel free to open an issue or submit a pull request."
+  - "Stay updated with future changes by following the project on GitHub."
+  - "Ensure that the data conforms to the latest version of the schema for compatibility."

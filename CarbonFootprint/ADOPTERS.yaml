@@ -1,0 +1,9 @@
+description: This is a compilation list of the current adopters of the data model Carbon Footprint of the Subject Environmental Data
+currentAdopters:
+  - adopter: Raquel Franquelo
+    description: Software developer working on energy consumption tracking
+    mail: rfranquelo@purpleblob.net
+    organization: Purple Blob
+    project: Carbon Footprint Tracker
+    comments: Using the model to integrate carbon emissions data into energy monitoring system.
+    startDate: 2025-04-15

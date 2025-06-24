@@ -1,0 +1,14 @@
+{
+  "id": "urn:ngsi-ld:CarbonFootprint:001",
+  "type": "CarbonFootprint",
+  "emissionSource": "Transport",
+  "CO2eq": 25.5,
+  "emissionDate": "2025-05-12T10:00:00Z",
+  "location": {
+    "type": "Point",
+    "coordinates": [ -3.70379, 40.41678 ]
+  },
+  "relatedSource": "urn:ngsi-ld:Source:001",
+  "description": "Annual emissions from a vehicle fleet.",
+  "tags": ["transport", "CO2", "annual"]
+}

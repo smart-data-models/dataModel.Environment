@@ -1,0 +1,39 @@
+{
+  "id": "CarbonFootprint:TransportFleet",
+  "type": "CarbonFootprint",
+  "emissionSource": {
+    "type": "Text",
+    "value": "Transport"
+  },
+  "CO2eq": {
+    "type": "Number",
+    "value": 25.5
+  },
+  "emissionDate": {
+    "type": "DateTime",
+    "value": "2025-05-12T10:00:00Z"
+  },
+  "location": {
+    "type": "geo:json",
+    "value": {
+      "type": "Point",
+      "coordinates": [-3.70379, 40.41678]
+    }
+  },
+  "relatedSource": {
+    "type": "URI",
+    "value": "urn:ngsi-ld:Source:001"
+  },
+  "description": {
+    "type": "Text",
+    "value": "Annual emissions from a vehicle fleet."
+  },
+  "tags": {
+    "type": "array",
+    "value": [
+      "transport",
+      "CO2",
+      "annual"
+    ]
+  }
+}

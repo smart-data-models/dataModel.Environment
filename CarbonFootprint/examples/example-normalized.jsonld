@@ -1,0 +1,46 @@
+{
+  "id": "urn:ngsi-ld:CarbonFootprint:001",
+  "type": "CarbonFootprint",
+  "emissionSource": {
+    "type": "Property",
+    "value": "Transport"
+  },
+  "CO2eq": {
+    "type": "Property",
+    "value": 25.5
+  },
+  "emissionDate": {
+    "type": "Property",
+    "value": {
+      "@type": "date-time",
+      "@value":"2025-05-12T10:00:00Z"
+    }
+  },
+  "location": {
+    "type": "GeoProperty",
+    "value": {
+      "type": "Point",
+      "coordinates": [-3.70379, 40.41678]
+    }
+  },
+  "relatedSource": {
+    "type": "Relationship",
+    "object": "urn:ngsi-ld:Source:001"
+  },
+  "description": {
+    "type": "Property",
+    "value": "Annual emissions from a vehicle fleet."
+  },
+  "tags": {
+    "type": "Property",
+    "value": [
+      "transport",
+      "CO2",
+      "annual"
+    ]
+  },
+  "@context": [
+    "https://smart-data-models.github.io/dataModel.Environment/context.jsonld"
+  ]
+}
+

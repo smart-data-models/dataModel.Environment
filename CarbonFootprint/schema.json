@@ -1,0 +1,55 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$schemaVersion": "0.0.1",
+  "$id": "https://smart-data-models.github.io/Environment/CarbonFootprint/schema.json",
+  "title": "Smart Data models - CarbonFootprint schema",
+  "license": "MIT",
+  "modelTags": "Carbon, Emissions, CO2eq",
+  "description": "Data model to represent the carbon footprint in CO2 equivalents.",
+  "type": "object",
+  "allOf": [
+    {
+      "$ref": "https://smart-data-models.github.io/data-models/common-schema.json#/definitions/GSMA-Commons"
+    },
+    {
+      "$ref": "https://smart-data-models.github.io/data-models/common-schema.json#/definitions/Location-Commons"
+    },
+    {
+      "properties": {
+        "type": {
+          "type": "string",
+          "description": "Property. NGSI Entity type. It must be 'CarbonFootprint'"
+        },
+        "emissionSource": {
+          "type": "string",
+          "description": "Property. Source of emissions (e.g., Transport, Energy, Industry)"
+        },
+        "CO2eq": {
+          "type": "number",
+          "minimum": 0,
+          "description": "Property. Model:'https://schema.org/Number'. Amount of emissions in tons of CO2 equivalent"
+        },
+        "emissionDate": {
+          "type": "string",
+          "format": "date-time",
+          "description": "Property. Model:'https://schema.org/Text'. Date and time of the measurement"
+        },
+        "relatedSource": {
+          "type": "string",
+          "format": "uri",
+          "description": "Relationship. Reference to the data source or related entity"
+        },
+        "tags": {
+          "type": "array",
+          "items": {
+            "type": "string",
+             "description": "Property. Tag name"
+          },
+          "description": "Property. Tags associated with the carbon footprint calculation."
+        }
+      }
+    }
+  ],
+    "required": ["id", "type"]
+
+}
