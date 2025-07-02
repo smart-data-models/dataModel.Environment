@@ -9,6 +9,7 @@ currentAdopters:
     startDate: 2025-04-15
   - adopter: Sarenet
     description: Owner of Hucain project
+    mail: 
     organization: Sarenet
     project: Hucain Dataspace
     comments: 
