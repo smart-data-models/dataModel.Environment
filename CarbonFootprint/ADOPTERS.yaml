@@ -7,3 +7,9 @@ currentAdopters:
     project: Carbon Footprint Tracker
     comments: Using the model to integrate carbon emissions data into energy monitoring system.
     startDate: 2025-04-15
+  - adopter: Sarenet
+    description: Owner of Hucain project
+    organization: Sarenet
+    project: Hucain Dataspace
+    comments: 
+    startDate: 2025-07-03
