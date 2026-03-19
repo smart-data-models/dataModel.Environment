@@ -24,22 +24,22 @@
     "dateObserved": {
         "type": "Property",
         "value": {
-            "type": "DateTime",
-            "value": "2020-03-17T08:30:00Z"
+            "@type": "DateTime",
+            "@value": "2020-03-17T08:30:00Z"
         }
     },
     "dateObservedFrom": {
         "type": "Property",
         "value": {
-            "type": "DateTime",
-            "value": "2020-03-17T08:30:00Z"
+            "@type": "DateTime",
+            "@value": "2020-03-17T08:30:00Z"
         }
     },
     "dateObservedTo": {
         "type": "Property",
         "value": {
-            "type": "DateTime",
-            "value": "2020-03-17T08:45:00Z"
+            "@type": "DateTime",
+            "@value": "2020-03-17T08:45:00Z"
         }
     },
     "description": {
@@ -49,7 +49,7 @@
     "location": {
         "type": "GeoProperty",
         "value": {
-            "type": "polygon",
+            "type": "Polygon",
             "coordinates": [
                 [
                     [
