@@ -18,11 +18,11 @@
     "value": "Observation of Evolution of the water levels"
   },
   "flow": {
-    "type": "Number",
+    "type": "Property",
     "value": 12
   },
   "height": {
-    "type": "Number",
+    "type": "Property",
     "value": 3.52
   },
   "location": {
@@ -36,7 +36,7 @@
     }
   },
   "measuredArea": {
-    "type": "Number",
+    "type": "Property",
     "value": 250
   },
   "name": {
@@ -44,19 +44,19 @@
     "value": "STLRT-MNCA-AP-WO-012"
   },
   "objectArea": {
-    "type": "Number",
+    "type": "Property",
     "value": 35
   },
   "objectHeightAverage": {
-    "type": "Number",
+    "type": "Property",
     "value": 1.75
   },
   "objectHeightMax": {
-    "type": "Number",
+    "type": "Property",
     "value": 2.25
   },
   "objectVolume": {
-    "type": "Number",
+    "type": "Property",
     "value": 17.5
   },
   "refDevice": {
