@@ -49,7 +49,7 @@
     "location": {
         "type": "GeoProperty",
         "value": {
-            "type": "polygon",
+            "type": "Polygon",
             "coordinates": [
                 [
                     [
@@ -105,8 +105,6 @@
         "object": "urn:ngsi-ld:Device:NCE-RFRO-018"
     },
     "@context": [
-        "https://raw.githubusercontent.com/smart-data-models/data-models/master/context.jsonld",
-
         "https://raw.githubusercontent.com/smart-data-models/dataModel.Environment/master/context.jsonld"
     ]
 }
