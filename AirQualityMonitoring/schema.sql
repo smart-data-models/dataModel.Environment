@@ -1,5 +1,5 @@
 /* (Beta) Export of data model AirQualityMonitoring of the subject dataModel.Environment for a PostgreSQL database. Pending translation of enumerations and multityped attributes */
-CREATE TYPE aqiMajorPollutant_type AS ENUM ('arsenic', 'bap', 'benzene', 'co2', 'nh3', 'no', 'no2', 'o2', 'o3', 'so2', 'pb');
+CREATE TYPE AirQualityMonitoring_aqiMajorPollutant_type AS ENUM ('arsenic', 'bap', 'benzene', 'co2', 'nh3', 'no', 'no2', 'o2', 'o3', 'so2', 'pb');
 CREATE TYPE AirQualityMonitoring_type AS ENUM ('AirQualityMonitoring');
 CREATE TABLE AirQualityMonitoring (
   "address" JSON,
@@ -8,7 +8,7 @@ CREATE TABLE AirQualityMonitoring (
   "airTemperatureTSA" JSON,
   "alternateName" TEXT,
   "ambientNoiseTSA" JSON,
-  "aqiMajorPollutant" aqiMajorPollutant_type,
+  "aqiMajorPollutant" AirQualityMonitoring_aqiMajorPollutant_type,
   "areaServed" TEXT,
   "arsenicTSA" JSON,
   "atmosphericPressure" NUMERIC,
