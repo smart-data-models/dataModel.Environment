@@ -1,5 +1,5 @@
 /* (Beta) Export of data model NoiseLevelObserved of the subject dataModel.Environment for a PostgreSQL database. Pending translation of enumerations and multityped attributes */
-CREATE TYPE sonometerClass_type AS ENUM ('0', '1', '2');
+CREATE TYPE NoiseLevelObserved_sonometerClass_type AS ENUM ('0', '1', '2');
 CREATE TYPE NoiseLevelObserved_type AS ENUM ('NoiseLevelObserved');
 CREATE TABLE NoiseLevelObserved (
   "LAS" NUMERIC,
@@ -27,7 +27,7 @@ CREATE TABLE NoiseLevelObserved (
   "refPointOfInterest" JSON,
   "refWeatherObserved" JSON,
   "seeAlso" JSON,
-  "sonometerClass" sonometerClass_type,
+  "sonometerClass" NoiseLevelObserved_sonometerClass_type,
   "source" TEXT,
   "type" NoiseLevelObserved_type
 );
