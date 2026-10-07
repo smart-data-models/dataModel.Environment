@@ -95,7 +95,7 @@
   },
   "windDirection": {
       "type": "Property",
-      "value": 186
+      "value": 176
   },
   "windSpeed": {
       "type": "Property",
@@ -111,8 +111,8 @@
     },
   "tsp": {
       "type": "Property",
-      "value": 73.3
-    }, 
+      "value": 73
+    },
   "pressure": {
       "type": "Property",
       "value": 1.1

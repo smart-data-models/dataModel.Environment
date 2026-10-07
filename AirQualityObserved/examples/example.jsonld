@@ -31,6 +31,7 @@
   "source": "http://datos.madrid.es",
   "temperature": 12.2,
   "typeOfLocation": "outdoor",
+  "tsp": 73,
   "windDirection": 180,
   "windSpeed": 0.64,
   "@context": [
