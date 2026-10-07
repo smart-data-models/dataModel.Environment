@@ -1,9 +1,9 @@
 /* (Beta) Export of data model AeroAllergenObserved of the subject dataModel.Environment for a PostgreSQL database. Pending translation of enumerations and multityped attributes */
-CREATE TYPE allergenRisk_type AS ENUM ('high', 'low', 'moderate', 'none', 'veryHigh');
+CREATE TYPE AeroAllergenObserved_allergenRisk_type AS ENUM ('high', 'low', 'moderate', 'none', 'veryHigh');
 CREATE TYPE AeroAllergenObserved_type AS ENUM ('AeroAllergenObserved');
 CREATE TABLE AeroAllergenObserved (
   "address" JSON,
-  "allergenRisk" allergenRisk_type,
+  "allergenRisk" AeroAllergenObserved_allergenRisk_type,
   "alternateName" TEXT,
   "areaServed" TEXT,
   "dataProvider" TEXT,
