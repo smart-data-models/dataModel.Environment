@@ -1,5 +1,5 @@
 /* (Beta) Export of data model IndoorEnvironmentObserved of the subject dataModel.Environment for a PostgreSQL database. Pending translation of enumerations and multityped attributes */
-CREATE TYPE sensorPlacement_type AS ENUM ('northWall', 'southWall', 'eastWall', 'westWall', 'center', 'floor', 'roof', 'ceiling');
+CREATE TYPE IndoorEnvironmentObserved_sensorPlacement_type AS ENUM ('northWall', 'southWall', 'eastWall', 'westWall', 'center', 'floor', 'roof', 'ceiling');
 CREATE TYPE IndoorEnvironmentObserved_type AS ENUM ('IndoorEnvironmentObserved');
 CREATE TABLE IndoorEnvironmentObserved (
   "address" JSON,
@@ -23,7 +23,7 @@ CREATE TABLE IndoorEnvironmentObserved (
   "relativeHumidity" NUMERIC,
   "seeAlso" JSON,
   "sensorHeight" NUMERIC,
-  "sensorPlacement" sensorPlacement_type,
+  "sensorPlacement" IndoorEnvironmentObserved_sensorPlacement_type,
   "source" TEXT,
   "temperature" NUMERIC,
   "type" IndoorEnvironmentObserved_type
