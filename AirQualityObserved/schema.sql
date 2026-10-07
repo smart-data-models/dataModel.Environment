@@ -1,6 +1,6 @@
 /* (Beta) Export of data model AirQualityObserved of the subject dataModel.Environment for a PostgreSQL database. Pending translation of enumerations and multityped attributes */
 CREATE TYPE AirQualityObserved_type AS ENUM ('AirQualityObserved');
-CREATE TYPE typeofLocation_type AS ENUM ('indoor', 'outdoor');
+CREATE TYPE AirQualityObserved_typeofLocation_type AS ENUM ('indoor', 'outdoor');
 CREATE TABLE AirQualityObserved (
   "address" JSON,
   "airQualityIndex" NUMERIC,
@@ -48,7 +48,7 @@ CREATE TABLE AirQualityObserved (
   "tpc" NUMERIC,
   "tsp" NUMERIC,
   "type" AirQualityObserved_type,
-  "typeofLocation" typeofLocation_type,
+  "typeofLocation" AirQualityObserved_typeofLocation_type,
   "volatileOrganicCompoundsTotal" NUMERIC,
   "windDirection" NUMERIC,
   "windSpeed" NUMERIC
