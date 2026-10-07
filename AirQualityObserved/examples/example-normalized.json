@@ -104,8 +104,8 @@
     "value": 0.54
   },
   "precipitation": {
-    "type": "Boolean",
-    "value": false
+    "type": "Number",
+    "value": 0
   },
   "no2": {
     "type": "Number",
@@ -130,7 +130,7 @@
     },
     "tsp": {
       "type": "Number",
-      "value": 73.3
+      "value": 73
     },
     "pressure": {
       "type": "Number",
